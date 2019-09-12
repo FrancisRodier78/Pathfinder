@@ -5,6 +5,20 @@
     <title>Feuille de personnage</title>
     <meta charset="UTF-8" />
     <meta name ="viewport" content="width = device-width "/>
+    <meta name="description" content="Feuille de personnage pour les règles Pathfinder 1.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Le HTML5 ainsi que les media queries ne sont pas reconnus sur le navigateur IE8, il faut donc penser à ajouter 2 scripts JS pour les rendre compatibles.. -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
     <link rel="stylesheet" href="css/reset.css" />
     <!-- link rel="stylesheet" href="css/base.css" / -->
     <!-- script type="text/javascript" src="js/main.js"></script -->
@@ -13,128 +27,181 @@
 
 <body>
     <form action="" name="form" method="post">
-        <h2 id="label_nom_du_personnage">NOM DU PERSONNAGE</h2>
-        <input type="text" name="non_du_personnage" size="60" maxlength="60" required id="nom_du_personnage">
+        <div class="row">
+            <div class="col-lg-4">
+                <h1 id="titre_feuille">PATHFINDER</h1>
+            </div>
 
-        <h2 id="label_alignement">ALIGNEMENT</h2> 
-        <select id="alignement">
-            <option></option>
-            <option>Loyal-Bon</option>
-            <option>Loyal-Neutre</option>
-            <option>Loyal-Mauvais</option>
-            <option>Neutre-Bon</option>
-            <option>Neutre-Neutre</option>
-            <option>Neutre-Mauvais</option>
-            <option>Chaotique-Bon</option>
-            <option>Chaotique-Neutre</option>
-            <option>Chaotique-Mauvais</option>
-        </select>
-        
-        <h2 id="label_nom_du_joueur">NOM DU JOUEUR</h2> 
-        <input type="text" name="nom_du_joueur" size="30" maxlength="30" required id="nom_du_joueur">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h2 id="label_nom_du_personnage">NOM DU PERSONNAGE</h2>
+                        <input type="text" name="non_du_personnage" size="60" maxlength="60" required id="nom_du_personnage">
+                    </div>
 
-        <h2 id="label_classe">CLASSE</h2>  
-        <select id="classe" name="classe" onChange="influenceClassePersonnage()">
-            <option value=" " selected></option>
-            <option value="Barbare">Barbare</option>
-            <option value="Barde">Barde</option>
-            <option value="Druide">Druide</option>
-            <option value="Ensorceleur">Ensorceleur</option>
-            <option value="Guerrier">Guerrier</option>
-            <option value="Magicien">Magicien</option>
-            <option value="Moine">Moine</option>
-            <option value="Paladin">Paladin</option>
-            <option value="Prêtre">Prêtre</option>
-            <option value="Rôdeur">Rôdeur</option>
-            <option value="Roublard">Roublard</option>
-        </select>
+                    <div class="col-lg-2">
+                        <h2 id="label_alignement">ALIGNEMENT</h2> 
+                        <select id="alignement">
+                            <option></option>
+                            <option>Loyal-Bon</option>
+                            <option>Loyal-Neutre</option>
+                            <option>Loyal-Mauvais</option>
+                            <option>Neutre-Bon</option>
+                            <option>Neutre-Neutre</option>
+                            <option>Neutre-Mauvais</option>
+                            <option>Chaotique-Bon</option>
+                            <option>Chaotique-Neutre</option>
+                            <option>Chaotique-Mauvais</option>
+                        </select>
+                    </div>
+        
+                    <div class="col-lg-5">
+                        <h2 id="label_nom_du_joueur">NOM DU JOUEUR</h2> 
+                        <input type="text" name="nom_du_joueur" size="30" maxlength="30" required id="nom_du_joueur">
+                    </div>
+                </div>
 
-        <h2 id="label_niveau">NIVEAU</h2> 
-        <select id="niveau" name="niveau" onChange="influenceNiveau()">
-            <option selected>00</option>
-            <option>01</option>
-            <option>02</option>
-            <option>03</option>
-            <option>04</option>
-            <option>05</option>
-            <option>06</option>
-            <option>07</option>
-            <option>08</option>
-            <option>09</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-            <option>13</option>
-            <option>14</option>
-            <option>15</option>
-            <option>16</option>
-            <option>17</option>
-            <option>18</option>
-            <option>19</option>
-            <option>20</option>
-        </select>
-        
-        <h2 id="label_divinite">DIVINITE</h2> 
-        <input type="text" name="divinite" size="15" maxlength="15" id="divinite">
-        
-        <h2 id="label_origine">ORIGINE</h2> 
-        <input type="text" name="origine" size="15" maxlength="15" id="origine">
-        
-        <h2 id="label_race">RACE</h2> 
-        <select id="race" name="race" onChange="influenceRace()">
-            <option></option>
-            <option>Humain</option>
-            <option>Demi-elfe</option>
-            <option>Demi-orque</option>
-            <option>Elfe</option>
-            <option>Gnome</option>
-            <option>Halfelin</option>
-            <option>Nain</option>
-        </select>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2 id="label_classe">CLASSE</h2>  
+                        <select id="classe" name="classe" onChange="influenceClassePersonnage()">
+                            <option value=" " selected></option>
+                            <option value="Barbare">Barbare</option>
+                            <option value="Barde">Barde</option>
+                            <option value="Druide">Druide</option>
+                            <option value="Ensorceleur">Ensorceleur</option>
+                            <option value="Guerrier">Guerrier</option>
+                            <option value="Magicien">Magicien</option>
+                            <option value="Moine">Moine</option>
+                            <option value="Paladin">Paladin</option>
+                            <option value="Prêtre">Prêtre</option>
+                            <option value="Rôdeur">Rôdeur</option>
+                            <option value="Roublard">Roublard</option>
+                        </select>
+                    </div>
 
-        <h2 id="label_cat_taille">CATEGORIE DE TAILLE</h2> 
-        <select id="cat_taille">
-<!--        <option value="I">Infime (I)</option>
-            <option value="Min">Minuscule (Min)</option>
-            <option value="TP">Très petite (TP)</option>
-            <option value="P">Petite (P)</option> -->
-            <option value="M">Moyenne (M)</option>
-<!--        <option value="Gh">Grande (G) (haute)</option>
-            <option value="Gl">Grande (G) (longue)</option>
-            <option value="TGh">Très grande (TG) (haute)</option>
-            <option value="TGl">Très grande (TG) (longue)</option>
-            <option value="Gigh">Gigantesque (Gig) (haute)</option>
-            <option value="Gigl">Gigantesque (Gig) (longue)</option>
-            <option value="Ch">Colossale (C) (haute)</option>
-            <option value="Cl">Colossale (C) (longue)</option> -->
-        </select>
+                    <div class="col-lg-2">
+                        <h2 id="label_niveau">NIVEAU</h2> 
+                        <select id="niveau" name="niveau" onChange="influenceNiveau()">
+                            <option selected>00</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                        </select>
+                    </div>
         
-        <h2 id="label_sexe">SEXE</h2>
-        <select id="sexe" name="sexe" onChange="calculTaillePoids()">
-            <option></option>
-            <option>Masculin</option>
-            <option>Féminin</option>
-        </select>
+                    <div class="col-lg-4">
+                        <h2 id="label_divinite">DIVINITE</h2> 
+                        <input type="text" name="divinite" size="15" maxlength="15" id="divinite">
+                    </div>
         
-        <h2 id="label_age">AGE</h2> 
-        <input type="text" name="age" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influenceAge()" id="age_sai">
+                    <div class="col-lg-2">
+                        <h2 id="label_origine">ORIGINE</h2> 
+                        <input type="text" name="origine" size="15" maxlength="15" id="origine">
+                    </div>
+                </div>
         
-        <h2 id="label_taille">TAILLE</h2> 
-        <select id="taille" name="taille">
-        </select>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h2 id="label_race">RACE</h2> 
+                        <select id="race" name="race" onChange="influenceRace()">
+                            <option></option>
+                            <option>Humain</option>
+                            <option>Demi-elfe</option>
+                            <option>Demi-orque</option>
+                            <option>Elfe</option>
+                            <option>Gnome</option>
+                            <option>Halfelin</option>
+                            <option>Nain</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <h2 id="label_cat_taille">CATEGORIE DE TAILLE</h2> 
+                        <select id="cat_taille">
+<!--                        <option value="I">Infime (I)</option>
+                            <option value="Min">Minuscule (Min)</option>
+                            <option value="TP">Très petite (TP)</option>
+                            <option value="P">Petite (P)</option> -->
+                            <option value="M">Moyenne (M)</option>
+<!--                        <option value="Gh">Grande (G) (haute)</option>
+                            <option value="Gl">Grande (G) (longue)</option>
+                            <option value="TGh">Très grande (TG) (haute)</option>
+                            <option value="TGl">Très grande (TG) (longue)</option>
+                            <option value="Gigh">Gigantesque (Gig) (haute)</option>
+                            <option value="Gigl">Gigantesque (Gig) (longue)</option>
+                            <option value="Ch">Colossale (C) (haute)</option>
+                            <option value="Cl">Colossale (C) (longue)</option> -->
+                        </select>
+                    </div>
         
-        <h2 id="label_poids">POIDS</h2> 
-        <select id="poids" name="poids">
-        </select>
+                    <div class="col-lg-1">
+                        <h2 id="label_sexe">SEXE</h2>
+                        <select id="sexe" name="sexe" onChange="calculTaillePoids()">
+                            <option></option>
+                            <option>Masculin</option>
+                            <option>Féminin</option>
+                        </select>
+                    </div>
         
-        <h2 id="label_cheveux">CHEVEUX</h2> 
-        <select id="cheveux" name="cheveux">
-        </select>
+                    <div class="col-lg-1">
+                        <h2 id="label_age">AGE</h2> 
+                        <input type="text" name="age" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influenceAge()" id="age_sai">
+                    </div>
         
-        <h2 id="label_yeux">YEUX</h2> 
-        <select id="yeux" name="yeux">
-        </select>
+                    <div class="col-lg-1">
+                        <h2 id="label_taille">TAILLE</h2> 
+                        <input type="text" name="taille" size="4" maxlength="4" required pattern="[0-9,]{1,4}" onChange="influenceTaille()" id="taille_sai">
+                    </div>
+                
+                    <div class="col-lg-1">
+                        <h2 id="label_poids">POIDS</h2> 
+                        <input type="text" name="poids" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influencePoids()" id="poids_sai">
+                    </div>
         
+                    <div class="col-lg-1">
+                        <h2 id="label_cheveux">CHEVEUX</h2> 
+                        <select id="cheveux" name="cheveux">
+                            <option>Noir</option>
+                            <option>Brun</option>
+                            <option>Chatain</option>
+                            <option>Blond</option>
+                        </select>
+                    </div>
+        
+                    <div class="col-lg-1">
+                        <h2 id="label_yeux">YEUX</h2> 
+                        <select id="yeux" name="yeux">
+                            <option>Noirs</option>
+                            <option>Marons</option>
+                            <option>Verts</option>
+                            <option>Bleux</option>
+                            <option>Vairons</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        
+
+
+
         <table id="tab_carac">
             <tr id="caption_carac" class="caption"> 
                 <th>CHARACTE-RISTIQUE</th>
