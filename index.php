@@ -163,17 +163,17 @@
         
                     <div class="col-lg-1">
                         <h2 id="label_age">AGE</h2> 
-                        <input type="text" name="age" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influenceAge()" id="age_sai">
+                        <input type="text" name="age" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influenceAge()" id="saisie_age">
                     </div>
         
                     <div class="col-lg-1">
                         <h2 id="label_taille">TAILLE</h2> 
-                        <input type="text" name="taille" size="4" maxlength="4" required pattern="[0-9,]{1,4}" onChange="influenceTaille()" id="taille_sai">
+                        <input type="text" name="taille" size="4" maxlength="4" required pattern="[0-9,]{1,4}" onChange="influenceTaille()" id="saisie_taille">
                     </div>
                 
                     <div class="col-lg-1">
                         <h2 id="label_poids">POIDS</h2> 
-                        <input type="text" name="poids" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influencePoids()" id="poids_sai">
+                        <input type="text" name="poids" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influencePoids()" id="saisie_poids">
                     </div>
         
                     <div class="col-lg-1">
@@ -198,114 +198,433 @@
                     </div>
                 </div>
             </div>
+        </div>
         
+        <div class="row">
+            <div class="col-lg-4">
+                <table id="tab_carac">
+                    <tr id="caption_carac" class="caption"> 
+                        <th>CHARACTE-RISTIQUE</th>
+                        <th>VALEUR</th>
+                        <th>SAISIE</th>
+                        <th>MODIF.</th>
+                        <th>VALEUR TEMPORAIRE</th> 
+                        <th>MODIF. TEMPORAIRE</th>
+                    </tr>
 
-
-
-        <table id="tab_carac">
-            <tr id="caption_carac" class="caption"> 
-                <th>CHARACTE-RISTIQUE</th>
-                <th>VALEUR</th>
-                <th>SAISIE</th>
-                <th>MODIF.</th>
-                <th>VALEUR TEMPORAIRE</th> 
-                <th>MODIF. TEMPORAIRE</th>
-            </tr>
-
-            <tr>
-                <td><h2 id="force" class="font_white">FOR</h2></td>
-                <td id="for_val"></td>
-                <td><input type="text" name="for_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceFor()" id="for_sai"></td>
-                <td name="for_mod_race" id="for_mod"></td>
-                <td id="for_val_temp"></td>
-                <td id="for_mod_temp"></td>
-            </tr>
+                    <tr>
+                        <td><h2 id="force" class="font_white">FOR</h2></td>
+                        <td id="for_val"></td>
+                        <td><input type="text" name="for_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceFor()" id="for_saisie"></td>
+                        <td name="for_mod_race" id="for_mod"></td>
+                        <td id="for_val_temp"></td>
+                        <td id="for_mod_temp"></td>
+                    </tr>
         
-            <tr>
-                <td><h2 id="dextérité" class="font_white">DEX</h2></td>
-                <td id="dex_val"></td>
-                <td><input type="text" name="dex_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceDex()" id="dex_sai"></td>
-                <td name="dex_mod_race" id="dex_mod"></td>
-                <td id="dex_val_temp"></td>
-                <td id="dex_mod_temp"></td>
-            </tr>
+                    <tr>
+                        <td><h2 id="dextérité" class="font_white">DEX</h2></td>
+                        <td id="dex_val"></td>
+                        <td><input type="text" name="dex_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceDex()" id="dex_saisie"></td>
+                        <td name="dex_mod_race" id="dex_mod"></td>
+                        <td id="dex_val_temp"></td>
+                        <td id="dex_mod_temp"></td>
+                    </tr>
         
-            <tr>
-                <td><h2 id="constitution" class="font_white">CON</h2></td>
-                <td id="con_val"></td>
-                <td><input type="text" name="con_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCon()" id="con_sai"></td>
-                <td name="con_mod_race" id="con_mod"></td>
-                <td id="con_val_temp"></td>
-                <td id="con_mod_temp"></td>
-            </tr>
+                    <tr>
+                        <td><h2 id="constitution" class="font_white">CON</h2></td>
+                        <td id="con_val"></td>
+                        <td><input type="text" name="con_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCon()" id="con_saisie"></td>
+                        <td name="con_mod_race" id="con_mod"></td>
+                        <td id="con_val_temp"></td>
+                        <td id="con_mod_temp"></td>
+                    </tr>
         
-            <tr>
-                <td><h2 id="intelligence" class="font_white">INT</h2></td>
-                <td id="int_val"></td>
-                <td><input type="text" name="int_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceInt()" id="int_sai"></td>
-                <td name="int_mod_race" id="int_mod"></td>
-                <td id="int_val_temp"></td>
-                <td id="int_mod_temp"></td>
-            </tr>
+                    <tr>
+                        <td><h2 id="intelligence" class="font_white">INT</h2></td>
+                        <td id="int_val"></td>
+                        <td><input type="text" name="int_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceInt()" id="int_saisie"></td>
+                        <td name="int_mod_race" id="int_mod"></td>
+                        <td id="int_val_temp"></td>
+                        <td id="int_mod_temp"></td>
+                    </tr>
+            
+                    <tr>
+                        <td><h2 id="sagesse" class="font_white">SAG</h2></td>
+                        <td id="sag_val"></td>
+                        <td><input type="text" name="sag_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceSag()" id="sag_saisie"></td>
+                        <td name="sag_mod_race" id="sag_mod"></td>
+                        <td id="sag_val_temp"></td>
+                        <td id="sag_mod_temp"></td>
+                    </tr>
         
-            <tr>
-                <td><h2 id="sagesse" class="font_white">SAG</h2></td>
-                <td id="sag_val"></td>
-                <td><input type="text" name="sag_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceSag()" id="sag_sai"></td>
-                <td name="sag_mod_race" id="sag_mod"></td>
-                <td id="sag_val_temp"></td>
-                <td id="sag_mod_temp"></td>
-            </tr>
-        
-            <tr>
-                <td><h2 id="charisme" class="font_white">CHA</h2></td>
-                <td id="cha_val"></td>
-                <td><input type="text" name="cha_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCha()" id="cha_sai"></td>
-                <td name="cha_mod_race" id="cha_mod"></td>
-                <td id="cha_val_temp"></td>
-                <td id="cha_mod_temp"></td>
-            </tr>
-        </table>
+                    <tr>
+                        <td><h2 id="charisme" class="font_white">CHA</h2></td>
+                        <td id="cha_val"></td>
+                        <td><input type="text" name="cha_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCha()" id="cha_saisie"></td>
+                        <td name="cha_mod_race" id="cha_mod"></td>
+                        <td id="cha_val_temp"></td>
+                        <td id="cha_mod_temp"></td>
+                    </tr>
+                </table>
+            </div>
 
-        <h2 id="label_point_de_vie">PV</h2> 
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2 id="label_point_de_vie">PV</h2> 
+                    </div>
 
-        <h2 id="label_point_de_vie_total">PV</h2> 
-        <select id="point_de_vie_total" name="point_de_vie_total">
-        </select>
+                    <div class="col-lg-4">
+                        <h2 id="label_point_de_vie_total">Total</h2> 
+                        <input type="text" name="point_de_vie_total" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influencePv()" id="point_de_vie_total">
+                    </div>
         
-        <h2 id="label_rd">RD</h2> 
-        <select id="rd" name="rd">
-        </select>
+                    <div class="col-lg-4">
+                        <h2 id="label_rd">RD</h2> 
+                        <select id="rd" name="rd">
+                            <option>0</option>
+                            <option>1/-</option>
+                            <option>2/-</option>
+                            <option>3/-</option>
+                            <option>4/-</option>
+                            <option>5/-</option>
+                        </select>
+                    </div>
+                </div>
 
-        <h2 id="label_blessure">BLESSURES</h2> 
-        <select id="blessure" name="blessure">
-        </select>
+                <div class="row">
+                    <h2 id="label_blessure">BLESSURES</h2> 
+                    <input type="text" name="point_de_vie_actuel" size="3" maxlength="3" required pattern="[0-9]{1,3}" id="point_de_vie_actuel">
+                </div>
         
-        <h2 id="label_non_letaux">DEGATS NON LETAUX</h2> 
-        <select id="non_letaux" name="non_letaux">
-        </select>
+                <div class="row">
+                    <h2 id="label_non_letaux">DEGATS NON LETAUX</h2> 
+                    <input type="text" name="non_letaux" size="3" maxlength="3" required pattern="[0-9]{1,3}" id="non_letaux">
+                </div>
 
-        <table id="tab_init">
-            <tr id="caption_init" class="caption"> 
-                <th></th>
-                <th>TOTAL</th>
-                <th></th>
-                <th>MOD. DE DEXTERITE</th>
-                <th></th>
-                <th>MOD. DIVERS</th>
-            </tr>
+                <div class="row">
+                    <table id="tab_init">
+                        <tr id="caption_init" class="caption"> 
+                            <th></th>
+                            <th>TOTAL</th>
+                            <th></th>
+                            <th>MOD. DE DEXTERITE</th>
+                            <th></th>
+                            <th>MOD. DIVERS</th>
+                        </tr>
 
-            <tr>
-                <td><h2 id="lab_init" class="font_white">Mod. à l'INITIATIVE</h2></td>
-                <td id="init_total">0</td>
-                <td class="background_grey">=</td>
-                <td id="init_mod_dex"></td>
-                <td class="background_grey">+</td>
-                <td id="init_mod_div">
-                    <input type="text" name="init_mod_div_val" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="calculeInit()" id="init_mod_div_val">
-                </td>
-            </tr>
-        </table>
+                        <tr>
+                            <td><h2 id="lab_init" class="font_white">Mod. à l'INITIATIVE</h2></td>
+                            <td id="init_total">0</td>
+                            <td class="background_grey">=</td>
+                            <td id="init_mod_dex"></td>
+                            <td class="background_grey">+</td>
+                            <td id="init_mod_div">
+                                <input type="text" name="init_mod_div_val" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="calculeInit()" id="init_mod_div_val">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="row">
+                    <table id="tab_vd">
+                        <tr id="caption_vd" class="caption"> 
+                            <th>VD</th>
+                            <th>Mètres</th>
+                            <th>Cases</th>
+                            <th>Mètres</th>
+                            <th>Case</th>
+                            <th>Modif. Temporaire</th>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td id="vd_sans_armure_metre">
+                                <input type="text" name="vd_sans_armure_metre" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_sans_armure_metre">
+                            </td>
+                            <td id="vd_sans_armure_case">
+                                <input type="text" name="vd_sans_armure_case" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_sans_armure_case">
+                            </td>
+                            <td id="vd_avec_armure_metre">
+                                <input type="text" name="vd_avec_armure_metre" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_avec_armure_metre">
+                            </td>
+                            <td id="vd_avec_armure_case">
+                                <input type="text" name="vd_avec_armure_case" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_avec_armure_case">
+                            </td>
+                            <td id="vd_mod_divers">
+                                <input type="text" name="vd_mod_divers" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_mod_divers">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <table id="tab_vd">
+                        <tr id="caption_vd" class="caption"> 
+                            <th>VOL</th>
+                            <th>MANOEUVRABILITE</th>
+                            <th>NATATION</th>
+                            <th>ESCALADE</th>
+                            <th>CREUSEMENT</th>
+                        </tr>
+
+                        <tr>
+                            <td id="vd_vol">
+                                <input type="text" name="vd_vol" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_vol">
+                            </td>
+                            <td id="vd_manoeu">
+                                <input type="text" name="vd_manoeu" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_manoeu">
+                            </td>
+                            <td id="vd_nata">
+                                <input type="text" name="vd_nata" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_nata">
+                            </td>
+                            <td id="vd_escal">
+                                <input type="text" name="vd_escal" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_escal">
+                            </td>
+                            <td id="vd_creuse">
+                                <input type="text" name="vd_creuse" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_creuse">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <table id="competences">
+                        <tr>
+                            <td colspan="10"><h5 id="label_comp">COMPETENCES</h5></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td colspan="3" class="background_grey"><h2>NOM DE LA COMPETENCE</h2></td>
+                            <td class="background_grey"><h3>Bonus Total</h3></td>
+                            <td colspan="2" class="background_grey"><h3>MOD. DE CARACTERISTIQUE</h3></td>
+                            <td colspan="2" class="background_grey"><h3>RANG</h3></td>
+                            <td colspan="2" class="background_grey"><h3>MOD. DIVERS</h3></td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="acrobatie"><h2>O</h2></td>
+                            <td colspan="2" >Acrobatie</td>
+                            <td class="acrobatie" id="totalAcrobatie"></td>
+                            <td>=</td>
+                            <td class="carac">DEX</td>
+                            <td class="carac_dex" id="caracAcrobatie"></td>
+                            <td>+</td>
+                            <td>
+                                <select id="rangAcrobatie" name="rang_acrobatie" 
+                                onChange="calculeCompetence('totalAcrobatie','caracAcrobatie','rangAcrobatie','diversAcrobatie')">
+                                </select>
+                            </td>
+                            <td>+</td>
+                            <td>
+                                <input type="text" name="divers_acrobatie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 id="diversAcrobatie" 
+                                onChange="calculeCompetence('totalAcrobatie','caracAcrobatie','rangAcrobatie','diversAcrobatie')">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="artisanat_I"><h2>O</h2></td>
+                            <td>Artisanat</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="artisanat_II"><h2>O</h2></td>
+                            <td>Artisanat</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="artisanat_III"><h2>O</h2></td>
+                            <td>Artisanat</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="art_de_la_magie"><h2>O</h2></td>
+                            <td>Art de la magie</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="bluf"><h2>O</h2></td>
+                            <td>Bluf</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="connaissances_I"><h2>O</h2></td>
+                            <td>Connaissances</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="connaissances_II"><h2>O</h2></td>
+                            <td>Connaissances</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="connaissances_III"><h2>O</h2></td>
+                            <td>Connaissances</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="connaissances_IV"><h2>O</h2></td>
+                            <td>Connaissances</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="connaissances_V"><h2>O</h2></td>
+                            <td>Connaissances</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="connaissances_VI"><h2>O</h2></td>
+                            <td>Connaissances</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="connaissances_VII"><h2>O</h2></td>
+                            <td>Connaissances</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="connaissances_VIII"><h2>O</h2></td>
+                            <td>Connaissances</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="connaissances_IX"><h2>O</h2></td>
+                            <td>Connaissances</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="connaissances_X"><h2>O</h2></td>
+                            <td>Connaissances</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="déguisement"><h2>O</h2></td>
+                            <td>Déguisement</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="diplomatie"><h2>O</h2></td>
+                            <td>Diplomatie</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="discrétion"><h2>O</h2></td>
+                            <td>Discrétion</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="dressage"><h2>O</h2></td>
+                            <td>Dressage</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="equitation"><h2>O</h2></td>
+                            <td>Equitation</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="escalade"><h2>O</h2></td>
+                            <td>Escalade</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="escamotage"><h2>O</h2></td>
+                            <td>Escamotage</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="estimation"><h2>O</h2></td>
+                            <td>Estimation</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="évasion"><h2>O</h2></td>
+                            <td>Evasion</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="intimidation"><h2>O</h2></td>
+                            <td>Intimidation</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="langues"><h2>O</h2></td>
+                            <td>Langues</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="natation"><h2>O</h2></td>
+                            <td>Natation</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="perception"><h2>O</h2></td>
+                            <td>Perception</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="premier_secours"><h2>O</h2></td>
+                            <td>Premier secours</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="profession_I"><h2>O</h2></td>
+                            <td>Profession</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="profession_II"><h2>O</h2></td>
+                            <td>Profession</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="psychologie"><h2>O</h2></td>
+                            <td>Psychologie</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="représentation_I"><h2>O</h2></td>
+                            <td>Représentation</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="représentation_II"><h2>O</h2></td>
+                            <td>Représentation</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="sabotage"><h2>O</h2></td>
+                            <td>Sabotage</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="survie"><h2>O</h2></td>
+                            <td>Survie</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="utilisation_d_objets_magiques"><h2>O</h2></td>
+                            <td>Utilisation d'objets magiques</td>
+                        </tr>
+
+                        <tr>
+                            <td class="de_classe" id="vol"><h2>O</h2></td>
+                            <td>Vol</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="06"><h2>@ Compétence de classe</h2></td>
+                            <td colspan="05"><h2>* Formation nécessaire</h2></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
         
         <table id="tab_ca">
             <tr id="caption_ca" class="caption"> 
@@ -560,235 +879,6 @@
             </tr>
         </table>
 
-        <table id="competences">
-            <tr>
-                <td colspan="10"><h5 id="label_comp">COMPETENCES</h5></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td colspan="3" class="background_grey"><h2>NOM DE LA COMPETENCE</h2></td>
-                <td class="background_grey"><h3>Bonus Total</h3></td>
-                <td colspan="2" class="background_grey"><h3>MOD. DE CARACTERISTIQUE</h3></td>
-                <td colspan="2" class="background_grey"><h3>RANG</h3></td>
-                <td colspan="2" class="background_grey"><h3>MOD. DIVERS</h3></td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="acrobatie"><h2>O</h2></td>
-                <td colspan="2" >Acrobatie</td>
-                <td class="acrobatie" id="totalAcrobatie"></td>
-                <td>=</td>
-                <td class="carac">DEX</td>
-                <td class="carac_dex" id="caracAcrobatie"></td>
-                <td>+</td>
-                <td>
-                    <select id="rangAcrobatie" name="rang_acrobatie" 
-                    onChange="calculeCompetence('totalAcrobatie','caracAcrobatie','rangAcrobatie','diversAcrobatie')">
-                    </select>
-                </td>
-                <td>+</td>
-                <td>
-                    <input type="text" name="divers_acrobatie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 id="diversAcrobatie" 
-                    onChange="calculeCompetence('totalAcrobatie','caracAcrobatie','rangAcrobatie','diversAcrobatie')">
-                </td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="artisanat_I"><h2>O</h2></td>
-                <td>Artisanat</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="artisanat_II"><h2>O</h2></td>
-                <td>Artisanat</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="artisanat_III"><h2>O</h2></td>
-                <td>Artisanat</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="art_de_la_magie"><h2>O</h2></td>
-                <td>Art de la magie</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="bluf"><h2>O</h2></td>
-                <td>Bluf</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="connaissances_I"><h2>O</h2></td>
-                <td>Connaissances</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="connaissances_II"><h2>O</h2></td>
-                <td>Connaissances</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="connaissances_III"><h2>O</h2></td>
-                <td>Connaissances</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="connaissances_IV"><h2>O</h2></td>
-                <td>Connaissances</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="connaissances_V"><h2>O</h2></td>
-                <td>Connaissances</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="connaissances_VI"><h2>O</h2></td>
-                <td>Connaissances</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="connaissances_VII"><h2>O</h2></td>
-                <td>Connaissances</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="connaissances_VIII"><h2>O</h2></td>
-                <td>Connaissances</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="connaissances_IX"><h2>O</h2></td>
-                <td>Connaissances</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="connaissances_X"><h2>O</h2></td>
-                <td>Connaissances</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="déguisement"><h2>O</h2></td>
-                <td>Déguisement</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="diplomatie"><h2>O</h2></td>
-                <td>Diplomatie</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="discrétion"><h2>O</h2></td>
-                <td>Discrétion</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="dressage"><h2>O</h2></td>
-                <td>Dressage</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="equitation"><h2>O</h2></td>
-                <td>Equitation</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="escalade"><h2>O</h2></td>
-                <td>Escalade</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="escamotage"><h2>O</h2></td>
-                <td>Escamotage</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="estimation"><h2>O</h2></td>
-                <td>Estimation</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="évasion"><h2>O</h2></td>
-                <td>Evasion</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="intimidation"><h2>O</h2></td>
-                <td>Intimidation</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="langues"><h2>O</h2></td>
-                <td>Langues</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="natation"><h2>O</h2></td>
-                <td>Natation</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="perception"><h2>O</h2></td>
-                <td>Perception</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="premier_secours"><h2>O</h2></td>
-                <td>Premier secours</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="profession_I"><h2>O</h2></td>
-                <td>Profession</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="profession_II"><h2>O</h2></td>
-                <td>Profession</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="psychologie"><h2>O</h2></td>
-                <td>Psychologie</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="représentation_I"><h2>O</h2></td>
-                <td>Représentation</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="représentation_II"><h2>O</h2></td>
-                <td>Représentation</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="sabotage"><h2>O</h2></td>
-                <td>Sabotage</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="survie"><h2>O</h2></td>
-                <td>Survie</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="utilisation_d_objets_magiques"><h2>O</h2></td>
-                <td>Utilisation d'objets magiques</td>
-            </tr>
-
-            <tr>
-                <td class="de_classe" id="vol"><h2>O</h2></td>
-                <td>Vol</td>
-            </tr>
-
-            <tr>
-                <td colspan="06"><h2>@ Compétence de classe</h2></td>
-                <td colspan="05"><h2>* Formation nécessaire</h2></td>
-            </tr>
-        </table>
 
         <input type="button" name="Somme compétences" value="Somme compétences" id="Somme_compétences" onClick="calculeSommeCompetences()">
 
