@@ -201,131 +201,426 @@
         </div>
         
         <div class="row">
-            <div class="col-lg-4">
-                <table id="tab_carac">
-                    <tr id="caption_carac" class="caption"> 
-                        <th>CHARACTE-RISTIQUE</th>
-                        <th>VALEUR</th>
-                        <th>SAISIE</th>
-                        <th>MODIF.</th>
-                        <th>VALEUR TEMPORAIRE</th> 
-                        <th>MODIF. TEMPORAIRE</th>
-                    </tr>
+            <div class="col-lg-8">
+                <div class="col-lg-6">
+                    <table id="tab_carac">
+                        <tr id="caption_carac" class="caption"> 
+                            <th>CHARACTE-RISTIQUE</th>
+                            <th>VALEUR</th>
+                            <th>SAISIE</th>
+                            <th>MODIF.</th>
+                            <th>VALEUR TEMPORAIRE</th> 
+                            <th>MODIF. TEMPORAIRE</th>
+                        </tr>
 
-                    <tr>
-                        <td><h2 id="force" class="font_white">FOR</h2></td>
-                        <td id="for_val"></td>
-                        <td><input type="text" name="for_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceFor()" id="for_saisie"></td>
-                        <td name="for_mod_race" id="for_mod"></td>
-                        <td id="for_val_temp"></td>
-                        <td id="for_mod_temp"></td>
-                    </tr>
-        
-                    <tr>
-                        <td><h2 id="dextérité" class="font_white">DEX</h2></td>
-                        <td id="dex_val"></td>
-                        <td><input type="text" name="dex_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceDex()" id="dex_saisie"></td>
-                        <td name="dex_mod_race" id="dex_mod"></td>
-                        <td id="dex_val_temp"></td>
-                        <td id="dex_mod_temp"></td>
-                    </tr>
-        
-                    <tr>
-                        <td><h2 id="constitution" class="font_white">CON</h2></td>
-                        <td id="con_val"></td>
-                        <td><input type="text" name="con_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCon()" id="con_saisie"></td>
-                        <td name="con_mod_race" id="con_mod"></td>
-                        <td id="con_val_temp"></td>
-                        <td id="con_mod_temp"></td>
-                    </tr>
-        
-                    <tr>
-                        <td><h2 id="intelligence" class="font_white">INT</h2></td>
-                        <td id="int_val"></td>
-                        <td><input type="text" name="int_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceInt()" id="int_saisie"></td>
-                        <td name="int_mod_race" id="int_mod"></td>
-                        <td id="int_val_temp"></td>
-                        <td id="int_mod_temp"></td>
-                    </tr>
+                        <tr>
+                            <td><h2 id="force" class="font_white">FOR</h2></td>
+                            <td id="for_val"></td>
+                            <td><input type="text" name="for_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceFor()" id="for_saisie"></td>
+                            <td name="for_mod_race" id="for_mod"></td>
+                            <td id="for_val_temp"></td>
+                            <td id="for_mod_temp"></td>
+                        </tr>
             
-                    <tr>
-                        <td><h2 id="sagesse" class="font_white">SAG</h2></td>
-                        <td id="sag_val"></td>
-                        <td><input type="text" name="sag_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceSag()" id="sag_saisie"></td>
-                        <td name="sag_mod_race" id="sag_mod"></td>
-                        <td id="sag_val_temp"></td>
-                        <td id="sag_mod_temp"></td>
-                    </tr>
-        
-                    <tr>
-                        <td><h2 id="charisme" class="font_white">CHA</h2></td>
-                        <td id="cha_val"></td>
-                        <td><input type="text" name="cha_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCha()" id="cha_saisie"></td>
-                        <td name="cha_mod_race" id="cha_mod"></td>
-                        <td id="cha_val_temp"></td>
-                        <td id="cha_mod_temp"></td>
-                    </tr>
-                </table>
-            </div>
+                        <tr>
+                            <td><h2 id="dextérité" class="font_white">DEX</h2></td>
+                            <td id="dex_val"></td>
+                            <td><input type="text" name="dex_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceDex()" id="dex_saisie"></td>
+                            <td name="dex_mod_race" id="dex_mod"></td>
+                            <td id="dex_val_temp"></td>
+                            <td id="dex_mod_temp"></td>
+                        </tr>
+            
+                        <tr>
+                            <td><h2 id="constitution" class="font_white">CON</h2></td>
+                            <td id="con_val"></td>
+                            <td><input type="text" name="con_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCon()" id="con_saisie"></td>
+                            <td name="con_mod_race" id="con_mod"></td>
+                            <td id="con_val_temp"></td>
+                            <td id="con_mod_temp"></td>
+                        </tr>
+            
+                        <tr>
+                            <td><h2 id="intelligence" class="font_white">INT</h2></td>
+                            <td id="int_val"></td>
+                            <td><input type="text" name="int_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceInt()" id="int_saisie"></td>
+                            <td name="int_mod_race" id="int_mod"></td>
+                            <td id="int_val_temp"></td>
+                            <td id="int_mod_temp"></td>
+                        </tr>
+                
+                        <tr>
+                            <td><h2 id="sagesse" class="font_white">SAG</h2></td>
+                            <td id="sag_val"></td>
+                            <td><input type="text" name="sag_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceSag()" id="sag_saisie"></td>
+                            <td name="sag_mod_race" id="sag_mod"></td>
+                            <td id="sag_val_temp"></td>
+                            <td id="sag_mod_temp"></td>
+                        </tr>
+            
+                        <tr>
+                            <td><h2 id="charisme" class="font_white">CHA</h2></td>
+                            <td id="cha_val"></td>
+                            <td><input type="text" name="cha_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCha()" id="cha_saisie"></td>
+                            <td name="cha_mod_race" id="cha_mod"></td>
+                            <td id="cha_val_temp"></td>
+                            <td id="cha_mod_temp"></td>
+                        </tr>
+                    </table>
+                </div>
 
-            <div class="col-lg-4">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h2 id="label_point_de_vie">PV</h2> 
+                        </div>
+
+                        <div class="col-lg-4">
+                            <h2 id="label_point_de_vie_total">Total</h2> 
+                            <input type="text" name="point_de_vie_total" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influencePv()" id="point_de_vie_total">
+                        </div>
+        
+                        <div class="col-lg-4">
+                            <h2 id="label_rd">RD</h2> 
+                            <select id="rd" name="rd">
+                                <option>0</option>
+                                <option>1/-</option>
+                                <option>2/-</option>
+                                <option>3/-</option>
+                                <option>4/-</option>
+                                <option>5/-</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h2 id="label_blessure">BLESSURES</h2> 
+                        <input type="text" name="point_de_vie_actuel" size="3" maxlength="3" required pattern="[0-9]{1,3}" id="point_de_vie_actuel">
+                    </div>
+        
+                    <div class="row">
+                        <h2 id="label_non_letaux">DEGATS NON LETAUX</h2> 
+                        <input type="text" name="non_letaux" size="3" maxlength="3" required pattern="[0-9]{1,3}" id="non_letaux">
+                    </div>
+
+                    <div class="row">
+                        <table id="tab_init">
+                            <tr id="caption_init" class="caption"> 
+                                <th></th>
+                                <th>TOTAL</th>
+                                <th></th>
+                                <th>MOD. DE DEXTERITE</th>
+                                <th></th>
+                                <th>MOD. DIVERS</th>
+                            </tr>
+
+                            <tr>
+                                <td><h2 id="lab_init" class="font_white">Mod. à l'INITIATIVE</h2></td>
+                                <td id="init_total">0</td>
+                                <td class="background_grey">=</td>
+                                <td id="init_mod_dex"></td>
+                                <td class="background_grey">+</td>
+                                <td id="init_mod_div">
+                                    <input type="text" name="init_mod_div_val" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="calculeInit()" id="init_mod_div_val">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
                 <div class="row">
-                    <div class="col-lg-4">
-                        <h2 id="label_point_de_vie">PV</h2> 
+                    <table id="tab_ca">
+                        <tr id="caption_ca" class="caption"> 
+                            <th></th>
+                            <th>TOTAL</th>
+                            <th></th>
+                            <th>ARMURE DE BASE</th>
+                            <th></th>
+                            <th>BONUS D'ARMURE</th>
+                            <th></th>
+                            <th>BONUS DE BOUCLIER</th>
+                            <th></th>
+                            <th>MOD. DE DEXTERITE</th>
+                            <th></th>
+                            <th>MOD. DE TAILLE</th>
+                            <th></th>
+                            <th>ARMURE NATURELLE</th>
+                            <th></th>
+                            <th>MOD DE PARADE</th>
+                            <th></th>
+                            <th>MOD DIVERS</th>
+                        </tr>
+                        
+                        <tr>
+                            <td><h2 id="ca" class="font_white">CA</h2></td>
+                            <td name="ca_total" id="ca_total">0</td>
+                            <td class="background_grey">=</td>
+                            <td name="ca_arm_base" id="ca_arm_base">10</td>
+                            <td class="background_grey">+</td>
+                            <td name="ca_bon_arm" id="ca_bon_arm">0</td>
+                            <td class="background_grey">+</td>
+                            <td name="ca_bon_bou" id="ca_bon_bou">0</td>
+                            <td class="background_grey">+</td>
+                            <td name="ca_mod_dex" id="ca_mod_dex">0</td>
+                            <td class="background_grey">+</td>
+                            <td name="ca_mod_tai" id="ca_mod_tai">0</td>
+                            <td class="background_grey">+</td>
+                            <td name="ca_arm_nat" id="ca_arm_nat">0</td>
+                            <td class="background_grey">+</td>
+                            <td name="ca_mod_par" id="ca_mod_par">0</td>
+                            <td class="background_grey">+</td>
+                            <td name="ca_mod_div" id="ca_mod_div">0</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h2 id="lab_ca_contact" class="font_white">CA de contact</h2>
+                        <p  id="val_ca_contact">0</p>
                     </div>
 
                     <div class="col-lg-4">
-                        <h2 id="label_point_de_vie_total">Total</h2> 
-                        <input type="text" name="point_de_vie_total" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influencePv()" id="point_de_vie_total">
+                        <h2 id="lab_pri_depourvu" class="font_white">CA pris au depourvu</h2>
+                        <p  id="val_pri_depourvu">0</p>
                     </div>
-        
-                    <div class="col-lg-4">
-                        <h2 id="label_rd">RD</h2> 
-                        <select id="rd" name="rd">
-                            <option>0</option>
-                            <option>1/-</option>
-                            <option>2/-</option>
-                            <option>3/-</option>
-                            <option>4/-</option>
-                            <option>5/-</option>
+
+                    <div class="col-lg-6">
+                        <h2 id="label_mod_part_ca" class="font_white">Modificateur particulier a la CA</h2> 
+                        <input type="text" name="mod part ca" size="20" maxlength="20" id="mod_part_ca">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <table id="tab_sau">
+                        <tr id="caption_sau" class="caption"> 
+                            <th>SAUVEGARDES</th>
+                            <th>TOTAL</th>
+                            <th></th>
+                            <th>BONUS DE BASE</th>
+                            <th></th>
+                            <th>MOD. DE CARAC.</th>
+                            <th></th>
+                            <th>MOD. MAGIQUE</th>
+                            <th></th>
+                            <th>MOD. DIVERS</th>
+                            <th></th>
+                            <th>MOD.TEMPORAIRE</th>
+                            <th></th>
+                            <th>MODIFICATEURS PARTICULIERS</th>
+                        </th>
+
+                        <tr>
+                            <td><h2 id="lab_ref" class="font_white">REFLEXES</h2></td>
+                            <td id="sau_total_ref"></td>
+                            <td class="font_white">=</td>
+                            <td id="sau_bon_bas_ref"></td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_car_ref"></td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_mag_ref">00</td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_div_ref">00</td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_tem_ref">
+                                <input type="text" name="mdré" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeReflexes()" id="mod_tem_ref">
+                            </td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_part_ref">
+                                <input type="text" name="mod_part_ref" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeReflexes()" id="mod_part_ref">
+                            </td>
+                         </tr>
+                    
+                        <tr>
+                            <td><h2 id="lab_vig" class="font_white">VIGEUR</h2></td>
+                            <td id="sau_total_vig"></td>
+                            <td class="font_white">=</td>
+                            <td id="sau_bon_bas_vig"></td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_car_vig"></td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_mag_vig">00</td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_div_vig">00</td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_tem_vig">
+                                <input type="text" name="mod_tem_vig" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVigeur()" id="mod_tem_vig">
+                            </td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_part_vig">
+                                <input type="text" name="mod_part_vig" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVigeur()" id="mod_part_vig">
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td><h2 id="lab_vol" class="font_white">VOLONTE</h2></td>
+                            <td id="sau_total_vol"></td>
+                            <td class="font_white">=</td>
+                            <td id="sau_bon_bas_vol"></td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_car_vol"></td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_mag_vol">00</td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_div_vol">00</td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_tem_vol">
+                                <input type="text" name="mdvo" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVolonte()" id="mod_tem_vol">
+                            </td>
+                            <td class="font_white">+</td>
+                            <td id="sau_mod_part_vol">
+                                <input type="text" name="mod_part_vol" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVolonte()" id="mod_part_vol">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h2 id="label_bba">BONUS DE BASE A L'ATTAQUE</h2></td>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <p id="bba">0</p>
+                    </div>
+                    
+                    <div class="col-lg-3">
+                        <h2 id="label_rm">RESISTANCE A LA MAGIE</h2> 
+                    </div>
+
+                    <div class="col-lg-3">
+                        <input type="text" name="rm" size="3" maxlength="3" id="rm">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <table id="tab_bmo">
+                        <tr>
+                            <td><h2 id="lab_bmo" class="font_white">BMO</h2></td>
+                            <td id="bmo_total"></td>
+                            <td class="background_grey">=</td>
+                            <td id="bmo_bon_bas_att"></td>
+                            <td class="background_grey">+</td>
+                            <td id="bmo_mod_for"></td>
+                            <td class="background_grey">+</td>
+                            <td id="bmo_mod_tai">00</td>
+                            <td class="background_grey">+</td>
+                            <td id="bmo_mod_div">00</td>
+                        </tr>
+
+                        <tr id="caption_bmo" class="caption"> 
+                            <th></th>
+                            <th>TOTAL</th>
+                            <th></th>
+                            <th>B B à L'ATTAQUE</th>
+                            <th></th>
+                            <th>MOD. DE FORCE</th>
+                            <th></th>
+                            <th>MOD. DE TAILLE</th>
+                            <th></th>
+                            <th>MOD. DIVERS</th>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <table id="tab_dmd">
+                        <tr>
+                            <td><h2 id="lab_dmd" class="font_white">DMD</h2></td>
+                            <td id="dmd_total"></td>
+                            <td class="background_grey">=</td>
+                            <td id="dmd_bon_bas_att"></td>
+                            <td class="background_grey">+</td>
+                            <td id="dmd_mod_for"></td>
+                            <td class="background_grey">+</td>
+                            <td id="dmd_mod_dex"></td>
+                            <td class="background_grey">+</td>
+                            <td id="dmd_mod_tai">00</td>
+                            <td class="background_grey">+</td>
+                            <td id="dmd_mod_div">10</td>
+                        </tr>
+
+                        <tr id="caption_bmo" class="caption"> 
+                            <th></th>
+                            <th>TOTAL</th>
+                            <th></th>
+                            <th>B B à L'ATTAQUE</th>
+                            <th></th>
+                            <th>MOD. DE FORCE</th>
+                            <th></th>
+                            <th>MOD. DE DEXTERITE</th>
+                            <th></th>
+                            <th>MOD. DE TAILLE</th>
+                            <th></th>
+                            <th></th>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 id="label_famille_arme_I">FAMILLE D'ARME</h2> 
+                        <select id="famille_arme_I" name="famille_arme" onChange="choixFamilleArme('maniement_arme_I',document.form.famille_arme_I,document.form.maniement_arme_I)">
+                            <option></option>
+                            <option value="armes_courantes">Armes courantes</option>
+                            <option value="armes_de_guerre">Arme de guerre</option>
+                            <option value="armes_exotiques">Arme exotiques</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h2 id="label_maniement_arme_I">MANIEMENT</h2> 
+                        <select id="maniement_arme_I" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_I,'arme_I',document.form.maniement_arme_I,document.form.arme_I)">
                         </select>
                     </div>
                 </div>
 
                 <div class="row">
-                    <h2 id="label_blessure">BLESSURES</h2> 
-                    <input type="text" name="point_de_vie_actuel" size="3" maxlength="3" required pattern="[0-9]{1,3}" id="point_de_vie_actuel">
-                </div>
-        
-                <div class="row">
-                    <h2 id="label_non_letaux">DEGATS NON LETAUX</h2> 
-                    <input type="text" name="non_letaux" size="3" maxlength="3" required pattern="[0-9]{1,3}" id="non_letaux">
-                </div>
-
-                <div class="row">
-                    <table id="tab_init">
-                        <tr id="caption_init" class="caption"> 
-                            <th></th>
-                            <th>TOTAL</th>
-                            <th></th>
-                            <th>MOD. DE DEXTERITE</th>
-                            <th></th>
-                            <th>MOD. DIVERS</th>
+                    <table id="tab_arme_a_I">
+                        <tr>
+                            <td colspan="3"><h2 class="font_white">ATTAQUE</h2></td>
+                            <td><h3 class="font_white">BONUS A L'ATTAQUE</h3></td>
+                            <td><h3 class="font_white">CRITIQUE</h3></td>
                         </tr>
 
                         <tr>
-                            <td><h2 id="lab_init" class="font_white">Mod. à l'INITIATIVE</h2></td>
-                            <td id="init_total">0</td>
-                            <td class="background_grey">=</td>
-                            <td id="init_mod_dex"></td>
-                            <td class="background_grey">+</td>
-                            <td id="init_mod_div">
-                                <input type="text" name="init_mod_div_val" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="calculeInit()" id="init_mod_div_val">
+                            <td colspan="3">
+                                <select id="arme_I" name="arme" onChange="choixArme(document.form.famille_arme_I,document.form.maniement_arme_I,document.form.arme_I,'degat_I','for_mod',document.form.bonus_I,'critique_I','portee_I','type_I','mun_I')">
+                                </select>
                             </td>
+                            <td class="text_center">
+                                <select id="bonus_I" name="bonus" onChange="calculeFrapper(document.form.famille_arme_I,document.form.arme_I,'degat_I','critique_I','portee_I','type_I','mun_I',document.form.maniement_arme_I,'bba','dex_mod','for_mod',document.form.bonus_I,'frapper_I')">
+                                    <option value=0></option>
+                                    <option value=0>0</option>
+                                    <option value=1>1</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5</option>
+                                </select>
+                            </td>
+                            <td class="text_center" id="critique_I"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <table id="tab_arme_b_I">
+                        <tr>
+                            <td><h3 class="label_description">TYPE</h3></td>
+                            <td><h3 class="label_description">PORTEE</h3></td>
+                            <td><h3 class="label_description">MUNITIONS</h3></td>
+                            <td colspan="2"><h3 class="label_description">DEGATS</h3></td>
+                          </tr>
+
+                        <tr>
+                            <td id="type_I">_</td id="frapper_I">
+                            <td id="portee_I">_</td>
+                            <td id="munitions_I">_</td>
+                            <td colspan="2" id="degats_I">_</td>
                         </tr>
                     </table>
                 </div>
             </div>
+
 
             <div class="col-lg-4">
                 <div class="row">
@@ -623,261 +918,14 @@
                 </div>
             </div>
         </div>
+                    
 
-
-        
-        <table id="tab_ca">
-            <tr id="caption_ca" class="caption"> 
-                <th></th>
-                <th>TOTAL</th>
-                <th></th>
-                <th>ARMURE DE BASE</th>
-                <th></th>
-                <th>BONUS D'ARMURE</th>
-                <th></th>
-                <th>BONUS DE BOUCLIER</th>
-                <th></th>
-                <th>MOD. DE DEXTERITE</th>
-                <th></th>
-                <th>MOD. DE TAILLE</th>
-                <th></th>
-                <th>ARMURE NATURELLE</th>
-                <th></th>
-                <th>MOD DE PARADE</th>
-                <th></th>
-                <th>MOD DIVERS</th>
-            </tr>
             
-            <tr>
-                <td><h2 id="ca" class="font_white">CA</h2></td>
-                <td name="ca_total" id="ca_total">0</td>
-                <td class="background_grey">=</td>
-                <td name="ca_arm_base" id="ca_arm_base">10</td>
-                <td class="background_grey">+</td>
-                <td name="ca_bon_arm" id="ca_bon_arm">0</td>
-                <td class="background_grey">+</td>
-                <td name="ca_bon_bou" id="ca_bon_bou">0</td>
-                <td class="background_grey">+</td>
-                <td name="ca_mod_dex" id="ca_mod_dex">0</td>
-                <td class="background_grey">+</td>
-                <td name="ca_mod_tai" id="ca_mod_tai">00</td>
-                <td class="background_grey">+</td>
-                <td name="ca_arm_nat" id="ca_arm_nat">00</td>
-                <td class="background_grey">+</td>
-                <td name="ca_mod_par" id="ca_mod_par">00</td>
-                <td class="background_grey">+</td>
-                <td name="ca_mod_div" id="ca_mod_div">0</td>
-            </tr>
-        </table>
+            
 
-        <h2 id="lab_ca_contact" class="font_white">CA de contact</h2>
-        <p  id="val_ca_contact">0</p>
 
-        <h2 id="lab_pri_depourvu" class="font_white">CA pris au depourvu</h2>
-        <p  id="val_pri_depourvu">0</p>
 
-        <h2 id="label_mod_part_ca" class="font_white">Modificateur particulier a la CA</h2> 
-        <input type="text" name="mod part ca" size="20" maxlength="20" id="mod_part_ca">
-        
-        <table id="tab_sau">
-            <tr id="caption_sau" class="caption"> 
-                <th>SAUVEGARDES</th>
-                <th>TOTAL</th>
-                <th></th>
-                <th>BONUS DE BASE</th>
-                <th></th>
-                <th>MOD. DE CARAC.</th>
-                <th></th>
-                <th>MOD. MAGIQUE</th>
-                <th></th>
-                <th>MOD. DIVERS</th>
-                <th></th>
-                <th>MOD.TEMPORAIRE</th>
-                <th></th>
-                <th>MODIFICATEURS PARTICULIERS</th>
-            </th>
 
-            <tr>
-                <td><h2 id="lab_ref" class="font_white">REFLEXES</h2></td>
-                <td id="sau_total_ref"></td>
-                <td class="font_white">=</td>
-                <td id="sau_bon_bas_ref"></td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_car_ref"></td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_mag_ref">00</td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_div_ref">00</td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_tem_ref">
-                    <input type="text" name="mdré" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeReflexes()" id="mod_tem_ref">
-                </td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_part_ref">
-                    <input type="text" name="mod_part_ref" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeReflexes()" id="mod_part_ref">
-                </td>
-             </tr>
-        
-            <tr>
-                <td><h2 id="lab_vig" class="font_white">VIGEUR</h2></td>
-                <td id="sau_total_vig"></td>
-                <td class="font_white">=</td>
-                <td id="sau_bon_bas_vig"></td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_car_vig"></td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_mag_vig">00</td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_div_vig">00</td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_tem_vig">
-                    <input type="text" name="mod_tem_vig" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVigeur()" id="mod_tem_vig">
-                </td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_part_vig">
-                    <input type="text" name="mod_part_vig" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVigeur()" id="mod_part_vig">
-                </td>
-            </tr>
-        
-            <tr>
-                <td><h2 id="lab_vol" class="font_white">VOLONTE</h2></td>
-                <td id="sau_total_vol"></td>
-                <td class="font_white">=</td>
-                <td id="sau_bon_bas_vol"></td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_car_vol"></td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_mag_vol">00</td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_div_vol">00</td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_tem_vol">
-                    <input type="text" name="mdvo" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVolonte()" id="mod_tem_vol">
-                </td>
-                <td class="font_white">+</td>
-                <td id="sau_mod_part_vol">
-                    <input type="text" name="mod_part_vol" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVolonte()" id="mod_part_vol">
-                </td>
-            </tr>
-        </table>
-
-        <h2 id="label_bba">BONUS DE BASE A L'ATTAQUE</h2></td>
-        <p id="bba">0</p>
-        
-        <h2 id="label_rm">RESISTANCE A LA MAGIE</h2> 
-        <input type="text" name="rm" size="3" maxlength="3" id="rm">
-        
-        <table id="tab_bmo">
-            <tr>
-                <td><h2 id="lab_bmo" class="font_white">bonus de base à l'attaque</h2></td>
-                <td id="bmo_total"></td>
-                <td class="background_grey">=</td>
-                <td id="bmo_bon_bas_att"></td>
-                <td class="background_grey">+</td>
-                <td id="bmo_mod_for"></td>
-                <td class="background_grey">+</td>
-                <td id="bmo_mod_tai">00</td>
-                <td class="background_grey">+</td>
-                <td id="bmo_mod_div">00</td>
-            </tr>
-
-            <tr id="caption_bmo" class="caption"> 
-                <th></th>
-                <th>TOTAL</th>
-                <th></th>
-                <th>B B à L'ATTAQUE</th>
-                <th></th>
-                <th>MOD. DE FORCE</th>
-                <th></th>
-                <th>MOD. DE TAILLE</th>
-                <th></th>
-                <th>MOD. DIVERS</th>
-        </table>
-
-        <table id="tab_dmd">
-            <tr>
-                <td><h2 id="lab_dmd" class="font_white">bonus de base à l'attaque</h2></td>
-                <td id="dmd_total"></td>
-                <td class="background_grey">=</td>
-                <td id="dmd_bon_bas_att"></td>
-                <td class="background_grey">+</td>
-                <td id="dmd_mod_for"></td>
-                <td class="background_grey">+</td>
-                <td id="dmd_mod_dex"></td>
-                <td class="background_grey">+</td>
-                <td id="dmd_mod_tai">00</td>
-                <td class="background_grey">+</td>
-                <td id="dmd_mod_div">10</td>
-            </tr>
-
-            <tr id="caption_bmo" class="caption"> 
-                <th></th>
-                <th>TOTAL</th>
-                <th></th>
-                <th>B B à L'ATTAQUE</th>
-                <th></th>
-                <th>MOD. DE FORCE</th>
-                <th></th>
-                <th>MOD. DE DEXTERITE</th>
-                <th></th>
-                <th>MOD. DE TAILLE</th>
-                <th></th>
-                <th></th>
-        </table>
-
-        <h2 id="label_famille_arme_I">FAMILLE</h2> 
-        <h2 id="label_famille_arme_b_I">D'ARME</h2> 
-        <select id="famille_arme_I" name="famille_arme" onChange="choixFamilleArme('maniement_arme_I',document.form.famille_arme_I,document.form.maniement_arme_I)">
-            <option></option>
-            <option value="armes_courantes">Armes courantes</option>
-            <option value="armes_de_guerre">Arme de guerre</option>
-            <option value="armes_exotiques">Arme exotiques</option>
-        </select>
-
-        <h2 id="label_maniement_arme_I">MANIEMENT</h2> 
-        <select id="maniement_arme_I" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_I,'arme_I',document.form.maniement_arme_I,document.form.arme_I)">
-        </select>
-
-        <table id="tab_arme_I">
-            <tr>
-                <td colspan="3"><h2 class="font_white">ATTAQUE</h2></td>
-                <td><h3 class="font_white">BONUS A L'ATTAQUE</h3></td>
-                <td><h3 class="font_white">CRITIQUE</h3></td>
-            </tr>
-
-            <tr>
-                <td colspan="3">
-                    <select id="arme_I" name="arme" onChange="choixArme(document.form.famille_arme_I,document.form.maniement_arme_I,document.form.arme_I,'degat_I','for_mod',document.form.bonus_I,'critique_I','portee_I','type_I','mun_I')">
-                    </select>
-                </td>
-                <td class="text_center">
-                    <select id="bonus_I" name="bonus" onChange="calculeFrapper(document.form.famille_arme_I,document.form.arme_I,'degat_I','critique_I','portee_I','type_I','mun_I',document.form.maniement_arme_I,'bba','dex_mod','for_mod',document.form.bonus_I,'frapper_I')">
-                        <option value=0></option>
-                        <option value=0>0</option>
-                        <option value=1>1</option>
-                        <option value=2>2</option>
-                        <option value=3>3</option>
-                        <option value=4>4</option>
-                        <option value=5>5</option>
-                    </select>
-                </td>
-                <td class="text_center" id="critique_I"></td>
-            </tr>
-
-            <tr>
-                <td><h3 class="label_description">TYPE</h3></td>
-                <td><h3 class="label_description">PORTEE</h3></td>
-                <td><h3 class="label_description">MUNITIONS</h3></td>
-                <td colspan="2"><h3 class="label_description">DEGATS</h3></td>
-              </tr>
-
-            <tr>
-                <td id="type_I">_</td id="frapper_I">
-                <td id="portee_I">_</td>
-                <td id="munitions_I">_</td>
-                <td colspan="2" id="degats_I">_</td>
-            </tr>
-        </table>
 
 
         <input type="button" name="Somme compétences" value="Somme compétences" id="Somme_compétences" onClick="calculeSommeCompetences()">
