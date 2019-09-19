@@ -353,7 +353,7 @@
                         
                         <tr>
                             <td><h2 id="ca" class="font_white">CA</h2></td>
-                            <td name="ca_total" id="ca_total">0</td>
+                            <td name="ca_total" id="ca_total">000</td>
                             <td class="background_grey">=</td>
                             <td name="ca_arm_base" id="ca_arm_base">10</td>
                             <td class="background_grey">+</td>
@@ -916,355 +916,116 @@
                         </tr>
                     </table>
                 </div>
+
+                <div class="row">
+                    <h2 id="label_modif_part">MODIFICATEUR PARTICULIERS</h2>
+                </div>
+
+                <div class="row">
+                    <input type="text" name="modif_part" size="60" maxlength="60" required id="modif_part">
+                </div>
+
+                <div class="row">
+                    <h2 id="label_langues">LANGUES</h2>
+                </div>
+
+                <div class="row">
+                    <input type="text" name="langues" size="60" maxlength="60" required id="langues">
+                </div>
+
+                <div class="row">
+                    <input type="button" name="Somme compétences" value="Somme compétences" id="Somme_compétences" onClick="calculeSommeCompetences()">
+                </div>
             </div>
         </div>
                     
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <table id="protection">
+                        <tr>
+                            <th>PROTECTION</th>
+                            <th>BONUS</th>
+                            <th>TYPE</th>
+                            <th>PENALITE</th>
+                            <th>ECHEC DE SORT</th>
+                            <th>POIDS</th>
+                            <th>PROPRIETE</th>
+                        </tr>
+
+                        <tr>
+                            <td id="protection_I">
+                                <select id="choix_protection_I" name="choix_protection_I" onChange="calculeProtection()">
+                                </select>
+                            </td>
+                            <td id="protection_bonus_I">a</td>
+                            <td id="protection_type_I">a</td>
+                            <td id="protection_penalite_I">a</td>
+                            <td id="protection_echec_I">a</td>
+                            <td id="protection_poids_I">a</td>
+                            <td id="protection_propriete_I">a</td>
+                        </tr>
+
+                        <tr>
+                            <td>TOTAUX</td>
+                            <td id="totaux_protection_bonus">0</td>
+                            <td id="totaux_protection_type">0</td>
+                            <td id="totaux_protection_penalite">0</td>
+                            <td id="totaux_protection_echec">0</td>
+                            <td id="totaux_protection_poids">0</td>
+                            <td id="totaux_protection_propriete">0</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <table id="equipement">
+                                <tr>
+                                    <td colspan="9"><h5 id="label_equip">EQUIPEMENT</h5></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="background_grey"><h3>OBJET</h3></td>
+                                    <td class="background_grey"><h3>POIDS</h3></td>
+                                </tr>
+
+                                <tr>
+                                    <td> 
+                                        <select name="objet_I" id="objet_I"></select>
+                                    </td>
+                                    <td> 
+                                        <select name="poids_I" id="poids_I"></select>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="row">
+                            poids
+                        </div>
+
+                        <div class="row">
+                            richesse
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+            </div>
+        </div>
 
             
-            
 
 
 
 
-
-
-        <input type="button" name="Somme compétences" value="Somme compétences" id="Somme_compétences" onClick="calculeSommeCompetences()">
-
-        <h2 id="label_modif_part">MODIFICATEUR PARTICULIERS</h2>
-        <input type="text" name="modif_part" size="60" maxlength="60" required id="modif_part">
-
-        <h2 id="label_langues">LANGUES</h2>
-        <input type="text" name="langues" size="60" maxlength="60" required id="langues">
-
-
-
-
-
-
-
-
-
-
-
-        <table id="equipement">
-            <tr>
-                <td colspan="9"><h5 id="label_equip">EQUIPEMENT</h5></td>
-            </tr>
-
-            <tr>
-                <td class="background_grey"><h3>OBJET</h3></td>
-                <td class="background_grey"><h3>EMPLACEMENT</h3></td>
-                <td class="background_grey"><h3>POIDS</h3></td>
-                <td></td>
-                <td class="background_grey"><h3>OBJET</h3></td>
-                <td class="background_grey"><h3>EMPLACEMENT</h3></td>
-                <td class="background_grey"><h3>POIDS</h3></td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <select name="objet_I" id="objet_I"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_I" id="emplacement_I"></select>
-                </td>
-                <td> 
-                    <select name="poids_I" id="poids_I"></select>
-                </td>
-                <td></td>
-                <td> 
-                    <select name="objet_XV" id="objet_XV"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XV" id="emplacement_XV"></select>
-                </td>
-                <td> 
-                    <select name="poids_XV" id="poids_XV"></select>
-                </td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <select name="objet_II" id="objet_II"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_II" id="emplacement_II"></select>
-                </td>
-                <td> 
-                    <select name="poids_II" id="poids_II"></select>
-                </td>
-                <td></td>
-                <td> 
-                    <select name="objet_XVI" id="objet_XVI"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XVI" id="emplacement_XVI"></select>
-                </td>
-                <td> 
-                    <select name="poids_XVI" id="poids_XVI"></select>
-                </td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <select name="objet_III" id="objet_III"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_III" id="emplacement_III"></select>
-                </td>
-                <td> 
-                    <select name="poids_III" id="poids_III"></select>
-                </td>
-                <td></td>
-                <td> 
-                    <select name="objet_XVII" id="objet_XVII"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XVII" id="emplacement_XVII"></select>
-                </td>
-                <td> 
-                    <select name="poids_XVII" id="poids_XVII"></select>
-                </td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <select name="objet_IV" id="objet_IV"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_IV" id="emplacement_IV"></select>
-                </td>
-                <td> 
-                    <select name="poids_IV" id="poids_IV"></select>
-                </td>
-                <td></td>
-                <td> 
-                    <select name="objet_XVIII" id="objet_XVIII"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XVIII" id="emplacement_XVIII"></select>
-                </td>
-                <td> 
-                    <select name="poids_XVIII" id="poids_XVIII"></select>
-                </td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <select name="objet_V" id="objet_V"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_V" id="emplacement_V"></select>
-                </td>
-                <td> 
-                    <select name="poids_V" id="poids_V"></select>
-                </td>
-                <td></td>
-                <td> 
-                    <select name="objet_XIX" id="objet_XIX"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XIX" id="emplacement_XIX"></select>
-                </td>
-                <td> 
-                    <select name="poids_XIX" id="poids_XIX"></select>
-                </td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <select name="objet_VI" id="objet_VI"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_VI" id="emplacement_VI"></select>
-                </td>
-                <td> 
-                    <select name="poids_VI" id="poids_VI"></select>
-                </td>
-                <td></td>
-                <td> 
-                    <select name="objet_XX" id="objet_XX"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XX" id="emplacement_XX"></select>
-                </td>
-                <td> 
-                    <select name="poids_XX" id="poids_XX"></select>
-                </td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <select name="objet_VII" id="objet_VII"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_VII" id="emplacement_VII"></select>
-                </td>
-                <td> 
-                    <select name="poids_VII" id="poids_VII"></select>
-                </td>
-                <td></td>
-                <td> 
-                    <select name="objet_XXI" id="objet_XXI"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XXI" id="emplacement_XXI"></select>
-                </td>
-                <td> 
-                    <select name="poids_XXI" id="poids_XXI"></select>
-                </td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <select name="objet_VIII" id="objet_VIII"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_VIII" id="emplacement_VIII"></select>
-                </td>
-                <td> 
-                    <select name="poids_VIII" id="poids_VIII"></select>
-                </td>
-                <td></td>
-                <td> 
-                    <select name="objet_XXII" id="objet_XXII"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XXII" id="emplacement_XXII"></select>
-                </td>
-                <td> 
-                    <select name="poids_XXII" id="poids_XXII"></select>
-                </td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <select name="objet_IX" id="objet_IX"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_IX" id="emplacement_IX"></select>
-                </td>
-                <td> 
-                    <select name="poids_IX" id="poids_IX"></select>
-                </td>
-                <td></td>
-                <td> 
-                    <select name="objet_XXIII" id="objet_XXIII"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XXIII" id="emplacement_XXIII"></select>
-                </td>
-                <td> 
-                    <select name="poids_XXIII" id="poids_XXIII"></select>
-                </td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <select name="objet_X" id="objet_X"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_X" id="emplacement_X"></select>
-                </td>
-                <td> 
-                    <select name="poids_X" id="poids_X"></select>
-                </td>
-                <td></td>
-                <td> 
-                    <select name="objet_XXIV" id="objet_XXIV"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XXIV" id="emplacement_XXIV"></select>
-                </td>
-                <td> 
-                    <select name="poids_XXIV" id="poids_XXIV"></select>
-                </td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <select name="objet_XI" id="objet_XI"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XI" id="emplacement_XI"></select>
-                </td>
-                <td> 
-                    <select name="poids_XI" id="poids_XI"></select>
-                </td>
-                <td></td>
-                <td> 
-                    <select name="objet_XXV" id="objet_XXV"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XXV" id="emplacement_XXV"></select>
-                </td>
-                <td> 
-                    <select name="poids_XXV" id="poids_XXV"></select>
-                </td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <select name="objet_XII" id="objet_XII"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XII" id="emplacement_XII"></select>
-                </td>
-                <td> 
-                    <select name="poids_XII" id="poids_XII"></select>
-                </td>
-                <td></td>
-                <td> 
-                    <select name="objet_XXVI" id="objet_XXVI"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XXVI" id="emplacement_XXVI"></select>
-                </td>
-                <td> 
-                    <select name="poids_XXVI" id="poids_XXVI"></select>
-                </td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <select name="objet_XIII" id="objet_XIII"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XIII" id="emplacement_XIII"></select>
-                </td>
-                <td> 
-                    <select name="poids_XIII" id="poids_XIII"></select>
-                </td>
-                <td></td>
-                <td> 
-                    <select name="objet_XXVII" id="objet_XXVII"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XXVII" id="emplacement_XXVII"></select>
-                </td>
-                <td> 
-                    <select name="poids_XXVII" id="poids_XXVII"></select>
-                </td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <select name="objet_XIV" id="objet_XIV"></select>
-                </td>
-                <td> 
-                    <select name="emplacement_XIV" id="emplacement_XIV"></select>
-                </td>
-                <td> 
-                    <select name="poids_XIV" id="poids_XIV"></select>
-                </td>
-                <td></td>
-                <td>
-                    <input type="button" name="Somme poids" value="Somme poids" id="Somme_poids" onClick="calculeSommepoids()">
-                </td>
-                <td>POIDS TOTAL PORTE</td>
-                <td id="poidsTotalPorte">0</td>
-            </tr>
-        </table>
 
         <table id="capaciteDeCharge">
             <tr>
