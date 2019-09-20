@@ -570,7 +570,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <h2 id="label_famille_arme_I">FAMILLE D'ARME</h2> 
-                        <select id="famille_arme_I" name="famille_arme" onChange="choixFamilleArme('maniement_arme_I',document.form.famille_arme_I,document.form.maniement_arme_I)">
+                        <select id="famille_arme_I" name="famille_arme_I" onChange="choixFamilleArme('maniement_arme_I',document.form.famille_arme_I,document.form.maniement_arme_I)">
                             <option></option>
                             <option value="armes_courantes">Armes courantes</option>
                             <option value="armes_de_guerre">Arme de guerre</option>
@@ -596,7 +596,7 @@
 
                             <tr>
                                 <td colspan="3">
-                                    <select id="arme_I" name="arme" onChange="choixArme(document.form.famille_arme_I,document.form.maniement_arme_I,document.form.arme_I,'degat_I','for_mod',document.form.bonus_I,'critique_I','portee_I','type_I','mun_I')">
+                                    <select id="arme_I" name="arme_I" onChange="choixArme(document.form.famille_arme_I,document.form.maniement_arme_I,document.form.arme_I,'degat_I','for_mod',document.form.bonus_I,'critique_I','portee_I','type_I','mun_I')">
                                     </select>
                                 </td>
                                 <td class="text_center">
@@ -635,6 +635,76 @@
                         </table>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 id="label_famille_arme_II">FAMILLE D'ARME</h2> 
+                        <select id="famille_arme_II" name="famille_arme_II" onChange="choixFamilleArme('maniement_arme_II',document.form.famille_arme_II,document.form.maniement_arme_II)">
+                            <option></option>
+                            <option value="armes_courantes">Armes courantes</option>
+                            <option value="armes_de_guerre">Arme de guerre</option>
+                            <option value="armes_exotiques">Arme exotiques</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h2 id="label_maniement_arme_I">MANIEMENT</h2> 
+                        <select id="maniement_arme_I" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_I,'arme_I',document.form.maniement_arme_I,document.form.arme_I)">
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table id="tab_arme_a_II">
+                            <tr>
+                                <td colspan="3"><h2 class="font_white">ATTAQUE</h2></td>
+                                <td><h3 class="font_white">BONUS A L'ATTAQUE</h3></td>
+                                <td><h3 class="font_white">CRITIQUE</h3></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3">
+                                    <select id="arme_II" name="arme_II" onChange="choixArme(document.form.famille_arme_II,document.form.maniement_arme_II,document.form.arme_II,'degat_II','for_mod',document.form.bonus_II,'critique_II','portee_II','type_II','mun_II')">
+                                    </select>
+                                </td>
+                                <td class="text_center">
+                                    <select id="bonus_II" name="bonus" onChange="calculeFrapper(document.form.famille_arme_II,document.form.arme_II,'degat_II','critique_II','portee_II','type_II','mun_II',document.form.maniement_arme_II,'bba','dex_mod','for_mod',document.form.bonus_II,'frapper_II')">
+                                        <option value=0></option>
+                                        <option value=0>0</option>
+                                        <option value=1>1</option>
+                                        <option value=2>2</option>
+                                        <option value=3>3</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5</option>
+                                    </select>
+                                </td>
+                                <td class="text_center" id="critique_II"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table id="tab_arme_b_I">
+                            <tr>
+                                <td><h3 class="label_description">TYPE</h3></td>
+                                <td><h3 class="label_description">PORTEE</h3></td>
+                                <td><h3 class="label_description">MUNITIONS</h3></td>
+                                <td colspan="2"><h3 class="label_description">DEGATS</h3></td>
+                            </tr>
+
+                            <tr>
+                                <td id="type_I">_</td id="frapper_I">
+                                <td id="portee_I">_</td>
+                                <td id="munitions_I">_</td>
+                                <td colspan="2" id="degats_I">_</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
             </div>
 
             <div class="col-lg-4">
@@ -1312,98 +1382,131 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <table id="table_sorts">
+                        <table id="table_dom_spe">
                             <tr>
-                                <td colspan="6" id="label_DOM8SPE"><h5>DOMAINES/SPECIALISATION</h5></td>
+                                <td colspan="9" id="label_DOM/SPE"><h5>DOMAINES/SPECIALISATION</h5></td>
+                                <td><select name="dom_spe" id="dom_spe"></select></td>
                             </tr>
 
                             <tr>
-                                <td class="background_grey">SORTS CONNUS</td>
-                                <td class="background_grey">DD DES SORTS</td>
-                                <td class="background_grey" colspan="2">NIVEAU</td>
-                                <td class="background_grey">SORTS/JOUR</td>
-                                <td class="background_grey">SORTS EN BONUS</td>
+                                <td>0</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
+                            <tr><td><select name="dom_spe_01" id="dom_spe_01"></select></td></tr>
+                            <tr><td><select name="dom_spe_02" id="dom_spe_02"></select></td></tr>
+                            <tr><td><select name="dom_spe_03" id="dom_spe_03"></select></td></tr>
+                            <tr><td><select name="dom_spe_04" id="dom_spe_04"></select></td></tr>
+                            <tr><td><select name="dom_spe_05" id="dom_spe_05"></select></td></tr>
+                            <tr><td><select name="dom_spe_06" id="dom_spe_06"></select></td></tr>
+                            <tr><td><select name="dom_spe_07" id="dom_spe_07"></select></td></tr>
+                            <tr><td><select name="dom_spe_08" id="dom_spe_08"></select></td></tr>
 
                             <tr>
-                                <td id="sorts_connus_0"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
-                                <td id="dd_des_sorts_0"></td>
-                                <td class="background_grey" colspan="2">0</td>
-                                <td id="sorts_jour_0"></td>
-                                <td id="sorts_en_bonus_0"></td>
+                                <td>1</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
+                            <tr><td><select name="dom_spe_11" id="dom_spe_11"></select></td></tr>
+                            <tr><td><select name="dom_spe_12" id="dom_spe_12"></select></td></tr>
+                            <tr><td><select name="dom_spe_13" id="dom_spe_13"></select></td></tr>
+                            <tr><td><select name="dom_spe_14" id="dom_spe_14"></select></td></tr>
+                            <tr><td><select name="dom_spe_15" id="dom_spe_15"></select></td></tr>
+                            <tr><td><select name="dom_spe_16" id="dom_spe_16"></select></td></tr>
+                            <tr><td><select name="dom_spe_17" id="dom_spe_17"></select></td></tr>
+                            <tr><td><select name="dom_spe_18" id="dom_spe_18"></select></td></tr>
 
                             <tr>
-                                <td id="sorts_connus_I"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
-                                <td id="dd_des_sorts_I"></td>
-                                <td class="background_grey" colspan="2">1er</td>
-                                <td id="sorts_jour_I"></td>
-                                <td id="sorts_en_bonus_I"></td>
+                                <td>2</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
+                            <tr><td><select name="dom_spe_21" id="dom_spe_21"></select></td></tr>
+                            <tr><td><select name="dom_spe_22" id="dom_spe_22"></select></td></tr>
+                            <tr><td><select name="dom_spe_23" id="dom_spe_23"></select></td></tr>
+                            <tr><td><select name="dom_spe_24" id="dom_spe_24"></select></td></tr>
+                            <tr><td><select name="dom_spe_25" id="dom_spe_25"></select></td></tr>
+                            <tr><td><select name="dom_spe_26" id="dom_spe_26"></select></td></tr>
+                            <tr><td><select name="dom_spe_27" id="dom_spe_27"></select></td></tr>
+                            <tr><td><select name="dom_spe_28" id="dom_spe_28"></select></td></tr>
 
                             <tr>
-                                <td id="sorts_connus_II"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
-                                <td id="dd_des_sorts_II"></td>
-                                <td class="background_grey" colspan="2">2e</td>
-                                <td id="sorts_jour_II"></td>
-                                <td id="sorts_en_bonus_II"></td>
+                                <td>3</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
+                            <tr><td><select name="dom_spe_31" id="dom_spe_31"></select></td></tr>
+                            <tr><td><select name="dom_spe_32" id="dom_spe_32"></select></td></tr>
+                            <tr><td><select name="dom_spe_33" id="dom_spe_33"></select></td></tr>
+                            <tr><td><select name="dom_spe_34" id="dom_spe_34"></select></td></tr>
+                            <tr><td><select name="dom_spe_35" id="dom_spe_35"></select></td></tr>
+                            <tr><td><select name="dom_spe_36" id="dom_spe_36"></select></td></tr>
+                            <tr><td><select name="dom_spe_37" id="dom_spe_37"></select></td></tr>
+                            <tr><td><select name="dom_spe_38" id="dom_spe_38"></select></td></tr>
 
                             <tr>
-                                <td id="sorts_connus_III"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
-                                <td id="dd_des_sorts_III"></td>
-                                <td class="background_grey" colspan="2">3e</td>
-                                <td id="sorts_jour_III"></td>
-                                <td id="sorts_en_bonus_III"></td>
+                                <td>4</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
+                            <tr><td><select name="dom_spe_41" id="dom_spe_41"></select></td></tr>
+                            <tr><td><select name="dom_spe_42" id="dom_spe_42"></select></td></tr>
+                            <tr><td><select name="dom_spe_43" id="dom_spe_43"></select></td></tr>
+                            <tr><td><select name="dom_spe_44" id="dom_spe_44"></select></td></tr>
+                            <tr><td><select name="dom_spe_45" id="dom_spe_45"></select></td></tr>
+                            <tr><td><select name="dom_spe_46" id="dom_spe_46"></select></td></tr>
+                            <tr><td><select name="dom_spe_47" id="dom_spe_47"></select></td></tr>
+                            <tr><td><select name="dom_spe_48" id="dom_spe_48"></select></td></tr>
 
                             <tr>
-                                <td id="sorts_connus_IV"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
-                                <td id="dd_des_sorts_IV"></td>
-                                <td class="background_grey" colspan="2">4e</td>
-                                <td id="sorts_jour_IV"></td>
-                                <td id="sorts_en_bonus_IV"></td>
+                                <td>5</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
+                            <tr><td><select name="dom_spe_51" id="dom_spe_51"></select></td></tr>
+                            <tr><td><select name="dom_spe_52" id="dom_spe_52"></select></td></tr>
+                            <tr><td><select name="dom_spe_53" id="dom_spe_53"></select></td></tr>
+                            <tr><td><select name="dom_spe_54" id="dom_spe_54"></select></td></tr>
+                            <tr><td><select name="dom_spe_55" id="dom_spe_55"></select></td></tr>
+                            <tr><td><select name="dom_spe_56" id="dom_spe_56"></select></td></tr>
+                            <tr><td><select name="dom_spe_57" id="dom_spe_57"></select></td></tr>
+                            <tr><td><select name="dom_spe_58" id="dom_spe_58"></select></td></tr>
 
                             <tr>
-                                <td id="sorts_connus_V"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
-                                <td id="dd_des_sorts_V"></td>
-                                <td class="background_grey" colspan="2">5e</td>
-                                <td id="sorts_jour_V"></td>
-                                <td id="sorts_en_bonus_V"></td>
+                                <td>6</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
+                            <tr><td><select name="dom_spe_61" id="dom_spe_61"></select></td></tr>
+                            <tr><td><select name="dom_spe_62" id="dom_spe_62"></select></td></tr>
+                            <tr><td><select name="dom_spe_63" id="dom_spe_63"></select></td></tr>
+                            <tr><td><select name="dom_spe_64" id="dom_spe_64"></select></td></tr>
+                            <tr><td><select name="dom_spe_65" id="dom_spe_65"></select></td></tr>
+                            <tr><td><select name="dom_spe_66" id="dom_spe_66"></select></td></tr>
+                            <tr><td><select name="dom_spe_67" id="dom_spe_67"></select></td></tr>
+                            <tr><td><select name="dom_spe_68" id="dom_spe_68"></select></td></tr>
 
                             <tr>
-                                <td id="sorts_connus_VI"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
-                                <td id="dd_des_sorts_VI"></td>
-                                <td class="background_grey" colspan="2">6e</td>
-                                <td id="sorts_jour_VI"></td>
-                                <td id="sorts_en_bonus_VI"></td>
+                                <td>7</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
+                            <tr><td><select name="dom_spe_71" id="dom_spe_71"></select></td></tr>
+                            <tr><td><select name="dom_spe_72" id="dom_spe_72"></select></td></tr>
+                            <tr><td><select name="dom_spe_73" id="dom_spe_73"></select></td></tr>
+                            <tr><td><select name="dom_spe_74" id="dom_spe_74"></select></td></tr>
+                            <tr><td><select name="dom_spe_75" id="dom_spe_75"></select></td></tr>
+                            <tr><td><select name="dom_spe_76" id="dom_spe_76"></select></td></tr>
+                            <tr><td><select name="dom_spe_77" id="dom_spe_77"></select></td></tr>
+                            <tr><td><select name="dom_spe_78" id="dom_spe_78"></select></td></tr>                        
 
                             <tr>
-                                <td id="sorts_connus_VII"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
-                                <td id="dd_des_sorts_VII"></td>
-                                <td class="background_grey" colspan="2">7e</td>
-                                <td id="sorts_jour_VII"></td>
-                                <td id="sorts_en_bonus_VII"></td>
+                                <td>8</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
+                            <tr><td><select name="dom_spe_81" id="dom_spe_81"></select></td></tr>
+                            <tr><td><select name="dom_spe_82" id="dom_spe_82"></select></td></tr>
+                            <tr><td><select name="dom_spe_83" id="dom_spe_83"></select></td></tr>
+                            <tr><td><select name="dom_spe_84" id="dom_spe_84"></select></td></tr>
+                            <tr><td><select name="dom_spe_85" id="dom_spe_85"></select></td></tr>
+                            <tr><td><select name="dom_spe_86" id="dom_spe_86"></select></td></tr>
+                            <tr><td><select name="dom_spe_87" id="dom_spe_87"></select></td></tr>
+                            <tr><td><select name="dom_spe_88" id="dom_spe_88"></select></td></tr>
 
                             <tr>
-                                <td id="sorts_connus_VIII"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
-                                <td id="dd_des_sorts_VIII"></td>
-                                <td class="background_grey" colspan="2">8e</td>
-                                <td id="sorts_jour_VIII"></td>
-                                <td id="sorts_en_bonus_VIII"></td>
+                                <td>9</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-
-                            <tr>
-                                <td id="sorts_connus_IX"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
-                                <td id="dd_des_sorts_IX"></td>
-                                <td class="background_grey" colspan="2">9e</td>
-                                <td id="sorts_jour_IX"></td>
-                                <td id="sorts_en_bonus_IX"></td>
-                            </tr>
+                            <tr><td><select name="dom_spe_91" id="dom_spe_91"></select></td></tr>
+                            <tr><td><select name="dom_spe_92" id="dom_spe_92"></select></td></tr>
+                            <tr><td><select name="dom_spe_93" id="dom_spe_93"></select></td></tr>
+                            <tr><td><select name="dom_spe_94" id="dom_spe_94"></select></td></tr>
+                            <tr><td><select name="dom_spe_95" id="dom_spe_95"></select></td></tr>
+                            <tr><td><select name="dom_spe_96" id="dom_spe_96"></select></td></tr>
+                            <tr><td><select name="dom_spe_97" id="dom_spe_97"></select></td></tr>
+                            <tr><td><select name="dom_spe_98" id="dom_spe_98"></select></td></tr>
                         </table>
                     </div>
                 </div>
