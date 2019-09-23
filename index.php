@@ -35,13 +35,13 @@
             <div class="col-lg-8">
                 <div class="row">
                     <div class="col-lg-5">
-                        <h2 id="label_nom_du_personnage">NOM DU PERSONNAGE</h2>
-                        <input type="text" name="non_du_personnage" size="60" maxlength="60" required id="nom_du_personnage">
+                        <label id="label_nom_du_personnage" for="nom_du_personnage">NOM DU PERSONNAGE</label>
+                        <input id="nom_du_personnage" type="text" name="non_du_personnage" size="60" maxlength="60" required>
                     </div>
 
                     <div class="col-lg-2">
-                        <h2 id="label_alignement">ALIGNEMENT</h2> 
-                        <select id="alignement">
+                        <label id="label_alignement" for="alignement" >ALIGNEMENT</label> 
+                        <select id="alignement" name="alignement">
                             <option></option>
                             <option>Loyal-Bon</option>
                             <option>Loyal-Neutre</option>
@@ -56,14 +56,14 @@
                     </div>
         
                     <div class="col-lg-5">
-                        <h2 id="label_nom_du_joueur">NOM DU JOUEUR</h2> 
+                        <label id="label_nom_du_joueur">NOM DU JOUEUR</label> 
                         <input type="text" name="nom_du_joueur" size="30" maxlength="30" required id="nom_du_joueur">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-4">
-                        <h2 id="label_classe">CLASSE</h2>  
+                        <label id="label_classe">CLASSE</label>  
                         <select id="classe" name="classe" onChange="influenceClassePersonnage()">
                             <option value=" " selected></option>
                             <option value="Barbare">Barbare</option>
@@ -81,7 +81,7 @@
                     </div>
 
                     <div class="col-lg-2">
-                        <h2 id="label_niveau">NIVEAU</h2> 
+                        <label id="label_niveau">NIVEAU</label> 
                         <select id="niveau" name="niveau" onChange="influenceNiveau()">
                             <option selected>00</option>
                             <option>01</option>
@@ -108,19 +108,19 @@
                     </div>
         
                     <div class="col-lg-4">
-                        <h2 id="label_divinite">DIVINITE</h2> 
+                        <label id="label_divinite">DIVINITE</label> 
                         <input type="text" name="divinite" size="15" maxlength="15" id="divinite">
                     </div>
         
                     <div class="col-lg-2">
-                        <h2 id="label_origine">ORIGINE</h2> 
+                        <label id="label_origine">ORIGINE</label> 
                         <input type="text" name="origine" size="15" maxlength="15" id="origine">
                     </div>
                 </div>
         
                 <div class="row">
                     <div class="col-lg-3">
-                        <h2 id="label_race">RACE</h2> 
+                        <label id="label_race">RACE</label> 
                         <select id="race" name="race" onChange="influenceRace()">
                             <option></option>
                             <option>Humain</option>
@@ -134,7 +134,7 @@
                     </div>
 
                     <div class="col-lg-3">
-                        <h2 id="label_cat_taille">CATEGORIE DE TAILLE</h2> 
+                        <label id="label_cat_taille">CATEGORIE DE TAILLE</label> 
                         <select id="cat_taille">
 <!--                        <option value="I">Infime (I)</option>
                             <option value="Min">Minuscule (Min)</option>
@@ -153,7 +153,7 @@
                     </div>
         
                     <div class="col-lg-1">
-                        <h2 id="label_sexe">SEXE</h2>
+                        <label id="label_sexe">SEXE</label>
                         <select id="sexe" name="sexe" onChange="calculTaillePoids()">
                             <option></option>
                             <option>Masculin</option>
@@ -162,22 +162,22 @@
                     </div>
         
                     <div class="col-lg-1">
-                        <h2 id="label_age">AGE</h2> 
+                        <label id="label_age">AGE</label> 
                         <input type="text" name="age" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influenceAge()" id="saisie_age">
                     </div>
         
                     <div class="col-lg-1">
-                        <h2 id="label_taille">TAILLE</h2> 
+                        <label id="label_taille">TAILLE</label> 
                         <input type="text" name="taille" size="4" maxlength="4" required pattern="[0-9,]{1,4}" onChange="influenceTaille()" id="saisie_taille">
                     </div>
                 
                     <div class="col-lg-1">
-                        <h2 id="label_poids">POIDS</h2> 
+                        <label id="label_poids">POIDS</label> 
                         <input type="text" name="poids" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influencePoids()" id="saisie_poids">
                     </div>
         
                     <div class="col-lg-1">
-                        <h2 id="label_cheveux">CHEVEUX</h2> 
+                        <label id="label_cheveux">CHEVEUX</label> 
                         <select id="cheveux" name="cheveux">
                             <option>Noir</option>
                             <option>Brun</option>
@@ -187,7 +187,7 @@
                     </div>
         
                     <div class="col-lg-1">
-                        <h2 id="label_yeux">YEUX</h2> 
+                        <label id="label_yeux">YEUX</label> 
                         <select id="yeux" name="yeux">
                             <option>Noirs</option>
                             <option>Marons</option>
@@ -215,7 +215,7 @@
                             </tr>
 
                             <tr>
-                                <td><h2 id="force" class="font_white">FOR</h2></td>
+                                <td><label id="force" class="font_white">FOR</label></td>
                                 <td id="for_val"></td>
                                 <td><input type="text" name="for_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceFor()" id="for_saisie"></td>
                                 <td name="for_mod_race" id="for_mod"></td>
@@ -224,7 +224,7 @@
                             </tr>
                 
                             <tr>
-                                <td><h2 id="dextérité" class="font_white">DEX</h2></td>
+                                <td><label id="dextérité" class="font_white">DEX</label></td>
                                 <td id="dex_val"></td>
                                 <td><input type="text" name="dex_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceDex()" id="dex_saisie"></td>
                                 <td name="dex_mod_race" id="dex_mod"></td>
@@ -233,7 +233,7 @@
                             </tr>
                 
                             <tr>
-                                <td><h2 id="constitution" class="font_white">CON</h2></td>
+                                <td><label id="constitution" class="font_white">CON</label></td>
                                 <td id="con_val"></td>
                                 <td><input type="text" name="con_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCon()" id="con_saisie"></td>
                                 <td name="con_mod_race" id="con_mod"></td>
@@ -242,7 +242,7 @@
                             </tr>
                 
                             <tr>
-                                <td><h2 id="intelligence" class="font_white">INT</h2></td>
+                                <td><label id="intelligence" class="font_white">INT</label></td>
                                 <td id="int_val"></td>
                                 <td><input type="text" name="int_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceInt()" id="int_saisie"></td>
                                 <td name="int_mod_race" id="int_mod"></td>
@@ -251,7 +251,7 @@
                             </tr>
                     
                             <tr>
-                                <td><h2 id="sagesse" class="font_white">SAG</h2></td>
+                                <td><label id="sagesse" class="font_white">SAG</label></td>
                                 <td id="sag_val"></td>
                                 <td><input type="text" name="sag_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceSag()" id="sag_saisie"></td>
                                 <td name="sag_mod_race" id="sag_mod"></td>
@@ -260,7 +260,7 @@
                             </tr>
                 
                             <tr>
-                                <td><h2 id="charisme" class="font_white">CHA</h2></td>
+                                <td><label id="charisme" class="font_white">CHA</label></td>
                                 <td id="cha_val"></td>
                                 <td><input type="text" name="cha_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCha()" id="cha_saisie"></td>
                                 <td name="cha_mod_race" id="cha_mod"></td>
@@ -277,12 +277,12 @@
                             </div>
 
                             <div class="col-lg-4">
-                                <h2 id="label_point_de_vie_total">Total</h2> 
+                                <label id="label_point_de_vie_total">Total</label> 
                                 <input type="text" name="point_de_vie_total" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influencePv()" id="point_de_vie_total">
                             </div>
             
                             <div class="col-lg-4">
-                                <h2 id="label_rd">RD</h2> 
+                                <label id="label_rd">RD</label> 
                                 <select id="rd" name="rd">
                                     <option>0</option>
                                     <option>1/-</option>
@@ -295,12 +295,12 @@
                         </div>
 
                         <div class="row">
-                            <h2 id="label_blessure">BLESSURES</h2> 
+                            <label id="label_blessure">BLESSURES</label> 
                             <input type="text" name="point_de_vie_actuel" size="3" maxlength="3" required pattern="[0-9]{1,3}" id="point_de_vie_actuel">
                         </div>
             
                         <div class="row">
-                            <h2 id="label_non_letaux">DEGATS NON LETAUX</h2> 
+                            <label id="label_non_letaux">DEGATS NON LETAUX</label> 
                             <input type="text" name="non_letaux" size="3" maxlength="3" required pattern="[0-9]{1,3}" id="non_letaux">
                         </div>
 
@@ -316,7 +316,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td><h2 id="lab_init" class="font_white">Mod. à l'INITIATIVE</h2></td>
+                                    <td><label id="lab_init" class="font_white">Mod. à l'INITIATIVE</label></td>
                                     <td id="init_total">0</td>
                                     <td class="background_grey">=</td>
                                     <td id="init_mod_dex"></td>
@@ -380,17 +380,17 @@
 
                 <div class="row">
                     <div class="col-lg-2">
-                        <h2 id="lab_ca_contact" class="font_white">CA de contact</h2>
+                        <label id="lab_ca_contact" class="font_white">CA de contact</label>
                         <p  id="val_ca_contact">0</p>
                     </div>
 
                     <div class="col-lg-4">
-                        <h2 id="lab_pri_depourvu" class="font_white">CA pris au depourvu</h2>
+                        <label id="lab_pri_depourvu" class="font_white">CA pris au depourvu</label>
                         <p  id="val_pri_depourvu">0</p>
                     </div>
 
                     <div class="col-lg-6">
-                        <h2 id="label_mod_part_ca" class="font_white">Modificateur particulier a la CA</h2> 
+                        <label id="label_mod_part_ca" class="font_white">Modificateur particulier a la CA</label> 
                         <input type="text" name="mod part ca" size="20" maxlength="20" id="mod_part_ca">
                     </div>
                 </div>
@@ -483,7 +483,7 @@
 
                 <div class="row">
                     <div class="col-lg-3">
-                        <h2 id="label_bba">BONUS DE BASE A L'ATTAQUE</h2></td>
+                        <label id="label_bba">BONUS DE BASE A L'ATTAQUE</label></td>
                     </div>
 
                     <div class="col-lg-3">
@@ -491,7 +491,7 @@
                     </div>
                     
                     <div class="col-lg-3">
-                        <h2 id="label_rm">RESISTANCE A LA MAGIE</h2> 
+                        <label id="label_rm">RESISTANCE A LA MAGIE</label> 
                     </div>
 
                     <div class="col-lg-3">
@@ -569,7 +569,7 @@
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <h2 id="label_famille_arme_I">FAMILLE D'ARME</h2> 
+                        <label id="label_famille_arme_I">FAMILLE D'ARME</label> 
                         <select id="famille_arme_I" name="famille_arme_I" onChange="choixFamilleArme('maniement_arme_I',document.form.famille_arme_I,document.form.maniement_arme_I)">
                             <option></option>
                             <option value="armes_courantes">Armes courantes</option>
@@ -579,7 +579,7 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <h2 id="label_maniement_arme_I">MANIEMENT</h2> 
+                        <label id="label_maniement_arme_I">MANIEMENT</label> 
                         <select id="maniement_arme_I" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_I,'arme_I',document.form.maniement_arme_I,document.form.arme_I)">
                         </select>
                     </div>
@@ -589,7 +589,7 @@
                     <div class="col-lg-12">
                         <table id="tab_arme_a_I">
                             <tr>
-                                <td colspan="3"><h2 class="font_white">ATTAQUE</h2></td>
+                                <td colspan="3"><label class="font_white">ATTAQUE</label></td>
                                 <td><h3 class="font_white">BONUS A L'ATTAQUE</h3></td>
                                 <td><h3 class="font_white">CRITIQUE</h3></td>
                             </tr>
@@ -638,7 +638,7 @@
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <h2 id="label_famille_arme_II">FAMILLE D'ARME</h2> 
+                        <label id="label_famille_arme_II">FAMILLE D'ARME</label> 
                         <select id="famille_arme_II" name="famille_arme_II" onChange="choixFamilleArme('maniement_arme_II',document.form.famille_arme_II,document.form.maniement_arme_II)">
                             <option></option>
                             <option value="armes_courantes">Armes courantes</option>
@@ -648,7 +648,7 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <h2 id="label_maniement_arme_I">MANIEMENT</h2> 
+                        <label id="label_maniement_arme_I">MANIEMENT</label> 
                         <select id="maniement_arme_I" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_I,'arme_I',document.form.maniement_arme_I,document.form.arme_I)">
                         </select>
                     </div>
@@ -687,7 +687,7 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <table id="tab_arme_b_I">
+                        <table id="tab_arme_b_II">
                             <tr>
                                 <td><h3 class="label_description">TYPE</h3></td>
                                 <td><h3 class="label_description">PORTEE</h3></td>
@@ -696,10 +696,10 @@
                             </tr>
 
                             <tr>
-                                <td id="type_I">_</td id="frapper_I">
-                                <td id="portee_I">_</td>
-                                <td id="munitions_I">_</td>
-                                <td colspan="2" id="degats_I">_</td>
+                                <td id="type_II">_</td id="frapper_I">
+                                <td id="portee_II">_</td>
+                                <td id="munitions_II">_</td>
+                                <td colspan="2" id="degats_II">_</td>
                             </tr>
                         </table>
                     </div>
@@ -1015,7 +1015,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2 id="label_modif_part">MODIFICATEUR PARTICULIERS</h2>
+                            <label id="label_modif_part">MODIFICATEUR PARTICULIERS</label>
                         </div>
                     </div>
 
@@ -1027,7 +1027,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2 id="label_langues">LANGUES</h2>
+                            <label id="label_langues">LANGUES</label>
                         </div>
                     </div>
 
@@ -1191,7 +1191,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <table id="table_don_I">
-                                    <th><td class="label_don"><h2>DONS</h2></td></th>
+                                    <th><td class="label_don"><label>DONS</label></td></th>
 
                                     <tr><td><select name="don_I" id="don_I"></select></td></tr>
                                     <tr><td><select name="don_II" id="don_II"></select></td></tr>
@@ -1220,7 +1220,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <table id="table_capacites_speciales">
-                                    <th><td class="label_capacites_speciales"><h2>CAPACITES SPECIALES</h2></td></th>
+                                    <th><td class="label_capacites_speciales"><label>CAPACITES SPECIALES</label></td></th>
 
                                     <tr><td><select name="capacites_speciales_I" id="capacites_speciales_I"></select></td></tr>
                                     <tr><td><select name="capacites_speciales_II" id="capacites_speciales_II"></select></td></tr>
@@ -1250,8 +1250,8 @@
                             <div class="col-lg-12">
                                 <table id="table_experience">
                                     <tr>
-                                        <th class="label_points_experience"><h2>POINTS D'EXPERIENCE</h2></th>
-                                        <th class="label_niveau"><h2>NIVEAU</h2></th>
+                                        <th class="label_points_experience"><label>POINTS D'EXPERIENCE</label></th>
+                                        <th class="label_niveau"><label>NIVEAU</label></th>
                                     </tr>
 
                                     <tr>
@@ -1368,7 +1368,7 @@
                     <div class="col-lg-12">
                         <div class="row">
                             <div class="col-lg-12">
-                                <h2 id="label_modif_part">MODIFICATEURS PARTICULIERS</h2>
+                                <label id="label_modif_part">MODIFICATEURS PARTICULIERS</label>
                             </div>
                         </div>
 
