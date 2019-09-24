@@ -53,17 +53,18 @@
                             <option>Chaotique-Neutre</option>
                             <option>Chaotique-Mauvais</option>
                         </select>
+                        <span class="tooltip">L'alignement est invalide</span>
                     </div>
         
                     <div class="col-lg-5">
-                        <label id="label_nom_du_joueur">NOM DU JOUEUR</label> 
+                        <label id="label_nom_du_joueur" for="nom_du_joueur">NOM DU JOUEUR</label> 
                         <input type="text" name="nom_du_joueur" size="30" maxlength="30" required id="nom_du_joueur">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-4">
-                        <label id="label_classe">CLASSE</label>  
+                        <label id="label_classe" for="classe">CLASSE</label>  
                         <select id="classe" name="classe" onChange="influenceClassePersonnage()">
                             <option value=" " selected></option>
                             <option value="Barbare">Barbare</option>
@@ -78,10 +79,11 @@
                             <option value="Rôdeur">Rôdeur</option>
                             <option value="Roublard">Roublard</option>
                         </select>
+                        <span class="tooltip">La classe est invalide</span>
                     </div>
 
                     <div class="col-lg-2">
-                        <label id="label_niveau">NIVEAU</label> 
+                        <label id="label_niveau" for="niveau">NIVEAU</label> 
                         <select id="niveau" name="niveau" onChange="influenceNiveau()">
                             <option selected>00</option>
                             <option>01</option>
@@ -105,22 +107,25 @@
                             <option>19</option>
                             <option>20</option>
                         </select>
+                        <span class="tooltip">Le niveau n'est pas pris en compte</span>
                     </div>
         
                     <div class="col-lg-4">
-                        <label id="label_divinite">DIVINITE</label> 
+                        <label id="label_divinite" for="divinite">DIVINITE</label> 
                         <input type="text" name="divinite" size="15" maxlength="15" id="divinite">
+                        <span class="tooltip">La divinité est inconnue</span>
                     </div>
         
                     <div class="col-lg-2">
-                        <label id="label_origine">ORIGINE</label> 
+                        <label id="label_origine" for="origine">ORIGINE</label> 
                         <input type="text" name="origine" size="15" maxlength="15" id="origine">
+                        <span class="tooltip">L'origine de la divinité est inconnue</span>
                     </div>
                 </div>
         
                 <div class="row">
                     <div class="col-lg-3">
-                        <label id="label_race">RACE</label> 
+                        <label id="label_race" for="race">RACE</label> 
                         <select id="race" name="race" onChange="influenceRace()">
                             <option></option>
                             <option>Humain</option>
@@ -131,11 +136,12 @@
                             <option>Halfelin</option>
                             <option>Nain</option>
                         </select>
+                        <span class="tooltip">La race n'est pas prise en compte</span>
                     </div>
 
                     <div class="col-lg-3">
-                        <label id="label_cat_taille">CATEGORIE DE TAILLE</label> 
-                        <select id="cat_taille">
+                        <label id="label_cat_taille" for="cat_taille">CATEGORIE DE TAILLE</label> 
+                        <select id="cat_taille" name="cat_taille">
 <!--                        <option value="I">Infime (I)</option>
                             <option value="Min">Minuscule (Min)</option>
                             <option value="TP">Très petite (TP)</option>
@@ -150,44 +156,49 @@
                             <option value="Ch">Colossale (C) (haute)</option>
                             <option value="Cl">Colossale (C) (longue)</option> -->
                         </select>
+                        <span class="tooltip">La taille est inconnue</span>
                     </div>
         
                     <div class="col-lg-1">
-                        <label id="label_sexe">SEXE</label>
+                        <label id="label_sexe" for="sexe">SEXE</label>
                         <select id="sexe" name="sexe" onChange="calculTaillePoids()">
                             <option></option>
                             <option>Masculin</option>
                             <option>Féminin</option>
                         </select>
+                        <span class="tooltip">Le sex est inconnu</span>
                     </div>
         
                     <div class="col-lg-1">
-                        <label id="label_age">AGE</label> 
+                        <label id="label_age" for="age">AGE</label> 
                         <input type="text" name="age" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influenceAge()" id="saisie_age">
+                        <span class="tooltip">L'age doit être compris entre 12 ans et 1.000 ans</span>
                     </div>
         
                     <div class="col-lg-1">
-                        <label id="label_taille">TAILLE</label> 
+                        <label id="label_taille" for="taille">TAILLE</label> 
                         <input type="text" name="taille" size="4" maxlength="4" required pattern="[0-9,]{1,4}" onChange="influenceTaille()" id="saisie_taille">
+                        <span class="tooltip">La taille doit êtres inférieure à 2,5 mètres</span>
                     </div>
                 
                     <div class="col-lg-1">
-                        <label id="label_poids">POIDS</label> 
+                        <label id="label_poids" for="poids">POIDS</label> 
                         <input type="text" name="poids" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influencePoids()" id="saisie_poids">
                     </div>
         
                     <div class="col-lg-1">
-                        <label id="label_cheveux">CHEVEUX</label> 
+                        <label id="label_cheveux" for="cheveux">CHEVEUX</label> 
                         <select id="cheveux" name="cheveux">
                             <option>Noir</option>
                             <option>Brun</option>
                             <option>Chatain</option>
                             <option>Blond</option>
                         </select>
+                        <span class="tooltip">Le couleur est inconnue</span>
                     </div>
         
                     <div class="col-lg-1">
-                        <label id="label_yeux">YEUX</label> 
+                        <label id="label_yeux" for="yeux">YEUX</label> 
                         <select id="yeux" name="yeux">
                             <option>Noirs</option>
                             <option>Marons</option>
@@ -195,6 +206,7 @@
                             <option>Bleux</option>
                             <option>Vairons</option>
                         </select>
+                        <span class="tooltip">Le couleur est inconnue</span>
                     </div>
                 </div>
             </div>
@@ -215,7 +227,7 @@
                             </tr>
 
                             <tr>
-                                <td><label id="force" class="font_white">FOR</label></td>
+                                <td><label id="force" for="for_val" class="font_white">FOR</label></td>
                                 <td id="for_val"></td>
                                 <td><input type="text" name="for_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceFor()" id="for_saisie"></td>
                                 <td name="for_mod_race" id="for_mod"></td>
@@ -224,7 +236,7 @@
                             </tr>
                 
                             <tr>
-                                <td><label id="dextérité" class="font_white">DEX</label></td>
+                                <td><label for="dex_val" id="dextérité" class="font_white">DEX</label></td>
                                 <td id="dex_val"></td>
                                 <td><input type="text" name="dex_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceDex()" id="dex_saisie"></td>
                                 <td name="dex_mod_race" id="dex_mod"></td>
@@ -233,7 +245,7 @@
                             </tr>
                 
                             <tr>
-                                <td><label id="constitution" class="font_white">CON</label></td>
+                                <td><label for="con_val" id="constitution" class="font_white">CON</label></td>
                                 <td id="con_val"></td>
                                 <td><input type="text" name="con_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCon()" id="con_saisie"></td>
                                 <td name="con_mod_race" id="con_mod"></td>
@@ -242,7 +254,7 @@
                             </tr>
                 
                             <tr>
-                                <td><label id="intelligence" class="font_white">INT</label></td>
+                                <td><label for="int_val" id="intelligence" class="font_white">INT</label></td>
                                 <td id="int_val"></td>
                                 <td><input type="text" name="int_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceInt()" id="int_saisie"></td>
                                 <td name="int_mod_race" id="int_mod"></td>
@@ -251,7 +263,7 @@
                             </tr>
                     
                             <tr>
-                                <td><label id="sagesse" class="font_white">SAG</label></td>
+                                <td><label for="sag_val" id="sagesse" class="font_white">SAG</label></td>
                                 <td id="sag_val"></td>
                                 <td><input type="text" name="sag_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceSag()" id="sag_saisie"></td>
                                 <td name="sag_mod_race" id="sag_mod"></td>
@@ -260,7 +272,7 @@
                             </tr>
                 
                             <tr>
-                                <td><label id="charisme" class="font_white">CHA</label></td>
+                                <td><label for="cha_val" id="charisme" class="font_white">CHA</label></td>
                                 <td id="cha_val"></td>
                                 <td><input type="text" name="cha_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCha()" id="cha_saisie"></td>
                                 <td name="cha_mod_race" id="cha_mod"></td>
@@ -277,12 +289,12 @@
                             </div>
 
                             <div class="col-lg-4">
-                                <label id="label_point_de_vie_total">Total</label> 
+                                <label id="label_point_de_vie_total" for="point_de_vie_total">Total</label> 
                                 <input type="text" name="point_de_vie_total" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influencePv()" id="point_de_vie_total">
                             </div>
             
                             <div class="col-lg-4">
-                                <label id="label_rd">RD</label> 
+                                <label id="label_rd" for="rd">RD</label> 
                                 <select id="rd" name="rd">
                                     <option>0</option>
                                     <option>1/-</option>
@@ -291,16 +303,17 @@
                                     <option>4/-</option>
                                     <option>5/-</option>
                                 </select>
+                                <span class="tooltip">La RD est inconnu</span>
                             </div>
                         </div>
 
                         <div class="row">
-                            <label id="label_blessure">BLESSURES</label> 
+                            <label id="label_blessure" for="point_de_vie_actuel">BLESSURES</label> 
                             <input type="text" name="point_de_vie_actuel" size="3" maxlength="3" required pattern="[0-9]{1,3}" id="point_de_vie_actuel">
                         </div>
             
                         <div class="row">
-                            <label id="label_non_letaux">DEGATS NON LETAUX</label> 
+                            <label id="label_non_letaux" for="non_letaux">DEGATS NON LETAUX</label> 
                             <input type="text" name="non_letaux" size="3" maxlength="3" required pattern="[0-9]{1,3}" id="non_letaux">
                         </div>
 
@@ -428,7 +441,7 @@
                                 <td id="sau_mod_div_ref">00</td>
                                 <td class="font_white">+</td>
                                 <td id="sau_mod_tem_ref">
-                                    <input type="text" name="mdré" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeReflexes()" id="mod_tem_ref">
+                                    <input type="text" name="mod_tem_ref" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeReflexes()" id="mod_tem_ref">
                                 </td>
                                 <td class="font_white">+</td>
                                 <td id="sau_mod_part_ref">
@@ -491,7 +504,7 @@
                     </div>
                     
                     <div class="col-lg-3">
-                        <label id="label_rm">RESISTANCE A LA MAGIE</label> 
+                        <label id="label_rm" for="rm">RESISTANCE A LA MAGIE</label> 
                     </div>
 
                     <div class="col-lg-3">
@@ -569,19 +582,21 @@
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <label id="label_famille_arme_I">FAMILLE D'ARME</label> 
+                        <label id="label_famille_arme_I" for="famille_arme_I">FAMILLE D'ARME</label> 
                         <select id="famille_arme_I" name="famille_arme_I" onChange="choixFamilleArme('maniement_arme_I',document.form.famille_arme_I,document.form.maniement_arme_I)">
                             <option></option>
                             <option value="armes_courantes">Armes courantes</option>
                             <option value="armes_de_guerre">Arme de guerre</option>
                             <option value="armes_exotiques">Arme exotiques</option>
                         </select>
+                        <span class="tooltip">Famille d'arme inconnue</span>
                     </div>
 
                     <div class="col-lg-6">
-                        <label id="label_maniement_arme_I">MANIEMENT</label> 
-                        <select id="maniement_arme_I" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_I,'arme_I',document.form.maniement_arme_I,document.form.arme_I)">
+                        <label id="label_maniement_arme_I" for="maniement_arme_I">MANIEMENT</label> 
+                        <select id="maniement_arme_I" name="maniement_arme_I" onChange="choixManiementArme(document.form.famille_arme_I,'arme_I',document.form.maniement_arme_I,document.form.arme_I)">
                         </select>
+                        <span class="tooltip">Maniement d'arme inconnu</span>
                     </div>
                 </div>
 
@@ -609,6 +624,7 @@
                                         <option value=4>4</option>
                                         <option value=5>5</option>
                                     </select>
+                                    <span class="tooltip">Bonus non pris en compte</span>
                                 </td>
                                 <td class="text_center" id="critique_I"></td>
                             </tr>
@@ -638,19 +654,21 @@
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <label id="label_famille_arme_II">FAMILLE D'ARME</label> 
+                        <label id="label_famille_arme_II" for="famille_arme_II">FAMILLE D'ARME</label> 
                         <select id="famille_arme_II" name="famille_arme_II" onChange="choixFamilleArme('maniement_arme_II',document.form.famille_arme_II,document.form.maniement_arme_II)">
                             <option></option>
                             <option value="armes_courantes">Armes courantes</option>
                             <option value="armes_de_guerre">Arme de guerre</option>
                             <option value="armes_exotiques">Arme exotiques</option>
                         </select>
+                        <span class="tooltip">Famille d'arme inconnue</span>
                     </div>
 
                     <div class="col-lg-6">
-                        <label id="label_maniement_arme_I">MANIEMENT</label> 
-                        <select id="maniement_arme_I" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_I,'arme_I',document.form.maniement_arme_I,document.form.arme_I)">
+                        <label id="label_maniement_arme_II" for="maniement_arme_II">MANIEMENT</label> 
+                        <select id="maniement_arme_II" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_II,'arme_II',document.form.maniement_arme_II,document.form.arme_II)">
                         </select>
+                        <span class="tooltip">Maniement d'arme inconnue</span>
                     </div>
                 </div>
 
@@ -678,6 +696,7 @@
                                         <option value=4>4</option>
                                         <option value=5>5</option>
                                     </select>
+                                    <span class="tooltip">Bonus non pris en compte</span>
                                 </td>
                                 <td class="text_center" id="critique_II"></td>
                             </tr>
@@ -1015,25 +1034,25 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <label id="label_modif_part">MODIFICATEUR PARTICULIERS</label>
+                            <label id="label_modif_part" for="modif_part">MODIFICATEUR PARTICULIERS</label>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <input type="text" name="modif_part" size="60" maxlength="60" required id="modif_part">
+                            <input id="modif_part" type="text" name="modif_part" size="60" maxlength="60" required>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <label id="label_langues">LANGUES</label>
+                            <label id="label_langues" for="langues">LANGUES</label>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <input type="text" name="langues" size="60" maxlength="60" required id="langues">
+                            <input id="langues" type="text" name="langues" size="60" maxlength="60" required>
                         </div>
                     </div>
                 </div>
@@ -1059,6 +1078,7 @@
                                 <td id="protection_I">
                                     <select id="choix_protection_I" name="choix_protection_I" onChange="calculeProtection()">
                                     </select>
+                                    <span class="tooltip">Bonus non pris en compte</span>
                                 </td>
                                 <td id="protection_bonus_I">a</td>
                                 <td id="protection_type_I">a</td>
@@ -1191,7 +1211,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <table id="table_don_I">
-                                    <th><td class="label_don"><label>DONS</label></td></th>
+                                    <th><td class="label_don"><h2>DONS</h2></td></th>
 
                                     <tr><td><select name="don_I" id="don_I"></select></td></tr>
                                     <tr><td><select name="don_II" id="don_II"></select></td></tr>
@@ -1220,7 +1240,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <table id="table_capacites_speciales">
-                                    <th><td class="label_capacites_speciales"><label>CAPACITES SPECIALES</label></td></th>
+                                    <th><td class="label_capacites_speciales"><h2>CAPACITES SPECIALES</h2></td></th>
 
                                     <tr><td><select name="capacites_speciales_I" id="capacites_speciales_I"></select></td></tr>
                                     <tr><td><select name="capacites_speciales_II" id="capacites_speciales_II"></select></td></tr>
@@ -1250,8 +1270,8 @@
                             <div class="col-lg-12">
                                 <table id="table_experience">
                                     <tr>
-                                        <th class="label_points_experience"><label>POINTS D'EXPERIENCE</label></th>
-                                        <th class="label_niveau"><label>NIVEAU</label></th>
+                                        <th class="label_points_experience"><h2>POINTS D'EXPERIENCE</h2></th>
+                                        <th class="label_niveau"><h2>NIVEAU</h2></th>
                                     </tr>
 
                                     <tr>
@@ -1368,7 +1388,7 @@
                     <div class="col-lg-12">
                         <div class="row">
                             <div class="col-lg-12">
-                                <label id="label_modif_part">MODIFICATEURS PARTICULIERS</label>
+                                <label id="label_modif_part">MODIFICATEURS PARTICULIERS</h2>
                             </div>
                         </div>
 
