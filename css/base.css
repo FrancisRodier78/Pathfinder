@@ -1,0 +1,441 @@
+body {
+	width: 120rem;
+	height:120rem;
+}
+
+h1 {
+	font-size: 5rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 0.7rem;
+}
+
+h3 {
+	font-size: 0.5rem;
+}
+
+h4 {
+	font-size: 0.4rem;
+}
+
+
+h5 {
+	font-size: 2rem;
+}
+
+h6 {
+	font-size: 1.5rem;
+}
+
+#bouton_valider {
+}
+
+#bouton_transmettre {
+}
+
+#bouton_reinitialisation {
+}
+
+#bouton_imprimer {
+}
+
+#label_nom_du_personnage {
+}
+
+#nom_du_personnage {
+}
+
+#label_nom_du_joueur {
+}
+
+#nom_du_joueur {
+}
+
+#label_classe {
+}
+
+#classe {
+}
+
+#label_niveau {
+}
+
+#niveau {
+}
+
+#label_race {
+}
+
+#race {
+}
+
+#label_alignement {
+}
+
+#alignement {
+}
+
+#label_divinite {
+}
+
+#divinite {
+}
+
+#label_cat_taille {
+}
+
+#cat_taille {
+}
+
+#label_cat_age {
+}
+
+#cat_age {
+}
+
+#label_sexe {
+}
+
+#sexe {
+}
+
+#label_taille {
+}
+
+#taille {
+}
+
+#label_allonge {
+}
+
+#allonge {
+}
+
+#label_poids {
+}
+
+#poids {
+}
+
+#label_campagne {
+}
+
+#campagne {
+}
+
+#tab_carac {
+	width: 10rem;
+	text-align: center;
+}
+
+/*#caption_carac, #caption_ca, #caption_init, #caption_sau, #caption_lut {*/
+.caption {	
+	font-size: 0.5rem;
+}
+
+.font_white {
+	color: white;
+	border: 2px solid black;
+	background-color: black;
+}
+
+td {
+	color: black;
+	border: 2px solid black;
+	font-weight: bold;
+	background-color: white;
+}
+
+#tab_ca {
+	width: 26rem;
+	text-align: center;
+}
+
+.background_grey {
+	text-align: center;
+	color: black;
+	border: 2px solid black;
+	background-color: lightgrey;
+}
+
+#lab_ca_contact {
+	width: 3rem;
+	text-align: center;
+}
+
+#val_ca_contact {
+}
+
+#lab_pri_depourvu {
+	width: 4rem;
+	text-align: center;
+}
+
+
+#val_pri_depourvu {
+}
+
+#label_bba, #label_rm,
+#label_vit,
+#label_de_classe, #label_comp, #label_degres, #label_equip,
+#label_capaciteDeCharge, #label_langues, #label_recipients,
+#label_richesses, .label_don, #label_notes, #label_sorts,
+#label_ecole_predilection, #label_ecoles_interdites, #label_experience,
+#label_armure, #label_traits, #label_aptitudes {
+	text-align: center;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	border: 5px solid black;
+}
+
+#mod_div_lut {
+	border: 2px solid black;
+	text-align: center;
+}
+
+#label_pv {
+	width: 2rem;
+	text-align: center;
+}
+
+#pv {
+}
+
+#label_mod_part_ca {
+	width: 6rem;
+	text-align: center;
+}
+
+#mod_part_ca {
+}
+
+#label_red_deg {
+	width: 3rem;
+	text-align: center;
+}
+
+#red_deg {
+}
+
+#tab_init {
+	width: 12rem;
+	text-align: center;
+}
+
+#tab_sau {
+	width: 30rem;
+	text-align: center;
+}
+
+#label_bba {
+}
+
+#bba {
+}
+
+#label_rm {
+}
+
+#rm {
+}
+
+#tab_lut {
+	width: 22rem;
+	text-align: center;
+}
+
+#caption_lut {
+	caption-side: bottom;
+}
+
+#label_vit {
+}
+
+#vit {
+}
+
+#label_famille_arme_I, #label_famille_arme_II, #label_famille_arme_III, #label_famille_arme_IV, #label_famille_arme_V {
+}
+
+#famille_arme_I, #famille_arme_II, #famille_arme_III, #famille_arme_IV, #famille_arme_V {
+}
+
+#label_maniement_arme_I, #label_maniement_arme_II, #label_maniement_arme_III, #label_maniement_arme_IV,#label_maniement_arme_V {
+}
+
+#maniement_arme_I, #maniement_arme_II, #maniement_arme_III, #maniement_arme_IV,#maniement_arme_V {
+}
+
+#tab_arme_a_I, #tab_arme_a_II, #tab_arme_a_III, #tab_arme_a_IV, #tab_arme_a_V {
+	width: 30rem;
+}
+
+#tab_arme_b_I, #tab_arme_b_II, #tab_arme_b_III, #tab_arme_b_IV, #tab_arme_b_V {
+	width: 30rem;
+}
+.label_description {
+	color: black;
+	background-color: lightgrey;
+}
+
+.text_center {
+	text-align: center;
+}
+#competences {
+}
+
+#label_de_classe{
+	-moz-transform: rotate(-90deg);
+}
+
+.de_classe,
+.carac_for, .carac_dex, .carac_con, .carac_int, .carac_sag, .carac_cha,
+#chargeLegere, #chargeIntermediaire, #chargeLourde, #chargeMax, #soulever, #tirerOuPousser {
+	text-align: center;
+	height: 1rem;
+}
+
+.carac {
+	font-size: 0.7rem;
+}
+
+#Somme_compétences {
+}
+
+#equipement {
+	width: 68rem;
+}
+
+#capaciteDeCharge {
+	width: 50rem;
+}
+
+#language {
+	width: 17rem;
+}
+
+#recipients {
+	width: 50rem;
+}
+
+#recip_recip {
+	width: 7rem;
+	height: 1rem;
+}
+
+#recip_contenance {
+	width: 7rem;
+	height: 1rem;
+}
+
+#recip_poids {
+	width: 3rem;
+	height: 1rem;
+}
+
+#richesses {
+	width: 68rem;
+}
+
+#pc, #pa, #po, #pp {
+	vertical-align: middle;
+	height: 2rem;
+}
+
+#table_don_I {
+	width: 33rem;
+}
+
+.don {
+	height: 1rem;
+}
+
+#table_don_II {
+	width: 33rem;
+}
+
+#table_don_III {
+	width: 33rem;
+}
+
+#table_don_IV {
+	width: 33rem;
+}
+
+#table_don_V {
+	width: 33rem;
+}
+
+#table_don_VI {
+	width: 33rem;
+}
+
+#table_don_VII {
+	width: 33rem;
+}
+
+#table_don_VIII {
+	width: 33rem;
+}
+
+#table_don_IX {
+	width: 33rem;
+}
+
+#table_don_X {
+	width: 33rem;
+}
+
+#table_don_XI {
+	width: 33rem;
+}
+
+#table_don_XII {
+	width: 33rem;
+}
+
+#table_notes {
+}
+
+#table_sorts {
+	width: 33rem;
+}
+
+#table_experience {
+	width: 33rem;
+}
+
+#points_experience {
+}
+
+#prochain_niveau {
+}
+
+#dd_des_sorts, #pourcentage_d_echec, #modificateur_particulier,
+#dd_des_sorts_0, #sorts_jour_0, #sorts_en_bonus_0,
+#dd_des_sorts_I, #sorts_jour_I, #sorts_en_bonus_I,
+#dd_des_sorts_II, #sorts_jour_II, #sorts_en_bonus_II,
+#dd_des_sorts_III, #sorts_jour_III, #sorts_en_bonus_III,
+#dd_des_sorts_IV, #sorts_jour_IV, #sorts_en_bonus_IV,
+#dd_des_sorts_V, #sorts_jour_V, #sorts_en_bonus_V,
+#dd_des_sorts_VI, #sorts_jour_VI, #sorts_en_bonus_VI,
+#dd_des_sorts_VII, #sorts_jour_VII, #sorts_en_bonus_VII,
+#dd_des_sorts_VIII, #sorts_jour_VIII, #sorts_en_bonus_VIII,
+#dd_des_sorts_IX, #sorts_jour_IX, #sorts_en_bonus_IX {
+	text-align: center;
+}
+
+#tab_armure {
+	width: 30rem;
+}
+
+#traits_raciaux {
+	width: 33rem;
+}
+
+#aptitudes_classe {
+	width: 33rem;
+}

@@ -20,7 +20,7 @@
     <![endif]-->
 
     <link rel="stylesheet" href="css/reset.css" />
-    <!-- link rel="stylesheet" href="css/base.css" / -->
+    <link rel="stylesheet" href="css/base.css" />
     <!-- script type="text/javascript" src="js/main.js"></script -->
     <!-- script type="text/javascript" src="js/weapon.js"></script -->
 </head>
