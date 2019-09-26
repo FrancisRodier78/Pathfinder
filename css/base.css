@@ -148,13 +148,15 @@ h6 {
 }
 
 #tab_carac {
-	width: 10rem;
+	width: 35rem;
 	text-align: center;
+	margin: 3px;
 }
 
 /*#caption_carac, #caption_ca, #caption_init, #caption_sau, #caption_lut {*/
 .caption {	
-	font-size: 0.5rem;
+	font-size: 0.9rem;
+	text-align: center;
 }
 
 .font_white {
@@ -243,7 +245,7 @@ td {
 }
 
 #tab_init {
-	width: 12rem;
+	width: 35rem;
 	text-align: center;
 }
 

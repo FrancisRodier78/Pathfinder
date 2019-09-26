@@ -148,8 +148,8 @@
                         <span class="tooltip">La race n'est pas prise en compte</span>
                     </div>
 
-                    <div class="col-lg-4">
-                        <label id="label_cat_taille" for="cat_taille">CATEGORIE DE TAILLE</label> 
+                    <div class="col-lg-3">
+                        <label id="label_cat_taille" for="cat_taille">CAT. DE TAILLE</label> 
                         <select id="cat_taille" name="cat_taille">
 <!--                        <option value="I">Infime (I)</option>
                             <option value="Min">Minuscule (Min)</option>
@@ -206,7 +206,7 @@
                         <span class="tooltip">Le couleur est inconnue</span>
                     </div>
         
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                         <label id="label_yeux" for="yeux">YEUX</label> 
                         <select id="yeux" name="yeux">
                             <option>Noirs</option>
@@ -226,65 +226,65 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <table id="tab_carac">
-                            <tr id="caption_carac" class="caption"> 
-                                <th>CHARACTE-RISTIQUE</th>
-                                <th>VALEUR</th>
-                                <th>SAISIE</th>
-                                <th>MODIF.</th>
-                                <th>VALEUR TEMPORAIRE</th> 
-                                <th>MODIF. TEMPORAIRE</th>
+                            <tr id="caption_carac"> 
+                                <th class="caption">CHARACTE-RISTIQUE</th>
+                                <th class="caption">VALEUR</th>
+                                <th class="caption">SAISIE</th>
+                                <th class="caption">MODIF.</th>
+                                <th class="caption">VALEUR TEMPORAIRE</th> 
+                                <th class="caption">MODIF. TEMPORAIRE</th>
                             </tr>
 
                             <tr>
-                                <td><label id="force" for="for_val" class="font_white">FOR</label></td>
+                                <td><label id="force" for="for_sai" class="font_white">FOR</label></td>
                                 <td id="for_val"></td>
                                 <td><input id="for_saisie" type="text" name="for_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceFor()"></td>
-                                <td name="for_mod_race" id="for_mod"></td>
+                                <td id="for_mod" name="for_mod_race"></td>
                                 <td id="for_val_temp"></td>
                                 <td id="for_mod_temp"></td>
                             </tr>
                 
                             <tr>
-                                <td><label for="dex_val" id="dextérité" class="font_white">DEX</label></td>
+                                <td><label id="dextérité" for="dex_sai" class="font_white">DEX</label></td>
                                 <td id="dex_val"></td>
                                 <td><input id="dex_saisie" type="text" name="dex_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceDex()"></td>
-                                <td name="dex_mod_race" id="dex_mod"></td>
+                                <td id="dex_mod" name="dex_mod_race"></td>
                                 <td id="dex_val_temp"></td>
                                 <td id="dex_mod_temp"></td>
                             </tr>
                 
                             <tr>
-                                <td><label for="con_val" id="constitution" class="font_white">CON</label></td>
+                                <td><label id="constitution" for="con_sai" class="font_white">CON</label></td>
                                 <td id="con_val"></td>
                                 <td><input id="con_saisie" type="text" name="con_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCon()"></td>
-                                <td name="con_mod_race" id="con_mod"></td>
+                                <td id="con_mod" name="con_mod_race"></td>
                                 <td id="con_val_temp"></td>
                                 <td id="con_mod_temp"></td>
                             </tr>
                 
                             <tr>
-                                <td><label for="int_val" id="intelligence" class="font_white">INT</label></td>
+                                <td><label id="intelligence" for="int_sai" class="font_white">INT</label></td>
                                 <td id="int_val"></td>
                                 <td><input id="int_saisie" type="text" name="int_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceInt()"></td>
-                                <td name="int_mod_race" id="int_mod"></td>
+                                <td id="int_mod" name="int_mod_race"></td>
                                 <td id="int_val_temp"></td>
                                 <td id="int_mod_temp"></td>
                             </tr>
                     
                             <tr>
-                                <td><label for="sag_val" id="sagesse" class="font_white">SAG</label></td>
+                                <td><label id="sagesse" for="sag_sai" class="font_white">SAG</label></td>
                                 <td id="sag_val"></td>
                                 <td><input id="sag_saisie" type="text" name="sag_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceSag()"></td>
-                                <td name="sag_mod_race" id="sag_mod"></td>
+                                <td id="sag_mod" name="sag_mod_race"></td>
                                 <td id="sag_val_temp"></td>
                                 <td id="sag_mod_temp"></td>
                             </tr>
                 
                             <tr>
-                                <td><label for="cha_val" id="charisme" class="font_white">CHA</label></td>
+                                <td><label id="charisme" for="cha_sai" class="font_white">CHA</label></td>
                                 <td id="cha_val"></td>
                                 <td><input id="cha_saisie" type="text" name="cha_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCha()"></td>
-                                <td name="cha_mod_race" id="cha_mod"></td>
+                                <td id="cha_mod" name="cha_mod_race"></td>
                                 <td id="cha_val_temp"></td>
                                 <td id="cha_mod_temp"></td>
                             </tr>
@@ -294,7 +294,7 @@
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="col-lg-4">
-                                <h2 id="label_point_de_vie">PV</h2> 
+                                <h2 id="label_point_de_vie" class="caption font_white">PV</h2> 
                             </div>
 
                             <div class="col-lg-4">
@@ -318,23 +318,23 @@
 
                         <div class="row">
                             <label id="label_blessure" for="point_de_vie_actuel">BLESSURES</label> 
-                            <input id="point_de_vie_actuel" type="text" name="point_de_vie_actuel" size="3" maxlength="3" required pattern="[0-9]{1,3}">
+                            <textarea id="point_de_vie_actuel" name="point_de_vie_actuel" rows="2" cols="85"></textarea>
                         </div>
             
                         <div class="row">
                             <label id="label_non_letaux" for="non_letaux">DEGATS NON LETAUX</label> 
-                            <input id="non_letaux" type="text" name="non_letaux" size="3" maxlength="3" required pattern="[0-9]{1,3}">
+                            <textarea id="non_letaux" name="non_letaux" rows="2" cols="85"></textarea>
                         </div>
 
                         <div class="row">
                             <table id="tab_init">
                                 <tr id="caption_init" class="caption"> 
                                     <th></th>
-                                    <th>TOTAL</th>
+                                    <th class="caption">TOTAL</th>
                                     <th></th>
-                                    <th>MOD. DE DEXTERITE</th>
+                                    <th class="caption">MOD. DE DEXTERITE</th>
                                     <th></th>
-                                    <th>MOD. DIVERS</th>
+                                    <th class="caption">MOD. DIVERS</th>
                                 </tr>
 
                                 <tr>
