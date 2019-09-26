@@ -1,6 +1,7 @@
-body {
-	width: 120rem;
-	height:120rem;
+#block_page {
+	width: 110rem;
+	height:60rem;
+	margin: auto;
 }
 
 h1 {
@@ -29,6 +30,15 @@ h6 {
 	font-size: 1.5rem;
 }
 
+.tooltip {
+	display: inline-block;
+	margin-left: 20px;
+	padding: 2px 4px;
+	border: 1px solid #555;
+	background-color: #CCC;
+	border-radius: 4px;
+}
+
 #bouton_valider {
 }
 
@@ -41,10 +51,22 @@ h6 {
 #bouton_imprimer {
 }
 
+.presentation_simple {
+	margin: 3px;
+}
+
 #label_nom_du_personnage {
 }
 
 #nom_du_personnage {
+}
+
+#label_alignement {
+
+}
+
+#alignement{
+
 }
 
 #label_nom_du_joueur {

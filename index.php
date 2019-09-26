@@ -26,6 +26,7 @@
 </head>
 
 <body>
+<div id="block_page">
     <form action="" name="form" method="post">
         <div class="row">
             <div class="col-lg-4">
@@ -33,14 +34,14 @@
             </div>
 
             <div class="col-lg-8">
-                <div class="row">
+                <div class="row presentation_simple">
                     <div class="col-lg-5">
                         <label id="label_nom_du_personnage" for="nom_du_personnage">NOM DU PERSONNAGE</label>
                         <input id="nom_du_personnage" type="text" name="non_du_personnage" size="60" maxlength="60" required>
                     </div>
 
                     <div class="col-lg-2">
-                        <label id="label_alignement" for="alignement" >ALIGNEMENT</label> 
+                        <label  id="label_alignement" for="alignement" >ALIGNEMENT</label> 
                         <select id="alignement" name="alignement">
                             <option></option>
                             <option>Loyal-Bon</option>
@@ -58,12 +59,12 @@
         
                     <div class="col-lg-5">
                         <label id="label_nom_du_joueur" for="nom_du_joueur">NOM DU JOUEUR</label> 
-                        <input type="text" name="nom_du_joueur" size="30" maxlength="30" required id="nom_du_joueur">
+                        <input id="nom_du_joueur" type="text" name="nom_du_joueur" size="60" maxlength="60" required>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-4">
+                <div class="row presentation_simple">
+                    <div class="col-lg-3">
                         <label id="label_classe" for="classe">CLASSE</label>  
                         <select id="classe" name="classe" onChange="influenceClassePersonnage()">
                             <option value=" " selected></option>
@@ -111,20 +112,28 @@
                     </div>
         
                     <div class="col-lg-4">
-                        <label id="label_divinite" for="divinite">DIVINITE</label> 
-                        <input type="text" name="divinite" size="15" maxlength="15" id="divinite">
-                        <span class="tooltip">La divinité est inconnue</span>
+                        <label id="label_origine" for="origine">DIVINITE ORIGINE</label> 
+                        <select id="origine" name="origine" onChange="influenceorigine()">
+                            <option selected>???</option>
+                            <option>Golarion</option>
+                            <option>Royaumes oubliés</option>
+                        </select>
+                        <span class="tooltip">L'origine de la divinité est inconnue</span>
                     </div>
         
-                    <div class="col-lg-2">
-                        <label id="label_origine" for="origine">ORIGINE</label> 
-                        <input type="text" name="origine" size="15" maxlength="15" id="origine">
-                        <span class="tooltip">L'origine de la divinité est inconnue</span>
+                    <div class="col-lg-3">
+                        <label id="label_divinite" for="divinite">DIVINITE NOM</label> 
+                        <select id="divinite" name="divinite" onChange="influencedivinite()">
+                            <option selected>???</option>
+                            <option>Abadar</option>
+                            <option>Iori</option>
+                        </select>
+                        <span class="tooltip">La divinité est inconnue</span>
                     </div>
                 </div>
         
-                <div class="row">
-                    <div class="col-lg-3">
+                <div class="row presentation_simple">
+                    <div class="col-lg-2">
                         <label id="label_race" for="race">RACE</label> 
                         <select id="race" name="race" onChange="influenceRace()">
                             <option></option>
@@ -139,7 +148,7 @@
                         <span class="tooltip">La race n'est pas prise en compte</span>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <label id="label_cat_taille" for="cat_taille">CATEGORIE DE TAILLE</label> 
                         <select id="cat_taille" name="cat_taille">
 <!--                        <option value="I">Infime (I)</option>
@@ -171,19 +180,19 @@
         
                     <div class="col-lg-1">
                         <label id="label_age" for="age">AGE</label> 
-                        <input type="text" name="age" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influenceAge()" id="saisie_age">
+                        <input id="saisie_age" type="text" name="age" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influenceAge()">
                         <span class="tooltip">L'age doit être compris entre 12 ans et 1.000 ans</span>
                     </div>
         
                     <div class="col-lg-1">
                         <label id="label_taille" for="taille">TAILLE</label> 
-                        <input type="text" name="taille" size="4" maxlength="4" required pattern="[0-9,]{1,4}" onChange="influenceTaille()" id="saisie_taille">
+                        <input id="saisie_taille" type="text" name="taille" size="4" maxlength="4" required pattern="[0-9,]{1,4}" onChange="influenceTaille()">
                         <span class="tooltip">La taille doit êtres inférieure à 2,5 mètres</span>
                     </div>
                 
                     <div class="col-lg-1">
                         <label id="label_poids" for="poids">POIDS</label> 
-                        <input type="text" name="poids" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influencePoids()" id="saisie_poids">
+                        <input id="saisie_poids" type="text" name="poids" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influencePoids()">
                     </div>
         
                     <div class="col-lg-1">
@@ -229,7 +238,7 @@
                             <tr>
                                 <td><label id="force" for="for_val" class="font_white">FOR</label></td>
                                 <td id="for_val"></td>
-                                <td><input type="text" name="for_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceFor()" id="for_saisie"></td>
+                                <td><input id="for_saisie" type="text" name="for_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceFor()"></td>
                                 <td name="for_mod_race" id="for_mod"></td>
                                 <td id="for_val_temp"></td>
                                 <td id="for_mod_temp"></td>
@@ -238,7 +247,7 @@
                             <tr>
                                 <td><label for="dex_val" id="dextérité" class="font_white">DEX</label></td>
                                 <td id="dex_val"></td>
-                                <td><input type="text" name="dex_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceDex()" id="dex_saisie"></td>
+                                <td><input id="dex_saisie" type="text" name="dex_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceDex()"></td>
                                 <td name="dex_mod_race" id="dex_mod"></td>
                                 <td id="dex_val_temp"></td>
                                 <td id="dex_mod_temp"></td>
@@ -247,7 +256,7 @@
                             <tr>
                                 <td><label for="con_val" id="constitution" class="font_white">CON</label></td>
                                 <td id="con_val"></td>
-                                <td><input type="text" name="con_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCon()" id="con_saisie"></td>
+                                <td><input id="con_saisie" type="text" name="con_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCon()"></td>
                                 <td name="con_mod_race" id="con_mod"></td>
                                 <td id="con_val_temp"></td>
                                 <td id="con_mod_temp"></td>
@@ -256,7 +265,7 @@
                             <tr>
                                 <td><label for="int_val" id="intelligence" class="font_white">INT</label></td>
                                 <td id="int_val"></td>
-                                <td><input type="text" name="int_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceInt()" id="int_saisie"></td>
+                                <td><input id="int_saisie" type="text" name="int_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceInt()"></td>
                                 <td name="int_mod_race" id="int_mod"></td>
                                 <td id="int_val_temp"></td>
                                 <td id="int_mod_temp"></td>
@@ -265,7 +274,7 @@
                             <tr>
                                 <td><label for="sag_val" id="sagesse" class="font_white">SAG</label></td>
                                 <td id="sag_val"></td>
-                                <td><input type="text" name="sag_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceSag()" id="sag_saisie"></td>
+                                <td><input id="sag_saisie" type="text" name="sag_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceSag()"></td>
                                 <td name="sag_mod_race" id="sag_mod"></td>
                                 <td id="sag_val_temp"></td>
                                 <td id="sag_mod_temp"></td>
@@ -274,7 +283,7 @@
                             <tr>
                                 <td><label for="cha_val" id="charisme" class="font_white">CHA</label></td>
                                 <td id="cha_val"></td>
-                                <td><input type="text" name="cha_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCha()" id="cha_saisie"></td>
+                                <td><input id="cha_saisie" type="text" name="cha_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCha()"></td>
                                 <td name="cha_mod_race" id="cha_mod"></td>
                                 <td id="cha_val_temp"></td>
                                 <td id="cha_mod_temp"></td>
@@ -290,7 +299,7 @@
 
                             <div class="col-lg-4">
                                 <label id="label_point_de_vie_total" for="point_de_vie_total">Total</label> 
-                                <input type="text" name="point_de_vie_total" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influencePv()" id="point_de_vie_total">
+                                <input id="point_de_vie_total" type="text" name="point_de_vie_total" size="3" maxlength="3" required pattern="[0-9]{1,3}" onChange="influencePv()">
                             </div>
             
                             <div class="col-lg-4">
@@ -309,12 +318,12 @@
 
                         <div class="row">
                             <label id="label_blessure" for="point_de_vie_actuel">BLESSURES</label> 
-                            <input type="text" name="point_de_vie_actuel" size="3" maxlength="3" required pattern="[0-9]{1,3}" id="point_de_vie_actuel">
+                            <input id="point_de_vie_actuel" type="text" name="point_de_vie_actuel" size="3" maxlength="3" required pattern="[0-9]{1,3}">
                         </div>
             
                         <div class="row">
                             <label id="label_non_letaux" for="non_letaux">DEGATS NON LETAUX</label> 
-                            <input type="text" name="non_letaux" size="3" maxlength="3" required pattern="[0-9]{1,3}" id="non_letaux">
+                            <input id="non_letaux" type="text" name="non_letaux" size="3" maxlength="3" required pattern="[0-9]{1,3}">
                         </div>
 
                         <div class="row">
@@ -335,7 +344,7 @@
                                     <td id="init_mod_dex"></td>
                                     <td class="background_grey">+</td>
                                     <td id="init_mod_div">
-                                        <input type="text" name="init_mod_div_val" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="calculeInit()" id="init_mod_div_val">
+                                        <input id="init_mod_div_val" type="text" name="init_mod_div_val" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="calculeInit()">
                                     </td>
                                 </tr>
                             </table>
@@ -441,11 +450,11 @@
                                 <td id="sau_mod_div_ref">00</td>
                                 <td class="font_white">+</td>
                                 <td id="sau_mod_tem_ref">
-                                    <input type="text" name="mod_tem_ref" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeReflexes()" id="mod_tem_ref">
+                                    <input id="mod_tem_ref" type="text" name="mod_tem_ref" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeReflexes()">
                                 </td>
                                 <td class="font_white">+</td>
                                 <td id="sau_mod_part_ref">
-                                    <input type="text" name="mod_part_ref" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeReflexes()" id="mod_part_ref">
+                                    <input id="mod_part_ref" type="text" name="mod_part_ref" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeReflexes()">
                                 </td>
                             </tr>
                         
@@ -462,11 +471,11 @@
                                 <td id="sau_mod_div_vig">00</td>
                                 <td class="font_white">+</td>
                                 <td id="sau_mod_tem_vig">
-                                    <input type="text" name="mod_tem_vig" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVigeur()" id="mod_tem_vig">
+                                    <input id="mod_tem_vig" type="text" name="mod_tem_vig" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVigeur()">
                                 </td>
                                 <td class="font_white">+</td>
                                 <td id="sau_mod_part_vig">
-                                    <input type="text" name="mod_part_vig" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVigeur()" id="mod_part_vig">
+                                    <input id="mod_part_vig" type="text" name="mod_part_vig" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVigeur()">
                                 </td>
                             </tr>
                         
@@ -483,11 +492,11 @@
                                 <td id="sau_mod_div_vol">00</td>
                                 <td class="font_white">+</td>
                                 <td id="sau_mod_tem_vol">
-                                    <input type="text" name="mdvo" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVolonte()" id="mod_tem_vol">
+                                    <input id="mod_tem_vol" type="text" name="mdvo" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVolonte()">
                                 </td>
                                 <td class="font_white">+</td>
                                 <td id="sau_mod_part_vol">
-                                    <input type="text" name="mod_part_vol" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVolonte()" id="mod_part_vol">
+                                    <input id="mod_part_vol" type="text" name="mod_part_vol" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVolonte()">
                                 </td>
                             </tr>
                         </table>
@@ -742,19 +751,19 @@
                             <tr>
                                 <td></td>
                                 <td id="vd_sans_armure_metre">
-                                    <input type="text" name="vd_sans_armure_metre" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_sans_armure_metre">
+                                    <input id="vd_sans_armure_metre" type="text" name="vd_sans_armure_metre" size="2" maxlength="2" required pattern="[0-9]{1,2}">
                                 </td>
                                 <td id="vd_sans_armure_case">
-                                    <input type="text" name="vd_sans_armure_case" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_sans_armure_case">
+                                    <input id="vd_sans_armure_case" type="text" name="vd_sans_armure_case" size="2" maxlength="2" required pattern="[0-9]{1,2}">
                                 </td>
                                 <td id="vd_avec_armure_metre">
-                                    <input type="text" name="vd_avec_armure_metre" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_avec_armure_metre">
+                                    <input id="vd_avec_armure_metre" type="text" name="vd_avec_armure_metre" size="2" maxlength="2" required pattern="[0-9]{1,2}">
                                 </td>
                                 <td id="vd_avec_armure_case">
-                                    <input type="text" name="vd_avec_armure_case" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_avec_armure_case">
+                                    <input id="vd_avec_armure_case" type="text" name="vd_avec_armure_case" size="2" maxlength="2" required pattern="[0-9]{1,2}">
                                 </td>
                                 <td id="vd_mod_divers">
-                                    <input type="text" name="vd_mod_divers" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_mod_divers">
+                                    <input id="vd_mod_divers" type="text" name="vd_mod_divers" size="2" maxlength="2" required pattern="[0-9]{1,2}">
                                 </td>
                             </tr>
                         </table>
@@ -773,19 +782,19 @@
 
                                 <tr>
                                     <td id="vd_vol">
-                                        <input type="text" name="vd_vol" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_vol">
+                                        <input id="vd_vol" type="text" name="vd_vol" size="2" maxlength="2" required pattern="[0-9]{1,2}">
                                     </td>
                                     <td id="vd_manoeu">
-                                        <input type="text" name="vd_manoeu" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_manoeu">
+                                        <input id="vd_manoeu" type="text" name="vd_manoeu" size="2" maxlength="2" required pattern="[0-9]{1,2}">
                                     </td>
                                     <td id="vd_nata">
-                                        <input type="text" name="vd_nata" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_nata">
+                                        <input id="vd_nata" type="text" name="vd_nata" size="2" maxlength="2" required pattern="[0-9]{1,2}">
                                     </td>
                                     <td id="vd_escal">
-                                        <input type="text" name="vd_escal" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_escal">
+                                        <input id="vd_escal" type="text" name="vd_escal" size="2" maxlength="2" required pattern="[0-9]{1,2}">
                                     </td>
                                     <td id="vd_creuse">
-                                        <input type="text" name="vd_creuse" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="vd_creuse">
+                                        <input id="vd_creuse" type="text" name="vd_creuse" size="2" maxlength="2" required pattern="[0-9]{1,2}">
                                     </td>
                                 </tr>
                             </table>
@@ -823,7 +832,7 @@
                                     </td>
                                     <td>+</td>
                                     <td>
-                                        <input type="text" name="divers_acrobatie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 id="diversAcrobatie" 
+                                        <input id="diversAcrobatie" type="text" name="divers_acrobatie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
                                         onChange="calculeCompetence('totalAcrobatie','caracAcrobatie','rangAcrobatie','diversAcrobatie')">
                                     </td>
                                 </tr>
@@ -1128,7 +1137,7 @@
                                     <tr>
                                         <td id="label_poids_total">POIDS TOTAL</td>
                                         <td> 
-                                            <input type="text" name="poids_total" size="2" maxlength="2" required pattern="[0-9]{1,2}" id="poids_total">
+                                            <input id="poids_total" type="text" name="poids_total" size="2" maxlength="2" required pattern="[0-9]{1,2}">
                                         </td>
                                         <td></td>
                                     </tr>
@@ -1405,133 +1414,134 @@
                         <table id="table_dom_spe">
                             <tr>
                                 <td colspan="9" id="label_DOM/SPE"><h5>DOMAINES/SPECIALISATION</h5></td>
-                                <td><select name="dom_spe" id="dom_spe"></select></td>
+                                <td><select id="dom_spe" name="dom_spe"></select></td>
                             </tr>
 
                             <tr>
                                 <td>0</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select name="dom_spe_01" id="dom_spe_01"></select></td></tr>
-                            <tr><td><select name="dom_spe_02" id="dom_spe_02"></select></td></tr>
-                            <tr><td><select name="dom_spe_03" id="dom_spe_03"></select></td></tr>
-                            <tr><td><select name="dom_spe_04" id="dom_spe_04"></select></td></tr>
-                            <tr><td><select name="dom_spe_05" id="dom_spe_05"></select></td></tr>
-                            <tr><td><select name="dom_spe_06" id="dom_spe_06"></select></td></tr>
-                            <tr><td><select name="dom_spe_07" id="dom_spe_07"></select></td></tr>
-                            <tr><td><select name="dom_spe_08" id="dom_spe_08"></select></td></tr>
+                            <tr><td><select id="dom_spe_01" name="dom_spe_01"></select></td></tr>
+                            <tr><td><select id="dom_spe_02" name="dom_spe_02"></select></td></tr>
+                            <tr><td><select id="dom_spe_03" name="dom_spe_03"></select></td></tr>
+                            <tr><td><select id="dom_spe_04" name="dom_spe_04"></select></td></tr>
+                            <tr><td><select id="dom_spe_05" name="dom_spe_05"></select></td></tr>
+                            <tr><td><select id="dom_spe_06" name="dom_spe_06"></select></td></tr>
+                            <tr><td><select id="dom_spe_07" name="dom_spe_07"></select></td></tr>
+                            <tr><td><select id="dom_spe_08" name="dom_spe_08"></select></td></tr>
 
                             <tr>
                                 <td>1</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select name="dom_spe_11" id="dom_spe_11"></select></td></tr>
-                            <tr><td><select name="dom_spe_12" id="dom_spe_12"></select></td></tr>
-                            <tr><td><select name="dom_spe_13" id="dom_spe_13"></select></td></tr>
-                            <tr><td><select name="dom_spe_14" id="dom_spe_14"></select></td></tr>
-                            <tr><td><select name="dom_spe_15" id="dom_spe_15"></select></td></tr>
-                            <tr><td><select name="dom_spe_16" id="dom_spe_16"></select></td></tr>
-                            <tr><td><select name="dom_spe_17" id="dom_spe_17"></select></td></tr>
-                            <tr><td><select name="dom_spe_18" id="dom_spe_18"></select></td></tr>
+                            <tr><td><select id="dom_spe_11" name="dom_spe_11"></select></td></tr>
+                            <tr><td><select id="dom_spe_12" name="dom_spe_12"></select></td></tr>
+                            <tr><td><select id="dom_spe_13" name="dom_spe_13"></select></td></tr>
+                            <tr><td><select id="dom_spe_14" name="dom_spe_14"></select></td></tr>
+                            <tr><td><select id="dom_spe_15" name="dom_spe_15"></select></td></tr>
+                            <tr><td><select id="dom_spe_16" name="dom_spe_16"></select></td></tr>
+                            <tr><td><select id="dom_spe_17" name="dom_spe_17"></select></td></tr>
+                            <tr><td><select id="dom_spe_18" name="dom_spe_18"></select></td></tr>
 
                             <tr>
                                 <td>2</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select name="dom_spe_21" id="dom_spe_21"></select></td></tr>
-                            <tr><td><select name="dom_spe_22" id="dom_spe_22"></select></td></tr>
-                            <tr><td><select name="dom_spe_23" id="dom_spe_23"></select></td></tr>
-                            <tr><td><select name="dom_spe_24" id="dom_spe_24"></select></td></tr>
-                            <tr><td><select name="dom_spe_25" id="dom_spe_25"></select></td></tr>
-                            <tr><td><select name="dom_spe_26" id="dom_spe_26"></select></td></tr>
-                            <tr><td><select name="dom_spe_27" id="dom_spe_27"></select></td></tr>
-                            <tr><td><select name="dom_spe_28" id="dom_spe_28"></select></td></tr>
+                            <tr><td><select id="dom_spe_21" name="dom_spe_21"></select></td></tr>
+                            <tr><td><select id="dom_spe_22" name="dom_spe_22"></select></td></tr>
+                            <tr><td><select id="dom_spe_23" name="dom_spe_23"></select></td></tr>
+                            <tr><td><select id="dom_spe_24" name="dom_spe_24"></select></td></tr>
+                            <tr><td><select id="dom_spe_25" name="dom_spe_25"></select></td></tr>
+                            <tr><td><select id="dom_spe_26" name="dom_spe_26"></select></td></tr>
+                            <tr><td><select id="dom_spe_27" name="dom_spe_27"></select></td></tr>
+                            <tr><td><select id="dom_spe_28" name="dom_spe_28"></select></td></tr>
 
                             <tr>
                                 <td>3</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select name="dom_spe_31" id="dom_spe_31"></select></td></tr>
-                            <tr><td><select name="dom_spe_32" id="dom_spe_32"></select></td></tr>
-                            <tr><td><select name="dom_spe_33" id="dom_spe_33"></select></td></tr>
-                            <tr><td><select name="dom_spe_34" id="dom_spe_34"></select></td></tr>
-                            <tr><td><select name="dom_spe_35" id="dom_spe_35"></select></td></tr>
-                            <tr><td><select name="dom_spe_36" id="dom_spe_36"></select></td></tr>
-                            <tr><td><select name="dom_spe_37" id="dom_spe_37"></select></td></tr>
-                            <tr><td><select name="dom_spe_38" id="dom_spe_38"></select></td></tr>
+                            <tr><td><select id="dom_spe_31" name="dom_spe_31"></select></td></tr>
+                            <tr><td><select id="dom_spe_32" name="dom_spe_32"></select></td></tr>
+                            <tr><td><select id="dom_spe_33" name="dom_spe_33"></select></td></tr>
+                            <tr><td><select id="dom_spe_34" name="dom_spe_34"></select></td></tr>
+                            <tr><td><select id="dom_spe_35" name="dom_spe_35"></select></td></tr>
+                            <tr><td><select id="dom_spe_36" name="dom_spe_36"></select></td></tr>
+                            <tr><td><select id="dom_spe_37" name="dom_spe_37"></select></td></tr>
+                            <tr><td><select id="dom_spe_38" name="dom_spe_38"></select></td></tr>
 
                             <tr>
                                 <td>4</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select name="dom_spe_41" id="dom_spe_41"></select></td></tr>
-                            <tr><td><select name="dom_spe_42" id="dom_spe_42"></select></td></tr>
-                            <tr><td><select name="dom_spe_43" id="dom_spe_43"></select></td></tr>
-                            <tr><td><select name="dom_spe_44" id="dom_spe_44"></select></td></tr>
-                            <tr><td><select name="dom_spe_45" id="dom_spe_45"></select></td></tr>
-                            <tr><td><select name="dom_spe_46" id="dom_spe_46"></select></td></tr>
-                            <tr><td><select name="dom_spe_47" id="dom_spe_47"></select></td></tr>
-                            <tr><td><select name="dom_spe_48" id="dom_spe_48"></select></td></tr>
+                            <tr><td><select id="dom_spe_41" name="dom_spe_41"></select></td></tr>
+                            <tr><td><select id="dom_spe_42" name="dom_spe_42"></select></td></tr>
+                            <tr><td><select id="dom_spe_43" name="dom_spe_43"></select></td></tr>
+                            <tr><td><select id="dom_spe_44" name="dom_spe_44"></select></td></tr>
+                            <tr><td><select id="dom_spe_45" name="dom_spe_45"></select></td></tr>
+                            <tr><td><select id="dom_spe_46" name="dom_spe_46"></select></td></tr>
+                            <tr><td><select id="dom_spe_47" name="dom_spe_47"></select></td></tr>
+                            <tr><td><select id="dom_spe_48" name="dom_spe_48"></select></td></tr>
 
                             <tr>
                                 <td>5</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select name="dom_spe_51" id="dom_spe_51"></select></td></tr>
-                            <tr><td><select name="dom_spe_52" id="dom_spe_52"></select></td></tr>
-                            <tr><td><select name="dom_spe_53" id="dom_spe_53"></select></td></tr>
-                            <tr><td><select name="dom_spe_54" id="dom_spe_54"></select></td></tr>
-                            <tr><td><select name="dom_spe_55" id="dom_spe_55"></select></td></tr>
-                            <tr><td><select name="dom_spe_56" id="dom_spe_56"></select></td></tr>
-                            <tr><td><select name="dom_spe_57" id="dom_spe_57"></select></td></tr>
-                            <tr><td><select name="dom_spe_58" id="dom_spe_58"></select></td></tr>
+                            <tr><td><select id="dom_spe_51" name="dom_spe_51"></select></td></tr>
+                            <tr><td><select id="dom_spe_52" name="dom_spe_52"></select></td></tr>
+                            <tr><td><select id="dom_spe_53" name="dom_spe_53"></select></td></tr>
+                            <tr><td><select id="dom_spe_54" name="dom_spe_54"></select></td></tr>
+                            <tr><td><select id="dom_spe_55" name="dom_spe_55"></select></td></tr>
+                            <tr><td><select id="dom_spe_56" name="dom_spe_56"></select></td></tr>
+                            <tr><td><select id="dom_spe_57" name="dom_spe_57"></select></td></tr>
+                            <tr><td><select id="dom_spe_58" name="dom_spe_58"></select></td></tr>
 
                             <tr>
                                 <td>6</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select name="dom_spe_61" id="dom_spe_61"></select></td></tr>
-                            <tr><td><select name="dom_spe_62" id="dom_spe_62"></select></td></tr>
-                            <tr><td><select name="dom_spe_63" id="dom_spe_63"></select></td></tr>
-                            <tr><td><select name="dom_spe_64" id="dom_spe_64"></select></td></tr>
-                            <tr><td><select name="dom_spe_65" id="dom_spe_65"></select></td></tr>
-                            <tr><td><select name="dom_spe_66" id="dom_spe_66"></select></td></tr>
-                            <tr><td><select name="dom_spe_67" id="dom_spe_67"></select></td></tr>
-                            <tr><td><select name="dom_spe_68" id="dom_spe_68"></select></td></tr>
+                            <tr><td><select id="dom_spe_61" name="dom_spe_61"></select></td></tr>
+                            <tr><td><select id="dom_spe_62" name="dom_spe_62"></select></td></tr>
+                            <tr><td><select id="dom_spe_63" name="dom_spe_63"></select></td></tr>
+                            <tr><td><select id="dom_spe_64" name="dom_spe_64"></select></td></tr>
+                            <tr><td><select id="dom_spe_65" name="dom_spe_65"></select></td></tr>
+                            <tr><td><select id="dom_spe_66" name="dom_spe_66"></select></td></tr>
+                            <tr><td><select id="dom_spe_67" name="dom_spe_67"></select></td></tr>
+                            <tr><td><select id="dom_spe_68" name="dom_spe_68"></select></td></tr>
 
                             <tr>
                                 <td>7</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select name="dom_spe_71" id="dom_spe_71"></select></td></tr>
-                            <tr><td><select name="dom_spe_72" id="dom_spe_72"></select></td></tr>
-                            <tr><td><select name="dom_spe_73" id="dom_spe_73"></select></td></tr>
-                            <tr><td><select name="dom_spe_74" id="dom_spe_74"></select></td></tr>
-                            <tr><td><select name="dom_spe_75" id="dom_spe_75"></select></td></tr>
-                            <tr><td><select name="dom_spe_76" id="dom_spe_76"></select></td></tr>
-                            <tr><td><select name="dom_spe_77" id="dom_spe_77"></select></td></tr>
-                            <tr><td><select name="dom_spe_78" id="dom_spe_78"></select></td></tr>                        
+                            <tr><td><select id="dom_spe_71" name="dom_spe_71"></select></td></tr>
+                            <tr><td><select id="dom_spe_72" name="dom_spe_72"></select></td></tr>
+                            <tr><td><select id="dom_spe_73" name="dom_spe_73"></select></td></tr>
+                            <tr><td><select id="dom_spe_74" name="dom_spe_74"></select></td></tr>
+                            <tr><td><select id="dom_spe_75" name="dom_spe_75"></select></td></tr>
+                            <tr><td><select id="dom_spe_76" name="dom_spe_76"></select></td></tr>
+                            <tr><td><select id="dom_spe_77" name="dom_spe_77"></select></td></tr>
+                            <tr><td><select id="dom_spe_78" name="dom_spe_78"></select></td></tr>
 
                             <tr>
                                 <td>8</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select name="dom_spe_81" id="dom_spe_81"></select></td></tr>
-                            <tr><td><select name="dom_spe_82" id="dom_spe_82"></select></td></tr>
-                            <tr><td><select name="dom_spe_83" id="dom_spe_83"></select></td></tr>
-                            <tr><td><select name="dom_spe_84" id="dom_spe_84"></select></td></tr>
-                            <tr><td><select name="dom_spe_85" id="dom_spe_85"></select></td></tr>
-                            <tr><td><select name="dom_spe_86" id="dom_spe_86"></select></td></tr>
-                            <tr><td><select name="dom_spe_87" id="dom_spe_87"></select></td></tr>
-                            <tr><td><select name="dom_spe_88" id="dom_spe_88"></select></td></tr>
+                            <tr><td><select id="dom_spe_81" name="dom_spe_81"></select></td></tr>
+                            <tr><td><select id="dom_spe_82" name="dom_spe_82"></select></td></tr>
+                            <tr><td><select id="dom_spe_83" name="dom_spe_83"></select></td></tr>
+                            <tr><td><select id="dom_spe_84" name="dom_spe_84"></select></td></tr>
+                            <tr><td><select id="dom_spe_85" name="dom_spe_85"></select></td></tr>
+                            <tr><td><select id="dom_spe_86" name="dom_spe_86"></select></td></tr>
+                            <tr><td><select id="dom_spe_87" name="dom_spe_87"></select></td></tr>
+                            <tr><td><select id="dom_spe_88" name="dom_spe_88"></select></td></tr>
 
                             <tr>
                                 <td>9</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select name="dom_spe_91" id="dom_spe_91"></select></td></tr>
-                            <tr><td><select name="dom_spe_92" id="dom_spe_92"></select></td></tr>
-                            <tr><td><select name="dom_spe_93" id="dom_spe_93"></select></td></tr>
-                            <tr><td><select name="dom_spe_94" id="dom_spe_94"></select></td></tr>
-                            <tr><td><select name="dom_spe_95" id="dom_spe_95"></select></td></tr>
-                            <tr><td><select name="dom_spe_96" id="dom_spe_96"></select></td></tr>
-                            <tr><td><select name="dom_spe_97" id="dom_spe_97"></select></td></tr>
-                            <tr><td><select name="dom_spe_98" id="dom_spe_98"></select></td></tr>
+                            <tr><td><select id="dom_spe_91" name="dom_spe_91"></select></td></tr>
+                            <tr><td><select id="dom_spe_92" name="dom_spe_92"></select></td></tr>
+                            <tr><td><select id="dom_spe_93" name="dom_spe_93"></select></td></tr>
+                            <tr><td><select id="dom_spe_94" name="dom_spe_94"></select></td></tr>
+                            <tr><td><select id="dom_spe_95" name="dom_spe_95"></select></td></tr>
+                            <tr><td><select id="dom_spe_96" name="dom_spe_96"></select></td></tr>
+                            <tr><td><select id="dom_spe_97" name="dom_spe_97"></select></td></tr>
+                            <tr><td><select id="dom_spe_98" name="dom_spe_98"></select></td></tr>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
     </form>
+</div>
 </body>
 </html>
