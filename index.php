@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/base.css" />
     <!-- script type="text/javascript" src="js/main.js"></script -->
     <!-- script type="text/javascript" src="js/weapon.js"></script -->
+    <!-- script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script -->
 </head>
 
 <body>
@@ -357,34 +358,54 @@
                         <table id="tab_ca">
                             <tr id="caption_ca" class="caption"> 
                                 <th></th>
-                                <th>TOTAL</th>
+                                <th class="caption">TOTAL</th>
                                 <th></th>
-                                <th>ARMURE NATURELLE</th>
+                                <th class="caption">ARMURE NATURELLE</th>
                                 <th></th>
-                                <th>BONUS D'ARMURE</th>
+                                <th class="caption">BONUS D'ARMURE</th>
                                 <th></th>
-                                <th>BONUS DE BOUCLIER</th>
+                                <th class="caption">BONUS DE BOUCLIER</th>
                                 <th></th>
-                                <th>MOD. DE DEXTERITE</th>
+                                <th class="caption">MOD. DE DEXTERITE</th>
                                 <th></th>
-                                <th>MOD. DE TAILLE</th>
+                                <th class="caption">MOD. DE TAILLE</th>
                                 <th></th>
-                                <th>ARMURE NATURELLE</th>
+                                <th class="caption">ARMURE NATURELLE</th>
                                 <th></th>
-                                <th>MOD DE PARADE</th>
+                                <th class="caption">MOD DE PARADE</th>
                                 <th></th>
-                                <th>MOD DIVERS</th>
+                                <th class="caption">MOD DIVERS</th>
                             </tr>
                             
                             <tr>
                                 <td><h2 id="ca" class="font_white">CA</h2></td>
-                                <td name="ca_total" id="ca_total">000</td>
+                                <td id="ca_total" name="ca_total"></td>
                                 <td class="background_grey">=</td>
-                                <td name="ca_arm_base" id="ca_arm_base">10</td>
+                                <td id="ca_arm_base" name="ca_arm_base">10</td>
                                 <td class="background_grey">+</td>
-                                <td name="ca_bon_arm" id="ca_bon_arm">0</td>
+                                <td>
+                                    <select id="ca_bon_arm" name="ca_bon_arm" onChange="influenceBonusArm()">
+                                        <option selected>0</option>
+                                        <option>+1</option>
+                                        <option>+2</option>
+                                        <option>+3</option>
+                                        <option>+4</option>
+                                        <option>+5</option>
+                                    </select>
+                                    <span class="tooltip">Le bonus est invalide</span>
+                                </td>
                                 <td class="background_grey">+</td>
-                                <td name="ca_bon_bou" id="ca_bon_bou">0</td>
+                                <td>
+                                    <select id="ca_bon_bou" name="ca_bon_bou" onChange="influenceBonusBou()">
+                                        <option selected>0</option>
+                                        <option>+1</option>
+                                        <option>+2</option>
+                                        <option>+3</option>
+                                        <option>+4</option>
+                                        <option>+5</option>
+                                    </select>
+                                    <span class="tooltip">Le bonus est invalide</span>
+                                </td>
                                 <td class="background_grey">+</td>
                                 <td name="ca_mod_dex" id="ca_mod_dex">0</td>
                                 <td class="background_grey">+</td>
@@ -394,7 +415,17 @@
                                 <td class="background_grey">+</td>
                                 <td name="ca_mod_par" id="ca_mod_par">0</td>
                                 <td class="background_grey">+</td>
-                                <td name="ca_mod_div" id="ca_mod_div">0</td>
+                                <td>
+                                    <select id="ca_bon_div" name="ca_bon_div" onChange="influenceBonusDiv()">
+                                        <option selected>0</option>
+                                        <option>+1</option>
+                                        <option>+2</option>
+                                        <option>+3</option>
+                                        <option>+4</option>
+                                        <option>+5</option>
+                                    </select>
+                                    <span class="tooltip">Le bonus est invalide</span>
+                                </td>
                             </tr>
                         </table>
                     </div>
@@ -403,17 +434,26 @@
                 <div class="row">
                     <div class="col-lg-2">
                         <label id="lab_ca_contact" class="font_white">CA de contact</label>
-                        <p  id="val_ca_contact">0</p>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-2">
+                        <p id="val_ca_contact">0</p>
+                    </div>
+
+                    <div class="col-lg-2">
                         <label id="lab_pri_depourvu" class="font_white">CA pris au depourvu</label>
-                        <p  id="val_pri_depourvu">0</p>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-1">
+                        <p id="val_pri_depourvu">0</p>
+                    </div>
+
+                    <div class="col-lg-3">
                         <label id="label_mod_part_ca" class="font_white">Modificateur particulier a la CA</label> 
-                        <input type="text" name="mod part ca" size="20" maxlength="20" id="mod_part_ca">
+                    </div>
+
+                    <div class="col-lg-2">
+                        <input id="mod_part_ca" type="text" name="mod_part_ca" size="20" maxlength="20">
                     </div>
                 </div>
 

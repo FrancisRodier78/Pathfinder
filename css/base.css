@@ -173,8 +173,9 @@ td {
 }
 
 #tab_ca {
-	width: 26rem;
+	width: 72rem;
 	text-align: center;
+	margin: 3px;
 }
 
 .background_grey {
@@ -185,20 +186,37 @@ td {
 }
 
 #lab_ca_contact {
-	width: 3rem;
+	width: 8rem;
 	text-align: center;
+	margin: 3px;
 }
 
 #val_ca_contact {
+	margin: 3px;
 }
 
 #lab_pri_depourvu {
-	width: 4rem;
+	width: 10rem;
 	text-align: center;
+	margin: 3px;
 }
 
-
 #val_pri_depourvu {
+	margin: 3px;
+}
+
+#label_mod_part_ca {
+	width: 14rem;
+	text-align: center;
+	margin: 3px;
+}
+
+#mod_part_ca {
+	margin: 3px;
+}
+
+#label_blessure, #label_non_letaux {
+	margin: 3px;
 }
 
 #label_bba, #label_rm,
@@ -228,14 +246,6 @@ td {
 #pv {
 }
 
-#label_mod_part_ca {
-	width: 6rem;
-	text-align: center;
-}
-
-#mod_part_ca {
-}
-
 #label_red_deg {
 	width: 3rem;
 	text-align: center;
@@ -247,6 +257,7 @@ td {
 #tab_init {
 	width: 35rem;
 	text-align: center;
+	margin: 3px;
 }
 
 #tab_sau {
