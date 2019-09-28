@@ -461,38 +461,58 @@
                     <div class="col-lg-12">
                         <table id="tab_sau">
                             <tr id="caption_sau" class="caption"> 
-                                <th>SAUVEGARDES</th>
-                                <th>TOTAL</th>
+                                <th class="caption">SAUVEGARDES</th>
+                                <th class="caption">TOTAL</th>
                                 <th></th>
-                                <th>BONUS DE BASE</th>
+                                <th class="caption">BONUS DE BASE</th>
                                 <th></th>
-                                <th>MOD. DE CARAC.</th>
+                                <th class="caption">MOD. DE CARAC.</th>
                                 <th></th>
-                                <th>MOD. MAGIQUE</th>
+                                <th class="caption">MOD. MAGIQUE</th>
                                 <th></th>
-                                <th>MOD. DIVERS</th>
+                                <th class="caption">MOD. DIVERS</th>
                                 <th></th>
-                                <th>MOD.TEMPORAIRE</th>
+                                <th class="caption">MOD.TEMPORAIRE</th>
                                 <th></th>
-                                <th>MODIFICATEURS PARTICULIERS</th>
+                                <th class="caption">MODIFICATEURS PARTICULIERS</th>
                             </tr>
 
                             <tr>
                                 <td><h2 id="lab_ref" class="font_white">REFLEXES</h2></td>
                                 <td id="sau_total_ref"></td>
-                                <td class="font_white">=</td>
+                                <td class="background_grey">=</td>
                                 <td id="sau_bon_bas_ref"></td>
-                                <td class="font_white">+</td>
+                                <td class="background_grey">+</td>
                                 <td id="sau_mod_car_ref"></td>
-                                <td class="font_white">+</td>
-                                <td id="sau_mod_mag_ref">00</td>
-                                <td class="font_white">+</td>
-                                <td id="sau_mod_div_ref">00</td>
-                                <td class="font_white">+</td>
+                                <td class="background_grey">+</td>
+                                <td id="sau_mod_mag_ref">
+                                    <select id="sau_mod_mag_ref_bon" name="sau_mod_mag_ref_bon" onChange="influenceBonusRefMag()">
+                                        <option selected>0</option>
+                                        <option>+1</option>
+                                        <option>+2</option>
+                                        <option>+3</option>
+                                        <option>+4</option>
+                                        <option>+5</option>
+                                    </select>
+                                    <span class="tooltip">Le bonus est invalide</span>
+                                </td>
+                                <td class="background_grey">+</td>
+                                <td id="sau_mod_div_ref">
+                                    <select id="sau_mod_div_ref_bon" name="sau_mod_div_ref_bon" onChange="influenceBonusRefDiv()">
+                                        <option selected>0</option>
+                                        <option>+1</option>
+                                        <option>+2</option>
+                                        <option>+3</option>
+                                        <option>+4</option>
+                                        <option>+5</option>
+                                    </select>
+                                    <span class="tooltip">Le bonus est invalide</span>
+                                </td>
+                                <td class="background_grey">+</td>
                                 <td id="sau_mod_tem_ref">
                                     <input id="mod_tem_ref" type="text" name="mod_tem_ref" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeReflexes()">
                                 </td>
-                                <td class="font_white">+</td>
+                                <td class="background_grey">+</td>
                                 <td id="sau_mod_part_ref">
                                     <input id="mod_part_ref" type="text" name="mod_part_ref" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeReflexes()">
                                 </td>
@@ -501,19 +521,39 @@
                             <tr>
                                 <td><h2 id="lab_vig" class="font_white">VIGEUR</h2></td>
                                 <td id="sau_total_vig"></td>
-                                <td class="font_white">=</td>
+                                <td class="background_grey">=</td>
                                 <td id="sau_bon_bas_vig"></td>
-                                <td class="font_white">+</td>
+                                <td class="background_grey">+</td>
                                 <td id="sau_mod_car_vig"></td>
-                                <td class="font_white">+</td>
-                                <td id="sau_mod_mag_vig">00</td>
-                                <td class="font_white">+</td>
-                                <td id="sau_mod_div_vig">00</td>
-                                <td class="font_white">+</td>
+                                <td class="background_grey">+</td>
+                                <td id="sau_mod_mag_vig">
+                                    <select id="sau_mod_mag_vig_bon" name="sau_mod_mag_vig_bon" onChange="influenceBonusVigMag()">
+                                        <option selected>0</option>
+                                        <option>+1</option>
+                                        <option>+2</option>
+                                        <option>+3</option>
+                                        <option>+4</option>
+                                        <option>+5</option>
+                                    </select>
+                                    <span class="tooltip">Le bonus est invalide</span>
+                                </td>
+                                <td class="background_grey">+</td>
+                                <td id="sau_mod_div_vig">
+                                    <select id="sau_mod_div_vig_bon" name="sau_mod_div_vig_bon" onChange="influenceBonusVigDiv()">
+                                        <option selected>0</option>
+                                        <option>+1</option>
+                                        <option>+2</option>
+                                        <option>+3</option>
+                                        <option>+4</option>
+                                        <option>+5</option>
+                                    </select>
+                                    <span class="tooltip">Le bonus est invalide</span>
+                                </td>
+                                <td class="background_grey">+</td>
                                 <td id="sau_mod_tem_vig">
                                     <input id="mod_tem_vig" type="text" name="mod_tem_vig" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVigeur()">
                                 </td>
-                                <td class="font_white">+</td>
+                                <td class="background_grey">+</td>
                                 <td id="sau_mod_part_vig">
                                     <input id="mod_part_vig" type="text" name="mod_part_vig" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVigeur()">
                                 </td>
@@ -522,19 +562,39 @@
                             <tr>
                                 <td><h2 id="lab_vol" class="font_white">VOLONTE</h2></td>
                                 <td id="sau_total_vol"></td>
-                                <td class="font_white">=</td>
+                                <td class="background_grey">=</td>
                                 <td id="sau_bon_bas_vol"></td>
-                                <td class="font_white">+</td>
+                                <td class="background_grey">+</td>
                                 <td id="sau_mod_car_vol"></td>
-                                <td class="font_white">+</td>
-                                <td id="sau_mod_mag_vol">00</td>
-                                <td class="font_white">+</td>
-                                <td id="sau_mod_div_vol">00</td>
-                                <td class="font_white">+</td>
+                                <td class="background_grey">+</td>
+                                <td id="sau_mod_mag_vol">
+                                    <select id="sau_mod_mag_vol_bon" name="sau_mod_mag_vol_bon" onChange="influenceBonusVolMag()">
+                                        <option selected>0</option>
+                                        <option>+1</option>
+                                        <option>+2</option>
+                                        <option>+3</option>
+                                        <option>+4</option>
+                                        <option>+5</option>
+                                    </select>
+                                    <span class="tooltip">Le bonus est invalide</span>
+                                </td>
+                                <td class="background_grey">+</td>
+                                <td id="sau_mod_div_vol">
+                                    <select id="sau_mod_div_vol_bon" name="sau_mod_div_vol_bon" onChange="influenceBonusVolDiv()">
+                                        <option selected>0</option>
+                                        <option>+1</option>
+                                        <option>+2</option>
+                                        <option>+3</option>
+                                        <option>+4</option>
+                                        <option>+5</option>
+                                    </select>
+                                    <span class="tooltip">Le bonus est invalide</span>
+                                </td>
+                                <td class="background_grey">+</td>
                                 <td id="sau_mod_tem_vol">
                                     <input id="mod_tem_vol" type="text" name="mdvo" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVolonte()">
                                 </td>
-                                <td class="font_white">+</td>
+                                <td class="background_grey">+</td>
                                 <td id="sau_mod_part_vol">
                                     <input id="mod_part_vol" type="text" name="mod_part_vol" size="2" maxlength="2" pattern="[0-9]{1,2}" onChange="calculeVolonte()">
                                 </td>
@@ -557,13 +617,25 @@
                     </div>
 
                     <div class="col-lg-3">
-                        <input type="text" name="rm" size="3" maxlength="3" id="rm">
+                        <input id="rm" type="text" name="rm" size="3" maxlength="3">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-12">
                         <table id="tab_bmo">
+                            <tr id="caption_bmo" class="caption"> 
+                                <th></th>
+                                <th class="caption">TOTAL</th>
+                                <th></th>
+                                <th class="caption">B B à L'ATTAQUE</th>
+                                <th></th>
+                                <th class="caption">MOD. DE FORCE</th>
+                                <th></th>
+                                <th class="caption">MOD. DE TAILLE</th>
+                                <th></th>
+                                <th class="caption">MOD. DIVERS</th>
+                            </tr>
                             <tr>
                                 <td><h2 id="lab_bmo" class="font_white">BMO</h2></td>
                                 <td id="bmo_total"></td>
@@ -572,22 +644,9 @@
                                 <td class="background_grey">+</td>
                                 <td id="bmo_mod_for"></td>
                                 <td class="background_grey">+</td>
-                                <td id="bmo_mod_tai">00</td>
+                                <td id="bmo_mod_tai"></td>
                                 <td class="background_grey">+</td>
-                                <td id="bmo_mod_div">00</td>
-                            </tr>
-
-                            <tr id="caption_bmo" class="caption"> 
-                                <th></th>
-                                <th>TOTAL</th>
-                                <th></th>
-                                <th>B B à L'ATTAQUE</th>
-                                <th></th>
-                                <th>MOD. DE FORCE</th>
-                                <th></th>
-                                <th>MOD. DE TAILLE</th>
-                                <th></th>
-                                <th>MOD. DIVERS</th>
+                                <td id="bmo_mod_div"></td>
                             </tr>
                         </table>
                     </div>
@@ -596,6 +655,20 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <table id="tab_dmd">
+                            <tr id="caption_bmo" class="caption"> 
+                                <th></th>
+                                <th class="caption">TOTAL</th>
+                                <th></th>
+                                <th class="caption">B B à L'ATTAQUE</th>
+                                <th></th>
+                                <th class="caption">MOD. DE FORCE</th>
+                                <th></th>
+                                <th class="caption">MOD. DE DEXTERITE</th>
+                                <th></th>
+                                <th class="caption">MOD. DE TAILLE</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
                             <tr>
                                 <td><h2 id="lab_dmd" class="font_white">DMD</h2></td>
                                 <td id="dmd_total"></td>
@@ -606,24 +679,9 @@
                                 <td class="background_grey">+</td>
                                 <td id="dmd_mod_dex"></td>
                                 <td class="background_grey">+</td>
-                                <td id="dmd_mod_tai">00</td>
+                                <td id="dmd_mod_tai"></td>
                                 <td class="background_grey">+</td>
                                 <td id="dmd_mod_div">10</td>
-                            </tr>
-
-                            <tr id="caption_bmo" class="caption"> 
-                                <th></th>
-                                <th>TOTAL</th>
-                                <th></th>
-                                <th>B B à L'ATTAQUE</th>
-                                <th></th>
-                                <th>MOD. DE FORCE</th>
-                                <th></th>
-                                <th>MOD. DE DEXTERITE</th>
-                                <th></th>
-                                <th>MOD. DE TAILLE</th>
-                                <th></th>
-                                <th></th>
                             </tr>
                         </table>
                     </div>
@@ -654,8 +712,8 @@
                         <table id="tab_arme_a_I">
                             <tr>
                                 <td colspan="3"><label class="font_white">ATTAQUE</label></td>
-                                <td><h3 class="font_white">BONUS A L'ATTAQUE</h3></td>
-                                <td><h3 class="font_white">CRITIQUE</h3></td>
+                                <td><label class="font_white">BONUS A L'ATTAQUE</label></td>
+                                <td><label class="font_white">CRITIQUE</label></td>
                             </tr>
 
                             <tr>
@@ -663,6 +721,7 @@
                                     <select id="arme_I" name="arme_I" onChange="choixArme(document.form.famille_arme_I,document.form.maniement_arme_I,document.form.arme_I,'degat_I','for_mod',document.form.bonus_I,'critique_I','portee_I','type_I','mun_I')">
                                     </select>
                                 </td>
+
                                 <td class="text_center">
                                     <select id="bonus_I" name="bonus" onChange="calculeFrapper(document.form.famille_arme_I,document.form.arme_I,'degat_I','critique_I','portee_I','type_I','mun_I',document.form.maniement_arme_I,'bba','dex_mod','for_mod',document.form.bonus_I,'frapper_I')">
                                         <option value=0></option>
@@ -677,22 +736,16 @@
                                 </td>
                                 <td class="text_center" id="critique_I"></td>
                             </tr>
-                        </table>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-lg-12">
-                        <table id="tab_arme_b_I">
                             <tr>
-                                <td><h3 class="label_description">TYPE</h3></td>
-                                <td><h3 class="label_description">PORTEE</h3></td>
-                                <td><h3 class="label_description">MUNITIONS</h3></td>
-                                <td colspan="2"><h3 class="label_description">DEGATS</h3></td>
+                                <td><label class="label_description">TYPE</label></td>
+                                <td><label class="label_description">PORTEE</label></td>
+                                <td><label class="label_description">MUNITIONS</label></td>
+                                <td colspan="2"><label class="label_description">DEGATS</label></td>
                             </tr>
 
                             <tr>
-                                <td id="type_I">_</td id="frapper_I">
+                                <td id="type_I">_</td>
                                 <td id="portee_I">_</td>
                                 <td id="munitions_I">_</td>
                                 <td colspan="2" id="degats_I">_</td>
@@ -725,9 +778,9 @@
                     <div class="col-lg-12">
                         <table id="tab_arme_a_II">
                             <tr>
-                                <td colspan="3"><h2 class="font_white">ATTAQUE</h2></td>
-                                <td><h3 class="font_white">BONUS A L'ATTAQUE</h3></td>
-                                <td><h3 class="font_white">CRITIQUE</h3></td>
+                                <td colspan="3"><label class="font_white">ATTAQUE</label></td>
+                                <td><label class="font_white">BONUS A L'ATTAQUE</label></td>
+                                <td><label class="font_white">CRITIQUE</label></td>
                             </tr>
 
                             <tr>
@@ -735,6 +788,7 @@
                                     <select id="arme_II" name="arme_II" onChange="choixArme(document.form.famille_arme_II,document.form.maniement_arme_II,document.form.arme_II,'degat_II','for_mod',document.form.bonus_II,'critique_II','portee_II','type_II','mun_II')">
                                     </select>
                                 </td>
+
                                 <td class="text_center">
                                     <select id="bonus_II" name="bonus" onChange="calculeFrapper(document.form.famille_arme_II,document.form.arme_II,'degat_II','critique_II','portee_II','type_II','mun_II',document.form.maniement_arme_II,'bba','dex_mod','for_mod',document.form.bonus_II,'frapper_II')">
                                         <option value=0></option>
@@ -747,24 +801,18 @@
                                     </select>
                                     <span class="tooltip">Bonus non pris en compte</span>
                                 </td>
-                                <td class="text_center" id="critique_II"></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <table id="tab_arme_b_II">
-                            <tr>
-                                <td><h3 class="label_description">TYPE</h3></td>
-                                <td><h3 class="label_description">PORTEE</h3></td>
-                                <td><h3 class="label_description">MUNITIONS</h3></td>
-                                <td colspan="2"><h3 class="label_description">DEGATS</h3></td>
+                                <td id="critique_II" class="text_center"></td>
                             </tr>
 
                             <tr>
-                                <td id="type_II">_</td id="frapper_I">
+                                <td><label class="label_description">TYPE</label></td>
+                                <td><label class="label_description">PORTEE</label></td>
+                                <td><label class="label_description">MUNITIONS</label></td>
+                                <td colspan="2"><label class="label_description">DEGATS</label></td>
+                            </tr>
+
+                            <tr>
+                                <td id="type_II">_</td">
                                 <td id="portee_II">_</td>
                                 <td id="munitions_II">_</td>
                                 <td colspan="2" id="degats_II">_</td>
@@ -773,6 +821,206 @@
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label id="label_famille_arme_III" for="famille_arme_III">FAMILLE D'ARME</label> 
+                        <select id="famille_arme_III" name="famille_arme_III" onChange="choixFamilleArme('maniement_arme_III',document.form.famille_arme_III,document.form.maniement_arme_III)">
+                            <option></option>
+                            <option value="armes_courantes">Armes courantes</option>
+                            <option value="armes_de_guerre">Arme de guerre</option>
+                            <option value="armes_exotiques">Arme exotiques</option>
+                        </select>
+                        <span class="tooltip">Famille d'arme inconnue</span>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <label id="label_maniement_arme_III" for="maniement_arme_III">MANIEMENT</label> 
+                        <select id="maniement_arme_III" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_III,'arme_III',document.form.maniement_arme_III,document.form.arme_III)">
+                        </select>
+                        <span class="tooltip">Maniement d'arme inconnue</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table id="tab_arme_a_III">
+                            <tr>
+                                <td colspan="3"><label class="font_white">ATTAQUE</label></td>
+                                <td><label class="font_white">BONUS A L'ATTAQUE</label></td>
+                                <td><label class="font_white">CRITIQUE</label></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3">
+                                    <select id="arme_III" name="arme_III" onChange="choixArme(document.form.famille_arme_III,document.form.maniement_arme_III,document.form.arme_III,'degat_III','for_mod',document.form.bonus_III,'critique_III','portee_III','type_III','mun_III')">
+                                    </select>
+                                </td>
+
+                                <td class="text_center">
+                                    <select id="bonus_III" name="bonus" onChange="calculeFrapper(document.form.famille_arme_III,document.form.arme_III,'degat_III','critique_III','portee_III','type_III','mun_III',document.form.maniement_arme_III,'bba','dex_mod','for_mod',document.form.bonus_III,'frapper_III')">
+                                        <option value=0></option>
+                                        <option value=0>0</option>
+                                        <option value=1>1</option>
+                                        <option value=2>2</option>
+                                        <option value=3>3</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5</option>
+                                    </select>
+                                    <span class="tooltip">Bonus non pris en compte</span>
+                                </td>
+                                <td id="critique_III" class="text_center"></td>
+                            </tr>
+
+                            <tr>
+                                <td><label class="label_description">TYPE</label></td>
+                                <td><label class="label_description">PORTEE</label></td>
+                                <td><label class="label_description">MUNITIONS</label></td>
+                                <td colspan="2"><label class="label_description">DEGATS</label></td>
+                            </tr>
+
+                            <tr>
+                                <td id="type_III">_</td>
+                                <td id="portee_III">_</td>
+                                <td id="munitions_III">_</td>
+                                <td colspan="2" id="degats_III">_</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label id="label_famille_arme_IV" for="famille_arme_IV">FAMILLE D'ARME</label> 
+                        <select id="famille_arme_IV" name="famille_arme_IV" onChange="choixFamilleArme('maniement_arme_IV',document.form.famille_arme_IV,document.form.maniement_arme_IV)">
+                            <option></option>
+                            <option value="armes_courantes">Armes courantes</option>
+                            <option value="armes_de_guerre">Arme de guerre</option>
+                            <option value="armes_exotiques">Arme exotiques</option>
+                        </select>
+                        <span class="tooltip">Famille d'arme inconnue</span>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <label id="label_maniement_arme_IV" for="maniement_arme_IV">MANIEMENT</label> 
+                        <select id="maniement_arme_IV" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_IV,'arme_IV',document.form.maniement_arme_IV,document.form.arme_IV)">
+                        </select>
+                        <span class="tooltip">Maniement d'arme inconnue</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table id="tab_arme_a_IV">
+                            <tr>
+                                <td colspan="3"><label class="font_white">ATTAQUE</label></td>
+                                <td><label class="font_white">BONUS A L'ATTAQUE</label></td>
+                                <td><label class="font_white">CRITIQUE</label></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3">
+                                    <select id="arme_IV" name="arme_IV" onChange="choixArme(document.form.famille_arme_IV,document.form.maniement_arme_IV,document.form.arme_IV,'degat_IV','for_mod',document.form.bonus_IV,'critique_IV','portee_IV','type_IV','mun_IV')">
+                                    </select>
+                                </td>
+
+                                <td class="text_center">
+                                    <select id="bonus_IV" name="bonus" onChange="calculeFrapper(document.form.famille_arme_IV,document.form.arme_IV,'degat_IV','critique_IV','portee_IV','type_IV','mun_IV',document.form.maniement_arme_IV,'bba','dex_mod','for_mod',document.form.bonus_IV,'frapper_IV')">
+                                        <option value=0></option>
+                                        <option value=0>0</option>
+                                        <option value=1>1</option>
+                                        <option value=2>2</option>
+                                        <option value=3>3</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5</option>
+                                    </select>
+                                    <span class="tooltip">Bonus non pris en compte</span>
+                                </td>
+                                <td id="critique_IV" class="text_center"></td>
+                            </tr>
+
+                            <tr>
+                                <td><label class="label_description">TYPE</label></td>
+                                <td><label class="label_description">PORTEE</label></td>
+                                <td><label class="label_description">MUNITIONS</label></td>
+                                <td colspan="2"><label class="label_description">DEGATS</label></td>
+                            </tr>
+
+                            <tr>
+                                <td id="type_IV">_</td>
+                                <td id="portee_IV">_</td>
+                                <td id="munitions_IV">_</td>
+                                <td colspan="2" id="degats_IV">_</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label id="label_famille_arme_V" for="famille_arme_V">FAMILLE D'ARME</label> 
+                        <select id="famille_arme_V" name="famille_arme_V" onChange="choixFamilleArme('maniement_arme_V',document.form.famille_arme_V,document.form.maniement_arme_V)">
+                            <option></option>
+                            <option value="armes_courantes">Armes courantes</option>
+                            <option value="armes_de_guerre">Arme de guerre</option>
+                            <option value="armes_exotiques">Arme exotiques</option>
+                        </select>
+                        <span class="tooltip">Famille d'arme inconnue</span>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <label id="label_maniement_arme_V" for="maniement_arme_V">MANIEMENT</label> 
+                        <select id="maniement_arme_V" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_V,'arme_V',document.form.maniement_arme_V,document.form.arme_V)">
+                        </select>
+                        <span class="tooltip">Maniement d'arme inconnue</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table id="tab_arme_a_V">
+                            <tr>
+                                <td colspan="3"><label class="font_white">ATTAQUE</label></td>
+                                <td><label class="font_white">BONUS A L'ATTAQUE</label></td>
+                                <td><label class="font_white">CRITIQUE</label></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3">
+                                    <select id="arme_V" name="arme_V" onChange="choixArme(document.form.famille_arme_V,document.form.maniement_arme_V,document.form.arme_V,'degat_V','for_mod',document.form.bonus_V,'critique_V','portee_V','type_V','mun_V')">
+                                    </select>
+                                </td>
+
+                                <td class="text_center">
+                                    <select id="bonus_V" name="bonus" onChange="calculeFrapper(document.form.famille_arme_V,document.form.arme_V,'degat_V','critique_V','portee_V','type_V','mun_V',document.form.maniement_arme_V,'bba','dex_mod','for_mod',document.form.bonus_V,'frapper_V')">
+                                        <option value=0></option>
+                                        <option value=0>0</option>
+                                        <option value=1>1</option>
+                                        <option value=2>2</option>
+                                        <option value=3>3</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5</option>
+                                    </select>
+                                    <span class="tooltip">Bonus non pris en compte</span>
+                                </td>
+                                <td id="critique_V" class="text_center"></td>
+                            </tr>
+
+                            <tr>
+                                <td><label class="label_description">TYPE</label></td>
+                                <td><label class="label_description">PORTEE</label></td>
+                                <td><label class="label_description">MUNITIONS</label></td>
+                                <td colspan="2"><label class="label_description">DEGATS</label></td>
+                            </tr>
+
+                            <tr>
+                                <td id="type_V">_</td>
+                                <td id="portee_V">_</td>
+                                <td id="munitions_V">_</td>
+                                <td colspan="2" id="degats_V">_</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
 
             <div class="col-lg-4">
