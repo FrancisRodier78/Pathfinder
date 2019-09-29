@@ -222,7 +222,7 @@ td {
 #label_bba, #label_rm,
 #label_vit,
 #label_de_classe, #label_comp, #label_degres, #label_equip,
-#label_capaciteDeCharge, #label_langues, #label_recipients,
+#label_capaciteDeCharge, #label_recipients,
 #label_richesses, .label_don, #label_notes, #label_sorts,
 #label_ecole_predilection, #label_ecoles_interdites, #label_experience,
 #label_armure, #label_traits, #label_aptitudes {
@@ -261,56 +261,99 @@ td {
 }
 
 #tab_sau {
-	width: 30rem;
+	width: 73rem;
 	text-align: center;
+	margin: 3px;
 }
 
 #label_bba {
+	margin: 3px;
 }
 
 #bba {
+	margin: 3px;
 }
 
 #label_rm {
+	margin: 3px;
 }
 
-#rm {
+#tab_rm {
+	margin: 3px;
 }
 
-#tab_lut {
-	width: 22rem;
+#tab_bmo {
+	width: 73rem;
+	margin: 3px;
+}
+
+#tab_dmd {
+	width: 73rem;
+	margin: 3px;
+}
+
+#dmd_mod_div {
 	text-align: center;
 }
 
-#caption_lut {
-	caption-side: bottom;
-}
-
-#label_vit {
-}
-
-#vit {
-}
-
 #label_famille_arme_I, #label_famille_arme_II, #label_famille_arme_III, #label_famille_arme_IV, #label_famille_arme_V {
+	margin: 3px;
 }
 
 #famille_arme_I, #famille_arme_II, #famille_arme_III, #famille_arme_IV, #famille_arme_V {
+	margin: 3px;
 }
 
 #label_maniement_arme_I, #label_maniement_arme_II, #label_maniement_arme_III, #label_maniement_arme_IV,#label_maniement_arme_V {
+	margin: 3px;
 }
 
 #maniement_arme_I, #maniement_arme_II, #maniement_arme_III, #maniement_arme_IV,#maniement_arme_V {
+	margin: 3px;
 }
 
 #tab_arme_a_I, #tab_arme_a_II, #tab_arme_a_III, #tab_arme_a_IV, #tab_arme_a_V {
-	width: 30rem;
+	width: 73rem;
+	margin: 3px;
 }
 
-#tab_arme_b_I, #tab_arme_b_II, #tab_arme_b_III, #tab_arme_b_IV, #tab_arme_b_V {
-	width: 30rem;
+#tab_vd_a, #tab_vd_b {
+	width: 36rem;
+	text-align: center;
+	margin: 3px;
 }
+
+#competences {
+	width: 36rem;
+	margin: 3px;
+}
+
+.center {
+	text-align: center;
+}
+
+#somme_compétences {
+	margin: 3px;
+}
+
+#label_modif_part {
+	margin-top: 3px;
+}
+
+#modif_part {
+	margin-bottom: 3px;
+}
+
+#label_langues {
+	margin-top: : 3px;
+}
+
+#langues {
+	margin-bottom: 3px;
+}
+
+
+
 .label_description {
 	color: black;
 	background-color: lightgrey;
@@ -318,8 +361,6 @@ td {
 
 .text_center {
 	text-align: center;
-}
-#competences {
 }
 
 #label_de_classe{

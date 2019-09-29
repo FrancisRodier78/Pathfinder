@@ -1026,306 +1026,856 @@
             <div class="col-lg-4">
                 <div class="row">
                     <div class="col-lg-12">
-                        <table id="tab_vd">
-                            <tr id="caption_vd" class="caption"> 
-                                <th>VD</th>
-                                <th>Mètres</th>
-                                <th>Cases</th>
-                                <th>Mètres</th>
-                                <th>Case</th>
-                                <th>Modif. Temporaire</th>
+                        <table id="tab_vd_a">
+                            <tr id="caption_vd_a" class="caption"> 
+                                <th></th>
+                                <th class="caption">SA Mètres</th>
+                                <th class="caption">SA Cases</th>
+                                <th class="caption">AA Mètres</th>
+                                <th class="caption">AA Case</th>
+                                <th class="caption">Modif. Temporaire</th>
+                            </tr>
+
+                            <tr>
+                                <td class="font_white">VD</td>
+                                <td id="vd_sans_armure_metre">0</td>
+                                <td id="vd_sans_armure_case">0</td>
+                                <td id="vd_avec_armure_metre">0</td>
+                                <td id="vd_avec_armure_case">0</td>
+                                <td id="vd_mod_divers">0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table id="tab_vd_b">
+                            <tr id="caption_vd_b"> 
+                                <th class="caption">VOL</th>
+                                <th class="caption">MANOEUVRABILITE</th>
+                                <th class="caption">NATATION</th>
+                                <th class="caption">ESCALADE</th>
+                                <th class="caption">CREUSEMENT</th>
+                            </tr>
+
+                            <tr>
+                                <td id="vd_vol">0</td>
+                                <td id="vd_manoeu">0</td>
+                                <td id="vd_nata">0</td>
+                                <td id="vd_escal">0</td>
+                                <td id="vd_creuse">0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table id="competences">
+                            <tr>
+                                <th class="font_white caption" colspan="11">COMPETENCES</th>
                             </tr>
 
                             <tr>
                                 <td></td>
-                                <td id="vd_sans_armure_metre">
-                                    <input id="vd_sans_armure_metre" type="text" name="vd_sans_armure_metre" size="2" maxlength="2" required pattern="[0-9]{1,2}">
+                                <td colspan="2" class="background_grey"><h2>NOM DE LA COMPETENCE</h2></td>
+                                <td colspan="2"  class="background_grey"><h3>Bonus Total</h3></td>
+                                <td colspan="2" class="background_grey"><h3>MOD. DE CARACTERISTIQUE</h3></td>
+                                <td colspan="2" class="background_grey"><h3>RANG</h3></td>
+                                <td colspan="2" class="background_grey"><h3>MOD. DIVERS</h3></td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="acrobatie"><h2>O</h2></td>
+                                <td colspan="2">Acrobatie</td>
+                                <td class="acrobatie center" id="totalAcrobatie">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracAcrobatie">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangAcrobatie" name="rang_acrobatie" 
+                                    onChange="calculeCompetence('totalAcrobatie','caracAcrobatie','rangAcrobatie','diversAcrobatie')">
+                                    </select>
                                 </td>
-                                <td id="vd_sans_armure_case">
-                                    <input id="vd_sans_armure_case" type="text" name="vd_sans_armure_case" size="2" maxlength="2" required pattern="[0-9]{1,2}">
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversAcrobatie" type="text" name="divers_acrobatie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalAcrobatie','caracAcrobatie','rangAcrobatie','diversAcrobatie')">
                                 </td>
-                                <td id="vd_avec_armure_metre">
-                                    <input id="vd_avec_armure_metre" type="text" name="vd_avec_armure_metre" size="2" maxlength="2" required pattern="[0-9]{1,2}">
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="artisanat_I"><h2>O</h2></td>
+                                <td colspan="2">Artisanat</td>
+                                <td class="artisanat_I center" id="totalartisanat_I">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracartisanat_I">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangartisanat_I" name="rang_artisanat_I" 
+                                    onChange="calculeCompetence('totalartisanat_I','caracartisanat_I','rangartisanat_I','diversartisanat_I')">
+                                    </select>
                                 </td>
-                                <td id="vd_avec_armure_case">
-                                    <input id="vd_avec_armure_case" type="text" name="vd_avec_armure_case" size="2" maxlength="2" required pattern="[0-9]{1,2}">
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversartisanat_I" type="text" name="divers_artisanat_I" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalartisanat_I','caracartisanat_I','rangartisanat_I','diversartisanat_I')">
                                 </td>
-                                <td id="vd_mod_divers">
-                                    <input id="vd_mod_divers" type="text" name="vd_mod_divers" size="2" maxlength="2" required pattern="[0-9]{1,2}">
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="artisanat_II"><h2>O</h2></td>
+                                <td colspan="2">Artisanat</td>
+                                <td class="artisanat_II center" id="totalartisanat_II">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracartisanat_II">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangartisanat_II" name="rang_artisanat_II" 
+                                    onChange="calculeCompetence('totalartisanat_II','caracartisanat_II','rangartisanat_II','diversartisanat_II')">
+                                    </select>
                                 </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversartisanat_II" type="text" name="divers_artisanat_II" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalartisanat_II','caracartisanat_II','rangartisanat_II','diversartisanat_II')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="artisanat_III"><h2>O</h2></td>
+                                <td colspan="2">Artisanat</td>
+                                <td class="artisanat_III center" id="totalartisanat_III">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracartisanat_III">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangartisanat_III" name="rang_artisanat_III" 
+                                    onChange="calculeCompetence('totalartisanat_III','caracartisanat_III','rangartisanat_III','diversartisanat_III')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversartisanat_III" type="text" name="divers_artisanat_III" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalartisanat_III','caracartisanat_III','rangartisanat_III','diversartisanat_III')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="art_de_la_magie"><h2>O</h2></td>
+                                <td colspan="2">Art de la magie*</td>
+                                <td class="artdelamagie center" id="totalartdelamagie">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracartdelamagie">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangartdelamagie" name="rang_artdelamagie" 
+                                    onChange="calculeCompetence('totalartdelamagie','caracartdelamagie','rangartdelamagie','diversartdelamagie')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversartdelamagie" type="text" name="divers_artdelamagie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalartdelamagie','caracartdelamagie','rangartdelamagie','diversartdelamagie')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="bluf"><h2>O</h2></td>
+                                <td colspan="2">Bluf</td>
+                                <td class="bluff center" id="totalbluff">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracbluff">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangbluff" name="rang_bluff" 
+                                    onChange="calculeCompetence('totalbluff','caracbluff','rangbluff','diversbluff')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversbluff" type="text" name="divers_bluff" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalbluff','caracbluff','rangbluff','diversbluff')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="connaissances_I"><h2>O</h2></td>
+                                <td colspan="2">Connaissances Exploration*</td>
+                                <td class="connaissances_I center" id="totalconnaissances_I">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracconnaissances_I">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangconnaissances_I" name="rang_connaissances_I" 
+                                    onChange="calculeCompetence('totalconnaissances_I','caracconnaissances_I','rangconnaissances_I','diversconnaissances_I')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversconnaissances_I" type="text" name="divers_connaissances_I" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalconnaissances_I','caracconnaissances_I','rangconnaissances_I','diversconnaissances_I')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="connaissances_II"><h2>O</h2></td>
+                                <td colspan="2">Connaissances Folklore Locale*</td>
+                                <td class="connaissances_II center" id="totalconnaissances_II">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracconnaissances_II">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangconnaissances_II" name="rang_connaissances_II" 
+                                    onChange="calculeCompetence('totalconnaissances_II','caracconnaissances_II','rangconnaissances_II','diversconnaissances_II')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversconnaissances_II" type="text" name="divers_connaissances_II" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalconnaissances_II','caracconnaissances_II','rangconnaissances_II','diversconnaissances_II')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="connaissances_III"><h2>O</h2></td>
+                                <td colspan="2">Connaissances Géographie*</td>
+                                <td class="connaissances_III center" id="totalconnaissances_III">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracconnaissances_III">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangconnaissances_III" name="rang_connaissances_III" 
+                                    onChange="calculeCompetence('totalconnaissances_III','caracconnaissances_III','rangconnaissances_III','diversconnaissances_III')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversconnaissances_III" type="text" name="divers_connaissances_III" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalconnaissances_III','caracconnaissances_III','rangconnaissances_III','diversconnaissances_III')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="connaissances_IV"><h2>O</h2></td>
+                                <td colspan="2">Connaissances Histoire*</td>
+                                <td class="connaissances_IV center" id="totalconnaissances_IV">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracconnaissances_IV">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangconnaissances_IV" name="rang_connaissances_IV" 
+                                    onChange="calculeCompetence('totalconnaissances_IV','caracconnaissances_IV','rangconnaissances_IV','diversconnaissances_IV')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversconnaissances_IV" type="text" name="divers_connaissances_IV" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalconnaissances_IV','caracconnaissances_IV','rangconnaissances_IV','diversconnaissances_IV')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="connaissances_V"><h2>O</h2></td>
+                                <td colspan="2">Connaissances Ingénieurie*</td>
+                                <td class="connaissances_V center" id="totalconnaissances_V">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracconnaissances_V">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangconnaissances_V" name="rang_connaissances_V" 
+                                    onChange="calculeCompetence('totalconnaissances_V','caracconnaissances_V','rangconnaissances_V','diversconnaissances_V')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversconnaissances_V" type="text" name="divers_connaissances_V" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalconnaissances_V','caracconnaissances_V','rangconnaissances_V','diversconnaissances_V')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="connaissances_VI"><h2>O</h2></td>
+                                <td colspan="2">Connaissances Mystères*</td>
+                                <td class="connaissances_VI center" id="totalconnaissances_VI">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracconnaissances_VI">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangconnaissances_VI" name="rang_connaissances_VI" 
+                                    onChange="calculeCompetence('totalconnaissances_VI','caracconnaissances_VI','rangconnaissances_VI','diversconnaissances_VI')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversconnaissances_VI" type="text" name="divers_connaissances_VI" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalconnaissances_VI','caracconnaissances_VI','rangconnaissances_VI','diversconnaissances_VI')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="connaissances_VII"><h2>O</h2></td>
+                                <td colspan="2">Connaissances Nature*</td>
+                                <td class="connaissances_VII center" id="totalconnaissances_VII">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracconnaissances_VII">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangconnaissances_VII" name="rang_connaissances_VII" 
+                                    onChange="calculeCompetence('totalconnaissances_VII','caracconnaissances_VII','rangconnaissances_VII','diversconnaissances_VII')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversconnaissances_VII" type="text" name="divers_connaissances_VII" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalconnaissances_VII','caracconnaissances_VII','rangconnaissances_VII','diversconnaissances_VII')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="connaissances_VIII"><h2>O</h2></td>
+                                <td colspan="2">Connaissances Noblesse*</td>
+                                <td class="connaissances_VIII center" id="totalconnaissances_VIII">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracconnaissances_VIII">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangconnaissances_VIII" name="rang_connaissances_VIII" 
+                                    onChange="calculeCompetence('totalconnaissances_VIII','caracconnaissances_VIII','rangconnaissances_VIII','diversconnaissances_VIII')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversconnaissances_VIII" type="text" name="divers_connaissances_VIII" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalconnaissances_VIII','caracconnaissances_VIII','rangconnaissances_VIII','diversconnaissances_VIII')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="connaissances_IX"><h2>O</h2></td>
+                                <td colspan="2">Connaissances Plan*</td>
+                                <td class="connaissances_IX center" id="totalconnaissances_IX">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracconnaissances_IX">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangconnaissances_IX" name="rang_connaissances_IX" 
+                                    onChange="calculeCompetence('totalconnaissances_IX','caracconnaissances_IX','rangconnaissances_IX','diversconnaissances_IX')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversconnaissances_IX" type="text" name="divers_connaissances_IX" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalconnaissances_IX','caracconnaissances_IX','rangconnaissances_IX','diversconnaissances_IX')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="connaissances_X"><h2>O</h2></td>
+                                <td colspan="2">Connaissances Religion*</td>
+                                <td class="connaissances_X center" id="totalconnaissances_X">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracconnaissances_X">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangconnaissances_X" name="rang_connaissances_X" 
+                                    onChange="calculeCompetence('totalconnaissances_X','caracconnaissances_X','rangconnaissances_X','diversconnaissances_X')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversconnaissances_X" type="text" name="divers_connaissances_X" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalconnaissances_X','caracconnaissances_X','rangconnaissances_X','diversconnaissances_X')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="déguisement"><h2>O</h2></td>
+                                <td colspan="2">Déguisement</td>
+                                <td class="deguisement center" id="totaldeguisement">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracdeguisement">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangdeguisement" name="rang_deguisement" 
+                                    onChange="calculeCompetence('totaldeguisement','caracdeguisement','rangdeguisement','diversdeguisement')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversdeguisement" type="text" name="divers_deguisement" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totaldeguisement','caracdeguisement','rangdeguisement','diversdeguisement')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="diplomatie"><h2>O</h2></td>
+                                <td colspan="2">Diplomatie</td>
+                                <td class="diplomatie center" id="totaldiplomatie">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracdiplomatie">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangdiplomatie" name="rang_diplomatie" 
+                                    onChange="calculeCompetence('totaldiplomatie','caracdiplomatie','rangdiplomatie','diversdiplomatie')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversdiplomatie" type="text" name="divers_diplomatie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totaldiplomatie','caracdiplomatie','rangdiplomatie','diversdiplomatie')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="discrétion"><h2>O</h2></td>
+                                <td colspan="2">Discrétion</td>
+                                <td class="discretion center" id="totaldiscretion">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracdiscretion">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangdiscretion" name="rang_discretion" 
+                                    onChange="calculeCompetence('totaldiscretion','caracdiscretion','rangdiscretion','diversdiscretion')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversdiscretion" type="text" name="divers_discretion" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totaldiscretion','caracdiscretion','rangdiscretion','diversdiscretion')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="dressage"><h2>O</h2></td>
+                                <td colspan="2">Dressage*</td>
+                                <td class="dressage center" id="totaldressage">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracdressage">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangdressage" name="rang_dressage" 
+                                    onChange="calculeCompetence('totaldressage','caracdressage','rangdressage','diversdressage')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversdressage" type="text" name="divers_dressage" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totaldressage','caracdressage','rangdressage','diversdressage')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="equitation"><h2>O</h2></td>
+                                <td colspan="2">Equitation</td>
+                                <td class="equitation center" id="totalequitation">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracequitation">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangequitation" name="rang_equitation" 
+                                    onChange="calculeCompetence('totalequitation','caracequitation','rangequitation','diversequitation')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversequitation" type="text" name="divers_equitation" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalequitation','caracequitation','rangequitation','diversequitation')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="escalade"><h2>O</h2></td>
+                                <td colspan="2">Escalade</td>
+                                <td class="escalade center" id="totalescalade">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracescalade">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangescalade" name="rang_escalade" 
+                                    onChange="calculeCompetence('totalescalade','caracescalade','rangescalade','diversescalade')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversescalade" type="text" name="divers_escalade" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalescalade','caracescalade','rangescalade','diversescalade')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="escamotage"><h2>O</h2></td>
+                                <td colspan="2">Escamotage*</td>
+                                <td class="escamotage center" id="totalescamotage">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracescamotage">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangescamotage" name="rang_escamotage" 
+                                    onChange="calculeCompetence('totalescamotage','caracescamotage','rangescamotage','diversescamotage')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversescamotage" type="text" name="divers_escamotage" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalescamotage','caracescamotage','rangescamotage','diversescamotage')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="estimation"><h2>O</h2></td>
+                                <td colspan="2">Estimation</td>
+                                <td class="estimation center" id="totalestimation">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracestimation">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangestimation" name="rang_estimation" 
+                                    onChange="calculeCompetence('totalestimation','caracestimation','rangestimation','diversestimation')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversestimation" type="text" name="divers_estimation" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalestimation','caracestimation','rangestimation','diversestimation')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="évasion"><h2>O</h2></td>
+                                <td colspan="2">Evasion</td>
+                                <td class="evasion center" id="totalevasion">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracevasion">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangevasion" name="rang_evasion" 
+                                    onChange="calculeCompetence('totalevasion','caracevasion','rangevasion','diversevasion')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversevasion" type="text" name="divers_evasion" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalevasion','caracevasion','rangevasion','diversevasion')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="intimidation"><h2>O</h2></td>
+                                <td colspan="2">Intimidation</td>
+                                <td class="intimidation center" id="totalintimidation">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracintimidation">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangintimidation" name="rang_intimidation" 
+                                    onChange="calculeCompetence('totalintimidation','caracintimidation','rangintimidation','diversintimidation')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversintimidation" type="text" name="divers_intimidation" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalintimidation','caracintimidation','rangintimidation','diversintimidation')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="langues"><h2>O</h2></td>
+                                <td colspan="2">Linguistique*</td>
+                                <td class="linguistique center" id="totallinguistique">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caraclinguistique">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="ranglinguistique" name="rang_linguistique" 
+                                    onChange="calculeCompetence('totallinguistique','caraclinguistique','ranglinguistique','diverslinguistique')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diverslinguistique" type="text" name="divers_linguistique" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totallinguistique','caraclinguistique','ranglinguistique','diverslinguistique')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="natation"><h2>O</h2></td>
+                                <td colspan="2">Natation</td>
+                                <td class="natation center" id="totalnatation">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracnatation">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangnatation" name="rang_natation" 
+                                    onChange="calculeCompetence('totalnatation','caracnatation','rangnatation','diversnatation')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversnatation" type="text" name="divers_natation" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalnatation','caracnatation','rangnatation','diversnatation')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="perception"><h2>O</h2></td>
+                                <td colspan="2">Perception</td>
+                                <td class="perception center" id="totalperception">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracperception">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangperception" name="rang_perception" 
+                                    onChange="calculeCompetence('totalperception','caracperception','rangperception','diversperception')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversperception" type="text" name="divers_perception" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalperception','caracperception','rangperception','diversperception')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="premier_secours"><h2>O</h2></td>
+                                <td colspan="2">Premier secours</td>
+                                <td class="premiersecours center" id="totalpremiersecours">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracpremiersecours">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangpremiersecours" name="rang_premiersecours" 
+                                    onChange="calculeCompetence('totalpremiersecours','caracpremiersecours','rangpremiersecours','diverspremiersecours')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diverspremiersecours" type="text" name="divers_premiersecours" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalpremiersecours','caracpremiersecours','rangpremiersecours','diverspremiersecours')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="profession_I"><h2>O</h2></td>
+                                <td colspan="2">Profession*</td>
+                                <td class="profession_I center" id="totalprofession_I">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracprofession_I">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangprofession_I" name="rang_profession_I" 
+                                    onChange="calculeCompetence('totalprofession_I','caracprofession_I','rangprofession_I','diversprofession_I')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversprofession_I" type="text" name="divers_profession_I" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalprofession_I','caracprofession_I','rangprofession_I','diversprofession_I')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="profession_II"><h2>O</h2></td>
+                                <td colspan="2">Profession*</td>
+                                <td class="profession_II center" id="totalprofession_II">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracprofession_II">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangprofession_II" name="rang_profession_II" 
+                                    onChange="calculeCompetence('totalprofession_II','caracprofession_II','rangprofession_II','diversprofession_II')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversprofession_II" type="text" name="divers_profession_II" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalprofession_II','caracprofession_II','rangprofession_II','diversprofession_II')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="psychologie"><h2>O</h2></td>
+                                <td colspan="2">Psychologie</td>
+                                <td class="psychologie center" id="totalpsychologie">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracpsychologie">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangpsychologie" name="rang_psychologie" 
+                                    onChange="calculeCompetence('totalpsychologie','caracpsychologie','rangpsychologie','diverspsychologie')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diverspsychologie" type="text" name="divers_psychologie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalpsychologie','caracpsychologie','rangpsychologie','diverspsychologie')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="représentation_I"><h2>O</h2></td>
+                                <td colspan="2">Représentation</td>
+                                <td class="representation_I center" id="totalrepresentation_I">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracrepresentation_I">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangrepresentation_I" name="rang_representation_I" 
+                                    onChange="calculeCompetence('totalrepresentation_I','caracrepresentation_I','rangrepresentation_I','diversrepresentation_I')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversrepresentation_I" type="text" name="divers_representation_I" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalrepresentation_I','caracrepresentation_I','rangrepresentation_I','diversrepresentation_I')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="représentation_II"><h2>O</h2></td>
+                                <td colspan="2">Représentation</td>
+                                <td class="representation_II center" id="totalrepresentation_II">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracrepresentation_II">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangrepresentation_II" name="rang_representation_II" 
+                                    onChange="calculeCompetence('totalrepresentation_II','caracrepresentation_II','rangrepresentation_II','diversrepresentation_II')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversrepresentation_II" type="text" name="divers_representation_II" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalrepresentation_II','caracrepresentation_II','rangrepresentation_II','diversrepresentation_II')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="sabotage"><h2>O</h2></td>
+                                <td colspan="2">Sabotage*</td>
+                                <td class="sabotage center" id="totalsabotage">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracsabotage">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangsabotage" name="rang_sabotage" 
+                                    onChange="calculeCompetence('totalsabotage','caracsabotage','rangsabotage','diverssabotage')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diverssabotage" type="text" name="divers_sabotage" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalsabotage','caracsabotage','rangsabotage','diverssabotage')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="survie"><h2>O</h2></td>
+                                <td colspan="2">Survie</td>
+                                <td class="survie center" id="totalsurvie">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracsurvie">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangsurvie" name="rang_survie" 
+                                    onChange="calculeCompetence('totalsurvie','caracsurvie','rangsurvie','diverssurvie')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diverssurvie" type="text" name="divers_survie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalsurvie','caracsurvie','rangsurvie','diverssurvie')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="utilisation_d_objets_magiques"><h2>O</h2></td>
+                                <td colspan="2">Utilisation d'objets magiques*</td>
+                                <td class="utilisationobjet center" id="totalutilisationobjet">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracutilisationobjet">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangutilisationobjet" name="rang_utilisationobjet" 
+                                    onChange="calculeCompetence('totalutilisationobjet','caracutilisationobjet','rangutilisationobjet','diversutilisationobjet')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversutilisationobjet" type="text" name="divers_utilisationobjet" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalutilisationobjet','caracutilisationobjet','rangutilisationobjet','diversutilisationobjet')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="de_classe" id="vol"><h2>O</h2></td>
+                                <td colspan="2">Vol</td>
+                                <td class="vol center" id="totalvol">10</td>
+                                <td class="center">=</td>
+                                <td class="carac center">DEX</td>
+                                <td class="carac_dex center" id="caracvol">+2</td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <select id="rangvol" name="rang_vol" 
+                                    onChange="calculeCompetence('totalvol','caracvol','rangvol','diversvol')">
+                                    </select>
+                                </td>
+                                <td class="center">+</td>
+                                <td class="center">
+                                    <input id="diversvol" type="text" name="divers_vol" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
+                                    onChange="calculeCompetence('totalvol','caracvol','rangvol','diversvol')">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="06"><h2>@ Compétence de classe</h2></td>
+                                <td colspan="05"><h2>* Formation nécessaire</h2></td>
                             </tr>
                         </table>
                     </div>
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <table id="tab_vd">
-                                <tr id="caption_vd" class="caption"> 
-                                    <th>VOL</th>
-                                    <th>MANOEUVRABILITE</th>
-                                    <th>NATATION</th>
-                                    <th>ESCALADE</th>
-                                    <th>CREUSEMENT</th>
-                                </tr>
-
-                                <tr>
-                                    <td id="vd_vol">
-                                        <input id="vd_vol" type="text" name="vd_vol" size="2" maxlength="2" required pattern="[0-9]{1,2}">
-                                    </td>
-                                    <td id="vd_manoeu">
-                                        <input id="vd_manoeu" type="text" name="vd_manoeu" size="2" maxlength="2" required pattern="[0-9]{1,2}">
-                                    </td>
-                                    <td id="vd_nata">
-                                        <input id="vd_nata" type="text" name="vd_nata" size="2" maxlength="2" required pattern="[0-9]{1,2}">
-                                    </td>
-                                    <td id="vd_escal">
-                                        <input id="vd_escal" type="text" name="vd_escal" size="2" maxlength="2" required pattern="[0-9]{1,2}">
-                                    </td>
-                                    <td id="vd_creuse">
-                                        <input id="vd_creuse" type="text" name="vd_creuse" size="2" maxlength="2" required pattern="[0-9]{1,2}">
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <table id="competences">
-                                <tr>
-                                    <td colspan="10"><h5 id="label_comp">COMPETENCES</h5></td>
-                                </tr>
-
-                                <tr>
-                                    <td></td>
-                                    <td colspan="3" class="background_grey"><h2>NOM DE LA COMPETENCE</h2></td>
-                                    <td class="background_grey"><h3>Bonus Total</h3></td>
-                                    <td colspan="2" class="background_grey"><h3>MOD. DE CARACTERISTIQUE</h3></td>
-                                    <td colspan="2" class="background_grey"><h3>RANG</h3></td>
-                                    <td colspan="2" class="background_grey"><h3>MOD. DIVERS</h3></td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="acrobatie"><h2>O</h2></td>
-                                    <td colspan="2" >Acrobatie</td>
-                                    <td class="acrobatie" id="totalAcrobatie"></td>
-                                    <td>=</td>
-                                    <td class="carac">DEX</td>
-                                    <td class="carac_dex" id="caracAcrobatie"></td>
-                                    <td>+</td>
-                                    <td>
-                                        <select id="rangAcrobatie" name="rang_acrobatie" 
-                                        onChange="calculeCompetence('totalAcrobatie','caracAcrobatie','rangAcrobatie','diversAcrobatie')">
-                                        </select>
-                                    </td>
-                                    <td>+</td>
-                                    <td>
-                                        <input id="diversAcrobatie" type="text" name="divers_acrobatie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                        onChange="calculeCompetence('totalAcrobatie','caracAcrobatie','rangAcrobatie','diversAcrobatie')">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="artisanat_I"><h2>O</h2></td>
-                                    <td>Artisanat</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="artisanat_II"><h2>O</h2></td>
-                                    <td>Artisanat</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="artisanat_III"><h2>O</h2></td>
-                                    <td>Artisanat</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="art_de_la_magie"><h2>O</h2></td>
-                                    <td>Art de la magie</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="bluf"><h2>O</h2></td>
-                                    <td>Bluf</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="connaissances_I"><h2>O</h2></td>
-                                    <td>Connaissances</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="connaissances_II"><h2>O</h2></td>
-                                    <td>Connaissances</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="connaissances_III"><h2>O</h2></td>
-                                    <td>Connaissances</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="connaissances_IV"><h2>O</h2></td>
-                                    <td>Connaissances</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="connaissances_V"><h2>O</h2></td>
-                                    <td>Connaissances</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="connaissances_VI"><h2>O</h2></td>
-                                    <td>Connaissances</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="connaissances_VII"><h2>O</h2></td>
-                                    <td>Connaissances</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="connaissances_VIII"><h2>O</h2></td>
-                                    <td>Connaissances</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="connaissances_IX"><h2>O</h2></td>
-                                    <td>Connaissances</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="connaissances_X"><h2>O</h2></td>
-                                    <td>Connaissances</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="déguisement"><h2>O</h2></td>
-                                    <td>Déguisement</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="diplomatie"><h2>O</h2></td>
-                                    <td>Diplomatie</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="discrétion"><h2>O</h2></td>
-                                    <td>Discrétion</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="dressage"><h2>O</h2></td>
-                                    <td>Dressage</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="equitation"><h2>O</h2></td>
-                                    <td>Equitation</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="escalade"><h2>O</h2></td>
-                                    <td>Escalade</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="escamotage"><h2>O</h2></td>
-                                    <td>Escamotage</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="estimation"><h2>O</h2></td>
-                                    <td>Estimation</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="évasion"><h2>O</h2></td>
-                                    <td>Evasion</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="intimidation"><h2>O</h2></td>
-                                    <td>Intimidation</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="langues"><h2>O</h2></td>
-                                    <td>Langues</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="natation"><h2>O</h2></td>
-                                    <td>Natation</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="perception"><h2>O</h2></td>
-                                    <td>Perception</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="premier_secours"><h2>O</h2></td>
-                                    <td>Premier secours</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="profession_I"><h2>O</h2></td>
-                                    <td>Profession</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="profession_II"><h2>O</h2></td>
-                                    <td>Profession</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="psychologie"><h2>O</h2></td>
-                                    <td>Psychologie</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="représentation_I"><h2>O</h2></td>
-                                    <td>Représentation</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="représentation_II"><h2>O</h2></td>
-                                    <td>Représentation</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="sabotage"><h2>O</h2></td>
-                                    <td>Sabotage</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="survie"><h2>O</h2></td>
-                                    <td>Survie</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="utilisation_d_objets_magiques"><h2>O</h2></td>
-                                    <td>Utilisation d'objets magiques</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="de_classe" id="vol"><h2>O</h2></td>
-                                    <td>Vol</td>
-                                </tr>
-
-                                <tr>
-                                    <td colspan="06"><h2>@ Compétence de classe</h2></td>
-                                    <td colspan="05"><h2>* Formation nécessaire</h2></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <input type="button" name="Somme compétences" value="Somme compétences" id="Somme_compétences" onClick="calculeSommeCompetences()">
+                            <input id="somme_compétences" type="button" name="Somme compétences" value="Somme compétences" id="Somme_compétences" onClick="calculeSommeCompetences()">
                         </div>
                     </div>
 
@@ -1337,7 +1887,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <input id="modif_part" type="text" name="modif_part" size="60" maxlength="60" required>
+                            <textarea id="modif_part" name="modif_part" rows="4" cols="90"></textarea>
                         </div>
                     </div>
 
@@ -1349,7 +1899,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <input id="langues" type="text" name="langues" size="60" maxlength="60" required>
+                            <textarea id="langues" name="langues" rows="4" cols="90"></textarea>
                         </div>
                     </div>
                 </div>
