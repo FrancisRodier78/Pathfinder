@@ -7,6 +7,7 @@
 h1 {
 	font-size: 5rem;
 	text-align: center;
+	vertical-align: middle;
 }
 
 h2 {
@@ -150,6 +151,7 @@ h6 {
 #tab_carac {
 	width: 35rem;
 	text-align: center;
+	vertical-align: middle;
 	margin: 3px;
 }
 
@@ -157,6 +159,7 @@ h6 {
 .caption {	
 	font-size: 0.9rem;
 	text-align: center;
+	vertical-align: middle;
 }
 
 .font_white {
@@ -175,11 +178,13 @@ td {
 #tab_ca {
 	width: 72rem;
 	text-align: center;
+	vertical-align: middle;
 	margin: 3px;
 }
 
 .background_grey {
 	text-align: center;
+	vertical-align: middle;
 	color: black;
 	border: 2px solid black;
 	background-color: lightgrey;
@@ -188,6 +193,7 @@ td {
 #lab_ca_contact {
 	width: 8rem;
 	text-align: center;
+	vertical-align: middle;
 	margin: 3px;
 }
 
@@ -198,6 +204,7 @@ td {
 #lab_pri_depourvu {
 	width: 10rem;
 	text-align: center;
+	vertical-align: middle;
 	margin: 3px;
 }
 
@@ -208,6 +215,7 @@ td {
 #label_mod_part_ca {
 	width: 14rem;
 	text-align: center;
+	vertical-align: middle;
 	margin: 3px;
 }
 
@@ -222,11 +230,13 @@ td {
 #label_bba, #label_rm,
 #label_vit,
 #label_de_classe, #label_comp, #label_degres, #label_equip,
-#label_capaciteDeCharge, #label_recipients,
-#label_richesses, .label_don, #label_notes, #label_sorts,
-#label_ecole_predilection, #label_ecoles_interdites, #label_experience,
+#label_poids_total, #label_capaciteDeCharge, #label_recipients,
+#label_richesses, #label_notes, #label_don, #label_capacites_speciales,
+#label_points_experience, #label_niveau,
+#label_sorts, #label_ecole_predilection, #label_ecoles_interdites, #label_experience,
 #label_armure, #label_traits, #label_aptitudes {
 	text-align: center;
+	vertical-align: middle;
 	background-color: black;
 	color: white;
 	font-weight: bold;
@@ -236,11 +246,13 @@ td {
 #mod_div_lut {
 	border: 2px solid black;
 	text-align: center;
+	vertical-align: middle;
 }
 
 #label_pv {
 	width: 2rem;
 	text-align: center;
+	vertical-align: middle;
 }
 
 #pv {
@@ -249,6 +261,7 @@ td {
 #label_red_deg {
 	width: 3rem;
 	text-align: center;
+	vertical-align: middle;
 }
 
 #red_deg {
@@ -257,12 +270,14 @@ td {
 #tab_init {
 	width: 35rem;
 	text-align: center;
+	vertical-align: middle;
 	margin: 3px;
 }
 
 #tab_sau {
 	width: 73rem;
 	text-align: center;
+	vertical-align: middle;
 	margin: 3px;
 }
 
@@ -294,6 +309,7 @@ td {
 
 #dmd_mod_div {
 	text-align: center;
+	vertical-align: middle;
 }
 
 #label_famille_arme_I, #label_famille_arme_II, #label_famille_arme_III, #label_famille_arme_IV, #label_famille_arme_V {
@@ -320,6 +336,7 @@ td {
 #tab_vd_a, #tab_vd_b {
 	width: 36rem;
 	text-align: center;
+	vertical-align: middle;
 	margin: 3px;
 }
 
@@ -330,6 +347,7 @@ td {
 
 .center {
 	text-align: center;
+	vertical-align: middle;
 }
 
 #somme_compétences {
@@ -352,6 +370,45 @@ td {
 	margin-bottom: 3px;
 }
 
+#protection {
+	width: 72rem;
+	margin: 3px;
+}
+
+#equipement {
+	width: 24rem;
+	margin: 3px;
+}
+
+#Somme_poids {
+	margin: 3px;
+}
+
+#capaciteDeCharge, #richesses {
+	width: 24rem;
+	margin: 3px;
+}
+
+#pc, #pa, #po, #pp {
+	vertical-align: middle;
+}
+
+#table_don, #table_capacites_speciales, #table_experience {
+	width: 47rem;
+	margin: 3px;
+}
+
+#table_sorts {
+	width: 36rem;
+	margin: 3px;
+}
+
+
+
+
+
+
+
 
 
 .label_description {
@@ -368,8 +425,7 @@ td {
 }
 
 .de_classe,
-.carac_for, .carac_dex, .carac_con, .carac_int, .carac_sag, .carac_cha,
-#chargeLegere, #chargeIntermediaire, #chargeLourde, #chargeMax, #soulever, #tirerOuPousser {
+.carac_for, .carac_dex, .carac_con, .carac_int, .carac_sag, .carac_cha {
 	text-align: center;
 	height: 1rem;
 }
@@ -379,14 +435,6 @@ td {
 }
 
 #Somme_compétences {
-}
-
-#equipement {
-	width: 68rem;
-}
-
-#capaciteDeCharge {
-	width: 50rem;
 }
 
 #language {
@@ -412,82 +460,11 @@ td {
 	height: 1rem;
 }
 
-#richesses {
-	width: 68rem;
-}
-
-#pc, #pa, #po, #pp {
-	vertical-align: middle;
-	height: 2rem;
-}
-
-#table_don_I {
-	width: 33rem;
-}
-
 .don {
 	height: 1rem;
 }
 
-#table_don_II {
-	width: 33rem;
-}
-
-#table_don_III {
-	width: 33rem;
-}
-
-#table_don_IV {
-	width: 33rem;
-}
-
-#table_don_V {
-	width: 33rem;
-}
-
-#table_don_VI {
-	width: 33rem;
-}
-
-#table_don_VII {
-	width: 33rem;
-}
-
-#table_don_VIII {
-	width: 33rem;
-}
-
-#table_don_IX {
-	width: 33rem;
-}
-
-#table_don_X {
-	width: 33rem;
-}
-
-#table_don_XI {
-	width: 33rem;
-}
-
-#table_don_XII {
-	width: 33rem;
-}
-
 #table_notes {
-}
-
-#table_sorts {
-	width: 33rem;
-}
-
-#table_experience {
-	width: 33rem;
-}
-
-#points_experience {
-}
-
-#prochain_niveau {
 }
 
 #dd_des_sorts, #pourcentage_d_echec, #modificateur_particulier,

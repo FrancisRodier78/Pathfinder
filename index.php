@@ -2725,44 +2725,114 @@
             </div>
         </div>
                     
-<-- *** -->        
         <div class="row">
             <div class="col-lg-8">
                 <div class="row">
                     <div class="col-lg-12">
                         <table id="protection">
                             <tr>
-                                <th>PROTECTION</th>
-                                <th>BONUS</th>
-                                <th>TYPE</th>
-                                <th>PENALITE</th>
-                                <th>ECHEC DE SORT</th>
-                                <th>POIDS</th>
-                                <th>PROPRIETE</th>
+                                <th class="font_white center">PROTECTION</th>
+                                <th class="font_white center">BONUS</th>
+                                <th class="font_white center">TYPE</th>
+                                <th class="font_white center">PENALITE</th>
+                                <th class="font_white center">ECHEC DE SORT</th>
+                                <th class="font_white center">POIDS</th>
+                                <th class="font_white center">PROPRIETE</th>
                             </tr>
 
                             <tr>
                                 <td id="protection_I">
                                     <select id="choix_protection_I" name="choix_protection_I" onChange="calculeProtection()">
+                                        <option selected>00</option>
+                                        <option>01</option>
+                                        <option>02</option>
                                     </select>
                                     <span class="tooltip">Bonus non pris en compte</span>
                                 </td>
-                                <td id="protection_bonus_I">a</td>
-                                <td id="protection_type_I">a</td>
-                                <td id="protection_penalite_I">a</td>
-                                <td id="protection_echec_I">a</td>
-                                <td id="protection_poids_I">a</td>
-                                <td id="protection_propriete_I">a</td>
+                                <td id="protection_bonus_I"></td>
+                                <td id="protection_type_I"></td>
+                                <td id="protection_penalite_I"></td>
+                                <td id="protection_echec_I"></td>
+                                <td id="protection_poids_I"></td>
+                                <td id="protection_propriete_I"></td>
+                            </tr>
+
+
+                            <tr>
+                                <td id="protection_II">
+                                    <select id="choix_protection_II" name="choix_protection_II" onChange="calculeProtection()">
+                                        <option selected>00</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                    </select>
+                                    <span class="tooltip">Bonus non pris en compte</span>
+                                </td>
+                                <td id="protection_bonus_II"></td>
+                                <td id="protection_type_II"></td>
+                                <td id="protection_penalite_II"></td>
+                                <td id="protection_echec_II"></td>
+                                <td id="protection_poids_II"></td>
+                                <td id="protection_propriete_II"></td>
                             </tr>
 
                             <tr>
-                                <td>TOTAUX</td>
-                                <td id="totaux_protection_bonus">0</td>
-                                <td id="totaux_protection_type">0</td>
-                                <td id="totaux_protection_penalite">0</td>
-                                <td id="totaux_protection_echec">0</td>
-                                <td id="totaux_protection_poids">0</td>
-                                <td id="totaux_protection_propriete">0</td>
+                                <td id="protection_III">
+                                    <select id="choix_protection_III" name="choix_protection_III" onChange="calculeProtection()">
+                                        <option selected>00</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                    </select>
+                                    <span class="tooltip">Bonus non pris en compte</span>
+                                </td>
+                                <td id="protection_bonus_III"></td>
+                                <td id="protection_type_III"></td>
+                                <td id="protection_penalite_III"></td>
+                                <td id="protection_echec_III"></td>
+                                <td id="protection_poids_III"></td>
+                                <td id="protection_propriete_III"></td>
+                            </tr>
+
+                            <tr>
+                                <td id="protection_IV">
+                                    <select id="choix_protection_IV" name="choix_protection_IV" onChange="calculeProtection()">
+                                        <option selected>00</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                    </select>
+                                    <span class="tooltip">Bonus non pris en compte</span>
+                                </td>
+                                <td id="protection_bonus_IV"></td>
+                                <td id="protection_type_IV"></td>
+                                <td id="protection_penalite_IV"></td>
+                                <td id="protection_echec_IV"></td>
+                                <td id="protection_poids_IV"></td>
+                                <td id="protection_propriete_IV"></td>
+                            </tr>
+
+                            <tr>
+                                <td id="protection_V">
+                                    <select id="choix_protection_V" name="choix_protection_V" onChange="calculeProtection()">
+                                        <option selected>00</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                    </select>
+                                    <span class="tooltip">Bonus non pris en compte</span>
+                                </td>
+                                <td id="protection_bonus_V"></td>
+                                <td id="protection_type_V"></td>
+                                <td id="protection_penalite_V"></td>
+                                <td id="protection_echec_V"></td>
+                                <td id="protection_poids_V"></td>
+                                <td id="protection_propriete_V"></td>
+                            </tr>
+                            <tr>
+                                <td class="font_white center">TOTAUX</td>
+                                <td id="totaux_protection_bonus"></td>
+                                <td id="totaux_protection_type"></td>
+                                <td id="totaux_protection_penalite"></td>
+                                <td id="totaux_protection_echec"></td>
+                                <td id="totaux_protection_poids"></td>
+                                <td id="totaux_protection_propriete"></td>
                             </tr>
                         </table>
                     </div>
@@ -2774,63 +2844,302 @@
                             <div class="col-lg-12">
                                 <table id="equipement">
                                     <tr>
-                                        <td colspan="9"><h5 id="label_equip">EQUIPEMENT</h5></td>
+                                        <td colspan="2"><label id="label_equip">EQUIPEMENT</label></td>
                                     </tr>
 
                                     <tr>
-                                        <td class="background_grey"><h3>OBJET</h3></td>
-                                        <td class="background_grey"><h3>POIDS</h3></td>
+                                        <td class="background_grey">OBJET</td>
+                                        <td class="background_grey">POIDS</td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_I" id="objet_I"></select>
+                                            <select name="objet_I" id="objet_I" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
                                         </td>
+                                        <td id="poids_I" ></td>
+                                    </tr>
+
+                                    <tr>
                                         <td> 
-                                            <select name="poids_I" id="poids_I"></select>
+                                            <select name="objet_II" id="objet_II" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
                                         </td>
-                                        <td></td>
+                                        <td id="poids_II" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_III" id="objet_III" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_III" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_IV" id="objet_IV" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_IV" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_V" id="objet_V" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_V" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_VI" id="objet_VI" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_VI" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_VII" id="objet_VII" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_VII" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_VIII" id="objet_VIII" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_VIII" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_IX" id="objet_IX" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_IX" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_X" id="objet_X" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_X" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_XI" id="objet_XI" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_XI" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_XII" id="objet_XII" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_XII" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_XIII" id="objet_XIII" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_XIII" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_XIV" id="objet_XIV" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_XIV" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_XV" id="objet_XV" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_XV" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_XVI" id="objet_XVI" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_XVI" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_XVII" id="objet_XVII" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_XVII" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_XVIII" id="objet_XVIII" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_XVIII" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_XIX" id="objet_XIX" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_XIX" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_XX" id="objet_XX" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_XX" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_XXI" id="objet_XXI" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_XXI" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_XXII" id="objet_XXII" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_XXII" ></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            <select name="objet_XXIII" id="objet_XXIII" onchange="indiquePoids()">
+                                                <option selected></option>
+                                                <option>Objet I</option>
+                                                <option>Objet II</option>
+                                            </select>
+                                        </td>
+                                        <td id="poids_XXIII" ></td>
                                     </tr>
 
                                     <tr>
                                         <td id="label_poids_total">POIDS TOTAL</td>
-                                        <td> 
-                                            <input id="poids_total" type="text" name="poids_total" size="2" maxlength="2" required pattern="[0-9]{1,2}">
-                                        </td>
-                                        <td></td>
+                                        <td id="poids_total"></td>
                                     </tr>
                                 </table>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <input type="button" name="Somme poids" value="Somme poids" id="Somme_poids" onClick="calculeSommePoids()">
-                                </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-lg-12">
+                                <input type="button" name="Somme poids" value="Somme poids" id="Somme_poids" onClick="calculeSommePoids()">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-lg-12">
                                 <table id="capaciteDeCharge">
                                     <tr>
-                                        <td class="background_grey"><h3>CHARGE LEGERE</h3></td>
-                                        <td id="chargeLegere">0</td>
-                                        <td class="background_grey"><h3>CHARGE INTERMEDIAIRE</h3></td>
-                                        <td id="chargeIntermediaire">0</td>
+                                        <td class="background_grey">CHARGE LEGERE</td>
+                                        <td class="center" id="chargeLegere">0</td>
+                                        <td class="background_grey">CHARGE INTERMEDIAIRE</td>
+                                        <td class="center" id="chargeIntermediaire">0</td>
                                     </tr>
 
                                     <tr>
-                                        <td class="background_grey"><h3>CHARGE LOURDE</h3></td>
-                                        <td id="chargeLourde">0</td>
-                                        <td class="background_grey"><h3>CHARGE MAX</h3></td>
-                                        <td id="chargeMax">0</td>
+                                        <td class="background_grey">CHARGE LOURDE</td>
+                                        <td class="center" id="chargeLourde">0</td>
+                                        <td class="background_grey">CHARGE MAX</td>
+                                        <td class="center" id="chargeMax">0</td>
                                     </tr>
 
                                     <tr>
-                                        <td class="background_grey"><h3>SOULEVER</h3></td>
-                                        <td id="soulever">0</td>
-                                        <td id="tirerOuPousser">0</td>
-                                        <td class="background_grey"><h3>TIRER OU POUSSER</h3></td>
+                                        <td class="background_grey">SOULEVER</td>
+                                        <td class="center" id="soulever">0</td>
+                                        <td class="background_grey">TIRER OU POUSSER</td>
+                                        <td class="center" id="tirerOuPousser">0</td>
                                     </tr>
                                 </table>
                             </div>
@@ -2844,30 +3153,29 @@
                                     </tr>
 
                                     <tr>
-                                        <td class="background_grey"><h3>PIECES</h3></td>
-                                        <td class="background_grey"><h3>GEMMES</h3></td>
-                                        <td class="background_grey"><h3>OBJETS D'ART</h3></td>
-                                        <td class="background_grey"><h3>AUTRE</h3></td>
+                                        <td class="background_grey">PIECES</td>
+                                        <td class="background_grey">GEMMES</td>
+                                        <td class="background_grey">OBJETS D'ART</td>
+                                        <td class="background_grey">AUTRE</td>
                                     </tr>
 
                                     <tr>
                                         <td id="pc">PC</td>
                                         <td rowspan="4"></td>
+                                        <td rowspan="4"></td>
+                                        <td rowspan="4"></td>
                                     </tr>
 
                                     <tr>
                                         <td id="pa">PA</td>
-                                        <td rowspan="4"></td>
                                     </tr>
 
                                     <tr>
                                         <td id="po">PO</td>
-                                        <td rowspan="4"></td>
                                     </tr>
 
                                     <tr>
                                         <td id="pp">PP</td>
-                                        <td rowspan="4"></td>
                                     </tr>
                                 </table>
                             </div>
@@ -2877,29 +3185,110 @@
                     <div class="col-lg-8">
                         <div class="row">
                             <div class="col-lg-12">
-                                <table id="table_don_I">
-                                    <th><td class="label_don"><h2>DONS</h2></td></th>
-
-                                    <tr><td><select name="don_I" id="don_I"></select></td></tr>
-                                    <tr><td><select name="don_II" id="don_II"></select></td></tr>
-                                    <tr><td><select name="don_III" id="don_III"></select></td></tr>
-                                    <tr><td><select name="don_IV" id="don_IV"></select></td></tr>
-                                    <tr><td><select name="don_V" id="don_V"></select></td></tr>
-                                    <tr><td><select name="don_VI" id="don_VI"></select></td></tr>
-                                    <tr><td><select name="don_VII" id="don_VII"></select></td></tr>
-                                    <tr><td><select name="don_VIII" id="don_VIII"></select></td></tr>
-                                    <tr><td><select name="don_IX" id="don_IX"></select></td></tr>
-                                    <tr><td><select name="don_X" id="don_X"></select></td></tr>
-                                    <tr><td><select name="don_XI" id="don_XI"></select></td></tr>
-                                    <tr><td><select name="don_XII" id="don_XII"></select></td></tr>
-                                    <tr><td><select name="don_XIII" id="don_XIII"></select></td></tr>
-                                    <tr><td><select name="don_XIV" id="don_XIV"></select></td></tr>
-                                    <tr><td><select name="don_XV" id="don_XV"></select></td></tr>
-                                    <tr><td><select name="don_XVI" id="don_XVI"></select></td></tr>
-                                    <tr><td><select name="don_XVII" id="don_XVII"></select></td></tr>
-                                    <tr><td><select name="don_XVIII" id="don_XVIII"></select></td></tr>
-                                    <tr><td><select name="don_XIX" id="don_XIX"></select></td></tr>
-                                    <tr><td><select name="don_XX" id="don_XX"></select></td></tr>
+                                <table id="table_don">
+                                    <tr><th id="label_don">DONS</th></tr>
+                                    <tr><td>
+                                        <select id="don_I" name="don_I">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                        </select>
+                                    </td></tr>
+                                    <tr><td><select id="don_II" name="don_II">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_III" name="don_III">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_IV" name="don_IV">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_V" name="don_V">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_VI" name="don_VI">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_VII" name="don_VII">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_VIII" name="don_VIII">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_IX" name="don_IX">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_X" name="don_X">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_XI" name="don_XI">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_XII" name="don_XII">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_XIII" name="don_XIII">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_XIV" name="don_XIV">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_XV" name="don_XV">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_XVI" name="don_XVI">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_XVII" name="don_XVII">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_XVIII" name="don_XVIII">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_XIX" name="don_XIX">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
+                                    <tr><td><select id="don_XX" name="don_XX">
+                                            <option selected></option>
+                                            <option>Don I</option>
+                                            <option>Don II</option>
+                                    </select></td></tr>
                                 </table>
                             </div>
                         </div>
@@ -2907,28 +3296,27 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <table id="table_capacites_speciales">
-                                    <th><td class="label_capacites_speciales"><h2>CAPACITES SPECIALES</h2></td></th>
-
-                                    <tr><td><select name="capacites_speciales_I" id="capacites_speciales_I"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_II" id="capacites_speciales_II"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_III" id="capacites_speciales_III"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_IV" id="capacites_speciales_IV"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_V" id="capacites_speciales_V"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_VI" id="capacites_speciales_VI"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_VII" id="capacites_speciales_VII"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_VIII" id="capacites_speciales_VIII"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_IX" id="capacites_speciales_IX"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_X" id="capacites_speciales_X"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_XI" id="capacites_speciales_XI"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_XII" id="capacites_speciales_XII"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_XIII" id="capacites_speciales_XIII"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_XIV" id="capacites_speciales_XIV"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_XV" id="capacites_speciales_XV"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_XVI" id="capacites_speciales_XVI"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_XVII" id="capacites_speciales_XVII"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_XVIII" id="capacites_speciales_XVIII"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_XIX" id="capacites_speciales_XIX"></select></td></tr>
-                                    <tr><td><select name="capacites_speciales_XX" id="capacites_speciales_XX"></select></td></tr>
+                                    <tr><th id="label_capacites_speciales">CAPACITES SPECIALES</th></tr>
+                                    <tr><td id="capacites_speciales_I" name="capacites_speciales_I">A</td></tr>
+                                    <tr><td id="capacites_speciales_II" name="capacites_speciales_II">A</td></tr>
+                                    <tr><td id="capacites_speciales_III" name="capacites_speciales_III">A</td></tr>
+                                    <tr><td id="capacites_speciales_IV" name="capacites_speciales_IV">A</td></tr>
+                                    <tr><td id="capacites_speciales_V" name="capacites_speciales_V">A</td></tr>
+                                    <tr><td id="capacites_speciales_VI" name="capacites_speciales_VI">A</td></tr>
+                                    <tr><td id="capacites_speciales_VII" name="capacites_speciales_VII">A</td></tr>
+                                    <tr><td id="capacites_speciales_VIII" name="capacites_speciales_VIII">A</td></tr>
+                                    <tr><td id="capacites_speciales_IX" name="capacites_speciales_IX">A</td></tr>
+                                    <tr><td id="capacites_speciales_X" name="capacites_speciales_X">A</td></tr>
+                                    <tr><td id="capacites_speciales_XI" name="capacites_speciales_XI">A</td></tr>
+                                    <tr><td id="capacites_speciales_XII" name="capacites_speciales_XII">A</td></tr>
+                                    <tr><td id="capacites_speciales_XIII" name="capacites_speciales_XIII">A</td></tr>
+                                    <tr><td id="capacites_speciales_XIV" name="capacites_speciales_XIV">A</td></tr>
+                                    <tr><td id="capacites_speciales_XV" name="capacites_speciales_XV">A</td></tr>
+                                    <tr><td id="capacites_speciales_XVI" name="capacites_speciales_XVI">A</td></tr>
+                                    <tr><td id="capacites_speciales_XVII" name="capacites_speciales_XVII">A</td></tr>
+                                    <tr><td id="capacites_speciales_XVIII" name="capacites_speciales_XVIII">A</td></tr>
+                                    <tr><td id="capacites_speciales_XIX" name="capacites_speciales_XIX">A</td></tr>
+                                    <tr><td id="capacites_speciales_XX" name="capacites_speciales_XX">A</td></tr>
                                 </table>
                             </div>
                         </div>
@@ -2937,13 +3325,15 @@
                             <div class="col-lg-12">
                                 <table id="table_experience">
                                     <tr>
-                                        <th class="label_points_experience"><h2>POINTS D'EXPERIENCE</h2></th>
-                                        <th class="label_niveau"><h2>NIVEAU</h2></th>
+                                        <th id="label_points_experience">POINTS D'EXPERIENCE</th>
+                                        <th id="label_niveau">NIVEAU</th>
                                     </tr>
 
                                     <tr>
-                                        <td>0</td>
-                                        <td>0</td>
+                                        <td>
+                                            <input id="points_experience" type="text" name="points_experience" size="7" maxlength="7" pattern="[0-9]{1,7}" value=0 onChange="calculeNiveau('points_experience')">
+                                        </td>
+                                        <td id="niveau" class="center">0</td>
                                     </tr>
                                 </table>
                             </div>
@@ -2952,12 +3342,13 @@
                 </div>
             </div>
 
+        <-- *** -->        
             <div class="col-lg-4">
                 <div class="row">
                     <div class="col-lg-12">
                         <table id="table_sorts">
                             <tr>
-                                <td colspan="6" id="label_sorts"><h5>SORTS</h5></td>
+                                <td colspan="6" id="label_sorts">SORTS</td>
                             </tr>
 
                             <tr>
@@ -2969,7 +3360,7 @@
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_0"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
+                                <td id="sorts_connus_0"></td>
                                 <td id="dd_des_sorts_0"></td>
                                 <td class="background_grey" colspan="2">0</td>
                                 <td id="sorts_jour_0"></td>
@@ -2977,7 +3368,7 @@
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_I"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
+                                <td id="sorts_connus_I"></td>
                                 <td id="dd_des_sorts_I"></td>
                                 <td class="background_grey" colspan="2">1er</td>
                                 <td id="sorts_jour_I"></td>
@@ -2985,7 +3376,7 @@
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_II"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
+                                <td id="sorts_connus_II"></td>
                                 <td id="dd_des_sorts_II"></td>
                                 <td class="background_grey" colspan="2">2e</td>
                                 <td id="sorts_jour_II"></td>
@@ -2993,7 +3384,7 @@
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_III"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
+                                <td id="sorts_connus_III"></td>
                                 <td id="dd_des_sorts_III"></td>
                                 <td class="background_grey" colspan="2">3e</td>
                                 <td id="sorts_jour_III"></td>
@@ -3001,7 +3392,7 @@
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_IV"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
+                                <td id="sorts_connus_IV"></td>
                                 <td id="dd_des_sorts_IV"></td>
                                 <td class="background_grey" colspan="2">4e</td>
                                 <td id="sorts_jour_IV"></td>
@@ -3009,7 +3400,7 @@
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_V"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
+                                <td id="sorts_connus_V"></td>
                                 <td id="dd_des_sorts_V"></td>
                                 <td class="background_grey" colspan="2">5e</td>
                                 <td id="sorts_jour_V"></td>
@@ -3017,7 +3408,7 @@
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_VI"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
+                                <td id="sorts_connus_VI"></td>
                                 <td id="dd_des_sorts_VI"></td>
                                 <td class="background_grey" colspan="2">6e</td>
                                 <td id="sorts_jour_VI"></td>
@@ -3025,7 +3416,7 @@
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_VII"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
+                                <td id="sorts_connus_VII"></td>
                                 <td id="dd_des_sorts_VII"></td>
                                 <td class="background_grey" colspan="2">7e</td>
                                 <td id="sorts_jour_VII"></td>
@@ -3033,7 +3424,7 @@
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_VIII"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
+                                <td id="sorts_connus_VIII"></td>
                                 <td id="dd_des_sorts_VIII"></td>
                                 <td class="background_grey" colspan="2">8e</td>
                                 <td id="sorts_jour_VIII"></td>
@@ -3041,7 +3432,7 @@
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_IX"><input type="text" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
+                                <td id="sorts_connus_IX"></td>
                                 <td id="dd_des_sorts_IX"></td>
                                 <td class="background_grey" colspan="2">9e</td>
                                 <td id="sorts_jour_IX"></td>
