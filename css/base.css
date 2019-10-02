@@ -12,6 +12,7 @@ h1 {
 
 h2 {
 	font-size: 0.7rem;
+	vertical-align: middle;
 }
 
 h3 {
@@ -43,98 +44,6 @@ h3 {
 	margin: 3px;
 }
 
-#label_nom_du_personnage {
-}
-
-#nom_du_personnage {
-}
-
-#label_alignement {
-
-}
-
-#alignement{
-
-}
-
-#label_nom_du_joueur {
-}
-
-#nom_du_joueur {
-}
-
-#label_classe {
-}
-
-#classe {
-}
-
-#label_niveau {
-}
-
-#niveau {
-}
-
-#label_race {
-}
-
-#race {
-}
-
-#label_alignement {
-}
-
-#alignement {
-}
-
-#label_divinite {
-}
-
-#divinite {
-}
-
-#label_cat_taille {
-}
-
-#cat_taille {
-}
-
-#label_cat_age {
-}
-
-#cat_age {
-}
-
-#label_sexe {
-}
-
-#sexe {
-}
-
-#label_taille {
-}
-
-#taille {
-}
-
-#label_allonge {
-}
-
-#allonge {
-}
-
-#label_poids {
-}
-
-#poids {
-}
-
-#label_campagne {
-}
-
-#campagne {
-}
-
 #tab_carac {
 	width: 35rem;
 	text-align: center;
@@ -150,16 +59,15 @@ h3 {
 }
 
 .font_white {
+	font-size: 1rem;
 	color: white;
 	border: 2px solid black;
 	background-color: black;
+	text-align: center;
 }
 
 td {
-	color: black;
 	border: 2px solid black;
-	font-weight: bold;
-	background-color: white;
 }
 
 #tab_ca {
@@ -214,22 +122,6 @@ td {
 	margin: 3px;
 }
 
-#label_bba, #label_rm,
-#label_vit,
-#label_de_classe, #label_comp, #label_degres, #label_equip,
-#label_poids_total, #label_capaciteDeCharge, #label_recipients,
-#label_richesses, #label_notes, #label_don, #label_capacites_speciales,
-#label_points_experience,
-#label_sorts, #label_ecole_predilection, #label_ecoles_interdites, #label_experience,
-#label_armure, #label_traits, #label_aptitudes {
-	text-align: center;
-	vertical-align: middle;
-	background-color: black;
-	color: white;
-	font-weight: bold;
-	border: 5px solid black;
-}
-
 #mod_div_lut {
 	border: 2px solid black;
 	text-align: center;
@@ -242,16 +134,10 @@ td {
 	vertical-align: middle;
 }
 
-#pv {
-}
-
 #label_red_deg {
 	width: 3rem;
 	text-align: center;
 	vertical-align: middle;
-}
-
-#red_deg {
 }
 
 #tab_init {

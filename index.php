@@ -603,7 +603,7 @@
 
                 <div class="row">
                     <div class="col-lg-3">
-                        <label id="label_bba">BONUS DE BASE A L'ATTAQUE</label></td>
+                        <label id="label_bba" class="font_white">BONUS DE BASE A L'ATTAQUE</label></td>
                     </div>
 
                     <div class="col-lg-3">
@@ -611,7 +611,7 @@
                     </div>
                     
                     <div class="col-lg-3">
-                        <label id="label_rm" for="rm">RESISTANCE A LA MAGIE</label> 
+                        <label id="label_rm" class="font_white" for="rm">RESISTANCE A LA MAGIE</label> 
                     </div>
 
                     <div class="col-lg-3">
@@ -2842,7 +2842,7 @@
                             <div class="col-lg-12">
                                 <table id="equipement">
                                     <tr>
-                                        <td colspan="2"><label id="label_equip">EQUIPEMENT</label></td>
+                                        <td colspan="2"><label id="label_equip" class="font_white">EQUIPEMENT</label></td>
                                     </tr>
 
                                     <tr>
@@ -3103,7 +3103,7 @@
                                     </tr>
 
                                     <tr>
-                                        <td id="label_poids_total">POIDS TOTAL</td>
+                                        <td id="label_poids_total" class="font_white">POIDS TOTAL</td>
                                         <td id="poids_total"></td>
                                     </tr>
                                 </table>
@@ -3147,7 +3147,7 @@
                             <div class="col-lg-12">
                                 <table id="richesses">
                                     <tr>
-                                        <td colspan="4" id="label_richesses">RICHESSES</td>
+                                        <td colspan="4" id="label_richesses" class="font_white">RICHESSES</td>
                                     </tr>
 
                                     <tr>
@@ -3184,7 +3184,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <table id="table_don">
-                                    <tr><th id="label_don">DONS</th></tr>
+                                    <tr><th id="label_don" class="font_white">DONS</th></tr>
                                     <tr><td>
                                         <select id="don_I" name="don_I">
                                             <option selected></option>
@@ -3294,7 +3294,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <table id="table_capacites_speciales">
-                                    <tr><th id="label_capacites_speciales">CAPACITES SPECIALES</th></tr>
+                                    <tr><th id="label_capacites_speciales" class="font_white">CAPACITES SPECIALES</th></tr>
                                     <tr><td id="capacites_speciales_I" name="capacites_speciales_I">A</td></tr>
                                     <tr><td id="capacites_speciales_II" name="capacites_speciales_II">A</td></tr>
                                     <tr><td id="capacites_speciales_III" name="capacites_speciales_III">A</td></tr>
@@ -3323,8 +3323,8 @@
                             <div class="col-lg-12">
                                 <table id="table_experience">
                                     <tr>
-                                        <th id="label_points_experience">POINTS D'EXPERIENCE</th>
-                                        <th id="label_niveau">NIVEAU</th>
+                                        <th id="label_points_experience" class="font_white">POINTS D'EXPERIENCE</th>
+                                        <th id="label_niveau" class="font_white">NIVEAU</th>
                                     </tr>
 
                                     <tr>
@@ -3345,7 +3345,7 @@
                     <div class="col-lg-12">
                         <table id="table_sorts">
                             <tr>
-                                <td colspan="6" id="label_sorts">SORTS</td>
+                                <td colspan="6" id="label_sorts" class="font_white">SORTS</td>
                             </tr>
 
                             <tr>
@@ -3443,7 +3443,7 @@
                     <div class="col-lg-12">
                         <div class="row">
                             <div class="col-lg-12">
-                                <label id="label_modif_part_sort">MODIFICATEURS PARTICULIERS</h2>
+                                <label id="label_modif_part_sort">MODIFICATEURS PARTICULIERS</label>
                             </div>
                         </div>
 
