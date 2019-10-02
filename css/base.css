@@ -18,19 +18,6 @@ h3 {
 	font-size: 0.5rem;
 }
 
-h4 {
-	font-size: 0.4rem;
-}
-
-
-h5 {
-	font-size: 2rem;
-}
-
-h6 {
-	font-size: 1.5rem;
-}
-
 .tooltip {
 	display: inline-block;
 	margin-left: 20px;
@@ -232,7 +219,7 @@ td {
 #label_de_classe, #label_comp, #label_degres, #label_equip,
 #label_poids_total, #label_capaciteDeCharge, #label_recipients,
 #label_richesses, #label_notes, #label_don, #label_capacites_speciales,
-#label_points_experience, #label_niveau,
+#label_points_experience,
 #label_sorts, #label_ecole_predilection, #label_ecoles_interdites, #label_experience,
 #label_armure, #label_traits, #label_aptitudes {
 	text-align: center;
@@ -403,71 +390,6 @@ td {
 	margin: 3px;
 }
 
-
-
-
-
-
-
-
-
-.label_description {
-	color: black;
-	background-color: lightgrey;
-}
-
-.text_center {
-	text-align: center;
-}
-
-#label_de_classe{
-	-moz-transform: rotate(-90deg);
-}
-
-.de_classe,
-.carac_for, .carac_dex, .carac_con, .carac_int, .carac_sag, .carac_cha {
-	text-align: center;
-	height: 1rem;
-}
-
-.carac {
-	font-size: 0.7rem;
-}
-
-#Somme_compétences {
-}
-
-#language {
-	width: 17rem;
-}
-
-#recipients {
-	width: 50rem;
-}
-
-#recip_recip {
-	width: 7rem;
-	height: 1rem;
-}
-
-#recip_contenance {
-	width: 7rem;
-	height: 1rem;
-}
-
-#recip_poids {
-	width: 3rem;
-	height: 1rem;
-}
-
-.don {
-	height: 1rem;
-}
-
-#table_notes {
-}
-
-#dd_des_sorts, #pourcentage_d_echec, #modificateur_particulier,
 #dd_des_sorts_0, #sorts_jour_0, #sorts_en_bonus_0,
 #dd_des_sorts_I, #sorts_jour_I, #sorts_en_bonus_I,
 #dd_des_sorts_II, #sorts_jour_II, #sorts_en_bonus_II,
@@ -481,14 +403,15 @@ td {
 	text-align: center;
 }
 
-#tab_armure {
-	width: 30rem;
+#label_modif_part_sort {
+	margin-top: 3px;
 }
 
-#traits_raciaux {
-	width: 33rem;
+#modif_part_sort {
+	margin-bottom: 3px;
 }
 
-#aptitudes_classe {
-	width: 33rem;
+#table_dom_spe {
+	width: 36rem;
+	margin: 3px;
 }

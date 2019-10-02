@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="css/base.css" />
     <!-- script type="text/javascript" src="js/main.js"></script -->
     <!-- script type="text/javascript" src="js/weapon.js"></script -->
-    <!-- script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script -->
 </head>
 
 <body>
@@ -295,7 +294,7 @@
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="col-lg-4">
-                                <h2 id="label_point_de_vie" class="caption font_white">PV</h2> 
+                                <label id="label_point_de_vie" class="caption font_white">PV</label>
                             </div>
 
                             <div class="col-lg-4">
@@ -378,7 +377,7 @@
                             </tr>
                             
                             <tr>
-                                <td><h2 id="ca" class="font_white">CA</h2></td>
+                                <td><label id="ca" class="font_white">CA</label></td>
                                 <td id="ca_total" name="ca_total"></td>
                                 <td class="background_grey">=</td>
                                 <td id="ca_arm_base" name="ca_arm_base">10</td>
@@ -478,7 +477,7 @@
                             </tr>
 
                             <tr>
-                                <td><h2 id="lab_ref" class="font_white">REFLEXES</h2></td>
+                                <td><label id="lab_ref" class="font_white">REFLEXES</label></td>
                                 <td id="sau_total_ref"></td>
                                 <td class="background_grey">=</td>
                                 <td id="sau_bon_bas_ref"></td>
@@ -519,7 +518,7 @@
                             </tr>
                         
                             <tr>
-                                <td><h2 id="lab_vig" class="font_white">VIGEUR</h2></td>
+                                <td><label id="lab_vig" class="font_white">VIGEUR</label></td>
                                 <td id="sau_total_vig"></td>
                                 <td class="background_grey">=</td>
                                 <td id="sau_bon_bas_vig"></td>
@@ -560,7 +559,7 @@
                             </tr>
                         
                             <tr>
-                                <td><h2 id="lab_vol" class="font_white">VOLONTE</h2></td>
+                                <td><label id="lab_vol" class="font_white">VOLONTE</label></td>
                                 <td id="sau_total_vol"></td>
                                 <td class="background_grey">=</td>
                                 <td id="sau_bon_bas_vol"></td>
@@ -637,7 +636,7 @@
                                 <th class="caption">MOD. DIVERS</th>
                             </tr>
                             <tr>
-                                <td><h2 id="lab_bmo" class="font_white">BMO</h2></td>
+                                <td><label id="lab_bmo" class="font_white">BMO</label></td>
                                 <td id="bmo_total"></td>
                                 <td class="background_grey">=</td>
                                 <td id="bmo_bon_bas_att"></td>
@@ -670,7 +669,7 @@
                                 <th></th>
                             </tr>
                             <tr>
-                                <td><h2 id="lab_dmd" class="font_white">DMD</h2></td>
+                                <td><label id="lab_dmd" class="font_white">DMD</label></td>
                                 <td id="dmd_total"></td>
                                 <td class="background_grey">=</td>
                                 <td id="dmd_bon_bas_att"></td>
@@ -711,7 +710,7 @@
                     <div class="col-lg-12">
                         <table id="tab_arme_a_I">
                             <tr>
-                                <td colspan="3"><label class="font_white">ATTAQUE</label></td>
+                                <td colspan="3"><label class="font_white">ARME</label></td>
                                 <td><label class="font_white">BONUS A L'ATTAQUE</label></td>
                                 <td><label class="font_white">CRITIQUE</label></td>
                             </tr>
@@ -722,7 +721,7 @@
                                     </select>
                                 </td>
 
-                                <td class="text_center">
+                                <td class="center">
                                     <select id="bonus_I" name="bonus" onChange="calculeFrapper(document.form.famille_arme_I,document.form.arme_I,'degat_I','critique_I','portee_I','type_I','mun_I',document.form.maniement_arme_I,'bba','dex_mod','for_mod',document.form.bonus_I,'frapper_I')">
                                         <option value=0></option>
                                         <option value=0>0</option>
@@ -734,14 +733,14 @@
                                     </select>
                                     <span class="tooltip">Bonus non pris en compte</span>
                                 </td>
-                                <td class="text_center" id="critique_I"></td>
+                                <td class="center" id="critique_I"></td>
                             </tr>
 
                             <tr>
-                                <td><label class="label_description">TYPE</label></td>
-                                <td><label class="label_description">PORTEE</label></td>
-                                <td><label class="label_description">MUNITIONS</label></td>
-                                <td colspan="2"><label class="label_description">DEGATS</label></td>
+                                <td><label class="font_white">TYPE</label></td>
+                                <td><label class="font_white">PORTEE</label></td>
+                                <td><label class="font_white">MUNITIONS</label></td>
+                                <td colspan="2"><label class="font_white">DEGATS</label></td>
                             </tr>
 
                             <tr>
@@ -778,7 +777,7 @@
                     <div class="col-lg-12">
                         <table id="tab_arme_a_II">
                             <tr>
-                                <td colspan="3"><label class="font_white">ATTAQUE</label></td>
+                                <td colspan="3"><label class="font_white">ARME</label></td>
                                 <td><label class="font_white">BONUS A L'ATTAQUE</label></td>
                                 <td><label class="font_white">CRITIQUE</label></td>
                             </tr>
@@ -789,7 +788,7 @@
                                     </select>
                                 </td>
 
-                                <td class="text_center">
+                                <td class="center">
                                     <select id="bonus_II" name="bonus" onChange="calculeFrapper(document.form.famille_arme_II,document.form.arme_II,'degat_II','critique_II','portee_II','type_II','mun_II',document.form.maniement_arme_II,'bba','dex_mod','for_mod',document.form.bonus_II,'frapper_II')">
                                         <option value=0></option>
                                         <option value=0>0</option>
@@ -801,14 +800,14 @@
                                     </select>
                                     <span class="tooltip">Bonus non pris en compte</span>
                                 </td>
-                                <td id="critique_II" class="text_center"></td>
+                                <td id="critique_II" class="center"></td>
                             </tr>
 
                             <tr>
-                                <td><label class="label_description">TYPE</label></td>
-                                <td><label class="label_description">PORTEE</label></td>
-                                <td><label class="label_description">MUNITIONS</label></td>
-                                <td colspan="2"><label class="label_description">DEGATS</label></td>
+                                <td><label class="font_white">TYPE</label></td>
+                                <td><label class="font_white">PORTEE</label></td>
+                                <td><label class="font_white">MUNITIONS</label></td>
+                                <td colspan="2"><label class="font_white">DEGATS</label></td>
                             </tr>
 
                             <tr>
@@ -845,7 +844,7 @@
                     <div class="col-lg-12">
                         <table id="tab_arme_a_III">
                             <tr>
-                                <td colspan="3"><label class="font_white">ATTAQUE</label></td>
+                                <td colspan="3"><label class="font_white">ARME</label></td>
                                 <td><label class="font_white">BONUS A L'ATTAQUE</label></td>
                                 <td><label class="font_white">CRITIQUE</label></td>
                             </tr>
@@ -856,7 +855,7 @@
                                     </select>
                                 </td>
 
-                                <td class="text_center">
+                                <td class="center">
                                     <select id="bonus_III" name="bonus" onChange="calculeFrapper(document.form.famille_arme_III,document.form.arme_III,'degat_III','critique_III','portee_III','type_III','mun_III',document.form.maniement_arme_III,'bba','dex_mod','for_mod',document.form.bonus_III,'frapper_III')">
                                         <option value=0></option>
                                         <option value=0>0</option>
@@ -868,14 +867,14 @@
                                     </select>
                                     <span class="tooltip">Bonus non pris en compte</span>
                                 </td>
-                                <td id="critique_III" class="text_center"></td>
+                                <td id="critique_III" class="center"></td>
                             </tr>
 
                             <tr>
-                                <td><label class="label_description">TYPE</label></td>
-                                <td><label class="label_description">PORTEE</label></td>
-                                <td><label class="label_description">MUNITIONS</label></td>
-                                <td colspan="2"><label class="label_description">DEGATS</label></td>
+                                <td><label class="font_white">TYPE</label></td>
+                                <td><label class="font_white">PORTEE</label></td>
+                                <td><label class="font_white">MUNITIONS</label></td>
+                                <td colspan="2"><label class="font_white">DEGATS</label></td>
                             </tr>
 
                             <tr>
@@ -912,7 +911,7 @@
                     <div class="col-lg-12">
                         <table id="tab_arme_a_IV">
                             <tr>
-                                <td colspan="3"><label class="font_white">ATTAQUE</label></td>
+                                <td colspan="3"><label class="font_white">ARME</label></td>
                                 <td><label class="font_white">BONUS A L'ATTAQUE</label></td>
                                 <td><label class="font_white">CRITIQUE</label></td>
                             </tr>
@@ -923,7 +922,7 @@
                                     </select>
                                 </td>
 
-                                <td class="text_center">
+                                <td class="center">
                                     <select id="bonus_IV" name="bonus" onChange="calculeFrapper(document.form.famille_arme_IV,document.form.arme_IV,'degat_IV','critique_IV','portee_IV','type_IV','mun_IV',document.form.maniement_arme_IV,'bba','dex_mod','for_mod',document.form.bonus_IV,'frapper_IV')">
                                         <option value=0></option>
                                         <option value=0>0</option>
@@ -935,14 +934,14 @@
                                     </select>
                                     <span class="tooltip">Bonus non pris en compte</span>
                                 </td>
-                                <td id="critique_IV" class="text_center"></td>
+                                <td id="critique_IV" class="center"></td>
                             </tr>
 
                             <tr>
-                                <td><label class="label_description">TYPE</label></td>
-                                <td><label class="label_description">PORTEE</label></td>
-                                <td><label class="label_description">MUNITIONS</label></td>
-                                <td colspan="2"><label class="label_description">DEGATS</label></td>
+                                <td><label class="font_white">TYPE</label></td>
+                                <td><label class="font_white">PORTEE</label></td>
+                                <td><label class="font_white">MUNITIONS</label></td>
+                                <td colspan="2"><label class="font_white">DEGATS</label></td>
                             </tr>
 
                             <tr>
@@ -979,7 +978,7 @@
                     <div class="col-lg-12">
                         <table id="tab_arme_a_V">
                             <tr>
-                                <td colspan="3"><label class="font_white">ATTAQUE</label></td>
+                                <td colspan="3"><label class="font_white">ARME</label></td>
                                 <td><label class="font_white">BONUS A L'ATTAQUE</label></td>
                                 <td><label class="font_white">CRITIQUE</label></td>
                             </tr>
@@ -990,7 +989,7 @@
                                     </select>
                                 </td>
 
-                                <td class="text_center">
+                                <td class="center">
                                     <select id="bonus_V" name="bonus" onChange="calculeFrapper(document.form.famille_arme_V,document.form.arme_V,'degat_V','critique_V','portee_V','type_V','mun_V',document.form.maniement_arme_V,'bba','dex_mod','for_mod',document.form.bonus_V,'frapper_V')">
                                         <option value=0></option>
                                         <option value=0>0</option>
@@ -1002,14 +1001,14 @@
                                     </select>
                                     <span class="tooltip">Bonus non pris en compte</span>
                                 </td>
-                                <td id="critique_V" class="text_center"></td>
+                                <td id="critique_V" class="center"></td>
                             </tr>
 
                             <tr>
-                                <td><label class="label_description">TYPE</label></td>
-                                <td><label class="label_description">PORTEE</label></td>
-                                <td><label class="label_description">MUNITIONS</label></td>
-                                <td colspan="2"><label class="label_description">DEGATS</label></td>
+                                <td><label class="font_white">TYPE</label></td>
+                                <td><label class="font_white">PORTEE</label></td>
+                                <td><label class="font_white">MUNITIONS</label></td>
+                                <td colspan="2"><label class="font_white">DEGATS</label></td>
                             </tr>
 
                             <tr>
@@ -1087,12 +1086,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="acrobatie"><h2>O</h2></td>
+                                <td class="center background_grey" id="acrobatie"><h2>O</h2></td>
                                 <td colspan="2">Acrobatie</td>
                                 <td class="acrobatie center" id="totalAcrobatie">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">DEX</td>
-                                <td class="carac_dex center" id="caracAcrobatie">+0</td>
+                                <td class="center">DEX</td>
+                                <td class="center" id="caracAcrobatie">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangAcrobatie" name="rang_acrobatie" 
@@ -1128,12 +1127,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="artisanat_I"><h2>O</h2></td>
+                                <td class="center background_grey" id="artisanat_I"><h2>O</h2></td>
                                 <td colspan="2">Artisanat</td>
                                 <td class="artisanat_I center" id="totalartisanat_I">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracartisanat_I">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracartisanat_I">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangartisanat_I" name="rang_artisanat_I" 
@@ -1169,12 +1168,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="artisanat_II"><h2>O</h2></td>
+                                <td class="center background_grey" id="artisanat_II"><h2>O</h2></td>
                                 <td colspan="2">Artisanat</td>
                                 <td class="artisanat_II center" id="totalartisanat_II">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracartisanat_II">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracartisanat_II">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangartisanat_II" name="rang_artisanat_II" 
@@ -1210,12 +1209,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="artisanat_III"><h2>O</h2></td>
+                                <td class="center background_grey" id="artisanat_III"><h2>O</h2></td>
                                 <td colspan="2">Artisanat</td>
                                 <td class="artisanat_III center" id="totalartisanat_III">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracartisanat_III">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracartisanat_III">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangartisanat_III" name="rang_artisanat_III" 
@@ -1251,12 +1250,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="art_de_la_magie"><h2>O</h2></td>
+                                <td class="center background_grey" id="art_de_la_magie"><h2>O</h2></td>
                                 <td colspan="2">Art de la magie*</td>
                                 <td class="artdelamagie center" id="totalartdelamagie">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracartdelamagie">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracartdelamagie">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangartdelamagie" name="rang_artdelamagie" 
@@ -1292,12 +1291,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="bluf"><h2>O</h2></td>
+                                <td class="center background_grey" id="bluf"><h2>O</h2></td>
                                 <td colspan="2">Bluf</td>
                                 <td class="bluff center" id="totalbluff">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">CHA</td>
-                                <td class="carac_dex center" id="caracbluff">+0</td>
+                                <td class="center">CHA</td>
+                                <td class="center" id="caracbluff">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangbluff" name="rang_bluff" 
@@ -1333,12 +1332,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="connaissances_I"><h2>O</h2></td>
+                                <td class="center background_grey" id="connaissances_I"><h2>O</h2></td>
                                 <td colspan="2">Connaissances Exploration*</td>
                                 <td class="connaissances_I center" id="totalconnaissances_I">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracconnaissances_I">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracconnaissances_I">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangconnaissances_I" name="rang_connaissances_I" 
@@ -1374,12 +1373,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="connaissances_II"><h2>O</h2></td>
+                                <td class="center background_grey" id="connaissances_II"><h2>O</h2></td>
                                 <td colspan="2">Connaissances Folklore Locale*</td>
                                 <td class="connaissances_II center" id="totalconnaissances_II">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracconnaissances_II">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracconnaissances_II">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangconnaissances_II" name="rang_connaissances_II" 
@@ -1415,12 +1414,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="connaissances_III"><h2>O</h2></td>
+                                <td class="center background_grey" id="connaissances_III"><h2>O</h2></td>
                                 <td colspan="2">Connaissances Géographie*</td>
                                 <td class="connaissances_III center" id="totalconnaissances_III">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracconnaissances_III">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracconnaissances_III">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangconnaissances_III" name="rang_connaissances_III" 
@@ -1456,12 +1455,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="connaissances_IV"><h2>O</h2></td>
+                                <td class="center background_grey" id="connaissances_IV"><h2>O</h2></td>
                                 <td colspan="2">Connaissances Histoire*</td>
                                 <td class="connaissances_IV center" id="totalconnaissances_IV">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracconnaissances_IV">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracconnaissances_IV">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangconnaissances_IV" name="rang_connaissances_IV" 
@@ -1497,12 +1496,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="connaissances_V"><h2>O</h2></td>
+                                <td class="center background_grey" id="connaissances_V"><h2>O</h2></td>
                                 <td colspan="2">Connaissances Ingénieurie*</td>
                                 <td class="connaissances_V center" id="totalconnaissances_V">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracconnaissances_V">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracconnaissances_V">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangconnaissances_V" name="rang_connaissances_V" 
@@ -1538,12 +1537,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="connaissances_VI"><h2>O</h2></td>
+                                <td class="center background_grey" id="connaissances_VI"><h2>O</h2></td>
                                 <td colspan="2">Connaissances Mystères*</td>
                                 <td class="connaissances_VI center" id="totalconnaissances_VI">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracconnaissances_VI">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracconnaissances_VI">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangconnaissances_VI" name="rang_connaissances_VI" 
@@ -1579,12 +1578,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="connaissances_VII"><h2>O</h2></td>
+                                <td class="center background_grey" id="connaissances_VII"><h2>O</h2></td>
                                 <td colspan="2">Connaissances Nature*</td>
                                 <td class="connaissances_VII center" id="totalconnaissances_VII">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracconnaissances_VII">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracconnaissances_VII">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangconnaissances_VII" name="rang_connaissances_VII" 
@@ -1620,12 +1619,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="connaissances_VIII"><h2>O</h2></td>
+                                <td class="center background_grey" id="connaissances_VIII"><h2>O</h2></td>
                                 <td colspan="2">Connaissances Noblesse*</td>
                                 <td class="connaissances_VIII center" id="totalconnaissances_VIII">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracconnaissances_VIII">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracconnaissances_VIII">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangconnaissances_VIII" name="rang_connaissances_VIII" 
@@ -1661,12 +1660,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="connaissances_IX"><h2>O</h2></td>
+                                <td class="center background_grey" id="connaissances_IX"><h2>O</h2></td>
                                 <td colspan="2">Connaissances Plan*</td>
                                 <td class="connaissances_IX center" id="totalconnaissances_IX">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracconnaissances_IX">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracconnaissances_IX">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangconnaissances_IX" name="rang_connaissances_IX" 
@@ -1702,12 +1701,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="connaissances_X"><h2>O</h2></td>
+                                <td class="center background_grey" id="connaissances_X"><h2>O</h2></td>
                                 <td colspan="2">Connaissances Religion*</td>
                                 <td class="connaissances_X center" id="totalconnaissances_X">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracconnaissances_X">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracconnaissances_X">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangconnaissances_X" name="rang_connaissances_X" 
@@ -1743,12 +1742,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="déguisement"><h2>O</h2></td>
+                                <td class="center background_grey" id="déguisement"><h2>O</h2></td>
                                 <td colspan="2">Déguisement</td>
                                 <td class="deguisement center" id="totaldeguisement">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">CHA</td>
-                                <td class="carac_dex center" id="caracdeguisement">+0</td>
+                                <td class="center">CHA</td>
+                                <td class="center" id="caracdeguisement">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangdeguisement" name="rang_deguisement" 
@@ -1784,12 +1783,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="diplomatie"><h2>O</h2></td>
+                                <td class="center background_grey" id="diplomatie"><h2>O</h2></td>
                                 <td colspan="2">Diplomatie</td>
                                 <td class="diplomatie center" id="totaldiplomatie">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">CHA</td>
-                                <td class="carac_dex center" id="caracdiplomatie">+0</td>
+                                <td class="center">CHA</td>
+                                <td class="center" id="caracdiplomatie">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangdiplomatie" name="rang_diplomatie" 
@@ -1825,12 +1824,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="discrétion"><h2>O</h2></td>
+                                <td class="center background_grey" id="discrétion"><h2>O</h2></td>
                                 <td colspan="2">Discrétion</td>
                                 <td class="discretion center" id="totaldiscretion">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">DEX</td>
-                                <td class="carac_dex center" id="caracdiscretion">+0</td>
+                                <td class="center">DEX</td>
+                                <td class="center" id="caracdiscretion">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangdiscretion" name="rang_discretion" 
@@ -1866,12 +1865,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="dressage"><h2>O</h2></td>
+                                <td class="center background_grey" id="dressage"><h2>O</h2></td>
                                 <td colspan="2">Dressage*</td>
                                 <td class="dressage center" id="totaldressage">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">CHA</td>
-                                <td class="carac_dex center" id="caracdressage">+0</td>
+                                <td class="center">CHA</td>
+                                <td class="center" id="caracdressage">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangdressage" name="rang_dressage" 
@@ -1907,12 +1906,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="equitation"><h2>O</h2></td>
+                                <td class="center background_grey" id="equitation"><h2>O</h2></td>
                                 <td colspan="2">Equitation</td>
                                 <td class="equitation center" id="totalequitation">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">DEX</td>
-                                <td class="carac_dex center" id="caracequitation">+0</td>
+                                <td class="center">DEX</td>
+                                <td class="center" id="caracequitation">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangequitation" name="rang_equitation" 
@@ -1948,12 +1947,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="escalade"><h2>O</h2></td>
+                                <td class="center background_grey" id="escalade"><h2>O</h2></td>
                                 <td colspan="2">Escalade</td>
                                 <td class="escalade center" id="totalescalade">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">FOR</td>
-                                <td class="carac_dex center" id="caracescalade">+0</td>
+                                <td class="center">FOR</td>
+                                <td class="center" id="caracescalade">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangescalade" name="rang_escalade" 
@@ -1989,12 +1988,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="escamotage"><h2>O</h2></td>
+                                <td class="center background_grey" id="escamotage"><h2>O</h2></td>
                                 <td colspan="2">Escamotage*</td>
                                 <td class="escamotage center" id="totalescamotage">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">DEX</td>
-                                <td class="carac_dex center" id="caracescamotage">+0</td>
+                                <td class="center">DEX</td>
+                                <td class="center" id="caracescamotage">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangescamotage" name="rang_escamotage" 
@@ -2030,12 +2029,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="estimation"><h2>O</h2></td>
+                                <td class="center background_grey" id="estimation"><h2>O</h2></td>
                                 <td colspan="2">Estimation</td>
                                 <td class="estimation center" id="totalestimation">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caracestimation">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caracestimation">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangestimation" name="rang_estimation" 
@@ -2071,12 +2070,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="évasion"><h2>O</h2></td>
+                                <td class="center background_grey" id="évasion"><h2>O</h2></td>
                                 <td colspan="2">Evasion</td>
                                 <td class="evasion center" id="totalevasion">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">DEX</td>
-                                <td class="carac_dex center" id="caracevasion">+0</td>
+                                <td class="center">DEX</td>
+                                <td class="center" id="caracevasion">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangevasion" name="rang_evasion" 
@@ -2112,12 +2111,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="intimidation"><h2>O</h2></td>
+                                <td class="center background_grey" id="intimidation"><h2>O</h2></td>
                                 <td colspan="2">Intimidation</td>
                                 <td class="intimidation center" id="totalintimidation">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">CHA</td>
-                                <td class="carac_dex center" id="caracintimidation">+0</td>
+                                <td class="center">CHA</td>
+                                <td class="center" id="caracintimidation">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangintimidation" name="rang_intimidation" 
@@ -2153,12 +2152,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="langues"><h2>O</h2></td>
+                                <td class="center background_grey" id="Linguistique"><h2>O</h2></td>
                                 <td colspan="2">Linguistique*</td>
                                 <td class="linguistique center" id="totallinguistique">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">INT</td>
-                                <td class="carac_dex center" id="caraclinguistique">+0</td>
+                                <td class="center">INT</td>
+                                <td class="center" id="caraclinguistique">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="ranglinguistique" name="rang_linguistique" 
@@ -2194,12 +2193,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="natation"><h2>O</h2></td>
+                                <td class="center background_grey" id="natation"><h2>O</h2></td>
                                 <td colspan="2">Natation</td>
                                 <td class="natation center" id="totalnatation">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">FOR</td>
-                                <td class="carac_dex center" id="caracnatation">+0</td>
+                                <td class="center">FOR</td>
+                                <td class="center" id="caracnatation">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangnatation" name="rang_natation" 
@@ -2235,12 +2234,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="perception"><h2>O</h2></td>
+                                <td class="center background_grey" id="perception"><h2>O</h2></td>
                                 <td colspan="2">Perception</td>
                                 <td class="perception center" id="totalperception">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">SAG</td>
-                                <td class="carac_dex center" id="caracperception">+0</td>
+                                <td class="center">SAG</td>
+                                <td class="center" id="caracperception">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangperception" name="rang_perception" 
@@ -2276,12 +2275,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="premier_secours"><h2>O</h2></td>
+                                <td class="center background_grey" id="premier_secours"><h2>O</h2></td>
                                 <td colspan="2">Premier secours</td>
                                 <td class="premiersecours center" id="totalpremiersecours">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">SAG</td>
-                                <td class="carac_dex center" id="caracpremiersecours">+0</td>
+                                <td class="center">SAG</td>
+                                <td class="center" id="caracpremiersecours">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangpremiersecours" name="rang_premiersecours" 
@@ -2317,12 +2316,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="profession_I"><h2>O</h2></td>
+                                <td class="center background_grey" id="profession_I"><h2>O</h2></td>
                                 <td colspan="2">Profession*</td>
                                 <td class="profession_I center" id="totalprofession_I">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">SAG</td>
-                                <td class="carac_dex center" id="caracprofession_I">+0</td>
+                                <td class="center">SAG</td>
+                                <td class="center" id="caracprofession_I">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangprofession_I" name="rang_profession_I" 
@@ -2358,12 +2357,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="profession_II"><h2>O</h2></td>
+                                <td class="center background_grey" id="profession_II"><h2>O</h2></td>
                                 <td colspan="2">Profession*</td>
                                 <td class="profession_II center" id="totalprofession_II">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">SAG</td>
-                                <td class="carac_dex center" id="caracprofession_II">+0</td>
+                                <td class="center">SAG</td>
+                                <td class="center" id="caracprofession_II">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangprofession_II" name="rang_profession_II" 
@@ -2399,12 +2398,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="psychologie"><h2>O</h2></td>
+                                <td class="center background_grey" id="psychologie"><h2>O</h2></td>
                                 <td colspan="2">Psychologie</td>
                                 <td class="psychologie center" id="totalpsychologie">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">SAG</td>
-                                <td class="carac_dex center" id="caracpsychologie">+0</td>
+                                <td class="center">SAG</td>
+                                <td class="center" id="caracpsychologie">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangpsychologie" name="rang_psychologie" 
@@ -2440,12 +2439,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="représentation_I"><h2>O</h2></td>
+                                <td class="center background_grey" id="représentation_I"><h2>O</h2></td>
                                 <td colspan="2">Représentation</td>
                                 <td class="representation_I center" id="totalrepresentation_I">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">CHA</td>
-                                <td class="carac_dex center" id="caracrepresentation_I">+0</td>
+                                <td class="center">CHA</td>
+                                <td class="center" id="caracrepresentation_I">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangrepresentation_I" name="rang_representation_I" 
@@ -2481,12 +2480,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="représentation_II"><h2>O</h2></td>
+                                <td class="center background_grey" id="représentation_II"><h2>O</h2></td>
                                 <td colspan="2">Représentation</td>
                                 <td class="representation_II center" id="totalrepresentation_II">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">CHA</td>
-                                <td class="carac_dex center" id="caracrepresentation_II">+0</td>
+                                <td class="center">CHA</td>
+                                <td class="center" id="caracrepresentation_II">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangrepresentation_II" name="rang_representation_II" 
@@ -2522,12 +2521,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="sabotage"><h2>O</h2></td>
+                                <td class="center background_grey" id="sabotage"><h2>O</h2></td>
                                 <td colspan="2">Sabotage*</td>
                                 <td class="sabotage center" id="totalsabotage">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">DEX</td>
-                                <td class="carac_dex center" id="caracsabotage">+0</td>
+                                <td class="center">DEX</td>
+                                <td class="center" id="caracsabotage">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangsabotage" name="rang_sabotage" 
@@ -2563,12 +2562,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="survie"><h2>O</h2></td>
+                                <td class="center background_grey" id="survie"><h2>O</h2></td>
                                 <td colspan="2">Survie</td>
                                 <td class="survie center" id="totalsurvie">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">SAG</td>
-                                <td class="carac_dex center" id="caracsurvie">+0</td>
+                                <td class="center">SAG</td>
+                                <td class="center" id="caracsurvie">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangsurvie" name="rang_survie" 
@@ -2604,12 +2603,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="utilisation_d_objets_magiques"><h2>O</h2></td>
+                                <td class="center background_grey" id="utilisation_d_objets_magiques"><h2>O</h2></td>
                                 <td colspan="2">Utilisation d'objets magiques*</td>
                                 <td class="utilisationobjet center" id="totalutilisationobjet">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">CHA</td>
-                                <td class="carac_dex center" id="caracutilisationobjet">+0</td>
+                                <td class="center">CHA</td>
+                                <td class="center" id="caracutilisationobjet">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangutilisationobjet" name="rang_utilisationobjet" 
@@ -2645,12 +2644,12 @@
                             </tr>
 
                             <tr>
-                                <td class="de_classe background_grey" id="vol"><h2>O</h2></td>
+                                <td class="center background_grey" id="vol"><h2>O</h2></td>
                                 <td colspan="2">Vol</td>
                                 <td class="vol center" id="totalvol">0</td>
                                 <td class="background_grey">=</td>
-                                <td class="carac center">DEX</td>
-                                <td class="carac_dex center" id="caracvol">+0</td>
+                                <td class="center">DEX</td>
+                                <td class="center" id="caracvol">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rangvol" name="rang_vol" 
@@ -3149,7 +3148,7 @@
                             <div class="col-lg-12">
                                 <table id="richesses">
                                     <tr>
-                                        <td colspan="4" id="label_richesses"><h5>RICHESSES</h5></td>
+                                        <td colspan="4" id="label_richesses">RICHESSES</td>
                                     </tr>
 
                                     <tr>
@@ -3342,7 +3341,6 @@
                 </div>
             </div>
 
-        <-- *** -->        
             <div class="col-lg-4">
                 <div class="row">
                     <div class="col-lg-12">
@@ -3446,13 +3444,13 @@
                     <div class="col-lg-12">
                         <div class="row">
                             <div class="col-lg-12">
-                                <label id="label_modif_part">MODIFICATEURS PARTICULIERS</h2>
+                                <label id="label_modif_part_sort">MODIFICATEURS PARTICULIERS</h2>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <input type="text" name="modif_part" size="60" maxlength="60" required id="modif_part">
+                                <textarea id="modif_part_sort" name="modif_part_sort" rows="4" cols="87"></textarea>
                             </div>
                         </div>
                     </div>
@@ -3462,129 +3460,125 @@
                     <div class="col-lg-12">
                         <table id="table_dom_spe">
                             <tr>
-                                <td colspan="9" id="label_DOM/SPE"><h5>DOMAINES/SPECIALISATION</h5></td>
-                                <td><select id="dom_spe" name="dom_spe"></select></td>
+                                <td colspan="10" id="label_DOM_SPE">DOMAINES/SPECIALISATION</td>
+                            </tr>
+                            <tr>
+                                <td colspan="10"><select id="dom_spe" name="dom_spe">
+                                    <option selected></option>
+                                    <option>Spé</option>
+                                    <option>Spé</option>
+                                </select></td>
                             </tr>
 
                             <tr>
                                 <td>0</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select id="dom_spe_01" name="dom_spe_01"></select></td></tr>
-                            <tr><td><select id="dom_spe_02" name="dom_spe_02"></select></td></tr>
-                            <tr><td><select id="dom_spe_03" name="dom_spe_03"></select></td></tr>
-                            <tr><td><select id="dom_spe_04" name="dom_spe_04"></select></td></tr>
-                            <tr><td><select id="dom_spe_05" name="dom_spe_05"></select></td></tr>
-                            <tr><td><select id="dom_spe_06" name="dom_spe_06"></select></td></tr>
-                            <tr><td><select id="dom_spe_07" name="dom_spe_07"></select></td></tr>
-                            <tr><td><select id="dom_spe_08" name="dom_spe_08"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_01" name="dom_spe_01">
+                                <option selected></option>
+                                <option>Spé I</option>
+                                <option>Spé II</option>
+                            </select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_02" name="dom_spe_02">
+                                <option selected></option>
+                                <option>Spé I</option>
+                                <option>Spé II</option>
+                            </select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_03" name="dom_spe_03">
+                                <option selected></option>
+                                <option>Spé I</option>
+                                <option>Spé II</option>
+                            </select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_04" name="dom_spe_04">
+                                <option selected></option>
+                                <option>Spé I</option>
+                                <option>Spé II</option>
+                            </select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_05" name="dom_spe_05">
+                                <option selected></option>
+                                <option>Spé I</option>
+                                <option>Spé II</option>
+                            </select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_06" name="dom_spe_06">
+                                <option selected></option>
+                                <option>Spé I</option>
+                                <option>Spé II</option>
+                            </select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_07" name="dom_spe_07">
+                                <option selected></option>
+                                <option>Spé I</option>
+                                <option>Spé II</option>
+                            </select></td></tr>
 
                             <tr>
                                 <td>1</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select id="dom_spe_11" name="dom_spe_11"></select></td></tr>
-                            <tr><td><select id="dom_spe_12" name="dom_spe_12"></select></td></tr>
-                            <tr><td><select id="dom_spe_13" name="dom_spe_13"></select></td></tr>
-                            <tr><td><select id="dom_spe_14" name="dom_spe_14"></select></td></tr>
-                            <tr><td><select id="dom_spe_15" name="dom_spe_15"></select></td></tr>
-                            <tr><td><select id="dom_spe_16" name="dom_spe_16"></select></td></tr>
-                            <tr><td><select id="dom_spe_17" name="dom_spe_17"></select></td></tr>
-                            <tr><td><select id="dom_spe_18" name="dom_spe_18"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_11" name="dom_spe_11"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_12" name="dom_spe_12"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_13" name="dom_spe_13"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_14" name="dom_spe_14"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_15" name="dom_spe_15"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_16" name="dom_spe_16"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_17" name="dom_spe_17"></select></td></tr>
 
                             <tr>
                                 <td>2</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select id="dom_spe_21" name="dom_spe_21"></select></td></tr>
-                            <tr><td><select id="dom_spe_22" name="dom_spe_22"></select></td></tr>
-                            <tr><td><select id="dom_spe_23" name="dom_spe_23"></select></td></tr>
-                            <tr><td><select id="dom_spe_24" name="dom_spe_24"></select></td></tr>
-                            <tr><td><select id="dom_spe_25" name="dom_spe_25"></select></td></tr>
-                            <tr><td><select id="dom_spe_26" name="dom_spe_26"></select></td></tr>
-                            <tr><td><select id="dom_spe_27" name="dom_spe_27"></select></td></tr>
-                            <tr><td><select id="dom_spe_28" name="dom_spe_28"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_21" name="dom_spe_21"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_22" name="dom_spe_22"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_23" name="dom_spe_23"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_24" name="dom_spe_24"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_25" name="dom_spe_25"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_26" name="dom_spe_26"></select></td></tr>
 
                             <tr>
                                 <td>3</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select id="dom_spe_31" name="dom_spe_31"></select></td></tr>
-                            <tr><td><select id="dom_spe_32" name="dom_spe_32"></select></td></tr>
-                            <tr><td><select id="dom_spe_33" name="dom_spe_33"></select></td></tr>
-                            <tr><td><select id="dom_spe_34" name="dom_spe_34"></select></td></tr>
-                            <tr><td><select id="dom_spe_35" name="dom_spe_35"></select></td></tr>
-                            <tr><td><select id="dom_spe_36" name="dom_spe_36"></select></td></tr>
-                            <tr><td><select id="dom_spe_37" name="dom_spe_37"></select></td></tr>
-                            <tr><td><select id="dom_spe_38" name="dom_spe_38"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_31" name="dom_spe_31"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_32" name="dom_spe_32"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_33" name="dom_spe_33"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_34" name="dom_spe_34"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_35" name="dom_spe_35"></select></td></tr>
 
                             <tr>
                                 <td>4</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select id="dom_spe_41" name="dom_spe_41"></select></td></tr>
-                            <tr><td><select id="dom_spe_42" name="dom_spe_42"></select></td></tr>
-                            <tr><td><select id="dom_spe_43" name="dom_spe_43"></select></td></tr>
-                            <tr><td><select id="dom_spe_44" name="dom_spe_44"></select></td></tr>
-                            <tr><td><select id="dom_spe_45" name="dom_spe_45"></select></td></tr>
-                            <tr><td><select id="dom_spe_46" name="dom_spe_46"></select></td></tr>
-                            <tr><td><select id="dom_spe_47" name="dom_spe_47"></select></td></tr>
-                            <tr><td><select id="dom_spe_48" name="dom_spe_48"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_41" name="dom_spe_41"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_42" name="dom_spe_42"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_43" name="dom_spe_43"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_44" name="dom_spe_44"></select></td></tr>
 
                             <tr>
                                 <td>5</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select id="dom_spe_51" name="dom_spe_51"></select></td></tr>
-                            <tr><td><select id="dom_spe_52" name="dom_spe_52"></select></td></tr>
-                            <tr><td><select id="dom_spe_53" name="dom_spe_53"></select></td></tr>
-                            <tr><td><select id="dom_spe_54" name="dom_spe_54"></select></td></tr>
-                            <tr><td><select id="dom_spe_55" name="dom_spe_55"></select></td></tr>
-                            <tr><td><select id="dom_spe_56" name="dom_spe_56"></select></td></tr>
-                            <tr><td><select id="dom_spe_57" name="dom_spe_57"></select></td></tr>
-                            <tr><td><select id="dom_spe_58" name="dom_spe_58"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_51" name="dom_spe_51"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_52" name="dom_spe_52"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_53" name="dom_spe_53"></select></td></tr>
 
                             <tr>
                                 <td>6</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select id="dom_spe_61" name="dom_spe_61"></select></td></tr>
-                            <tr><td><select id="dom_spe_62" name="dom_spe_62"></select></td></tr>
-                            <tr><td><select id="dom_spe_63" name="dom_spe_63"></select></td></tr>
-                            <tr><td><select id="dom_spe_64" name="dom_spe_64"></select></td></tr>
-                            <tr><td><select id="dom_spe_65" name="dom_spe_65"></select></td></tr>
-                            <tr><td><select id="dom_spe_66" name="dom_spe_66"></select></td></tr>
-                            <tr><td><select id="dom_spe_67" name="dom_spe_67"></select></td></tr>
-                            <tr><td><select id="dom_spe_68" name="dom_spe_68"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_61" name="dom_spe_61"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_62" name="dom_spe_62"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_63" name="dom_spe_63"></select></td></tr>
 
                             <tr>
                                 <td>7</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select id="dom_spe_71" name="dom_spe_71"></select></td></tr>
-                            <tr><td><select id="dom_spe_72" name="dom_spe_72"></select></td></tr>
-                            <tr><td><select id="dom_spe_73" name="dom_spe_73"></select></td></tr>
-                            <tr><td><select id="dom_spe_74" name="dom_spe_74"></select></td></tr>
-                            <tr><td><select id="dom_spe_75" name="dom_spe_75"></select></td></tr>
-                            <tr><td><select id="dom_spe_76" name="dom_spe_76"></select></td></tr>
-                            <tr><td><select id="dom_spe_77" name="dom_spe_77"></select></td></tr>
-                            <tr><td><select id="dom_spe_78" name="dom_spe_78"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_71" name="dom_spe_71"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_72" name="dom_spe_72"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_73" name="dom_spe_73"></select></td></tr>
 
                             <tr>
                                 <td>8</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select id="dom_spe_81" name="dom_spe_81"></select></td></tr>
-                            <tr><td><select id="dom_spe_82" name="dom_spe_82"></select></td></tr>
-                            <tr><td><select id="dom_spe_83" name="dom_spe_83"></select></td></tr>
-                            <tr><td><select id="dom_spe_84" name="dom_spe_84"></select></td></tr>
-                            <tr><td><select id="dom_spe_85" name="dom_spe_85"></select></td></tr>
-                            <tr><td><select id="dom_spe_86" name="dom_spe_86"></select></td></tr>
-                            <tr><td><select id="dom_spe_87" name="dom_spe_87"></select></td></tr>
-                            <tr><td><select id="dom_spe_88" name="dom_spe_88"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_81" name="dom_spe_81"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_82" name="dom_spe_82"></select></td></tr>
 
                             <tr>
                                 <td>9</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td>
                             </tr>
-                            <tr><td><select id="dom_spe_91" name="dom_spe_91"></select></td></tr>
-                            <tr><td><select id="dom_spe_92" name="dom_spe_92"></select></td></tr>
-                            <tr><td><select id="dom_spe_93" name="dom_spe_93"></select></td></tr>
-                            <tr><td><select id="dom_spe_94" name="dom_spe_94"></select></td></tr>
-                            <tr><td><select id="dom_spe_95" name="dom_spe_95"></select></td></tr>
-                            <tr><td><select id="dom_spe_96" name="dom_spe_96"></select></td></tr>
-                            <tr><td><select id="dom_spe_97" name="dom_spe_97"></select></td></tr>
-                            <tr><td><select id="dom_spe_98" name="dom_spe_98"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_91" name="dom_spe_91"></select></td></tr>
+                            <tr><td colspan="10"><select id="dom_spe_92" name="dom_spe_92"></select></td></tr>
                         </table>
                     </div>
                 </div>
@@ -3592,5 +3586,12 @@
         </div>
     </form>
 </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+      $(function() {
+        $('#nom_du_personnage').css('background','#B0F2B6');
+      });
+      </script>
 </body>
 </html>
