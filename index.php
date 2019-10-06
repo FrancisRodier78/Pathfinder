@@ -1,4 +1,4 @@
-<!DOCTYPE html 
+<!DOCTYPE html>
 <html>
 <head>
     <title>Feuille de personnage</title>
@@ -20,7 +20,6 @@
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/base.css" />
-    <!-- script type="text/javascript" src="js/main.js"></script -->
     <!-- script type="text/javascript" src="js/weapon.js"></script -->
 </head>
 
@@ -65,7 +64,7 @@
                 <div class="row presentation_simple">
                     <div class="col-lg-3">
                         <label id="label_classe" for="classe">CLASSE</label>  
-                        <select id="classe" name="classe" onChange="influenceClassePersonnage()">
+                        <select id="classe" name="classe">
                             <option value=" " selected></option>
                             <option value="Barbare">Barbare</option>
                             <option value="Barde">Barde</option>
@@ -603,7 +602,7 @@
 
                 <div class="row">
                     <div class="col-lg-3">
-                        <label id="label_bba" class="font_white">BONUS DE BASE A L'ATTAQUE</label></td>
+                        <label id="label_bba" class="font_white">BONUS DE BASE A L'ATTAQUE</label>
                     </div>
 
                     <div class="col-lg-3">
@@ -810,7 +809,7 @@
                             </tr>
 
                             <tr>
-                                <td id="type_II">_</td">
+                                <td id="type_II">_</td>
                                 <td id="portee_II">_</td>
                                 <td id="munitions_II">_</td>
                                 <td colspan="2" id="degats_II">_</td>
@@ -3588,5 +3587,6 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/color.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

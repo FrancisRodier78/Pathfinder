@@ -2,7 +2,7 @@ $(function() {
 	$('#nom_du_personnage').css('background','#B0F2B6');
 	$('#alignement').css('background','#B0F2B6');
 	$('#nom_du_joueur').css('background','#B0F2B6');
-	$('#classe').css('background','#B0F2B6');
+    $('#classe').css('background','#B0F2B6');
 	$('#niveau').css('background','#B0F2B6');
 	$('#origine').css('background','#B0F2B6');
 	$('#divinite').css('background','#B0F2B6');
