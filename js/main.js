@@ -43,7 +43,6 @@ $(function() {
     });
 
     function remiseAZero() {
-                $('#classe').css('background','#F0F0F0');
     	$('#acrobatie').html('<h2>O</h2>');
     	$('#artisanat_I').html('<h2>O</h2>');
         $('#artisanat_II').html('<h2>O</h2>');
@@ -95,6 +94,7 @@ $(function() {
                 $('#acrobatie').html('<h2>X</h2>');
     			$('#artisanat_I').html('<h2>X</h2>');
         		$('#artisanat_II').html('<h2>X</h2>');
+                $('#artisanat_III').html('<h2>X</h2>');
                 $('#connaissances_I').html('<h2>X</h2>');
         		$('#dressage').html('<h2>X</h2>');
         		$('#equitation').html('<h2>X</h2>');
@@ -107,99 +107,110 @@ $(function() {
     		case 'Barde' :
     			remiseAZero();
     			$('#acrobatie').html('<h2>X</h2>');
-    			$('#art_de_la_magie').html('<h2>X</h2>');
     			$('#artisanat_I').html('<h2>X</h2>');
         		$('#artisanat_II').html('<h2>X</h2>');
-        		$('#artisanat_III').html('<h2>X</h2>');
+                $('#artisanat_III').html('<h2>X</h2>');
+                $('#art_de_la_magie').html('<h2>X</h2>');
         		$('#bluf').html('<h2>X</h2>');
-        		$('#concentration').html('<h2>X</h2>');
-        		$('#connaissances_I').html('<h2>X</h2>');
-        		$('#connaissances_II').html('<h2>X</h2>');
-        		$('#connaissances_III').html('<h2>X</h2>');
-        		$('#connaissances_IV').html('<h2>X</h2>');
-        		$('#connaissances_V').html('<h2>X</h2>');
-        		$('#décriptage').html('<h2>X</h2>');
+
+        		$('#Connaissances_exploration').html('<h2>X</h2>');
+        		$('#Connaissances_Folklore_Locale').html('<h2>X</h2>');
+        		$('#Connaissances_Geographie').html('<h2>X</h2>');
+        		$('#Connaissances_Histoire').html('<h2>X</h2>');
+        		$('#Connaissances_Ingénieurie').html('<h2>X</h2>');
+                $('#Connaissances_Mystères').html('<h2>X</h2>');
+                $('#Connaissances_Nature').html('<h2>X</h2>');
+                $('#Connaissances_Noblesse').html('<h2>X</h2>');
+                $('#Connaissances_Plan').html('<h2>X</h2>');
+                $('#Connaissances_Religion').html('<h2>X</h2>');
+
         		$('#déguisement').html('<h2>X</h2>');
-        		$('#déplacement_silencieux').html('<h2>X</h2>');
         		$('#diplomatie').html('<h2>X</h2>');
         		$('#discrétion').html('<h2>X</h2>');
-        		$('#equilibre').html('<h2>X</h2>');
         		$('#escalade').html('<h2>X</h2>');
         		$('#escamotage').html('<h2>X</h2>');
         		$('#estimation').html('<h2>X</h2>');
         		$('#évasion').html('<h2>X</h2>');
-        		$('#langues').html('<h2>X</h2>');
-        		$('#natation').html('<h2>X</h2>');
-        		$('#perception_auditive').html('<h2>X</h2>');
+        		$('#linguistique').html('<h2>X</h2>');
+        		$('#perception').html('<h2>X</h2>');
         		$('#profession_I').html('<h2>X</h2>');
         		$('#profession_II').html('<h2>X</h2>');
         		$('#psychologie').html('<h2>X</h2>');
-        		$('#renseignements').html('<h2>X</h2>');
         		$('#représentation_I').html('<h2>X</h2>');
         		$('#représentation_II').html('<h2>X</h2>');
-        		$('#représentation_III').html('<h2>X</h2>');
-        		$('#saut').html('<h2>X</h2>');
         		$('#utilisation_d_objets_magiques').html('<h2>X</h2>');
     			break;
     		case 'Druide' :
     			remiseAZero();
-    			$('#art_de_la_magie').html('<h2>X</h2>');
     			$('#artisanat_I').html('<h2>X</h2>');
         		$('#artisanat_II').html('<h2>X</h2>');
         		$('#artisanat_III').html('<h2>X</h2>');
-        		$('#concentration').html('<h2>X</h2>');
+                $('#art_de_la_magie').html('<h2>X</h2>');
         		$('#connaissances_I').html('<h2>X</h2>');
-        		$('#détection').html('<h2>X</h2>');
-        		$('#diplomatie').html('<h2>X</h2>');
+                $('#connaissances_II').html('<h2>X</h2>');
         		$('#dressage').html('<h2>X</h2>');
         		$('#equitation').html('<h2>X</h2>');
+                $('#escalade').html('<h2>X</h2>');
         		$('#natation').html('<h2>X</h2>');
-        		$('#perception_auditive').html('<h2>X</h2>');
+        		$('#perception').html('<h2>X</h2>');
         		$('#premier_secours').html('<h2>X</h2>');
         		$('#profession_I').html('<h2>X</h2>');
         		$('#profession_II').html('<h2>X</h2>');
-        		$('#saut').html('<h2>X</h2>');
         		$('#survie').html('<h2>X</h2>');
+                $('#vol').html('<h2>X</h2>');
     			break;
     		case 'Ensorceleur' :
     			remiseAZero();
-    			$('#art_de_la_magie').html('<h2>X</h2>');
     			$('#artisanat_I').html('<h2>X</h2>');
         		$('#artisanat_II').html('<h2>X</h2>');
         		$('#artisanat_III').html('<h2>X</h2>');
+                $('#art_de_la_magie').html('<h2>X</h2>');
         		$('#bluf').html('<h2>X</h2>');
-        		$('#concentration').html('<h2>X</h2>');
         		$('#connaissances_I').html('<h2>X</h2>');
+                $('#estimation').html('<h2>X</h2>');
+                $('#intimidation').html('<h2>X</h2>');
         		$('#profession_I').html('<h2>X</h2>');
         		$('#profession_II').html('<h2>X</h2>');
+                $('#utilisation_d_objets_magiques').html('<h2>X</h2>');
+                $('#vol').html('<h2>X</h2>');
     			break;
     		case 'Guerrier' :
     			remiseAZero();
     			$('#artisanat_I').html('<h2>X</h2>');
         		$('#artisanat_II').html('<h2>X</h2>');
         		$('#artisanat_III').html('<h2>X</h2>');
+                $('#connaissances_I').html('<h2>X</h2>');
+                $('#connaissances_II').html('<h2>X</h2>');
         		$('#dressage').html('<h2>X</h2>');
         		$('#equitation').html('<h2>X</h2>');
-        		$('#escalade').html('<h2>X</h2>');
+           		$('#escalade').html('<h2>X</h2>');
         		$('#intimidation').html('<h2>X</h2>');
-        		$('#natation').html('<h2>X</h2>');
-        		$('#saut').html('<h2>X</h2>');
+                $('#natation').html('<h2>X</h2>');
+                $('#profession_I').html('<h2>X</h2>');
+                $('#profession_II').html('<h2>X</h2>');
+                $('#survie').html('<h2>X</h2>');
     			break;
     		case 'Magicien' :
     			remiseAZero();
-    			$('#art_de_la_magie').html('<h2>X</h2>');
     			$('#artisanat_I').html('<h2>X</h2>');
         		$('#artisanat_II').html('<h2>X</h2>');
         		$('#artisanat_III').html('<h2>X</h2>');
-        		$('#concentration').html('<h2>X</h2>');
+                $('#art_de_la_magie').html('<h2>X</h2>');
         		$('#connaissances_I').html('<h2>X</h2>');
         		$('#connaissances_II').html('<h2>X</h2>');
         		$('#connaissances_III').html('<h2>X</h2>');
         		$('#connaissances_IV').html('<h2>X</h2>');
         		$('#connaissances_V').html('<h2>X</h2>');
-        		$('#décriptage').html('<h2>X</h2>');
+                $('#connaissances_VI').html('<h2>X</h2>');
+                $('#connaissances_VII').html('<h2>X</h2>');
+                $('#connaissances_VIII').html('<h2>X</h2>');
+                $('#connaissances_IX').html('<h2>X</h2>');
+                $('#connaissances_X').html('<h2>X</h2>');
+                $('#estimation').html('<h2>X</h2>');
+                $('#linguistique').html('<h2>X</h2>');
         		$('#profession_I').html('<h2>X</h2>');
         		$('#profession_II').html('<h2>X</h2>');
+                $('#vol').html('<h2>X</h2>');
     			break;
     		case 'Moine' :
     			remiseAZero();
@@ -207,32 +218,27 @@ $(function() {
     			$('#artisanat_I').html('<h2>X</h2>');
         		$('#artisanat_II').html('<h2>X</h2>');
         		$('#artisanat_III').html('<h2>X</h2>');
-        		$('#concentration').html('<h2>X</h2>');
         		$('#connaissances_I').html('<h2>X</h2>');
         		$('#connaissances_II').html('<h2>X</h2>');
-        		$('#déplacement_silencieux').html('<h2>X</h2>');
-        		$('#détection').html('<h2>X</h2>');
-        		$('#diplomatie').html('<h2>X</h2>');
         		$('#discrétion').html('<h2>X</h2>');
-        		$('#equilibre').html('<h2>X</h2>');
-        		$('#escalade').html('<h2>X</h2>');
-        		$('#évasion').html('<h2>X</h2>');
+                $('#equitation').html('<h2>X</h2>');
+                $('#escalade').html('<h2>X</h2>');
+                $('#évasion').html('<h2>X</h2>');
+                $('#intimidation').html('<h2>X</h2>');
         		$('#natation').html('<h2>X</h2>');
-        		$('#perception_auditive').html('<h2>X</h2>');
+        		$('#perception').html('<h2>X</h2>');
         		$('#profession_I').html('<h2>X</h2>');
         		$('#profession_II').html('<h2>X</h2>');
         		$('#psychologie').html('<h2>X</h2>');
         		$('#représentation_I').html('<h2>X</h2>');
         		$('#représentation_II').html('<h2>X</h2>');
-        		$('#représentation_III').html('<h2>X</h2>');
-        		$('#saut').html('<h2>X</h2>');
     			break;
     		case 'Paladin' :
     			remiseAZero();
     			$('#artisanat_I').html('<h2>X</h2>');
         		$('#artisanat_II').html('<h2>X</h2>');
         		$('#artisanat_III').html('<h2>X</h2>');
-        		$('#concentration').html('<h2>X</h2>');
+                $('#art_de_la_magie').html('<h2>X</h2>');
         		$('#connaissances_I').html('<h2>X</h2>');
         		$('#connaissances_II').html('<h2>X</h2>');
         		$('#diplomatie').html('<h2>X</h2>');
@@ -245,43 +251,41 @@ $(function() {
     			break;
     		case 'Prêtre' :
     			remiseAZero();
-    			$('#art_de_la_magie').html('<h2>X</h2>');
     			$('#artisanat_I').html('<h2>X</h2>');
         		$('#artisanat_II').html('<h2>X</h2>');
         		$('#artisanat_III').html('<h2>X</h2>');
-        		$('#concentration').html('<h2>X</h2>');
+                $('#art_de_la_magie').html('<h2>X</h2>');
         		$('#connaissances_I').html('<h2>X</h2>');
         		$('#connaissances_II').html('<h2>X</h2>');
         		$('#connaissances_III').html('<h2>X</h2>');
         		$('#connaissances_IV').html('<h2>X</h2>');
-        		$('#diplomatie').html('<h2>X</h2>');
+                $('#connaissances_V').html('<h2>X</h2>');
+                $('#estimation').html('<h2>X</h2>');
+                $('#linguistique').html('<h2>X</h2>');
         		$('#premier_secours').html('<h2>X</h2>');
         		$('#profession_I').html('<h2>X</h2>');
         		$('#profession_II').html('<h2>X</h2>');
+                $('#psychologie').html('<h2>X</h2>');
     			break;
     		case 'Rôdeur' :
     			remiseAZero();
     			$('#artisanat_I').html('<h2>X</h2>');
         		$('#artisanat_II').html('<h2>X</h2>');
         		$('#artisanat_III').html('<h2>X</h2>');
-        		$('#concentration').html('<h2>X</h2>');
+                $('#art_de_la_magie').html('<h2>X</h2>');
         		$('#connaissances_I').html('<h2>X</h2>');
         		$('#connaissances_II').html('<h2>X</h2>');
         		$('#connaissances_III').html('<h2>X</h2>');
-        		$('#déplacement_silencieux').html('<h2>X</h2>');
-        		$('#détection').html('<h2>X</h2>');
-        		$('#discrétion').html('<h2>X</h2>');
+           		$('#discrétion').html('<h2>X</h2>');
         		$('#dressage').html('<h2>X</h2>');
         		$('#equitation').html('<h2>X</h2>');
         		$('#escalade').html('<h2>X</h2>');
-        		$('#fouille').html('<h2>X</h2>');
-        		$('#maîtrise_des_cordes').html('<h2>X</h2>');
+                $('#intimidation').html('<h2>X</h2>');
         		$('#natation').html('<h2>X</h2>');
-        		$('#perception_auditive').html('<h2>X</h2>');
+        		$('#perception').html('<h2>X</h2>');
         		$('#premier_secours').html('<h2>X</h2>');
         		$('#profession_I').html('<h2>X</h2>');
         		$('#profession_II').html('<h2>X</h2>');
-        		$('#saut').html('<h2>X</h2>');
         		$('#survie').html('<h2>X</h2>');
     			break;
     		case 'Roublard' :
@@ -292,35 +296,25 @@ $(function() {
         		$('#artisanat_III').html('<h2>X</h2>');
         		$('#bluf').html('<h2>X</h2>');
         		$('#connaissances_I').html('<h2>X</h2>');
-        		$('#contrefaçon').html('<h2>X</h2>');
-        		$('#crochetage').html('<h2>X</h2>');
-        		$('#décriptage').html('<h2>X</h2>');
+                $('#connaissances_II').html('<h2>X</h2>');
         		$('#déguisement').html('<h2>X</h2>');
-        		$('#déplacement_silencieux').html('<h2>X</h2>');
-        		$('#désamorçage_sabotage').html('<h2>X</h2>');
-        		$('#détection').html('<h2>X</h2>');
         		$('#diplomatie').html('<h2>X</h2>');
         		$('#discrétion').html('<h2>X</h2>');
-        		$('#equilibre').html('<h2>X</h2>');
         		$('#escalade').html('<h2>X</h2>');
         		$('#escamotage').html('<h2>X</h2>');
         		$('#estimation').html('<h2>X</h2>');
         		$('#évasion').html('<h2>X</h2>');
-        		$('#fouille').html('<h2>X</h2>');
         		$('#intimidation').html('<h2>X</h2>');
-        		$('#maîtrise_des_cordes').html('<h2>X</h2>');
+                $('#linguistique').html('<h2>X</h2>');
         		$('#natation').html('<h2>X</h2>');
-        		$('#perception_auditive').html('<h2>X</h2>');
+        		$('#perception').html('<h2>X</h2>');
         		$('#profession_I').html('<h2>X</h2>');
         		$('#profession_II').html('<h2>X</h2>');
         		$('#psychologie').html('<h2>X</h2>');
-        		$('#renseignements').html('<h2>X</h2>');
         		$('#représentation_I').html('<h2>X</h2>');
         		$('#représentation_II').html('<h2>X</h2>');
-        		$('#représentation_III').html('<h2>X</h2>');
-        		$('#saut').html('<h2>X</h2>');
+                $('#sabotage').html('<h2>X</h2>');
         		$('#utilisation_d_objets_magiques').html('<h2>X</h2>');
-        		$('#non_défini').html('<h2>X</h2>');
     			break;
     	}
     });
@@ -342,7 +336,6 @@ function influenceClassePersonnage() {
     affichageProfession(document.form.profession_II_type);
     affichageReprésentation(document.form.représentation_I_type);
     affichageReprésentation(document.form.représentation_II_type);
-    affichageReprésentation(document.form.représentation_III_type);
 
     affichageObjet(document.form.objet_I);
     affichageObjet(document.form.objet_II);
@@ -428,16 +421,16 @@ function influenceClassePersonnage() {
     affichagePoids(document.form.poids_XXVI);
     affichagePoids(document.form.poids_XXVII);
 
-    affichageLangues(document.form.langues_I);
-    affichageLangues(document.form.langues_II);
-    affichageLangues(document.form.langues_III);
-    affichageLangues(document.form.langues_IV);
-    affichageLangues(document.form.langues_V);
-    affichageLangues(document.form.langues_VI);
-    affichageLangues(document.form.langues_VII);
-    affichageLangues(document.form.langues_VIII);
-    affichageLangues(document.form.langues_IX);
-    affichageLangues(document.form.langues_X);
+    affichagelinguistique(document.form.linguistique_I);
+    affichagelinguistique(document.form.linguistique_II);
+    affichagelinguistique(document.form.linguistique_III);
+    affichagelinguistique(document.form.linguistique_IV);
+    affichagelinguistique(document.form.linguistique_V);
+    affichagelinguistique(document.form.linguistique_VI);
+    affichagelinguistique(document.form.linguistique_VII);
+    affichagelinguistique(document.form.linguistique_VIII);
+    affichagelinguistique(document.form.linguistique_IX);
+    affichagelinguistique(document.form.linguistique_X);
 
     affichageDon(document.form.don_I);
     affichageDon(document.form.don_II);
@@ -1516,42 +1509,30 @@ function influenceNiveau() {
     limitationOption('artisanat_II',document.form.artisanat_II_maîtrise,competenceDeClasse);
     limitationOption('artisanat_III',document.form.artisanat_III_maîtrise,competenceDeClasse);
     limitationOption('bluf',document.form.bluf_maîtrise,competenceDeClasse);
-    limitationOption('concentration',document.form.concentration_maîtrise,competenceDeClasse);
     limitationOption('connaissances_I',document.form.connaissances_I_maîtrise,competenceDeClasse);
     limitationOption('connaissances_II',document.form.connaissances_II_maîtrise,competenceDeClasse);
     limitationOption('connaissances_III',document.form.connaissances_III_maîtrise,competenceDeClasse);
     limitationOption('connaissances_IV',document.form.connaissances_IV_maîtrise,competenceDeClasse);
     limitationOption('connaissances_V',document.form.connaissances_V_maîtrise,competenceDeClasse);
-    limitationOption('contrefaçon',document.form.contrefaçon_maîtrise,competenceDeClasse);
-    limitationOption('crochetage',document.form.crochetage_maîtrise,competenceDeClasse);
-    limitationOption('décriptage',document.form.décriptage_maîtrise,competenceDeClasse);
     limitationOption('déguisement',document.form.déguisement_maîtrise,competenceDeClasse);
-    limitationOption('déplacement_silencieux',document.form.déplacement_silencieux_maîtrise,competenceDeClasse);
-    limitationOption('désamorçage_sabotage',document.form.désamorçage_sabotage_maîtrise,competenceDeClasse);
-    limitationOption('détection',document.form.détection_maîtrise,competenceDeClasse);
     limitationOption('diplomatie',document.form.diplomatie_maîtrise,competenceDeClasse);
     limitationOption('discrétion',document.form.discrétion_maîtrise,competenceDeClasse);
     limitationOption('dressage',document.form.dressage_maîtrise,competenceDeClasse);
-    limitationOption('equilibre',document.form.equilibre_maîtrise,competenceDeClasse);
     limitationOption('equitation',document.form.equitation_maîtrise,competenceDeClasse);
     limitationOption('escalade',document.form.escalade_maîtrise,competenceDeClasse);
     limitationOption('escamotage',document.form.escamotage_maîtrise,competenceDeClasse);
     limitationOption('estimation',document.form.estimation_maîtrise,competenceDeClasse);
     limitationOption('évasion',document.form.évasion_maîtrise,competenceDeClasse);
     limitationOption('intimidation',document.form.intimidation_maîtrise,competenceDeClasse);
-    limitationOption('langues',document.form.langues_maîtrise,competenceDeClasse);
-    limitationOption('maîtrise_des_cordes',document.form.maîtrise_des_cordes_maîtrise,competenceDeClasse);
+    limitationOption('linguistique',document.form.linguistique_maîtrise,competenceDeClasse);
     limitationOption('natation',document.form.natation_maîtrise,competenceDeClasse);
-    limitationOption('perception_auditive',document.form.perception_auditive_maîtrise,competenceDeClasse);
+    limitationOption('perception',document.form.perception_maîtrise,competenceDeClasse);
     limitationOption('premier_secours',document.form.premier_secours_maîtrise,competenceDeClasse);
     limitationOption('profession_I',document.form.profession_I_maîtrise,competenceDeClasse);
     limitationOption('profession_II',document.form.profession_II_maîtrise,competenceDeClasse);
     limitationOption('psychologie',document.form.psychologie_maîtrise,competenceDeClasse);
-    limitationOption('renseignements',document.form.renseignements_maîtrise,competenceDeClasse);
     limitationOption('représentation_I',document.form.représentation_I_maîtrise,competenceDeClasse);
     limitationOption('représentation_II',document.form.représentation_II_maîtrise,competenceDeClasse);
-    limitationOption('représentation_III',document.form.représentation_III_maîtrise,competenceDeClasse);
-    limitationOption('saut',document.form.saut_maîtrise,competenceDeClasse);
     limitationOption('survie',document.form.survie_maîtrise,competenceDeClasse);
     limitationOption('utilisation_d_objets_magiques',document.form.utilisation_d_objets_magiques_maîtrise,competenceDeClasse);
 
@@ -1655,29 +1636,23 @@ function influenceRace() {
             $('#traits_I').html('1 don supplémentaire au niveau 1.');
             $('#traits_II').html('4 points de compétence supplémentaires au niveau 1');
             $('#traits_III').html('_et 1 point de compétence supplémentaire à chaque niveau par la suite.');
-            $('#traits_IV').html('Langues : commun et au choix.');
+            $('#traits_IV').html('linguistique : commun et au choix.');
 			break;
 		case 'Demi-elfe' :
-            $('#totalCompetenceDétection').html(1);
-            document.form.détection_divers.value = +1;
-            $('#totalCompetenceFouille').html(1);
-            document.form.fouille_divers.value = +1;
-            $('#totalCompetencePerception_auditive').html(1);
-            document.form.perception_auditive_divers.value = +1;
+            $('#totalCompetencePerception').html(1);
+            document.form.perception_divers.value = +1;
             $('#totalCompetenceDiplomatie').html(2);
             document.form.diplomatie_divers.value = +2;
-            $('#totalCompetenceRenseignements').html(2);
-            document.form.renseignements_divers.value = +2;
 
             $('#traits_I').html('Immunité contre les sorts et effets magiques de type sommeil,');
             $('#traits_II').html('_bonus de +2 contre les sorts d\'enchantements.');
             $('#traits_III').html('Les demi-elfes voient deux fois plus loin que les humains');
             $('#traits_IV').html('_dans des conditions de faible éclairages.');
-            $('#traits_V').html('+1 aux tests de détection, fouille et perception auditive.');
-            $('#traits_VI').html('+2 aux tests de diplomatie et de renseignements.');
+            $('#traits_V').html('+1 aux tests de perception auditive.');
+            $('#traits_VI').html('+2 aux tests de diplomatie.');
             $('#traits_VII').html('Ils sont considérés comme des elfes à part entière ');
             $('#traits_VIII').html('_pour tous les effets dépendant de la race.');
-            $('#traits_IX').html('Langues d\'offices : commun et elfe.');
+            $('#traits_IX').html('linguistique d\'offices : commun et elfe.');
 
 			break;
 		case 'Demi-orque' :
@@ -1688,18 +1663,14 @@ function influenceRace() {
             $('#traits_I').html('Orque et demi-orque voient à 18 mètres dans le noir le plus complet.');
             $('#traits_II').html('Ils sont considérés comme des orques à part entière ');
             $('#traits_III').html('_pour tous les effets dépendant de la race.');
-            $('#traits_IV').html('Langues d\'offices : commun et orque.');
-            $('#traits_V').html('Langues supplémentaires : abyssale, draconien, géant, gnoll, et gobelin.');
+            $('#traits_IV').html('linguistique d\'offices : commun et orque.');
+            $('#traits_V').html('linguistique supplémentaires : abyssale, draconien, géant, gnoll, et gobelin.');
             $('#traits_VI').html('Classe de prédilection : barbare.');
 
 			break;
 		case 'Elfe' :
-            $('#totalCompetenceDétection').html(2);
-            document.form.détection_divers.value = +2;
-            $('#totalCompetenceFouille').html(2);
-            document.form.fouille_divers.value = +2;
-            $('#totalCompetencePerception_auditive').html(2);
-            document.form.perception_auditive_divers.value = +2;
+            $('#totalCompetencePerception').html(2);
+            document.form.perception_divers.value = +2;
      		document.form.dex_val.value = +2;
 			document.form.con_val.value = -2;
 
@@ -1709,16 +1680,15 @@ function influenceRace() {
             $('#traits_IV').html('_dans des conditions de faible éclairages.');
             $('#traits_V').html('Tous les elfes possèdent le don maniement d\'une arme de guerre');
             $('#traits_VI').html('_pour l\'épée longue, la rapière et les arcs.');
-            $('#traits_VII').html('+2 aux tests de détection, fouille et perception auditive.');
-            $('#traits_VIII').html('Test de fouille lorsqu\'ils passent à moins de 1,5m d\'un passage secret.');
-            $('#traits_IX').html('Langues d\'offices : commun et elfe.');
-            $('#traits_X').html('Langues supplémentaires : draconien, goll, gnome, gobelin, orque et sylveste.');
+            $('#traits_VII').html('+2 aux tests de perception auditive.');
+            $('#traits_IX').html('linguistique d\'offices : commun et elfe.');
+            $('#traits_X').html('linguistique supplémentaires : draconien, goll, gnome, gobelin, orque et sylveste.');
             $('#traits_XI').html('Classe de prédilection : magicien.');
 
 			break;
 		case 'Gnome' :
-            $('#totalCompetencePerception_auditive').html(2);
-            document.form.perception_auditive_divers.value = +2;
+            $('#totalCompetencePerception').html(2);
+            document.form.perception_divers.value = +2;
 			$('#vit').html('6m');
 			document.form.for_val.value = -2;
 			document.form.con_val.value = +2;
@@ -1732,8 +1702,8 @@ function influenceRace() {
             $('#traits_VII').html('+4 en esquive contre les créatures appartenant au type géant.');
             $('#traits_VIII').html('+2 aux tests de perception auditive.');
             $('#traits_IX').html('+2 aux tests de d\'alchimie.');
-            $('#traits_X').html('Langues d\'offices : commun et gnome.');
-            $('#traits_XI').html('Langues supplémentaires : draconien, elfe, géant, gobelin, orque, nain');
+            $('#traits_X').html('linguistique d\'offices : commun et gnome.');
+            $('#traits_XI').html('linguistique supplémentaires : draconien, elfe, géant, gobelin, orque, nain');
             $('#traits_XII').html('_et orque.');
             $('#traits_XIII').html('Communication avec les animaux fouisseurs une fois par jour.');
             $('#traits_XIV').html('Les gnomes ayant au moins 10 en charisme peuvent lancer lumière dansantes,');
@@ -1742,25 +1712,21 @@ function influenceRace() {
 
 			break;
 		case 'Halfelin' :
-            $('#totalCompetenceDéplacement_silencieux').html(2);
-            document.form.déplacement_silencieux_divers.value = +2;
             $('#totalCompetenceEscalade').html(2);
             document.form.escalade_divers.value = +2;
-            $('#totalCompetenceSaut').html(2);
-            document.form.saut_divers.value = +2;
-            $('#totalCompetencePerception_auditive').html(2);
-            document.form.perception_auditive_divers.value = +2;
+            $('#totalCompetencePerception').html(2);
+            document.form.perception_divers.value = +2;
 			$('#vit').html('6m');
 			document.form.for_val.value = -2;
 			document.form.dex_val.value = +2;
 
-            $('#traits_I').html('+2 aux tests de déplacement silencieux, escalade et sauts.');
+            $('#traits_I').html('+2 aux tests de déplacement silencieux et escalade.');
             $('#traits_II').html('+1 à tous les jets de sauvegarde.');
             $('#traits_III').html('+2 aux jets de sauvegarde contre la terreur.');
             $('#traits_IV').html('+1 aux jets d\'attaque avec les armes de jets et fronde.');
             $('#traits_V').html('+2 aux tests de perception auditive.');
-            $('#traits_VI').html('Langues d\'offices : commun et halfelin.');
-            $('#traits_VII').html('Langues supplémentaires : elfe, gnome, gobelin, nain  et orque');
+            $('#traits_VI').html('linguistique d\'offices : commun et halfelin.');
+            $('#traits_VII').html('linguistique supplémentaires : elfe, gnome, gobelin, nain  et orque');
             $('#traits_VIII').html('Classe de prédilection : roublard.');
 
 			break;
@@ -1770,8 +1736,6 @@ function influenceRace() {
 			document.form.cha_val.value = -2;
 
             $('#traits_I').html('Les nains voient à 18 mètres dans le noir le plus complet.');
-            $('#traits_II').html('+2 aux tests de fouille visant à remarquer si la roche a été travaillée.');
-            $('#traits_III').html('Test de fouille lorsqu\'ils passent à moins de 3m d\'une roche travaillée.');
             $('#traits_IV').html('Pour les nains la hache de guerre naine et l\'urgrosh sont des armes de guerre.');
             $('#traits_V').html('+4 pour résister aux bousculade et au croc-en-jambe.');
             $('#traits_VI').html('+2 au jet de sauvgarde contre le poison.');
@@ -1780,8 +1744,8 @@ function influenceRace() {
             $('#traits_IX').html('+4 en esquive contre les créatures appartenant au type géant.');
             $('#traits_X').html('+2 en estimation sur les objets en métal ou en pierre.');
             $('#traits_XI').html('+2 en artisanat lié au métal et à la pierre.');
-            $('#traits_XII').html('Langues d\'offices : commun et nain.');
-            $('#traits_XIII').html('Langues supplémentaires : commun des profondeur, géant, gnome, gobelin,');
+            $('#traits_XII').html('linguistique d\'offices : commun et nain.');
+            $('#traits_XIII').html('linguistique supplémentaires : commun des profondeur, géant, gnome, gobelin,');
             $('#traits_XIV').html('_orque et terreux.');
             $('#traits_XV').html('Classe de prédilection : guerrier.');
 
@@ -3181,42 +3145,30 @@ function calculeSommeCompetences() {
     total = total + testCalculeSommeCompetencesI('artisanat_II',document.form.artisanat_II_maîtrise);
     total = total + testCalculeSommeCompetencesI('artisanat_III',document.form.artisanat_III_maîtrise);
     total = total + testCalculeSommeCompetencesI('bluf',document.form.bluf_maîtrise);
-    total = total + testCalculeSommeCompetencesI('concentration',document.form.concentration_maîtrise);
     total = total + testCalculeSommeCompetencesI('connaissances_I',document.form.connaissances_I_maîtrise);
     total = total + testCalculeSommeCompetencesI('connaissances_II',document.form.connaissances_II_maîtrise);
     total = total + testCalculeSommeCompetencesI('connaissances_III',document.form.connaissances_III_maîtrise);
     total = total + testCalculeSommeCompetencesI('connaissances_IV',document.form.connaissances_IV_maîtrise);
     total = total + testCalculeSommeCompetencesI('connaissances_V',document.form.connaissances_V_maîtrise);
-    total = total + testCalculeSommeCompetencesI('contrefaçon',document.form.contrefaçon_maîtrise);
-    total = total + testCalculeSommeCompetencesI('crochetage',document.form.crochetage_maîtrise);
-    total = total + testCalculeSommeCompetencesI('décriptage',document.form.décriptage_maîtrise);
     total = total + testCalculeSommeCompetencesI('déguisement',document.form.déguisement_maîtrise);
-    total = total + testCalculeSommeCompetencesI('déplacement_silencieux',document.form.déplacement_silencieux_maîtrise);
-    total = total + testCalculeSommeCompetencesI('désamorçage_sabotage',document.form.désamorçage_sabotage_maîtrise);
-    total = total + testCalculeSommeCompetencesI('détection',document.form.détection_maîtrise);
     total = total + testCalculeSommeCompetencesI('diplomatie',document.form.diplomatie_maîtrise);
     total = total + testCalculeSommeCompetencesI('discrétion',document.form.discrétion_maîtrise);
     total = total + testCalculeSommeCompetencesI('dressage',document.form.dressage_maîtrise);
-    total = total + testCalculeSommeCompetencesI('equilibre',document.form.equilibre_maîtrise);
     total = total + testCalculeSommeCompetencesI('equitation',document.form.equitation_maîtrise);
     total = total + testCalculeSommeCompetencesI('escalade',document.form.escalade_maîtrise);
     total = total + testCalculeSommeCompetencesI('escamotage',document.form.escamotage_maîtrise);
     total = total + testCalculeSommeCompetencesI('estimation',document.form.estimation_maîtrise);
     total = total + testCalculeSommeCompetencesI('évasion',document.form.évasion_maîtrise);
     total = total + testCalculeSommeCompetencesI('intimidation',document.form.intimidation_maîtrise);
-    total = total + testCalculeSommeCompetencesI('langues',document.form.langues_maîtrise);
-    total = total + testCalculeSommeCompetencesI('maîtrise_des_cordes',document.form.maîtrise_des_cordes_maîtrise);
+    total = total + testCalculeSommeCompetencesI('linguistique',document.form.linguistique_maîtrise);
     total = total + testCalculeSommeCompetencesI('natation',document.form.natation_maîtrise);
-    total = total + testCalculeSommeCompetencesI('perception_auditive',document.form.perception_auditive_maîtrise);
+    total = total + testCalculeSommeCompetencesI('perception',document.form.perception_maîtrise);
     total = total + testCalculeSommeCompetencesI('premier_secours',document.form.premier_secours_maîtrise);
     total = total + testCalculeSommeCompetencesI('profession_I',document.form.profession_I_maîtrise);
     total = total + testCalculeSommeCompetencesI('profession_II',document.form.profession_II_maîtrise);
     total = total + testCalculeSommeCompetencesI('psychologie',document.form.psychologie_maîtrise);
-    total = total + testCalculeSommeCompetencesI('renseignements',document.form.renseignements_maîtrise);
     total = total + testCalculeSommeCompetencesI('représentation_I',document.form.représentation_I_maîtrise);
     total = total + testCalculeSommeCompetencesI('représentation_II',document.form.représentation_II_maîtrise);
-    total = total + testCalculeSommeCompetencesI('représentation_III',document.form.représentation_III_maîtrise);
-    total = total + testCalculeSommeCompetencesI('saut',document.form.saut_maîtrise);
     total = total + testCalculeSommeCompetencesI('survie',document.form.survie_maîtrise);
     total = total + testCalculeSommeCompetencesI('utilisation_d_objets_magiques',document.form.utilisation_d_objets_magiques_maîtrise);
 
@@ -3501,14 +3453,14 @@ function addPoids(poids) {
     };
 }
 
-function affichageLangues(langues) {
-    var languesTableau = new Array();
+function affichagelinguistique(linguistique) {
+    var linguistiqueTableau = new Array();
 
-    languesTableau = [') ','Abyssale','Aérienne','Aquatique','Céleste','Commune','Commune des profondeurs','Draconien','Druides','Elfique',
+    linguistiqueTableau = [') ','Abyssale','Aérienne','Aquatique','Céleste','Commune','Commune des profondeurs','Draconien','Druides','Elfique',
                       'Géants','Gnoll','Gnome','Gobeline','Halfeline','Igneuse','Infernale','Nains','Orque','Sylvestre','Terreuse'];
 
-    for (var nombElement = 0; nombElement < languesTableau.length; nombElement++) {
-        langues.options[nombElement] = new Option(languesTableau[nombElement],languesTableau[nombElement]);
+    for (var nombElement = 0; nombElement < linguistiqueTableau.length; nombElement++) {
+        linguistique.options[nombElement] = new Option(linguistiqueTableau[nombElement],linguistiqueTableau[nombElement]);
     };
 }
 
@@ -4581,14 +4533,9 @@ function reinitialisation() {
     document.form.sag_val.value = 0;
     document.form.cha_val.value = 0;
 
-    $('#totalCompetenceDétection').html('');
-    $('#totalCompetenceFouille').html('');
-    $('#totalCompetencePerception_auditive').html('');
+    $('#totalCompetencePerception').html('');
     $('#totalCompetenceDiplomatie').html('');
-    $('#totalCompetenceRenseignements').html('');
-    $('#totalCompetenceDéplacement_silencieux').html('');
     $('#totalCompetenceEscalade').html('');
-    $('#totalCompetenceSaut').html('');
 
     $('#traits_I').html('_');
     $('#traits_II').html('_');
