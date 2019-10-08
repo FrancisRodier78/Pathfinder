@@ -485,11 +485,11 @@
                                 <td id="sau_mod_mag_ref">
                                     <select id="sau_mod_mag_ref_bon" name="sau_mod_mag_ref_bon" onChange="influenceBonusRefMag()">
                                         <option selected>0</option>
-                                        <option>+1</option>
-                                        <option>+2</option>
-                                        <option>+3</option>
-                                        <option>+4</option>
-                                        <option>+5</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
                                     </select>
                                     <span class="tooltip">Le bonus est invalide</span>
                                 </td>
@@ -497,11 +497,11 @@
                                 <td id="sau_mod_div_ref">
                                     <select id="sau_mod_div_ref_bon" name="sau_mod_div_ref_bon" onChange="influenceBonusRefDiv()">
                                         <option selected>0</option>
-                                        <option>+1</option>
-                                        <option>+2</option>
-                                        <option>+3</option>
-                                        <option>+4</option>
-                                        <option>+5</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
                                     </select>
                                     <span class="tooltip">Le bonus est invalide</span>
                                 </td>
@@ -606,7 +606,7 @@
                     </div>
 
                     <div class="col-lg-3">
-                        <p id="bba">0</p>
+                        <p id="bba"></p>
                     </div>
                     
                     <div class="col-lg-3">
@@ -3587,6 +3587,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/color.js"></script>
+    <script type="text/javascript" src="js/classe.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

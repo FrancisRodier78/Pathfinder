@@ -1,339 +1,484 @@
 $(function() {
-    $('#classe').change(function() {
-        switch($('#classe').val()) {
-            case ' ' :
-                $('#titre_feuille').text('PATHFINDER');
+    function toucherCommeGuerrier() {
+        switch($('#niveau').val()) {
+            case '00' :
+                $('#bba').html('0');
                 break;
-            case 'Barbare' :
-                $('#titre_feuille').text('BARBARE');
+            case '01' :
+                $('#bba').html('1');
                 break;
-            case 'Barde' :
-                $('#titre_feuille').text('BARDE');
+            case '02' :
+                $('#bba').html('2');
                 break;
-            case 'Druide' :
-                $('#titre_feuille').text('DRUIDE');
+            case '03' :
+                $('#bba').html('3');
                 break;
-            case 'Ensorceleur' :
-                $('#titre_feuille').text('ENSORCELEUR');
+            case '04' :
+                $('#bba').html('4');
                 break;
-            case 'Guerrier' :
-                $('#titre_feuille').text('GUERRIER');
+            case '05' :
+                $('#bba').html('5');
                 break;
-            case 'Magicien' :
-                $('#titre_feuille').text('MAGICIEN');
+            case '06' :
+                $('#bba').html('6');
                 break;
-            case 'Moine' :
-                $('#titre_feuille').text('MOINE');
+            case '07' :
+                $('#bba').html('7');
                 break;
-            case 'Paladin' :
-                $('#titre_feuille').text('PALADIN');
+            case '08' :
+                $('#bba').html('8');
                 break;
-            case 'Prêtre' :
-                $('#titre_feuille').text('PRETRE');
+            case '09' :
+                $('#bba').html('9');
                 break;
-            case 'Rôdeur' :
-                $('#titre_feuille').text('RODEUR');
+            case '10' :
+                $('#bba').html('10');
                 break;
-            case 'Roublard' :
-                $('#titre_feuille').text('ROUBLARD');
+            case '11' :
+                $('#bba').html('11');
                 break;
-            default:
-                $('#titre_feuille').text('PATHFINDER');
-            }
-    });
+            case '12' :
+                $('#bba').html('12');
+                break;
+            case '13' :
+                $('#bba').html('13');
+                break;
+            case '14' :
+                $('#bba').html('14');
+                break;
+            case '15' :
+                $('#bba').html('15');
+                break;
+            case '16' :
+                $('#bba').html('16');
+                break;
+            case '17' :
+                $('#bba').html('17');
+                break;
+            case '18' :
+                $('#bba').html('18');
+                break;
+            case '19' :
+                $('#bba').html('19');
+                break;
+            case '20' :
+                $('#bba').html('20');
+                break;
+        }
+    };
 
-    function remiseAZero() {
-    	$('#acrobatie').html('<h2>O</h2>');
-    	$('#artisanat_I').html('<h2>O</h2>');
-        $('#artisanat_II').html('<h2>O</h2>');
-        $('#artisanat_III').html('<h2>O</h2>');
-        $('#art_de_la_magie').html('<h2>O</h2>');
-        $('#bluf').html('<h2>O</h2>');
-        $('#connaissances_I').html('<h2>O</h2>');
-        $('#connaissances_II').html('<h2>O</h2>');
-        $('#connaissances_III').html('<h2>O</h2>');
-        $('#connaissances_IV').html('<h2>O</h2>');
-        $('#connaissances_V').html('<h2>O</h2>');
-        $('#connaissances_VI').html('<h2>O</h2>');
-        $('#connaissances_VII').html('<h2>O</h2>');
-        $('#connaissances_VIII').html('<h2>O</h2>');
-        $('#connaissances_IX').html('<h2>O</h2>');
-        $('#connaissances_X').html('<h2>O</h2>');
-        $('#déguisement').html('<h2>O</h2>');
-        $('#diplomatie').html('<h2>O</h2>');
-        $('#discrétion').html('<h2>O</h2>');
-        $('#dressage').html('<h2>O</h2>');
-        $('#equitation').html('<h2>O</h2>');
-        $('#escalade').html('<h2>O</h2>');
-        $('#escamotage').html('<h2>O</h2>');
-        $('#estimation').html('<h2>O</h2>');
-        $('#évasion').html('<h2>O</h2>');
-        $('#intimidation').html('<h2>O</h2>');
-        $('#linguistique').html('<h2>O</h2>');
-        $('#natation').html('<h2>O</h2>');
-        $('#perception').html('<h2>O</h2>');
-        $('#premier_secours').html('<h2>O</h2>');
-        $('#profession_I').html('<h2>O</h2>');
-        $('#profession_II').html('<h2>O</h2>');
-        $('#psychologie').html('<h2>O</h2>');
-        $('#représentation_I').html('<h2>O</h2>');
-        $('#représentation_II').html('<h2>O</h2>');
-        $('#sabotage').html('<h2>O</h2>');
-        $('#survie').html('<h2>O</h2>');
-        $('#utilisation_d_objets_magiques').html('<h2>O</h2>');
-        $('#vol').html('<h2>O</h2>');
+    function toucherCommePretre() {
+        switch(document.form.niveau.value) {
+            case '00' :
+                $('#bba').html(' ');
+                break;
+            case '01' :
+                $('#bba').html('0');
+                break;
+            case '02' :
+                $('#bba').html('1');
+                break;
+            case '03' :
+                $('#bba').html('2');
+                break;
+            case '04' :
+                $('#bba').html('3');
+                break;
+            case '05' :
+                $('#bba').html('3');
+                break;
+            case '06' :
+                $('#bba').html('4');
+                break;
+            case '07' :
+                $('#bba').html('5');
+                break;
+            case '08' :
+                $('#bba').html('6');
+                break;
+            case '09' :
+                $('#bba').html('6');
+                break;
+            case '10' :
+                $('#bba').html('7');
+                break;
+            case '11' :
+                $('#bba').html('8');
+                break;
+            case '12' :
+                $('#bba').html('9');
+                break;
+            case '13' :
+                $('#bba').html('9');
+                break;
+            case '14' :
+                $('#bba').html('10');
+                break;
+            case '15' :
+                $('#bba').html('11');
+                break;
+            case '16' :
+                $('#bba').html('12');
+                break;
+            case '17' :
+                $('#bba').html('12');
+                break;
+            case '18' :
+                $('#bba').html('13');
+                break;
+            case '19' :
+                $('#bba').html('14');
+                break;
+            case '20' :
+                $('#bba').html('15');
+                break;
+        }
+    };
+
+    function toucherCommeMagicien() {
+        switch(document.form.niveau.value) {
+            case '00' :
+                $('#bba').html(' ');
+                break;
+            case '01' :
+                $('#bba').html('0');
+                break;
+            case '02' :
+                $('#bba').html('1');
+                break;
+            case '03' :
+                $('#bba').html('1');
+                break;
+            case '04' :
+                $('#bba').html('2');
+                break;
+            case '05' :
+                $('#bba').html('2');
+                break;
+            case '06' :
+                $('#bba').html('3');
+                break;
+            case '07' :
+                $('#bba').html('3');
+                break;
+            case '08' :
+                $('#bba').html('4');
+                break;
+            case '09' :
+                $('#bba').html('4');
+                break;
+            case '10' :
+                $('#bba').html('5');
+                break;
+            case '11' :
+                $('#bba').html('5');
+                break;
+            case '12' :
+                $('#bba').html('6');
+                break;
+            case '13' :
+                $('#bba').html('6');
+                break;
+            case '14' :
+                $('#bba').html('7');
+                break;
+            case '15' :
+                $('#bba').html('7');
+                break;
+            case '16' :
+                $('#bba').html('8');
+                break;
+            case '17' :
+                $('#bba').html('8');
+                break;
+            case '18' :
+                $('#bba').html('9');
+                break;
+            case '19' :
+                $('#bba').html('9');
+                break;
+            case '20' :
+                $('#bba').html('10');
+                break;
+        }
+    };
+
+    function sauverCommeGuerrier() {
+        switch($('#niveau').val()) {
+            case '00' :
+                $('#sau_bon_bas_ref').html(' ');
+                $('#sau_bon_bas_vig').html(' ');
+                $('#sau_bon_bas_vol').html(' ');
+                break;
+            case '01' :
+                $('#sau_bon_bas_ref').html('0');
+                $('#sau_bon_bas_vig').html('2');
+                $('#sau_bon_bas_vol').html('0');
+                break;
+            case '02' :
+                $('#sau_bon_bas_ref').html('0');
+                $('#sau_bon_bas_vig').html('3');
+                $('#sau_bon_bas_vol').html('0');
+                break;
+            case '03' :
+                $('#sau_bon_bas_ref').html('1');
+                $('#sau_bon_bas_vig').html('3');
+                $('#sau_bon_bas_vol').html('1');
+                break;
+            case '04' :
+                $('#sau_bon_bas_ref').html('1');
+                $('#sau_bon_bas_vig').html('4');
+                $('#sau_bon_bas_vol').html('1');
+                break;
+            case '05' :
+                $('#sau_bon_bas_ref').html('1');
+                $('#sau_bon_bas_vig').html('4');
+                $('#sau_bon_bas_vol').html('1');
+                break;
+            case '06' :
+                $('#sau_bon_bas_ref').html('2');
+                $('#sau_bon_bas_vig').html('5');
+                $('#sau_bon_bas_vol').html('2');
+                break;
+            case '07' :
+                $('#sau_bon_bas_ref').html('2');
+                $('#sau_bon_bas_vig').html('5');
+                $('#sau_bon_bas_vol').html('2');
+                break;
+            case '08' :
+                $('#sau_bon_bas_ref').html('2');
+                $('#sau_bon_bas_vig').html('6');
+                $('#sau_bon_bas_vol').html('2');
+                break;
+            case '09' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('6');
+                $('#sau_bon_bas_vol').html('3');
+                break;
+            case '10' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('7');
+                $('#sau_bon_bas_vol').html('3');
+                break;
+            case '11' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('7');
+                $('#sau_bon_bas_vol').html('3');
+                break;
+            case '12' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('8');
+                $('#sau_bon_bas_vol').html('4');
+                break;
+            case '13' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('8');
+                $('#sau_bon_bas_vol').html('4');
+                break;
+            case '14' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('9');
+                $('#sau_bon_bas_vol').html('4');
+                break;
+            case '15' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('9');
+                $('#sau_bon_bas_vol').html('5');
+                break;
+            case '16' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('10');
+                $('#sau_bon_bas_vol').html('5');
+                break;
+            case '17' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('10');
+                $('#sau_bon_bas_vol').html('5');
+                break;
+            case '18' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('11');
+                $('#sau_bon_bas_vol').html('6');
+                break;
+            case '19' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('11');
+                $('#sau_bon_bas_vol').html('6');
+                break;
+            case '20' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('12');
+                $('#sau_bon_bas_vol').html('6');
+                break;
+        }
+    };
+
+    function calculeReflexes()  {
+            $('#lab_ref').css('background','#ffffff');
+
+        /* si sau_bon_bas_ref.value n'est pas renseigné, 
+        il n'est pas un number
+        d'où son forçage à 0*/
+        if (isNaN(parseInt($('#sau_bon_bas_ref').val()))) {
+            $('#sau_bon_bas_ref').val(0);
+        };
+
+        if (isNaN(parseInt($('#sau_mod_car_ref').val()))) {
+            $('#sau_mod_car_ref').val(0);
+        };
+
+        if (isNaN(parseInt($('#sau_mod_mag_ref_bon').val()))) {
+            $('#sau_mod_mag_ref_bon').val(0);
+        };
+
+        if (isNaN(parseInt($('#sau_mod_div_ref_bon').val()))) {
+            $('#sau_mod_div_ref_bon').val(0);
+        };
+
+        if (isNaN(parseInt($('#mod_tem_ref').val()))) {
+            $('#mod_tem_ref').val(0);
+        };
+
+        if (isNaN(parseInt($('#mod_part_ref').val()))) {
+            $('#mod_part_ref').val(0);
+        };
+
+        $('#sau_total_ref').val(parseInt($('#sau_bon_bas_ref').val())
+                              + parseInt($('#sau_mod_car_ref').val())
+                              + parseInt($('#sau_mod_mag_ref_bon').val()) 
+                              + parseInt($('#sau_mod_div_ref_bon').val())                                                           
+                              + parseInt($('#mod_tem_ref').val())
+                              + parseInt($('#mod_part_ref').val()));
     }
 
-    $('#classe').change(function() {
+    $('#niveau').change(function() {
         switch($('#classe').val()) {
-    		case ' ' :
-    			remiseAZero();
-    			break;
-    		case 'Barbare' :
-    			remiseAZero();
-                $('#acrobatie').html('<h2>X</h2>');
-    			$('#artisanat_I').html('<h2>X</h2>');
-        		$('#artisanat_II').html('<h2>X</h2>');
-                $('#artisanat_III').html('<h2>X</h2>');
-                $('#connaissances_I').html('<h2>X</h2>');
-        		$('#dressage').html('<h2>X</h2>');
-        		$('#equitation').html('<h2>X</h2>');
-        		$('#escalade').html('<h2>X</h2>');
-        		$('#intimidation').html('<h2>X</h2>');
-        		$('#natation').html('<h2>X</h2>');
-        		$('#perception').html('<h2>X</h2>');
-        		$('#survie').html('<h2>X</h2>');
-    			break;
-    		case 'Barde' :
-    			remiseAZero();
-    			$('#acrobatie').html('<h2>X</h2>');
-    			$('#artisanat_I').html('<h2>X</h2>');
-        		$('#artisanat_II').html('<h2>X</h2>');
-                $('#artisanat_III').html('<h2>X</h2>');
-                $('#art_de_la_magie').html('<h2>X</h2>');
-        		$('#bluf').html('<h2>X</h2>');
+            case ' ' :
+                $('#sau_bon_bas_ref').html('0');
+                $('#sau_bon_bas_vig').html('0');
+                $('#sau_bon_bas_vol').html('0');
+                $('#bba').html('0');
+                $('#lut_bon_bas_att').html('0');
+                break;
+            case 'Barbare' :
+                toucherCommeGuerrier();
+                sauverCommeGuerrier();
+                reductionDegats();
+                calculeReflexes();
+                break;
+                calculeVigeur();
+                calculeVolonte();
+                competenceClasseBarbare();
+                break;
+            case 'Barde' :
+                toucherCommePretre();
+                sauverCommeRoublard();
 
-        		$('#Connaissances_exploration').html('<h2>X</h2>');
-        		$('#Connaissances_Folklore_Locale').html('<h2>X</h2>');
-        		$('#Connaissances_Geographie').html('<h2>X</h2>');
-        		$('#Connaissances_Histoire').html('<h2>X</h2>');
-        		$('#Connaissances_Ingénieurie').html('<h2>X</h2>');
-                $('#Connaissances_Mystères').html('<h2>X</h2>');
-                $('#Connaissances_Nature').html('<h2>X</h2>');
-                $('#Connaissances_Noblesse').html('<h2>X</h2>');
-                $('#Connaissances_Plan').html('<h2>X</h2>');
-                $('#Connaissances_Religion').html('<h2>X</h2>');
+                calculeReflexes();
+                calculeVigeur();
+                calculeVolonte();
+                competenceClasseBarde()
+                break;
+            case 'Druide' :
+                toucherCommePretre();
+                sauverCommePretre();
 
-        		$('#déguisement').html('<h2>X</h2>');
-        		$('#diplomatie').html('<h2>X</h2>');
-        		$('#discrétion').html('<h2>X</h2>');
-        		$('#escalade').html('<h2>X</h2>');
-        		$('#escamotage').html('<h2>X</h2>');
-        		$('#estimation').html('<h2>X</h2>');
-        		$('#évasion').html('<h2>X</h2>');
-        		$('#linguistique').html('<h2>X</h2>');
-        		$('#perception').html('<h2>X</h2>');
-        		$('#profession_I').html('<h2>X</h2>');
-        		$('#profession_II').html('<h2>X</h2>');
-        		$('#psychologie').html('<h2>X</h2>');
-        		$('#représentation_I').html('<h2>X</h2>');
-        		$('#représentation_II').html('<h2>X</h2>');
-        		$('#utilisation_d_objets_magiques').html('<h2>X</h2>');
-    			break;
-    		case 'Druide' :
-    			remiseAZero();
-    			$('#artisanat_I').html('<h2>X</h2>');
-        		$('#artisanat_II').html('<h2>X</h2>');
-        		$('#artisanat_III').html('<h2>X</h2>');
-                $('#art_de_la_magie').html('<h2>X</h2>');
-        		$('#connaissances_I').html('<h2>X</h2>');
-                $('#connaissances_II').html('<h2>X</h2>');
-        		$('#dressage').html('<h2>X</h2>');
-        		$('#equitation').html('<h2>X</h2>');
-                $('#escalade').html('<h2>X</h2>');
-        		$('#natation').html('<h2>X</h2>');
-        		$('#perception').html('<h2>X</h2>');
-        		$('#premier_secours').html('<h2>X</h2>');
-        		$('#profession_I').html('<h2>X</h2>');
-        		$('#profession_II').html('<h2>X</h2>');
-        		$('#survie').html('<h2>X</h2>');
-                $('#vol').html('<h2>X</h2>');
-    			break;
-    		case 'Ensorceleur' :
-    			remiseAZero();
-    			$('#artisanat_I').html('<h2>X</h2>');
-        		$('#artisanat_II').html('<h2>X</h2>');
-        		$('#artisanat_III').html('<h2>X</h2>');
-                $('#art_de_la_magie').html('<h2>X</h2>');
-        		$('#bluf').html('<h2>X</h2>');
-        		$('#connaissances_I').html('<h2>X</h2>');
-                $('#estimation').html('<h2>X</h2>');
-                $('#intimidation').html('<h2>X</h2>');
-        		$('#profession_I').html('<h2>X</h2>');
-        		$('#profession_II').html('<h2>X</h2>');
-                $('#utilisation_d_objets_magiques').html('<h2>X</h2>');
-                $('#vol').html('<h2>X</h2>');
-    			break;
-    		case 'Guerrier' :
-    			remiseAZero();
-    			$('#artisanat_I').html('<h2>X</h2>');
-        		$('#artisanat_II').html('<h2>X</h2>');
-        		$('#artisanat_III').html('<h2>X</h2>');
-                $('#connaissances_I').html('<h2>X</h2>');
-                $('#connaissances_II').html('<h2>X</h2>');
-        		$('#dressage').html('<h2>X</h2>');
-        		$('#equitation').html('<h2>X</h2>');
-           		$('#escalade').html('<h2>X</h2>');
-        		$('#intimidation').html('<h2>X</h2>');
-                $('#natation').html('<h2>X</h2>');
-                $('#profession_I').html('<h2>X</h2>');
-                $('#profession_II').html('<h2>X</h2>');
-                $('#survie').html('<h2>X</h2>');
-    			break;
-    		case 'Magicien' :
-    			remiseAZero();
-    			$('#artisanat_I').html('<h2>X</h2>');
-        		$('#artisanat_II').html('<h2>X</h2>');
-        		$('#artisanat_III').html('<h2>X</h2>');
-                $('#art_de_la_magie').html('<h2>X</h2>');
-        		$('#connaissances_I').html('<h2>X</h2>');
-        		$('#connaissances_II').html('<h2>X</h2>');
-        		$('#connaissances_III').html('<h2>X</h2>');
-        		$('#connaissances_IV').html('<h2>X</h2>');
-        		$('#connaissances_V').html('<h2>X</h2>');
-                $('#connaissances_VI').html('<h2>X</h2>');
-                $('#connaissances_VII').html('<h2>X</h2>');
-                $('#connaissances_VIII').html('<h2>X</h2>');
-                $('#connaissances_IX').html('<h2>X</h2>');
-                $('#connaissances_X').html('<h2>X</h2>');
-                $('#estimation').html('<h2>X</h2>');
-                $('#linguistique').html('<h2>X</h2>');
-        		$('#profession_I').html('<h2>X</h2>');
-        		$('#profession_II').html('<h2>X</h2>');
-                $('#vol').html('<h2>X</h2>');
-    			break;
-    		case 'Moine' :
-    			remiseAZero();
-    			$('#acrobatie').html('<h2>X</h2>');
-    			$('#artisanat_I').html('<h2>X</h2>');
-        		$('#artisanat_II').html('<h2>X</h2>');
-        		$('#artisanat_III').html('<h2>X</h2>');
-        		$('#connaissances_I').html('<h2>X</h2>');
-        		$('#connaissances_II').html('<h2>X</h2>');
-        		$('#discrétion').html('<h2>X</h2>');
-                $('#equitation').html('<h2>X</h2>');
-                $('#escalade').html('<h2>X</h2>');
-                $('#évasion').html('<h2>X</h2>');
-                $('#intimidation').html('<h2>X</h2>');
-        		$('#natation').html('<h2>X</h2>');
-        		$('#perception').html('<h2>X</h2>');
-        		$('#profession_I').html('<h2>X</h2>');
-        		$('#profession_II').html('<h2>X</h2>');
-        		$('#psychologie').html('<h2>X</h2>');
-        		$('#représentation_I').html('<h2>X</h2>');
-        		$('#représentation_II').html('<h2>X</h2>');
-    			break;
-    		case 'Paladin' :
-    			remiseAZero();
-    			$('#artisanat_I').html('<h2>X</h2>');
-        		$('#artisanat_II').html('<h2>X</h2>');
-        		$('#artisanat_III').html('<h2>X</h2>');
-                $('#art_de_la_magie').html('<h2>X</h2>');
-        		$('#connaissances_I').html('<h2>X</h2>');
-        		$('#connaissances_II').html('<h2>X</h2>');
-        		$('#diplomatie').html('<h2>X</h2>');
-        		$('#dressage').html('<h2>X</h2>');
-        		$('#equitation').html('<h2>X</h2>');
-        		$('#premier_secours').html('<h2>X</h2>');
-        		$('#profession_I').html('<h2>X</h2>');
-        		$('#profession_II').html('<h2>X</h2>');
-        		$('#psychologie').html('<h2>X</h2>');
-    			break;
-    		case 'Prêtre' :
-    			remiseAZero();
-    			$('#artisanat_I').html('<h2>X</h2>');
-        		$('#artisanat_II').html('<h2>X</h2>');
-        		$('#artisanat_III').html('<h2>X</h2>');
-                $('#art_de_la_magie').html('<h2>X</h2>');
-        		$('#connaissances_I').html('<h2>X</h2>');
-        		$('#connaissances_II').html('<h2>X</h2>');
-        		$('#connaissances_III').html('<h2>X</h2>');
-        		$('#connaissances_IV').html('<h2>X</h2>');
-                $('#connaissances_V').html('<h2>X</h2>');
-                $('#estimation').html('<h2>X</h2>');
-                $('#linguistique').html('<h2>X</h2>');
-        		$('#premier_secours').html('<h2>X</h2>');
-        		$('#profession_I').html('<h2>X</h2>');
-        		$('#profession_II').html('<h2>X</h2>');
-                $('#psychologie').html('<h2>X</h2>');
-    			break;
-    		case 'Rôdeur' :
-    			remiseAZero();
-    			$('#artisanat_I').html('<h2>X</h2>');
-        		$('#artisanat_II').html('<h2>X</h2>');
-        		$('#artisanat_III').html('<h2>X</h2>');
-                $('#art_de_la_magie').html('<h2>X</h2>');
-        		$('#connaissances_I').html('<h2>X</h2>');
-        		$('#connaissances_II').html('<h2>X</h2>');
-        		$('#connaissances_III').html('<h2>X</h2>');
-           		$('#discrétion').html('<h2>X</h2>');
-        		$('#dressage').html('<h2>X</h2>');
-        		$('#equitation').html('<h2>X</h2>');
-        		$('#escalade').html('<h2>X</h2>');
-                $('#intimidation').html('<h2>X</h2>');
-        		$('#natation').html('<h2>X</h2>');
-        		$('#perception').html('<h2>X</h2>');
-        		$('#premier_secours').html('<h2>X</h2>');
-        		$('#profession_I').html('<h2>X</h2>');
-        		$('#profession_II').html('<h2>X</h2>');
-        		$('#survie').html('<h2>X</h2>');
-    			break;
-    		case 'Roublard' :
-    			remiseAZero();
-    			$('#acrobatie').html('<h2>X</h2>');
-    			$('#artisanat_I').html('<h2>X</h2>');
-        		$('#artisanat_II').html('<h2>X</h2>');
-        		$('#artisanat_III').html('<h2>X</h2>');
-        		$('#bluf').html('<h2>X</h2>');
-        		$('#connaissances_I').html('<h2>X</h2>');
-                $('#connaissances_II').html('<h2>X</h2>');
-        		$('#déguisement').html('<h2>X</h2>');
-        		$('#diplomatie').html('<h2>X</h2>');
-        		$('#discrétion').html('<h2>X</h2>');
-        		$('#escalade').html('<h2>X</h2>');
-        		$('#escamotage').html('<h2>X</h2>');
-        		$('#estimation').html('<h2>X</h2>');
-        		$('#évasion').html('<h2>X</h2>');
-        		$('#intimidation').html('<h2>X</h2>');
-                $('#linguistique').html('<h2>X</h2>');
-        		$('#natation').html('<h2>X</h2>');
-        		$('#perception').html('<h2>X</h2>');
-        		$('#profession_I').html('<h2>X</h2>');
-        		$('#profession_II').html('<h2>X</h2>');
-        		$('#psychologie').html('<h2>X</h2>');
-        		$('#représentation_I').html('<h2>X</h2>');
-        		$('#représentation_II').html('<h2>X</h2>');
-                $('#sabotage').html('<h2>X</h2>');
-        		$('#utilisation_d_objets_magiques').html('<h2>X</h2>');
-    			break;
-    	}
+                calculeReflexes();
+                calculeVigeur();
+                calculeVolonte();
+                competenceClasseDruide()
+                break;
+            case 'Ensorceleur' :
+                toucherCommeMagicien();
+                sauverCommeMagicien();
+
+                calculeReflexes();
+                calculeVigeur();
+                calculeVolonte();
+                competenceClasseEnsorceleur()
+                break;
+            case 'Guerrier' :
+                toucherCommeGuerrier();
+                sauverCommeGuerrier();
+
+                calculeReflexes();
+                calculeVigeur();
+                calculeVolonte();
+                competenceClasseGuerrier()
+                break;
+            case 'Magicien' :
+                toucherCommeMagicien();
+                sauverCommeMagicien();
+
+                calculeReflexes();
+                calculeVigeur();
+                calculeVolonte();
+
+                affichageEcoles(document.form.ecole_I);
+                affichageEcoles(document.form.ecole_II);
+                affichageEcoles(document.form.ecole_III);
+
+                competenceClasseMagicien()
+                break;
+            case 'Moine' :
+                toucherCommePretre();
+                sauverCommeMoine();
+
+                calculeReflexes();
+                calculeVigeur();
+                calculeVolonte();
+                competenceClasseMoine()
+                break;
+            case 'Paladin' :
+                toucherCommeGuerrier();
+                sauverCommeGuerrier();
+
+                calculeReflexes();
+                calculeVigeur();
+                calculeVolonte();
+                competenceClassePaladin()
+                break;
+            case 'Prêtre' :
+                toucherCommePretre();
+                sauverCommePretre();
+
+                calculeReflexes();
+                calculeVigeur();
+                calculeVolonte();
+                competenceClassePrêtre()
+                break;
+            case 'Rôdeur' :
+                toucherCommeGuerrier();
+                sauverCommeRodeur();
+
+                calculeReflexes();
+                calculeVigeur();
+                calculeVolonte();
+                competenceClasseRodeur()
+                break;
+            case 'Roublard' :
+                toucherCommePretre();
+                sauverCommeRoublard();
+
+                calculeReflexes();
+                calculeVigeur();
+                calculeVolonte();
+                competenceClasseRoublard()
+                break;
+        }
     });
 });
 
 
+
 function influenceClassePersonnage() {
-	changeClassePersonnage();
-	classeCompétence();
     affichageArtisanat(document.form.artisanat_I_type);
     affichageArtisanat(document.form.artisanat_II_type);
     affichageArtisanat(document.form.artisanat_III_type);
-    affichageConnaissance(document.form.connaissances_I_type);
-    affichageConnaissance(document.form.connaissances_II_type);
-    affichageConnaissance(document.form.connaissances_III_type);
-    affichageConnaissance(document.form.connaissances_IV_type);
-    affichageConnaissance(document.form.connaissances_V_type);
+
     affichageProfession(document.form.profession_I_type);
     affichageProfession(document.form.profession_II_type);
+
     affichageReprésentation(document.form.représentation_I_type);
     affichageReprésentation(document.form.représentation_II_type);
 
@@ -445,390 +590,18 @@ function influenceClassePersonnage() {
     affichageDon(document.form.don_XI);
     affichageDon(document.form.don_XII);
 
-/* *** */
     affichageArmure(document.form.armure);
+
     affichageBouclier(document.form.bouclier);
+
     affichageProtection(document.form.protection_I);
-/*    affichageProtection(document.form.protection_II);
-    affichageProtection(document.form.protection_III);*/
+    affichageProtection(document.form.protection_II);
+    affichageProtection(document.form.protection_III);
 };
 
-function toucherCommeGuerrier() {
-	switch(document.form.niveau.value) {
-		case '00' :
-			$('#bba').html(' ');
-			$('#lut_bon_bas_att').html(' ');
-			break;
-		case '01' :
-			$('#bba').html('1');
-			$('#lut_bon_bas_att').html('1');
-			break;
-		case '02' :
-			$('#bba').html('2');
-			$('#lut_bon_bas_att').html('2');
-			break;
-		case '03' :
-			$('#bba').html('3');
-			$('#lut_bon_bas_att').html('3');
-			break;
-		case '04' :
-			$('#bba').html('4');
-			$('#lut_bon_bas_att').html('4');
-			break;
-		case '05' :
-			$('#bba').html('5');
-			$('#lut_bon_bas_att').html('5');
-			break;
-		case '06' :
-			$('#bba').html('6');
-			$('#lut_bon_bas_att').html('6');
-			break;
-		case '07' :
-			$('#bba').html('7');
-			$('#lut_bon_bas_att').html('7');
-			break;
-		case '08' :
-			$('#bba').html('8');
-			$('#lut_bon_bas_att').html('8');
-			break;
-		case '09' :
-			$('#bba').html('9');
-			$('#lut_bon_bas_att').html('9');
-			break;
-		case '10' :
-			$('#bba').html('10');
-			$('#lut_bon_bas_att').html('10');
-			break;
-		case '11' :
-			$('#bba').html('11');
-			$('#lut_bon_bas_att').html('11');
-			break;
-		case '12' :
-			$('#bba').html('12');
-			$('#lut_bon_bas_att').html('12');
-			break;
-		case '13' :
-			$('#bba').html('13');
-			$('#lut_bon_bas_att').html('13');
-			break;
-		case '14' :
-			$('#bba').html('14');
-			$('#lut_bon_bas_att').html('14');
-			break;
-		case '15' :
-			$('#bba').html('15');
-			$('#lut_bon_bas_att').html('15');
-			break;
-		case '16' :
-			$('#bba').html('16');
-			$('#lut_bon_bas_att').html('16');
-			break;
-		case '17' :
-			$('#bba').html('17');
-			$('#lut_bon_bas_att').html('17');
-			break;
-		case '18' :
-			$('#bba').html('18');
-			$('#lut_bon_bas_att').html('18');
-			break;
-		case '19' :
-			$('#bba').html('19');
-			$('#lut_bon_bas_att').html('19');
-			break;
-		case '20' :
-			$('#bba').html('20');
-			$('#lut_bon_bas_att').html('20');
-			break;
-	}
-};
 
-function toucherCommePretre() {
-	switch(document.form.niveau.value) {
-		case '00' :
-			$('#bba').html(' ');
-			$('#lut_bon_bas_att').html(' ');
-			break;
-		case '01' :
-			$('#bba').html('0');
-			$('#lut_bon_bas_att').html('0');
-			break;
-		case '02' :
-			$('#bba').html('1');
-			$('#lut_bon_bas_att').html('1');
-			break;
-		case '03' :
-			$('#bba').html('2');
-			$('#lut_bon_bas_att').html('2');
-			break;
-		case '04' :
-			$('#bba').html('3');
-			$('#lut_bon_bas_att').html('3');
-			break;
-		case '05' :
-			$('#bba').html('3');
-			$('#lut_bon_bas_att').html('3');
-			break;
-		case '06' :
-			$('#bba').html('4');
-			$('#lut_bon_bas_att').html('4');
-			break;
-		case '07' :
-			$('#bba').html('5');
-			$('#lut_bon_bas_att').html('5');
-			break;
-		case '08' :
-			$('#bba').html('6');
-			$('#lut_bon_bas_att').html('6');
-			break;
-		case '09' :
-			$('#bba').html('6');
-			$('#lut_bon_bas_att').html('6');
-			break;
-		case '10' :
-			$('#bba').html('7');
-			$('#lut_bon_bas_att').html('7');
-			break;
-		case '11' :
-			$('#bba').html('8');
-			$('#lut_bon_bas_att').html('8');
-			break;
-		case '12' :
-			$('#bba').html('9');
-			$('#lut_bon_bas_att').html('9');
-			break;
-		case '13' :
-			$('#bba').html('9');
-			$('#lut_bon_bas_att').html('9');
-			break;
-		case '14' :
-			$('#bba').html('10');
-			$('#lut_bon_bas_att').html('10');
-			break;
-		case '15' :
-			$('#bba').html('11');
-			$('#lut_bon_bas_att').html('11');
-			break;
-		case '16' :
-			$('#bba').html('12');
-			$('#lut_bon_bas_att').html('12');
-			break;
-		case '17' :
-			$('#bba').html('12');
-			$('#lut_bon_bas_att').html('12');
-			break;
-		case '18' :
-			$('#bba').html('13');
-			$('#lut_bon_bas_att').html('13');
-			break;
-		case '19' :
-			$('#bba').html('14');
-			$('#lut_bon_bas_att').html('14');
-			break;
-		case '20' :
-			$('#bba').html('15');
-			$('#lut_bon_bas_att').html('15');
-			break;
-	}
-};
 
-function toucherCommeMagicien() {
-	switch(document.form.niveau.value) {
-		case '00' :
-			$('#bba').html(' ');
-			$('#lut_bon_bas_att').html(' ');
-			break;
-		case '01' :
-			$('#bba').html('0');
-			$('#lut_bon_bas_att').html('0');
-			break;
-		case '02' :
-			$('#bba').html('1');
-			$('#lut_bon_bas_att').html('1');
-			break;
-		case '03' :
-			$('#bba').html('1');
-			$('#lut_bon_bas_att').html('1');
-			break;
-		case '04' :
-			$('#bba').html('2');
-			$('#lut_bon_bas_att').html('2');
-			break;
-		case '05' :
-			$('#bba').html('2');
-			$('#lut_bon_bas_att').html('2');
-			break;
-		case '06' :
-			$('#bba').html('3');
-			$('#lut_bon_bas_att').html('3');
-			break;
-		case '07' :
-			$('#bba').html('3');
-			$('#lut_bon_bas_att').html('3');
-			break;
-		case '08' :
-			$('#bba').html('4');
-			$('#lut_bon_bas_att').html('4');
-			break;
-		case '09' :
-			$('#bba').html('4');
-			$('#lut_bon_bas_att').html('4');
-			break;
-		case '10' :
-			$('#bba').html('5');
-			$('#lut_bon_bas_att').html('5');
-			break;
-		case '11' :
-			$('#bba').html('5');
-			$('#lut_bon_bas_att').html('5');
-			break;
-		case '12' :
-			$('#bba').html('6');
-			$('#lut_bon_bas_att').html('6');
-			break;
-		case '13' :
-			$('#bba').html('6');
-			$('#lut_bon_bas_att').html('6');
-			break;
-		case '14' :
-			$('#bba').html('7');
-			$('#lut_bon_bas_att').html('7');
-			break;
-		case '15' :
-			$('#bba').html('7');
-			$('#lut_bon_bas_att').html('7');
-			break;
-		case '16' :
-			$('#bba').html('8');
-			$('#lut_bon_bas_att').html('8');
-			break;
-		case '17' :
-			$('#bba').html('8');
-			$('#lut_bon_bas_att').html('8');
-			break;
-		case '18' :
-			$('#bba').html('9');
-			$('#lut_bon_bas_att').html('9');
-			break;
-		case '19' :
-			$('#bba').html('9');
-			$('#lut_bon_bas_att').html('9');
-			break;
-		case '20' :
-			$('#bba').html('10');
-			$('#lut_bon_bas_att').html('10');
-			break;
-	}
-};
 
-function sauverCommeGuerrier() {
-	switch(document.form.niveau.value) {
-		case '00' :
-			$('#sau_bon_bas_ref').html(' ');
-			$('#sau_bon_bas_vig').html(' ');
-			$('#sau_bon_bas_vol').html(' ');
-			break;
-		case '01' :
-			$('#sau_bon_bas_ref').html('0');
-			$('#sau_bon_bas_vig').html('2');
-			$('#sau_bon_bas_vol').html('0');
-			break;
-		case '02' :
-			$('#sau_bon_bas_ref').html('0');
-			$('#sau_bon_bas_vig').html('3');
-			$('#sau_bon_bas_vol').html('0');
-			break;
-		case '03' :
-			$('#sau_bon_bas_ref').html('1');
-			$('#sau_bon_bas_vig').html('3');
-			$('#sau_bon_bas_vol').html('1');
-			break;
-		case '04' :
-			$('#sau_bon_bas_ref').html('1');
-			$('#sau_bon_bas_vig').html('4');
-			$('#sau_bon_bas_vol').html('1');
-			break;
-		case '05' :
-			$('#sau_bon_bas_ref').html('1');
-			$('#sau_bon_bas_vig').html('4');
-			$('#sau_bon_bas_vol').html('1');
-			break;
-		case '06' :
-			$('#sau_bon_bas_ref').html('2');
-			$('#sau_bon_bas_vig').html('5');
-			$('#sau_bon_bas_vol').html('2');
-			break;
-		case '07' :
-			$('#sau_bon_bas_ref').html('2');
-			$('#sau_bon_bas_vig').html('5');
-			$('#sau_bon_bas_vol').html('2');
-			break;
-		case '08' :
-			$('#sau_bon_bas_ref').html('2');
-			$('#sau_bon_bas_vig').html('6');
-			$('#sau_bon_bas_vol').html('2');
-			break;
-		case '09' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('6');
-			$('#sau_bon_bas_vol').html('3');
-			break;
-		case '10' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('7');
-			$('#sau_bon_bas_vol').html('3');
-			break;
-		case '11' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('7');
-			$('#sau_bon_bas_vol').html('3');
-			break;
-		case '12' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('8');
-			$('#sau_bon_bas_vol').html('4');
-			break;
-		case '13' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('8');
-			$('#sau_bon_bas_vol').html('4');
-			break;
-		case '14' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('9');
-			$('#sau_bon_bas_vol').html('4');
-			break;
-		case '15' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('9');
-			$('#sau_bon_bas_vol').html('5');
-			break;
-		case '16' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('10');
-			$('#sau_bon_bas_vol').html('5');
-			break;
-		case '17' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('10');
-			$('#sau_bon_bas_vol').html('5');
-			break;
-		case '18' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('11');
-			$('#sau_bon_bas_vol').html('6');
-			break;
-		case '19' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('11');
-			$('#sau_bon_bas_vol').html('6');
-			break;
-		case '20' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('12');
-			$('#sau_bon_bas_vol').html('6');
-			break;
-	}
-};
 
 function sauverCommeRoublard() {
 	switch(document.form.niveau.value) {
@@ -1381,123 +1154,6 @@ function sauverCommeRodeur() {
 };
 
 function influenceNiveau() {
-    $('#ide').html(parseInt(document.form.niveau.value + 3));
-    $('#hide').html((parseInt(document.form.niveau.value + 3) / 2));
-
-	switch(document.form.classe.value) {
-		case ' ' :
-			$('#sau_bon_bas_ref').html('0');
-			$('#sau_bon_bas_vig').html('0');
-			$('#sau_bon_bas_vol').html('0');
-			$('#bba').html('0');
-			$('#lut_bon_bas_att').html('0');
-			break;
-		case 'Barbare' :
-			toucherCommeGuerrier();
-			sauverCommeGuerrier();
-			reductionDegats();
-			calculeReflexes();
-			calculeVigeur();
-			calculeVolonte();
-			calculeLutte();
-            competenceClasseBarbare();
-			break;
-		case 'Barde' :
-			toucherCommePretre();
-			sauverCommeRoublard();
-			calculeReflexes();
-			calculeVigeur();
-			calculeVolonte();
-			calculeLutte();
-            competenceClasseBarde()
-			break;
-		case 'Druide' :
-			toucherCommePretre();
-			sauverCommePretre();
-			calculeReflexes();
-			calculeVigeur();
-			calculeVolonte();
-			calculeLutte();
-            competenceClasseDruide()
-			break;
-		case 'Ensorceleur' :
-			toucherCommeMagicien();
-			sauverCommeMagicien();
-			calculeReflexes();
-			calculeVigeur();
-			calculeVolonte();
-			calculeLutte();
-            competenceClasseEnsorceleur()
-			break;
-		case 'Guerrier' :
-			toucherCommeGuerrier();
-			sauverCommeGuerrier();
-			calculeReflexes();
-			calculeVigeur();
-			calculeVolonte();
-			calculeLutte();
-            competenceClasseGuerrier()
-			break;
-		case 'Magicien' :
-			toucherCommeMagicien();
-			sauverCommeMagicien();
-			calculeReflexes();
-			calculeVigeur();
-			calculeVolonte();
-			calculeLutte();
-
-            affichageEcoles(document.form.ecole_I);
-            affichageEcoles(document.form.ecole_II);
-            affichageEcoles(document.form.ecole_III);
-
-            competenceClasseMagicien()
-			break;
-		case 'Moine' :
-			toucherCommePretre();
-			sauverCommeMoine();
-			calculeReflexes();
-			calculeVigeur();
-			calculeVolonte();
-			calculeLutte();
-            competenceClasseMoine()
-			break;
-		case 'Paladin' :
-			toucherCommeGuerrier();
-			sauverCommeGuerrier();
-			calculeReflexes();
-			calculeVigeur();
-			calculeVolonte();
-			calculeLutte();
-            competenceClassePaladin()
-			break;
-		case 'Prêtre' :
-			toucherCommePretre();
-			sauverCommePretre();
-			calculeReflexes();
-			calculeVigeur();
-			calculeVolonte();
-			calculeLutte();
-            competenceClassePrêtre()
-			break;
-		case 'Rôdeur' :
-			toucherCommeGuerrier();
-			sauverCommeRodeur();
-			calculeReflexes();
-			calculeVigeur();
-			calculeVolonte();
-			calculeLutte();
-            competenceClasseRodeur()
-			break;
-		case 'Roublard' :
-			toucherCommePretre();
-			sauverCommeRoublard();
-			calculeReflexes();
-			calculeVigeur();
-			calculeVolonte();
-			calculeLutte();
-            competenceClasseRoublard()
-			break;
-	}
 
     var competenceDeClasse = new Array();
 
@@ -1946,7 +1602,6 @@ function influenceFor() {
 
 	$('#lut_mod_for').html(resultatCalculeInfluence);
 
-	calculeLutte();
 
     for (var i = 0; i < document.getElementsByClassName('carac_for').length; i++) {
         if (isNaN(parseInt(document.getElementsByClassName('carac_for')[i].html))) {
@@ -3035,31 +2690,6 @@ function calculeInit() {
 	$('#init_total').html(resultatCalculeInfluence	+ parseInt(document.form.init_mod_div_val.value));
 }
 
-function calculeReflexes()  {
-	/* si document.form.sau_bon_bas_ref.value n'est pas renseigné, 
-	il n'est pas un number
-	d'où son forçage à 0*/
-	if (isNaN(parseInt($('#sau_bon_bas_ref').html))) {
-		$('#sau_bon_bas_ref').html(0);
-	};
-
-	if (isNaN(parseInt($('#sau_mod_car_ref').html))) {
-		$('#sau_mod_car_ref').html(0);
-	};
-
-	if (isNaN(parseInt(document.form.mod_tem_ref.value))) {
-		document.form.mod_tem_ref.value = 0;
-	};
-
-	if (isNaN(parseInt(document.form.mod_part_ref.value))) {
-		document.form.mod_part_ref.value = 0;
-	};
-
-//	$('#sau_total_ref').html(parseInt($('#sau_bon_bas_ref').html)
-//														+ parseInt($('#sau_mod_car_ref').html())
-//														+ parseInt(document.form.mod_tem_ref.value)
-//														+ parseInt(document.form.mod_part_ref.value);
-}
 
 function calculeVigeur() {
 	/* si document.form.sau_bon_bas_vig.value n'est pas renseigné, 
@@ -3111,22 +2741,6 @@ function calculeVolonte()  {
 //														+ parseInt($('#sau_mod_car_vol').html)
 //														+ parseInt(document.form.mod_tem_vol.value)
 //														+ parseInt(document.form.mod_part_vol.value);
-}
-
-function calculeLutte() {
-	/* si document.form.lut_bon_bas_att.value n'est pas renseigné, 
-	il n'est pas un number
-	d'où son forçage à 0*/
-	if (isNaN(parseInt($('#lut_bon_bas_att').html))) {
-		$('#lut_bon_bas_att').html(0);
-	};
-
-	if (isNaN(parseInt($('#lut_mod_for').html))) {
-		$('#lut_mod_for').html(0);
-	};
-
-//	$('#lut_total').html(parseInt($('#lut_bon_bas_att').html)
-//													+ parseInt($('#lut_mod_for').html);
 }
 
 function calculeCompetence(total,carac,maîtrise,divers) {
@@ -3274,17 +2888,6 @@ function affichageArtisanat(artisanatType) {
 
     for (var nombElement = 0; nombElement < artisanatTableau.length; nombElement++) {
         artisanatType.options[nombElement] = new Option(artisanatTableau[nombElement],artisanatTableau[nombElement]);
-    };
-}
-
-function affichageConnaissance(connaissanceType) {
-    var connaissanceTableau = new Array();
-
-    connaissanceTableau = [' ','Archi. et ingé.','Explo. sousterraine','Folklore local','Géographie','Histoire','Mystères','Nature',
-                            'Noblesse','Plans','Religion'];
-
-    for (var nombElement = 0; nombElement < connaissanceTableau.length; nombElement++) {
-        connaissanceType.options[nombElement] = new Option(connaissanceTableau[nombElement],connaissanceTableau[nombElement]);
     };
 }
 
