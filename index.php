@@ -153,7 +153,7 @@
                             <option value="Min">Minuscule (Min)</option>
                             <option value="TP">Très petite (TP)</option>
                             <option value="P">Petite (P)</option>
-                            <option value="M">Moyenne (M)</option>
+                            <option value="M" selected>Moyenne (M)</option>
                             <option value="Gh">Grande (G) (haute)</option>
                             <option value="Gl">Grande (G) (longue)</option>
                             <option value="TGh">Très grande (TG) (haute)</option>
@@ -301,16 +301,9 @@
                             </div>
             
                             <div class="col-lg-4">
-                                <label id="label_rd" for="rd">RD</label> 
-                                <select id="rd" name="rd">
-                                    <option>0</option>
-                                    <option>1/-</option>
-                                    <option>2/-</option>
-                                    <option>3/-</option>
-                                    <option>4/-</option>
-                                    <option>5/-</option>
-                                </select>
-                                <span class="tooltip">La RD est inconnu</span>
+                                <label id="label_rd" for="red_deg">RD</label> 
+                                <div id="red_deg" name="red_deg">
+                                </div>
                             </div>
                         </div>
 
@@ -485,11 +478,11 @@
                                 <td id="sau_mod_mag_ref">
                                     <select id="sau_mod_mag_ref_bon" name="sau_mod_mag_ref_bon" onChange="influenceBonusRefMag()">
                                         <option selected>0</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        <option>+1</option>
+                                        <option>+2</option>
+                                        <option>+3</option>
+                                        <option>+4</option>
+                                        <option>+5</option>
                                     </select>
                                     <span class="tooltip">Le bonus est invalide</span>
                                 </td>
@@ -497,11 +490,11 @@
                                 <td id="sau_mod_div_ref">
                                     <select id="sau_mod_div_ref_bon" name="sau_mod_div_ref_bon" onChange="influenceBonusRefDiv()">
                                         <option selected>0</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        <option>+1</option>
+                                        <option>+2</option>
+                                        <option>+3</option>
+                                        <option>+4</option>
+                                        <option>+5</option>
                                     </select>
                                     <span class="tooltip">Le bonus est invalide</span>
                                 </td>

@@ -1,3 +1,5 @@
+// $('#user').focus();
+
 $(function() {
     function toucherCommeGuerrier() {
         switch($('#niveau').val()) {
@@ -313,18 +315,566 @@ $(function() {
         }
     };
 
-    function calculeReflexes()  {
-            $('#lab_ref').css('background','#ffffff');
+    function sauverCommeRoublard() {
+        switch($('#niveau').val()) {
+            case '00' :
+                $('#sau_bon_bas_ref').html(' ');
+                $('#sau_bon_bas_vig').html(' ');
+                $('#sau_bon_bas_vol').html(' ');
+                break;
+            case '01' :
+                $('#sau_bon_bas_ref').html('2');
+                $('#sau_bon_bas_vig').html('0');
+                $('#sau_bon_bas_vol').html('2');
+                break;
+            case '02' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('0');
+                $('#sau_bon_bas_vol').html('3');
+                break;
+            case '03' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('1');
+                $('#sau_bon_bas_vol').html('3');
+                break;
+            case '04' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('1');
+                $('#sau_bon_bas_vol').html('4');
+                break;
+            case '05' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('1');
+                $('#sau_bon_bas_vol').html('4');
+                break;
+            case '06' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('2');
+                $('#sau_bon_bas_vol').html('5');
+                break;
+            case '07' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('2');
+                $('#sau_bon_bas_vol').html('5');
+                break;
+            case '08' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('2');
+                $('#sau_bon_bas_vol').html('6');
+                break;
+            case '09' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('3');
+                $('#sau_bon_bas_vol').html('6');
+                break;
+            case '10' :
+                $('#sau_bon_bas_ref').html('7');
+                $('#sau_bon_bas_vig').html('3');
+                $('#sau_bon_bas_vol').html('7');
+                break;
+            case '11' :
+                $('#sau_bon_bas_ref').html('7');
+                $('#sau_bon_bas_vig').html('3');
+                $('#sau_bon_bas_vol').html('7');
+                break;
+            case '12' :
+                $('#sau_bon_bas_ref').html('8');
+                $('#sau_bon_bas_vig').html('4');
+                $('#sau_bon_bas_vol').html('8');
+                break;
+            case '13' :
+                $('#sau_bon_bas_ref').html('8');
+                $('#sau_bon_bas_vig').html('4');
+                $('#sau_bon_bas_vol').html('8');
+                break;
+            case '14' :
+                $('#sau_bon_bas_ref').html('9');
+                $('#sau_bon_bas_vig').html('4');
+                $('#sau_bon_bas_vol').html('9');
+                break;
+            case '15' :
+                $('#sau_bon_bas_ref').html('9');
+                $('#sau_bon_bas_vig').html('5');
+                $('#sau_bon_bas_vol').html('9');
+                break;
+            case '16' :
+                $('#sau_bon_bas_ref').html('10');
+                $('#sau_bon_bas_vig').html('5');
+                $('#sau_bon_bas_vol').html('10');
+                break;
+            case '17' :
+                $('#sau_bon_bas_ref').html('10');
+                $('#sau_bon_bas_vig').html('5');
+                $('#sau_bon_bas_vol').html('10');
+                break;
+            case '18' :
+                $('#sau_bon_bas_ref').html('11');
+                $('#sau_bon_bas_vig').html('6');
+                $('#sau_bon_bas_vol').html('11');
+                break;
+            case '19' :
+                $('#sau_bon_bas_ref').html('11');
+                $('#sau_bon_bas_vig').html('6');
+                $('#sau_bon_bas_vol').html('11');
+                break;
+            case '20' :
+                $('#sau_bon_bas_ref').html('12');
+                $('#sau_bon_bas_vig').html('6');
+                $('#sau_bon_bas_vol').html('12');
+                break;
+        }
+    };
 
+    function sauverCommePretre() {
+        switch($('#niveau').val()) {
+            case '00' :
+                $('#sau_bon_bas_ref').html(' ');
+                $('#sau_bon_bas_vig').html(' ');
+                $('#sau_bon_bas_vol').html(' ');
+                break;
+            case '01' :
+                $('#sau_bon_bas_ref').html('0');
+                $('#sau_bon_bas_vig').html('2');
+                $('#sau_bon_bas_vol').html('2');
+                break;
+            case '02' :
+                $('#sau_bon_bas_ref').html('0');
+                $('#sau_bon_bas_vig').html('3');
+                $('#sau_bon_bas_vol').html('3');
+                break;
+            case '03' :
+                $('#sau_bon_bas_ref').html('1');
+                $('#sau_bon_bas_vig').html('3');
+                $('#sau_bon_bas_vol').html('3');
+                break;
+            case '04' :
+                $('#sau_bon_bas_ref').html('1');
+                $('#sau_bon_bas_vig').html('4');
+                $('#sau_bon_bas_vol').html('4');
+                break;
+            case '05' :
+                $('#sau_bon_bas_ref').html('1');
+                $('#sau_bon_bas_vig').html('4');
+                $('#sau_bon_bas_vol').html('4');
+                break;
+            case '06' :
+                $('#sau_bon_bas_ref').html('2');
+                $('#sau_bon_bas_vig').html('5');
+                $('#sau_bon_bas_vol').html('5');
+                break;
+            case '07' :
+                $('#sau_bon_bas_ref').html('2');
+                $('#sau_bon_bas_vig').html('5');
+                $('#sau_bon_bas_vol').html('5');
+                break;
+            case '08' :
+                $('#sau_bon_bas_ref').html('2');
+                $('#sau_bon_bas_vig').html('6');
+                $('#sau_bon_bas_vol').html('6');
+                break;
+            case '09' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('6');
+                $('#sau_bon_bas_vol').html('6');
+                break;
+            case '10' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('7');
+                $('#sau_bon_bas_vol').html('7');
+                break;
+            case '11' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('7');
+                $('#sau_bon_bas_vol').html('7');
+                break;
+            case '12' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('8');
+                $('#sau_bon_bas_vol').html('8');
+                break;
+            case '13' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('8');
+                $('#sau_bon_bas_vol').html('8');
+                break;
+            case '14' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('9');
+                $('#sau_bon_bas_vol').html('9');
+                break;
+            case '15' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('9');
+                $('#sau_bon_bas_vol').html('9');
+                break;
+            case '16' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('10');
+                $('#sau_bon_bas_vol').html('10');
+                break;
+            case '17' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('10');
+                $('#sau_bon_bas_vol').html('10');
+                break;
+            case '18' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('11');
+                $('#sau_bon_bas_vol').html('11');
+                break;
+            case '19' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('11');
+                $('#sau_bon_bas_vol').html('11');
+                break;
+            case '20' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('12');
+                $('#sau_bon_bas_vol').html('12');
+                break;
+        }
+    };
+
+    function sauverCommeMagicien() {
+        switch($('#niveau').val()) {
+            case '00' :
+                $('#sau_bon_bas_ref').html(' ');
+                $('#sau_bon_bas_vig').html(' ');
+                $('#sau_bon_bas_vol').html(' ');
+                break;
+            case '01' :
+                $('#sau_bon_bas_ref').html('0');
+                $('#sau_bon_bas_vig').html('0');
+                $('#sau_bon_bas_vol').html('2');
+                break;
+            case '02' :
+                $('#sau_bon_bas_ref').html('0');
+                $('#sau_bon_bas_vig').html('0');
+                $('#sau_bon_bas_vol').html('3');
+                break;
+            case '03' :
+                $('#sau_bon_bas_ref').html('1');
+                $('#sau_bon_bas_vig').html('1');
+                $('#sau_bon_bas_vol').html('3');
+                break;
+            case '04' :
+                $('#sau_bon_bas_ref').html('1');
+                $('#sau_bon_bas_vig').html('1');
+                $('#sau_bon_bas_vol').html('4');
+                break;
+            case '05' :
+                $('#sau_bon_bas_ref').html('1');
+                $('#sau_bon_bas_vig').html('1');
+                $('#sau_bon_bas_vol').html('4');
+                break;
+            case '06' :
+                $('#sau_bon_bas_ref').html('2');
+                $('#sau_bon_bas_vig').html('2');
+                $('#sau_bon_bas_vol').html('5');
+                break;
+            case '07' :
+                $('#sau_bon_bas_ref').html('2');
+                $('#sau_bon_bas_vig').html('2');
+                $('#sau_bon_bas_vol').html('5');
+                break;
+            case '08' :
+                $('#sau_bon_bas_ref').html('2');
+                $('#sau_bon_bas_vig').html('2');
+                $('#sau_bon_bas_vol').html('6');
+                break;
+            case '09' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('3');
+                $('#sau_bon_bas_vol').html('6');
+                break;
+            case '10' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('3');
+                $('#sau_bon_bas_vol').html('7');
+                break;
+            case '11' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('3');
+                $('#sau_bon_bas_vol').html('7');
+                break;
+            case '12' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('4');
+                $('#sau_bon_bas_vol').html('8');
+                break;
+            case '13' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('4');
+                $('#sau_bon_bas_vol').html('8');
+                break;
+            case '14' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('4');
+                $('#sau_bon_bas_vol').html('9');
+                break;
+            case '15' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('5');
+                $('#sau_bon_bas_vol').html('9');
+                break;
+            case '16' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('5');
+                $('#sau_bon_bas_vol').html('10');
+                break;
+            case '17' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('5');
+                $('#sau_bon_bas_vol').html('10');
+                break;
+            case '18' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('6');
+                $('#sau_bon_bas_vol').html('11');
+                break;
+            case '19' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('6');
+                $('#sau_bon_bas_vol').html('11');
+                break;
+            case '20' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('6');
+                $('#sau_bon_bas_vol').html('12');
+                break;
+        }
+    };
+
+    function sauverCommeMoine() {
+        switch($('#niveau').val()) {
+            case '00' :
+                $('#sau_bon_bas_ref').html(' ');
+                $('#sau_bon_bas_vig').html(' ');
+                $('#sau_bon_bas_vol').html(' ');
+                break;
+            case '01' :
+                $('#sau_bon_bas_ref').html('2');
+                $('#sau_bon_bas_vig').html('2');
+                $('#sau_bon_bas_vol').html('2');
+                break;
+            case '02' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('3');
+                $('#sau_bon_bas_vol').html('3');
+                break;
+            case '03' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('3');
+                $('#sau_bon_bas_vol').html('3');
+                break;
+            case '04' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('4');
+                $('#sau_bon_bas_vol').html('4');
+                break;
+            case '05' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('4');
+                $('#sau_bon_bas_vol').html('4');
+                break;
+            case '06' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('5');
+                $('#sau_bon_bas_vol').html('5');
+                break;
+            case '07' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('5');
+                $('#sau_bon_bas_vol').html('5');
+                break;
+            case '08' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('6');
+                $('#sau_bon_bas_vol').html('6');
+                break;
+            case '09' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('6');
+                $('#sau_bon_bas_vol').html('6');
+                break;
+            case '10' :
+                $('#sau_bon_bas_ref').html('7');
+                $('#sau_bon_bas_vig').html('7');
+                $('#sau_bon_bas_vol').html('7');
+                break;
+            case '11' :
+                $('#sau_bon_bas_ref').html('7');
+                $('#sau_bon_bas_vig').html('7');
+                $('#sau_bon_bas_vol').html('7');
+                break;
+            case '12' :
+                $('#sau_bon_bas_ref').html('8');
+                $('#sau_bon_bas_vig').html('8');
+                $('#sau_bon_bas_vol').html('8');
+                break;
+            case '13' :
+                $('#sau_bon_bas_ref').html('8');
+                $('#sau_bon_bas_vig').html('8');
+                $('#sau_bon_bas_vol').html('8');
+                break;
+            case '14' :
+                $('#sau_bon_bas_ref').html('9');
+                $('#sau_bon_bas_vig').html('9');
+                $('#sau_bon_bas_vol').html('9');
+                break;
+            case '15' :
+                $('#sau_bon_bas_ref').html('9');
+                $('#sau_bon_bas_vig').html('9');
+                $('#sau_bon_bas_vol').html('9');
+                break;
+            case '16' :
+                $('#sau_bon_bas_ref').html('10');
+                $('#sau_bon_bas_vig').html('10');
+                $('#sau_bon_bas_vol').html('10');
+                break;
+            case '17' :
+                $('#sau_bon_bas_ref').html('10');
+                $('#sau_bon_bas_vig').html('10');
+                $('#sau_bon_bas_vol').html('10');
+                break;
+            case '18' :
+                $('#sau_bon_bas_ref').html('11');
+                $('#sau_bon_bas_vig').html('11');
+                $('#sau_bon_bas_vol').html('11');
+                break;
+            case '19' :
+                $('#sau_bon_bas_ref').html('11');
+                $('#sau_bon_bas_vig').html('11');
+                $('#sau_bon_bas_vol').html('11');
+                break;
+            case '20' :
+                $('#sau_bon_bas_ref').html('12');
+                $('#sau_bon_bas_vig').html('12');
+                $('#sau_bon_bas_vol').html('12');
+                break;
+        }
+    };
+
+    function sauverCommeRodeur() {
+        switch($('#niveau').val()) {
+            case '00' :
+                $('#sau_bon_bas_ref').html(' ');
+                $('#sau_bon_bas_vig').html(' ');
+                $('#sau_bon_bas_vol').html(' ');
+                break;
+            case '01' :
+                $('#sau_bon_bas_ref').html('2');
+                $('#sau_bon_bas_vig').html('2');
+                $('#sau_bon_bas_vol').html('0');
+                break;
+            case '02' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('3');
+                $('#sau_bon_bas_vol').html('0');
+                break;
+            case '03' :
+                $('#sau_bon_bas_ref').html('3');
+                $('#sau_bon_bas_vig').html('3');
+                $('#sau_bon_bas_vol').html('1');
+                break;
+            case '04' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('4');
+                $('#sau_bon_bas_vol').html('1');
+                break;
+            case '05' :
+                $('#sau_bon_bas_ref').html('4');
+                $('#sau_bon_bas_vig').html('4');
+                $('#sau_bon_bas_vol').html('1');
+                break;
+            case '06' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('5');
+                $('#sau_bon_bas_vol').html('2');
+                break;
+            case '07' :
+                $('#sau_bon_bas_ref').html('5');
+                $('#sau_bon_bas_vig').html('5');
+                $('#sau_bon_bas_vol').html('2');
+                break;
+            case '08' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('6');
+                $('#sau_bon_bas_vol').html('2');
+                break;
+            case '09' :
+                $('#sau_bon_bas_ref').html('6');
+                $('#sau_bon_bas_vig').html('6');
+                $('#sau_bon_bas_vol').html('3');
+                break;
+            case '10' :
+                $('#sau_bon_bas_ref').html('7');
+                $('#sau_bon_bas_vig').html('7');
+                $('#sau_bon_bas_vol').html('3');
+                break;
+            case '11' :
+                $('#sau_bon_bas_ref').html('7');
+                $('#sau_bon_bas_vig').html('7');
+                $('#sau_bon_bas_vol').html('3');
+                break;
+            case '12' :
+                $('#sau_bon_bas_ref').html('8');
+                $('#sau_bon_bas_vig').html('8');
+                $('#sau_bon_bas_vol').html('4');
+                break;
+            case '13' :
+                $('#sau_bon_bas_ref').html('8');
+                $('#sau_bon_bas_vig').html('8');
+                $('#sau_bon_bas_vol').html('4');
+                break;
+            case '14' :
+                $('#sau_bon_bas_ref').html('9');
+                $('#sau_bon_bas_vig').html('9');
+                $('#sau_bon_bas_vol').html('4');
+                break;
+            case '15' :
+                $('#sau_bon_bas_ref').html('9');
+                $('#sau_bon_bas_vig').html('9');
+                $('#sau_bon_bas_vol').html('5');
+                break;
+            case '16' :
+                $('#sau_bon_bas_ref').html('10');
+                $('#sau_bon_bas_vig').html('10');
+                $('#sau_bon_bas_vol').html('5');
+                break;
+            case '17' :
+                $('#sau_bon_bas_ref').html('10');
+                $('#sau_bon_bas_vig').html('10');
+                $('#sau_bon_bas_vol').html('5');
+                break;
+            case '18' :
+                $('#sau_bon_bas_ref').html('11');
+                $('#sau_bon_bas_vig').html('11');
+                $('#sau_bon_bas_vol').html('6');
+                break;
+            case '19' :
+                $('#sau_bon_bas_ref').html('11');
+                $('#sau_bon_bas_vig').html('11');
+                $('#sau_bon_bas_vol').html('6');
+                break;
+            case '20' :
+                $('#sau_bon_bas_ref').html('12');
+                $('#sau_bon_bas_vig').html('12');
+                $('#sau_bon_bas_vol').html('6');
+                break;
+        }
+    };
+
+    function calculeReflexes()  {
         /* si sau_bon_bas_ref.value n'est pas renseigné, 
         il n'est pas un number
         d'où son forçage à 0*/
-        if (isNaN(parseInt($('#sau_bon_bas_ref').val()))) {
-            $('#sau_bon_bas_ref').val(0);
+        if (isNaN(parseInt($('#sau_bon_bas_ref').html()))) {
+            $('#sau_bon_bas_ref').html(0);
         };
 
-        if (isNaN(parseInt($('#sau_mod_car_ref').val()))) {
-            $('#sau_mod_car_ref').val(0);
+        if (isNaN(parseInt($('#sau_mod_car_ref').html()))) {
+            $('#sau_mod_car_ref').html(0);
         };
 
         if (isNaN(parseInt($('#sau_mod_mag_ref_bon').val()))) {
@@ -343,13 +893,244 @@ $(function() {
             $('#mod_part_ref').val(0);
         };
 
-        $('#sau_total_ref').val(parseInt($('#sau_bon_bas_ref').val())
-                              + parseInt($('#sau_mod_car_ref').val())
+        $('#sau_total_ref').html(parseInt($('#sau_bon_bas_ref').html())
+                              + parseInt($('#sau_mod_car_ref').html())
                               + parseInt($('#sau_mod_mag_ref_bon').val()) 
                               + parseInt($('#sau_mod_div_ref_bon').val())                                                           
                               + parseInt($('#mod_tem_ref').val())
                               + parseInt($('#mod_part_ref').val()));
-    }
+    };
+
+    function calculeVigeur() {
+        /* si document.form.sau_bon_bas_vig.value n'est pas renseigné, 
+        il n'est pas un number
+        d'où son forçage à 0*/
+        if (isNaN(parseInt($('#sau_bon_bas_vig').html()))) {
+            $('#sau_bon_bas_vig').html(0);
+        };
+
+        if (isNaN(parseInt($('#sau_mod_car_vig').html()))) {
+            $('#sau_mod_car_vig').html(0);
+        };
+
+        if (isNaN(parseInt($('#sau_mod_mag_vig_bon').val()))) {
+            $('#sau_mod_mag_vig_bon').val(0);
+        };
+
+        if (isNaN(parseInt($('#sau_mod_div_vig_bon').val()))) {
+            $('#sau_mod_div_vig_bon').val(0);
+        };
+
+        if (isNaN(parseInt($('#mod_tem_vig').val()))) {
+            $('#mod_tem_vig').val(0);
+        };
+
+        if (isNaN(parseInt($('#mod_part_vig').val()))) {
+            $('#mod_part_vig').val(0);
+        };
+
+        $('#sau_total_vig').html(parseInt($('#sau_bon_bas_vig').html())
+                               + parseInt($('#sau_mod_car_vig').html())
+                               + parseInt($('#sau_mod_mag_vig_bon').val()) 
+                               + parseInt($('#sau_mod_div_vig_bon').val())                                                           
+                               + parseInt($('#mod_tem_vig').val())
+                               + parseInt($('#mod_part_vig').val()));
+    };
+
+    function calculeVolonte()  {
+        /* si document.form.sau_bon_bas_vol.value n'est pas renseigné, 
+        il n'est pas un number
+        d'où son forçage à 0*/
+        if (isNaN(parseInt($('#sau_bon_bas_vol').html()))) {
+            $('#sau_bon_bas_vol').html(0);
+        };
+
+        if (isNaN(parseInt($('#sau_mod_car_vol').html()))) {
+            $('#sau_mod_car_vol').html(0);
+        };
+
+        if (isNaN(parseInt($('#sau_mod_mag_vol_bon').val()))) {
+            $('#sau_mod_mag_vol_bon').val(0);
+        };
+
+        if (isNaN(parseInt($('#sau_mod_div_vol_bon').val()))) {
+            $('#sau_mod_div_vol_bon').val(0);
+        };
+
+        if (isNaN(parseInt($('#mod_tem_vol').val()))) {
+            $('#mod_tem_vol').val(0);
+        };
+
+        if (isNaN(parseInt($('#mod_part_vol').val()))) {
+            $('#mod_part_vol').val(0);
+        };
+
+        $('#sau_total_vol').html(parseInt($('#sau_bon_bas_vol').html())
+                               + parseInt($('#sau_mod_car_vol').html())
+                               + parseInt($('#sau_mod_mag_vol_bon').val()) 
+                               + parseInt($('#sau_mod_div_vol_bon').val())                                                           
+                               + parseInt($('#mod_tem_vol').val())
+                               + parseInt($('#mod_part_vol').val()));
+    };
+
+    function reductionDegats() {
+        switch($('#niveau').val()) {
+            case '00' :
+                $('#red_deg').html('0');
+                break;
+            case '01' :
+                $('#red_deg').html('0');
+                break;
+            case '02' :
+                $('#red_deg').html('0');
+                break;
+            case '03' :
+                $('#red_deg').html('0');
+                break;
+            case '04' :
+                $('#red_deg').html('0');
+                break;
+            case '05' :
+                $('#red_deg').html('0');
+                break;
+            case '06' :
+                $('#red_deg').html('0');
+                break;
+            case '07' :
+                $('#red_deg').html('1/-');
+                break;
+            case '08' :
+                $('#red_deg').html('1/-');
+                break;
+            case '09' :
+                $('#red_deg').html('1/-');
+                break;
+            case '10' :
+                $('#red_deg').html('2/-');
+                break;
+            case '11' :
+                $('#red_deg').html('2/-');
+                break;
+            case '12' :
+                $('#red_deg').html('2/-');
+                break;
+            case '13' :
+                $('#red_deg').html('3/-');
+                break;
+            case '14' :
+                $('#red_deg').html('3/-');
+                break;
+            case '15' :
+                $('#red_deg').html('3/-');
+                break;
+            case '16' :
+                $('#red_deg').html('4/-');
+                break;
+            case '17' :
+                $('#red_deg').html('4/-');
+                break;
+            case '18' :
+                $('#red_deg').html('4/-');
+                break;
+            case '19' :
+                $('#red_deg').html('5/-');
+                break;
+            case '20' :
+                $('#red_deg').html('5/-');
+                break;
+            };
+    };
+
+    function capacitesSpecialesBarbare() {
+        if ($('#niveau').val() >= 1) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#DEPLACEMENTACCELERE">Déplacement accéléré.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#RAGEDEBERSERKER">Rage de berserker.</a>');
+        };
+
+        if (document.form.niveau.value >= 2) {
+            $('#capacites_speciales_III').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
+            $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#ESQUIVEINSTINCTIVE">Esquive instinctive.</a>');
+        };
+
+        if (document.form.niveau.value >= 3) {
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#SENSDESPIEGES">Sens des pièges +1.</a>');
+        };
+
+        if (document.form.niveau.value >= 4) {
+            $('#capacites_speciales_VI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
+        };
+
+        if (document.form.niveau.value >= 5) {
+            $('#capacites_speciales_VII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#ESQUIVEINSTINCTIVESUPERIEURE">Esquive instinctive supérieure.</a>');
+        };
+
+        if (document.form.niveau.value >= 6) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#SENSDESPIEGES">Sens des pièges +2.</a>');
+        };
+
+        if (document.form.niveau.value >= 7) {
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#REDUCTIONDEGATS">réduction de dégâts 1/-.</a>');
+        };
+
+        if (document.form.niveau.value >= 8) {
+            $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
+        };
+
+        if (document.form.niveau.value >= 9) {
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#SENSDESPIEGES">Sens des pièges +3.</a>');
+        };
+
+        if (document.form.niveau.value >= 10) {
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#REDUCTIONDEGATS">réduction de dégâts 2/-.</a>');
+            $('#capacites_speciales_XI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
+        };
+
+        if (document.form.niveau.value >= 11) {
+            $('#capacites_speciales_XII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#RAGEDEGRANDBERSERKER">Rage de grand berserker.</a>');
+        };
+
+        if (document.form.niveau.value >= 12) {
+            $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#SENSDESPIEGES">Sens des pièges +4.</a>');
+        };
+
+        if (document.form.niveau.value >= 13) {
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#REDUCTIONDEGATS">réduction de dégâts 3/-.</a>');
+        };
+
+        if (document.form.niveau.value >= 14) {
+            $('#capacites_speciales_XIV').html('<a target="_blank" href="">Volonté indomptable.</a>');
+            $('#capacites_speciales_XV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
+        };
+
+        if (document.form.niveau.value >= 15) {
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#SENSDESPIEGES">Sens des pièges +5.</a>');
+        };
+
+        if (document.form.niveau.value >= 16) {
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#REDUCTIONDEGATS">réduction de dégâts 4/-.</a>');
+            $('#capacites_speciales_XVI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage..</a>');
+        };
+
+        if (document.form.niveau.value >= 17) {
+            $('#capacites_speciales_XVII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#RAGESANSFATIGUE">Rage sans fatigue.</a>');
+        };
+
+        if (document.form.niveau.value >= 18) {
+            $('#capacites_speciales_XVIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#SENSDESPIEGES">Sens des pièges +6.</a>');
+        };
+
+        if (document.form.niveau.value >= 19) {
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#REDUCTIONDEGATS">réduction de dégâts 5/-.</a>');
+        };
+
+        if (document.form.niveau.value >= 20) {
+            $('#capacites_speciales_XIX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#RAGEDEMAITREBERSERKER">Rage de maître berserker.</a>');
+            $('#capacites_speciales_XX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
+        };
+     };
 
     $('#niveau').change(function() {
         switch($('#classe').val()) {
@@ -361,55 +1142,54 @@ $(function() {
                 $('#lut_bon_bas_att').html('0');
                 break;
             case 'Barbare' :
+//            $('#lab_ref').css('background','#ffffff');
                 toucherCommeGuerrier();
                 sauverCommeGuerrier();
                 reductionDegats();
                 calculeReflexes();
-                break;
                 calculeVigeur();
                 calculeVolonte();
-                competenceClasseBarbare();
+                capacitesSpecialesBarbare();
                 break;
             case 'Barde' :
                 toucherCommePretre();
                 sauverCommeRoublard();
-
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-                competenceClasseBarde()
+
+                capacitesSpecialesBarde()
                 break;
             case 'Druide' :
                 toucherCommePretre();
                 sauverCommePretre();
-
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-                competenceClasseDruide()
+
+                capacitesSpecialesDruide()
                 break;
             case 'Ensorceleur' :
                 toucherCommeMagicien();
                 sauverCommeMagicien();
-
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-                competenceClasseEnsorceleur()
+
+                capacitesSpecialesEnsorceleur()
                 break;
             case 'Guerrier' :
                 toucherCommeGuerrier();
                 sauverCommeGuerrier();
-
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-                competenceClasseGuerrier()
+
+                capacitesSpecialesGuerrier()
                 break;
             case 'Magicien' :
                 toucherCommeMagicien();
                 sauverCommeMagicien();
-
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
@@ -418,56 +1198,59 @@ $(function() {
                 affichageEcoles(document.form.ecole_II);
                 affichageEcoles(document.form.ecole_III);
 
-                competenceClasseMagicien()
+                capacitesSpecialesMagicien()
                 break;
             case 'Moine' :
                 toucherCommePretre();
                 sauverCommeMoine();
-
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-                competenceClasseMoine()
+
+                capacitesSpecialesMoine()
                 break;
             case 'Paladin' :
                 toucherCommeGuerrier();
                 sauverCommeGuerrier();
-
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-                competenceClassePaladin()
+
+                capacitesSpecialesPaladin()
                 break;
             case 'Prêtre' :
                 toucherCommePretre();
                 sauverCommePretre();
-
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-                competenceClassePrêtre()
+
+                capacitesSpecialesPrêtre()
                 break;
             case 'Rôdeur' :
                 toucherCommeGuerrier();
                 sauverCommeRodeur();
-
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-                competenceClasseRodeur()
+
+                capacitesSpecialesRodeur()
                 break;
             case 'Roublard' :
                 toucherCommePretre();
                 sauverCommeRoublard();
-
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-                competenceClasseRoublard()
+
+                capacitesSpecialesRoublard()
                 break;
         }
     });
 });
+
+
+
 
 
 
@@ -603,555 +1386,10 @@ function influenceClassePersonnage() {
 
 
 
-function sauverCommeRoublard() {
-	switch(document.form.niveau.value) {
-		case '00' :
-			$('#sau_bon_bas_ref').html(' ');
-			$('#sau_bon_bas_vig').html(' ');
-			$('#sau_bon_bas_vol').html(' ');
-			break;
-		case '01' :
-			$('#sau_bon_bas_ref').html('2');
-			$('#sau_bon_bas_vig').html('0');
-			$('#sau_bon_bas_vol').html('2');
-			break;
-		case '02' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('0');
-			$('#sau_bon_bas_vol').html('3');
-			break;
-		case '03' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('1');
-			$('#sau_bon_bas_vol').html('3');
-			break;
-		case '04' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('1');
-			$('#sau_bon_bas_vol').html('4');
-			break;
-		case '05' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('1');
-			$('#sau_bon_bas_vol').html('4');
-			break;
-		case '06' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('2');
-			$('#sau_bon_bas_vol').html('5');
-			break;
-		case '07' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('2');
-			$('#sau_bon_bas_vol').html('5');
-			break;
-		case '08' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('2');
-			$('#sau_bon_bas_vol').html('6');
-			break;
-		case '09' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('3');
-			$('#sau_bon_bas_vol').html('6');
-			break;
-		case '10' :
-			$('#sau_bon_bas_ref').html('7');
-			$('#sau_bon_bas_vig').html('3');
-			$('#sau_bon_bas_vol').html('7');
-			break;
-		case '11' :
-			$('#sau_bon_bas_ref').html('7');
-			$('#sau_bon_bas_vig').html('3');
-			$('#sau_bon_bas_vol').html('7');
-			break;
-		case '12' :
-			$('#sau_bon_bas_ref').html('8');
-			$('#sau_bon_bas_vig').html('4');
-			$('#sau_bon_bas_vol').html('8');
-			break;
-		case '13' :
-			$('#sau_bon_bas_ref').html('8');
-			$('#sau_bon_bas_vig').html('4');
-			$('#sau_bon_bas_vol').html('8');
-			break;
-		case '14' :
-			$('#sau_bon_bas_ref').html('9');
-			$('#sau_bon_bas_vig').html('4');
-			$('#sau_bon_bas_vol').html('9');
-			break;
-		case '15' :
-			$('#sau_bon_bas_ref').html('9');
-			$('#sau_bon_bas_vig').html('5');
-			$('#sau_bon_bas_vol').html('9');
-			break;
-		case '16' :
-			$('#sau_bon_bas_ref').html('10');
-			$('#sau_bon_bas_vig').html('5');
-			$('#sau_bon_bas_vol').html('10');
-			break;
-		case '17' :
-			$('#sau_bon_bas_ref').html('10');
-			$('#sau_bon_bas_vig').html('5');
-			$('#sau_bon_bas_vol').html('10');
-			break;
-		case '18' :
-			$('#sau_bon_bas_ref').html('11');
-			$('#sau_bon_bas_vig').html('6');
-			$('#sau_bon_bas_vol').html('11');
-			break;
-		case '19' :
-			$('#sau_bon_bas_ref').html('11');
-			$('#sau_bon_bas_vig').html('6');
-			$('#sau_bon_bas_vol').html('11');
-			break;
-		case '20' :
-			$('#sau_bon_bas_ref').html('12');
-			$('#sau_bon_bas_vig').html('6');
-			$('#sau_bon_bas_vol').html('12');
-			break;
-	}
-};
 
-function sauverCommePretre() {
-	switch(document.form.niveau.value) {
-		case '00' :
-			$('#sau_bon_bas_ref').html(' ');
-			$('#sau_bon_bas_vig').html(' ');
-			$('#sau_bon_bas_vol').html(' ');
-			break;
-		case '01' :
-			$('#sau_bon_bas_ref').html('0');
-			$('#sau_bon_bas_vig').html('2');
-			$('#sau_bon_bas_vol').html('2');
-			break;
-		case '02' :
-			$('#sau_bon_bas_ref').html('0');
-			$('#sau_bon_bas_vig').html('3');
-			$('#sau_bon_bas_vol').html('3');
-			break;
-		case '03' :
-			$('#sau_bon_bas_ref').html('1');
-			$('#sau_bon_bas_vig').html('3');
-			$('#sau_bon_bas_vol').html('3');
-			break;
-		case '04' :
-			$('#sau_bon_bas_ref').html('1');
-			$('#sau_bon_bas_vig').html('4');
-			$('#sau_bon_bas_vol').html('4');
-			break;
-		case '05' :
-			$('#sau_bon_bas_ref').html('1');
-			$('#sau_bon_bas_vig').html('4');
-			$('#sau_bon_bas_vol').html('4');
-			break;
-		case '06' :
-			$('#sau_bon_bas_ref').html('2');
-			$('#sau_bon_bas_vig').html('5');
-			$('#sau_bon_bas_vol').html('5');
-			break;
-		case '07' :
-			$('#sau_bon_bas_ref').html('2');
-			$('#sau_bon_bas_vig').html('5');
-			$('#sau_bon_bas_vol').html('5');
-			break;
-		case '08' :
-			$('#sau_bon_bas_ref').html('2');
-			$('#sau_bon_bas_vig').html('6');
-			$('#sau_bon_bas_vol').html('6');
-			break;
-		case '09' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('6');
-			$('#sau_bon_bas_vol').html('6');
-			break;
-		case '10' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('7');
-			$('#sau_bon_bas_vol').html('7');
-			break;
-		case '11' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('7');
-			$('#sau_bon_bas_vol').html('7');
-			break;
-		case '12' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('8');
-			$('#sau_bon_bas_vol').html('8');
-			break;
-		case '13' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('8');
-			$('#sau_bon_bas_vol').html('8');
-			break;
-		case '14' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('9');
-			$('#sau_bon_bas_vol').html('9');
-			break;
-		case '15' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('9');
-			$('#sau_bon_bas_vol').html('9');
-			break;
-		case '16' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('10');
-			$('#sau_bon_bas_vol').html('10');
-			break;
-		case '17' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('10');
-			$('#sau_bon_bas_vol').html('10');
-			break;
-		case '18' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('11');
-			$('#sau_bon_bas_vol').html('11');
-			break;
-		case '19' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('11');
-			$('#sau_bon_bas_vol').html('11');
-			break;
-		case '20' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('12');
-			$('#sau_bon_bas_vol').html('12');
-			break;
-	}
-};
 
-function sauverCommeMagicien() {
-	switch(document.form.niveau.value) {
-		case '00' :
-			$('#sau_bon_bas_ref').html(' ');
-			$('#sau_bon_bas_vig').html(' ');
-			$('#sau_bon_bas_vol').html(' ');
-			break;
-		case '01' :
-			$('#sau_bon_bas_ref').html('0');
-			$('#sau_bon_bas_vig').html('0');
-			$('#sau_bon_bas_vol').html('2');
-			break;
-		case '02' :
-			$('#sau_bon_bas_ref').html('0');
-			$('#sau_bon_bas_vig').html('0');
-			$('#sau_bon_bas_vol').html('3');
-			break;
-		case '03' :
-			$('#sau_bon_bas_ref').html('1');
-			$('#sau_bon_bas_vig').html('1');
-			$('#sau_bon_bas_vol').html('3');
-			break;
-		case '04' :
-			$('#sau_bon_bas_ref').html('1');
-			$('#sau_bon_bas_vig').html('1');
-			$('#sau_bon_bas_vol').html('4');
-			break;
-		case '05' :
-			$('#sau_bon_bas_ref').html('1');
-			$('#sau_bon_bas_vig').html('1');
-			$('#sau_bon_bas_vol').html('4');
-			break;
-		case '06' :
-			$('#sau_bon_bas_ref').html('2');
-			$('#sau_bon_bas_vig').html('2');
-			$('#sau_bon_bas_vol').html('5');
-			break;
-		case '07' :
-			$('#sau_bon_bas_ref').html('2');
-			$('#sau_bon_bas_vig').html('2');
-			$('#sau_bon_bas_vol').html('5');
-			break;
-		case '08' :
-			$('#sau_bon_bas_ref').html('2');
-			$('#sau_bon_bas_vig').html('2');
-			$('#sau_bon_bas_vol').html('6');
-			break;
-		case '09' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('3');
-			$('#sau_bon_bas_vol').html('6');
-			break;
-		case '10' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('3');
-			$('#sau_bon_bas_vol').html('7');
-			break;
-		case '11' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('3');
-			$('#sau_bon_bas_vol').html('7');
-			break;
-		case '12' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('4');
-			$('#sau_bon_bas_vol').html('8');
-			break;
-		case '13' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('4');
-			$('#sau_bon_bas_vol').html('8');
-			break;
-		case '14' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('4');
-			$('#sau_bon_bas_vol').html('9');
-			break;
-		case '15' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('5');
-			$('#sau_bon_bas_vol').html('9');
-			break;
-		case '16' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('5');
-			$('#sau_bon_bas_vol').html('10');
-			break;
-		case '17' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('5');
-			$('#sau_bon_bas_vol').html('10');
-			break;
-		case '18' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('6');
-			$('#sau_bon_bas_vol').html('11');
-			break;
-		case '19' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('6');
-			$('#sau_bon_bas_vol').html('11');
-			break;
-		case '20' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('6');
-			$('#sau_bon_bas_vol').html('12');
-			break;
-	}
-};
 
-function sauverCommeMoine() {
-	switch(document.form.niveau.value) {
-		case '00' :
-			$('#sau_bon_bas_ref').html(' ');
-			$('#sau_bon_bas_vig').html(' ');
-			$('#sau_bon_bas_vol').html(' ');
-			break;
-		case '01' :
-			$('#sau_bon_bas_ref').html('2');
-			$('#sau_bon_bas_vig').html('2');
-			$('#sau_bon_bas_vol').html('2');
-			break;
-		case '02' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('3');
-			$('#sau_bon_bas_vol').html('3');
-			break;
-		case '03' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('3');
-			$('#sau_bon_bas_vol').html('3');
-			break;
-		case '04' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('4');
-			$('#sau_bon_bas_vol').html('4');
-			break;
-		case '05' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('4');
-			$('#sau_bon_bas_vol').html('4');
-			break;
-		case '06' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('5');
-			$('#sau_bon_bas_vol').html('5');
-			break;
-		case '07' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('5');
-			$('#sau_bon_bas_vol').html('5');
-			break;
-		case '08' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('6');
-			$('#sau_bon_bas_vol').html('6');
-			break;
-		case '09' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('6');
-			$('#sau_bon_bas_vol').html('6');
-			break;
-		case '10' :
-			$('#sau_bon_bas_ref').html('7');
-			$('#sau_bon_bas_vig').html('7');
-			$('#sau_bon_bas_vol').html('7');
-			break;
-		case '11' :
-			$('#sau_bon_bas_ref').html('7');
-			$('#sau_bon_bas_vig').html('7');
-			$('#sau_bon_bas_vol').html('7');
-			break;
-		case '12' :
-			$('#sau_bon_bas_ref').html('8');
-			$('#sau_bon_bas_vig').html('8');
-			$('#sau_bon_bas_vol').html('8');
-			break;
-		case '13' :
-			$('#sau_bon_bas_ref').html('8');
-			$('#sau_bon_bas_vig').html('8');
-			$('#sau_bon_bas_vol').html('8');
-			break;
-		case '14' :
-			$('#sau_bon_bas_ref').html('9');
-			$('#sau_bon_bas_vig').html('9');
-			$('#sau_bon_bas_vol').html('9');
-			break;
-		case '15' :
-			$('#sau_bon_bas_ref').html('9');
-			$('#sau_bon_bas_vig').html('9');
-			$('#sau_bon_bas_vol').html('9');
-			break;
-		case '16' :
-			$('#sau_bon_bas_ref').html('10');
-			$('#sau_bon_bas_vig').html('10');
-			$('#sau_bon_bas_vol').html('10');
-			break;
-		case '17' :
-			$('#sau_bon_bas_ref').html('10');
-			$('#sau_bon_bas_vig').html('10');
-			$('#sau_bon_bas_vol').html('10');
-			break;
-		case '18' :
-			$('#sau_bon_bas_ref').html('11');
-			$('#sau_bon_bas_vig').html('11');
-			$('#sau_bon_bas_vol').html('11');
-			break;
-		case '19' :
-			$('#sau_bon_bas_ref').html('11');
-			$('#sau_bon_bas_vig').html('11');
-			$('#sau_bon_bas_vol').html('11');
-			break;
-		case '20' :
-			$('#sau_bon_bas_ref').html('12');
-			$('#sau_bon_bas_vig').html('12');
-			$('#sau_bon_bas_vol').html('12');
-			break;
-	}
-};
 
-function sauverCommeRodeur() {
-	switch(document.form.niveau.value) {
-		case '00' :
-			$('#sau_bon_bas_ref').html(' ');
-			$('#sau_bon_bas_vig').html(' ');
-			$('#sau_bon_bas_vol').html(' ');
-			break;
-		case '01' :
-			$('#sau_bon_bas_ref').html('2');
-			$('#sau_bon_bas_vig').html('2');
-			$('#sau_bon_bas_vol').html('0');
-			break;
-		case '02' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('3');
-			$('#sau_bon_bas_vol').html('0');
-			break;
-		case '03' :
-			$('#sau_bon_bas_ref').html('3');
-			$('#sau_bon_bas_vig').html('3');
-			$('#sau_bon_bas_vol').html('1');
-			break;
-		case '04' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('4');
-			$('#sau_bon_bas_vol').html('1');
-			break;
-		case '05' :
-			$('#sau_bon_bas_ref').html('4');
-			$('#sau_bon_bas_vig').html('4');
-			$('#sau_bon_bas_vol').html('1');
-			break;
-		case '06' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('5');
-			$('#sau_bon_bas_vol').html('2');
-			break;
-		case '07' :
-			$('#sau_bon_bas_ref').html('5');
-			$('#sau_bon_bas_vig').html('5');
-			$('#sau_bon_bas_vol').html('2');
-			break;
-		case '08' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('6');
-			$('#sau_bon_bas_vol').html('2');
-			break;
-		case '09' :
-			$('#sau_bon_bas_ref').html('6');
-			$('#sau_bon_bas_vig').html('6');
-			$('#sau_bon_bas_vol').html('3');
-			break;
-		case '10' :
-			$('#sau_bon_bas_ref').html('7');
-			$('#sau_bon_bas_vig').html('7');
-			$('#sau_bon_bas_vol').html('3');
-			break;
-		case '11' :
-			$('#sau_bon_bas_ref').html('7');
-			$('#sau_bon_bas_vig').html('7');
-			$('#sau_bon_bas_vol').html('3');
-			break;
-		case '12' :
-			$('#sau_bon_bas_ref').html('8');
-			$('#sau_bon_bas_vig').html('8');
-			$('#sau_bon_bas_vol').html('4');
-			break;
-		case '13' :
-			$('#sau_bon_bas_ref').html('8');
-			$('#sau_bon_bas_vig').html('8');
-			$('#sau_bon_bas_vol').html('4');
-			break;
-		case '14' :
-			$('#sau_bon_bas_ref').html('9');
-			$('#sau_bon_bas_vig').html('9');
-			$('#sau_bon_bas_vol').html('4');
-			break;
-		case '15' :
-			$('#sau_bon_bas_ref').html('9');
-			$('#sau_bon_bas_vig').html('9');
-			$('#sau_bon_bas_vol').html('5');
-			break;
-		case '16' :
-			$('#sau_bon_bas_ref').html('10');
-			$('#sau_bon_bas_vig').html('10');
-			$('#sau_bon_bas_vol').html('5');
-			break;
-		case '17' :
-			$('#sau_bon_bas_ref').html('10');
-			$('#sau_bon_bas_vig').html('10');
-			$('#sau_bon_bas_vol').html('5');
-			break;
-		case '18' :
-			$('#sau_bon_bas_ref').html('11');
-			$('#sau_bon_bas_vig').html('11');
-			$('#sau_bon_bas_vol').html('6');
-			break;
-		case '19' :
-			$('#sau_bon_bas_ref').html('11');
-			$('#sau_bon_bas_vig').html('11');
-			$('#sau_bon_bas_vol').html('6');
-			break;
-		case '20' :
-			$('#sau_bon_bas_ref').html('12');
-			$('#sau_bon_bas_vig').html('12');
-			$('#sau_bon_bas_vol').html('6');
-			break;
-	}
-};
 
 function influenceNiveau() {
 
@@ -2601,73 +2839,6 @@ function CalculePv(bonusParNiveau) {
 		return pvNiv;
 };
 
-function reductionDegats() {
-	switch(document.form.niveau.value) {
-		case '00' :
-			$('#red_deg').html('0');
-			break;
-		case '01' :
-			$('#red_deg').html('0');
-			break;
-		case '02' :
-			$('#red_deg').html('0');
-			break;
-		case '03' :
-			$('#red_deg').html('0');
-			break;
-		case '04' :
-			$('#red_deg').html('0');
-			break;
-		case '05' :
-			$('#red_deg').html('0');
-			break;
-		case '06' :
-			$('#red_deg').html('0');
-			break;
-		case '07' :
-			$('#red_deg').html('-1');
-			break;
-		case '08' :
-			$('#red_deg').html('-1');
-			break;
-		case '09' :
-			$('#red_deg').html('-1');
-			break;
-		case '10' :
-			$('#red_deg').html('-2');
-			break;
-		case '11' :
-			$('#red_deg').html('-2');
-			break;
-		case '12' :
-			$('#red_deg').html('-2');
-			break;
-		case '13' :
-			$('#red_deg').html('-3');
-			break;
-		case '14' :
-			$('#red_deg').html('-3');
-			break;
-		case '15' :
-			$('#red_deg').html('-3');
-			break;
-		case '16' :
-			$('#red_deg').html('-4');
-			break;
-		case '17' :
-			$('#red_deg').html('-4');
-			break;
-		case '18' :
-			$('#red_deg').html('-4');
-			break;
-		case '19' :
-			$('#red_deg').html('-5');
-			break;
-		case '20' :
-			$('#red_deg').html('-5');
-			break;
-		};
-}
 
 function calculeInit() {
 	var valeur = parseInt(document.form.dex_val.value);
@@ -2691,57 +2862,6 @@ function calculeInit() {
 }
 
 
-function calculeVigeur() {
-	/* si document.form.sau_bon_bas_vig.value n'est pas renseigné, 
-	il n'est pas un number
-	d'où son forçage à 0*/
-	if (isNaN(parseInt($('#sau_bon_bas_vig').html))) {
-		$('#sau_bon_bas_vig').html(0);
-	};
-
-	if (isNaN(parseInt($('#sau_mod_car_vig').html))) {
-		$('#sau_mod_car_vig').html(0);
-	};
-
-	if (isNaN(parseInt(document.form.mod_tem_vig.value))) {
-		document.form.mod_tem_vig.value = 0;
-	};
-
-	if (isNaN(parseInt(document.form.mod_part_vig.value))) {
-		document.form.mod_part_vig.value = 0;
-	};
-
-//	$('#sau_total_vig').html(parseInt($('#sau_bon_bas_vig').html)
-//														+ parseInt($('#sau_mod_car_vig').html)
-//														+ parseInt(document.form.mod_tem_vig.value)
-//														+ parseInt(document.form.mod_part_vig.value);
-}
-
-function calculeVolonte()  {
-	/* si document.form.sau_bon_bas_vol.value n'est pas renseigné, 
-	il n'est pas un number
-	d'où son forçage à 0*/
-	if (isNaN(parseInt($('#sau_bon_bas_vol').html))) {
-		$('#sau_bon_bas_vol').html(0);
-	};
-
-	if (isNaN(parseInt($('#sau_mod_car_vol').html))) {
-		$('#sau_mod_car_vol').html(0);
-	};
-
-	if (isNaN(parseInt(document.form.mod_tem_vol.value))) {
-		document.form.mod_tem_vol.value = 0;
-	};
-
-	if (isNaN(parseInt(document.form.mod_part_vol.value))) {
-		document.form.mod_part_vol.value = 0;
-	};
-
-//	$('#sau_total_vol').html(parseInt($('#sau_bon_bas_vol').html)
-//														+ parseInt($('#sau_mod_car_vol').html)
-//														+ parseInt(document.form.mod_tem_vol.value)
-//														+ parseInt(document.form.mod_part_vol.value);
-}
 
 function calculeCompetence(total,carac,maîtrise,divers) {
 //    document.getElementById(total).html
@@ -3500,574 +3620,504 @@ function choixProtection(protection,valeur) {
     $('#val_pri_depourvu').html(calculeCaPrisDepourvu());
 }
 
-function competenceClasseBarbare() {
-    if (document.form.niveau.value >= 1) {
-        $('#aptitudes_I').html('Déplacement accéléré.');
-        $('#aptitudes_II').html('Illetrisme.');
-        $('#aptitudes_III').html('Rage 1/jour.');
-    };
 
-    if (document.form.niveau.value >= 2) {
-        $('#aptitudes_IV').html('Esquive instinctive.');
+function capacitesSpecialesBarde() {
+    if (document.form.niveau.value >= 1) {
+        $('#capacites_speciales_I').html('Contre-chant.');
+        $('#capacites_speciales_II').html('Fascination.');
+        $('#capacites_speciales_III').html('Inspiration vaillante (+1).');
+        $('#capacites_speciales_IV').html('Musique de barde.');
+        $('#capacites_speciales_V').html('Savoir bardique.');
     };
 
     if (document.form.niveau.value >= 3) {
-        $('#aptitudes_V').html('Sens des pièges (+1).');
-    };
-
-    if (document.form.niveau.value >= 4) {
-        $('#aptitudes_III').html('Rage 2/jour.');
-    };
-
-    if (document.form.niveau.value >= 5) {
-        $('#aptitudes_IV').html('Esquive instinctive supérieure.');
+        $('#capacites_speciales_VI').html('Inspiration talentueuse.');
     };
 
     if (document.form.niveau.value >= 6) {
-        $('#aptitudes_V').html('Sens des pièges (+2).');
+        $('#capacites_speciales_VII').html('Suggestion.');
     };
 
     if (document.form.niveau.value >= 8) {
-        $('#aptitudes_III').html('Rage 3/jour.');
+        $('#capacites_speciales_III').html('Inspiration vaillante (+2).');
     };
 
     if (document.form.niveau.value >= 9) {
-        $('#aptitudes_V').html('Sens des pièges (+3).');
-    };
-
-    if (document.form.niveau.value >= 11) {
-        $('#aptitudes_VI').html('Rage de grand berseker.');
+        $('#capacites_speciales_VIII').html('Inspiration héroique.');
     };
 
     if (document.form.niveau.value >= 12) {
-        $('#aptitudes_III').html('Rage 4/jour.');
-        $('#aptitudes_V').html('Sens des pièges (+4).');
+        $('#capacites_speciales_IX').html('Chant de liberté.');
     };
 
     if (document.form.niveau.value >= 14) {
-        $('#aptitudes_VII').html('Volonté indomptable.');
+        $('#capacites_speciales_III').html('Inspiration vaillante (+3).');
     };
 
     if (document.form.niveau.value >= 15) {
-        $('#aptitudes_V').html('Sens des pièges (+5).');
-    };
-
-    if (document.form.niveau.value >= 16) {
-        $('#aptitudes_III').html('Rage 5/jour.');
-    };
-
-    if (document.form.niveau.value >= 17) {
-        $('#aptitudes_VI').html('Rage sans fatigue.');
+        $('#capacites_speciales_X').html('Inspiration intrépide.');
     };
 
     if (document.form.niveau.value >= 18) {
-        $('#aptitudes_V').html('Sens des pièges (+6).');
+        $('#capacites_speciales_XI').html('Suggestion de groupe');
     };
 
     if (document.form.niveau.value >= 20) {
-        $('#aptitudes_III').html('Rage 5/jour.');
-        $('#aptitudes_VI').html('Rage de maître berseker.');
+        $('#capacites_speciales_III').html('Inspiration vaillante (+4).');
     };
  };
 
-function competenceClasseBarde() {
+function capacitesSpecialesDruide() {
     if (document.form.niveau.value >= 1) {
-        $('#aptitudes_I').html('Contre-chant.');
-        $('#aptitudes_II').html('Fascination.');
-        $('#aptitudes_III').html('Inspiration vaillante (+1).');
-        $('#aptitudes_IV').html('Musique de barde.');
-        $('#aptitudes_V').html('Savoir bardique.');
-    };
-
-    if (document.form.niveau.value >= 3) {
-        $('#aptitudes_VI').html('Inspiration talentueuse.');
-    };
-
-    if (document.form.niveau.value >= 6) {
-        $('#aptitudes_VII').html('Suggestion.');
-    };
-
-    if (document.form.niveau.value >= 8) {
-        $('#aptitudes_III').html('Inspiration vaillante (+2).');
-    };
-
-    if (document.form.niveau.value >= 9) {
-        $('#aptitudes_VIII').html('Inspiration héroique.');
-    };
-
-    if (document.form.niveau.value >= 12) {
-        $('#aptitudes_IX').html('Chant de liberté.');
-    };
-
-    if (document.form.niveau.value >= 14) {
-        $('#aptitudes_III').html('Inspiration vaillante (+3).');
-    };
-
-    if (document.form.niveau.value >= 15) {
-        $('#aptitudes_X').html('Inspiration intrépide.');
-    };
-
-    if (document.form.niveau.value >= 18) {
-        $('#aptitudes_XI').html('Suggestion de groupe');
-    };
-
-    if (document.form.niveau.value >= 20) {
-        $('#aptitudes_III').html('Inspiration vaillante (+4).');
-    };
- };
-
-function competenceClasseDruide() {
-    if (document.form.niveau.value >= 1) {
-        $('#aptitudes_I').html('Compagnon animal.');
-        $('#aptitudes_II').html('Empathie sauvage.');
-        $('#aptitudes_III').html('Instinct naturel.');
+        $('#capacites_speciales_I').html('Compagnon animal.');
+        $('#capacites_speciales_II').html('Empathie sauvage.');
+        $('#capacites_speciales_III').html('Instinct naturel.');
     };
 
     if (document.form.niveau.value >= 2) {
-        $('#aptitudes_IV').html('Déplacement facilité.');
+        $('#capacites_speciales_IV').html('Déplacement facilité.');
     };
 
     if (document.form.niveau.value >= 3) {
-        $('#aptitudes_V').html('Absence de traces.');
+        $('#capacites_speciales_V').html('Absence de traces.');
     };
 
     if (document.form.niveau.value >= 4) {
-        $('#aptitudes_VI').html('Résistance à l\'appel de la nature.');
+        $('#capacites_speciales_VI').html('Résistance à l\'appel de la nature.');
     };
 
     if (document.form.niveau.value >= 5) {
-        $('#aptitudes_VII').html('Forme animale (1/jour).');
+        $('#capacites_speciales_VII').html('Forme animale (1/jour).');
     };
 
     if (document.form.niveau.value >= 6) {
-        $('#aptitudes_VII').html('Forme animale (2/jour).');
+        $('#capacites_speciales_VII').html('Forme animale (2/jour).');
     };
 
     if (document.form.niveau.value >= 7) {
-        $('#aptitudes_VII').html('Forme animale (3/jour).');
+        $('#capacites_speciales_VII').html('Forme animale (3/jour).');
     };
 
     if (document.form.niveau.value >= 8) {
-        $('#aptitudes_VIII').html('Forme animale (taille G).');
+        $('#capacites_speciales_VIII').html('Forme animale (taille G).');
     };
 
     if (document.form.niveau.value >= 9) {
-        $('#aptitudes_IX').html('Immunité contre le venin.');
+        $('#capacites_speciales_IX').html('Immunité contre le venin.');
     };
 
     if (document.form.niveau.value >= 10) {
-        $('#aptitudes_VII').html('Forme animale (4/jour).');
+        $('#capacites_speciales_VII').html('Forme animale (4/jour).');
     };
     
     if (document.form.niveau.value >= 11) {
-        $('#aptitudes_VIII').html('Forme animale (taille TP).');
+        $('#capacites_speciales_VIII').html('Forme animale (taille TP).');
     };
 
     if (document.form.niveau.value >= 12) {
-        $('#aptitudes_VIII').html('Forme animale (plante).');
+        $('#capacites_speciales_VIII').html('Forme animale (plante).');
     };
 
     if (document.form.niveau.value >= 13) {
-        $('#aptitudes_X').html('Mille visage.');
+        $('#capacites_speciales_X').html('Mille visage.');
     };
 
     if (document.form.niveau.value >= 14) {
-        $('#aptitudes_VII').html('Forme animale (5/jour).');
+        $('#capacites_speciales_VII').html('Forme animale (5/jour).');
     };
 
     if (document.form.niveau.value >= 15) {
-        $('#aptitudes_XI').html('Eternelle jeunesse.');
-        $('#aptitudes_VIII').html('Forme animale (taille TG).');
+        $('#capacites_speciales_XI').html('Eternelle jeunesse.');
+        $('#capacites_speciales_VIII').html('Forme animale (taille TG).');
     };
 
     if (document.form.niveau.value >= 16) {
-        $('#aptitudes_XII').html('Forme animale (élémentaire 1/jour).');
+        $('#capacites_speciales_XII').html('Forme animale (élémentaire 1/jour).');
     };
 
     if (document.form.niveau.value >= 18) {
-        $('#aptitudes_VII').html('Forme animale (6/jour).');
-        $('#aptitudes_XII').html('Forme animale (élémentaire 2/jour).');
+        $('#capacites_speciales_VII').html('Forme animale (6/jour).');
+        $('#capacites_speciales_XII').html('Forme animale (élémentaire 2/jour).');
     };
 
     if (document.form.niveau.value >= 20) {
-        $('#aptitudes_XII').html('Forme animale (élémentaire 2/jour).');
-        $('#aptitudes_XIII').html('Forme animale (élémentaire de taille TG).');
+        $('#capacites_speciales_XII').html('Forme animale (élémentaire 2/jour).');
+        $('#capacites_speciales_XIII').html('Forme animale (élémentaire de taille TG).');
     };
 };
 
-function competenceClasseEnsorceleur() {
+function capacitesSpecialesEnsorceleur() {
     if (document.form.niveau.value >= 1) {
-        $('#aptitudes_I').html('Appel de familier.');
+        $('#capacites_speciales_I').html('Appel de familier.');
     };
 };
 
- function competenceClasseGuerrier() {
+ function capacitesSpecialesGuerrier() {
     if (document.form.niveau.value >= 1) {
-        $('#aptitudes_I').html('+1 don supplémentaire.');
+        $('#capacites_speciales_I').html('+1 don supplémentaire.');
     };
 
     if (document.form.niveau.value >= 2) {
-        $('#aptitudes_I').html('+2 dons supplémentaires.');
+        $('#capacites_speciales_I').html('+2 dons supplémentaires.');
     };
 
     if (document.form.niveau.value >= 4) {
-        $('#aptitudes_I').html('+3 dons supplémentaires.');
+        $('#capacites_speciales_I').html('+3 dons supplémentaires.');
     };
 
     if (document.form.niveau.value >= 6) {
-        $('#aptitudes_I').html('+4 dons supplémentaires.');
+        $('#capacites_speciales_I').html('+4 dons supplémentaires.');
     };
 
     if (document.form.niveau.value >= 8) {
-        $('#aptitudes_I').html('+5 dons supplémentaires.');
+        $('#capacites_speciales_I').html('+5 dons supplémentaires.');
     };
 
     if (document.form.niveau.value >= 10) {
-        $('#aptitudes_I').html('+6 dons supplémentaires.');
+        $('#capacites_speciales_I').html('+6 dons supplémentaires.');
     };
     
     if (document.form.niveau.value >= 12) {
-        $('#aptitudes_I').html('+7 dons supplémentaires.');
+        $('#capacites_speciales_I').html('+7 dons supplémentaires.');
     };
 
     if (document.form.niveau.value >= 14) {
-        $('#aptitudes_I').html('+8 dons supplémentaires.');
+        $('#capacites_speciales_I').html('+8 dons supplémentaires.');
     };
 
     if (document.form.niveau.value >= 16) {
-        $('#aptitudes_I').html('+9 dons supplémentaires.');
+        $('#capacites_speciales_I').html('+9 dons supplémentaires.');
     };
 
     if (document.form.niveau.value >= 18) {
-        $('#aptitudes_I').html('+10 dons supplémentaires.');
+        $('#capacites_speciales_I').html('+10 dons supplémentaires.');
     };
 
     if (document.form.niveau.value >= 20) {
-        $('#aptitudes_I').html('+11 dons supplémentaires.');
+        $('#capacites_speciales_I').html('+11 dons supplémentaires.');
     };
  };
 
-function competenceClasseMagicien() {
+function capacitesSpecialesMagicien() {
     if (document.form.niveau.value >= 1) {
-        $('#aptitudes_I').html('Appel de familier.');
-        $('#aptitudes_II').html('Ecriture de parchemins.');
+        $('#capacites_speciales_I').html('Appel de familier.');
+        $('#capacites_speciales_II').html('Ecriture de parchemins.');
     };
 
     if (document.form.niveau.value >= 5) {
-        $('#aptitudes_III').html('+1 don supplémentaire.');
+        $('#capacites_speciales_III').html('+1 don supplémentaire.');
     };
 
     if (document.form.niveau.value >= 10) {
-        $('#aptitudes_III').html('+2 dons supplémentaires.');
+        $('#capacites_speciales_III').html('+2 dons supplémentaires.');
     };
 
     if (document.form.niveau.value >= 15) {
-        $('#aptitudes_III').html('+3 dons supplémentaires.');
+        $('#capacites_speciales_III').html('+3 dons supplémentaires.');
     };
 
     if (document.form.niveau.value >= 20) {
-        $('#aptitudes_III').html('+4 dons supplémentaires.');
+        $('#capacites_speciales_III').html('+4 dons supplémentaires.');
     };
  };
 
-function competenceClasseMoine() {
+function capacitesSpecialesMoine() {
     if (document.form.niveau.value >= 1) {
-        $('#aptitudes_I').html('Combat à mains nues.');
-        $('#aptitudes_II').html('Déluge de coup.');
-        $('#aptitudes_III').html('+1 don supplémentaire.');
+        $('#capacites_speciales_I').html('Combat à mains nues.');
+        $('#capacites_speciales_II').html('Déluge de coup.');
+        $('#capacites_speciales_III').html('+1 don supplémentaire.');
     };
 
     if (document.form.niveau.value >= 2) {
-        $('#aptitudes_III').html('+2 dons supplémentaires.');
-        $('#aptitudes_IV').html('Esquive totale.');
+        $('#capacites_speciales_III').html('+2 dons supplémentaires.');
+        $('#capacites_speciales_IV').html('Esquive totale.');
     };
 
     if (document.form.niveau.value >= 3) {
-        $('#aptitudes_V').html('Sérénité.');
+        $('#capacites_speciales_V').html('Sérénité.');
     };
 
     if (document.form.niveau.value >= 4) {
-        $('#aptitudes_VI').html('Frappe ki (magie).');
-        $('#aptitudes_VII').html('Chute ralentie (6m).');
+        $('#capacites_speciales_VI').html('Frappe ki (magie).');
+        $('#capacites_speciales_VII').html('Chute ralentie (6m).');
     };
 
     if (document.form.niveau.value >= 5) {
-        $('#aptitudes_VIII').html('Pureté physique.');
+        $('#capacites_speciales_VIII').html('Pureté physique.');
     };
 
     if (document.form.niveau.value >= 6) {
-        $('#aptitudes_III').html('+3 dons supplémentaires.');
-        $('#aptitudes_VII').html('Chute ralentie (9m).');
+        $('#capacites_speciales_III').html('+3 dons supplémentaires.');
+        $('#capacites_speciales_VII').html('Chute ralentie (9m).');
     };
 
     if (document.form.niveau.value >= 7) {
-        $('#aptitudes_IX').html('Plénitude physique.');
+        $('#capacites_speciales_IX').html('Plénitude physique.');
     };
 
     if (document.form.niveau.value >= 8) {
-        $('#aptitudes_VII').html('Chute ralentie (12m).');
+        $('#capacites_speciales_VII').html('Chute ralentie (12m).');
     };
 
     if (document.form.niveau.value >= 9) {
-        $('#aptitudes_X').html('Esquive extraordinaire.');
+        $('#capacites_speciales_X').html('Esquive extraordinaire.');
     };
 
     if (document.form.niveau.value >= 10) {
-        $('#aptitudes_VII').html('Chute ralentie (15m).');
-        $('#aptitudes_XI').html('Frappe ki (loi)');
+        $('#capacites_speciales_VII').html('Chute ralentie (15m).');
+        $('#capacites_speciales_XI').html('Frappe ki (loi)');
     };
 
     
     if (document.form.niveau.value >= 11) {
-        $('#aptitudes_XII').html('Corps de diamant.');
-        $('#aptitudes_XIII').html('Déluge supérieur.');
+        $('#capacites_speciales_XII').html('Corps de diamant.');
+        $('#capacites_speciales_XIII').html('Déluge supérieur.');
     };
 
     if (document.form.niveau.value >= 12) {
-        $('#aptitudes_VII').html('Chute ralentie (18m).');
-        $('#aptitudes_XIV').html('Pas chassé.');
+        $('#capacites_speciales_VII').html('Chute ralentie (18m).');
+        $('#capacites_speciales_XIV').html('Pas chassé.');
     };
 
     if (document.form.niveau.value >= 13) {
-        $('#aptitudes_XV').html('Ame de diamant.');
+        $('#capacites_speciales_XV').html('Ame de diamant.');
     };
 
     if (document.form.niveau.value >= 14) {
-        $('#aptitudes_VII').html('Chute ralentie (21m).');
+        $('#capacites_speciales_VII').html('Chute ralentie (21m).');
     };
 
     if (document.form.niveau.value >= 15) {
-        $('#aptitudes_XVI').html('Paume vibratoire.');
+        $('#capacites_speciales_XVI').html('Paume vibratoire.');
     };
 
     if (document.form.niveau.value >= 16) {
-        $('#aptitudes_VII').html('Chute ralentie (24m).');
-        $('#aptitudes_XVII').html('Frappe ki (adamantium).');
+        $('#capacites_speciales_VII').html('Chute ralentie (24m).');
+        $('#capacites_speciales_XVII').html('Frappe ki (adamantium).');
     };
 
     if (document.form.niveau.value >= 17) {
-        $('#aptitudes_XVIII').html('Eternelle jeunesse.');
-        $('#aptitudes_XIX').html('Langue du soleil et de la lune.');
+        $('#capacites_speciales_XVIII').html('Eternelle jeunesse.');
+        $('#capacites_speciales_XIX').html('Langue du soleil et de la lune.');
     };
 
     if (document.form.niveau.value >= 18) {
-        $('#aptitudes_VII').html('Chute ralentie (27m).');
+        $('#capacites_speciales_VII').html('Chute ralentie (27m).');
     };
 
     if (document.form.niveau.value >= 19) {
-        $('#aptitudes_XX').html('Désertion de l\'âme.');
+        $('#capacites_speciales_XX').html('Désertion de l\'âme.');
     };
 
     if (document.form.niveau.value >= 20) {
-        $('#aptitudes_VII').html('Chute ralentie (illimité).');
-        $('#aptitudes_XXI').html('Perfection de l\'être.');
+        $('#capacites_speciales_VII').html('Chute ralentie (illimité).');
     };
  };
 
-function competenceClassePaladin() {
+function capacitesSpecialesPaladin() {
     if (document.form.niveau.value >= 1) {
-        $('#aptitudes_I').html('Aura du Bien.');
-        $('#aptitudes_II').html('Châtiment du mal (1/jour).');
-        $('#aptitudes_III').html('Détection du mal.');
+        $('#capacites_speciales_I').html('Aura du Bien.');
+        $('#capacites_speciales_II').html('Châtiment du mal (1/jour).');
+        $('#capacites_speciales_III').html('Détection du mal.');
     };
 
     if (document.form.niveau.value >= 2) {
-        $('#aptitudes_IV').html('Grâce divine.');
-        $('#aptitudes_V').html('Imposition des mains.');
+        $('#capacites_speciales_IV').html('Grâce divine.');
+        $('#capacites_speciales_V').html('Imposition des mains.');
     };
 
     if (document.form.niveau.value >= 3) {
-        $('#aptitudes_VI').html('Aura de bravour.');
-        $('#aptitudes_VII').html('Santé divine.');
+        $('#capacites_speciales_VI').html('Aura de bravour.');
+        $('#capacites_speciales_VII').html('Santé divine.');
     };
 
     if (document.form.niveau.value >= 4) {
-        $('#aptitudes_IX').html('Renvoie des morts-vivants.');
+        $('#capacites_speciales_IX').html('Renvoie des morts-vivants.');
     };
 
     if (document.form.niveau.value >= 5) {
-        $('#aptitudes_II').html('Châtiment du mal (2/jour).');
-        $('#aptitudes_X').html('Destrier du paladin.');
+        $('#capacites_speciales_II').html('Châtiment du mal (2/jour).');
+        $('#capacites_speciales_X').html('Destrier du paladin.');
     };
 
     if (document.form.niveau.value >= 6) {
-        $('#aptitudes_XI').html('Guérison des maladies (1/semaine).');
+        $('#capacites_speciales_XI').html('Guérison des maladies (1/semaine).');
     };
 
     if (document.form.niveau.value >= 9) {
-        $('#aptitudes_XI').html('Guérison des maladies (2/semaine).');
+        $('#capacites_speciales_XI').html('Guérison des maladies (2/semaine).');
     };
 
     if (document.form.niveau.value >= 10) {
-        $('#aptitudes_II').html('Châtiment du mal (3/jour).');
+        $('#capacites_speciales_II').html('Châtiment du mal (3/jour).');
     };
 
     if (document.form.niveau.value >= 12) {
-        $('#aptitudes_XI').html('Guérison des maladies (3/semaine).');
+        $('#capacites_speciales_XI').html('Guérison des maladies (3/semaine).');
     };
 
     if (document.form.niveau.value >= 15) {
-        $('#aptitudes_II').html('Châtiment du mal (4/jour).');
-        $('#aptitudes_XI').html('Guérison des maladies (4/semaine).');
+        $('#capacites_speciales_II').html('Châtiment du mal (4/jour).');
+        $('#capacites_speciales_XI').html('Guérison des maladies (4/semaine).');
     };
 
     if (document.form.niveau.value >= 18) {
-        $('#aptitudes_XI').html('Guérison des maladies (5/semaine).');
+        $('#capacites_speciales_XI').html('Guérison des maladies (5/semaine).');
     };
 
     if (document.form.niveau.value >= 20) {
-        $('#aptitudes_II').html('Châtiment du mal (5/jour).');
+        $('#capacites_speciales_II').html('Châtiment du mal (5/jour).');
     };
  };
 
-function competenceClassePretre() {
+function capacitesSpecialesPretre() {
     if (document.form.niveau.value >= 1) {
-        $('#aptitudes_I').html('Renvoi ou intimidation des morts-vivants.');
+        $('#capacites_speciales_I').html('Renvoi ou intimidation des morts-vivants.');
     };
  };
 
-function competenceClasseRodeur() {
+function capacitesSpecialesRodeur() {
     if (document.form.niveau.value >= 1) {
-        $('#aptitudes_I').html('Empathie sauvage.');
-        $('#aptitudes_II').html('1er ennemie juré.');
-        $('#aptitudes_III').html('Pistage.');
+        $('#capacites_speciales_I').html('Empathie sauvage.');
+        $('#capacites_speciales_II').html('1er ennemie juré.');
+        $('#capacites_speciales_III').html('Pistage.');
     };
 
     if (document.form.niveau.value >= 2) {
-        $('#aptitudes_IV').html('Style de combat.');
+        $('#capacites_speciales_IV').html('Style de combat.');
     };
 
     if (document.form.niveau.value >= 3) {
-        $('#aptitudes_V').html('Endurance.');
+        $('#capacites_speciales_V').html('Endurance.');
     };
 
     if (document.form.niveau.value >= 4) {
-        $('#aptitudes_VI').html('Compagnon animal.');
+        $('#capacites_speciales_VI').html('Compagnon animal.');
     };
 
     if (document.form.niveau.value >= 5) {
-        $('#aptitudes_II').html('2ème ennemie juré.');
+        $('#capacites_speciales_II').html('2ème ennemie juré.');
     };
 
     if (document.form.niveau.value >= 6) {
-        $('#aptitudes_VII').html('Science du style de combat.');
+        $('#capacites_speciales_VII').html('Science du style de combat.');
     };
 
     if (document.form.niveau.value >= 7) {
-        $('#aptitudes_VIII').html('Déplacement facilité.');
+        $('#capacites_speciales_VIII').html('Déplacement facilité.');
     };
 
     if (document.form.niveau.value >= 8) {
-        $('#aptitudes_IX').html('Pistage accéléré.');
+        $('#capacites_speciales_IX').html('Pistage accéléré.');
     };
 
     if (document.form.niveau.value >= 9) {
-        $('#aptitudes_X').html('Esquive totale.');
+        $('#capacites_speciales_X').html('Esquive totale.');
     };
 
     if (document.form.niveau.value >= 10) {
-        $('#aptitudes_II').html('3ème ennemie juré.');
+        $('#capacites_speciales_II').html('3ème ennemie juré.');
     };
 
     
     if (document.form.niveau.value >= 11) {
-        $('#aptitudes_XI').html('Maîtrise du style de combat.');
+        $('#capacites_speciales_XI').html('Maîtrise du style de combat.');
     };
 
     if (document.form.niveau.value >= 13) {
-        $('#aptitudes_XII').html('Camouflage.');
+        $('#capacites_speciales_XII').html('Camouflage.');
     };
 
     if (document.form.niveau.value >= 15) {
-        $('#aptitudes_II').html('4ème ennemie juré.');
+        $('#capacites_speciales_II').html('4ème ennemie juré.');
     };
 
     if (document.form.niveau.value >= 17) {
-        $('#aptitudes_XIII').html('Discrétion totale.');
+        $('#capacites_speciales_XIII').html('Discrétion totale.');
     };
 
     if (document.form.niveau.value >= 20) {
-        $('#aptitudes_II').html('5ème ennemie juré.');
+        $('#capacites_speciales_II').html('5ème ennemie juré.');
     };
  };
 
-function competenceClasseRoublard() {
+function capacitesSpecialesRoublard() {
     if (document.form.niveau.value >= 1) {
-        $('#aptitudes_I').html('Attaque sournoise (+1D6).');
-        $('#aptitudes_II').html('Recherche des pièges.');
+        $('#capacites_speciales_I').html('Attaque sournoise (+1D6).');
+        $('#capacites_speciales_II').html('Recherche des pièges.');
     };
 
     if (document.form.niveau.value >= 2) {
-        $('#aptitudes_III').html('Esquive totale.');
+        $('#capacites_speciales_III').html('Esquive totale.');
     };
 
     if (document.form.niveau.value >= 3) {
-        $('#aptitudes_I').html('Attaque sournoise (+2D6).');
-        $('#aptitudes_IV').html('Sens des pièges (+1).');
+        $('#capacites_speciales_I').html('Attaque sournoise (+2D6).');
+        $('#capacites_speciales_IV').html('Sens des pièges (+1).');
     };
 
     if (document.form.niveau.value >= 4) {
-        $('#aptitudes_V').html('Esquive instinctive.');
+        $('#capacites_speciales_V').html('Esquive instinctive.');
     };
 
     if (document.form.niveau.value >= 5) {
-        $('#aptitudes_I').html('Attaque sournoise (+3D6).');
+        $('#capacites_speciales_I').html('Attaque sournoise (+3D6).');
     };
 
     if (document.form.niveau.value >= 6) {
-        $('#aptitudes_IV').html('Sens des pièges (+2).');
+        $('#capacites_speciales_IV').html('Sens des pièges (+2).');
     };
 
     if (document.form.niveau.value >= 7) {
-        $('#aptitudes_I').html('Attaque sournoise (+4D6).');
+        $('#capacites_speciales_I').html('Attaque sournoise (+4D6).');
     };
 
     if (document.form.niveau.value >= 8) {
-        $('#aptitudes_VI').html('Esquive instinctive supérieure.');
+        $('#capacites_speciales_VI').html('Esquive instinctive supérieure.');
     };
 
     if (document.form.niveau.value >= 9) {
-        $('#aptitudes_I').html('Attaque sournoise (+5D6).');
-        $('#aptitudes_IV').html('Sens des pièges (+3).');
+        $('#capacites_speciales_I').html('Attaque sournoise (+5D6).');
+        $('#capacites_speciales_IV').html('Sens des pièges (+3).');
     };
 
     if (document.form.niveau.value >= 10) {
-        $('#aptitudes_VII').html('1 pouvoir spéciale.');
+        $('#capacites_speciales_VII').html('1 pouvoir spéciale.');
     };
 
     if (document.form.niveau.value >= 11) {
-        $('#aptitudes_I').html('Attaque sournoise (+6D6).');
+        $('#capacites_speciales_I').html('Attaque sournoise (+6D6).');
     };
 
     if (document.form.niveau.value >= 12) {
-        $('#aptitudes_IV').html('Sens des pièges (+4).');
+        $('#capacites_speciales_IV').html('Sens des pièges (+4).');
     };
 
     if (document.form.niveau.value >= 13) {
-        $('#aptitudes_I').html('Attaque sournoise (+7D6).');
-        $('#aptitudes_VII').html('2 pouvoir spéciale.');
+        $('#capacites_speciales_I').html('Attaque sournoise (+7D6).');
+        $('#capacites_speciales_VII').html('2 pouvoir spéciale.');
     };
 
     if (document.form.niveau.value >= 15) {
-        $('#aptitudes_I').html('Attaque sournoise (+8D6).');
-        $('#aptitudes_IV').html('Sens des pièges (+5).');
+        $('#capacites_speciales_I').html('Attaque sournoise (+8D6).');
+        $('#capacites_speciales_IV').html('Sens des pièges (+5).');
     };
 
     if (document.form.niveau.value >= 16) {
-        $('#aptitudes_VII').html('3 pouvoir spéciale.');
+        $('#capacites_speciales_VII').html('3 pouvoir spéciale.');
     };
 
     if (document.form.niveau.value >= 17) {
-        $('#aptitudes_I').html('Attaque sournoise (+9D6).');
+        $('#capacites_speciales_I').html('Attaque sournoise (+9D6).');
     };
 
     if (document.form.niveau.value >= 18) {
-        $('#aptitudes_IV').html('Sens des pièges (+6).');
+        $('#capacites_speciales_IV').html('Sens des pièges (+6).');
     };
 
     if (document.form.niveau.value >= 19) {
-        $('#aptitudes_I').html('Attaque sournoise (+10D6).');
-        $('#aptitudes_VII').html('4 pouvoir spéciale.');
+        $('#capacites_speciales_I').html('Attaque sournoise (+10D6).');
+        $('#capacites_speciales_VII').html('4 pouvoir spéciale.');
     };
  };
 
@@ -4269,27 +4319,26 @@ function reinitialisation() {
     $('#malus_aux_tests_protection_I').html('');
     $('#ca_mod_div').html('');
 
-    $('#aptitudes_I').html('_');
-    $('#aptitudes_II').html('_');
-    $('#aptitudes_III').html('_');
-    $('#aptitudes_IV').html('_');
-    $('#aptitudes_V').html('_');
-    $('#aptitudes_VI').html('_');
-    $('#aptitudes_VII').html('_');
-    $('#aptitudes_VIII').html('_');
-    $('#aptitudes_IX').html('_');
-    $('#aptitudes_X').html('_');
-    $('#aptitudes_XI').html('_');
-    $('#aptitudes_XII').html('_');
-    $('#aptitudes_XIII').html('_');
-    $('#aptitudes_XIV').html('_');
-    $('#aptitudes_XV').html('_');
-    $('#aptitudes_XVI').html('_');
-    $('#aptitudes_XVII').html('_');
-    $('#aptitudes_XVIII').html('_');
-    $('#aptitudes_XIX').html('_');
-    $('#aptitudes_XX').html('_');
-    $('#aptitudes_XXI').html('_');
+    $('#capacites_speciales_I').html('_');
+    $('#capacites_speciales_II').html('_');
+    $('#capacites_speciales_III').html('_');
+    $('#capacites_speciales_IV').html('_');
+    $('#capacites_speciales_V').html('_');
+    $('#capacites_speciales_VI').html('_');
+    $('#capacites_speciales_VII').html('_');
+    $('#capacites_speciales_VIII').html('_');
+    $('#capacites_speciales_IX').html('_');
+    $('#capacites_speciales_X').html('_');
+    $('#capacites_speciales_XI').html('_');
+    $('#capacites_speciales_XII').html('_');
+    $('#capacites_speciales_XIII').html('_');
+    $('#capacites_speciales_XIV').html('_');
+    $('#capacites_speciales_XV').html('_');
+    $('#capacites_speciales_XVI').html('_');
+    $('#capacites_speciales_XVII').html('_');
+    $('#capacites_speciales_XVIII').html('_');
+    $('#capacites_speciales_XIX').html('_');
+    $('#capacites_speciales_XX').html('_');
 
     $('#maniement_arme_I').length = 0;  
     $('#maniement_arme_II').length = 0;  

@@ -50,16 +50,18 @@ $(function() {
 	$('#rang_artisanat_III').css('background','#B0F2B6');
 	$('#rang_artdelamagie').css('background','#B0F2B6');
 	$('#rang_bluff').css('background','#B0F2B6');
-	$('#rang_connaissances_I').css('background','#B0F2B6');
-	$('#rang_connaissances_II').css('background','#B0F2B6');
-	$('#rang_connaissances_III').css('background','#B0F2B6');
-	$('#rang_connaissances_IV').css('background','#B0F2B6');
-	$('#rang_connaissances_V').css('background','#B0F2B6');
-	$('#rang_connaissances_VI').css('background','#B0F2B6');
-	$('#rang_connaissances_VII').css('background','#B0F2B6');
-	$('#rang_connaissances_VIII').css('background','#B0F2B6');
-	$('#rang_connaissances_IX').css('background','#B0F2B6');
-	$('#rang_connaissances_X').css('background','#B0F2B6');
+
+	$('#rang_Connaissances_exploration').css('background','#B0F2B6');
+	$('#rang_Connaissances_Folklore_Locale').css('background','#B0F2B6');
+	$('#rang_Connaissances_Geographie').css('background','#B0F2B6');
+	$('#rang_Connaissances_Histoire').css('background','#B0F2B6');
+	$('#rang_Connaissances_Ingénieurie').css('background','#B0F2B6');
+	$('#rang_Connaissances_Mystères').css('background','#B0F2B6');
+	$('#rang_Connaissances_Nature').css('background','#B0F2B6');
+	$('#rang_Connaissances_Noblesse').css('background','#B0F2B6');
+	$('#rang_Connaissances_Plan').css('background','#B0F2B6');
+	$('#rang_Connaissances_Religion').css('background','#B0F2B6');
+
 	$('#rang_deguisement').css('background','#B0F2B6');
 	$('#rang_diplomatie').css('background','#B0F2B6');
 	$('#rang_discretion').css('background','#B0F2B6');
