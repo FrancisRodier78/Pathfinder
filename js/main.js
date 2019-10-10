@@ -70,7 +70,7 @@ $(function() {
     };
 
     function toucherCommePretre() {
-        switch(document.form.niveau.value) {
+        switch($('#niveau').val()) {
             case '00' :
                 $('#bba').html(' ');
                 break;
@@ -138,7 +138,7 @@ $(function() {
     };
 
     function toucherCommeMagicien() {
-        switch(document.form.niveau.value) {
+        switch($('#niveau').val()) {
             case '00' :
                 $('#bba').html(' ');
                 break;
@@ -1047,90 +1047,405 @@ $(function() {
             $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#RAGEDEBERSERKER">Rage de berserker.</a>');
         };
 
-        if (document.form.niveau.value >= 2) {
+        if ($('#niveau').val() >= 2) {
             $('#capacites_speciales_III').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
             $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#ESQUIVEINSTINCTIVE">Esquive instinctive.</a>');
         };
 
-        if (document.form.niveau.value >= 3) {
+        if ($('#niveau').val() >= 3) {
             $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#SENSDESPIEGES">Sens des pièges +1.</a>');
         };
 
-        if (document.form.niveau.value >= 4) {
+        if ($('#niveau').val() >= 4) {
             $('#capacites_speciales_VI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
         };
 
-        if (document.form.niveau.value >= 5) {
+        if ($('#niveau').val() >= 5) {
             $('#capacites_speciales_VII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#ESQUIVEINSTINCTIVESUPERIEURE">Esquive instinctive supérieure.</a>');
         };
 
-        if (document.form.niveau.value >= 6) {
+        if ($('#niveau').val() >= 6) {
             $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
             $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#SENSDESPIEGES">Sens des pièges +2.</a>');
         };
 
-        if (document.form.niveau.value >= 7) {
+        if ($('#niveau').val() >= 7) {
             $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#REDUCTIONDEGATS">réduction de dégâts 1/-.</a>');
         };
 
-        if (document.form.niveau.value >= 8) {
+        if ($('#niveau').val() >= 8) {
             $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
         };
 
-        if (document.form.niveau.value >= 9) {
+        if ($('#niveau').val() >= 9) {
             $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#SENSDESPIEGES">Sens des pièges +3.</a>');
         };
 
-        if (document.form.niveau.value >= 10) {
+        if ($('#niveau').val() >= 10) {
             $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#REDUCTIONDEGATS">réduction de dégâts 2/-.</a>');
             $('#capacites_speciales_XI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
         };
 
-        if (document.form.niveau.value >= 11) {
+        if ($('#niveau').val() >= 11) {
             $('#capacites_speciales_XII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#RAGEDEGRANDBERSERKER">Rage de grand berserker.</a>');
         };
 
-        if (document.form.niveau.value >= 12) {
+        if ($('#niveau').val() >= 12) {
             $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
             $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#SENSDESPIEGES">Sens des pièges +4.</a>');
         };
 
-        if (document.form.niveau.value >= 13) {
+        if ($('#niveau').val() >= 13) {
             $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#REDUCTIONDEGATS">réduction de dégâts 3/-.</a>');
         };
 
-        if (document.form.niveau.value >= 14) {
+        if ($('#niveau').val() >= 14) {
             $('#capacites_speciales_XIV').html('<a target="_blank" href="">Volonté indomptable.</a>');
             $('#capacites_speciales_XV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
         };
 
-        if (document.form.niveau.value >= 15) {
+        if ($('#niveau').val() >= 15) {
             $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#SENSDESPIEGES">Sens des pièges +5.</a>');
         };
 
-        if (document.form.niveau.value >= 16) {
+        if ($('#niveau').val() >= 16) {
             $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#REDUCTIONDEGATS">réduction de dégâts 4/-.</a>');
             $('#capacites_speciales_XVI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage..</a>');
         };
 
-        if (document.form.niveau.value >= 17) {
+        if ($('#niveau').val() >= 17) {
             $('#capacites_speciales_XVII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#RAGESANSFATIGUE">Rage sans fatigue.</a>');
         };
 
-        if (document.form.niveau.value >= 18) {
+        if ($('#niveau').val() >= 18) {
             $('#capacites_speciales_XVIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
             $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#SENSDESPIEGES">Sens des pièges +6.</a>');
         };
 
-        if (document.form.niveau.value >= 19) {
+        if ($('#niveau').val() >= 19) {
             $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#REDUCTIONDEGATS">réduction de dégâts 5/-.</a>');
         };
 
-        if (document.form.niveau.value >= 20) {
+        if ($('#niveau').val() >= 20) {
             $('#capacites_speciales_XIX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#RAGEDEMAITREBERSERKER">Rage de maître berserker.</a>');
             $('#capacites_speciales_XX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
         };
      };
+
+    function capacitesSpecialesBarde() {
+            $('#lab_ref').css('background','#ffffff');
+        if ($('#niveau').val() >= 1) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#SAVOIRBARDIQUE">Savoir bardique.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#REPRESENTATIONBARDIQUE">Représentation bardique.</a>.');
+            $('#capacites_speciales_III').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#TOURSDEMAGIE">Tours de magie.</a>.');
+            $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#CONTRE-CHANT">Contre-chant.</a>.');
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#DISTRACTION">Distraction.</a>.');
+            $('#capacites_speciales_VI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#FASCINATION">Fascination.</a>');
+            $('#capacites_speciales_VII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONVAILLANTE">Inspiration vaillante +1.</a>');
+
+            $('#sorts_jour_0').html('1');
+            $('#sorts_jour_I').html('-');
+            $('#sorts_jour_II').html('-');
+            $('#sorts_jour_III').html('-');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 2) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#VERSATILITEARTISTIQUE">Versatilité artistique.</a>');
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#ERUDITION">Erudition.</a>');
+
+            $('#sorts_jour_0').html('2');
+            $('#sorts_jour_I').html('-');
+            $('#sorts_jour_II').html('-');
+            $('#sorts_jour_III').html('-');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 3) {
+            $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONTALENTUEUSE">Inspiration talentueuse +2.</a>');
+
+            $('#sorts_jour_0').html('3');
+            $('#sorts_jour_I').html('-');
+            $('#sorts_jour_II').html('-');
+            $('#sorts_jour_III').html('-');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 4) {
+            $('#sorts_jour_0').html('3');
+            $('#sorts_jour_I').html('1');
+            $('#sorts_jour_II').html('-');
+            $('#sorts_jour_III').html('-');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 5) {
+            $('#capacites_speciales_VII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONVAILLANTE">Inspiration vaillante +2.</a>');
+            $('#capacites_speciales_XI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#MAITREDUSAVOIR">Maître du savoir 1/jour.</a>');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('2');
+            $('#sorts_jour_II').html('-');
+            $('#sorts_jour_III').html('-');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 6) {
+            $('#capacites_speciales_XII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#SUGGESTION">Suggestion.</a>');
+            $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#VERSATILITEARTISTIQUE">Versatilité artistique.</a>');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('3');
+            $('#sorts_jour_II').html('-');
+            $('#sorts_jour_III').html('-');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 7) {
+            $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONTALENTUEUSE">Inspiration talentueuse +3.</a>');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('3');
+            $('#sorts_jour_II').html('1');
+            $('#sorts_jour_III').html('-');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 8) {
+            $('#capacites_speciales_XIV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#CHANTFUNESTE">Chant funeste.</a>');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('2');
+            $('#sorts_jour_III').html('-');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 9) {
+            $('#capacites_speciales_XV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONGLORIEUSE">Inspiration glorieuse.</a>');
+
+            $('#sorts_jour_0').html('5');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('3');
+            $('#sorts_jour_III').html('-');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 10) {
+            $('#capacites_speciales_XVI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#TOUCHE-A-TOUT">Touche-à-tout.</a>');
+            $('#capacites_speciales_XVII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#VERSATILITEARTISTIQUE">Versatilité artistique.</a>');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('3');
+            $('#sorts_jour_II').html('1');
+            $('#sorts_jour_III').html('-');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 11) {
+            $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONTALENTUEUSE">Inspiration talentueuse +4.</a>');
+            $('#capacites_speciales_VII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONVAILLANTE">Inspiration vaillante +3.</a>');
+            $('#capacites_speciales_XI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#MAITREDUSAVOIR">Maître du savoir 2/jour.</a>');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('2');
+            $('#sorts_jour_III').html('-');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 12) {
+            $('#capacites_speciales_XVIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#REPRESENTATIONAPAISANTE">Représentation apaisante.</a>');
+
+            $('#sorts_jour_0').html('5');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('3');
+            $('#sorts_jour_III').html('-');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 13) {
+            $('#sorts_jour_0').html('5');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('3');
+            $('#sorts_jour_III').html('1');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 14) {
+            $('#capacites_speciales_XIX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#MELODIEEFFRAYANTE">Mélodie effrayante.</a>');
+            $('#capacites_speciales_XX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#VERSATILITEARTISTIQUE">Versatilité artistique.</a>');
+
+            $('#sorts_jour_0').html('5');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('4');
+            $('#sorts_jour_III').html('2');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 15) {
+            $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONTALENTUEUSE">Inspiration talentueuse +5.</a>');
+            $('#capacites_speciales_XXI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONHEROIQUE">Inspiration héroïque.</a>');
+
+            $('#sorts_jour_0').html('5');
+            $('#sorts_jour_I').html('5');
+            $('#sorts_jour_II').html('4');
+            $('#sorts_jour_III').html('3');
+            $('#sorts_jour_IV').html('-');
+            $('#sorts_jour_V').html('-');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 16) {
+            $('#sorts_jour_0').html('5');
+            $('#sorts_jour_I').html('5');
+            $('#sorts_jour_II').html('5');
+            $('#sorts_jour_III').html('4');
+            $('#sorts_jour_IV').html('3');
+            $('#sorts_jour_V').html('1');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 17) {
+            $('#capacites_speciales_VII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONVAILLANTE">Inspiration vaillante +4.</a>');
+            $('#capacites_speciales_XI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#MAITREDUSAVOIR">Maître du savoir 3/jour.</a>');
+
+            $('#sorts_jour_0').html('5');
+            $('#sorts_jour_I').html('5');
+            $('#sorts_jour_II').html('5');
+            $('#sorts_jour_III').html('4');
+            $('#sorts_jour_IV').html('4');
+            $('#sorts_jour_V').html('2');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 18) {
+            $('#capacites_speciales_XXII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#SUGGESTIONDEGROUPE">Suggestion de groupe.</a>');
+            $('#capacites_speciales_XXIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#VERSATILITEARTISTIQUE">Versatilité artistique.</a>');
+
+            $('#sorts_jour_0').html('5');
+            $('#sorts_jour_I').html('5');
+            $('#sorts_jour_II').html('5');
+            $('#sorts_jour_III').html('5');
+            $('#sorts_jour_IV').html('4');
+            $('#sorts_jour_V').html('3');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 19) {
+            $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONTALENTUEUSE">Inspiration talentueuse +6.</a>');
+
+            $('#sorts_jour_0').html('5');
+            $('#sorts_jour_I').html('5');
+            $('#sorts_jour_II').html('5');
+            $('#sorts_jour_III').html('5');
+            $('#sorts_jour_IV').html('5');
+            $('#sorts_jour_V').html('4');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+
+        if ($('#niveau').val() >= 20) {
+            $('#capacites_speciales_XXIV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#REPRESENTATIONMORTELLE">Représentation mortelle.</a>');
+
+            $('#sorts_jour_0').html('5');
+            $('#sorts_jour_I').html('5');
+            $('#sorts_jour_II').html('5');
+            $('#sorts_jour_III').html('5');
+            $('#sorts_jour_IV').html('5');
+            $('#sorts_jour_V').html('5');
+            $('#sorts_jour_VI').html('-');
+            $('#sorts_jour_VII').html('-');
+            $('#sorts_jour_VIII').html('-');
+            $('#sorts_jour_IX').html('-');
+        };
+     };
+
+//          $('#capacites_speciales_I').html('<a target="_blank" href="">.</a>');
 
     $('#niveau').change(function() {
         switch($('#classe').val()) {
@@ -1142,7 +1457,6 @@ $(function() {
                 $('#lut_bon_bas_att').html('0');
                 break;
             case 'Barbare' :
-//            $('#lab_ref').css('background','#ffffff');
                 toucherCommeGuerrier();
                 sauverCommeGuerrier();
                 reductionDegats();
@@ -1430,7 +1744,7 @@ function influenceNiveau() {
     limitationOption('survie',document.form.survie_maîtrise,competenceDeClasse);
     limitationOption('utilisation_d_objets_magiques',document.form.utilisation_d_objets_magiques_maîtrise,competenceDeClasse);
 
-    affichagePointsExperience(document.form.niveau.value);
+    affichagePointsExperience($('#niveau').val());
 };
 
 function limitationOption(competenceI,competenceII,competenceDeClasse) {
@@ -2202,7 +2516,7 @@ function  calculeSorts(valeur) {
     $('#dd_des_sorts_VIII').html(10 + 8 + parseInt(valeur));
     $('#dd_des_sorts_IX').html(10 + 9 + parseInt(valeur));
 
-    switch(document.form.niveau.value) {
+    switch($('#niveau').val()) {
         case '01' :
             $('#sorts_jour_0').html(3);
             $('#sorts_jour_I').html(1);
@@ -2761,77 +3075,77 @@ function CalculePv(bonusParNiveau) {
 			/* Calcule premier niveau */
 			pvBase = 12 + parseInt(bonusParNiveau);
 			/* Calcule niveau suivant */
-			niveau = parseInt(document.form.niveau.value) - 1;
+			niveau = parseInt($('#niveau').val()) - 1;
 			pvNiv = pvBase + Math.round(niveau * (6.5 + parseInt(bonusParNiveau)));
 			break;
 		case 'Barde' :
 			/* Calcule premier niveau */
 			pvBase = 6 + parseInt(bonusParNiveau);
 			/* Calcule niveau suivant */
-			niveau = parseInt(document.form.niveau.value) - 1;
+			niveau = parseInt($('#niveau').val()) - 1;
 			pvNiv = pvBase + Math.round(niveau * (3.5 + parseInt(bonusParNiveau)));
 			break;
 		case 'Druide' :
 			/* Calcule premier niveau */
 			pvBase = 8 + parseInt(bonusParNiveau);
 			/* Calcule niveau suivant */
-			niveau = parseInt(document.form.niveau.value) - 1;
+			niveau = parseInt($('#niveau').val()) - 1;
 			pvNiv = pvBase + Math.round(niveau * (4.5 + parseInt(bonusParNiveau)));
 			break;
 		case 'Ensorceleur' :
 			/* Calcule premier niveau */
 			pvBase = 4 + parseInt(bonusParNiveau);
 			/* Calcule niveau suivant */
-			niveau = parseInt(document.form.niveau.value) - 1;
+			niveau = parseInt($('#niveau').val()) - 1;
 			pvNiv = pvBase + Math.round(niveau * (2.5 + parseInt(bonusParNiveau)));
 			break;
 		case 'Guerrier' :
 			/* Calcule premier niveau */
 			pvBase = 10 + parseInt(bonusParNiveau);
 			/* Calcule niveau suivant */
-			niveau = parseInt(document.form.niveau.value) - 1;
+			niveau = parseInt($('#niveau').val()) - 1;
 			pvNiv = pvBase + Math.round(niveau * (5.5 + parseInt(bonusParNiveau)));
 			break;
 		case 'Magicien' :
 			/* Calcule premier niveau */
 			pvBase = 4 + parseInt(bonusParNiveau);
 			/* Calcule niveau suivant */
-			niveau = parseInt(document.form.niveau.value) - 1;
+			niveau = parseInt($('#niveau').val()) - 1;
 			pvNiv = pvBase + Math.round(niveau * (2.5 + parseInt(bonusParNiveau)));
 			break;
 		case 'Moine' :
 			/* Calcule premier niveau */
 			pvBase = 8 + parseInt(bonusParNiveau);
 			/* Calcule niveau suivant */
-			niveau = parseInt(document.form.niveau.value) - 1;
+			niveau = parseInt($('#niveau').val()) - 1;
 			pvNiv = pvBase + Math.round(niveau * (4.5 + parseInt(bonusParNiveau)));
 			break;
 		case 'Paladin' :
 			/* Calcule premier niveau */
 			pvBase = 10 + parseInt(bonusParNiveau);
 			/* Calcule niveau suivant */
-			niveau = parseInt(document.form.niveau.value) - 1;
+			niveau = parseInt($('#niveau').val()) - 1;
 			pvNiv = pvBase + Math.round(niveau * (5.5 + parseInt(bonusParNiveau)));
 			break;
 		case 'Prêtre' :
 			/* Calcule premier niveau */
 			pvBase = 8 + parseInt(bonusParNiveau);
 			/* Calcule niveau suivant */
-			niveau = parseInt(document.form.niveau.value) - 1;
+			niveau = parseInt($('#niveau').val()) - 1;
 			pvNiv = pvBase + Math.round(niveau * (4.5 + parseInt(bonusParNiveau)));
 			break;
 		case 'Rôdeur' :
 			/* Calcule premier niveau */
 			pvBase = 8 + parseInt(bonusParNiveau);
 			/* Calcule niveau suivant */
-			niveau = parseInt(document.form.niveau.value) - 1;
+			niveau = parseInt($('#niveau').val()) - 1;
 			pvNiv = pvBase + Math.round(niveau * (4.5 + parseInt(bonusParNiveau)));
 			break;
 		case 'Roublard' :
 			/* Calcule premier niveau */
 			pvBase = 6 + parseInt(bonusParNiveau);
 			/* Calcule niveau suivant */
-			niveau = parseInt(document.form.niveau.value) - 1;
+			niveau = parseInt($('#niveau').val()) - 1;
 			pvNiv = pvBase + Math.round(niveau * (3.5 + parseInt(bonusParNiveau)));
 			break;
 		}
@@ -2913,58 +3227,58 @@ function calculeSommeCompetences() {
         case ' ' :
             break;
         case 'Barbare' :
-            nombreAutorisé = (4 + parseInt($('#int_mod').html)) * (parseInt(document.form.niveau.value) + 3);
-            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt(document.form.niveau.value) + 3};
+            nombreAutorisé = (4 + parseInt($('#int_mod').html)) * (parseInt($('#niveau').val()) + 3);
+            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt($('#niveau').val()) + 3};
             testCalculeSommeCompetencesII(total,nombreAutorisé);
             break;
         case 'Barde' :
-            nombreAutorisé = (6 + parseInt($('#int_mod').html)) * (parseInt(document.form.niveau.value) + 3);
-            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt(document.form.niveau.value) + 3};
+            nombreAutorisé = (6 + parseInt($('#int_mod').html)) * (parseInt($('#niveau').val()) + 3);
+            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt($('#niveau').val()) + 3};
             testCalculeSommeCompetencesII(total,nombreAutorisé);
             break;
         case 'Druide' :
-            nombreAutorisé = (4 + parseInt($('#int_mod').html)) * (parseInt(document.form.niveau.value) + 3);
-            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt(document.form.niveau.value) + 3};
+            nombreAutorisé = (4 + parseInt($('#int_mod').html)) * (parseInt($('#niveau').val()) + 3);
+            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt($('#niveau').val()) + 3};
             testCalculeSommeCompetencesII(total,nombreAutorisé);
             break;
         case 'Ensorceleur' :
-            nombreAutorisé = (2 + parseInt($('#int_mod').html)) * (parseInt(document.form.niveau.value) + 3);
-            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt(document.form.niveau.value) + 3};
+            nombreAutorisé = (2 + parseInt($('#int_mod').html)) * (parseInt($('#niveau').val()) + 3);
+            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt($('#niveau').val()) + 3};
             testCalculeSommeCompetencesII(total,nombreAutorisé);
             break;
         case 'Guerrier' :
-            nombreAutorisé = (2 + parseInt($('#int_mod').html)) * (parseInt(document.form.niveau.value) + 3);
-            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt(document.form.niveau.value) + 3};
+            nombreAutorisé = (2 + parseInt($('#int_mod').html)) * (parseInt($('#niveau').val()) + 3);
+            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt($('#niveau').val()) + 3};
             testCalculeSommeCompetencesII(total,nombreAutorisé);
             break;
         case 'Magicien' :
-            nombreAutorisé = (2 + parseInt($('#int_mod').html)) * (parseInt(document.form.niveau.value) + 3);
-            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt(document.form.niveau.value) + 3};
+            nombreAutorisé = (2 + parseInt($('#int_mod').html)) * (parseInt($('#niveau').val()) + 3);
+            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt($('#niveau').val()) + 3};
             testCalculeSommeCompetencesII(total,nombreAutorisé);
             break;
         case 'Moine' :
-            nombreAutorisé = (4 + parseInt($('#int_mod').html)) * (parseInt(document.form.niveau.value) + 3);
-            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt(document.form.niveau.value) + 3};
+            nombreAutorisé = (4 + parseInt($('#int_mod').html)) * (parseInt($('#niveau').val()) + 3);
+            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt($('#niveau').val()) + 3};
             testCalculeSommeCompetencesII(total,nombreAutorisé);
             break;
         case 'Paladin' :
-            nombreAutorisé = (2 + parseInt($('#int_mod').html)) * (parseInt(document.form.niveau.value) + 3);
-            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt(document.form.niveau.value) + 3};            
+            nombreAutorisé = (2 + parseInt($('#int_mod').html)) * (parseInt($('#niveau').val()) + 3);
+            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt($('#niveau').val()) + 3};            
             testCalculeSommeCompetencesII(total,nombreAutorisé);
             break;
         case 'Prêtre' :
-            nombreAutorisé = (2 + parseInt($('#int_mod').html)) * (parseInt(document.form.niveau.value) + 3);
-            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt(document.form.niveau.value) + 3};            
+            nombreAutorisé = (2 + parseInt($('#int_mod').html)) * (parseInt($('#niveau').val()) + 3);
+            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt($('#niveau').val()) + 3};            
             testCalculeSommeCompetencesII(total,nombreAutorisé);
             break;
         case 'Rôdeur' :
-            nombreAutorisé = (6 + parseInt($('#int_mod').html)) * (parseInt(document.form.niveau.value) + 3);
-            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt(document.form.niveau.value) + 3};
+            nombreAutorisé = (6 + parseInt($('#int_mod').html)) * (parseInt($('#niveau').val()) + 3);
+            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt($('#niveau').val()) + 3};
             testCalculeSommeCompetencesII(total,nombreAutorisé);
             break;
         case 'Roublard' :
-            nombreAutorisé = (8 + parseInt($('#int_mod').html)) * (parseInt(document.form.niveau.value) + 3);
-            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt(document.form.niveau.value) + 3};
+            nombreAutorisé = (8 + parseInt($('#int_mod').html)) * (parseInt($('#niveau').val()) + 3);
+            if (document.form.race.value == 'Humain') {nombreAutorisé = nombreAutorisé + parseInt($('#niveau').val()) + 3};
             testCalculeSommeCompetencesII(total,nombreAutorisé);
             break;
     }
@@ -3223,7 +3537,7 @@ function affichageEcoles(ecole) {
 }
 
 function controlePointsExperience() {
-    switch(document.form.niveau.value) {
+    switch($('#niveau').val()) {
         case '00' :
             alert('Erreur sur le niveau, veuillez rentrer un niveau.');
             break;
@@ -3621,501 +3935,456 @@ function choixProtection(protection,valeur) {
 }
 
 
-function capacitesSpecialesBarde() {
-    if (document.form.niveau.value >= 1) {
-        $('#capacites_speciales_I').html('Contre-chant.');
-        $('#capacites_speciales_II').html('Fascination.');
-        $('#capacites_speciales_III').html('Inspiration vaillante (+1).');
-        $('#capacites_speciales_IV').html('Musique de barde.');
-        $('#capacites_speciales_V').html('Savoir bardique.');
-    };
-
-    if (document.form.niveau.value >= 3) {
-        $('#capacites_speciales_VI').html('Inspiration talentueuse.');
-    };
-
-    if (document.form.niveau.value >= 6) {
-        $('#capacites_speciales_VII').html('Suggestion.');
-    };
-
-    if (document.form.niveau.value >= 8) {
-        $('#capacites_speciales_III').html('Inspiration vaillante (+2).');
-    };
-
-    if (document.form.niveau.value >= 9) {
-        $('#capacites_speciales_VIII').html('Inspiration héroique.');
-    };
-
-    if (document.form.niveau.value >= 12) {
-        $('#capacites_speciales_IX').html('Chant de liberté.');
-    };
-
-    if (document.form.niveau.value >= 14) {
-        $('#capacites_speciales_III').html('Inspiration vaillante (+3).');
-    };
-
-    if (document.form.niveau.value >= 15) {
-        $('#capacites_speciales_X').html('Inspiration intrépide.');
-    };
-
-    if (document.form.niveau.value >= 18) {
-        $('#capacites_speciales_XI').html('Suggestion de groupe');
-    };
-
-    if (document.form.niveau.value >= 20) {
-        $('#capacites_speciales_III').html('Inspiration vaillante (+4).');
-    };
- };
 
 function capacitesSpecialesDruide() {
-    if (document.form.niveau.value >= 1) {
+    if ($('#niveau').val() >= 1) {
         $('#capacites_speciales_I').html('Compagnon animal.');
         $('#capacites_speciales_II').html('Empathie sauvage.');
         $('#capacites_speciales_III').html('Instinct naturel.');
     };
 
-    if (document.form.niveau.value >= 2) {
+    if ($('#niveau').val() >= 2) {
         $('#capacites_speciales_IV').html('Déplacement facilité.');
     };
 
-    if (document.form.niveau.value >= 3) {
+    if ($('#niveau').val() >= 3) {
         $('#capacites_speciales_V').html('Absence de traces.');
     };
 
-    if (document.form.niveau.value >= 4) {
+    if ($('#niveau').val() >= 4) {
         $('#capacites_speciales_VI').html('Résistance à l\'appel de la nature.');
     };
 
-    if (document.form.niveau.value >= 5) {
+    if ($('#niveau').val() >= 5) {
         $('#capacites_speciales_VII').html('Forme animale (1/jour).');
     };
 
-    if (document.form.niveau.value >= 6) {
+    if ($('#niveau').val() >= 6) {
         $('#capacites_speciales_VII').html('Forme animale (2/jour).');
     };
 
-    if (document.form.niveau.value >= 7) {
+    if ($('#niveau').val() >= 7) {
         $('#capacites_speciales_VII').html('Forme animale (3/jour).');
     };
 
-    if (document.form.niveau.value >= 8) {
+    if ($('#niveau').val() >= 8) {
         $('#capacites_speciales_VIII').html('Forme animale (taille G).');
     };
 
-    if (document.form.niveau.value >= 9) {
+    if ($('#niveau').val() >= 9) {
         $('#capacites_speciales_IX').html('Immunité contre le venin.');
     };
 
-    if (document.form.niveau.value >= 10) {
+    if ($('#niveau').val() >= 10) {
         $('#capacites_speciales_VII').html('Forme animale (4/jour).');
     };
     
-    if (document.form.niveau.value >= 11) {
+    if ($('#niveau').val() >= 11) {
         $('#capacites_speciales_VIII').html('Forme animale (taille TP).');
     };
 
-    if (document.form.niveau.value >= 12) {
+    if ($('#niveau').val() >= 12) {
         $('#capacites_speciales_VIII').html('Forme animale (plante).');
     };
 
-    if (document.form.niveau.value >= 13) {
+    if ($('#niveau').val() >= 13) {
         $('#capacites_speciales_X').html('Mille visage.');
     };
 
-    if (document.form.niveau.value >= 14) {
+    if ($('#niveau').val() >= 14) {
         $('#capacites_speciales_VII').html('Forme animale (5/jour).');
     };
 
-    if (document.form.niveau.value >= 15) {
+    if ($('#niveau').val() >= 15) {
         $('#capacites_speciales_XI').html('Eternelle jeunesse.');
         $('#capacites_speciales_VIII').html('Forme animale (taille TG).');
     };
 
-    if (document.form.niveau.value >= 16) {
+    if ($('#niveau').val() >= 16) {
         $('#capacites_speciales_XII').html('Forme animale (élémentaire 1/jour).');
     };
 
-    if (document.form.niveau.value >= 18) {
+    if ($('#niveau').val() >= 18) {
         $('#capacites_speciales_VII').html('Forme animale (6/jour).');
         $('#capacites_speciales_XII').html('Forme animale (élémentaire 2/jour).');
     };
 
-    if (document.form.niveau.value >= 20) {
+    if ($('#niveau').val() >= 20) {
         $('#capacites_speciales_XII').html('Forme animale (élémentaire 2/jour).');
         $('#capacites_speciales_XIII').html('Forme animale (élémentaire de taille TG).');
     };
 };
 
 function capacitesSpecialesEnsorceleur() {
-    if (document.form.niveau.value >= 1) {
+    if ($('#niveau').val() >= 1) {
         $('#capacites_speciales_I').html('Appel de familier.');
     };
 };
 
  function capacitesSpecialesGuerrier() {
-    if (document.form.niveau.value >= 1) {
+    if ($('#niveau').val() >= 1) {
         $('#capacites_speciales_I').html('+1 don supplémentaire.');
     };
 
-    if (document.form.niveau.value >= 2) {
+    if ($('#niveau').val() >= 2) {
         $('#capacites_speciales_I').html('+2 dons supplémentaires.');
     };
 
-    if (document.form.niveau.value >= 4) {
+    if ($('#niveau').val() >= 4) {
         $('#capacites_speciales_I').html('+3 dons supplémentaires.');
     };
 
-    if (document.form.niveau.value >= 6) {
+    if ($('#niveau').val() >= 6) {
         $('#capacites_speciales_I').html('+4 dons supplémentaires.');
     };
 
-    if (document.form.niveau.value >= 8) {
+    if ($('#niveau').val() >= 8) {
         $('#capacites_speciales_I').html('+5 dons supplémentaires.');
     };
 
-    if (document.form.niveau.value >= 10) {
+    if ($('#niveau').val() >= 10) {
         $('#capacites_speciales_I').html('+6 dons supplémentaires.');
     };
     
-    if (document.form.niveau.value >= 12) {
+    if ($('#niveau').val() >= 12) {
         $('#capacites_speciales_I').html('+7 dons supplémentaires.');
     };
 
-    if (document.form.niveau.value >= 14) {
+    if ($('#niveau').val() >= 14) {
         $('#capacites_speciales_I').html('+8 dons supplémentaires.');
     };
 
-    if (document.form.niveau.value >= 16) {
+    if ($('#niveau').val() >= 16) {
         $('#capacites_speciales_I').html('+9 dons supplémentaires.');
     };
 
-    if (document.form.niveau.value >= 18) {
+    if ($('#niveau').val() >= 18) {
         $('#capacites_speciales_I').html('+10 dons supplémentaires.');
     };
 
-    if (document.form.niveau.value >= 20) {
+    if ($('#niveau').val() >= 20) {
         $('#capacites_speciales_I').html('+11 dons supplémentaires.');
     };
  };
 
 function capacitesSpecialesMagicien() {
-    if (document.form.niveau.value >= 1) {
+    if ($('#niveau').val() >= 1) {
         $('#capacites_speciales_I').html('Appel de familier.');
         $('#capacites_speciales_II').html('Ecriture de parchemins.');
     };
 
-    if (document.form.niveau.value >= 5) {
+    if ($('#niveau').val() >= 5) {
         $('#capacites_speciales_III').html('+1 don supplémentaire.');
     };
 
-    if (document.form.niveau.value >= 10) {
+    if ($('#niveau').val() >= 10) {
         $('#capacites_speciales_III').html('+2 dons supplémentaires.');
     };
 
-    if (document.form.niveau.value >= 15) {
+    if ($('#niveau').val() >= 15) {
         $('#capacites_speciales_III').html('+3 dons supplémentaires.');
     };
 
-    if (document.form.niveau.value >= 20) {
+    if ($('#niveau').val() >= 20) {
         $('#capacites_speciales_III').html('+4 dons supplémentaires.');
     };
  };
 
 function capacitesSpecialesMoine() {
-    if (document.form.niveau.value >= 1) {
+    if ($('#niveau').val() >= 1) {
         $('#capacites_speciales_I').html('Combat à mains nues.');
         $('#capacites_speciales_II').html('Déluge de coup.');
         $('#capacites_speciales_III').html('+1 don supplémentaire.');
     };
 
-    if (document.form.niveau.value >= 2) {
+    if ($('#niveau').val() >= 2) {
         $('#capacites_speciales_III').html('+2 dons supplémentaires.');
         $('#capacites_speciales_IV').html('Esquive totale.');
     };
 
-    if (document.form.niveau.value >= 3) {
+    if ($('#niveau').val() >= 3) {
         $('#capacites_speciales_V').html('Sérénité.');
     };
 
-    if (document.form.niveau.value >= 4) {
+    if ($('#niveau').val() >= 4) {
         $('#capacites_speciales_VI').html('Frappe ki (magie).');
         $('#capacites_speciales_VII').html('Chute ralentie (6m).');
     };
 
-    if (document.form.niveau.value >= 5) {
+    if ($('#niveau').val() >= 5) {
         $('#capacites_speciales_VIII').html('Pureté physique.');
     };
 
-    if (document.form.niveau.value >= 6) {
+    if ($('#niveau').val() >= 6) {
         $('#capacites_speciales_III').html('+3 dons supplémentaires.');
         $('#capacites_speciales_VII').html('Chute ralentie (9m).');
     };
 
-    if (document.form.niveau.value >= 7) {
+    if ($('#niveau').val() >= 7) {
         $('#capacites_speciales_IX').html('Plénitude physique.');
     };
 
-    if (document.form.niveau.value >= 8) {
+    if ($('#niveau').val() >= 8) {
         $('#capacites_speciales_VII').html('Chute ralentie (12m).');
     };
 
-    if (document.form.niveau.value >= 9) {
+    if ($('#niveau').val() >= 9) {
         $('#capacites_speciales_X').html('Esquive extraordinaire.');
     };
 
-    if (document.form.niveau.value >= 10) {
+    if ($('#niveau').val() >= 10) {
         $('#capacites_speciales_VII').html('Chute ralentie (15m).');
         $('#capacites_speciales_XI').html('Frappe ki (loi)');
     };
 
     
-    if (document.form.niveau.value >= 11) {
+    if ($('#niveau').val() >= 11) {
         $('#capacites_speciales_XII').html('Corps de diamant.');
         $('#capacites_speciales_XIII').html('Déluge supérieur.');
     };
 
-    if (document.form.niveau.value >= 12) {
+    if ($('#niveau').val() >= 12) {
         $('#capacites_speciales_VII').html('Chute ralentie (18m).');
         $('#capacites_speciales_XIV').html('Pas chassé.');
     };
 
-    if (document.form.niveau.value >= 13) {
+    if ($('#niveau').val() >= 13) {
         $('#capacites_speciales_XV').html('Ame de diamant.');
     };
 
-    if (document.form.niveau.value >= 14) {
+    if ($('#niveau').val() >= 14) {
         $('#capacites_speciales_VII').html('Chute ralentie (21m).');
     };
 
-    if (document.form.niveau.value >= 15) {
+    if ($('#niveau').val() >= 15) {
         $('#capacites_speciales_XVI').html('Paume vibratoire.');
     };
 
-    if (document.form.niveau.value >= 16) {
+    if ($('#niveau').val() >= 16) {
         $('#capacites_speciales_VII').html('Chute ralentie (24m).');
         $('#capacites_speciales_XVII').html('Frappe ki (adamantium).');
     };
 
-    if (document.form.niveau.value >= 17) {
+    if ($('#niveau').val() >= 17) {
         $('#capacites_speciales_XVIII').html('Eternelle jeunesse.');
         $('#capacites_speciales_XIX').html('Langue du soleil et de la lune.');
     };
 
-    if (document.form.niveau.value >= 18) {
+    if ($('#niveau').val() >= 18) {
         $('#capacites_speciales_VII').html('Chute ralentie (27m).');
     };
 
-    if (document.form.niveau.value >= 19) {
+    if ($('#niveau').val() >= 19) {
         $('#capacites_speciales_XX').html('Désertion de l\'âme.');
     };
 
-    if (document.form.niveau.value >= 20) {
+    if ($('#niveau').val() >= 20) {
         $('#capacites_speciales_VII').html('Chute ralentie (illimité).');
     };
  };
 
 function capacitesSpecialesPaladin() {
-    if (document.form.niveau.value >= 1) {
+    if ($('#niveau').val() >= 1) {
         $('#capacites_speciales_I').html('Aura du Bien.');
         $('#capacites_speciales_II').html('Châtiment du mal (1/jour).');
         $('#capacites_speciales_III').html('Détection du mal.');
     };
 
-    if (document.form.niveau.value >= 2) {
+    if ($('#niveau').val() >= 2) {
         $('#capacites_speciales_IV').html('Grâce divine.');
         $('#capacites_speciales_V').html('Imposition des mains.');
     };
 
-    if (document.form.niveau.value >= 3) {
+    if ($('#niveau').val() >= 3) {
         $('#capacites_speciales_VI').html('Aura de bravour.');
         $('#capacites_speciales_VII').html('Santé divine.');
     };
 
-    if (document.form.niveau.value >= 4) {
+    if ($('#niveau').val() >= 4) {
         $('#capacites_speciales_IX').html('Renvoie des morts-vivants.');
     };
 
-    if (document.form.niveau.value >= 5) {
+    if ($('#niveau').val() >= 5) {
         $('#capacites_speciales_II').html('Châtiment du mal (2/jour).');
         $('#capacites_speciales_X').html('Destrier du paladin.');
     };
 
-    if (document.form.niveau.value >= 6) {
+    if ($('#niveau').val() >= 6) {
         $('#capacites_speciales_XI').html('Guérison des maladies (1/semaine).');
     };
 
-    if (document.form.niveau.value >= 9) {
+    if ($('#niveau').val() >= 9) {
         $('#capacites_speciales_XI').html('Guérison des maladies (2/semaine).');
     };
 
-    if (document.form.niveau.value >= 10) {
+    if ($('#niveau').val() >= 10) {
         $('#capacites_speciales_II').html('Châtiment du mal (3/jour).');
     };
 
-    if (document.form.niveau.value >= 12) {
+    if ($('#niveau').val() >= 12) {
         $('#capacites_speciales_XI').html('Guérison des maladies (3/semaine).');
     };
 
-    if (document.form.niveau.value >= 15) {
+    if ($('#niveau').val() >= 15) {
         $('#capacites_speciales_II').html('Châtiment du mal (4/jour).');
         $('#capacites_speciales_XI').html('Guérison des maladies (4/semaine).');
     };
 
-    if (document.form.niveau.value >= 18) {
+    if ($('#niveau').val() >= 18) {
         $('#capacites_speciales_XI').html('Guérison des maladies (5/semaine).');
     };
 
-    if (document.form.niveau.value >= 20) {
+    if ($('#niveau').val() >= 20) {
         $('#capacites_speciales_II').html('Châtiment du mal (5/jour).');
     };
  };
 
 function capacitesSpecialesPretre() {
-    if (document.form.niveau.value >= 1) {
+    if ($('#niveau').val() >= 1) {
         $('#capacites_speciales_I').html('Renvoi ou intimidation des morts-vivants.');
     };
  };
 
 function capacitesSpecialesRodeur() {
-    if (document.form.niveau.value >= 1) {
+    if ($('#niveau').val() >= 1) {
         $('#capacites_speciales_I').html('Empathie sauvage.');
         $('#capacites_speciales_II').html('1er ennemie juré.');
         $('#capacites_speciales_III').html('Pistage.');
     };
 
-    if (document.form.niveau.value >= 2) {
+    if ($('#niveau').val() >= 2) {
         $('#capacites_speciales_IV').html('Style de combat.');
     };
 
-    if (document.form.niveau.value >= 3) {
+    if ($('#niveau').val() >= 3) {
         $('#capacites_speciales_V').html('Endurance.');
     };
 
-    if (document.form.niveau.value >= 4) {
+    if ($('#niveau').val() >= 4) {
         $('#capacites_speciales_VI').html('Compagnon animal.');
     };
 
-    if (document.form.niveau.value >= 5) {
+    if ($('#niveau').val() >= 5) {
         $('#capacites_speciales_II').html('2ème ennemie juré.');
     };
 
-    if (document.form.niveau.value >= 6) {
+    if ($('#niveau').val() >= 6) {
         $('#capacites_speciales_VII').html('Science du style de combat.');
     };
 
-    if (document.form.niveau.value >= 7) {
+    if ($('#niveau').val() >= 7) {
         $('#capacites_speciales_VIII').html('Déplacement facilité.');
     };
 
-    if (document.form.niveau.value >= 8) {
+    if ($('#niveau').val() >= 8) {
         $('#capacites_speciales_IX').html('Pistage accéléré.');
     };
 
-    if (document.form.niveau.value >= 9) {
+    if ($('#niveau').val() >= 9) {
         $('#capacites_speciales_X').html('Esquive totale.');
     };
 
-    if (document.form.niveau.value >= 10) {
+    if ($('#niveau').val() >= 10) {
         $('#capacites_speciales_II').html('3ème ennemie juré.');
     };
 
     
-    if (document.form.niveau.value >= 11) {
+    if ($('#niveau').val() >= 11) {
         $('#capacites_speciales_XI').html('Maîtrise du style de combat.');
     };
 
-    if (document.form.niveau.value >= 13) {
+    if ($('#niveau').val() >= 13) {
         $('#capacites_speciales_XII').html('Camouflage.');
     };
 
-    if (document.form.niveau.value >= 15) {
+    if ($('#niveau').val() >= 15) {
         $('#capacites_speciales_II').html('4ème ennemie juré.');
     };
 
-    if (document.form.niveau.value >= 17) {
+    if ($('#niveau').val() >= 17) {
         $('#capacites_speciales_XIII').html('Discrétion totale.');
     };
 
-    if (document.form.niveau.value >= 20) {
+    if ($('#niveau').val() >= 20) {
         $('#capacites_speciales_II').html('5ème ennemie juré.');
     };
  };
 
 function capacitesSpecialesRoublard() {
-    if (document.form.niveau.value >= 1) {
+    if ($('#niveau').val() >= 1) {
         $('#capacites_speciales_I').html('Attaque sournoise (+1D6).');
         $('#capacites_speciales_II').html('Recherche des pièges.');
     };
 
-    if (document.form.niveau.value >= 2) {
+    if ($('#niveau').val() >= 2) {
         $('#capacites_speciales_III').html('Esquive totale.');
     };
 
-    if (document.form.niveau.value >= 3) {
+    if ($('#niveau').val() >= 3) {
         $('#capacites_speciales_I').html('Attaque sournoise (+2D6).');
         $('#capacites_speciales_IV').html('Sens des pièges (+1).');
     };
 
-    if (document.form.niveau.value >= 4) {
+    if ($('#niveau').val() >= 4) {
         $('#capacites_speciales_V').html('Esquive instinctive.');
     };
 
-    if (document.form.niveau.value >= 5) {
+    if ($('#niveau').val() >= 5) {
         $('#capacites_speciales_I').html('Attaque sournoise (+3D6).');
     };
 
-    if (document.form.niveau.value >= 6) {
+    if ($('#niveau').val() >= 6) {
         $('#capacites_speciales_IV').html('Sens des pièges (+2).');
     };
 
-    if (document.form.niveau.value >= 7) {
+    if ($('#niveau').val() >= 7) {
         $('#capacites_speciales_I').html('Attaque sournoise (+4D6).');
     };
 
-    if (document.form.niveau.value >= 8) {
+    if ($('#niveau').val() >= 8) {
         $('#capacites_speciales_VI').html('Esquive instinctive supérieure.');
     };
 
-    if (document.form.niveau.value >= 9) {
+    if ($('#niveau').val() >= 9) {
         $('#capacites_speciales_I').html('Attaque sournoise (+5D6).');
         $('#capacites_speciales_IV').html('Sens des pièges (+3).');
     };
 
-    if (document.form.niveau.value >= 10) {
+    if ($('#niveau').val() >= 10) {
         $('#capacites_speciales_VII').html('1 pouvoir spéciale.');
     };
 
-    if (document.form.niveau.value >= 11) {
+    if ($('#niveau').val() >= 11) {
         $('#capacites_speciales_I').html('Attaque sournoise (+6D6).');
     };
 
-    if (document.form.niveau.value >= 12) {
+    if ($('#niveau').val() >= 12) {
         $('#capacites_speciales_IV').html('Sens des pièges (+4).');
     };
 
-    if (document.form.niveau.value >= 13) {
+    if ($('#niveau').val() >= 13) {
         $('#capacites_speciales_I').html('Attaque sournoise (+7D6).');
         $('#capacites_speciales_VII').html('2 pouvoir spéciale.');
     };
 
-    if (document.form.niveau.value >= 15) {
+    if ($('#niveau').val() >= 15) {
         $('#capacites_speciales_I').html('Attaque sournoise (+8D6).');
         $('#capacites_speciales_IV').html('Sens des pièges (+5).');
     };
 
-    if (document.form.niveau.value >= 16) {
+    if ($('#niveau').val() >= 16) {
         $('#capacites_speciales_VII').html('3 pouvoir spéciale.');
     };
 
-    if (document.form.niveau.value >= 17) {
+    if ($('#niveau').val() >= 17) {
         $('#capacites_speciales_I').html('Attaque sournoise (+9D6).');
     };
 
-    if (document.form.niveau.value >= 18) {
+    if ($('#niveau').val() >= 18) {
         $('#capacites_speciales_IV').html('Sens des pièges (+6).');
     };
 
-    if (document.form.niveau.value >= 19) {
+    if ($('#niveau').val() >= 19) {
         $('#capacites_speciales_I').html('Attaque sournoise (+10D6).');
         $('#capacites_speciales_VII').html('4 pouvoir spéciale.');
     };
