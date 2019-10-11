@@ -4,67 +4,109 @@ $(function() {
     function toucherCommeGuerrier() {
         switch($('#niveau').val()) {
             case '00' :
-                $('#bba').html('0');
+                $('#bba').html('0');  
+                $('#bmo_bon_bas_att').html('0');
+                $('#dmd_bon_bas_att').html('0');
                 break;
             case '01' :
                 $('#bba').html('1');
+                $('#bmo_bon_bas_att').html('1');
+                $('#dmd_bon_bas_att').html('1');
                 break;
             case '02' :
                 $('#bba').html('2');
+                $('#bmo_bon_bas_att').html('2');
+                $('#dmd_bon_bas_att').html('2');
                 break;
             case '03' :
                 $('#bba').html('3');
+                $('#bmo_bon_bas_att').html('3');
+                $('#dmd_bon_bas_att').html('3');
                 break;
             case '04' :
                 $('#bba').html('4');
+                $('#bmo_bon_bas_att').html('4');
+                $('#dmd_bon_bas_att').html('4');
                 break;
             case '05' :
                 $('#bba').html('5');
+                $('#bmo_bon_bas_att').html('5');
+                $('#dmd_bon_bas_att').html('5');
                 break;
             case '06' :
                 $('#bba').html('6');
+                $('#bmo_bon_bas_att').html('6');
+                $('#dmd_bon_bas_att').html('6');
                 break;
             case '07' :
                 $('#bba').html('7');
+                $('#bmo_bon_bas_att').html('7');
+                $('#dmd_bon_bas_att').html('7');
                 break;
             case '08' :
                 $('#bba').html('8');
+                $('#bmo_bon_bas_att').html('8');
+                $('#dmd_bon_bas_att').html('8');
                 break;
             case '09' :
                 $('#bba').html('9');
+                $('#bmo_bon_bas_att').html('9');
+                $('#dmd_bon_bas_att').html('9');
                 break;
             case '10' :
                 $('#bba').html('10');
+                $('#bmo_bon_bas_att').html('10');
+                $('#dmd_bon_bas_att').html('10');
                 break;
             case '11' :
                 $('#bba').html('11');
+                $('#bmo_bon_bas_att').html('11');
+                $('#dmd_bon_bas_att').html('11');
                 break;
             case '12' :
                 $('#bba').html('12');
+                $('#bmo_bon_bas_att').html('12');
+                $('#dmd_bon_bas_att').html('12');
                 break;
             case '13' :
                 $('#bba').html('13');
+                $('#bmo_bon_bas_att').html('13');
+                $('#dmd_bon_bas_att').html('13');
                 break;
             case '14' :
                 $('#bba').html('14');
+                $('#bmo_bon_bas_att').html('14');
+                $('#dmd_bon_bas_att').html('14');
                 break;
             case '15' :
                 $('#bba').html('15');
+                $('#bmo_bon_bas_att').html('15');
+                $('#dmd_bon_bas_att').html('15');
                 break;
             case '16' :
                 $('#bba').html('16');
+                $('#bmo_bon_bas_att').html('16');
+                $('#dmd_bon_bas_att').html('16');
                 break;
             case '17' :
                 $('#bba').html('17');
+                $('#bmo_bon_bas_att').html('17');
+                $('#dmd_bon_bas_att').html('17');
                 break;
             case '18' :
                 $('#bba').html('18');
+                $('#bmo_bon_bas_att').html('18');
+                $('#dmd_bon_bas_att').html('18');
                 break;
             case '19' :
                 $('#bba').html('19');
+                $('#bmo_bon_bas_att').html('19');
+                $('#dmd_bon_bas_att').html('19');
                 break;
             case '20' :
                 $('#bba').html('20');
+                $('#bmo_bon_bas_att').html('20');
+                $('#dmd_bon_bas_att').html('20');
                 break;
         }
     };
@@ -73,66 +115,108 @@ $(function() {
         switch($('#niveau').val()) {
             case '00' :
                 $('#bba').html(' ');
+                $('#bmo_bon_bas_att').html('0');
+                $('#dmd_bon_bas_att').html('0');
                 break;
             case '01' :
                 $('#bba').html('0');
+                $('#bmo_bon_bas_att').html('0');
+                $('#dmd_bon_bas_att').html('0');
                 break;
             case '02' :
                 $('#bba').html('1');
+                $('#bmo_bon_bas_att').html('1');
+                $('#dmd_bon_bas_att').html('1');
                 break;
             case '03' :
                 $('#bba').html('2');
+                $('#bmo_bon_bas_att').html('2');
+                $('#dmd_bon_bas_att').html('2');
                 break;
             case '04' :
                 $('#bba').html('3');
+                $('#bmo_bon_bas_att').html('3');
+                $('#dmd_bon_bas_att').html('3');
                 break;
             case '05' :
                 $('#bba').html('3');
+                $('#bmo_bon_bas_att').html('3');
+                $('#dmd_bon_bas_att').html('3');
                 break;
             case '06' :
                 $('#bba').html('4');
+                $('#bmo_bon_bas_att').html('4');
+                $('#dmd_bon_bas_att').html('4');
                 break;
             case '07' :
                 $('#bba').html('5');
+                $('#bmo_bon_bas_att').html('5');
+                $('#dmd_bon_bas_att').html('5');
                 break;
             case '08' :
                 $('#bba').html('6');
+                $('#bmo_bon_bas_att').html('6');
+                $('#dmd_bon_bas_att').html('6');
                 break;
             case '09' :
                 $('#bba').html('6');
+                $('#bmo_bon_bas_att').html('6');
+                $('#dmd_bon_bas_att').html('6');
                 break;
             case '10' :
                 $('#bba').html('7');
+                $('#bmo_bon_bas_att').html('7');
+                $('#dmd_bon_bas_att').html('7');
                 break;
             case '11' :
                 $('#bba').html('8');
+                $('#bmo_bon_bas_att').html('8');
+                $('#dmd_bon_bas_att').html('8');
                 break;
             case '12' :
                 $('#bba').html('9');
+                $('#bmo_bon_bas_att').html('9');
+                $('#dmd_bon_bas_att').html('9');
                 break;
             case '13' :
                 $('#bba').html('9');
+                $('#bmo_bon_bas_att').html('9');
+                $('#dmd_bon_bas_att').html('9');
                 break;
             case '14' :
                 $('#bba').html('10');
+                $('#bmo_bon_bas_att').html('10');
+                $('#dmd_bon_bas_att').html('10');
                 break;
             case '15' :
                 $('#bba').html('11');
+                $('#bmo_bon_bas_att').html('11');
+                $('#dmd_bon_bas_att').html('11');
                 break;
             case '16' :
                 $('#bba').html('12');
+                $('#bmo_bon_bas_att').html('12');
+                $('#dmd_bon_bas_att').html('12');
                 break;
             case '17' :
                 $('#bba').html('12');
+                $('#bmo_bon_bas_att').html('12');
+                $('#dmd_bon_bas_att').html('12');
                 break;
             case '18' :
                 $('#bba').html('13');
+                $('#bmo_bon_bas_att').html('13');
+                $('#dmd_bon_bas_att').html('13');
                 break;
             case '19' :
                 $('#bba').html('14');
+                $('#bmo_bon_bas_att').html('14');
+                $('#dmd_bon_bas_att').html('14');
                 break;
             case '20' :
                 $('#bba').html('15');
+                $('#bmo_bon_bas_att').html('15');
+                $('#dmd_bon_bas_att').html('15');
                 break;
         }
     };
@@ -141,66 +225,108 @@ $(function() {
         switch($('#niveau').val()) {
             case '00' :
                 $('#bba').html(' ');
+                $('#bmo_bon_bas_att').html(' ');
+                $('#dmd_bon_bas_att').html(' ');
                 break;
             case '01' :
                 $('#bba').html('0');
+                $('#bmo_bon_bas_att').html('0');
+                $('#dmd_bon_bas_att').html('0');
                 break;
             case '02' :
                 $('#bba').html('1');
+                $('#bmo_bon_bas_att').html('1');
+                $('#dmd_bon_bas_att').html('1');
                 break;
             case '03' :
                 $('#bba').html('1');
+                $('#bmo_bon_bas_att').html('1');
+                $('#dmd_bon_bas_att').html('1');
                 break;
             case '04' :
                 $('#bba').html('2');
+                $('#bmo_bon_bas_att').html('2');
+                $('#dmd_bon_bas_att').html('2');
                 break;
             case '05' :
                 $('#bba').html('2');
+                $('#bmo_bon_bas_att').html('2');
+                $('#dmd_bon_bas_att').html('2');
                 break;
             case '06' :
                 $('#bba').html('3');
+                $('#bmo_bon_bas_att').html('3');
+                $('#dmd_bon_bas_att').html('3');
                 break;
             case '07' :
                 $('#bba').html('3');
+                $('#bmo_bon_bas_att').html('3');
+                $('#dmd_bon_bas_att').html('3');
                 break;
             case '08' :
                 $('#bba').html('4');
+                $('#bmo_bon_bas_att').html('4');
+                $('#dmd_bon_bas_att').html('4');
                 break;
             case '09' :
                 $('#bba').html('4');
+                $('#bmo_bon_bas_att').html('4');
+                $('#dmd_bon_bas_att').html('4');
                 break;
             case '10' :
                 $('#bba').html('5');
+                $('#bmo_bon_bas_att').html('5');
+                $('#dmd_bon_bas_att').html('5');
                 break;
             case '11' :
                 $('#bba').html('5');
+                $('#bmo_bon_bas_att').html('5');
+                $('#dmd_bon_bas_att').html('5');
                 break;
             case '12' :
                 $('#bba').html('6');
+                $('#bmo_bon_bas_att').html('6');
+                $('#dmd_bon_bas_att').html('6');
                 break;
             case '13' :
                 $('#bba').html('6');
+                $('#bmo_bon_bas_att').html('6');
+                $('#dmd_bon_bas_att').html('6');
                 break;
             case '14' :
                 $('#bba').html('7');
+                $('#bmo_bon_bas_att').html('7');
+                $('#dmd_bon_bas_att').html('7');
                 break;
             case '15' :
                 $('#bba').html('7');
+                $('#bmo_bon_bas_att').html('7');
+                $('#dmd_bon_bas_att').html('7');
                 break;
             case '16' :
                 $('#bba').html('8');
+                $('#bmo_bon_bas_att').html('8');
+                $('#dmd_bon_bas_att').html('8');
                 break;
             case '17' :
                 $('#bba').html('8');
+                $('#bmo_bon_bas_att').html('8');
+                $('#dmd_bon_bas_att').html('8');
                 break;
             case '18' :
                 $('#bba').html('9');
+                $('#bmo_bon_bas_att').html('9');
+                $('#dmd_bon_bas_att').html('9');
                 break;
             case '19' :
                 $('#bba').html('9');
+                $('#bmo_bon_bas_att').html('9');
+                $('#dmd_bon_bas_att').html('9');
                 break;
             case '20' :
                 $('#bba').html('10');
+                $('#bmo_bon_bas_att').html('10');
+                $('#dmd_bon_bas_att').html('10');
                 break;
         }
     };
@@ -894,11 +1020,11 @@ $(function() {
         };
 
         $('#sau_total_ref').html(parseInt($('#sau_bon_bas_ref').html())
-                              + parseInt($('#sau_mod_car_ref').html())
-                              + parseInt($('#sau_mod_mag_ref_bon').val()) 
-                              + parseInt($('#sau_mod_div_ref_bon').val())                                                           
-                              + parseInt($('#mod_tem_ref').val())
-                              + parseInt($('#mod_part_ref').val()));
+                               + parseInt($('#sau_mod_car_ref').html())
+                               + parseInt($('#sau_mod_mag_ref_bon').val()) 
+                               + parseInt($('#sau_mod_div_ref_bon').val())                                                           
+                               + parseInt($('#mod_tem_ref').val())
+                               + parseInt($('#mod_part_ref').val()));
     };
 
     function calculeVigeur() {
@@ -1143,6 +1269,17 @@ $(function() {
             $('#capacites_speciales_VI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#FASCINATION">Fascination.</a>');
             $('#capacites_speciales_VII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONVAILLANTE">Inspiration vaillante +1.</a>');
 
+            $('#sorts_connus_0').html('4');
+            $('#sorts_connus_I').html('2');
+            $('#sorts_connus_II').html('-');
+            $('#sorts_connus_III').html('-');
+            $('#sorts_connus_IV').html('-');
+            $('#sorts_connus_V').html('-');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
+
             $('#sorts_jour_0').html('1');
             $('#sorts_jour_I').html('-');
             $('#sorts_jour_II').html('-');
@@ -1159,6 +1296,17 @@ $(function() {
             $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#VERSATILITEARTISTIQUE">Versatilité artistique.</a>');
             $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#ERUDITION">Erudition.</a>');
 
+            $('#sorts_connus_0').html('5');
+            $('#sorts_connus_I').html('3');
+            $('#sorts_connus_II').html('-');
+            $('#sorts_connus_III').html('-');
+            $('#sorts_connus_IV').html('-');
+            $('#sorts_connus_V').html('-');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
+
             $('#sorts_jour_0').html('2');
             $('#sorts_jour_I').html('-');
             $('#sorts_jour_II').html('-');
@@ -1174,6 +1322,17 @@ $(function() {
         if ($('#niveau').val() >= 3) {
             $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONTALENTUEUSE">Inspiration talentueuse +2.</a>');
 
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('4');
+            $('#sorts_connus_II').html('-');
+            $('#sorts_connus_III').html('-');
+            $('#sorts_connus_IV').html('-');
+            $('#sorts_connus_V').html('-');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
+
             $('#sorts_jour_0').html('3');
             $('#sorts_jour_I').html('-');
             $('#sorts_jour_II').html('-');
@@ -1187,6 +1346,17 @@ $(function() {
         };
 
         if ($('#niveau').val() >= 4) {
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('4');
+            $('#sorts_connus_II').html('2');
+            $('#sorts_connus_III').html('-');
+            $('#sorts_connus_IV').html('-');
+            $('#sorts_connus_V').html('-');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
+
             $('#sorts_jour_0').html('3');
             $('#sorts_jour_I').html('1');
             $('#sorts_jour_II').html('-');
@@ -1202,6 +1372,17 @@ $(function() {
         if ($('#niveau').val() >= 5) {
             $('#capacites_speciales_VII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONVAILLANTE">Inspiration vaillante +2.</a>');
             $('#capacites_speciales_XI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#MAITREDUSAVOIR">Maître du savoir 1/jour.</a>');
+
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('4');
+            $('#sorts_connus_II').html('3');
+            $('#sorts_connus_III').html('-');
+            $('#sorts_connus_IV').html('-');
+            $('#sorts_connus_V').html('-');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('4');
             $('#sorts_jour_I').html('2');
@@ -1219,6 +1400,17 @@ $(function() {
             $('#capacites_speciales_XII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#SUGGESTION">Suggestion.</a>');
             $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#VERSATILITEARTISTIQUE">Versatilité artistique.</a>');
 
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('4');
+            $('#sorts_connus_II').html('4');
+            $('#sorts_connus_III').html('-');
+            $('#sorts_connus_IV').html('-');
+            $('#sorts_connus_V').html('-');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
+
             $('#sorts_jour_0').html('4');
             $('#sorts_jour_I').html('3');
             $('#sorts_jour_II').html('-');
@@ -1233,6 +1425,17 @@ $(function() {
 
         if ($('#niveau').val() >= 7) {
             $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONTALENTUEUSE">Inspiration talentueuse +3.</a>');
+
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('5');
+            $('#sorts_connus_II').html('4');
+            $('#sorts_connus_III').html('2');
+            $('#sorts_connus_IV').html('-');
+            $('#sorts_connus_V').html('-');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('4');
             $('#sorts_jour_I').html('3');
@@ -1249,6 +1452,17 @@ $(function() {
         if ($('#niveau').val() >= 8) {
             $('#capacites_speciales_XIV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#CHANTFUNESTE">Chant funeste.</a>');
 
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('5');
+            $('#sorts_connus_II').html('4');
+            $('#sorts_connus_III').html('3');
+            $('#sorts_connus_IV').html('-');
+            $('#sorts_connus_V').html('-');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
+
             $('#sorts_jour_0').html('4');
             $('#sorts_jour_I').html('4');
             $('#sorts_jour_II').html('2');
@@ -1263,6 +1477,17 @@ $(function() {
 
         if ($('#niveau').val() >= 9) {
             $('#capacites_speciales_XV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONGLORIEUSE">Inspiration glorieuse.</a>');
+
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('5');
+            $('#sorts_connus_II').html('4');
+            $('#sorts_connus_III').html('4');
+            $('#sorts_connus_IV').html('-');
+            $('#sorts_connus_V').html('-');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('4');
@@ -1279,6 +1504,17 @@ $(function() {
         if ($('#niveau').val() >= 10) {
             $('#capacites_speciales_XVI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#TOUCHE-A-TOUT">Touche-à-tout.</a>');
             $('#capacites_speciales_XVII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#VERSATILITEARTISTIQUE">Versatilité artistique.</a>');
+
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('5');
+            $('#sorts_connus_II').html('5');
+            $('#sorts_connus_III').html('4');
+            $('#sorts_connus_IV').html('2');
+            $('#sorts_connus_V').html('-');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('4');
             $('#sorts_jour_I').html('3');
@@ -1297,6 +1533,17 @@ $(function() {
             $('#capacites_speciales_VII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONVAILLANTE">Inspiration vaillante +3.</a>');
             $('#capacites_speciales_XI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#MAITREDUSAVOIR">Maître du savoir 2/jour.</a>');
 
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('6');
+            $('#sorts_connus_II').html('5');
+            $('#sorts_connus_III').html('4');
+            $('#sorts_connus_IV').html('3');
+            $('#sorts_connus_V').html('-');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
+
             $('#sorts_jour_0').html('4');
             $('#sorts_jour_I').html('4');
             $('#sorts_jour_II').html('2');
@@ -1312,6 +1559,17 @@ $(function() {
         if ($('#niveau').val() >= 12) {
             $('#capacites_speciales_XVIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#REPRESENTATIONAPAISANTE">Représentation apaisante.</a>');
 
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('6');
+            $('#sorts_connus_II').html('5');
+            $('#sorts_connus_III').html('4');
+            $('#sorts_connus_IV').html('4');
+            $('#sorts_connus_V').html('-');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
+
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('4');
             $('#sorts_jour_II').html('3');
@@ -1325,6 +1583,17 @@ $(function() {
         };
 
         if ($('#niveau').val() >= 13) {
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('6');
+            $('#sorts_connus_II').html('5');
+            $('#sorts_connus_III').html('5');
+            $('#sorts_connus_IV').html('4');
+            $('#sorts_connus_V').html('2');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
+
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('4');
             $('#sorts_jour_II').html('3');
@@ -1340,6 +1609,17 @@ $(function() {
         if ($('#niveau').val() >= 14) {
             $('#capacites_speciales_XIX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#MELODIEEFFRAYANTE">Mélodie effrayante.</a>');
             $('#capacites_speciales_XX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#VERSATILITEARTISTIQUE">Versatilité artistique.</a>');
+
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('6');
+            $('#sorts_connus_II').html('6');
+            $('#sorts_connus_III').html('5');
+            $('#sorts_connus_IV').html('4');
+            $('#sorts_connus_V').html('3');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('4');
@@ -1357,6 +1637,17 @@ $(function() {
             $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONTALENTUEUSE">Inspiration talentueuse +5.</a>');
             $('#capacites_speciales_XXI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONHEROIQUE">Inspiration héroïque.</a>');
 
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('6');
+            $('#sorts_connus_II').html('6');
+            $('#sorts_connus_III').html('5');
+            $('#sorts_connus_IV').html('4');
+            $('#sorts_connus_V').html('4');
+            $('#sorts_connus_VI').html('-');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
+
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('5');
             $('#sorts_jour_II').html('4');
@@ -1370,6 +1661,17 @@ $(function() {
         };
 
         if ($('#niveau').val() >= 16) {
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('6');
+            $('#sorts_connus_II').html('6');
+            $('#sorts_connus_III').html('5');
+            $('#sorts_connus_IV').html('5');
+            $('#sorts_connus_V').html('4');
+            $('#sorts_connus_VI').html('2');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
+
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('5');
             $('#sorts_jour_II').html('5');
@@ -1385,6 +1687,17 @@ $(function() {
         if ($('#niveau').val() >= 17) {
             $('#capacites_speciales_VII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONVAILLANTE">Inspiration vaillante +4.</a>');
             $('#capacites_speciales_XI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#MAITREDUSAVOIR">Maître du savoir 3/jour.</a>');
+
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('6');
+            $('#sorts_connus_II').html('6');
+            $('#sorts_connus_III').html('6');
+            $('#sorts_connus_IV').html('5');
+            $('#sorts_connus_V').html('4');
+            $('#sorts_connus_VI').html('3');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('5');
@@ -1402,6 +1715,17 @@ $(function() {
             $('#capacites_speciales_XXII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#SUGGESTIONDEGROUPE">Suggestion de groupe.</a>');
             $('#capacites_speciales_XXIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#VERSATILITEARTISTIQUE">Versatilité artistique.</a>');
 
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('6');
+            $('#sorts_connus_II').html('6');
+            $('#sorts_connus_III').html('6');
+            $('#sorts_connus_IV').html('5');
+            $('#sorts_connus_V').html('4');
+            $('#sorts_connus_VI').html('4');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
+
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('5');
             $('#sorts_jour_II').html('5');
@@ -1417,6 +1741,17 @@ $(function() {
         if ($('#niveau').val() >= 19) {
             $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#INSPIRATIONTALENTUEUSE">Inspiration talentueuse +6.</a>');
 
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('6');
+            $('#sorts_connus_II').html('6');
+            $('#sorts_connus_III').html('6');
+            $('#sorts_connus_IV').html('5');
+            $('#sorts_connus_V').html('5');
+            $('#sorts_connus_VI').html('4');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
+
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('5');
             $('#sorts_jour_II').html('5');
@@ -1431,6 +1766,17 @@ $(function() {
 
         if ($('#niveau').val() >= 20) {
             $('#capacites_speciales_XXIV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#REPRESENTATIONMORTELLE">Représentation mortelle.</a>');
+
+            $('#sorts_connus_0').html('6');
+            $('#sorts_connus_I').html('6');
+            $('#sorts_connus_II').html('6');
+            $('#sorts_connus_III').html('6');
+            $('#sorts_connus_IV').html('6');
+            $('#sorts_connus_V').html('5');
+            $('#sorts_connus_VI').html('5');
+            $('#sorts_connus_VII').html('-');
+            $('#sorts_connus_VIII').html('-');
+            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('5');

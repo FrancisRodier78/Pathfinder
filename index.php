@@ -628,15 +628,15 @@
                             </tr>
                             <tr>
                                 <td><label id="lab_bmo" class="font_white">BMO</label></td>
-                                <td id="bmo_total"></td>
+                                <td id="bmo_total" class="center"></td>
                                 <td class="background_grey">=</td>
-                                <td id="bmo_bon_bas_att"></td>
+                                <td id="bmo_bon_bas_att" class="center"></td>
                                 <td class="background_grey">+</td>
-                                <td id="bmo_mod_for"></td>
+                                <td id="bmo_mod_for" class="center"></td>
                                 <td class="background_grey">+</td>
-                                <td id="bmo_mod_tai"></td>
+                                <td id="bmo_mod_tai" class="center"></td>
                                 <td class="background_grey">+</td>
-                                <td id="bmo_mod_div"></td>
+                                <td id="bmo_mod_div" class="center"></td>
                             </tr>
                         </table>
                     </div>
@@ -661,17 +661,17 @@
                             </tr>
                             <tr>
                                 <td><label id="lab_dmd" class="font_white">DMD</label></td>
-                                <td id="dmd_total"></td>
+                                <td id="dmd_total" class="center"></td>
                                 <td class="background_grey">=</td>
-                                <td id="dmd_bon_bas_att"></td>
+                                <td id="dmd_bon_bas_att" class="center"></td>
                                 <td class="background_grey">+</td>
-                                <td id="dmd_mod_for"></td>
+                                <td id="dmd_mod_for" class="center"></td>
                                 <td class="background_grey">+</td>
-                                <td id="dmd_mod_dex"></td>
+                                <td id="dmd_mod_dex" class="center"></td>
                                 <td class="background_grey">+</td>
-                                <td id="dmd_mod_tai"></td>
+                                <td id="dmd_mod_tai" class="center"></td>
                                 <td class="background_grey">+</td>
-                                <td id="dmd_mod_div">10</td>
+                                <td id="dmd_mod_div" class="center">10</td>
                             </tr>
                         </table>
                     </div>
@@ -3349,83 +3349,83 @@
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_0"></td>
-                                <td id="dd_des_sorts_0"></td>
+                                <td id="sorts_connus_0" class="center"></td>
+                                <td id="dd_des_sorts_0" class="center"></td>
                                 <td class="background_grey" colspan="2">0</td>
-                                <td id="sorts_jour_0"></td>
-                                <td id="sorts_en_bonus_0"></td>
+                                <td id="sorts_jour_0" class="center"></td>
+                                <td id="sorts_en_bonus_0" class="center"></td>
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_I"></td>
-                                <td id="dd_des_sorts_I"></td>
+                                <td id="sorts_connus_I" class="center"></td>
+                                <td id="dd_des_sorts_I" class="center"></td>
                                 <td class="background_grey" colspan="2">1er</td>
-                                <td id="sorts_jour_I"></td>
-                                <td id="sorts_en_bonus_I"></td>
+                                <td id="sorts_jour_I" class="center"></td>
+                                <td id="sorts_en_bonus_I" class="center"></td>
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_II"></td>
-                                <td id="dd_des_sorts_II"></td>
+                                <td id="sorts_connus_II" class="center"></td>
+                                <td id="dd_des_sorts_II" class="center"></td>
                                 <td class="background_grey" colspan="2">2e</td>
-                                <td id="sorts_jour_II"></td>
-                                <td id="sorts_en_bonus_II"></td>
+                                <td id="sorts_jour_II" class="center"></td>
+                                <td id="sorts_en_bonus_II" class="center"></td>
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_III"></td>
-                                <td id="dd_des_sorts_III"></td>
+                                <td id="sorts_connus_III" class="center"></td>
+                                <td id="dd_des_sorts_III" class="center"></td>
                                 <td class="background_grey" colspan="2">3e</td>
-                                <td id="sorts_jour_III"></td>
-                                <td id="sorts_en_bonus_III"></td>
+                                <td id="sorts_jour_III" class="center"></td>
+                                <td id="sorts_en_bonus_III" class="center"></td>
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_IV"></td>
-                                <td id="dd_des_sorts_IV"></td>
+                                <td id="sorts_connus_IV" class="center"></td>
+                                <td id="dd_des_sorts_IV" class="center"></td>
                                 <td class="background_grey" colspan="2">4e</td>
-                                <td id="sorts_jour_IV"></td>
-                                <td id="sorts_en_bonus_IV"></td>
+                                <td id="sorts_jour_IV" class="center"></td>
+                                <td id="sorts_en_bonus_IV" class="center"></td>
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_V"></td>
-                                <td id="dd_des_sorts_V"></td>
+                                <td id="sorts_connus_V" class="center"></td>
+                                <td id="dd_des_sorts_V" class="center"></td>
                                 <td class="background_grey" colspan="2">5e</td>
-                                <td id="sorts_jour_V"></td>
-                                <td id="sorts_en_bonus_V"></td>
+                                <td id="sorts_jour_V" class="center"></td>
+                                <td id="sorts_en_bonus_V" class="center"></td>
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_VI"></td>
-                                <td id="dd_des_sorts_VI"></td>
+                                <td id="sorts_connus_VI" class="center"></td>
+                                <td id="dd_des_sorts_VI" class="center"></td>
                                 <td class="background_grey" colspan="2">6e</td>
-                                <td id="sorts_jour_VI"></td>
-                                <td id="sorts_en_bonus_VI"></td>
+                                <td id="sorts_jour_VI" class="center"></td>
+                                <td id="sorts_en_bonus_VI" class="center"></td>
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_VII"></td>
-                                <td id="dd_des_sorts_VII"></td>
+                                <td id="sorts_connus_VII" class="center"></td>
+                                <td id="dd_des_sorts_VII" class="center"></td>
                                 <td class="background_grey" colspan="2">7e</td>
-                                <td id="sorts_jour_VII"></td>
-                                <td id="sorts_en_bonus_VII"></td>
+                                <td id="sorts_jour_VII" class="center"></td>
+                                <td id="sorts_en_bonus_VII" class="center"></td>
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_VIII"></td>
-                                <td id="dd_des_sorts_VIII"></td>
+                                <td id="sorts_connus_VIII" class="center"></td>
+                                <td id="dd_des_sorts_VIII" class="center"></td>
                                 <td class="background_grey" colspan="2">8e</td>
-                                <td id="sorts_jour_VIII"></td>
-                                <td id="sorts_en_bonus_VIII"></td>
+                                <td id="sorts_jour_VIII" class="center"></td>
+                                <td id="sorts_en_bonus_VIII" class="center"></td>
                             </tr>
 
                             <tr>
-                                <td id="sorts_connus_IX"></td>
-                                <td id="dd_des_sorts_IX"></td>
+                                <td id="sorts_connus_IX" class="center"></td>
+                                <td id="dd_des_sorts_IX" class="center"></td>
                                 <td class="background_grey" colspan="2">9e</td>
-                                <td id="sorts_jour_IX"></td>
-                                <td id="sorts_en_bonus_IX"></td>
+                                <td id="sorts_jour_IX" class="center"></td>
+                                <td id="sorts_en_bonus_IX" class="center"></td>
                             </tr>
                         </table>
                     </div>
