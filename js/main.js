@@ -1256,10 +1256,31 @@ $(function() {
             $('#capacites_speciales_XIX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#RAGEDEMAITREBERSERKER">Rage de maître berserker.</a>');
             $('#capacites_speciales_XX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barbare.ashx#POUVOIRDERAGE">Pouvoir de rage.</a>');
         };
-     };
+    };
 
     function capacitesSpecialesBarde() {
-            $('#lab_ref').css('background','#ffffff');
+        $('#sorts_connus_0').html('-');
+        $('#sorts_connus_I').html('-');
+        $('#sorts_connus_II').html('-');
+        $('#sorts_connus_III').html('-');
+        $('#sorts_connus_IV').html('-');
+        $('#sorts_connus_V').html('-');
+        $('#sorts_connus_VI').html('-');
+        $('#sorts_connus_VII').html('-');
+        $('#sorts_connus_VIII').html('-');
+        $('#sorts_connus_IX').html('-');
+
+        $('#sorts_jour_0').html('-');
+        $('#sorts_jour_I').html('-');
+        $('#sorts_jour_II').html('-');
+        $('#sorts_jour_III').html('-');
+        $('#sorts_jour_IV').html('-');
+        $('#sorts_jour_V').html('-');
+        $('#sorts_jour_VI').html('-');
+        $('#sorts_jour_VII').html('-');
+        $('#sorts_jour_VIII').html('-');
+        $('#sorts_jour_IX').html('-');
+
         if ($('#niveau').val() >= 1) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#SAVOIRBARDIQUE">Savoir bardique.</a>');
             $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.barde.ashx#REPRESENTATIONBARDIQUE">Représentation bardique.</a>.');
@@ -1271,25 +1292,8 @@ $(function() {
 
             $('#sorts_connus_0').html('4');
             $('#sorts_connus_I').html('2');
-            $('#sorts_connus_II').html('-');
-            $('#sorts_connus_III').html('-');
-            $('#sorts_connus_IV').html('-');
-            $('#sorts_connus_V').html('-');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('1');
-            $('#sorts_jour_I').html('-');
-            $('#sorts_jour_II').html('-');
-            $('#sorts_jour_III').html('-');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 2) {
@@ -1298,25 +1302,8 @@ $(function() {
 
             $('#sorts_connus_0').html('5');
             $('#sorts_connus_I').html('3');
-            $('#sorts_connus_II').html('-');
-            $('#sorts_connus_III').html('-');
-            $('#sorts_connus_IV').html('-');
-            $('#sorts_connus_V').html('-');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('2');
-            $('#sorts_jour_I').html('-');
-            $('#sorts_jour_II').html('-');
-            $('#sorts_jour_III').html('-');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 3) {
@@ -1324,49 +1311,17 @@ $(function() {
 
             $('#sorts_connus_0').html('6');
             $('#sorts_connus_I').html('4');
-            $('#sorts_connus_II').html('-');
-            $('#sorts_connus_III').html('-');
-            $('#sorts_connus_IV').html('-');
-            $('#sorts_connus_V').html('-');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('3');
-            $('#sorts_jour_I').html('-');
-            $('#sorts_jour_II').html('-');
-            $('#sorts_jour_III').html('-');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 4) {
             $('#sorts_connus_0').html('6');
             $('#sorts_connus_I').html('4');
             $('#sorts_connus_II').html('2');
-            $('#sorts_connus_III').html('-');
-            $('#sorts_connus_IV').html('-');
-            $('#sorts_connus_V').html('-');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('3');
             $('#sorts_jour_I').html('1');
-            $('#sorts_jour_II').html('-');
-            $('#sorts_jour_III').html('-');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 5) {
@@ -1376,24 +1331,9 @@ $(function() {
             $('#sorts_connus_0').html('6');
             $('#sorts_connus_I').html('4');
             $('#sorts_connus_II').html('3');
-            $('#sorts_connus_III').html('-');
-            $('#sorts_connus_IV').html('-');
-            $('#sorts_connus_V').html('-');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('4');
             $('#sorts_jour_I').html('2');
-            $('#sorts_jour_II').html('-');
-            $('#sorts_jour_III').html('-');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 6) {
@@ -1403,24 +1343,9 @@ $(function() {
             $('#sorts_connus_0').html('6');
             $('#sorts_connus_I').html('4');
             $('#sorts_connus_II').html('4');
-            $('#sorts_connus_III').html('-');
-            $('#sorts_connus_IV').html('-');
-            $('#sorts_connus_V').html('-');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('4');
             $('#sorts_jour_I').html('3');
-            $('#sorts_jour_II').html('-');
-            $('#sorts_jour_III').html('-');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 7) {
@@ -1430,23 +1355,10 @@ $(function() {
             $('#sorts_connus_I').html('5');
             $('#sorts_connus_II').html('4');
             $('#sorts_connus_III').html('2');
-            $('#sorts_connus_IV').html('-');
-            $('#sorts_connus_V').html('-');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('4');
             $('#sorts_jour_I').html('3');
             $('#sorts_jour_II').html('1');
-            $('#sorts_jour_III').html('-');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 8) {
@@ -1456,23 +1368,10 @@ $(function() {
             $('#sorts_connus_I').html('5');
             $('#sorts_connus_II').html('4');
             $('#sorts_connus_III').html('3');
-            $('#sorts_connus_IV').html('-');
-            $('#sorts_connus_V').html('-');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('4');
             $('#sorts_jour_I').html('4');
             $('#sorts_jour_II').html('2');
-            $('#sorts_jour_III').html('-');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 9) {
@@ -1482,23 +1381,10 @@ $(function() {
             $('#sorts_connus_I').html('5');
             $('#sorts_connus_II').html('4');
             $('#sorts_connus_III').html('4');
-            $('#sorts_connus_IV').html('-');
-            $('#sorts_connus_V').html('-');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('4');
             $('#sorts_jour_II').html('3');
-            $('#sorts_jour_III').html('-');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 10) {
@@ -1510,22 +1396,10 @@ $(function() {
             $('#sorts_connus_II').html('5');
             $('#sorts_connus_III').html('4');
             $('#sorts_connus_IV').html('2');
-            $('#sorts_connus_V').html('-');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('4');
             $('#sorts_jour_I').html('3');
             $('#sorts_jour_II').html('1');
-            $('#sorts_jour_III').html('-');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 11) {
@@ -1538,22 +1412,10 @@ $(function() {
             $('#sorts_connus_II').html('5');
             $('#sorts_connus_III').html('4');
             $('#sorts_connus_IV').html('3');
-            $('#sorts_connus_V').html('-');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('4');
             $('#sorts_jour_I').html('4');
             $('#sorts_jour_II').html('2');
-            $('#sorts_jour_III').html('-');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 12) {
@@ -1564,22 +1426,10 @@ $(function() {
             $('#sorts_connus_II').html('5');
             $('#sorts_connus_III').html('4');
             $('#sorts_connus_IV').html('4');
-            $('#sorts_connus_V').html('-');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('4');
             $('#sorts_jour_II').html('3');
-            $('#sorts_jour_III').html('-');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 13) {
@@ -1589,21 +1439,11 @@ $(function() {
             $('#sorts_connus_III').html('5');
             $('#sorts_connus_IV').html('4');
             $('#sorts_connus_V').html('2');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('4');
             $('#sorts_jour_II').html('3');
             $('#sorts_jour_III').html('1');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 14) {
@@ -1616,21 +1456,11 @@ $(function() {
             $('#sorts_connus_III').html('5');
             $('#sorts_connus_IV').html('4');
             $('#sorts_connus_V').html('3');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('4');
             $('#sorts_jour_II').html('4');
             $('#sorts_jour_III').html('2');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 15) {
@@ -1643,21 +1473,11 @@ $(function() {
             $('#sorts_connus_III').html('5');
             $('#sorts_connus_IV').html('4');
             $('#sorts_connus_V').html('4');
-            $('#sorts_connus_VI').html('-');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('5');
             $('#sorts_jour_II').html('4');
             $('#sorts_jour_III').html('3');
-            $('#sorts_jour_IV').html('-');
-            $('#sorts_jour_V').html('-');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 16) {
@@ -1668,9 +1488,6 @@ $(function() {
             $('#sorts_connus_IV').html('5');
             $('#sorts_connus_V').html('4');
             $('#sorts_connus_VI').html('2');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('5');
@@ -1678,10 +1495,6 @@ $(function() {
             $('#sorts_jour_III').html('4');
             $('#sorts_jour_IV').html('3');
             $('#sorts_jour_V').html('1');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 17) {
@@ -1695,9 +1508,6 @@ $(function() {
             $('#sorts_connus_IV').html('5');
             $('#sorts_connus_V').html('4');
             $('#sorts_connus_VI').html('3');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('5');
@@ -1705,10 +1515,6 @@ $(function() {
             $('#sorts_jour_III').html('4');
             $('#sorts_jour_IV').html('4');
             $('#sorts_jour_V').html('2');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 18) {
@@ -1722,9 +1528,6 @@ $(function() {
             $('#sorts_connus_IV').html('5');
             $('#sorts_connus_V').html('4');
             $('#sorts_connus_VI').html('4');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('5');
@@ -1732,10 +1535,6 @@ $(function() {
             $('#sorts_jour_III').html('5');
             $('#sorts_jour_IV').html('4');
             $('#sorts_jour_V').html('3');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 19) {
@@ -1748,9 +1547,6 @@ $(function() {
             $('#sorts_connus_IV').html('5');
             $('#sorts_connus_V').html('5');
             $('#sorts_connus_VI').html('4');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('5');
@@ -1758,10 +1554,6 @@ $(function() {
             $('#sorts_jour_III').html('5');
             $('#sorts_jour_IV').html('5');
             $('#sorts_jour_V').html('4');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
 
         if ($('#niveau').val() >= 20) {
@@ -1774,9 +1566,6 @@ $(function() {
             $('#sorts_connus_IV').html('6');
             $('#sorts_connus_V').html('5');
             $('#sorts_connus_VI').html('5');
-            $('#sorts_connus_VII').html('-');
-            $('#sorts_connus_VIII').html('-');
-            $('#sorts_connus_IX').html('-');
 
             $('#sorts_jour_0').html('5');
             $('#sorts_jour_I').html('5');
@@ -1784,14 +1573,405 @@ $(function() {
             $('#sorts_jour_III').html('5');
             $('#sorts_jour_IV').html('5');
             $('#sorts_jour_V').html('5');
-            $('#sorts_jour_VI').html('-');
-            $('#sorts_jour_VII').html('-');
-            $('#sorts_jour_VIII').html('-');
-            $('#sorts_jour_IX').html('-');
         };
-     };
+    };
 
 //          $('#capacites_speciales_I').html('<a target="_blank" href="">.</a>');
+
+    function capacitesSpecialesDruide() {
+        $('#sorts_connus_0').html('-');
+        $('#sorts_connus_I').html('-');
+        $('#sorts_connus_II').html('-');
+        $('#sorts_connus_III').html('-');
+        $('#sorts_connus_IV').html('-');
+        $('#sorts_connus_V').html('-');
+        $('#sorts_connus_VI').html('-');
+        $('#sorts_connus_VII').html('-');
+        $('#sorts_connus_VIII').html('-');
+        $('#sorts_connus_IX').html('-');
+
+        $('#sorts_jour_0').html('-');
+        $('#sorts_jour_I').html('-');
+        $('#sorts_jour_II').html('-');
+        $('#sorts_jour_III').html('-');
+        $('#sorts_jour_IV').html('-');
+        $('#sorts_jour_V').html('-');
+        $('#sorts_jour_VI').html('-');
+        $('#sorts_jour_VII').html('-');
+        $('#sorts_jour_VIII').html('-');
+        $('#sorts_jour_IX').html('-');
+
+        if ($('#niveau').val() >= 1) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#PACTEAVECLANATURE">pacte avec la nature.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#INSTINCTNATUREL">instinct naturel.</a>');
+            $('#capacites_speciales_III').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#ORAISONS">oraisons.</a>');
+            $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#EMPATHIESAUVAGE">empathie sauvage.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+
+            $('#sorts_jour_0').html('3');
+            $('#sorts_jour_I').html('1');
+        };
+
+        if ($('#niveau').val() >= 2) {
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#DEPLACEMENTFACILITE">déplacement facilité.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('2');
+        };
+
+        if ($('#niveau').val() >= 3) {
+            $('#capacites_speciales_VI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#ABSENCEDETRACES">absence de traces.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('2');
+            $('#sorts_jour_II').html('1');
+        };
+
+        if ($('#niveau').val() >= 4) {
+            $('#capacites_speciales_VII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#RESISTANCEALAPPELDELANATURE">résistance à l\'appel de la nature.</a>');
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#FORMEANIMALE">forme animale (1/jour).</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('3');
+            $('#sorts_jour_II').html('2');
+        };
+
+        if ($('#niveau').val() >= 5) {
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('3');
+            $('#sorts_jour_II').html('2');
+            $('#sorts_jour_III').html('1');
+        };
+
+        if ($('#niveau').val() >= 6) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#FORMEANIMALE">forme animale (2/jour).</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('3');
+            $('#sorts_jour_II').html('3');
+            $('#sorts_jour_III').html('2');
+        };
+
+        if ($('#niveau').val() >= 7) {
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+            $('#sorts_connus_IV').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('3');
+            $('#sorts_jour_III').html('2');
+            $('#sorts_jour_IV').html('1');
+        };
+
+        if ($('#niveau').val() >= 8) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#FORMEANIMALE">forme animale (3/jour).</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+            $('#sorts_connus_IV').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('3');
+            $('#sorts_jour_III').html('3');
+            $('#sorts_jour_IV').html('2');
+        };
+
+        if ($('#niveau').val() >= 9) {
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#IMMUNITECONTRELEVENIN">immunité contre le venin.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+            $('#sorts_connus_IV').html('Tous.');
+            $('#sorts_connus_V').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('4');
+            $('#sorts_jour_III').html('3');
+            $('#sorts_jour_IV').html('2');
+            $('#sorts_jour_V').html('1');
+        };
+
+        if ($('#niveau').val() >= 10) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#FORMEANIMALE">forme animale (4/jour).</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+            $('#sorts_connus_IV').html('Tous.');
+            $('#sorts_connus_V').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('4');
+            $('#sorts_jour_III').html('3');
+            $('#sorts_jour_IV').html('3');
+            $('#sorts_jour_V').html('2');
+        };
+        
+        if ($('#niveau').val() >= 11) {
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+            $('#sorts_connus_IV').html('Tous.');
+            $('#sorts_connus_V').html('Tous.');
+            $('#sorts_connus_VI').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('4');
+            $('#sorts_jour_III').html('4');
+            $('#sorts_jour_IV').html('3');
+            $('#sorts_jour_V').html('2');
+            $('#sorts_jour_VI').html('1');
+        };
+
+        if ($('#niveau').val() >= 12) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#FORMEANIMALE">forme animale (5/jour).</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+            $('#sorts_connus_IV').html('Tous.');
+            $('#sorts_connus_V').html('Tous.');
+            $('#sorts_connus_VI').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('4');
+            $('#sorts_jour_III').html('4');
+            $('#sorts_jour_IV').html('3');
+            $('#sorts_jour_V').html('3');
+            $('#sorts_jour_VI').html('2');
+        };
+
+        if ($('#niveau').val() >= 13) {
+            $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#MILLEVISAGES">mille visages.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+            $('#sorts_connus_IV').html('Tous.');
+            $('#sorts_connus_V').html('Tous.');
+            $('#sorts_connus_VI').html('Tous.');
+            $('#sorts_connus_VII').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('4');
+            $('#sorts_jour_III').html('4');
+            $('#sorts_jour_IV').html('4');
+            $('#sorts_jour_V').html('3');
+            $('#sorts_jour_VI').html('2');
+            $('#sorts_jour_VII').html('1');
+        };
+
+        if ($('#niveau').val() >= 14) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#FORMEANIMALE">forme animale (6/jour).</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+            $('#sorts_connus_IV').html('Tous.');
+            $('#sorts_connus_V').html('Tous.');
+            $('#sorts_connus_VI').html('Tous.');
+            $('#sorts_connus_VII').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('4');
+            $('#sorts_jour_III').html('4');
+            $('#sorts_jour_IV').html('4');
+            $('#sorts_jour_V').html('3');
+            $('#sorts_jour_VI').html('2');
+            $('#sorts_jour_VII').html('2');
+        };
+
+        if ($('#niveau').val() >= 15) {
+            $('#capacites_speciales_XI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#ETERNELLEJEUNESSE">éternelle jeunesse.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+            $('#sorts_connus_IV').html('Tous.');
+            $('#sorts_connus_V').html('Tous.');
+            $('#sorts_connus_VI').html('Tous.');
+            $('#sorts_connus_VII').html('Tous.');
+            $('#sorts_connus_VIII').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('4');
+            $('#sorts_jour_III').html('4');
+            $('#sorts_jour_IV').html('4');
+            $('#sorts_jour_V').html('4');
+            $('#sorts_jour_VI').html('3');
+            $('#sorts_jour_VII').html('2');
+            $('#sorts_jour_VIII').html('1');
+        };
+
+        if ($('#niveau').val() >= 16) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#FORMEANIMALE">forme animale (7/jour).</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+            $('#sorts_connus_IV').html('Tous.');
+            $('#sorts_connus_V').html('Tous.');
+            $('#sorts_connus_VI').html('Tous.');
+            $('#sorts_connus_VII').html('Tous.');
+            $('#sorts_connus_VIII').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('4');
+            $('#sorts_jour_III').html('4');
+            $('#sorts_jour_IV').html('4');
+            $('#sorts_jour_V').html('4');
+            $('#sorts_jour_VI').html('3');
+            $('#sorts_jour_VII').html('3');
+            $('#sorts_jour_VIII').html('2');
+        };
+
+        if ($('#niveau').val() >= 17) {
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+            $('#sorts_connus_IV').html('Tous.');
+            $('#sorts_connus_V').html('Tous.');
+            $('#sorts_connus_VI').html('Tous.');
+            $('#sorts_connus_VII').html('Tous.');
+            $('#sorts_connus_VIII').html('Tous.');
+            $('#sorts_connus_IX').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('4');
+            $('#sorts_jour_III').html('4');
+            $('#sorts_jour_IV').html('4');
+            $('#sorts_jour_V').html('4');
+            $('#sorts_jour_VI').html('4');
+            $('#sorts_jour_VII').html('3');
+            $('#sorts_jour_VIII').html('2');
+            $('#sorts_jour_IX').html('1');
+        };
+
+        if ($('#niveau').val() >= 18) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#FORMEANIMALE">forme animale (8/jour).</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+            $('#sorts_connus_IV').html('Tous.');
+            $('#sorts_connus_V').html('Tous.');
+            $('#sorts_connus_VI').html('Tous.');
+            $('#sorts_connus_VII').html('Tous.');
+            $('#sorts_connus_VIII').html('Tous.');
+            $('#sorts_connus_IX').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('4');
+            $('#sorts_jour_III').html('4');
+            $('#sorts_jour_IV').html('4');
+            $('#sorts_jour_V').html('4');
+            $('#sorts_jour_VI').html('4');
+            $('#sorts_jour_VII').html('3');
+            $('#sorts_jour_VIII').html('3');
+            $('#sorts_jour_IX').html('2');
+        };
+
+        if ($('#niveau').val() >= 19) {
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+            $('#sorts_connus_IV').html('Tous.');
+            $('#sorts_connus_V').html('Tous.');
+            $('#sorts_connus_VI').html('Tous.');
+            $('#sorts_connus_VII').html('Tous.');
+            $('#sorts_connus_VIII').html('Tous.');
+            $('#sorts_connus_IX').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('4');
+            $('#sorts_jour_III').html('4');
+            $('#sorts_jour_IV').html('4');
+            $('#sorts_jour_V').html('4');
+            $('#sorts_jour_VI').html('4');
+            $('#sorts_jour_VII').html('4');
+            $('#sorts_jour_VIII').html('3');
+            $('#sorts_jour_IX').html('3');
+        };
+
+        if ($('#niveau').val() >= 20) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.druide.ashx#FORMEANIMALE">forme animale (à volonté).</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+            $('#sorts_connus_IV').html('Tous.');
+            $('#sorts_connus_V').html('Tous.');
+            $('#sorts_connus_VI').html('Tous.');
+            $('#sorts_connus_VII').html('Tous.');
+            $('#sorts_connus_VIII').html('Tous.');
+            $('#sorts_connus_IX').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('4');
+            $('#sorts_jour_III').html('4');
+            $('#sorts_jour_IV').html('4');
+            $('#sorts_jour_V').html('4');
+            $('#sorts_jour_VI').html('4');
+            $('#sorts_jour_VII').html('4');
+            $('#sorts_jour_VIII').html('4');
+            $('#sorts_jour_IX').html('4');
+        };
+    };
 
     $('#niveau').change(function() {
         switch($('#classe').val()) {
@@ -1817,17 +1997,16 @@ $(function() {
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-
-                capacitesSpecialesBarde()
+                capacitesSpecialesBarde();
                 break;
             case 'Druide' :
+        $('#lab_ref').css('background','#ffffff');
                 toucherCommePretre();
                 sauverCommePretre();
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-
-                capacitesSpecialesDruide()
+                capacitesSpecialesDruide();
                 break;
             case 'Ensorceleur' :
                 toucherCommeMagicien();
@@ -1836,7 +2015,7 @@ $(function() {
                 calculeVigeur();
                 calculeVolonte();
 
-                capacitesSpecialesEnsorceleur()
+                capacitesSpecialesEnsorceleur();
                 break;
             case 'Guerrier' :
                 toucherCommeGuerrier();
@@ -1845,7 +2024,7 @@ $(function() {
                 calculeVigeur();
                 calculeVolonte();
 
-                capacitesSpecialesGuerrier()
+                capacitesSpecialesGuerrier();
                 break;
             case 'Magicien' :
                 toucherCommeMagicien();
@@ -1858,7 +2037,7 @@ $(function() {
                 affichageEcoles(document.form.ecole_II);
                 affichageEcoles(document.form.ecole_III);
 
-                capacitesSpecialesMagicien()
+                capacitesSpecialesMagicien();
                 break;
             case 'Moine' :
                 toucherCommePretre();
@@ -1867,7 +2046,7 @@ $(function() {
                 calculeVigeur();
                 calculeVolonte();
 
-                capacitesSpecialesMoine()
+                capacitesSpecialesMoine();
                 break;
             case 'Paladin' :
                 toucherCommeGuerrier();
@@ -1876,7 +2055,7 @@ $(function() {
                 calculeVigeur();
                 calculeVolonte();
 
-                capacitesSpecialesPaladin()
+                capacitesSpecialesPaladin();
                 break;
             case 'Prêtre' :
                 toucherCommePretre();
@@ -1885,7 +2064,7 @@ $(function() {
                 calculeVigeur();
                 calculeVolonte();
 
-                capacitesSpecialesPrêtre()
+                capacitesSpecialesPrêtre();
                 break;
             case 'Rôdeur' :
                 toucherCommeGuerrier();
@@ -1894,7 +2073,7 @@ $(function() {
                 calculeVigeur();
                 calculeVolonte();
 
-                capacitesSpecialesRodeur()
+                capacitesSpecialesRodeur();
                 break;
             case 'Roublard' :
                 toucherCommePretre();
@@ -1903,7 +2082,7 @@ $(function() {
                 calculeVigeur();
                 calculeVolonte();
 
-                capacitesSpecialesRoublard()
+                capacitesSpecialesRoublard();
                 break;
         }
     });
@@ -4282,84 +4461,6 @@ function choixProtection(protection,valeur) {
 
 
 
-function capacitesSpecialesDruide() {
-    if ($('#niveau').val() >= 1) {
-        $('#capacites_speciales_I').html('Compagnon animal.');
-        $('#capacites_speciales_II').html('Empathie sauvage.');
-        $('#capacites_speciales_III').html('Instinct naturel.');
-    };
-
-    if ($('#niveau').val() >= 2) {
-        $('#capacites_speciales_IV').html('Déplacement facilité.');
-    };
-
-    if ($('#niveau').val() >= 3) {
-        $('#capacites_speciales_V').html('Absence de traces.');
-    };
-
-    if ($('#niveau').val() >= 4) {
-        $('#capacites_speciales_VI').html('Résistance à l\'appel de la nature.');
-    };
-
-    if ($('#niveau').val() >= 5) {
-        $('#capacites_speciales_VII').html('Forme animale (1/jour).');
-    };
-
-    if ($('#niveau').val() >= 6) {
-        $('#capacites_speciales_VII').html('Forme animale (2/jour).');
-    };
-
-    if ($('#niveau').val() >= 7) {
-        $('#capacites_speciales_VII').html('Forme animale (3/jour).');
-    };
-
-    if ($('#niveau').val() >= 8) {
-        $('#capacites_speciales_VIII').html('Forme animale (taille G).');
-    };
-
-    if ($('#niveau').val() >= 9) {
-        $('#capacites_speciales_IX').html('Immunité contre le venin.');
-    };
-
-    if ($('#niveau').val() >= 10) {
-        $('#capacites_speciales_VII').html('Forme animale (4/jour).');
-    };
-    
-    if ($('#niveau').val() >= 11) {
-        $('#capacites_speciales_VIII').html('Forme animale (taille TP).');
-    };
-
-    if ($('#niveau').val() >= 12) {
-        $('#capacites_speciales_VIII').html('Forme animale (plante).');
-    };
-
-    if ($('#niveau').val() >= 13) {
-        $('#capacites_speciales_X').html('Mille visage.');
-    };
-
-    if ($('#niveau').val() >= 14) {
-        $('#capacites_speciales_VII').html('Forme animale (5/jour).');
-    };
-
-    if ($('#niveau').val() >= 15) {
-        $('#capacites_speciales_XI').html('Eternelle jeunesse.');
-        $('#capacites_speciales_VIII').html('Forme animale (taille TG).');
-    };
-
-    if ($('#niveau').val() >= 16) {
-        $('#capacites_speciales_XII').html('Forme animale (élémentaire 1/jour).');
-    };
-
-    if ($('#niveau').val() >= 18) {
-        $('#capacites_speciales_VII').html('Forme animale (6/jour).');
-        $('#capacites_speciales_XII').html('Forme animale (élémentaire 2/jour).');
-    };
-
-    if ($('#niveau').val() >= 20) {
-        $('#capacites_speciales_XII').html('Forme animale (élémentaire 2/jour).');
-        $('#capacites_speciales_XIII').html('Forme animale (élémentaire de taille TG).');
-    };
-};
 
 function capacitesSpecialesEnsorceleur() {
     if ($('#niveau').val() >= 1) {

@@ -3287,26 +3287,26 @@
                             <div class="col-lg-12">
                                 <table id="table_capacites_speciales">
                                     <tr><th id="label_capacites_speciales" class="font_white">CAPACITES SPECIALES</th></tr>
-                                    <tr><td id="capacites_speciales_I" name="capacites_speciales_I">A</td></tr>
-                                    <tr><td id="capacites_speciales_II" name="capacites_speciales_II">A</td></tr>
-                                    <tr><td id="capacites_speciales_III" name="capacites_speciales_III">A</td></tr>
-                                    <tr><td id="capacites_speciales_IV" name="capacites_speciales_IV">A</td></tr>
-                                    <tr><td id="capacites_speciales_V" name="capacites_speciales_V">A</td></tr>
-                                    <tr><td id="capacites_speciales_VI" name="capacites_speciales_VI">A</td></tr>
-                                    <tr><td id="capacites_speciales_VII" name="capacites_speciales_VII">A</td></tr>
-                                    <tr><td id="capacites_speciales_VIII" name="capacites_speciales_VIII">A</td></tr>
-                                    <tr><td id="capacites_speciales_IX" name="capacites_speciales_IX">A</td></tr>
-                                    <tr><td id="capacites_speciales_X" name="capacites_speciales_X">A</td></tr>
-                                    <tr><td id="capacites_speciales_XI" name="capacites_speciales_XI">A</td></tr>
-                                    <tr><td id="capacites_speciales_XII" name="capacites_speciales_XII">A</td></tr>
-                                    <tr><td id="capacites_speciales_XIII" name="capacites_speciales_XIII">A</td></tr>
-                                    <tr><td id="capacites_speciales_XIV" name="capacites_speciales_XIV">A</td></tr>
-                                    <tr><td id="capacites_speciales_XV" name="capacites_speciales_XV">A</td></tr>
-                                    <tr><td id="capacites_speciales_XVI" name="capacites_speciales_XVI">A</td></tr>
-                                    <tr><td id="capacites_speciales_XVII" name="capacites_speciales_XVII">A</td></tr>
-                                    <tr><td id="capacites_speciales_XVIII" name="capacites_speciales_XVIII">A</td></tr>
-                                    <tr><td id="capacites_speciales_XIX" name="capacites_speciales_XIX">A</td></tr>
-                                    <tr><td id="capacites_speciales_XX" name="capacites_speciales_XX">A</td></tr>
+                                    <tr><td id="capacites_speciales_I" name="capacites_speciales_I"></td></tr>
+                                    <tr><td id="capacites_speciales_II" name="capacites_speciales_II"></td></tr>
+                                    <tr><td id="capacites_speciales_III" name="capacites_speciales_III"></td></tr>
+                                    <tr><td id="capacites_speciales_IV" name="capacites_speciales_IV"></td></tr>
+                                    <tr><td id="capacites_speciales_V" name="capacites_speciales_V"></td></tr>
+                                    <tr><td id="capacites_speciales_VI" name="capacites_speciales_VI"></td></tr>
+                                    <tr><td id="capacites_speciales_VII" name="capacites_speciales_VII"></td></tr>
+                                    <tr><td id="capacites_speciales_VIII" name="capacites_speciales_VIII"></td></tr>
+                                    <tr><td id="capacites_speciales_IX" name="capacites_speciales_IX"></td></tr>
+                                    <tr><td id="capacites_speciales_X" name="capacites_speciales_X"></td></tr>
+                                    <tr><td id="capacites_speciales_XI" name="capacites_speciales_XI"></td></tr>
+                                    <tr><td id="capacites_speciales_XII" name="capacites_speciales_XII"></td></tr>
+                                    <tr><td id="capacites_speciales_XIII" name="capacites_speciales_XIII"></td></tr>
+                                    <tr><td id="capacites_speciales_XIV" name="capacites_speciales_XIV"></td></tr>
+                                    <tr><td id="capacites_speciales_XV" name="capacites_speciales_XV"></td></tr>
+                                    <tr><td id="capacites_speciales_XVI" name="capacites_speciales_XVI"></td></tr>
+                                    <tr><td id="capacites_speciales_XVII" name="capacites_speciales_XVII"></td></tr>
+                                    <tr><td id="capacites_speciales_XVIII" name="capacites_speciales_XVIII"></td></tr>
+                                    <tr><td id="capacites_speciales_XIX" name="capacites_speciales_XIX"></td></tr>
+                                    <tr><td id="capacites_speciales_XX" name="capacites_speciales_XX"></td></tr>
                                 </table>
                             </div>
                         </div>
