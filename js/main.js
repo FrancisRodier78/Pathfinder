@@ -2715,7 +2715,6 @@ $(function() {
 
         if ($('#niveau').val() >= 2) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +0/+0.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +0.</a>');
             $('#capacites_speciales_IV').html('<a target="_blank" href="">Déplacement accéléré +0 m.</a>');
             $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">don supplémentaire *2.</a>');
             $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#ESQUIVETOTALE">esquive totale.</a>');
@@ -2723,7 +2722,6 @@ $(function() {
 
         if ($('#niveau').val() >= 3) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +1/+1.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +0.</a>');
             $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DEPLACEMENTACCELERE">Déplacement accéléré +3 m (2 cases).</a>');
             $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#ENTRAINEMENTAUXMANOEUVRESOFFENSIVES">entraînement aux manœuvres offensives.</a>');
             $('#capacites_speciales_XI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#SERENITE">sérénité.</a>');
@@ -2733,58 +2731,52 @@ $(function() {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +2/+2.</a>');
             $('#capacites_speciales_II').html('<a target="_blank" href="">Dégâts à mains nues* 1D8.</a>');
             $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +1.</a>');
-            $('#capacites_speciales_XII').html('<a target="_blank" href="">réserve de ki (magique).</a>');
-            $('#capacites_speciales_XIII').html('<a target="_blank" href="">chute ralentie 6 m.</a>');
+            $('#capacites_speciales_XII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#RESERVEDEKI">réserve de ki (magique).</a>');
+            $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#CHUTERALENTIE">chute ralentie 6 m.</a>');
         };
 
         if ($('#niveau').val() >= 5) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +3/+3.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +1.</a>');
-            $('#capacites_speciales_XIV').html('<a target="_blank" href="">sauts puissants.</a>');
-            $('#capacites_speciales_XV').html('<a target="_blank" href="">pureté physique.</a>');
+            $('#capacites_speciales_XIV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#SAUTSPUISSANTS">sauts puissants.</a>');
+            $('#capacites_speciales_XV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#PURETEPHYSIQUE">pureté physique.</a>');
         };
 
         if ($('#niveau').val() >= 6) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +4/+4/-1.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +1.</a>');
             $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DEPLACEMENTACCELERE">Déplacement accéléré +6 m (4 cases).</a>');
             $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">don supplémentaire *3.</a>');
-            $('#capacites_speciales_XIII').html('<a target="_blank" href="">chute ralentie 9 m.</a>');
+            $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#CHUTERALENTIE">chute ralentie 9 m.</a>');
         };
 
         if ($('#niveau').val() >= 7) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +5/+5/+0.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +1.</a>');
-            $('#capacites_speciales_XVI').html('<a target="_blank" href="">réserve de ki (fer froid/argent).</a>');
-            $('#capacites_speciales_XVII').html('<a target="_blank" href="">plénitude physique.</a>');
+            $('#capacites_speciales_XVI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#RESERVEDEKI">réserve de ki (fer froid/argent).</a>');
+            $('#capacites_speciales_XVII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#PLENITUDEPHYSIQUE">plénitude physique.</a>');
         };
 
         if ($('#niveau').val() >= 8) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +6/+6/+1/+1.</a>');
             $('#capacites_speciales_II').html('<a target="_blank" href="">Dégâts à mains nues* 1D10.</a>');
             $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +2.</a>');
-            $('#capacites_speciales_XIII').html('<a target="_blank" href="">chute ralentie 12 m.</a>');
+            $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#CHUTERALENTIE">chute ralentie 12 m.</a>');
         };
 
         if ($('#niveau').val() >= 9) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +7/+7/+2/+2.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +2.</a>');
             $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DEPLACEMENTACCELERE">Déplacement accéléré +9 m (6 cases).</a>');
-            $('#capacites_speciales_XVIII').html('<a target="_blank" href="">esquive surnaturelle.</a>');
+            $('#capacites_speciales_XVIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#ESQUIVESURNATURELLE">esquive surnaturelle.</a>');
         };
 
         if ($('#niveau').val() >= 10) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +8/+8/+3/+3.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +2.</a>');
             $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">don supplémentaire *4.</a>');
-            $('#capacites_speciales_XIII').html('<a target="_blank" href="">chute ralentie 15 m.</a>');
-            $('#capacites_speciales_XVI').html('<a target="_blank" href="">réserve de ki (loyal).</a>');
+            $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#CHUTERALENTIE">chute ralentie 15 m.</a>');
+            $('#capacites_speciales_XVI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#RESERVEDEKI">réserve de ki (loyal).</a>');
         };
         
         if ($('#niveau').val() >= 11) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +9/+9/+4/+4/-1.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +2.</a>');
-            $('#capacites_speciales_XIX').html('<a target="_blank" href="">corps de diamant.</a>');
+            $('#capacites_speciales_XIX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#CORPSDEDIAMANT">corps de diamant.</a>');
         };
 
         if ($('#niveau').val() >= 12) {
@@ -2792,26 +2784,23 @@ $(function() {
             $('#capacites_speciales_II').html('<a target="_blank" href="">Dégâts à mains nues* 2D6.</a>');
             $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +3.</a>');
             $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DEPLACEMENTACCELERE">Déplacement accéléré +12 m (8 cases).</a>');
-            $('#capacites_speciales_XIII').html('<a target="_blank" href="">chute ralentie 18 m.</a>');
-            $('#capacites_speciales_XX').html('<a target="_blank" href="">pas chassé.</a>');
+            $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#CHUTERALENTIE">chute ralentie 18 m.</a>');
+            $('#capacites_speciales_XX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#PASCHASSE">pas chassé.</a>');
         };
 
         if ($('#niveau').val() >= 13) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +11/+11/+6/+6/+1.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +3.</a>');
-            $('#capacites_speciales_XXI').html('<a target="_blank" href="">âme de diamant.</a>');
+            $('#capacites_speciales_XXI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#CORPSDEDIAMANT">âme de diamant.</a>');
         };
 
         if ($('#niveau').val() >= 14) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +12/+12/+7/+7/+2.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +3.</a>');
             $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">don supplémentaire *5.</a>');
-            $('#capacites_speciales_XIII').html('<a target="_blank" href="">chute ralentie 21 m.</a>');
+            $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#CHUTERALENTIE">chute ralentie 21 m.</a>');
         };
 
         if ($('#niveau').val() >= 15) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +13/+13/+8/+8/+3/+3.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +3.</a>');
             $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DEPLACEMENTACCELERE">Déplacement accéléré +15 m (10 cases).</a>');
             $('#capacites_speciales_XXII').html('<a target="_blank" href="">paume vibratoire.</a>');
         };
@@ -2820,39 +2809,459 @@ $(function() {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +14/+14/+9/+9/+4/+4/-1.</a>');
             $('#capacites_speciales_II').html('<a target="_blank" href="">Dégâts à mains nues* 2D8.</a>');
             $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +4.</a>');
-            $('#capacites_speciales_XIII').html('<a target="_blank" href="">chute ralentie 24 m.</a>');
-            $('#capacites_speciales_XVI').html('<a target="_blank" href="">réserve de ki (adamantium).</a>');
+            $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#CHUTERALENTIE">chute ralentie 24 m.</a>');
+            $('#capacites_speciales_XVI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#RESERVEDEKI">réserve de ki (adamantium).</a>');
         };
 
         if ($('#niveau').val() >= 17) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +15/+15/+10/+10/+5/+5/+0.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +4.</a>');
-            $('#capacites_speciales_XXIII').html('<a target="_blank" href="">éternelle jeunesse.</a>');
-            $('#capacites_speciales_XXIV').html('<a target="_blank" href="">langue du soleil et de la lune.</a>');
+            $('#capacites_speciales_XXIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#ETERNELLEJEUNESSE">éternelle jeunesse.</a>');
+            $('#capacites_speciales_XXIV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#LANGUEDUSOLEILETDELALUNE">langue du soleil et de la lune.</a>');
         };
 
         if ($('#niveau').val() >= 18) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +16/+16/+11/+11/+6/+6/+1.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +4.</a>');
             $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DEPLACEMENTACCELERE">Déplacement accéléré +18 m (12 cases).</a>');
             $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">don supplémentaire *6.</a>');
-            $('#capacites_speciales_XIII').html('<a target="_blank" href="">chute ralentie 27 m.</a>');
+            $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#CHUTERALENTIE">chute ralentie 27 m.</a>');
         };
 
         if ($('#niveau').val() >= 19) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +17/+17/+12/+12/+7/+7/+2.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +4.</a>');
-            $('#capacites_speciales_XXV').html('<a target="_blank" href="">désertion de l'âme.</a>');
+            $('#capacites_speciales_XXV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DESERTIONDELAME">désertion de l\'âme.</a>');
         };
 
         if ($('#niveau').val() >= 20) {
             $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#DONSUPPLEMENTAIRE">Déluge de coups +18/+18/+13/+13/+8/+8/+3.</a>');
             $('#capacites_speciales_II').html('<a target="_blank" href="">Dégâts à mains nues* 2D10.</a>');
             $('#capacites_speciales_III').html('<a target="_blank" href="">Bonus de CA +5.</a>');
-            $('#capacites_speciales_XIII').html('<a target="_blank" href="">chute ralentie (n'importe quelle distance).</a>');
-            $('#capacites_speciales_XXVI').html('<a target="_blank" href="">perfection de l'être.</a>');
+            $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#CHUTERALENTIE">chute ralentie (n\'importe quelle distance).</a>');
+            $('#capacites_speciales_XXVI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#PERFECTIONDELETRE">perfection de l\'être.</a>');
         };
     };
+
+    function capacitesSpecialesPaladin() {
+        $('#sorts_connus_0').html('-');
+        $('#sorts_connus_I').html('-');
+        $('#sorts_connus_II').html('-');
+        $('#sorts_connus_III').html('-');
+        $('#sorts_connus_IV').html('-');
+        $('#sorts_connus_V').html('-');
+        $('#sorts_connus_VI').html('-');
+        $('#sorts_connus_VII').html('-');
+        $('#sorts_connus_VIII').html('-');
+        $('#sorts_connus_IX').html('-');
+
+        $('#sorts_jour_0').html('-');
+        $('#sorts_jour_I').html('-');
+        $('#sorts_jour_II').html('-');
+        $('#sorts_jour_III').html('-');
+        $('#sorts_jour_IV').html('-');
+        $('#sorts_jour_V').html('-');
+        $('#sorts_jour_VI').html('-');
+        $('#sorts_jour_VII').html('-');
+        $('#sorts_jour_VIII').html('-');
+        $('#sorts_jour_IX').html('-');
+
+        if ($('#niveau').val() >= 1) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#AURADUBIEN">aura du bien.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#DETECTIONDUMAL">détection du mal.</a>');
+            $('#capacites_speciales_III').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#CHATIMENTDUMAL">châtiment du mal 1/jour.</a>');
+        };
+
+        if ($('#niveau').val() >= 2) {
+            $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#GRACEDIVINE">grâce divine.</a>');
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#IMPOSITIONDESMAINS">imposition des mains.</a>');
+        };
+
+        if ($('#niveau').val() >= 3) {
+            $('#capacites_speciales_VI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#AURADECOURAGE">aura de courage.</a>');
+            $('#capacites_speciales_VII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#SANTEDIVINE">santé divine.</a>');
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#GRACE">grâce *1.</a>');
+        };
+
+        if ($('#niveau').val() >= 4) {
+            $('#capacites_speciales_III').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#CHATIMENTDUMAL">châtiment du mal 2/jour.</a>');
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#CANALISATIONDENERGIEPOSITIVE">canalisation d\'énergie positive.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+
+            $('#sorts_jour_0').html('0*');
+        };
+
+        if ($('#niveau').val() >= 5) {
+            $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#PACTEDIVIN">pacte divin.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+
+            $('#sorts_jour_0').html('1');
+        };
+
+        if ($('#niveau').val() >= 6) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#GRACE">grâce *2.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+
+            $('#sorts_jour_0').html('1');
+        };
+
+        if ($('#niveau').val() >= 7) {
+            $('#capacites_speciales_III').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#CHATIMENTDUMAL">châtiment du mal 3/jour.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+
+            $('#sorts_jour_0').html('1');
+            $('#sorts_jour_I').html('0*');
+        };
+
+        if ($('#niveau').val() >= 8) {
+            $('#capacites_speciales_XI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#AURADEFERMETE">aura de fermeté.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+
+            $('#sorts_jour_0').html('1');
+            $('#sorts_jour_I').html('1');
+        };
+
+        if ($('#niveau').val() >= 9) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#GRACE">grâce *3.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+
+            $('#sorts_jour_0').html('2');
+            $('#sorts_jour_I').html('1');
+        };
+
+        if ($('#niveau').val() >= 10) {
+            $('#capacites_speciales_III').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#CHATIMENTDUMAL">châtiment du mal 4/jour.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+
+            $('#sorts_jour_0').html('2');
+            $('#sorts_jour_I').html('1');
+            $('#sorts_jour_II').html('0*');
+        };
+
+        if ($('#niveau').val() >= 11) {
+            $('#capacites_speciales_XII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#AURADEJUSTICE">aura de justice.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+
+            $('#sorts_jour_0').html('2');
+            $('#sorts_jour_I').html('1');
+            $('#sorts_jour_II').html('1');
+        };
+
+        if ($('#niveau').val() >= 12) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#GRACE">grâce *4.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+
+            $('#sorts_jour_0').html('2');
+            $('#sorts_jour_I').html('2');
+            $('#sorts_jour_II').html('1');
+        };
+
+        if ($('#niveau').val() >= 13) {
+            $('#capacites_speciales_III').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#CHATIMENTDUMAL">châtiment du mal 5/jour.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+
+            $('#sorts_jour_0').html('3');
+            $('#sorts_jour_I').html('2');
+            $('#sorts_jour_II').html('1');
+            $('#sorts_jour_III').html('0*');
+        };
+
+        if ($('#niveau').val() >= 14) {
+            $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#AURADEFOI">aura de foi.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+
+            $('#sorts_jour_0').html('3');
+            $('#sorts_jour_I').html('2');
+            $('#sorts_jour_II').html('1');
+            $('#sorts_jour_III').html('1');
+        };
+
+        if ($('#niveau').val() >= 15) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#GRACE">grâce *5.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+
+            $('#sorts_jour_0').html('3');
+            $('#sorts_jour_I').html('2');
+            $('#sorts_jour_II').html('2');
+            $('#sorts_jour_III').html('1');
+        };
+
+        if ($('#niveau').val() >= 16) {
+            $('#capacites_speciales_III').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#CHATIMENTDUMAL">châtiment du mal 6/jour.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+
+            $('#sorts_jour_0').html('3');
+            $('#sorts_jour_I').html('3');
+            $('#sorts_jour_II').html('2');
+            $('#sorts_jour_III').html('2');
+        };
+
+        if ($('#niveau').val() >= 17) {
+            $('#capacites_speciales_XIV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#AURADEDROITURE">aura de droiture.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('3');
+            $('#sorts_jour_II').html('2');
+            $('#sorts_jour_III').html('1');
+        };
+
+        if ($('#niveau').val() >= 18) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#GRACE">grâce *6.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('3');
+            $('#sorts_jour_II').html('2');
+            $('#sorts_jour_III').html('2');
+        };
+
+        if ($('#niveau').val() >= 19) {
+            $('#capacites_speciales_III').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#CHATIMENTDUMAL">châtiment du mal 7/jour.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('3');
+            $('#sorts_jour_II').html('3');
+            $('#sorts_jour_III').html('2');
+        };
+
+        if ($('#niveau').val() >= 20) {
+            $('#capacites_speciales_XV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.paladin.ashx#CHAMPIONSACRE">champion sacré.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+            $('#sorts_connus_II').html('Tous.');
+            $('#sorts_connus_III').html('Tous.');
+
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_II').html('3');
+            $('#sorts_jour_III').html('3');
+        };
+     };
+
+    function capacitesSpecialesPretre() {
+        $('#sorts_connus_0').html('-');
+        $('#sorts_connus_I').html('-');
+        $('#sorts_connus_II').html('-');
+        $('#sorts_connus_III').html('-');
+        $('#sorts_connus_IV').html('-');
+        $('#sorts_connus_V').html('-');
+        $('#sorts_connus_VI').html('-');
+        $('#sorts_connus_VII').html('-');
+        $('#sorts_connus_VIII').html('-');
+        $('#sorts_connus_IX').html('-');
+
+        $('#sorts_jour_0').html('-');
+        $('#sorts_jour_I').html('-');
+        $('#sorts_jour_II').html('-');
+        $('#sorts_jour_III').html('-');
+        $('#sorts_jour_IV').html('-');
+        $('#sorts_jour_V').html('-');
+        $('#sorts_jour_VI').html('-');
+        $('#sorts_jour_VII').html('-');
+        $('#sorts_jour_VIII').html('-');
+        $('#sorts_jour_IX').html('-');
+
+        if ($('#niveau').val() >= 1) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="">aura.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 1d6.</a>');
+            $('#capacites_speciales_III').html('<a target="_blank" href="">domaines.</a>');
+            $('#capacites_speciales_IV').html('<a target="_blank" href="">oraisons.</a>');
+            $('#capacites_speciales_V').html('<a target="_blank" href="">incantation spontanée.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+            $('#sorts_connus_I').html('Tous.');
+
+            $('#sorts_jour_0').html('3');
+            $('#sorts_jour_I').html('1+1');
+        };
+
+        if ($('#niveau').val() >= 2) {
+            $('#sorts_jour_0').html('4');
+            $('#sorts_jour_I').html('2+1');
+        };
+
+        if ($('#niveau').val() >= 3) {
+            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 2d6.</a>');
+
+            $('#sorts_connus_II').html('Tous.');
+
+            $('#sorts_jour_I').html('2+1');
+            $('#sorts_jour_II').html('1+1');
+        };
+
+        if ($('#niveau').val() >= 4) {
+            $('#sorts_jour_I').html('3+1');
+            $('#sorts_jour_II').html('2+1');
+        };
+
+        if ($('#niveau').val() >= 5) {
+            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 3d6.</a>');
+
+            $('#sorts_connus_III').html('Tous.');
+
+            $('#sorts_jour_II').html('2+1');
+            $('#sorts_jour_III').html('1+1');
+        };
+
+        if ($('#niveau').val() >= 6) {
+        };
+
+        if ($('#niveau').val() >= 7) {
+            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 4d6.</a>');
+
+            $('#sorts_connus_IV').html('Tous.');
+
+            $('#sorts_jour_II').html('3+1');
+            $('#sorts_jour_III').html('2+1');
+
+            $('#sorts_jour_I').html('4+1');
+            $('#sorts_jour_II').html('3+1');
+            $('#sorts_jour_III').html('2+1');
+            $('#sorts_jour_IV').html('1+1');
+        };
+
+        if ($('#niveau').val() >= 8) {
+            $('#sorts_jour_III').html('3+1');
+            $('#sorts_jour_IV').html('2+1');
+        };
+
+        if ($('#niveau').val() >= 9) {
+            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 5d6.</a>');
+
+            $('#sorts_connus_V').html('Tous.');
+
+            $('#sorts_jour_II').html('4+1');
+            $('#sorts_jour_III').html('3+1');
+            $('#sorts_jour_IV').html('2+1');
+            $('#sorts_jour_V').html('1+1');
+        };
+
+        if ($('#niveau').val() >= 10) {
+            $('#sorts_jour_IV').html('3+1');
+            $('#sorts_jour_V').html('2+1');
+        };
+
+        if ($('#niveau').val() >= 11) {
+            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 6d6.</a>');
+
+            $('#sorts_connus_VI').html('Tous.');
+
+            $('#sorts_jour_III').html('4+1');
+            $('#sorts_jour_IV').html('3+1');
+            $('#sorts_jour_V').html('2+1');
+            $('#sorts_jour_VI').html('1+1');
+        };
+
+        if ($('#niveau').val() >= 12) {
+            $('#sorts_jour_V').html('3+1');
+            $('#sorts_jour_VI').html('2+1');
+        };
+
+        if ($('#niveau').val() >= 13) {
+            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 7d6.</a>');
+
+            $('#sorts_connus_VII').html('Tous.');
+
+            $('#sorts_jour_V').html('3+1');
+            $('#sorts_jour_VI').html('2+1');
+            $('#sorts_jour_VII').html('1+1');
+        };
+
+        if ($('#niveau').val() >= 14) {
+            $('#sorts_jour_VI').html('3+1');
+            $('#sorts_jour_VII').html('2+1');
+        };
+
+        if ($('#niveau').val() >= 15) {
+            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 8d6.</a>');
+
+            $('#sorts_connus_VIII').html('Tous.');
+
+            $('#sorts_jour_V').html('4+1');
+            $('#sorts_jour_VI').html('3+1');
+            $('#sorts_jour_VII').html('2+1');
+            $('#sorts_jour_VIII').html('1+1');
+        };
+
+        if ($('#niveau').val() >= 16) {
+            $('#sorts_jour_VII').html('3+1');
+            $('#sorts_jour_VIII').html('2+1');
+        };
+
+        if ($('#niveau').val() >= 17) {
+            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 9d6.</a>');
+
+            $('#sorts_connus_IX').html('Tous.');
+
+            $('#sorts_jour_VI').html('4+1');
+            $('#sorts_jour_VII').html('3+1');
+            $('#sorts_jour_VIII').html('2+1');
+            $('#sorts_jour_IX').html('1+1');
+        };
+
+        if ($('#niveau').val() >= 18) {
+            $('#sorts_jour_VIII').html('3+1');
+            $('#sorts_jour_IX').html('2+1');
+        };
+
+        if ($('#niveau').val() >= 19) {
+            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 10d6.</a>');
+
+            $('#sorts_jour_VII').html('4+1');
+            $('#sorts_jour_IX').html('3+1');
+        };
+
+        if ($('#niveau').val() >= 20) {
+            $('#sorts_jour_VIII').html('4+1');
+            $('#sorts_jour_IX').html('4+1');
+        };
+     };
 
     $('#niveau').change(function() {
         switch($('#classe').val()) {
@@ -2924,7 +3333,6 @@ $(function() {
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-
                 capacitesSpecialesMoine();
                 break;
             case 'Paladin' :
@@ -2933,7 +3341,6 @@ $(function() {
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-
                 capacitesSpecialesPaladin();
                 break;
             case 'Prêtre' :
@@ -2943,7 +3350,7 @@ $(function() {
                 calculeVigeur();
                 calculeVolonte();
 
-                capacitesSpecialesPrêtre();
+                capacitesSpecialesPretre();
                 break;
             case 'Rôdeur' :
                 toucherCommeGuerrier();
@@ -3115,7 +3522,7 @@ function influenceNiveau() {
 
     competenceDeClasse = ['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23'];
  
-    limitationOption('acrobatie',document.form.acrobatie_maîtrise,competenceDeClasse);
+    //limitationOption('acrobatie',document.form.acrobatie_maîtrise,competenceDeClasse);
     limitationOption('art_de_la_magie',document.form.art_de_la_magie_maîtrise,competenceDeClasse);
     limitationOption('artisanat_I',document.form.artisanat_I_maîtrise,competenceDeClasse);
     limitationOption('artisanat_II',document.form.artisanat_II_maîtrise,competenceDeClasse);
@@ -3151,20 +3558,20 @@ function influenceNiveau() {
     affichagePointsExperience($('#niveau').val());
 };
 
-function limitationOption(competenceI,competenceII,competenceDeClasse) {
-    switch(document.getElementById(competenceI).html()) {
-        case '<h2>X</h2>' :
-            for (var nombElement = 0; nombElement < (parseInt($('#ide').html()) + 1); nombElement++) {
-                competenceII.options[nombElement] = new Option(competenceDeClasse[nombElement],competenceDeClasse[nombElement]);
-            };
-            break;
-        case '<h2>O</h2>' :
-            for (var nombElement = 0; nombElement < (parseInt($('#hide').html()) + 1); nombElement++) {
-                competenceII.options[nombElement] = new Option(competenceDeClasse[nombElement],competenceDeClasse[nombElement]);
-            };
-            break;
-    };
-}
+//function limitationOption(competenceI,competenceII,competenceDeClasse) {
+//    switch(document.getElementById(competenceI).html()) {
+//        case '<h2>X</h2>' :
+//            for (var nombElement = 0; nombElement < (parseInt($('#ide').html()) + 1); nombElement++) {
+//                competenceII.options[nombElement] = new Option(competenceDeClasse[nombElement],competenceDeClasse[nombElement]);
+//            };
+//            break;
+//        case '<h2>O</h2>' :
+//            for (var nombElement = 0; nombElement < (parseInt($('#hide').html()) + 1); nombElement++) {
+//                competenceII.options[nombElement] = new Option(competenceDeClasse[nombElement],competenceDeClasse[nombElement]);
+//            };
+//            break;
+//    };
+//}
 
 function affichagePointsExperience(valeur) {
     switch(valeur) {
@@ -5343,67 +5750,7 @@ function choixProtection(protection,valeur) {
 
 
 
-function capacitesSpecialesPaladin() {
-    if ($('#niveau').val() >= 1) {
-        $('#capacites_speciales_I').html('Aura du Bien.');
-        $('#capacites_speciales_II').html('Châtiment du mal (1/jour).');
-        $('#capacites_speciales_III').html('Détection du mal.');
-    };
 
-    if ($('#niveau').val() >= 2) {
-        $('#capacites_speciales_IV').html('Grâce divine.');
-        $('#capacites_speciales_V').html('Imposition des mains.');
-    };
-
-    if ($('#niveau').val() >= 3) {
-        $('#capacites_speciales_VI').html('Aura de bravour.');
-        $('#capacites_speciales_VII').html('Santé divine.');
-    };
-
-    if ($('#niveau').val() >= 4) {
-        $('#capacites_speciales_IX').html('Renvoie des morts-vivants.');
-    };
-
-    if ($('#niveau').val() >= 5) {
-        $('#capacites_speciales_II').html('Châtiment du mal (2/jour).');
-        $('#capacites_speciales_X').html('Destrier du paladin.');
-    };
-
-    if ($('#niveau').val() >= 6) {
-        $('#capacites_speciales_XI').html('Guérison des maladies (1/semaine).');
-    };
-
-    if ($('#niveau').val() >= 9) {
-        $('#capacites_speciales_XI').html('Guérison des maladies (2/semaine).');
-    };
-
-    if ($('#niveau').val() >= 10) {
-        $('#capacites_speciales_II').html('Châtiment du mal (3/jour).');
-    };
-
-    if ($('#niveau').val() >= 12) {
-        $('#capacites_speciales_XI').html('Guérison des maladies (3/semaine).');
-    };
-
-    if ($('#niveau').val() >= 15) {
-        $('#capacites_speciales_II').html('Châtiment du mal (4/jour).');
-        $('#capacites_speciales_XI').html('Guérison des maladies (4/semaine).');
-    };
-
-    if ($('#niveau').val() >= 18) {
-        $('#capacites_speciales_XI').html('Guérison des maladies (5/semaine).');
-    };
-
-    if ($('#niveau').val() >= 20) {
-        $('#capacites_speciales_II').html('Châtiment du mal (5/jour).');
-    };
- };
-
-function capacitesSpecialesPretre() {
-    if ($('#niveau').val() >= 1) {
-        $('#capacites_speciales_I').html('Renvoi ou intimidation des morts-vivants.');
-    };
- };
 
 function capacitesSpecialesRodeur() {
     if ($('#niveau').val() >= 1) {
