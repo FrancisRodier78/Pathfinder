@@ -3108,11 +3108,11 @@ $(function() {
         $('#sorts_jour_IX').html('-');
 
         if ($('#niveau').val() >= 1) {
-            $('#capacites_speciales_I').html('<a target="_blank" href="">aura.</a>');
-            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 1d6.</a>');
-            $('#capacites_speciales_III').html('<a target="_blank" href="">domaines.</a>');
-            $('#capacites_speciales_IV').html('<a target="_blank" href="">oraisons.</a>');
-            $('#capacites_speciales_V').html('<a target="_blank" href="">incantation spontanée.</a>');
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pr%c3%aatre.ashx#AURA">aura.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pr%c3%aatre.ashx#CANALISATIONDENERGIE">canalisation d\'énergie 1d6.</a>');
+            $('#capacites_speciales_III').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pr%c3%aatre.ashx#DOMAINES">domaines.</a>');
+            $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pr%c3%aatre.ashx#ORAISONS">oraisons.</a>');
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pr%c3%aatre.ashx#INCANTATIONSPONTANEE">incantation spontanée.</a>');
 
             $('#sorts_connus_0').html('Tous.');
             $('#sorts_connus_I').html('Tous.');
@@ -3141,7 +3141,7 @@ $(function() {
         };
 
         if ($('#niveau').val() >= 5) {
-            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 3d6.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pr%c3%aatre.ashx#CANALISATIONDENERGIE">canalisation d\'énergie 3d6.</a>');
 
             $('#sorts_connus_III').html('Tous.');
 
@@ -3153,7 +3153,7 @@ $(function() {
         };
 
         if ($('#niveau').val() >= 7) {
-            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 4d6.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pr%c3%aatre.ashx#CANALISATIONDENERGIE">canalisation d\'énergie 4d6.</a>');
 
             $('#sorts_connus_IV').html('Tous.');
 
@@ -3172,7 +3172,7 @@ $(function() {
         };
 
         if ($('#niveau').val() >= 9) {
-            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 5d6.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pr%c3%aatre.ashx#CANALISATIONDENERGIE">canalisation d\'énergie 5d6.</a>');
 
             $('#sorts_connus_V').html('Tous.');
 
@@ -3188,7 +3188,7 @@ $(function() {
         };
 
         if ($('#niveau').val() >= 11) {
-            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 6d6.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pr%c3%aatre.ashx#CANALISATIONDENERGIE">canalisation d\'énergie 6d6.</a>');
 
             $('#sorts_connus_VI').html('Tous.');
 
@@ -3204,7 +3204,7 @@ $(function() {
         };
 
         if ($('#niveau').val() >= 13) {
-            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 7d6.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pr%c3%aatre.ashx#CANALISATIONDENERGIE">canalisation d\'énergie 7d6.</a>');
 
             $('#sorts_connus_VII').html('Tous.');
 
@@ -3219,7 +3219,7 @@ $(function() {
         };
 
         if ($('#niveau').val() >= 15) {
-            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 8d6.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pr%c3%aatre.ashx#CANALISATIONDENERGIE">canalisation d\'énergie 8d6.</a>');
 
             $('#sorts_connus_VIII').html('Tous.');
 
@@ -3235,7 +3235,7 @@ $(function() {
         };
 
         if ($('#niveau').val() >= 17) {
-            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 9d6.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pr%c3%aatre.ashx#CANALISATIONDENERGIE">canalisation d\'énergie 9d6.</a>');
 
             $('#sorts_connus_IX').html('Tous.');
 
@@ -3251,7 +3251,7 @@ $(function() {
         };
 
         if ($('#niveau').val() >= 19) {
-            $('#capacites_speciales_II').html('<a target="_blank" href="">canalisation d\'énergie 10d6.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pr%c3%aatre.ashx#CANALISATIONDENERGIE">canalisation d\'énergie 10d6.</a>');
 
             $('#sorts_jour_VII').html('4+1');
             $('#sorts_jour_IX').html('3+1');
@@ -3262,6 +3262,279 @@ $(function() {
             $('#sorts_jour_IX').html('4+1');
         };
      };
+
+    function capacitesSpecialesRodeur() {
+        $('#sorts_connus_0').html('-');
+        $('#sorts_connus_I').html('-');
+        $('#sorts_connus_II').html('-');
+        $('#sorts_connus_III').html('-');
+        $('#sorts_connus_IV').html('-');
+        $('#sorts_connus_V').html('-');
+        $('#sorts_connus_VI').html('-');
+        $('#sorts_connus_VII').html('-');
+        $('#sorts_connus_VIII').html('-');
+        $('#sorts_connus_IX').html('-');
+
+        $('#sorts_jour_0').html('-');
+        $('#sorts_jour_I').html('-');
+        $('#sorts_jour_II').html('-');
+        $('#sorts_jour_III').html('-');
+        $('#sorts_jour_IV').html('-');
+        $('#sorts_jour_V').html('-');
+        $('#sorts_jour_VI').html('-');
+        $('#sorts_jour_VII').html('-');
+        $('#sorts_jour_VIII').html('-');
+        $('#sorts_jour_IX').html('-');
+
+        if ($('#niveau').val() >= 1) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#ENNEMIJURE">1er ennemi juré.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#PISTAGE">pistage.</a>');
+            $('#capacites_speciales_III').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#EMPATHIESAUVAGE">empathie sauvage.</a>');
+        };
+
+        if ($('#niveau').val() >= 2) {
+            $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#DONDESTYLEDECOMBAT">don de style de combat.</a>');
+        };
+
+        if ($('#niveau').val() >= 3) {
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#ENDURANCE">endurance.</a>');
+            $('#capacites_speciales_VI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#ENVIRONNEMENTDEPREDILECTION">1er environnement de prédilection.</a>');
+        };
+
+        if ($('#niveau').val() >= 4) {
+            $('#capacites_speciales_VII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#PACTEDUCHASSEUR">pacte du chasseur.</a>');
+
+            $('#sorts_connus_0').html('Tous.');
+
+            $('#sorts_jour_0').html('0*');
+        };
+
+        if ($('#niveau').val() >= 5) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#ENNEMIJURE">2e ennemi juré.</a>');
+
+            $('#sorts_jour_0').html('1');
+        };
+
+        if ($('#niveau').val() >= 6) {
+            $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#DONDESTYLEDECOMBAT">don de style de combat.</a>');
+        };
+
+        if ($('#niveau').val() >= 7) {
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#DEPLACEMENTFACILITE">déplacement facilité.</a>');
+
+            $('#sorts_connus_I').html('Tous.');
+
+            $('#sorts_jour_0').html('1');
+            $('#sorts_jour_I').html('0*');
+        };
+
+        if ($('#niveau').val() >= 8) {
+            $('#capacites_speciales_VI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#ENVIRONNEMENTDEPREDILECTION">2e environnement de prédilection.</a>');
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#PISTAGEACCELERE">pistage accéléré.</a>');
+
+            $('#sorts_jour_I').html('1');
+        };
+
+        if ($('#niveau').val() >= 9) {
+            $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#ESQUIVETOTALE">esquive totale.</a>');
+
+            $('#sorts_jour_0').html('2');
+        };
+
+        if ($('#niveau').val() >= 10) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#ENNEMIJURE">3e ennemi juré.</a>');
+            $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#DONDESTYLEDECOMBAT">don de style de combat.</a>');
+
+            $('#sorts_connus_II').html('Tous.');
+
+            $('#sorts_jour_II').html('0*');
+        };
+
+        if ($('#niveau').val() >= 11) {
+            $('#capacites_speciales_XI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#PROIEDUCHASSEUR">proie du chasseur.</a>');
+
+            $('#sorts_jour_II').html('1');
+        };
+
+        if ($('#niveau').val() >= 12) {
+            $('#capacites_speciales_XII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#CAMOUFLAGE">camouflage.</a>');
+
+            $('#sorts_jour_I').html('2');
+            $('#sorts_jour_II').html('1');
+        };
+
+        if ($('#niveau').val() >= 13) {
+            $('#capacites_speciales_VI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#ENVIRONNEMENTDEPREDILECTION">3e environnement de prédilection.</a>');
+
+            $('#sorts_connus_III').html('Tous.');
+
+            $('#sorts_jour_0').html('3');
+            $('#sorts_jour_I').html('2');
+            $('#sorts_jour_II').html('1');
+            $('#sorts_jour_III').html('0*');
+        };
+
+        if ($('#niveau').val() >= 14) {
+            $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#DONDESTYLEDECOMBAT">don de style de combat.</a>');
+
+            $('#sorts_jour_III').html('1');
+        };
+
+        if ($('#niveau').val() >= 15) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#ENNEMIJURE">4e ennemi juré.</a>');
+
+            $('#sorts_jour_II').html('2');
+        };
+
+        if ($('#niveau').val() >= 16) {
+            $('#capacites_speciales_XIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#ESQUIVESURNATURELLE">esquive surnaturelle.</a>');
+
+            $('#sorts_jour_I').html('3');
+            $('#sorts_jour_II').html('2');
+        };
+
+        if ($('#niveau').val() >= 17) {
+            $('#capacites_speciales_XIV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#DISCRETIONTOTALE">discrétion totale.</a>');
+
+            $('#sorts_jour_0').html('4');
+        };
+
+        if ($('#niveau').val() >= 18) {
+            $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#DONDESTYLEDECOMBAT">don de style de combat.</a>');
+            $('#capacites_speciales_VI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#ENVIRONNEMENTDEPREDILECTION">4e environnement de prédilection.</a>');
+
+            $('#sorts_jour_III').html('2');
+        };
+
+        if ($('#niveau').val() >= 19) {
+            $('#capacites_speciales_XV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#PROIEDUMAITRECHASSEUR">proie du maître chasseur.</a>');
+
+            $('#sorts_jour_II').html('3');
+        };
+
+        if ($('#niveau').val() >= 20) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#ENNEMIJURE">5e ennemi juré.</a>');
+            $('#capacites_speciales_XVI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.r%c3%b4deur.ashx#MAITRECHASSEUR">maître chasseur.</a>');
+
+            $('#sorts_jour_I').html('4');
+            $('#sorts_jour_III').html('3');
+        };
+    };
+
+    function capacitesSpecialesRoublard() {
+        $('#sorts_connus_0').html('-');
+        $('#sorts_connus_I').html('-');
+        $('#sorts_connus_II').html('-');
+        $('#sorts_connus_III').html('-');
+        $('#sorts_connus_IV').html('-');
+        $('#sorts_connus_V').html('-');
+        $('#sorts_connus_VI').html('-');
+        $('#sorts_connus_VII').html('-');
+        $('#sorts_connus_VIII').html('-');
+        $('#sorts_connus_IX').html('-');
+
+        $('#sorts_jour_0').html('-');
+        $('#sorts_jour_I').html('-');
+        $('#sorts_jour_II').html('-');
+        $('#sorts_jour_III').html('-');
+        $('#sorts_jour_IV').html('-');
+        $('#sorts_jour_V').html('-');
+        $('#sorts_jour_VI').html('-');
+        $('#sorts_jour_VII').html('-');
+        $('#sorts_jour_VIII').html('-');
+        $('#sorts_jour_IX').html('-');
+
+        if ($('#niveau').val() >= 1) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#ATTAQUESOURNOISE">attaque sournoise +1d6.</a>');
+            $('#capacites_speciales_II').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#RECHERCHEDESPIEGES">recherche des pièges.</a>');
+        };
+
+        if ($('#niveau').val() >= 2) {
+            $('#capacites_speciales_III').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#ESQUIVETOTALE">esquive totale.</a>');
+            $('#capacites_speciales_IV').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#TALENTDEROUBLARD">talent de roublard.</a>');
+        };
+
+        if ($('#niveau').val() >= 3) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#ATTAQUESOURNOISE">attaque sournoise +2d6.</a>');
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#SENSDESPIEGES">sens des pièges +1.</a>');
+        };
+
+        if ($('#niveau').val() >= 4) {
+            $('#capacites_speciales_VI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#TALENTDEROUBLARD">talent de roublard.</a>');
+            $('#capacites_speciales_VII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#ESQUIVEINSTINCTIVE">esquive instinctive.</a>');
+        };
+
+        if ($('#niveau').val() >= 5) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#ATTAQUESOURNOISE">attaque sournoise +3d6.</a>');
+        };
+
+        if ($('#niveau').val() >= 6) {
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#SENSDESPIEGES">sens des pièges +2.</a>');
+            $('#capacites_speciales_VI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#TALENTDEROUBLARD">talent de roublard.</a>');
+        };
+
+        if ($('#niveau').val() >= 7) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#ATTAQUESOURNOISE">attaque sournoise +4d6.</a>');
+        };
+
+        if ($('#niveau').val() >= 8) {
+            $('#capacites_speciales_VI').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#TALENTDEROUBLARD">talent de roublard.</a>');
+            $('#capacites_speciales_VIII').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#ESQUIVEINSTINCTIVESUPERIEURE">esquive instinctive supérieure.</a>');
+        };
+
+        if ($('#niveau').val() >= 9) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#ATTAQUESOURNOISE">attaque sournoise +5d6.</a>');
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#SENSDESPIEGES">sens des pièges +3.</a>');
+        };
+
+        if ($('#niveau').val() >= 10) {
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#TALENTDEMAITREROUBLARD">talent de maître-roublard.</a>');
+        };
+
+        if ($('#niveau').val() >= 11) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#ATTAQUESOURNOISE">attaque sournoise +6d6.</a>');
+        };
+
+        if ($('#niveau').val() >= 12) {
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#SENSDESPIEGES">sens des pièges +4.</a>');
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#TALENTDEMAITREROUBLARD">talent de maître-roublard.</a>');
+        };
+
+        if ($('#niveau').val() >= 13) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#ATTAQUESOURNOISE">attaque sournoise +7d6.</a>');
+        };
+
+        if ($('#niveau').val() >= 14) {
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#TALENTDEMAITREROUBLARD">talent de maître-roublard.</a>');
+        };
+
+        if ($('#niveau').val() >= 15) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#ATTAQUESOURNOISE">attaque sournoise +8d6.</a>');
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#SENSDESPIEGES">sens des pièges +5.</a>');
+        };
+
+        if ($('#niveau').val() >= 16) {
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#TALENTDEMAITREROUBLARD">talent de maître-roublard.</a>');
+        };
+
+        if ($('#niveau').val() >= 17) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#ATTAQUESOURNOISE">attaque sournoise +9d6.</a>');
+        };
+
+        if ($('#niveau').val() >= 18) {
+            $('#capacites_speciales_V').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#SENSDESPIEGES">sens des pièges +6.</a>');
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#TALENTDEMAITREROUBLARD">talent de maître-roublard.</a>');
+        };
+
+        if ($('#niveau').val() >= 19) {
+            $('#capacites_speciales_I').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#ATTAQUESOURNOISE">attaque sournoise +10d6.</a>');
+        };
+
+        if ($('#niveau').val() >= 20) {
+            $('#capacites_speciales_IX').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#TALENTDEMAITREROUBLARD">talent de maître-roublard.</a>');
+            $('#capacites_speciales_X').html('<a target="_blank" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#COUPDEMAITRE">coup de maître.</a>');
+        };
+    };
 
     $('#niveau').change(function() {
         switch($('#classe').val()) {
@@ -3349,7 +3622,6 @@ $(function() {
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-
                 capacitesSpecialesPretre();
                 break;
             case 'Rôdeur' :
@@ -3358,7 +3630,6 @@ $(function() {
                 calculeReflexes();
                 calculeVigeur();
                 calculeVolonte();
-
                 capacitesSpecialesRodeur();
                 break;
             case 'Roublard' :
@@ -5752,150 +6023,7 @@ function choixProtection(protection,valeur) {
 
 
 
-function capacitesSpecialesRodeur() {
-    if ($('#niveau').val() >= 1) {
-        $('#capacites_speciales_I').html('Empathie sauvage.');
-        $('#capacites_speciales_II').html('1er ennemie juré.');
-        $('#capacites_speciales_III').html('Pistage.');
-    };
 
-    if ($('#niveau').val() >= 2) {
-        $('#capacites_speciales_IV').html('Style de combat.');
-    };
-
-    if ($('#niveau').val() >= 3) {
-        $('#capacites_speciales_V').html('Endurance.');
-    };
-
-    if ($('#niveau').val() >= 4) {
-        $('#capacites_speciales_VI').html('Compagnon animal.');
-    };
-
-    if ($('#niveau').val() >= 5) {
-        $('#capacites_speciales_II').html('2ème ennemie juré.');
-    };
-
-    if ($('#niveau').val() >= 6) {
-        $('#capacites_speciales_VII').html('Science du style de combat.');
-    };
-
-    if ($('#niveau').val() >= 7) {
-        $('#capacites_speciales_VIII').html('Déplacement facilité.');
-    };
-
-    if ($('#niveau').val() >= 8) {
-        $('#capacites_speciales_IX').html('Pistage accéléré.');
-    };
-
-    if ($('#niveau').val() >= 9) {
-        $('#capacites_speciales_X').html('Esquive totale.');
-    };
-
-    if ($('#niveau').val() >= 10) {
-        $('#capacites_speciales_II').html('3ème ennemie juré.');
-    };
-
-    
-    if ($('#niveau').val() >= 11) {
-        $('#capacites_speciales_XI').html('Maîtrise du style de combat.');
-    };
-
-    if ($('#niveau').val() >= 13) {
-        $('#capacites_speciales_XII').html('Camouflage.');
-    };
-
-    if ($('#niveau').val() >= 15) {
-        $('#capacites_speciales_II').html('4ème ennemie juré.');
-    };
-
-    if ($('#niveau').val() >= 17) {
-        $('#capacites_speciales_XIII').html('Discrétion totale.');
-    };
-
-    if ($('#niveau').val() >= 20) {
-        $('#capacites_speciales_II').html('5ème ennemie juré.');
-    };
- };
-
-function capacitesSpecialesRoublard() {
-    if ($('#niveau').val() >= 1) {
-        $('#capacites_speciales_I').html('Attaque sournoise (+1D6).');
-        $('#capacites_speciales_II').html('Recherche des pièges.');
-    };
-
-    if ($('#niveau').val() >= 2) {
-        $('#capacites_speciales_III').html('Esquive totale.');
-    };
-
-    if ($('#niveau').val() >= 3) {
-        $('#capacites_speciales_I').html('Attaque sournoise (+2D6).');
-        $('#capacites_speciales_IV').html('Sens des pièges (+1).');
-    };
-
-    if ($('#niveau').val() >= 4) {
-        $('#capacites_speciales_V').html('Esquive instinctive.');
-    };
-
-    if ($('#niveau').val() >= 5) {
-        $('#capacites_speciales_I').html('Attaque sournoise (+3D6).');
-    };
-
-    if ($('#niveau').val() >= 6) {
-        $('#capacites_speciales_IV').html('Sens des pièges (+2).');
-    };
-
-    if ($('#niveau').val() >= 7) {
-        $('#capacites_speciales_I').html('Attaque sournoise (+4D6).');
-    };
-
-    if ($('#niveau').val() >= 8) {
-        $('#capacites_speciales_VI').html('Esquive instinctive supérieure.');
-    };
-
-    if ($('#niveau').val() >= 9) {
-        $('#capacites_speciales_I').html('Attaque sournoise (+5D6).');
-        $('#capacites_speciales_IV').html('Sens des pièges (+3).');
-    };
-
-    if ($('#niveau').val() >= 10) {
-        $('#capacites_speciales_VII').html('1 pouvoir spéciale.');
-    };
-
-    if ($('#niveau').val() >= 11) {
-        $('#capacites_speciales_I').html('Attaque sournoise (+6D6).');
-    };
-
-    if ($('#niveau').val() >= 12) {
-        $('#capacites_speciales_IV').html('Sens des pièges (+4).');
-    };
-
-    if ($('#niveau').val() >= 13) {
-        $('#capacites_speciales_I').html('Attaque sournoise (+7D6).');
-        $('#capacites_speciales_VII').html('2 pouvoir spéciale.');
-    };
-
-    if ($('#niveau').val() >= 15) {
-        $('#capacites_speciales_I').html('Attaque sournoise (+8D6).');
-        $('#capacites_speciales_IV').html('Sens des pièges (+5).');
-    };
-
-    if ($('#niveau').val() >= 16) {
-        $('#capacites_speciales_VII').html('3 pouvoir spéciale.');
-    };
-
-    if ($('#niveau').val() >= 17) {
-        $('#capacites_speciales_I').html('Attaque sournoise (+9D6).');
-    };
-
-    if ($('#niveau').val() >= 18) {
-        $('#capacites_speciales_IV').html('Sens des pièges (+6).');
-    };
-
-    if ($('#niveau').val() >= 19) {
-        $('#capacites_speciales_I').html('Attaque sournoise (+10D6).');
-        $('#capacites_speciales_VII').html('4 pouvoir spéciale.');
-    };
- };
 
 function validation() {
   console.log('valider : ',document.form.nom_du_personnage.value);
