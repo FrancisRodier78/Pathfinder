@@ -112,7 +112,7 @@
                     <div class="col-lg-4">
                         <label id="label_origine" for="origine">DIVINITE ORIGINE</label> 
                         <select id="origine" name="origine" onChange="influenceorigine()">
-                            <option selected>???</option>
+                            <option selected></option>
                             <option>Golarion</option>
                             <option>Royaumes oubliés</option>
                         </select>
@@ -122,9 +122,6 @@
                     <div class="col-lg-3">
                         <label id="label_divinite" for="divinite">DIVINITE NOM</label> 
                         <select id="divinite" name="divinite" onChange="influencedivinite()">
-                            <option selected>???</option>
-                            <option>Abadar</option>
-                            <option>Iori</option>
                         </select>
                         <span class="tooltip">La divinité est inconnue</span>
                     </div>
@@ -431,7 +428,7 @@
                     </div>
 
                     <div class="col-lg-2">
-                        <label id="lab_pri_depourvu" class="font_white">CA pris au depourvu</label>
+                        <label id="lab_pri_depourvu" class="font_white">CA pris au dépourvu</label>
                     </div>
 
                     <div class="col-lg-1">
@@ -439,7 +436,7 @@
                     </div>
 
                     <div class="col-lg-3">
-                        <label id="label_mod_part_ca" class="font_white">Modificateur particulier a la CA</label> 
+                        <label id="label_mod_part_ca" class="font_white">Modificateur particulier à la CA</label> 
                     </div>
 
                     <div class="col-lg-2">
@@ -3581,6 +3578,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/color.js"></script>
     <script type="text/javascript" src="js/classe.js"></script>
+    <script type="text/javascript" src="js/niveau.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
