@@ -225,6 +225,7 @@
                                 <th class="caption">CHARACTE-RISTIQUE</th>
                                 <th class="caption">VALEUR</th>
                                 <th class="caption">SAISIE</th>
+                                <th class="caption">VAL. RACIAL</th>
                                 <th class="caption">MODIF.</th>
                                 <th class="caption">VALEUR TEMPORAIRE</th> 
                                 <th class="caption">MODIF. TEMPORAIRE</th>
@@ -234,6 +235,12 @@
                                 <td><label id="force" for="for_sai" class="font_white">FOR</label></td>
                                 <td id="for_val"></td>
                                 <td><input id="for_saisie" type="text" name="for_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceFor()"></td>
+                                <td id="for_race">
+                                    <select id="for_val_race" name="race" onChange="influenceRace()">
+                                        <option></option>
+                                        <option>+2</option>
+                                    </select>
+                                </td>
                                 <td id="for_mod" name="for_mod_race"></td>
                                 <td id="for_val_temp"></td>
                                 <td id="for_mod_temp"></td>
@@ -243,6 +250,12 @@
                                 <td><label id="dextérité" for="dex_sai" class="font_white">DEX</label></td>
                                 <td id="dex_val"></td>
                                 <td><input id="dex_saisie" type="text" name="dex_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceDex()"></td>
+                                <td id="dex_race">
+                                    <select id="dex_val_race" name="race" onChange="influenceRace()">
+                                        <option></option>
+                                        <option>+2</option>
+                                    </select>
+                                </td>
                                 <td id="dex_mod" name="dex_mod_race"></td>
                                 <td id="dex_val_temp"></td>
                                 <td id="dex_mod_temp"></td>
@@ -252,6 +265,12 @@
                                 <td><label id="constitution" for="con_sai" class="font_white">CON</label></td>
                                 <td id="con_val"></td>
                                 <td><input id="con_saisie" type="text" name="con_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCon()"></td>
+                                <td id="con_race">
+                                    <select id="con_val_race" name="race" onChange="influenceRace()">
+                                        <option></option>
+                                        <option>+2</option>
+                                    </select>
+                                </td>
                                 <td id="con_mod" name="con_mod_race"></td>
                                 <td id="con_val_temp"></td>
                                 <td id="con_mod_temp"></td>
@@ -261,6 +280,12 @@
                                 <td><label id="intelligence" for="int_sai" class="font_white">INT</label></td>
                                 <td id="int_val"></td>
                                 <td><input id="int_saisie" type="text" name="int_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceInt()"></td>
+                                <td id="int_race">
+                                    <select id="int_val_race" name="race" onChange="influenceRace()">
+                                        <option></option>
+                                        <option>+2</option>
+                                    </select>
+                                </td>
                                 <td id="int_mod" name="int_mod_race"></td>
                                 <td id="int_val_temp"></td>
                                 <td id="int_mod_temp"></td>
@@ -270,6 +295,12 @@
                                 <td><label id="sagesse" for="sag_sai" class="font_white">SAG</label></td>
                                 <td id="sag_val"></td>
                                 <td><input id="sag_saisie" type="text" name="sag_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceSag()"></td>
+                                <td id="sag_race">
+                                    <select id="sag_val_race" name="race" onChange="influenceRace()">
+                                        <option></option>
+                                        <option>+2</option>
+                                    </select>
+                                </td>
                                 <td id="sag_mod" name="sag_mod_race"></td>
                                 <td id="sag_val_temp"></td>
                                 <td id="sag_mod_temp"></td>
@@ -279,6 +310,12 @@
                                 <td><label id="charisme" for="cha_sai" class="font_white">CHA</label></td>
                                 <td id="cha_val"></td>
                                 <td><input id="cha_saisie" type="text" name="cha_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCha()"></td>
+                                <td id="cha_rac">
+                                    <select id="cha_val_race" name="race" onChange="influenceRace()">
+                                        <option></option>
+                                        <option>+2</option>
+                                    </select>
+                                </td>
                                 <td id="cha_mod" name="cha_mod_race"></td>
                                 <td id="cha_val_temp"></td>
                                 <td id="cha_mod_temp"></td>

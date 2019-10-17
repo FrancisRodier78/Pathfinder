@@ -1,6 +1,5 @@
 // $('#user').focus();
 
-
 $(function() {
     $('#origine').change(function() {
         $('.divinite').remove();
@@ -45,6 +44,11 @@ $(function() {
         if ($('#origine').val() == 'Royaumes oubliés') {
             $('#divinite').append('<option class="divinite">***</option>');
         };
+    })
+
+    $('#race').change(function() {
+for_val
+
     })
 });
 
