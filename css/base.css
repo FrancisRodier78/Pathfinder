@@ -266,7 +266,7 @@ td {
 	vertical-align: middle;
 }
 
-#table_don, #table_capacites_speciales, #table_experience {
+#table_don, #table_capacites_speciales, #table_experience, #table_traits_raciaux {
 	width: 47rem;
 	margin: 3px;
 }

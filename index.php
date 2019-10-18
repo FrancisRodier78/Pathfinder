@@ -1062,11 +1062,11 @@
 
                             <tr>
                                 <td class="font_white">VD</td>
-                                <td id="vd_sans_armure_metre">0</td>
-                                <td id="vd_sans_armure_case">0</td>
-                                <td id="vd_avec_armure_metre">0</td>
-                                <td id="vd_avec_armure_case">0</td>
-                                <td id="vd_mod_divers">0</td>
+                                <td id="vd_sans_armure_metre"></td>
+                                <td id="vd_sans_armure_case"></td>
+                                <td id="vd_avec_armure_metre"></td>
+                                <td id="vd_avec_armure_case"></td>
+                                <td id="vd_mod_divers"></td>
                             </tr>
                         </table>
                     </div>
@@ -3345,6 +3345,19 @@
                             </div>
                         </div>
 
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <table id="table_traits_raciaux">
+                                    <tr><th id="label_traits_raciaux" class="font_white">TRAITS RACIAUX</th></tr>
+                                    <tr><td id="traits_raciaux_I" name="traits_raciaux_I"></td></tr>
+                                    <tr><td id="traits_raciaux_II" name="traits_raciaux_II"></td></tr>
+                                    <tr><td id="traits_raciaux_III" name="traits_raciaux_III"></td></tr>
+                                    <tr><td id="traits_raciaux_IV" name="traits_raciaux_IV"></td></tr>
+                                    <tr><td id="traits_raciaux_V" name="traits_raciaux_V"></td></tr>
+                                </table>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-lg-12">
                                 <table id="table_experience">
