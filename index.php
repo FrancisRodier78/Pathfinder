@@ -234,7 +234,7 @@
                             <tr>
                                 <td><label id="force" for="for_sai" class="font_white">FOR</label></td>
                                 <td id="for_val"></td>
-                                <td><input id="for_saisie" type="text" name="for_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceFor()"></td>
+                                <td><input id="for_saisie" type="text" name="for_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
                                 <td id="for_race">
                                     <select id="for_val_race" name="race" onChange="influenceRace()">
                                         <option></option>
@@ -3372,22 +3372,22 @@
                                     <tr>
                                         <td class="background_grey">CHARGE LEGERE</td>
                                         <td class="center" id="chargeLegere">0</td>
+                                        <td class="background_grey">SOULEVER AU DESSUS DE LA TETE</td>
+                                        <td class="center" id="chargeDessus">0</td>
+                                    </tr>
+
+                                    <tr>
                                         <td class="background_grey">CHARGE INTERMEDIAIRE</td>
                                         <td class="center" id="chargeIntermediaire">0</td>
+                                        <td class="background_grey">DECOLLER DU SOL</td>
+                                        <td class="center" id="soulever">0</td>
                                     </tr>
 
                                     <tr>
                                         <td class="background_grey">CHARGE LOURDE</td>
                                         <td class="center" id="chargeLourde">0</td>
-                                        <td class="background_grey">CHARGE MAX</td>
-                                        <td class="center" id="chargeMax">0</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="background_grey">SOULEVER</td>
-                                        <td class="center" id="soulever">0</td>
-                                        <td class="background_grey">TIRER OU POUSSER</td>
-                                        <td class="center" id="tirerOuPousser">0</td>
+                                        <td class="background_grey">POUSSER OU TIRER</td>
+                                        <td class="center" id="PousserOuTirer">0</td>
                                     </tr>
                                 </table>
                             </div>
@@ -3855,6 +3855,7 @@
     <script type="text/javascript" src="js/color.js"></script>
     <script type="text/javascript" src="js/classe.js"></script>
     <script type="text/javascript" src="js/niveau.js"></script>
+    <script type="text/javascript" src="js/race.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

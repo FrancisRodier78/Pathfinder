@@ -1,295 +1,385 @@
 // $('#user').focus();
 
+/
+Soulever et tirer. Un personnage peut soulever au‑dessus de sa
+tête un poids égal à sa charge maximale, c’est à dire le poids le plus
+élevé indiqué dans la colonne « charge lourde » de la Table 7-4 en
+fonction de la Force du personnage.
+
+Le personnage peut soulever le double de cette charge maximale
+mais, dans ce cas, il doit tenir son fardeau à bout de bras et n’avance
+que difficilement. Il perd tout bonus de Dextérité à la CA et sa vitesse
+de déplacement passe à 1,50 mètre par round (ce qui constitue
+désormais pour lui une action complexe).
+
+On peut tirer ou pousser jusqu’à cinq fois sa charge maximale
+autorisée. Ce chiffre peut être doublé si les conditions sont particulièrement
+favorables, ou réduit de moitié ou plus si elles sont
+défavorables.
+/
+/*
+Table 7‑4 : Charge transportable
+Force Charge légère Charge intermédiaire Charge lourde
+1 jusqu’à 1,5 kg. 1,5–3 kg. 3–5 kg.
+2 jusqu’à 3 kg. 3–6,5 kg. 6,5–10 kg.
+3 jusqu’à 5 kg. 5–10 kg. 10–15 kg.
+4 jusqu’à 6,5 kg. 6,5–13 kg. 13–20 kg.
+5 jusqu’à 8 kg. 8–16,5 kg. 16,5–25 kg.
+6 jusqu’à 10 kg. 10–20 kg. 20–30 kg.
+7 jusqu’à 11,5 kg. 11,5–23 kg. 23–35 kg.
+8 jusqu’à 13 kg. 13–26,5 kg. 26,5–40 kg.
+9 jusqu’à 15 kg. 15–30 kg. 30–45 kg.
+10 jusqu’à 17,5 kg. 17,5–33 kg. 33–50 kg.
+11 jusqu’à 19 kg. 19–38 kg. 38–57,5 kg.
+12 jusqu’à 21,5 kg. 21,5–43 kg. 43–65 kg.
+13 jusqu’à 25 kg. 25–50 kg. 50–75 kg.
+14 jusqu’à 29 kg. 29–58 kg. 58–87,5 kg.
+15 jusqu’à 33 kg. 33–66,5 kg. 66,5–100 kg.
+16 jusqu’à 38 kg. 38–76,5 kg. 76,5–115 kg.
+17 jusqu’à 43 kg. 43–86,5 kg. 86,5–130 kg.
+18 jusqu’à 50 kg. 50–100 kg. 100–150 kg.
+19 jusqu’à 58 kg. 58–116,5 kg. 116,5–175 kg.
+20 jusqu’à 66,5 kg. 66,5–133 kg. 133–200 kg.
+21 jusqu’à 76,5 kg. 76,5–153 kg. 153–230 kg.
+22 jusqu’à 86,5 kg. 86,5–173 kg. 173–260 kg.
+23 jusqu’à 100 kg. 100–200 kg. 200–300 kg.
+24 jusqu’à 116,5 kg. 116,5–233 kg. 233–350 kg.
+25 jusqu’à 133 kg. 133–266,5 kg. 266,5–400 kg.
+26 jusqu’à 153 kg. 153–306,5 kg. 306,5–460 kg.
+27 jusqu’à 173 kg. 173–346,5 kg. 346,5–520 kg.
+28 jusqu’à 200 kg. 200–400 kg. 400–600 kg.
+29 jusqu’à 233 kg. 233–466,5 kg. 466,5–700 kg.
++10 ×4 ×4 ×4
+*/
+function calculeCharge(valeur) {
+    $('#chargeLegere').html('0');
+    $('#chargeIntermediaire').html('0')
+    $('#chargeLourde').html('0');
+    $('#chargeDessus').html('0');
+    $('#soulever').html('0');
+    $('#PousserOuTirer').html('0');
+
+    switch(valeur) {
+        case 1 :
+            $('#chargeLegere').html('jusqu’à 1,5kg')
+            $('#chargeIntermediaire').html('1,5–3kg')
+            $('#chargeLourde').html('3–5kg')
+            $('#chargeDessus').html('5kg')
+            $('#soulever').html('10kg')
+            $('#PousserOuTirer').html('25kg')
+            break;
+        case 2 :
+            $('#chargeLegere').html('jusqu’à 3kg')
+            $('#chargeIntermediaire').html('3–6,5kg')
+            $('#chargeLourde').html('6,5–10kg')
+            $('#chargeDessus').html('10kg')
+            $('#soulever').html('20kg')
+            $('#PousserOuTirer').html('50kg')
+            break;
+        case 3 :
+            $('#chargeLegere').html('jusqu’à 5kg')
+            $('#chargeIntermediaire').html('5–10kg')
+            $('#chargeLourde').html('10–15kg')
+            $('#chargeDessus').html('15kg')
+            $('#soulever').html('30kg')
+            $('#PousserOuTirer').html('75kg')
+            break;
+        case 4 :
+            $('#chargeLegere').html('jusqu’à 6,5kg')
+            $('#chargeIntermediaire').html('6,5–13kg')
+            $('#chargeLourde').html('13–20kg')
+            $('#chargeDessus').html('20kg')
+            $('#soulever').html('40kg')
+            $('#PousserOuTirer').html('100kg')
+            break;
+        case 5 :
+            $('#chargeLegere').html('jusqu’à 8kg')
+            $('#chargeIntermediaire').html('8–16,5kg')
+            $('#chargeLourde').html('16,5–25kg')
+            $('#chargeDessus').html('25kg')
+            $('#soulever').html('50kg')
+            $('#PousserOuTirer').html('125kg')
+            break;
+        case 6 :
+            $('#chargeLegere').html('jusqu’à 10kg')
+            $('#chargeIntermediaire').html('10–20kg')
+            $('#chargeLourde').html('20–30kg')
+            $('#chargeDessus').html('30kg')
+            $('#soulever').html('60kg')
+            $('#PousserOuTirer').html('150kg')
+            break;
+        case 7 :
+            $('#chargeLegere').html('jusqu’à 11,5kg')
+            $('#chargeIntermediaire').html('11,5–23kg')
+            $('#chargeLourde').html('23–35kg')
+            $('#chargeDessus').html('35kg')
+            $('#soulever').html('70kg')
+            $('#PousserOuTirer').html('175kg')
+            break;
+        case 8 :
+            $('#chargeLegere').html('jusqu’à 13kg')
+            $('#chargeIntermediaire').html('13–26,5kg')
+            $('#chargeLourde').html('26,5–40kg')
+            $('#chargeDessus').html('40kg')
+            $('#soulever').html('80kg')
+            $('#PousserOuTirer').html('200kg')
+            break;
+        case 9 :
+            $('#chargeLegere').html('jusqu’à 15kg')
+            $('#chargeIntermediaire').html('15–30kg')
+            $('#chargeLourde').html('30–45kg')
+            $('#chargeDessus').html('45kg')
+            $('#soulever').html('90kg')
+            $('#PousserOuTirer').html('225kg')
+            break;
+        case 10 :
+            $('#chargeLegere').html('jusqu’à 17,5kg')
+            $('#chargeIntermediaire').html('17,5–33kg')
+            $('#chargeLourde').html('33–50kg')
+            $('#chargeDessus').html('50kg')
+            $('#soulever').html('100kg')
+            $('#PousserOuTirer').html('250kg')
+            break;
+        case 11 :
+            $('#chargeLegere').html('jusqu’à 19kg')
+            $('#chargeIntermediaire').html('19–38kg')
+            $('#chargeLourde').html('38–57,5kg')
+            $('#chargeDessus').html('57,5kg')
+            $('#soulever').html('115kg')
+            $('#PousserOuTirer').html('287,5kg')
+            break;
+        case 12 :
+            $('#chargeLegere').html('jusqu’à 21,5kg')
+            $('#chargeIntermediaire').html('21,5–43kg')
+            $('#chargeLourde').html('43–65kg')
+            $('#chargeDessus').html('65kg')
+            $('#soulever').html('120kg')
+            $('#PousserOuTirer').html('325kg')
+            break;
+        case 13 :
+            $('#chargeLegere').html('jusqu’à 25kg')
+            $('#chargeIntermediaire').html('25–50kg')
+            $('#chargeLourde').html('50–75kg')
+            $('#chargeDessus').html('75kg')
+            $('#soulever').html('150kg')
+            $('#PousserOuTirer').html('375kg')
+            break;
+        case 14 :
+            $('#chargeLegere').html('jusqu’à 29kg')
+            $('#chargeIntermediaire').html('29–58kg')
+            $('#chargeLourde').html('58–87,5kg')
+            $('#chargeDessus').html('87,5kg')
+            $('#soulever').html('175kg')
+            $('#PousserOuTirer').html('437,5kg')
+            break;
+        case 15 :
+            $('#chargeLegere').html('jusqu’à 33kg')
+            $('#chargeIntermediaire').html('33–66,5kg')
+            $('#chargeLourde').html('66,5–100kg')
+            $('#chargeDessus').html('100kg')
+            $('#soulever').html('200kg')
+            $('#PousserOuTirer').html('500kg')
+            break;
+        case 16 :
+            $('#chargeLegere').html('jusqu’à 38kg')
+            $('#chargeIntermediaire').html('38–76,5kg')
+            $('#chargeLourde').html('76,5–115kg')
+            $('#chargeDessus').html('115kg')
+            $('#soulever').html('225kg')
+            $('#PousserOuTirer').html('575kg')
+            break;
+        case 17 :
+            $('#chargeLegere').html('jusqu’à 43kg')
+            $('#chargeIntermediaire').html('43–86,5kg')
+            $('#chargeLourde').html('86,5–130kg')
+            $('#chargeDessus').html('130kg')
+            $('#soulever').html('260kg')
+            $('#PousserOuTirer').html('650kg')
+            break;
+        case 18 :
+            $('#chargeLegere').html('jusqu’à 50kg')
+            $('#chargeIntermediaire').html('50–100kg')
+            $('#chargeLourde').html('100–150kg')
+            $('#chargeDessus').html('150kg')
+            $('#soulever').html('300kg')
+            $('#PousserOuTirer').html('750kg')
+            break;
+        case 19 :
+            $('#chargeLegere').html('jusqu’à 58kg')
+            $('#chargeIntermediaire').html('58–116,5kg')
+            $('#chargeLourde').html('116,5–175kg')
+            $('#chargeDessus').html('175kg')
+            $('#soulever').html('350kg')
+            $('#PousserOuTirer').html('875kg')
+            break;
+        case 20 :
+            $('#chargeLegere').html('jusqu’à 66,5kg')
+            $('#chargeIntermediaire').html('66,5–133kg')
+            $('#chargeLourde').html('133–200kg')
+            $('#chargeDessus').html('200kg')
+            $('#soulever').html('400kg')
+            $('#PousserOuTirer').html('1000kg')
+            break;
+        case 21 :
+            $('#chargeLegere').html('jusqu’à 76,5kg')
+            $('#chargeIntermediaire').html('76,5–153kg')
+            $('#chargeLourde').html('153–230kg')
+            $('#chargeDessus').html('230kg')
+            $('#soulever').html('460kg')
+            $('#PousserOuTirer').html('1150kg')
+            break;
+        case 22 :
+            $('#chargeLegere').html('jusqu’à 86,5kg')
+            $('#chargeIntermediaire').html('86,5–173kg')
+            $('#chargeLourde').html('173–260kg')
+            $('#chargeDessus').html('260kg')
+            $('#soulever').html('520kg')
+            $('#PousserOuTirer').html('1300kg')
+            break;
+        case 23 :
+            $('#chargeLegere').html('jusqu’à 100 kg')
+            $('#chargeIntermediaire').html('100–200kg')
+            $('#chargeLourde').html('200–300kg')
+            $('#chargeDessus').html('300kg')
+            $('#soulever').html('600kg')
+            $('#PousserOuTirer').html('1500kg')
+            break;
+        case 24 :
+            $('#chargeLegere').html('jusqu’à 116,5kg')
+            $('#chargeIntermediaire').html('116,5–233kg')
+            $('#chargeLourde').html('233–350kg')
+            $('#chargeDessus').html('350kg')
+            $('#soulever').html('700kg')
+            $('#PousserOuTirer').html('1750kg')
+            break;
+        case 25 :
+            $('#chargeLegere').html('jusqu’à 133kg')
+            $('#chargeIntermediaire').html('133–266,5kg')
+            $('#chargeLourde').html('266,5–400kg')
+            $('#chargeDessus').html('400kg')
+            $('#soulever').html('800kg')
+            $('#PousserOuTirer').html('2000kg')
+            break;
+        case 26 :
+            $('#chargeLegere').html('jusqu’à 153kg')
+            $('#chargeIntermediaire').html('153–306,5kg')
+            $('#chargeLourde').html('306,5–460kg')
+            $('#chargeDessus').html('460kg')
+            $('#soulever').html('920kg')
+            $('#PousserOuTirer').html('2300kg')
+            break;
+        case 27 :
+            $('#chargeLegere').html('jusqu’à 173kg')
+            $('#chargeIntermediaire').html('173–346,5kg')
+            $('#chargeLourde').html('346,5–520kg')
+            $('#chargeDessus').html('520kg')
+            $('#soulever').html('1040kg')
+            $('#PousserOuTirer').html('2600kg')
+            break;
+        case 28 :
+            $('#chargeLegere').html('jusqu’à 200kg')
+            $('#chargeIntermediaire').html('200–400kg')
+            $('#chargeLourde').html('400–600kg')
+            $('#chargeDessus').html('600kg')
+            $('#soulever').html('1200kg')
+            $('#PousserOuTirer').html('3000kg')
+            break;
+        case 29 :
+            $('#chargeLegere').html('jusqu’à 233kg')
+            $('#chargeIntermediaire').html('233–466,5kg')
+            $('#chargeLourde').html('466,5–700kg')
+            $('#chargeDessus').html('700kg')
+            $('#soulever').html('1400kg')
+            $('#PousserOuTirer').html('3500kg')
+            break;
+    }
+};
+
+/*
+Table 1-3: modif icateurs de caractéristique et sorts supplémentaires
+Caractéristique Sorts supplémentaires par jour (par niveau de sort)
+Score Modificateur 0 1er 2e 3e 4e 5e 6e 7e 8e 9e
+1       –5  impossible de lancer des sorts liés à cette caractéristique
+2–3     –4  impossible de lancer des sorts liés à cette caractéristique
+4–5     –3  impossible de lancer des sorts liés à cette caractéristique
+6–7     –2  impossible de lancer des sorts liés à cette caractéristique
+8–9     –1  impossible de lancer des sorts liés à cette caractéristique
+10–11   0   — — — — — — — — — —
+12–13   +1  — 1 — — — — — — — —
+14–15   +2  — 1 1 — — — — — — —
+16–17   +3  — 1 1 1 — — — — — —
+18–19   +4  — 1 1 1 1 — — — — —
+20–21   +5  — 2 1 1 1 1 — — — —
+22–23   +6  — 2 2 1 1 1 1 — — —
+24–25   +7  — 2 2 2 1 1 1 1 — —
+26–27   +8  — 2 2 2 2 1 1 1 1 —
+28–29   +9  — 3 2 2 2 2 1 1 1 1
+30–31   +10 — 3 3 2 2 2 2 1 1 1
+32–33   +11 — 3 3 3 2 2 2 2 1 1
+34–35   +12 — 3 3 3 3 2 2 2 2 1
+36–37   +13 — 4 3 3 3 3 2 2 2 2
+38–39   +14 — 4 4 3 3 3 3 2 2 2
+40–41   +15 — 4 4 4 3 3 3 3 2 2
+42–43   +16 — 4 4 4 4 3 3 3 3 2
+44–45   +17 — 5 4 4 4 4 3 3 3 3
+*/
+
+function Table_1_3_sortSupplementaire(valeur) {
+}
+
+/
+DEX id="caracAcrobatie"
+DEX id="caracdiscretion"
+DEX id="caracequitation"
+DEX id="caracescamotage"
+DEX id="caracevasion"
+DEX id="caracsabotage"
+DEX id="caracvol"
+
+INT id="caracartisanat_I"
+INT id="caracartisanat_II"
+INT id="caracartisanat_III"
+INT id="caracartdelamagie"
+INT id="caracConnaissances_exploration"
+INT id="caracConnaissances_Folklore_Locale"
+INT id="caracConnaissances_Geographie"
+INT id="caracConnaissances_Histoire"
+INT id="caracConnaissances_Ingénieurie"
+INT id="caracConnaissances_Mystères"
+INT id="caracConnaissances_Nature"
+INT id="caracConnaissances_Noblesse"
+INT id="caracConnaissances_Plan"
+INT id="caracConnaissances_Religion"
+INT id="caracestimation"
+INT id="caraclinguistique"
+
+CHA id="caracbluff"
+CHA id="caracdeguisement"
+CHA id="caracdiplomatie"
+CHA id="caracdressage"
+CHA id="caracintimidation"
+CHA id="caracrepresentation_I"
+CHA id="caracrepresentation_II"
+CHA id="caracutilisationobjet"
+
+SAG id="caracperception"
+SAG id="caracpremiersecours"
+SAG id="caracprofession_I"
+SAG id="caracprofession_II"
+SAG id="caracpsychologie"
+SAG id="caracsurvie"
+
+/
+
 $(function() {
-    $('#origine').change(function() {
-        $('.divinite').remove();
+    $('#for_saisie').change(function() {
+        var valeur = parseInt($('#for_val').val());
+        var modificateur = Math.floor((valeur - 10)/2)
 
-        if ($('#origine').val() == 'Golarion') {
-            $('#divinite').append('<option class="divinite">Abadar, dieu de la civilisation</option>');
-            $('#divinite').append('<option class="divinite">Achaékek, l\'Assassin Divin</option>');
-            $('#divinite').append('<option class="divinite">Apsu, le Dragon Créateur</option>');
-            $('#divinite').append('<option class="divinite">Aroden, le Dernier des Azlants</option>');
-            $('#divinite').append('<option class="divinite">Asmodéus, dieu-diable des contrats</option>');
-            $('#divinite').append('<option class="divinite">Besmara, la Reine-Pirate</option>');
-            $('#divinite').append('<option class="divinite">Calistria, déesse-elfe aux trois visages</option>');
-            $('#divinite').append('<option class="divinite">Cayden, Cailéan, dieu des aventuriers</option>');
-            $('#divinite').append('<option class="divinite">Dahak, le Dragon Destructeur</option>');
-            $('#divinite').append('<option class="divinite">Desna, déesse des étoiles</option>');
-            $('#divinite').append('<option class="divinite">Droskar, le Forgeron Sombre</option>');
-            $('#divinite').append('<option class="divinite">Érastil, dieu de la famille</option>');
-            $('#divinite').append('<option class="divinite">Ghlaunder, le Dieu Parasite</option>');
-            $('#divinite').append('<option class="divinite">Gorum, dieu de la guerre</option>');
-            $('#divinite').append('<option class="divinite">Gozreh, dieu de la nature</option>');
-            $('#divinite').append('<option class="divinite">Groétus, la Fin des Temps</option>');
-            $('#divinite').append('<option class="divinite">Iomédae, déesse de la bravoure</option>');
-            $('#divinite').append('<option class="divinite">Irori, dieu du savoir</option>');
-            $('#divinite').append('<option class="divinite">Kurgess, l\'Homme Fort</option>');
-            $('#divinite').append('<option class="divinite">Lamashtu, déesse de la folie</option>');
-            $('#divinite').append('<option class="divinite">Lissala, la déesse des Runes</option>');
-            $('#divinite').append('<option class="divinite">Milani, qui Fleurit Sans Cesse</option>');
-            $('#divinite').append('<option class="divinite">Néthys, dieu de la magie</option>');
-            $('#divinite').append('<option class="divinite">Norgorber, dieu du meurtre</option>');
-            $('#divinite').append('<option class="divinite">Pharasma, déesse qui juge les défunts</option>');
-            $('#divinite').append('<option class="divinite">Razmir, le faux dieu</option>');
-            $('#divinite').append('<option class="divinite">Rovagug, dieu de la destruction</option>');
-            $('#divinite').append('<option class="divinite">Sarenrae, déesse-ange du soleil</option>');
-            $('#divinite').append('<option class="divinite">Shélyn, déesse de la beauté</option>');
-            $('#divinite').append('<option class="divinite">Sivanah, le Septième Voile</option>');
-            $('#divinite').append('<option class="divinite">Torag, dieu-nain des artisans</option>');
-            $('#divinite').append('<option class="divinite">Urgathoa, déesse-liche des maladies</option>');
-            $('#divinite').append('<option class="divinite">Zon-Kuthon, dieu des ténèbres</option>');
-            $('#divinite').append('<option class="divinite">Zyphus, le Sombre Faucheur</option>');
-        };
+        $('#caracescalade').html(parseInt(modificateur));
+        $('#caracnatation').val(parseInt(modificateur));
 
-        if ($('#origine').val() == 'Royaumes oubliés') {
-            $('#divinite').append('<option class="divinite">***</option>');
-        };
-    })
-
-    $('#race').change(function() {
-        $('#traits_raciaux_I').html(' ');
-        $('#traits_raciaux_II').html(' ');
-        $('#traits_raciaux_III').html(' ');
-        $('#traits_raciaux_IV').html(' ');
-        $('#traits_raciaux_V').html(' ');
-        $('#traits_raciaux_VI').html(' ');
-        $('#traits_raciaux_VII').html(' ');
-
-        $('#cat_taille').val('M');
-        $('#vd_sans_armure_metre').html(' ');
-        $('#vd_sans_armure_case').html(' ');
-
-        $('#diversperception').val('0');
-        $('#diversintimidation').val('0');
-        $('#diversAcrobatie').val('0');
-        $('#diversescalade').val('0');
-        $('#diversestimation').val('0');
-
-        $('#langueI').val(' ');
-        $('#langueII').val(' ');
-
-        $('#for_val_race').val(' ');
-        $('#dex_val_race').val(' ');
-        $('#con_val_race').val(' ');
-        $('#int_val_race').val(' ');
-        $('#sag_val_race').val(' ');
-        $('#cha_val_race').val(' ');
-
-        $('#sau_mod_part_ref').html(' ');
-        $('#sau_mod_part_vig').html(' ');
-        $('#sau_mod_part_vol').html(' ');
-
-        if ($('#race').val() == 'Demi-elfe') {
-            // +2 à une caractéristique. Les demi-elfes obtiennent un bonus de +2 à une caractéristique choisie lors de la création (ce bonus représente la diversité de leur race).
-            alert('Vous avez droit un +2 à une caractéristique.');
-            
-            // Taille moyenne. Les demi-elfes sont des créatures de taille M, ce qui ne leur apporte aucun bonus ni malus de taille.
-            $('#cat_taille').val('M');
-            
-            // Vitesse normale. Les demi-elfes possèdent une vitesse de déplacement de base de 9 mètres.
-            $('#vd_sans_armure_metre').html('9m');
-            $('#vd_sans_armure_case').html('6 cases');
-            
-            $('#traits_raciaux_I').html('Vision nocturne. Les demi-elfes peuvent voir deux fois plus loin que les humains dans des conditions de faible éclairage (voir le Chapitre 7).');
-            
-            $('#traits_raciaux_II').html('Adaptabilité. Les demi-elfes reçoivent le don Talent comme don supplémentaire au niveau 1.');
-            
-            $('#traits_raciaux_III').html('Immunités elfiques. Les demi-elfes sont immunisés aux effets de sommeil magique et bénéficient d’un bonus racial de +2 aux jets de sauvegarde contre les sorts et les effets de type enchantement.');
-            
-            $('#traits_raciaux_IV').html('Sang elfique. Les demi-elfes comptent à la fois comme humains et comme elfes pour les effets liés à la race.');
-            
-            // Sens aiguisés. Les demi-elfes reçoivent un bonus racial de +2 aux tests de Perception.
-            $('#diversperception').val('2');
-
-            $('#traits_raciaux_V').html('Talents multiples. Les demi-elfes choisissent deux classes de prédilection au niveau 1 et gagnent +1 point de vie ou +1 rang de compétence chaque fois qu’ils gagnent un niveau dans l’une de ces deux classes. Consultez le Chapitre 3 pour plus d’informations à propos des classes de prédilection.');
-            
-            // Langues supplémentaires. Les demi-elfes connaissent automatiquement le commun et l’elfe. Les demi-elfes qui possèdent une Intelligence élevée peuvent choisir n’importe quelle autre langue (à l’exception des langages secrets tels que la langue des druides).
-            $('#langueI').val('Commun');
-            $('#langueII').val('Elfe');
-        }
-
-        if ($('#race').val() == 'Demi-orque') {
-            // +2 à une caractéristique. Les demi-orques obtiennent un bonus de +2 à une caractéristique choisie lors de la création (ce bonus représente la diversité de leur race).
-            alert('Vous avez droit un +2 à une caractéristique.');
-
-            // Taille moyenne. Les demi-orques sont des créatures de taille M, ce qui ne leur apporte aucun bonus ni malus de taille.
-            $('#cat_taille').val('M');
-
-            // Vitesse normale. Les demi-orques possèdent une vitesse de déplacement de base de 9 mètres.
-            $('#vd_sans_armure_metre').html('9m');
-            $('#vd_sans_armure_case').html('6 cases');
-            
-            $('#traits_raciaux_I').html('Vision dans le noir. Les demi-orques peuvent voir dans le noir jusqu’à une distance de 18 mètres.');
-
-            // Intimidant. Les demi-orques reçoivent un bonus racial de +2 aux tests d’Intimidation grâce à leur nature féroce.
-            $('#diversintimidation').val('2');
-
-            $('#traits_raciaux_II').html('Sang orque. Les demi-orques comptent à la fois comme humains et comme orques pour les effets liés à la race.');
-
-            $('#traits_raciaux_III').html('Férocité orque. Une fois par jour, lorsqu’un demi-orque est amené sous 0 point de vie mais pas tué, il peut continuer à se battre pendant un round de plus, comme s’il était simplement hors de combat. À la fin de son tour, s’il ne repasse pas audessus de 0 point de vie, il tombe immédiatement inconscient et devient mourant.');
-
-            $('#traits_raciaux_IV').html('Armes familières. Les demi-orques sont formés au maniement des grandes haches et des cimeterres à deux mains et ils considèrent toutes les armes dont le nom comporte le mot « orque » comme des armes de guerre.');
-
-            // Langues supplémentaires. Les demi-orques connaissent automatiquement le commun et l’orque. Les demiorques qui possèdent une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante : abyssal, draconien, géant, gnoll et gobelin.
-            $('#langueI').val('Commun');
-            $('#langueII').val('Orque');
-        }
-
-        if ($('#race').val() == 'Elfe') {
-            // +2 Dextérité, +2 Intelligence, -2 Constitution. Les elfes sont agiles, tant physiquement que mentalement, mais plutôt frêles.
-            $('#dex_val_race').val('+2');
-            $('#int_val_race').val('+2');
-            $('#con_val_race').val('-2');
-
-            // Taille moyenne. Les elfes sont des créatures de taille M, ce qui ne leur apporte aucun bonus ni malus de taille.
-            $('#cat_taille').val('M');
-
-            // Vitesse normale. Les elfes possèdent une vitesse de déplacement de base de 9 mètres.
-            $('#vd_sans_armure_metre').html('9m');
-            $('#vd_sans_armure_case').html('6 cases');
-            
-            $('#traits_raciaux_I').html('Vision nocturne. Les elfes peuvent voir deux fois plus loin que les humains dans des conditions de faible éclairage (voir le Chapitre 7).');
-
-            $('#traits_raciaux_II').html('Immunités elfiques. Les elfes sont immunisés aux effets de sommeil magique et bénéficient d’un bonus racial de +2 aux jets de sauvegarde contre les sorts et les effets de type enchantement.');
-
-            $('#traits_raciaux_III').html('Magie elfique. Les elfes reçoivent un bonus racial de +2 aux tests de niveau de lanceur de sorts pour surmonter la résistance à la magie des cibles. Ils reçoivent également un bonus racial de +2 aux tests d’Art de la magie pour identifier les propriétés des objets magiques.');
-
-            // Sens aiguisés. Les elfes reçoivent un bonus racial de +2 aux tests de Perception.
-            $('#diversperception').val('2');
-
-            // Armes familières. Les elfes sont formés au maniement des arcs longs (y compris les arcs longs composites), des arcs courts (y compris les arcs courts composites), des épées longues, des rapières, et ils considèrent toutes les armes dont le nom comporte le mot « elfe » ou « elfique » comme des armes de guerre.
-            $('#traits_raciaux_IV').html('Armes familières. Les elfes sont formés au maniement des arcs longs (y compris les arcs longs composites), des arcs courts (y compris les arcs courts composites), des épées longues, des rapières, et ils considèrent toutes les armes dont le nom comporte le mot « elfe » ou « elfique » comme des armes de guerre.');
-
-            // Langues supplémentaires. Les elfes connaissent automatiquement le commun et l’elfe. Les elfes possédant une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante : céleste, draconien, gnoll, gnome, gobelin, orque et sylvestre.
-            $('#langueI').val('Commun');
-            $('#langueII').val('Elfe');
-        }
-
-        if ($('#race').val() == 'Halfelin') {
-            // +2 Dextérité, +2 Charisme, -2 Force. Les halfelins sont agiles et ont du caractère mais leur petite taille les rend plus faibles que les autres races.
-            $('#dex_val_race').val('+2');
-            $('#cha_val_race').val('+2');
-            $('#for_val_race').val('-2');
-
-            // Petite taille. Les halfelins sont des créatures de taille P. Ils gagnent donc un bonus de taille de +1 à leur classe d’armure et aux jets d’attaque, un malus de -1 à leur bonus de manoeuvres offensives (BMO) et à leur degré de manoeuvres défensives (DMD), ainsi qu’un bonus de taille de +4 aux tests de Discrétion.
-            $('#cat_taille').val('P');
-
-            // Vitesse lente. Les halfelins possèdent une vitesse de déplacement de base de 6 mètres.
-            $('#vd_sans_armure_metre').html('6m');
-            $('#vd_sans_armure_case').html('4 cases');
-            
-            // Sans peur. Les halfelins reçoivent un bonus racial de +2 à tous les jets de sauvegarde contre la terreur. Ce bonus se cumule avec celui provenant de la chance des halfelins.
-            $('#traits_raciaux_I').html('Sans peur. Les halfelins reçoivent un bonus racial de +2 à tous les jets de sauvegarde contre la terreur. Ce bonus se cumule avec celui provenant de la chance des halfelins.');
-
-            // Chance des halfelins. Les halfelins reçoivent un bonus racial de +1 à tous les jets de sauvegarde.
-            $('#sau_mod_part_ref').html('1');
-            $('#sau_mod_part_vig').html('1');
-            $('#sau_mod_part_vol').html('1');
-
-            // Sens aiguisés. Les halfelins reçoivent un bonus racial de +2 à tous les tests de Perception.
-            $('#diversperception').val('2');
-
-            // Bon équilibre. Les halfelins reçoivent un bonus racial de +2 à tous les tests d’Acrobaties et d’Escalade.
-            $('#diversAcrobatie').val('2');
-            $('#diversescalade').val('2');
-
-            // Armes familières. Les halfelins sont formés au maniement des frondes et considèrent toutes les armes dont le nom comporte le mot « halfelin » comme des armes de guerre.
-            $('#traits_raciaux_IV').html('Armes familières. Les halfelins sont formés au maniement des frondes et considèrent toutes les armes dont le nom comporte le mot « halfelin » comme des armes de guerre.');
-
-            // Langues supplémentaires. Les halfelins connaissent automatiquement le commun et le halfelin. Les halfelins qui possèdent une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante : abyssal, elfe, gnome, gobelin et nain.
-            $('#langueI').val('Commun');
-            $('#langueII').val('Halfelin');
-        }
-
-        if ($('#race').val() == 'Humain') {
-            // +2 à une caractéristique. Les personnages humains obtiennent un bonus de +2 à une caractéristique choisie lors de la création (ce bonus représente la diversité de leur race).
-            alert('Vous avez droit un +2 à une caractéristique.');
-
-            // Taille moyenne. Les humains sont des créatures de taille M, ce qui ne leur apporte aucun bonus ni malus de taille.
-            $('#cat_taille').val('M');
-
-            // Vitesse normale. Les humains possèdent une vitesse de déplacement de base de 9 mètres.
-            $('#vd_sans_armure_metre').html('9m');
-            $('#vd_sans_armure_case').html('6 cases');
-            
-            // Don en bonus. Les humains choisissent un don supplémentaire au niveau 1.
-
-            $('#traits_raciaux_I').html('Compétent. Les humains obtiennent un rang de compétence supplémentaire au niveau 1 et un rang de compétence en plus chaque fois qu’ils gagnent un niveau.'); 
-
-            // Langues supplémentaires. Les humains connaissent automatiquement le commun. Les humains qui possèdent une Intelligence élevée peuvent choisir n’importe quelle autre langue (à l’exception des langages secrets comme la langue des druides).
-            $('#langueI').val('Commun');
-        }
-
-        if ($('#race').val() == 'Gnome') {
-            // +2 Constitution, +2 Charisme, -2 Force. Les gnomes sont faibles physiquement mais étonnamment résistants et leur attitude les rend agréables à côtoyer.
-            $('#con_val_race').val('+2');
-            $('#cha_val_race').val('+2');
-            $('#for_val_race').val('-2');
-
-            // Petite taille. Les gnomes sont des créatures de taille P. Ils gagnent un bonus de taille de +1 à leur classe d’armure et aux jets d’attaque, un malus de -1 à leur bonus de manoeuvres offensives (BMO) et à leur degré de manoeuvres défensives (DMD), ainsi qu’un bonus de taille de +4 aux tests de Discrétion.
-            $('#cat_taille').val('P');
-
-            // Vitesse lente. Les gnomes possèdent une vitesse de déplacement de base de 6 mètres.
-            $('#vd_sans_armure_metre').html('6m');
-            $('#vd_sans_armure_case').html('4 cases');
-            
-            $('#traits_raciaux_I').html('Vision nocturne. Les gnomes peuvent voir deux fois plus loin que les humains dans des conditions de faible éclairage (voir le Chapitre 7).');
-
-            $('#traits_raciaux_II').html('Entraînement défensif. Les gnomes reçoivent un bonus d’esquive de +4 à la CA contre les monstres du sous-type géant.');            // Haine. Les gnomes reçoivent un bonus racial de +1 aux jets d’attaque contre les créatures humanoïdes des sous-types reptilien et gobelinoïde grâce à une formation spéciale contre ces ennemis jurés.
-
-            $('#traits_raciaux_III').html('Magie gnome. Les gnomes ajoutent +1 aux DD des jets de sauvegarde des illusions qu’ils lancent. Les gnomes qui possèdent un Charisme égal ou supérieur à 11 possèdent également les pouvoirs magiques suivants : 1/jour – communication avec les animaux, lumières dansantes, prestidigitation, et son imaginaire. Le niveau de lanceur de sorts de ces pouvoirs est égal au niveau du gnome, et leur DD est égal à 10 + le niveau du sort + le modificateur de Charisme du gnome.');
-
-            // Obsession. Les gnomes reçoivent un bonus racial de +2 à une compétence d’Artisanat ou de Profession de leur choix.
-            alert('+2 à une compétence d’Artisanat ou de Profession.');
-
-            $('#traits_raciaux_IV').html('Résistance aux illusions. Les gnomes reçoivent un bonus racial de +2 aux jets de sauvegarde contre les sorts et les effets de type illusion.');
-
-            // Sens aiguisés. Les gnomes reçoivent un bonus racial de +2 aux tests de Perception.
-            $('#diversperception').val('2');
-
-            // Armes familières. Les gnomes considèrent toutes les armes dont le nom comporte le mot « gnome » comme des armes de guerre.
-            $('#traits_raciaux_V').html('Armes familières. Les gnomes considèrent toutes les armes dont le nom comporte le mot « gnome » comme des armes de guerre.');
-
-            // Langues supplémentaires. Les gnomes connaissent automatiquement le commun et le gnome. Les gnomes qui possèdent une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante : draconien, elfe, géant, gobelin, nain et orque.            
-            $('#langueI').val('Commun');
-            $('#langueII').val('Gnome');
-        }
-
-        if ($('#race').val() == 'Nain') {
-            // +2 Constitution, +2 Sagesse, -2 Charisme. Les nains sont robustes et sages mais aussi un peu bourrus.
-            $('#con_val_race').val('+2');
-            $('#sag_val_race').val('+2');
-            $('#cha_val_race').val('-2');
-
-            // Taille moyenne. Les nains sont des créatures de taille M, ce qui ne leur apporte aucun bonus ni malus de taille.
-            $('#cat_taille').val('M');
-
-            // Lentement mais sûrement. Les nains possèdent une vitesse de déplacement de base de 6 mètres mais celle-ci n’est pas modifiée par leur armure ni par la charge qu’ils portent.
-            $('#vd_sans_armure_metre').html('6m');
-            $('#vd_sans_armure_case').html('4 cases');
-
-            $('#traits_raciaux_I').html('Vision dans le noir. Les nains peuvent voir dans le noir jusqu’à une distance de 18 mètres.');
-
-            // Avarice. Les nains gagnent un bonus racial de +2 aux tests d’Estimation visant à déterminer le prix d’objets non-magiques comportant des métaux ou des pierres précieuses.
-            $('#diversestimation').val('2');
-
-            $('#traits_raciaux_II').html('Connaissance de la pierre. Les nains reçoivent un bonus racial de +2 aux tests de Perception pour remarquer les irrégularités dans les constructions en pierre, comme les pièges ou les portes cachées dans les murs ou les sols en pierre. Il suffit qu’ils s’approchent à moins de 3 mètres d’un tel élément pour bénéficier d’un test pour les remarquer et ceci qu’ils les recherchent activement ou non.');
-
-            $('#traits_raciaux_III').html('Entraînement défensif. Les nains gagnent un bonus d’esquive de +4 à la CA contre les monstres du soustype géant.');
-
-            $('#traits_raciaux_IV').html('Haine. Les nains gagnent un bonus racial de +1 aux jets d’attaque contre les créatures humanoïdes des soustypes orque et gobelinoïde grâce à une formation spéciale contre ces ennemis jurés.');
-
-            $('#traits_raciaux_V').html('Robustes. Les nains gagnent un bonus racial de +2 aux jets de sauvegarde contre le poison, les sorts et les pouvoirs magiques.');
-
-            $('#traits_raciaux_VI').html('Stabilité. Les nains reçoivent un bonus racial de +4 à leur degré de manoeuvres défensives (DMD) lorsqu’ils se tiennent sur le sol et qu’ils tentent de résister à une bousculade ou à un croc-en-jambe.');
-
-            // Armes familières. Les nains sont formés au maniement des haches d’arme, aux pics de guerre lourds et aux marteaux de guerre. Ils considèrent toutes les armes dont le nom comporte le mot « nain » comme des armes de guerre.
-            $('#traits_raciaux_VII').html('Armes familières. Les nains sont formés au maniement des haches d’arme, aux pics de guerre lourds et aux marteaux de guerre. Ils considèrent toutes les armes dont le nom comporte le mot « nain » comme des armes de guerre.');
-
-            // Langues supplémentaires. Les nains connaissent automatiquement le commun et le nain. Les nains qui possèdent une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante : commun des profondeurs, élémentaire, géant, gnome, gobelin et orque.
-            $('#langueI').val('Commun');
-            $('#langueII').val('Nain');
-        }
+        calculeCharge(valeur);
     })
 });
 
@@ -545,137 +635,6 @@ function affichagePointsExperience(valeur) {
     }
 };
 
-function influenceRace() {
-    $('#vit').html('9m');
-    document.form.for_val.value = 0;
-    document.form.dex_val.value = 0;
-    document.form.con_val.value = 0;
-    document.form.int_val.value = 0;
-    document.form.sag_val.value = 0;
-    document.form.cha_val.value = 0;
-
-	switch(document.form.race.value) {
-		case 'Humain' :
-            $('#traits_I').html('1 don supplémentaire au niveau 1.');
-            $('#traits_II').html('4 points de compétence supplémentaires au niveau 1');
-            $('#traits_III').html('_et 1 point de compétence supplémentaire à chaque niveau par la suite.');
-            $('#traits_IV').html('linguistique : commun et au choix.');
-			break;
-		case 'Demi-elfe' :
-            $('#totalCompetencePerception').html(1);
-            document.form.perception_divers.value = +1;
-            $('#totalCompetenceDiplomatie').html(2);
-            document.form.diplomatie_divers.value = +2;
-
-            $('#traits_I').html('Immunité contre les sorts et effets magiques de type sommeil,');
-            $('#traits_II').html('_bonus de +2 contre les sorts d\'enchantements.');
-            $('#traits_III').html('Les demi-elfes voient deux fois plus loin que les humains');
-            $('#traits_IV').html('_dans des conditions de faible éclairages.');
-            $('#traits_V').html('+1 aux tests de perception auditive.');
-            $('#traits_VI').html('+2 aux tests de diplomatie.');
-            $('#traits_VII').html('Ils sont considérés comme des elfes à part entière ');
-            $('#traits_VIII').html('_pour tous les effets dépendant de la race.');
-            $('#traits_IX').html('linguistique d\'offices : commun et elfe.');
-
-			break;
-		case 'Demi-orque' :
-			document.form.for_val.value = +2;
-			document.form.int_val.value = -2;
-			document.form.cha_val.value = -2;
-
-            $('#traits_I').html('Orque et demi-orque voient à 18 mètres dans le noir le plus complet.');
-            $('#traits_II').html('Ils sont considérés comme des orques à part entière ');
-            $('#traits_III').html('_pour tous les effets dépendant de la race.');
-            $('#traits_IV').html('linguistique d\'offices : commun et orque.');
-            $('#traits_V').html('linguistique supplémentaires : abyssale, draconien, géant, gnoll, et gobelin.');
-            $('#traits_VI').html('Classe de prédilection : barbare.');
-
-			break;
-		case 'Elfe' :
-            $('#totalCompetencePerception').html(2);
-            document.form.perception_divers.value = +2;
-     		document.form.dex_val.value = +2;
-			document.form.con_val.value = -2;
-
-            $('#traits_I').html('Immunité contre les sorts et effets magiques de type sommeil,');
-            $('#traits_II').html('_bonus de +2 contre les sorts d\'enchantements.');
-            $('#traits_III').html('Les elfes voient deux fois plus loin que les humains');
-            $('#traits_IV').html('_dans des conditions de faible éclairages.');
-            $('#traits_V').html('Tous les elfes possèdent le don maniement d\'une arme de guerre');
-            $('#traits_VI').html('_pour l\'épée longue, la rapière et les arcs.');
-            $('#traits_VII').html('+2 aux tests de perception auditive.');
-            $('#traits_IX').html('linguistique d\'offices : commun et elfe.');
-            $('#traits_X').html('linguistique supplémentaires : draconien, goll, gnome, gobelin, orque et sylveste.');
-            $('#traits_XI').html('Classe de prédilection : magicien.');
-
-			break;
-		case 'Gnome' :
-            $('#totalCompetencePerception').html(2);
-            document.form.perception_divers.value = +2;
-			$('#vit').html('6m');
-			document.form.for_val.value = -2;
-			document.form.con_val.value = +2;
-
-            $('#traits_I').html('Les gnomes voient deux fois plus loin que les humains');
-            $('#traits_II').html('_dans des conditions de faible éclairages.');
-            $('#traits_III').html('Pour les gnomes le marteau-piolet est une arme de guerre.');
-            $('#traits_IV').html('+2 aux jets des sauvegarde contre les illusions.');
-            $('#traits_V').html('+1 au DD de jet des sauvergade contre tous les sorts de l\'école des illusions.');
-            $('#traits_VI').html('+1 aux jets d\'attaque contre les kobolds et les goblinoïdes.');
-            $('#traits_VII').html('+4 en esquive contre les créatures appartenant au type géant.');
-            $('#traits_VIII').html('+2 aux tests de perception auditive.');
-            $('#traits_IX').html('+2 aux tests de d\'alchimie.');
-            $('#traits_X').html('linguistique d\'offices : commun et gnome.');
-            $('#traits_XI').html('linguistique supplémentaires : draconien, elfe, géant, gobelin, orque, nain');
-            $('#traits_XII').html('_et orque.');
-            $('#traits_XIII').html('Communication avec les animaux fouisseurs une fois par jour.');
-            $('#traits_XIV').html('Les gnomes ayant au moins 10 en charisme peuvent lancer lumière dansantes,');
-            $('#traits_XV').html('_presdigitation et son imaginaire 1 fois par jour.');
-            $('#traits_XVI').html('Classe de prédilection : barde.');
-
-			break;
-		case 'Halfelin' :
-            $('#totalCompetenceEscalade').html(2);
-            document.form.escalade_divers.value = +2;
-            $('#totalCompetencePerception').html(2);
-            document.form.perception_divers.value = +2;
-			$('#vit').html('6m');
-			document.form.for_val.value = -2;
-			document.form.dex_val.value = +2;
-
-            $('#traits_I').html('+2 aux tests de déplacement silencieux et escalade.');
-            $('#traits_II').html('+1 à tous les jets de sauvegarde.');
-            $('#traits_III').html('+2 aux jets de sauvegarde contre la terreur.');
-            $('#traits_IV').html('+1 aux jets d\'attaque avec les armes de jets et fronde.');
-            $('#traits_V').html('+2 aux tests de perception auditive.');
-            $('#traits_VI').html('linguistique d\'offices : commun et halfelin.');
-            $('#traits_VII').html('linguistique supplémentaires : elfe, gnome, gobelin, nain  et orque');
-            $('#traits_VIII').html('Classe de prédilection : roublard.');
-
-			break;
-		case 'Nain' :
-			$('#vit').html('6m');
-			document.form.con_val.value = +2;
-			document.form.cha_val.value = -2;
-
-            $('#traits_I').html('Les nains voient à 18 mètres dans le noir le plus complet.');
-            $('#traits_IV').html('Pour les nains la hache de guerre naine et l\'urgrosh sont des armes de guerre.');
-            $('#traits_V').html('+4 pour résister aux bousculade et au croc-en-jambe.');
-            $('#traits_VI').html('+2 au jet de sauvgarde contre le poison.');
-            $('#traits_VII').html('+2 aux jets de sauvegarde contre tous les sorts et effets imitant des sorts');
-            $('#traits_VIII').html('+1 aux jets d\'attaque contre les orques et les goblinoïdes.');
-            $('#traits_IX').html('+4 en esquive contre les créatures appartenant au type géant.');
-            $('#traits_X').html('+2 en estimation sur les objets en métal ou en pierre.');
-            $('#traits_XI').html('+2 en artisanat lié au métal et à la pierre.');
-            $('#traits_XII').html('linguistique d\'offices : commun et nain.');
-            $('#traits_XIII').html('linguistique supplémentaires : commun des profondeur, géant, gnome, gobelin,');
-            $('#traits_XIV').html('_orque et terreux.');
-            $('#traits_XV').html('Classe de prédilection : guerrier.');
-
-			break;
-	}
-};
-
 function calculTaillePoids() {
     var humainTM = new Array();
     var HumainTF = new Array();
@@ -860,291 +819,24 @@ function calculTaillePoids() {
 	}
 };
 
-function influenceFor() {
-	var valeur = parseInt(document.form.for_val.value);
-	/* on appel une fois calculeInfluence(valeur) et on stock son résultat dans resultatCalculeInfluence */
-	var resultatCalculeInfluence = calculeInfluence(valeur);
-
-	$('#for_mod').html(resultatCalculeInfluence);
-
-	$('#lut_mod_for').html(resultatCalculeInfluence);
-
-
-    for (var i = 0; i < document.getElementsByClassName('carac_for').length; i++) {
-        if (isNaN(parseInt(document.getElementsByClassName('carac_for')[i].html))) {
-            var valeurB = 0;
-        } else {
-            var valeurB = parseInt(document.getElementsByClassName('carac_for')[i].html);
-        };
-
-        document.getElementsByClassName('carac_for')[i].html(valeurB
-                                                                  + resultatCalculeInfluence);
-    };
-
-    calculeCharge(valeur);
-};
-
-function calculeCharge(valeur) {
-    $('#chargeLegere').html('0');
-    $('#chargeIntermediaire').html('0')
-    $('#chargeLourde').html('0');
-    $('#chargeMax').html('0');
-    $('#soulever').html('0');
-    $('#tirerOuPousser').html('0');
-
-    switch(valeur) {
-        case 1 :
-            $('#chargeLegere').html('jusqu’à 1,5kg')
-            $('#chargeIntermediaire').html('1,5–3kg')
-            $('#chargeLourde').html('3–5kg')
-            $('#chargeMax').html('5kg')
-            $('#soulever').html('10kg')
-            $('#tirerOuPousser').html('25kg')
-            break;
-        case 2 :
-            $('#chargeLegere').html('jusqu’à 3kg')
-            $('#chargeIntermediaire').html('3–6,5kg')
-            $('#chargeLourde').html('6,5–10kg')
-            $('#chargeMax').html('10kg')
-            $('#soulever').html('20kg')
-            $('#tirerOuPousser').html('50kg')
-            break;
-        case 3 :
-            $('#chargeLegere').html('jusqu’à 5kg')
-            $('#chargeIntermediaire').html('5–10kg')
-            $('#chargeLourde').html('10–15kg')
-            $('#chargeMax').html('15kg')
-            $('#soulever').html('30kg')
-            $('#tirerOuPousser').html('75kg')
-            break;
-        case 4 :
-            $('#chargeLegere').html('jusqu’à 6,5kg')
-            $('#chargeIntermediaire').html('6,5–13kg')
-            $('#chargeLourde').html('13–20kg')
-            $('#chargeMax').html('20kg')
-            $('#soulever').html('40kg')
-            $('#tirerOuPousser').html('100kg')
-            break;
-        case 5 :
-            $('#chargeLegere').html('jusqu’à 8kg')
-            $('#chargeIntermediaire').html('8–16,5kg')
-            $('#chargeLourde').html('16,5–25kg')
-            $('#chargeMax').html('25kg')
-            $('#soulever').html('50kg')
-            $('#tirerOuPousser').html('125kg')
-            break;
-        case 6 :
-            $('#chargeLegere').html('jusqu’à 10kg')
-            $('#chargeIntermediaire').html('10–20kg')
-            $('#chargeLourde').html('20–30kg')
-            $('#chargeMax').html('30kg')
-            $('#soulever').html('60kg')
-            $('#tirerOuPousser').html('150kg')
-            break;
-        case 7 :
-            $('#chargeLegere').html('jusqu’à 11,5kg')
-            $('#chargeIntermediaire').html('11,5–23kg')
-            $('#chargeLourde').html('23–35kg')
-            $('#chargeMax').html('35kg')
-            $('#soulever').html('70kg')
-            $('#tirerOuPousser').html('175kg')
-            break;
-        case 8 :
-            $('#chargeLegere').html('jusqu’à 13kg')
-            $('#chargeIntermediaire').html('13–26,5kg')
-            $('#chargeLourde').html('26,5–40kg')
-            $('#chargeMax').html('40kg')
-            $('#soulever').html('80kg')
-            $('#tirerOuPousser').html('200kg')
-            break;
-        case 9 :
-            $('#chargeLegere').html('jusqu’à 15kg')
-            $('#chargeIntermediaire').html('15–30kg')
-            $('#chargeLourde').html('30–45kg')
-            $('#chargeMax').html('45kg')
-            $('#soulever').html('90kg')
-            $('#tirerOuPousser').html('225kg')
-            break;
-        case 10 :
-            $('#chargeLegere').html('jusqu’à 17,5kg')
-            $('#chargeIntermediaire').html('17,5–33kg')
-            $('#chargeLourde').html('33–50kg')
-            $('#chargeMax').html('50kg')
-            $('#soulever').html('100kg')
-            $('#tirerOuPousser').html('250kg')
-            break;
-        case 11 :
-            $('#chargeLegere').html('jusqu’à 19kg')
-            $('#chargeIntermediaire').html('19–38kg')
-            $('#chargeLourde').html('38–57,5kg')
-            $('#chargeMax').html('57,5kg')
-            $('#soulever').html('115kg')
-            $('#tirerOuPousser').html('287,5kg')
-            break;
-        case 12 :
-            $('#chargeLegere').html('jusqu’à 21,5kg')
-            $('#chargeIntermediaire').html('21,5–43kg')
-            $('#chargeLourde').html('43–65kg')
-            $('#chargeMax').html('65kg')
-            $('#soulever').html('120kg')
-            $('#tirerOuPousser').html('325kg')
-            break;
-        case 13 :
-            $('#chargeLegere').html('jusqu’à 25kg')
-            $('#chargeIntermediaire').html('25–50kg')
-            $('#chargeLourde').html('50–75kg')
-            $('#chargeMax').html('75kg')
-            $('#soulever').html('150kg')
-            $('#tirerOuPousser').html('375kg')
-            break;
-        case 14 :
-            $('#chargeLegere').html('jusqu’à 29kg')
-            $('#chargeIntermediaire').html('29–58kg')
-            $('#chargeLourde').html('58–87,5kg')
-            $('#chargeMax').html('87,5kg')
-            $('#soulever').html('175kg')
-            $('#tirerOuPousser').html('437,5kg')
-            break;
-        case 15 :
-            $('#chargeLegere').html('jusqu’à 33kg')
-            $('#chargeIntermediaire').html('33–66,5kg')
-            $('#chargeLourde').html('66,5–100kg')
-            $('#chargeMax').html('100kg')
-            $('#soulever').html('200kg')
-            $('#tirerOuPousser').html('500kg')
-            break;
-        case 16 :
-            $('#chargeLegere').html('jusqu’à 38kg')
-            $('#chargeIntermediaire').html('38–76,5kg')
-            $('#chargeLourde').html('76,5–115kg')
-            $('#chargeMax').html('115kg')
-            $('#soulever').html('225kg')
-            $('#tirerOuPousser').html('575kg')
-            break;
-        case 17 :
-            $('#chargeLegere').html('jusqu’à 43kg')
-            $('#chargeIntermediaire').html('43–86,5kg')
-            $('#chargeLourde').html('86,5–130kg')
-            $('#chargeMax').html('130kg')
-            $('#soulever').html('260kg')
-            $('#tirerOuPousser').html('650kg')
-            break;
-        case 18 :
-            $('#chargeLegere').html('jusqu’à 50kg')
-            $('#chargeIntermediaire').html('50–100kg')
-            $('#chargeLourde').html('100–150kg')
-            $('#chargeMax').html('150kg')
-            $('#soulever').html('300kg')
-            $('#tirerOuPousser').html('750kg')
-            break;
-        case 19 :
-            $('#chargeLegere').html('jusqu’à 58kg')
-            $('#chargeIntermediaire').html('58–116,5kg')
-            $('#chargeLourde').html('116,5–175kg')
-            $('#chargeMax').html('175kg')
-            $('#soulever').html('350kg')
-            $('#tirerOuPousser').html('875kg')
-            break;
-        case 20 :
-            $('#chargeLegere').html('jusqu’à 66,5kg')
-            $('#chargeIntermediaire').html('66,5–133kg')
-            $('#chargeLourde').html('133–200kg')
-            $('#chargeMax').html('200kg')
-            $('#soulever').html('400kg')
-            $('#tirerOuPousser').html('1000kg')
-            break;
-        case 21 :
-            $('#chargeLegere').html('jusqu’à 76,5kg')
-            $('#chargeIntermediaire').html('76,5–153kg')
-            $('#chargeLourde').html('153–230kg')
-            $('#chargeMax').html('230kg')
-            $('#soulever').html('460kg')
-            $('#tirerOuPousser').html('1150kg')
-            break;
-        case 22 :
-            $('#chargeLegere').html('jusqu’à 86,5kg')
-            $('#chargeIntermediaire').html('86,5–173kg')
-            $('#chargeLourde').html('173–260kg')
-            $('#chargeMax').html('260kg')
-            $('#soulever').html('520kg')
-            $('#tirerOuPousser').html('1300kg')
-            break;
-        case 23 :
-            $('#chargeLegere').html('jusqu’à 100 kg')
-            $('#chargeIntermediaire').html('100–200kg')
-            $('#chargeLourde').html('200–300kg')
-            $('#chargeMax').html('300kg')
-            $('#soulever').html('600kg')
-            $('#tirerOuPousser').html('1500kg')
-            break;
-        case 24 :
-            $('#chargeLegere').html('jusqu’à 116,5kg')
-            $('#chargeIntermediaire').html('116,5–233kg')
-            $('#chargeLourde').html('233–350kg')
-            $('#chargeMax').html('350kg')
-            $('#soulever').html('700kg')
-            $('#tirerOuPousser').html('1750kg')
-            break;
-        case 25 :
-            $('#chargeLegere').html('jusqu’à 133kg')
-            $('#chargeIntermediaire').html('133–266,5kg')
-            $('#chargeLourde').html('266,5–400kg')
-            $('#chargeMax').html('400kg')
-            $('#soulever').html('800kg')
-            $('#tirerOuPousser').html('2000kg')
-            break;
-        case 26 :
-            $('#chargeLegere').html('jusqu’à 153kg')
-            $('#chargeIntermediaire').html('153–306,5kg')
-            $('#chargeLourde').html('306,5–460kg')
-            $('#chargeMax').html('460kg')
-            $('#soulever').html('920kg')
-            $('#tirerOuPousser').html('2300kg')
-            break;
-        case 27 :
-            $('#chargeLegere').html('jusqu’à 173kg')
-            $('#chargeIntermediaire').html('173–346,5kg')
-            $('#chargeLourde').html('346,5–520kg')
-            $('#chargeMax').html('520kg')
-            $('#soulever').html('1040kg')
-            $('#tirerOuPousser').html('2600kg')
-            break;
-        case 28 :
-            $('#chargeLegere').html('jusqu’à 200kg')
-            $('#chargeIntermediaire').html('200–400kg')
-            $('#chargeLourde').html('400–600kg')
-            $('#chargeMax').html('600kg')
-            $('#soulever').html('1200kg')
-            $('#tirerOuPousser').html('3000kg')
-            break;
-        case 29 :
-            $('#chargeLegere').html('jusqu’à 233kg')
-            $('#chargeIntermediaire').html('233–466,5kg')
-            $('#chargeLourde').html('466,5–700kg')
-            $('#chargeMax').html('700kg')
-            $('#soulever').html('1400kg')
-            $('#tirerOuPousser').html('3500kg')
-            break;
-    }
-};
 
 function influenceDex() {
 	var valeur = parseInt(document.form.dex_val.value);
-	/* on appel une fois calculeInfluence(valeur) et on stock son résultat dans resultatCalculeInfluence */
-	var resultatCalculeInfluence = calculeInfluence(valeur);
+	/* on appel une fois Table_1_3_modificateur(valeur) et on stock son résultat dans resultatTable_1_3_modificateur */
+	var resultatTable_1_3_modificateur = Table_1_3_modificateur(valeur);
 
-	$('#dex_mod').html(resultatCalculeInfluence);
-	$('#ca_mod_dex').html(resultatCalculeInfluence);
+	$('#dex_mod').html(resultatTable_1_3_modificateur);
+	$('#ca_mod_dex').html(resultatTable_1_3_modificateur);
 
 	$('#ca_total').html(calculeCa());
-	$('#init_mod_dex').html(resultatCalculeInfluence);
+	$('#init_mod_dex').html(resultatTable_1_3_modificateur);
 
 	$('#val_ca_contact').html(calculeCaContact());
 	$('#val_pri_depourvu').html(calculeCaPrisDepourvu());
 
 	calculeInit();
 
-	$('#sau_mod_car_ref').html(resultatCalculeInfluence);
+	$('#sau_mod_car_ref').html(resultatTable_1_3_modificateur);
 
 	calculeReflexes();
 
@@ -1156,19 +848,19 @@ function influenceDex() {
         };
 
         document.getElementsByClassName('carac_dex')[i].html(valeur
-                                                                  + resultatCalculeInfluence);
+                                                                  + resultatTable_1_3_modificateur);
     };
 };
 
 function influenceCon() {
 	var valeur = parseInt(document.form.con_val.value);
-	var resultatCalculeInfluence = calculeInfluence(valeur);
+	var resultatTable_1_3_modificateur = Table_1_3_modificateur(valeur);
 
-	$('#con_mod').html(resultatCalculeInfluence);
+	$('#con_mod').html(resultatTable_1_3_modificateur);
 
-	$('#pv').html(CalculePv(resultatCalculeInfluence));
+	$('#pv').html(CalculePv(resultatTable_1_3_modificateur));
 
-	$('#sau_mod_car_vig').html(resultatCalculeInfluence);
+	$('#sau_mod_car_vig').html(resultatTable_1_3_modificateur);
 
 	calculeVigeur();
 
@@ -1180,15 +872,15 @@ function influenceCon() {
         };
 
         document.getElementsByClassName('carac_con')[i].html(valeur
-                                                                  + resultatCalculeInfluence);
+                                                                  + resultatTable_1_3_modificateur);
     };
 };
 
 function influenceInt() {
 	var valeur = parseInt(document.form.int_val.value);
-    var resultatCalculeInfluence = calculeInfluence(valeur);
+    var resultatTable_1_3_modificateur = Table_1_3_modificateur(valeur);
 
-	$('#int_mod').html(resultatCalculeInfluence);
+	$('#int_mod').html(resultatTable_1_3_modificateur);
 
     for (var i = 0; i < document.getElementsByClassName('carac_int').length; i++) {
         if (isNaN(parseInt(document.getElementsByClassName('carac_int')[i].html()))) {
@@ -1198,11 +890,11 @@ function influenceInt() {
         };
 
         document.getElementsByClassName('carac_int')[i].html(valeur
-                                                                  + resultatCalculeInfluence);
+                                                                  + resultatTable_1_3_modificateur);
     };
 
     if (document.form.classe.value == 'Magicien') {
-        calculeSorts(resultatCalculeInfluence);
+        calculeSorts(resultatTable_1_3_modificateur);
     } else {
         console.log('sorts');
         $('#sorts_connus_0').html('0');
@@ -1702,11 +1394,11 @@ function  calculeSortsDD() {
 
 function influenceSag() {
 	var valeur = parseInt(document.form.sag_val.value);
-	var resultatCalculeInfluence = calculeInfluence(valeur);
+	var resultatTable_1_3_modificateur = Table_1_3_modificateur(valeur);
 
-	$('#sag_mod').html(resultatCalculeInfluence);
+	$('#sag_mod').html(resultatTable_1_3_modificateur);
 
-	$('#sau_mod_car_vol').html(resultatCalculeInfluence);
+	$('#sau_mod_car_vol').html(resultatTable_1_3_modificateur);
 
 	calculeVolonte();
 
@@ -1718,15 +1410,15 @@ function influenceSag() {
         };
 
         document.getElementsByClassName('carac_sag')[i].html(valeur
-                                                                  + resultatCalculeInfluence);
+                                                                  + resultatTable_1_3_modificateur);
     };
 };
 
 function influenceCha() {
 	var valeur = parseInt(document.form.cha_val.value);
-    var resultatCalculeInfluence = calculeInfluence(valeur);
+    var resultatTable_1_3_modificateur = Table_1_3_modificateur(valeur);
 
-	$('#cha_mod').html(resultatCalculeInfluence);
+	$('#cha_mod').html(resultatTable_1_3_modificateur);
 
     for (var i = 0; i < document.getElementsByClassName('carac_cha').length; i++) {
         if (isNaN(parseInt(document.getElementsByClassName('carac_cha')[i].html))) {
@@ -1736,11 +1428,11 @@ function influenceCha() {
         };
 
         document.getElementsByClassName('carac_cha')[i].html(valeur
-                                                                  + resultatCalculeInfluence);
+                                                                  + resultatTable_1_3_modificateur);
     };
 };
 
-function calculeInfluence(valeur) {
+function Table_1_3_modificateur(valeur) {
 		var modificateur = Math.round((valeur - 11)/2);
 		return modificateur;
 };
@@ -1872,22 +1564,22 @@ function CalculePv(bonusParNiveau) {
 function calculeInit() {
 	var valeur = parseInt(document.form.dex_val.value);
 
-	/* on appel une fois calculeInfluence(valeur) 
-	et on stock son résultat dans resultatCalculeInfluence */
-	var resultatCalculeInfluence = calculeInfluence(valeur);
+	/* on appel une fois Table_1_3_modificateur(valeur) 
+	et on stock son résultat dans resultatTable_1_3_modificateur */
+	var resultatTable_1_3_modificateur = Table_1_3_modificateur(valeur);
 
 	/* si document.form.dex_val.value n'est pas renseigné, 
-	le resultatCalculeInfluence n'est pas un number
+	le resultatTable_1_3_modificateur n'est pas un number
 	d'où son forçage à 0*/
-	if (isNaN(resultatCalculeInfluence)) {
-		resultatCalculeInfluence = 0;
+	if (isNaN(resultatTable_1_3_modificateur)) {
+		resultatTable_1_3_modificateur = 0;
 	};
 
 	if (isNaN(parseInt(document.form.init_mod_div_val.value))) {
 		document.form.init_mod_div_val.value = 0;
 	};
 
-	$('#init_total').html(resultatCalculeInfluence	+ parseInt(document.form.init_mod_div_val.value));
+	$('#init_total').html(resultatTable_1_3_modificateur	+ parseInt(document.form.init_mod_div_val.value));
 }
 
 
@@ -2752,9 +2444,9 @@ function reinitialisation() {
     $('#chargeLegere').html('');
     $('#chargeIntermediaire').html('');
     $('#chargeLourde').html('');
-    $('#chargeMax').html('');
+    $('#chargeDessus').html('');
     $('#soulever').html('');
-    $('#tirerOuPousser').html('');
+    $('#PousserOuTirer').html('');
 
     $('#sau_bon_bas_ref').html('');
     $('#sau_mod_car_ref').html('');
