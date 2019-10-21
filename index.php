@@ -238,10 +238,11 @@
                                 <td id="for_race">
                                     <select id="for_val_race" name="race" onChange="influenceRace()">
                                         <option></option>
+                                        <option>-2</option>
                                         <option>+2</option>
                                     </select>
                                 </td>
-                                <td id="for_mod" name="for_mod_race"></td>
+                                <td id="for_mod" name="for_mod"></td>
                                 <td id="for_val_temp"></td>
                                 <td id="for_mod_temp"></td>
                             </tr>
@@ -253,10 +254,11 @@
                                 <td id="dex_race">
                                     <select id="dex_val_race" name="race" onChange="influenceRace()">
                                         <option></option>
+                                        <option>-2</option>
                                         <option>+2</option>
                                     </select>
                                 </td>
-                                <td id="dex_mod" name="dex_mod_race"></td>
+                                <td id="dex_mod" name="dex_mod"></td>
                                 <td id="dex_val_temp"></td>
                                 <td id="dex_mod_temp"></td>
                             </tr>
@@ -268,10 +270,11 @@
                                 <td id="con_race">
                                     <select id="con_val_race" name="race" onChange="influenceRace()">
                                         <option></option>
+                                        <option>-2</option>
                                         <option>+2</option>
                                     </select>
                                 </td>
-                                <td id="con_mod" name="con_mod_race"></td>
+                                <td id="con_mod" name="con_mod"></td>
                                 <td id="con_val_temp"></td>
                                 <td id="con_mod_temp"></td>
                             </tr>
@@ -283,10 +286,11 @@
                                 <td id="int_race">
                                     <select id="int_val_race" name="race" onChange="influenceRace()">
                                         <option></option>
+                                        <option>-2</option>
                                         <option>+2</option>
                                     </select>
                                 </td>
-                                <td id="int_mod" name="int_mod_race"></td>
+                                <td id="int_mod" name="int_mod"></td>
                                 <td id="int_val_temp"></td>
                                 <td id="int_mod_temp"></td>
                             </tr>
@@ -298,10 +302,11 @@
                                 <td id="sag_race">
                                     <select id="sag_val_race" name="race" onChange="influenceRace()">
                                         <option></option>
+                                        <option>-2</option>
                                         <option>+2</option>
                                     </select>
                                 </td>
-                                <td id="sag_mod" name="sag_mod_race"></td>
+                                <td id="sag_mod" name="sag_mod"></td>
                                 <td id="sag_val_temp"></td>
                                 <td id="sag_mod_temp"></td>
                             </tr>
@@ -313,10 +318,11 @@
                                 <td id="cha_rac">
                                     <select id="cha_val_race" name="race" onChange="influenceRace()">
                                         <option></option>
+                                        <option>-2</option>
                                         <option>+2</option>
                                     </select>
                                 </td>
-                                <td id="cha_mod" name="cha_mod_race"></td>
+                                <td id="cha_mod" name="cha_mod"></td>
                                 <td id="cha_val_temp"></td>
                                 <td id="cha_mod_temp"></td>
                             </tr>
@@ -2741,8 +2747,226 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-12">
-                            <textarea id="langues" name="langues" rows="4" cols="90"></textarea>
+                        <div class="col-lg-6">
+                            <select id="langueI" name="langueI">
+                                <option selected></option>
+                                <option>Abyssal</option>
+                                <option>Aklo</option>
+                                <option>Aquatique</option>
+                                <option>Aérien</option>
+                                <option>Céleste</option>
+                                <option>Commun</option>
+                                <option>Commun des profondeurs</option>
+                                <option>Draconien</option>
+                                <option>Druidique</option>
+                                <option>Elfe</option>
+                                <option>Géant</option>
+                                <option>Gnoll</option>
+                                <option>Gnome</option>
+                                <option>Gobelin</option>
+                                <option>Halfelin</option>
+                                <option>Igneux</option>
+                                <option>Infernal</option>
+                                <option>Nain</option>
+                                <option>Orque</option>
+                                <option>Sylvestre/Lashunta</option>
+                                <option>Terreux</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <select id="langueV" name="langueV">
+                                <option selected></option>
+                                <option>Abyssal</option>
+                                <option>Aklo</option>
+                                <option>Aquatique</option>
+                                <option>Aérien</option>
+                                <option>Céleste</option>
+                                <option>Commun</option>
+                                <option>Commun des profondeurs</option>
+                                <option>Draconien</option>
+                                <option>Druidique</option>
+                                <option>Elfe</option>
+                                <option>Géant</option>
+                                <option>Gnoll</option>
+                                <option>Gnome</option>
+                                <option>Gobelin</option>
+                                <option>Halfelin</option>
+                                <option>Igneux</option>
+                                <option>Infernal</option>
+                                <option>Nain</option>
+                                <option>Orque</option>
+                                <option>Sylvestre/Lashunta</option>
+                                <option>Terreux</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <select id="langueII" name="langueII">
+                                <option selected></option>
+                                <option>Abyssal</option>
+                                <option>Aklo</option>
+                                <option>Aquatique</option>
+                                <option>Aérien</option>
+                                <option>Céleste</option>
+                                <option>Commun</option>
+                                <option>Commun des profondeurs</option>
+                                <option>Draconien</option>
+                                <option>Druidique</option>
+                                <option>Elfe</option>
+                                <option>Géant</option>
+                                <option>Gnoll</option>
+                                <option>Gnome</option>
+                                <option>Gobelin</option>
+                                <option>Halfelin</option>
+                                <option>Igneux</option>
+                                <option>Infernal</option>
+                                <option>Nain</option>
+                                <option>Orque</option>
+                                <option>Sylvestre/Lashunta</option>
+                                <option>Terreux</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <select id="langueVI" name="langueVI">
+                                <option selected></option>
+                                <option>Abyssal</option>
+                                <option>Aklo</option>
+                                <option>Aquatique</option>
+                                <option>Aérien</option>
+                                <option>Céleste</option>
+                                <option>Commun</option>
+                                <option>Commun des profondeurs</option>
+                                <option>Draconien</option>
+                                <option>Druidique</option>
+                                <option>Elfe</option>
+                                <option>Géant</option>
+                                <option>Gnoll</option>
+                                <option>Gnome</option>
+                                <option>Gobelin</option>
+                                <option>Halfelin</option>
+                                <option>Igneux</option>
+                                <option>Infernal</option>
+                                <option>Nain</option>
+                                <option>Orque</option>
+                                <option>Sylvestre/Lashunta</option>
+                                <option>Terreux</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <select id="langueIII" name="langueIII">
+                                <option selected></option>
+                                <option>Abyssal</option>
+                                <option>Aklo</option>
+                                <option>Aquatique</option>
+                                <option>Aérien</option>
+                                <option>Céleste</option>
+                                <option>Commun</option>
+                                <option>Commun des profondeurs</option>
+                                <option>Draconien</option>
+                                <option>Druidique</option>
+                                <option>Elfe</option>
+                                <option>Géant</option>
+                                <option>Gnoll</option>
+                                <option>Gnome</option>
+                                <option>Gobelin</option>
+                                <option>Halfelin</option>
+                                <option>Igneux</option>
+                                <option>Infernal</option>
+                                <option>Nain</option>
+                                <option>Orque</option>
+                                <option>Sylvestre/Lashunta</option>
+                                <option>Terreux</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <select id="langueVII" name="langueVII">
+                                <option selected></option>
+                                <option>Abyssal</option>
+                                <option>Aklo</option>
+                                <option>Aquatique</option>
+                                <option>Aérien</option>
+                                <option>Céleste</option>
+                                <option>Commun</option>
+                                <option>Commun des profondeurs</option>
+                                <option>Draconien</option>
+                                <option>Druidique</option>
+                                <option>Elfe</option>
+                                <option>Géant</option>
+                                <option>Gnoll</option>
+                                <option>Gnome</option>
+                                <option>Gobelin</option>
+                                <option>Halfelin</option>
+                                <option>Igneux</option>
+                                <option>Infernal</option>
+                                <option>Nain</option>
+                                <option>Orque</option>
+                                <option>Sylvestre/Lashunta</option>
+                                <option>Terreux</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <select id="langueIV" name="langueIV">
+                                <option selected></option>
+                                <option>Abyssal</option>
+                                <option>Aklo</option>
+                                <option>Aquatique</option>
+                                <option>Aérien</option>
+                                <option>Céleste</option>
+                                <option>Commun</option>
+                                <option>Commun des profondeurs</option>
+                                <option>Draconien</option>
+                                <option>Druidique</option>
+                                <option>Elfe</option>
+                                <option>Géant</option>
+                                <option>Gnoll</option>
+                                <option>Gnome</option>
+                                <option>Gobelin</option>
+                                <option>Halfelin</option>
+                                <option>Igneux</option>
+                                <option>Infernal</option>
+                                <option>Nain</option>
+                                <option>Orque</option>
+                                <option>Sylvestre/Lashunta</option>
+                                <option>Terreux</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <select id="langueVIII" name="langueVIII">
+                                <option selected></option>
+                                <option>Abyssal</option>
+                                <option>Aklo</option>
+                                <option>Aquatique</option>
+                                <option>Aérien</option>
+                                <option>Céleste</option>
+                                <option>Commun</option>
+                                <option>Commun des profondeurs</option>
+                                <option>Draconien</option>
+                                <option>Druidique</option>
+                                <option>Elfe</option>
+                                <option>Géant</option>
+                                <option>Gnoll</option>
+                                <option>Gnome</option>
+                                <option>Gobelin</option>
+                                <option>Halfelin</option>
+                                <option>Igneux</option>
+                                <option>Infernal</option>
+                                <option>Nain</option>
+                                <option>Orque</option>
+                                <option>Sylvestre/Lashunta</option>
+                                <option>Terreux</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -3355,6 +3579,8 @@
                                     <tr><td id="traits_raciaux_III" name="traits_raciaux_III"></td></tr>
                                     <tr><td id="traits_raciaux_IV" name="traits_raciaux_IV"></td></tr>
                                     <tr><td id="traits_raciaux_V" name="traits_raciaux_V"></td></tr>
+                                    <tr><td id="traits_raciaux_VI" name="traits_raciaux_VI"></td></tr>
+                                    <tr><td id="traits_raciaux_VII" name="traits_raciaux_VII"></td></tr>
                                 </table>
                             </div>
                         </div>
