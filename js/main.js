@@ -1,56 +1,5 @@
 // $('#user').focus();
 
-/
-Soulever et tirer. Un personnage peut soulever au‑dessus de sa
-tête un poids égal à sa charge maximale, c’est à dire le poids le plus
-élevé indiqué dans la colonne « charge lourde » de la Table 7-4 en
-fonction de la Force du personnage.
-
-Le personnage peut soulever le double de cette charge maximale
-mais, dans ce cas, il doit tenir son fardeau à bout de bras et n’avance
-que difficilement. Il perd tout bonus de Dextérité à la CA et sa vitesse
-de déplacement passe à 1,50 mètre par round (ce qui constitue
-désormais pour lui une action complexe).
-
-On peut tirer ou pousser jusqu’à cinq fois sa charge maximale
-autorisée. Ce chiffre peut être doublé si les conditions sont particulièrement
-favorables, ou réduit de moitié ou plus si elles sont
-défavorables.
-/
-/*
-Table 7‑4 : Charge transportable
-Force Charge légère Charge intermédiaire Charge lourde
-1 jusqu’à 1,5 kg. 1,5–3 kg. 3–5 kg.
-2 jusqu’à 3 kg. 3–6,5 kg. 6,5–10 kg.
-3 jusqu’à 5 kg. 5–10 kg. 10–15 kg.
-4 jusqu’à 6,5 kg. 6,5–13 kg. 13–20 kg.
-5 jusqu’à 8 kg. 8–16,5 kg. 16,5–25 kg.
-6 jusqu’à 10 kg. 10–20 kg. 20–30 kg.
-7 jusqu’à 11,5 kg. 11,5–23 kg. 23–35 kg.
-8 jusqu’à 13 kg. 13–26,5 kg. 26,5–40 kg.
-9 jusqu’à 15 kg. 15–30 kg. 30–45 kg.
-10 jusqu’à 17,5 kg. 17,5–33 kg. 33–50 kg.
-11 jusqu’à 19 kg. 19–38 kg. 38–57,5 kg.
-12 jusqu’à 21,5 kg. 21,5–43 kg. 43–65 kg.
-13 jusqu’à 25 kg. 25–50 kg. 50–75 kg.
-14 jusqu’à 29 kg. 29–58 kg. 58–87,5 kg.
-15 jusqu’à 33 kg. 33–66,5 kg. 66,5–100 kg.
-16 jusqu’à 38 kg. 38–76,5 kg. 76,5–115 kg.
-17 jusqu’à 43 kg. 43–86,5 kg. 86,5–130 kg.
-18 jusqu’à 50 kg. 50–100 kg. 100–150 kg.
-19 jusqu’à 58 kg. 58–116,5 kg. 116,5–175 kg.
-20 jusqu’à 66,5 kg. 66,5–133 kg. 133–200 kg.
-21 jusqu’à 76,5 kg. 76,5–153 kg. 153–230 kg.
-22 jusqu’à 86,5 kg. 86,5–173 kg. 173–260 kg.
-23 jusqu’à 100 kg. 100–200 kg. 200–300 kg.
-24 jusqu’à 116,5 kg. 116,5–233 kg. 233–350 kg.
-25 jusqu’à 133 kg. 133–266,5 kg. 266,5–400 kg.
-26 jusqu’à 153 kg. 153–306,5 kg. 306,5–460 kg.
-27 jusqu’à 173 kg. 173–346,5 kg. 346,5–520 kg.
-28 jusqu’à 200 kg. 200–400 kg. 400–600 kg.
-29 jusqu’à 233 kg. 233–466,5 kg. 466,5–700 kg.
-+10 ×4 ×4 ×4
-*/
 function calculeCharge(valeur) {
     $('#chargeLegere').html('0');
     $('#chargeIntermediaire').html('0')
@@ -292,6 +241,14 @@ function calculeCharge(valeur) {
             $('#soulever').html('1400kg')
             $('#PousserOuTirer').html('3500kg')
             break;
+        default :
+            $('#chargeLegere').html('-')
+            $('#chargeIntermediaire').html('-')
+            $('#chargeLourde').html('–')
+            $('#chargeDessus').html('-')
+            $('#soulever').html('-')
+            $('#PousserOuTirer').html('-')
+            break;
     }
 };
 
@@ -327,59 +284,114 @@ Score Modificateur 0 1er 2e 3e 4e 5e 6e 7e 8e 9e
 function Table_1_3_sortSupplementaire(valeur) {
 }
 
-/
-DEX id="caracAcrobatie"
-DEX id="caracdiscretion"
-DEX id="caracequitation"
-DEX id="caracescamotage"
-DEX id="caracevasion"
-DEX id="caracsabotage"
-DEX id="caracvol"
-
-INT id="caracartisanat_I"
-INT id="caracartisanat_II"
-INT id="caracartisanat_III"
-INT id="caracartdelamagie"
-INT id="caracConnaissances_exploration"
-INT id="caracConnaissances_Folklore_Locale"
-INT id="caracConnaissances_Geographie"
-INT id="caracConnaissances_Histoire"
-INT id="caracConnaissances_Ingénieurie"
-INT id="caracConnaissances_Mystères"
-INT id="caracConnaissances_Nature"
-INT id="caracConnaissances_Noblesse"
-INT id="caracConnaissances_Plan"
-INT id="caracConnaissances_Religion"
-INT id="caracestimation"
-INT id="caraclinguistique"
-
-CHA id="caracbluff"
-CHA id="caracdeguisement"
-CHA id="caracdiplomatie"
-CHA id="caracdressage"
-CHA id="caracintimidation"
-CHA id="caracrepresentation_I"
-CHA id="caracrepresentation_II"
-CHA id="caracutilisationobjet"
-
-SAG id="caracperception"
-SAG id="caracpremiersecours"
-SAG id="caracprofession_I"
-SAG id="caracprofession_II"
-SAG id="caracpsychologie"
-SAG id="caracsurvie"
-
-/
-
 $(function() {
     $('#for_saisie').change(function() {
-        var valeur = parseInt($('#for_val').val());
-        var modificateur = Math.floor((valeur - 10)/2)
+        var valeur = parseInt($('#for_saisie').val());
+        var modificateur = Math.floor((valeur - 10)/2);
 
-        $('#caracescalade').html(parseInt(modificateur));
-        $('#caracnatation').val(parseInt(modificateur));
+        $('#caracescalade').html(modificateur);
+        $('#caracnatation').html(modificateur);
+        $('#bmo_mod_for').html(modificateur);
+        $('#dmd_mod_for').html(modificateur);
 
         calculeCharge(valeur);
+    })
+
+    $('#dex_saisie').change(function() {
+        var valeur = parseInt($('#dex_saisie').val());
+        var modificateur = Math.floor((valeur - 10)/2);
+
+        $('#caracAcrobatie').html(modificateur);
+        $('#caracdiscretion').html(modificateur);
+        $('#caracequitation').html(modificateur);
+        $('#caracescamotage').html(modificateur);
+        $('#caracevasion').html(modificateur);
+        $('#caracsabotage').html(modificateur);
+        $('#caracvol').html(modificateur);
+
+        // calcule de l'initiative 
+        $('#init_mod_dex').html(modificateur);
+
+        /* si le #dex_val.value n'est pas renseigné, 
+        le modificateur n'est pas un number
+        d'où son forçage à 0*/
+        if (isNaN(parseInt($('#init_mod_div_val').val()))) {
+            $('#init_mod_div_val').val(0);
+        };
+
+        $('#init_total').html(modificateur + parseInt($('#init_mod_div_val').val()));
+
+        $('#sau_mod_car_ref').html(modificateur);
+        $('#ca_mod_dex').html(modificateur);
+        $('#dmd_mod_dex').html(modificateur); 
+    })
+
+    $('#init_mod_div').change(function() {
+        /* si le #dex_val.value n'est pas renseigné, 
+        le modificateur n'est pas un number
+        d'où son forçage à 0*/
+        if (isNaN(parseInt($('#init_mod_dex').html()))) {
+            $('#init_mod_dex').val(0);
+        };
+
+        $('#init_total').html(parseInt($('#init_mod_dex').html()) + parseInt($('#init_mod_div_val').val()));
+    })
+
+    $('#con_saisie').change(function() {
+        var valeur = parseInt($('#con_saisie').val());
+        var modificateur = Math.floor((valeur - 10)/2);
+
+        $('#sau_mod_car_vig').html(modificateur);
+    })
+
+    $('#int_saisie').change(function() {
+        var valeur = parseInt($('#int_saisie').val());
+        var modificateur = Math.floor((valeur - 10)/2);
+
+        $('#caracartisanat_I').html(modificateur);
+        $('#caracartisanat_II').html(modificateur);
+        $('#caracartisanat_III').html(modificateur);
+        $('#caracartdelamagie').html(modificateur);
+        $('#caracConnaissances_exploration').html(modificateur);
+        $('#caracConnaissances_Folklore_Locale').html(modificateur);
+        $('#caracConnaissances_Geographie').html(modificateur);
+        $('#caracConnaissances_Histoire').html(modificateur);
+        $('#caracConnaissances_Ingénieurie').html(modificateur);
+        $('#caracConnaissances_Mystères').html(modificateur);
+        $('#caracConnaissances_Nature').html(modificateur);
+        $('#caracConnaissances_Noblesse').html(modificateur);
+        $('#caracConnaissances_Plan').html(modificateur);
+        $('#caracConnaissances_Religion').html(modificateur);
+        $('#caracestimation').html(modificateur);
+        $('#caraclinguistique').html(modificateur);
+    })
+
+    $('#sag_saisie').change(function() {
+        var valeur = parseInt($('#sag_saisie').val());
+        var modificateur = Math.floor((valeur - 10)/2);
+
+        $('#caracperception').html(modificateur);
+        $('#caracpremiersecours').html(modificateur);
+        $('#caracprofession_I').html(modificateur);
+        $('#caracprofession_II').html(modificateur);
+        $('#caracpsychologie').html(modificateur);
+        $('#caracsurvie').html(modificateur);
+
+        calculeCharge(valeur);
+    })
+
+    $('#cha_saisie').change(function() {
+        var valeur = parseInt($('#cha_saisie').val());
+        var modificateur = Math.floor((valeur - 10)/2);
+
+        $('#caracbluff').html(modificateur);
+        $('#caracdeguisement').html(modificateur);
+        $('#caracdiplomatie').html(modificateur);
+        $('#caracdressage').html(modificateur);
+        $('#caracintimidation').html(modificateur);
+        $('#caracrepresentation_I').html(modificateur);
+        $('#caracrepresentation_II').html(modificateur);
+        $('#caracutilisationobjet').html(modificateur);
     })
 });
 
@@ -817,63 +829,6 @@ function calculTaillePoids() {
 			};
 			break;
 	}
-};
-
-
-function influenceDex() {
-	var valeur = parseInt(document.form.dex_val.value);
-	/* on appel une fois Table_1_3_modificateur(valeur) et on stock son résultat dans resultatTable_1_3_modificateur */
-	var resultatTable_1_3_modificateur = Table_1_3_modificateur(valeur);
-
-	$('#dex_mod').html(resultatTable_1_3_modificateur);
-	$('#ca_mod_dex').html(resultatTable_1_3_modificateur);
-
-	$('#ca_total').html(calculeCa());
-	$('#init_mod_dex').html(resultatTable_1_3_modificateur);
-
-	$('#val_ca_contact').html(calculeCaContact());
-	$('#val_pri_depourvu').html(calculeCaPrisDepourvu());
-
-	calculeInit();
-
-	$('#sau_mod_car_ref').html(resultatTable_1_3_modificateur);
-
-	calculeReflexes();
-
-    for (var i = 0; i < document.getElementsByClassName('carac_dex').length; i++) {
-        if (isNaN(parseInt(document.getElementsByClassName('carac_dex')[i].html()))) {
-            var valeur = 0;
-        } else {
-            var valeur = parseInt(document.getElementsByClassName('carac_dex')[i].html());
-        };
-
-        document.getElementsByClassName('carac_dex')[i].html(valeur
-                                                                  + resultatTable_1_3_modificateur);
-    };
-};
-
-function influenceCon() {
-	var valeur = parseInt(document.form.con_val.value);
-	var resultatTable_1_3_modificateur = Table_1_3_modificateur(valeur);
-
-	$('#con_mod').html(resultatTable_1_3_modificateur);
-
-	$('#pv').html(CalculePv(resultatTable_1_3_modificateur));
-
-	$('#sau_mod_car_vig').html(resultatTable_1_3_modificateur);
-
-	calculeVigeur();
-
-    for (var i = 0; i < document.getElementsByClassName('carac_con').length; i++) {
-        if (isNaN(parseInt(document.getElementsByClassName('carac_con')[i].html()))) {
-            var valeur = 0;
-        } else {
-            var valeur = parseInt(document.getElementsByClassName('carac_con')[i].html());
-        };
-
-        document.getElementsByClassName('carac_con')[i].html(valeur
-                                                                  + resultatTable_1_3_modificateur);
-    };
 };
 
 function influenceInt() {
@@ -1559,29 +1514,6 @@ function CalculePv(bonusParNiveau) {
 
 		return pvNiv;
 };
-
-
-function calculeInit() {
-	var valeur = parseInt(document.form.dex_val.value);
-
-	/* on appel une fois Table_1_3_modificateur(valeur) 
-	et on stock son résultat dans resultatTable_1_3_modificateur */
-	var resultatTable_1_3_modificateur = Table_1_3_modificateur(valeur);
-
-	/* si document.form.dex_val.value n'est pas renseigné, 
-	le resultatTable_1_3_modificateur n'est pas un number
-	d'où son forçage à 0*/
-	if (isNaN(resultatTable_1_3_modificateur)) {
-		resultatTable_1_3_modificateur = 0;
-	};
-
-	if (isNaN(parseInt(document.form.init_mod_div_val.value))) {
-		document.form.init_mod_div_val.value = 0;
-	};
-
-	$('#init_total').html(resultatTable_1_3_modificateur	+ parseInt(document.form.init_mod_div_val.value));
-}
-
 
 
 function calculeCompetence(total,carac,maîtrise,divers) {

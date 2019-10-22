@@ -250,7 +250,7 @@
                             <tr>
                                 <td><label id="dextérité" for="dex_sai" class="font_white">DEX</label></td>
                                 <td id="dex_val"></td>
-                                <td><input id="dex_saisie" type="text" name="dex_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceDex()"></td>
+                                <td><input id="dex_saisie" type="text" name="dex_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
                                 <td id="dex_race">
                                     <select id="dex_val_race" name="race" onChange="influenceRace()">
                                         <option></option>
@@ -266,7 +266,7 @@
                             <tr>
                                 <td><label id="constitution" for="con_sai" class="font_white">CON</label></td>
                                 <td id="con_val"></td>
-                                <td><input id="con_saisie" type="text" name="con_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCon()"></td>
+                                <td><input id="con_saisie" type="text" name="con_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
                                 <td id="con_race">
                                     <select id="con_val_race" name="race" onChange="influenceRace()">
                                         <option></option>
@@ -370,12 +370,12 @@
 
                                 <tr>
                                     <td><label id="lab_init" class="font_white">Mod. à l'INITIATIVE</label></td>
-                                    <td id="init_total">0</td>
+                                    <td id="init_total"></td>
                                     <td class="background_grey">=</td>
                                     <td id="init_mod_dex"></td>
                                     <td class="background_grey">+</td>
                                     <td id="init_mod_div">
-                                        <input id="init_mod_div_val" type="text" name="init_mod_div_val" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="calculeInit()">
+                                        <input id="init_mod_div_val" type="number" name="init_mod_div_val" min="0" max="20">
                                     </td>
                                 </tr>
                             </table>
@@ -437,7 +437,7 @@
                                     <span class="tooltip">Le bonus est invalide</span>
                                 </td>
                                 <td class="background_grey">+</td>
-                                <td name="ca_mod_dex" id="ca_mod_dex">0</td>
+                                <td name="ca_mod_dex" id="ca_mod_dex"></td>
                                 <td class="background_grey">+</td>
                                 <td name="ca_mod_tai" id="ca_mod_tai">0</td>
                                 <td class="background_grey">+</td>
