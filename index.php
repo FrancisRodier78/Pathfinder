@@ -282,7 +282,7 @@
                             <tr>
                                 <td><label id="intelligence" for="int_sai" class="font_white">INT</label></td>
                                 <td id="int_val"></td>
-                                <td><input id="int_saisie" type="text" name="int_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceInt()"></td>
+                                <td><input id="int_saisie" type="text" name="int_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
                                 <td id="int_race">
                                     <select id="int_val_race" name="race" onChange="influenceRace()">
                                         <option></option>
@@ -298,7 +298,7 @@
                             <tr>
                                 <td><label id="sagesse" for="sag_sai" class="font_white">SAG</label></td>
                                 <td id="sag_val"></td>
-                                <td><input id="sag_saisie" type="text" name="sag_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceSag()"></td>
+                                <td><input id="sag_saisie" type="text" name="sag_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
                                 <td id="sag_race">
                                     <select id="sag_val_race" name="race" onChange="influenceRace()">
                                         <option></option>
@@ -314,7 +314,7 @@
                             <tr>
                                 <td><label id="charisme" for="cha_sai" class="font_white">CHA</label></td>
                                 <td id="cha_val"></td>
-                                <td><input id="cha_saisie" type="text" name="cha_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}" onChange="influenceCha()"></td>
+                                <td><input id="cha_saisie" type="text" name="cha_sai" size="2" maxlength="2" required pattern="[0-9]{1,2}"></td>
                                 <td id="cha_rac">
                                     <select id="cha_val_race" name="race" onChange="influenceRace()">
                                         <option></option>
@@ -3856,6 +3856,7 @@
     <script type="text/javascript" src="js/classe.js"></script>
     <script type="text/javascript" src="js/niveau.js"></script>
     <script type="text/javascript" src="js/race.js"></script>
+    <script type="text/javascript" src="js/caracteristique.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
