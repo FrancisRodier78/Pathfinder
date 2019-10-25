@@ -720,7 +720,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <label id="label_famille_arme_I" for="famille_arme_I">FAMILLE D'ARME</label> 
-                        <select id="famille_arme_I" name="famille_arme_I" onChange="choixFamilleArme('maniement_arme_I',document.form.famille_arme_I,document.form.maniement_arme_I)">
+                        <select id="famille_arme_I" name="famille_arme_I">
                             <option></option>
                             <option value="armes_courantes">Armes courantes</option>
                             <option value="armes_de_guerre">Arme de guerre</option>
@@ -731,7 +731,7 @@
 
                     <div class="col-lg-6">
                         <label id="label_maniement_arme_I" for="maniement_arme_I">MANIEMENT</label> 
-                        <select id="maniement_arme_I" name="maniement_arme_I" onChange="choixManiementArme(document.form.famille_arme_I,'arme_I',document.form.maniement_arme_I,document.form.arme_I)">
+                        <select id="maniement_arme_I" name="maniement_arme_I">
                         </select>
                         <span class="tooltip">Maniement d'arme inconnu</span>
                     </div>
@@ -748,7 +748,7 @@
 
                             <tr>
                                 <td colspan="3">
-                                    <select id="arme_I" name="arme_I" onChange="choixArme(document.form.famille_arme_I,document.form.maniement_arme_I,document.form.arme_I,'degat_I','for_mod',document.form.bonus_I,'critique_I','portee_I','type_I','mun_I')">
+                                    <select id="arme_I" name="arme_I">
                                     </select>
                                 </td>
 
@@ -3565,6 +3565,12 @@
                                     <tr><td id="capacites_speciales_XVIII" name="capacites_speciales_XVIII"></td></tr>
                                     <tr><td id="capacites_speciales_XIX" name="capacites_speciales_XIX"></td></tr>
                                     <tr><td id="capacites_speciales_XX" name="capacites_speciales_XX"></td></tr>
+                                    <tr><td id="capacites_speciales_XXI" name="capacites_speciales_XI"></td></tr>
+                                    <tr><td id="capacites_speciales_XXII" name="capacites_speciales_XII"></td></tr>
+                                    <tr><td id="capacites_speciales_XXIII" name="capacites_speciales_XIII"></td></tr>
+                                    <tr><td id="capacites_speciales_XXIV" name="capacites_speciales_XIV"></td></tr>
+                                    <tr><td id="capacites_speciales_XXV" name="capacites_speciales_XV"></td></tr>
+                                    <tr><td id="capacites_speciales_XXVI" name="capacites_speciales_XVI"></td></tr>
                                 </table>
                             </div>
                         </div>
@@ -3857,6 +3863,7 @@
     <script type="text/javascript" src="js/niveau.js"></script>
     <script type="text/javascript" src="js/race.js"></script>
     <script type="text/javascript" src="js/caracteristique.js"></script>
+    <script type="text/javascript" src="js/weapon.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
