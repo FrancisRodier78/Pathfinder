@@ -91,27 +91,27 @@ function choixTypeArme(maniement_arme, combat_à_mains_nues, armes_légères, ar
     switch(maniement_arme) {
         case "Combat à mains nues" :
             for (var nombElement = 0; nombElement < combat_à_mains_nues.length; nombElement++) {
-                $('#arme_I').append('<option value="combat_à_mains_nues[nombElement]">' + combat_à_mains_nues[nombElement] + '</option>');
+                $('#arme_I').append('<option value="' + combat_à_mains_nues[nombElement] + '">' + combat_à_mains_nues[nombElement] + '</option>');
             };
             break;
         case "Armes légères" :
             for (var nombElement = 0; nombElement < armes_légères.length; nombElement++) {
-                $('#arme_I').append('<option value="armes_légères[nombElement]">' + armes_légères[nombElement] + '</option>');
+                $('#arme_I').append('<option value="' + armes_légères[nombElement] + '">' + armes_légères[nombElement] + '</option>');
             };
             break;
         case "Armes à une main" :
             for (var nombElement = 0; nombElement < armes_à_une_main.length; nombElement++) {
-                $('#arme_I').append('<option value="armes_à_une_main[nombElement]">' + armes_à_une_main[nombElement] + '</option>');
+                $('#arme_I').append('<option value="' + armes_à_une_main[nombElement] +'">' + armes_à_une_main[nombElement] + '</option>');
             };
             break;
         case "Armes à deux mains" :
             for (var nombElement = 0; nombElement < armes_à_deux_mains.length; nombElement++) {
-                $('#arme_I').append('<option value="armes_à_deux_mains[nombElement]">' + armes_à_deux_mains[nombElement] + '</option>');
+                $('#arme_I').append('<option value="' + armes_à_deux_mains[nombElement] +'">' + armes_à_deux_mains[nombElement] + '</option>');
             };
             break;
         case "Armes à distante" :
             for (var nombElement = 0; nombElement < armes_à_distante.length; nombElement++) {
-                $('#arme_I').append('<option value="armes_à_distante[nombElement]">' + armes_à_distante[nombElement] + '</option>');
+                $('#arme_I').append('<option value="' + armes_à_distante[nombElement] +'">' + armes_à_distante[nombElement] + '</option>');
             };
             break;
     }
@@ -120,700 +120,725 @@ function choixTypeArme(maniement_arme, combat_à_mains_nues, armes_légères, ar
 $(function() {
     $('#famille_arme_I').change(function() {
         $('#maniement_arme_I').find('option').remove();
+        $('#arme_I').find('option').remove();
+        $('#degats_I').html(' ');
+        $('#critique_I').html(' ');
+        $('#portee_I').html(' ');
+        $('#type_I').html(' ');
+        $('#munitions_I').html(' ');
+        $('#bonus_I').val(0);
+
         choixFamilleArme($('#famille_arme_I').val());
     })
 
     $('#maniement_arme_I').change(function() {
         $('#arme_I').find('option').remove();
-        choixManiementArme($('#famille_arme_I').val(), $('#maniement_arme_I').val())
+        $('#degats_I').html(' ');
+        $('#critique_I').html(' ');
+        $('#portee_I').html(' ');
+        $('#type_I').html(' ');
+        $('#munitions_I').html(' ');
+        $('#bonus_I').val(0);
+
+        choixManiementArme($('#famille_arme_I').val(), $('#maniement_arme_I').val());
+    })
+
+    $('#arme_I').change(function() {
+        $('#degats_I').html(' ');
+        $('#critique_I').html(' ');
+        $('#portee_I').html(' ');
+        $('#type_I').html(' ');
+        $('#munitions_I').html(' ');
+        $('#bonus_I').val(0);
+
+        choixArme($('#famille_arme_I').val(), $('#maniement_arme_I').val(), $('#arme_I').val(), $('#bonus_I'), $('#degats_I'), $('#critique_I'), $('#portee_I'), $('#type_I'), $('#munitions_I'));
+    })
+
+    $('#bonus_I').change(function() {
+        choixArme($('#famille_arme_I').val(), $('#maniement_arme_I').val(), $('#arme_I').val(), $('#bonus_I'), $('#degats_I'), $('#critique_I'), $('#portee_I'), $('#type_I'), $('#munitions_I'));
     })
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function choixArme(famille_arme,formManiement_arme,formArme,degat,force_modificateur,bonus,critique,portee,type,munition) {
-    switch(famille_arme.value) {
+function choixArme(famille_arme,maniement_arme, arme, bonus, degats, critique, portee, type, munitions) {
+    switch(famille_arme) {
         case "armes_courantes" :
-            switch(formManiement_arme.value) {
+            switch(maniement_arme) {
                 case "Combat à mains nues" :
-                    choixArme_armes_courantes_combat_à_mains_nues(formArme,degat,force_modificateur,bonus,critique,portee,type,munition);
+                    choixArme_armes_courantes_combat_à_mains_nues(arme, bonus, degats, critique, portee, type, munitions);
                    break;
                 case "Armes légères" :
-                    choixArme_armes_courantes_armes_légères(formArme,degat,force_modificateur,bonus,critique,portee,type,munition);
+                    choixArme_armes_courantes_armes_légères(arme, bonus, degats, critique, portee, type, munitions);
                     break;
                 case "Armes à une main" :
-                    choixArme_armes_courantes_armes_à_une_main(formArme,degat,force_modificateur,bonus,critique,portee,type,munition);
+                    choixArme_armes_courantes_armes_à_une_main(arme, bonus, degats, critique, portee, type, munitions);
                     break;
                 case "Armes à deux mains" :
-                    choixArme_armes_courantes_armes_à_deux_mains(formArme,degat,force_modificateur,bonus,critique,portee,type,munition);
+                    choixArme_armes_courantes_armes_à_deux_mains(arme, bonus, degats, critique, portee, type, munitions);
                     break;
                 case "Armes à distante" :
-                    choixArme_armes_courantes_armes_à_distante(formArme,degat,force_modificateur,bonus,critique,portee,type,munition);
+                    choixArme_armes_courantes_armes_à_distante(arme, bonus, degats, critique, portee, type, munitions);
                     break;
             }
             break;
         case "armes_de_guerre" :
-            switch(formManiement_arme.value) {
+            switch(maniement_arme) {
                 case "Armes légères" :
-                    choixArme_armes_de_guerre_armes_légères(formArme,degat,force_modificateur,bonus,critique,portee,type,munition);
+                    choixArme_armes_de_guerre_armes_légères(arme, bonus, degats, critique, portee, type, munitions);
                     break;
                 case "Armes à une main" :
-                    choixArme_armes_de_guerre_armes_à_une_main(formArme,degat,force_modificateur,bonus,critique,portee,type,munition);
+                    choixArme_armes_de_guerre_armes_à_une_main(arme, bonus, degats, critique, portee, type, munitions);
                     break;
                 case "Armes à deux mains" :
-                    choixArme_armes_de_guerre_armes_à_deux_mains(formArme,degat,force_modificateur,bonus,critique,portee,type,munition);
+                    choixArme_armes_de_guerre_armes_à_deux_mains(arme, bonus, degats, critique, portee, type, munitions);
                     break;
                 case "Armes à distante" :
-                    choixArme_armes_de_guerre_armes_à_distante(formArme,degat,force_modificateur,bonus,critique,portee,type,munition);
+                    choixArme_armes_de_guerre_armes_à_distante(arme, bonus, degats, critique, portee, type, munitions);
                     break;
             }
             break;
         case "armes_exotiques" :
-            switch(formManiement_arme.value) {
+            switch(maniement_arme) {
                 case "Armes légères" :
-                    choixArme_armes_exotiques_armes_légères(formArme,degat,force_modificateur,bonus,critique,portee,type,munition);
+                    choixArme_armes_exotiques_armes_légères(arme, bonus, degats, critique, portee, type, munitions);
                     break;
                 case "Armes à une main" :
-                    choixArme_armes_exotiques_armes_à_une_main(formArme,degat,force_modificateur,bonus,critique,portee,type,munition);
+                    choixArme_armes_exotiques_armes_à_une_main(arme, bonus, degats, critique, portee, type, munitions);
                     break;
                 case "Armes à deux mains" :
-                    choixArme_armes_exotiques_armes_à_deux_mains(formArme,degat,force_modificateur,bonus,critique,portee,type,munition);
+                    choixArme_armes_exotiques_armes_à_deux_mains(arme, bonus, degats, critique, portee, type, munitions);
                     break;
                 case "Armes à distante" :
-                    choixArme_armes_exotiques_armes_à_distante(formArme,degat,force_modificateur,bonus,critique,portee,type,munition);
+                    choixArme_armes_exotiques_armes_à_distante(arme, bonus, degats, critique, portee, type, munitions);
                     break;
             }
             break;
     }
 }
 
-function choixArme_armes_courantes_combat_à_mains_nues(formArme,degat,force_modificateur,bonus,critique,portee,type,munition) {
-    var valeur = parseInt(document.getElementById(force_modificateur).innerHTML)
-            + parseInt(bonus.value);
-    
-    switch(formArme.value) {
+function choixArme_armes_courantes_combat_à_mains_nues(arme, bonus, degats, critique, portee, type, munitions) {
+    var valeur = parseInt($('#for_saisie').val());
+    var modificateur = Math.floor((valeur - 10)/2);
+    var valeur = modificateur + parseInt(bonus.val());
+
+    switch(arme) {
         case "Attaque à mains nues" :
-            document.getElementById(degat).innerHTML = "1D3" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D3 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Gantelet" :
-            document.getElementById(degat).innerHTML = "1D3" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D3 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
     };
 }
 
-function choixArme_armes_courantes_armes_légères(formArme,degat,force_modificateur,bonus,critique,portee,type,munition) {
-    var valeur = parseInt(document.getElementById(force_modificateur).innerHTML)
-            + parseInt(bonus.value);
+function choixArme_armes_courantes_armes_légères(arme, bonus, degats, critique, portee, type, munitions) {
+    var valeur = parseInt($('#for_saisie').val());
+    var modificateur = Math.floor((valeur - 10)/2);
+    var valeur = modificateur + parseInt(bonus.val());
     
-    switch(formArme.value) {
+    switch(arme) {
         case "Dague" :
-            document.getElementById(degat).innerHTML = "1D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "19-20/*2";
-            document.getElementById(portee).innerHTML = "3 m";
-            document.getElementById(type).innerHTML = "Perforant ou tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D4 + ' + parseInt(valeur));
+            critique.html('19-20/*2');
+            portee.html('3 m');
+            type.html('Perforant ou tranchant');
+            munitions.html('_');
             break;
         case "Dague coup-de-poing" :
-            document.getElementById(degat).innerHTML = "1D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D4 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('Contact');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Gantelet clouté" :
-            document.getElementById(degat).innerHTML = "1D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D4 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Masse d'armes légère" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Serpe" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
     };
 }
 
-function choixArme_armes_courantes_armes_à_une_main(formArme,degat,force_modificateur,bonus,critique,portee,type,munition) {
-    var valeur = parseInt(document.getElementById(force_modificateur).innerHTML)
-            + parseInt(bonus.value);
+function choixArme_armes_courantes_armes_à_une_main(arme, bonus, degats, critique, portee, type, munitions) {
+    var valeur = parseInt($('#for_saisie').val());
+    var modificateur = Math.floor((valeur - 10)/2);
+    var valeur = modificateur + parseInt(bonus.val());
     
-    switch(formArme.value) {
+    switch(arme) {
         case "Epieu" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "6 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('6 m');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Gourdin" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "3 m";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('3 m');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Masse d'armes lourde" :
-            document.getElementById(degat).innerHTML = "1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Morgenstern" :
-            document.getElementById(degat).innerHTML = "1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant et perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Contondant et perforant');
+            munitions.html('_');
             break;
     };
 }
 
-function choixArme_armes_courantes_armes_à_deux_mains(formArme,degat,force_modificateur,bonus,critique,portee,type,munition) {
-    var valeur = parseInt(document.getElementById(force_modificateur).innerHTML)
-            + parseInt(bonus.value);
+function choixArme_armes_courantes_armes_à_deux_mains(arme, bonus, degats, critique, portee, type, munitions) {
+    var valeur = parseInt($('#for_saisie').val());
+    var modificateur = Math.floor((valeur - 10)/2);
+    var valeur = modificateur + parseInt(bonus.val());
     
-    switch(formArme.value) {
+    switch(arme) {
         case "Bâton" :
-            document.getElementById(degat).innerHTML = "1D6/1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6/1D6 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Lance" :
-            document.getElementById(degat).innerHTML = "1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "6 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('6 m');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Pique" :
-            document.getElementById(degat).innerHTML = "1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "Allonge";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('Allonge');
+            type.html('Perforant');
+            munitions.html('_');
             break;
     };
 }
 
-function choixArme_armes_courantes_armes_à_distante(formArme,degat,force_modificateur,bonus,critique,portee,type,munition) {
-    var valeur = parseInt(document.getElementById(force_modificateur).innerHTML)
-            + parseInt(bonus.value);
+function choixArme_armes_courantes_armes_à_distante(arme, bonus, degats, critique, portee, type, munitions) {
+    var valeur = parseInt($('#for_saisie').val());
+    var modificateur = Math.floor((valeur - 10)/2);
+    var valeur = modificateur + parseInt(bonus.val());
     
-    switch(formArme.value) {
+    switch(arme) {
         case "Arbalètre légère" :
-            document.getElementById(degat).innerHTML = "1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "19-20/*2";
-            document.getElementById(portee).innerHTML = "24 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "Carraux (10)";
+            degats.html('1D8 + ' + parseInt(valeur));
+            critique.html('19-20/*2');
+            portee.html('24 m');
+            type.html('Perforant');
+            munitions.html('Carraux (10)');
             break;
         case "Arbalètre lourde" :
-            document.getElementById(degat).innerHTML = "1D10" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "19-20/*2";
-            document.getElementById(portee).innerHTML = "36 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "Carraux (10)";
+            degats.html('1D10 + ' + parseInt(valeur));
+            critique.html('19-20/*2');
+            portee.html('36 m');
+            type.html('Perforant');
+            munitions.html('Carraux (10)');
             break;
         case "Dart" :
-            document.getElementById(degat).innerHTML = "1D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "6 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D4 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('6 m');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Fronde" :
-            document.getElementById(degat).innerHTML = "1D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "15 m";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "Billes (10)";
+            degats.html('1D4 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('15 m');
+            type.html('Contondant');
+            munitions.html('Billes (10)');
             break;
         case "Javeline" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "9 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('9 m');
+            type.html('Perforant');
+            munitions.html('_');
             break;
     };
 }
 
-function choixArme_armes_de_guerre_armes_légères(formArme,degat,force_modificateur,bonus,critique,portee,type,munition) {
-    var valeur = parseInt(document.getElementById(force_modificateur).innerHTML)
-            + parseInt(bonus.value);
+function choixArme_armes_de_guerre_armes_légères(arme, bonus, degats, critique, portee, type, munitions) {
+    var valeur = parseInt($('#for_saisie').val());
+    var modificateur = Math.floor((valeur - 10)/2);
+    var valeur = modificateur + parseInt(bonus.val());
     
-    switch(formArme.value) {
+    switch(arme) {
         case "Armure à pointes" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Epée courte" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "19-20/*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('19-20/*2');
+            portee.html('Contact');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Hache de lancer" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "3 m";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('3 m');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Hachette" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('Contact');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Kukri" :
-            document.getElementById(degat).innerHTML = "1D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "18-20/*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D4 + ' + parseInt(valeur));
+            critique.html('18-20/*2');
+            portee.html('Contact');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Marteau léger" :
-            document.getElementById(degat).innerHTML = "1D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "6 m";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D4 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('6 m');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Matraque" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Pic de guerre léger" :
-            document.getElementById(degat).innerHTML = "1D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*4";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D4 + ' + parseInt(valeur));
+            critique.html('*4');
+            portee.html('Contact');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Rondache" :
-            document.getElementById(degat).innerHTML = "1D3" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D3 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Rondache à pointes" :
-            document.getElementById(degat).innerHTML = "1D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D4 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Perforant');
+            munitions.html('_');
             break;
     };
 };
 
-function choixArme_armes_de_guerre_armes_à_une_main(formArme,degat,force_modificateur,bonus,critique,portee,type,munition) {
-    var valeur = parseInt(document.getElementById(force_modificateur).innerHTML)
-            + parseInt(bonus.value);
+function choixArme_armes_de_guerre_armes_à_une_main(arme, bonus, degats, critique, portee, type, munitions) {
+    var valeur = parseInt($('#for_saisie').val());
+    var modificateur = Math.floor((valeur - 10)/2);
+    var valeur = modificateur + parseInt(bonus.val());
     
-    switch(formArme.value) {
+    switch(arme) {
         case "Cimeterre" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "18-20/*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('18-20/*2');
+            portee.html('Contact');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Ecu" :
-            document.getElementById(degat).innerHTML = "1D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D4 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Ecu à pointes" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Epée longue" :
-            document.getElementById(degat).innerHTML = "1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "19-20/*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8 + ' + parseInt(valeur));
+            critique.html('19-20/*2');
+            portee.html('Contact');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Fléau d'arme léger" :
-            document.getElementById(degat).innerHTML = "1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Hache d'arme" :
-            document.getElementById(degat).innerHTML = "1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('Contact');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Marteau de guerre" :
-            document.getElementById(degat).innerHTML = "1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Pis de guerre lourd" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*4";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*4');
+            portee.html('Contact');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Rapière" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "18-20/*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('18-20/*2');
+            portee.html('Contact');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Trident" :
-            document.getElementById(degat).innerHTML = "1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "3 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('3 m');
+            type.html('Perforant');
+            munitions.html('_');
             break;
     };
 };
 
-function choixArme_armes_de_guerre_armes_à_deux_mains(formArme,degat,force_modificateur,bonus,critique,portee,type,munition) {
-    var valeur = parseInt(document.getElementById(force_modificateur).innerHTML)
-            + parseInt(bonus.value);
+function choixArme_armes_de_guerre_armes_à_deux_mains(arme, bonus, degats, critique, portee, type, munitions) {
+    var valeur = parseInt($('#for_saisie').val());
+    var modificateur = Math.floor((valeur - 10)/2);
+    var valeur = modificateur + parseInt(bonus.val());
     
-    switch(formArme.value) {
+    switch(arme) {
         case "Cimeterre à deux mains" :
-            document.getElementById(degat).innerHTML = "2D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "18-20/*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('2D4 + ' + parseInt(valeur));
+            critique.html('18-20/*2');
+            portee.html('Contact');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Corsèque" :
-            document.getElementById(degat).innerHTML = "2D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "Allonge";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('2D4 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('Allonge');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Coutille" :
-            document.getElementById(degat).innerHTML = "1D10" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "Allonge";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D10 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('Allonge');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Epée à deux mains" :
-            document.getElementById(degat).innerHTML = "2D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "19-20/*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('2D6 + ' + parseInt(valeur));
+            critique.html('19-20/*2');
+            portee.html('Contact');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Faux" :
-            document.getElementById(degat).innerHTML = "2D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*4";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Perforant ou tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('2D4 + ' + parseInt(valeur));
+            critique.html('*4');
+            portee.html('Contact');
+            type.html('Perforant ou tranchant');
+            munitions.html('_');
             break;
         case "Fléau d'armes lourd" :
-            document.getElementById(degat).innerHTML = "1D10" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "19-20/*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D10 + ' + parseInt(valeur));
+            critique.html('19-20/*2');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Grande hache" :
-            document.getElementById(degat).innerHTML = "1D12" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D12 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('Contact');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Guisarme" :
-            document.getElementById(degat).innerHTML = "2D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "Allonge";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('2D4 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('Allonge');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Hallebarde" :
-            document.getElementById(degat).innerHTML = "1D10" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Perforant ou tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D10 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('Contact');
+            type.html('Perforant ou tranchant');
+            munitions.html('_');
             break;
         case "Lance d'arçon" :
-            document.getElementById(degat).innerHTML = "1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "Allonge";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('Allonge');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Massue" :
-            document.getElementById(degat).innerHTML = "1D10" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D10 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
     };
 };
 
-function choixArme_armes_de_guerre_armes_à_distante(formArme,degat,force_modificateur,bonus,critique,portee,type,munition) {
-    var valeur = parseInt(document.getElementById(force_modificateur).innerHTML)
-            + parseInt(bonus.value);
+function choixArme_armes_de_guerre_armes_à_distante(arme, bonus, degats, critique, portee, type, munitions) {
+    var valeur = parseInt($('#for_saisie').val());
+    var modificateur = Math.floor((valeur - 10)/2);
+    var valeur = modificateur + parseInt(bonus.val());
     
-    switch(formArme.value) {
+    switch(arme) {
         case "Arc court" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "18 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "Flèches (20)";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('18 m');
+            type.html('Perforant');
+            munitions.html('Flèches (20)');
             break;
         case "Arc court composite" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "21 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "Flèches (20)";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('21 m');
+            type.html('Perforant');
+            munitions.html('Flèches (20)');
             break;
         case "Arc long" :
-            document.getElementById(degat).innerHTML = "1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "30 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "Flèches (20)";
+            degats.html('1D8 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('30 m');
+            type.html('Perforant');
+            munitions.html('Flèches (20)');
             break;
         case "Arc long composite" :
-            document.getElementById(degat).innerHTML = "1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "33 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "Flèches (20)";
+            degats.html('1D8 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('33 m');
+            type.html('Perforant');
+            munitions.html('Flèches (20)');
             break;
     };
 };
 
-function choixArme_armes_exotiques_armes_légères(formArme,degat,force_modificateur,bonus,critique,portee,type,munition) {
-    var valeur = parseInt(document.getElementById(force_modificateur).innerHTML)
-            + parseInt(bonus.value);
+function choixArme_armes_exotiques_armes_légères(arme, bonus, degats, critique, portee, type, munitions) {
+    var valeur = parseInt($('#for_saisie').val());
+    var modificateur = Math.floor((valeur - 10)/2);
+    var valeur = modificateur + parseInt(bonus.val());
     
-    switch(formArme.value) {
+    switch(arme) {
         case "Kama" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Nunchaku" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Sai" :
-            document.getElementById(degat).innerHTML = "1D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D4 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Siangham" :
-            document.getElementById(degat).innerHTML = "1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D6 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Perforant');
+            munitions.html('_');
             break;
     };
 };
 
-function choixArme_armes_exotiques_armes_à_une_main(formArme,degat,force_modificateur,bonus,critique,portee,type,munition) {
-    var valeur = parseInt(document.getElementById(force_modificateur).innerHTML)
-            + parseInt(bonus.value);
+function choixArme_armes_exotiques_armes_à_une_main(arme, bonus, degats, critique, portee, type, munitions) {
+    var valeur = parseInt($('#for_saisie').val());
+    var modificateur = Math.floor((valeur - 10)/2);
+    var valeur = modificateur + parseInt(bonus.val());
     
-    switch(formArme.value) {
+    switch(arme) {
         case "Epée batarde" :
-            document.getElementById(degat).innerHTML = "1D10" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "19-20/*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D10 + ' + parseInt(valeur));
+            critique.html('19-20/*2');
+            portee.html('Contact');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Fouet" :
-            document.getElementById(degat).innerHTML = "1D3" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Allonge";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D3 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Allonge');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Hache de guerre naine" :
-            document.getElementById(degat).innerHTML = "1D10" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D10 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('Contact');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
     };
 };
 
-function choixArme_armes_exotiques_armes_à_deux_mains(formArme,degat,force_modificateur,bonus,critique,portee,type,munition) {
-    var valeur = parseInt(document.getElementById(force_modificateur).innerHTML)
-            + parseInt(bonus.value);
+function choixArme_armes_exotiques_armes_à_deux_mains(arme, bonus, degats, critique, portee, type, munitions) {
+    var valeur = parseInt($('#for_saisie').val());
+    var modificateur = Math.floor((valeur - 10)/2);
+    var valeur = modificateur + parseInt(bonus.val());
     
-    switch(formArme.value) {
+    switch(arme) {
         case "Chaîne cloutée" :
-            document.getElementById(degat).innerHTML = "2D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Allonge";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('2D4 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Allonge');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Double-lame" :
-            document.getElementById(degat).innerHTML = "1D8/1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "19-20/*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8/1D8 + ' + parseInt(valeur));
+            critique.html('19-20/*2');
+            portee.html('Contact');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Fléau double" :
-            document.getElementById(degat).innerHTML = "1D8/1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8/1D8 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('Contact');
+            type.html('Contondant');
+            munitions.html('_');
             break;
         case "Hache double orque" :
-            document.getElementById(degat).innerHTML = "1D8/1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8/1D8 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('Contact');
+            type.html('Tranchant');
+            munitions.html('_');
             break;
         case "Marteau-piolet gnome" :
-            document.getElementById(degat).innerHTML = "1D8/1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3/*4";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Contondant et perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8/1D6 + ' + parseInt(valeur));
+            critique.html('*3/*4');
+            portee.html('Contact');
+            type.html('Contondant et perforant');
+            munitions.html('_');
             break;
         case "Urgrosh nain" :
-            document.getElementById(degat).innerHTML = "1D8/1D6" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*3";
-            document.getElementById(portee).innerHTML = "Contact";
-            document.getElementById(type).innerHTML = "Perforant ou tranchant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D8/1D6 + ' + parseInt(valeur));
+            critique.html('*3');
+            portee.html('Contact');
+            type.html('Perforant ou tranchant');
+            munitions.html('_');
             break;
     };
 };
 
-function choixArme_armes_exotiques_armes_à_distante(formArme,degat,force_modificateur,bonus,critique,portee,type,munition) {
-    var valeur = parseInt(document.getElementById(force_modificateur).innerHTML)
-            + parseInt(bonus.value);
+function choixArme_armes_exotiques_armes_à_distante(arme, bonus, degats, critique, portee, type, munitions) {
+    var valeur = parseInt($('#for_saisie').val());
+    var modificateur = Math.floor((valeur - 10)/2);
+    var valeur = modificateur + parseInt(bonus.val());
     
-    switch(formArme.value) {
+    switch(arme) {
         case "Arbalètre de poing" :
-            document.getElementById(degat).innerHTML = "1D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "19-20/*2";
-            document.getElementById(portee).innerHTML = "9 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "Carreaux (10)";
+            degats.html('1D4 + ' + parseInt(valeur));
+            critique.html('19-20/*2');
+            portee.html('9 m');
+            type.html('Perforant');
+            munitions.html('Carreaux (10)');
             break;
         case "Arbalètre légère à répétition" :
-            document.getElementById(degat).innerHTML = "1D8" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "19-20/*2";
-            document.getElementById(portee).innerHTML = "24 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "Carreaux (5)";
+            degats.html('1D8 + ' + parseInt(valeur));
+            critique.html('19-20/*2');
+            portee.html('24 m');
+            type.html('Perforant');
+            munitions.html('Carreaux (5)');
             break;
         case "Arbalètre lourde à répétition" :
-            document.getElementById(degat).innerHTML = "1D10" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "19-20/*2";
-            document.getElementById(portee).innerHTML = "36 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "Carreaux (5)";
+            degats.html('1D10 + ' + parseInt(valeur));
+            critique.html('19-20/*2');
+            portee.html('36 m');
+            type.html('Perforant');
+            munitions.html('Carreaux (5)');
             break;
         case "Bolas" :
-            document.getElementById(degat).innerHTML = "1D4" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "3 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('1D4 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('3 m');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Filet" :
-            document.getElementById(degat).innerHTML = "-" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "-";
-            document.getElementById(portee).innerHTML = "3 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "_";
+            degats.html('- + ' + parseInt(valeur));
+            critique.html('-');
+            portee.html('3 m');
+            type.html('Perforant');
+            munitions.html('_');
             break;
         case "Shuriken" :
-            document.getElementById(degat).innerHTML = "1D2" + '+' + valeur;
-            document.getElementById(critique).innerHTML = "*2";
-            document.getElementById(portee).innerHTML = "3 m";
-            document.getElementById(type).innerHTML = "Perforant";
-            document.getElementById(munition).innerHTML = "(5)";
+            degats.html('1D2 + ' + parseInt(valeur));
+            critique.html('*2');
+            portee.html('3 m');
+            type.html('Perforant');
+            munitions.html('(5)');
             break;
     };
 };
@@ -822,12 +847,12 @@ function calculeFrapper(famille_arme,formArme,degat,critique,portee,type,munitio
     choixArme(famille_arme,maniement_arme,formArme,degat,forceModificateur,bonus,critique,portee,type,munition);
 
     if (maniement_arme.value == "Armes à distante") {
-        var val01 = parseInt(document.getElementById(bonusBaseArme).innerHTML)
-                  + parseInt(document.getElementById(dexteriteModificateur).innerHTML)
+        var val01 = parseInt($('#bonusBaseArme').html())
+                  + parseInt($('#dexteriteModificateur').html())
                   + parseInt(bonus.value);
     } else {
-        var val01 = parseInt(document.getElementById(bonusBaseArme).innerHTML)
-                  + parseInt(document.getElementById(forceModificateur).innerHTML)
+        var val01 = parseInt($('#bonusBaseArme').html())
+                  + parseInt($('#forceModificateur').html())
                   + parseInt(bonus.value);
     };
 
@@ -835,66 +860,66 @@ function calculeFrapper(famille_arme,formArme,degat,critique,portee,type,munitio
     var val03 = parseInt(val02) - 5;
     var val04 = parseInt(val03) - 5;
 
-    switch(document.getElementById(bonusBaseArme).innerHTML) {
+    switch($('#bonusBaseArme').html()) {
         case "1" :
-            document.getElementById(frapper).innerHTML = val01;
+            $('#frapper').html() = val01;
             break;
         case "2" :
-            document.getElementById(frapper).innerHTML = val01;
+            $('#frapper').html() = val01;
             break;
         case "3" :
-            document.getElementById(frapper).innerHTML = val01;
+            $('#frapper').html() = val01;
             break;
         case "4" :
-            document.getElementById(frapper).innerHTML = val01;
+            $('#frapper').html() = val01;
             break;
         case "5" :
-            document.getElementById(frapper).innerHTML = val01;
+            $('#frapper').html() = val01;
             break;
         case "6" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02;
+            $('#frapper').html() = val01 + "/" + val02;
             break;
         case "7" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02;
+            $('#frapper').html() = val01 + "/" + val02;
             break;
         case "8" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02;
+            $('#frapper').html() = val01 + "/" + val02;
             break;
         case "9" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02;
+            $('#frapper').html() = val01 + "/" + val02;
             break;
         case "10" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02;
+            $('#frapper').html() = val01 + "/" + val02;
             break;
         case "11" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02 + "/" + val03;
+            $('#frapper').html() = val01 + "/" + val02 + "/" + val03;
             break;
         case "12" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02 + "/" + val03;
+            $('#frapper').html() = val01 + "/" + val02 + "/" + val03;
             break;
         case "13" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02 + "/" + val03;
+            $('#frapper').html() = val01 + "/" + val02 + "/" + val03;
             break;
         case "14" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02 + "/" + val03;
+            $('#frapper').html() = val01 + "/" + val02 + "/" + val03;
             break;
         case "15" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02 + "/" + val03;
+            $('#frapper').html() = val01 + "/" + val02 + "/" + val03;
             break;
         case "16" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02 + "/" + val03 + "/" + val04;
+            $('#frapper').html() = val01 + "/" + val02 + "/" + val03 + "/" + val04;
             break;
         case "17" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02 + "/" + val03 + "/" + val04;
+            $('#frapper').html() = val01 + "/" + val02 + "/" + val03 + "/" + val04;
             break;
         case "18" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02 + "/" + val03 + "/" + val04;
+            $('#frapper').html() = val01 + "/" + val02 + "/" + val03 + "/" + val04;
             break;
         case "19" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02 + "/" + val03 + "/" + val04;
+            $('#frapper').html() = val01 + "/" + val02 + "/" + val03 + "/" + val04;
             break;
         case "20" :
-            document.getElementById(frapper).innerHTML = val01 + "/" + val02 + "/" + val03 + "/" + val04;
+            $('#frapper').html() = val01 + "/" + val02 + "/" + val03 + "/" + val04;
             break;
     };
 }
