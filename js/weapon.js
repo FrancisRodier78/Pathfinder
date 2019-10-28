@@ -1,4 +1,4 @@
-function choixFamilleArme(famille_arme) {
+function choixFamilleArme(famille_arme, maniement_arme) {
     var armes_courantes = new Array();
     var armes_de_guerre = new Array();
     var armes_exotiques = new Array();
@@ -10,38 +10,38 @@ function choixFamilleArme(famille_arme) {
     switch(famille_arme) {
         case "armes_courantes" :
             for (var nombElement = 0; nombElement < armes_courantes.length; nombElement++) {
-                $('#maniement_arme_I').append('<option value="' + armes_courantes[nombElement] + '">' + armes_courantes[nombElement] + '</option>');
+                maniement_arme.append('<option value="' + armes_courantes[nombElement] + '">' + armes_courantes[nombElement] + '</option>');
             };
             break;
         case "armes_de_guerre" :
             for (var nombElement = 0; nombElement < armes_de_guerre.length; nombElement++) {
-                $('#maniement_arme_I').append('<option value="' + armes_de_guerre[nombElement] + '">' + armes_de_guerre[nombElement] + '</option>');
+                maniement_arme.append('<option value="' + armes_de_guerre[nombElement] + '">' + armes_de_guerre[nombElement] + '</option>');
             };
             break;
         case "armes_exotiques" :
             for (var nombElement = 0; nombElement < armes_exotiques.length; nombElement++) {
-                $('#maniement_arme_I').append('<option value="' + armes_exotiques[nombElement] + '">' + armes_exotiques[nombElement] + '</option>');
+                maniement_arme.append('<option value="' + armes_exotiques[nombElement] + '">' + armes_exotiques[nombElement] + '</option>');
             };
             break;
     }
 }
 
 
-function choixManiementArme(famille_arme, maniement_arme) {
+function choixManiementArme(famille_arme, maniement_arme, arme) {
     switch(famille_arme) {
         case "armes_courantes" :
-            choixManiement_armes_courantes(maniement_arme)
+            choixManiement_armes_courantes(maniement_arme, arme);
             break;
         case "armes_de_guerre" :
-            choixManiement_armes_de_guerre(maniement_arme)
+            choixManiement_armes_de_guerre(maniement_arme, arme);
             break;
         case "armes_exotiques" :
-            choixManiement_armes_exotiques(maniement_arme)
+            choixManiement_armes_exotiques(maniement_arme, arme);
             break;
     }
 }
 
-function choixManiement_armes_courantes(maniement_arme) {
+function choixManiement_armes_courantes(maniement_arme, arme) {
     var combat_à_mains_nues = new Array();
     var armes_légères = new Array();
     var armes_à_une_main = new Array();
@@ -54,10 +54,10 @@ function choixManiement_armes_courantes(maniement_arme) {
     armes_à_deux_mains = ["","Bâton","Lance","Pique"];
     armes_à_distante = ["","Arbalètre légère","Arbalètre lourde","Dart","Fronde","Javeline"];
 
-    choixTypeArme(maniement_arme, combat_à_mains_nues, armes_légères, armes_à_une_main, armes_à_deux_mains, armes_à_distante);
+    choixTypeArme(maniement_arme, arme, combat_à_mains_nues, armes_légères, armes_à_une_main, armes_à_deux_mains, armes_à_distante);
 }
 
-function choixManiement_armes_de_guerre(maniement_arme) {
+function choixManiement_armes_de_guerre(maniement_arme, arme) {
     var combat_à_mains_nues = new Array();
     var armes_légères = new Array();
     var armes_à_une_main = new Array();
@@ -69,10 +69,10 @@ function choixManiement_armes_de_guerre(maniement_arme) {
     armes_à_deux_mains = ["","Cimeterre à deux mains","Corsèque","Coutille","Epée à deux mains","Faux","Fléau d'armes lourd","Grande hache","Guisarme","Hallebarde","Lance d'arçon","Massue"];
     armes_à_distante = ["","Arc court","Arc court composite","Arc long","Arc long composite"];
 
-    choixTypeArme(maniement_arme, combat_à_mains_nues, armes_légères, armes_à_une_main, armes_à_deux_mains, armes_à_distante);
+    choixTypeArme(maniement_arme, arme, combat_à_mains_nues, armes_légères, armes_à_une_main, armes_à_deux_mains, armes_à_distante);
 }
 
-function choixManiement_armes_exotiques(maniement_arme) {
+function choixManiement_armes_exotiques(maniement_arme, arme) {
     var combat_à_mains_nues = new Array();
     var armes_légères = new Array();
     var armes_à_une_main = new Array();
@@ -84,80 +84,38 @@ function choixManiement_armes_exotiques(maniement_arme) {
     armes_à_deux_mains = ["","Chaîne cloutée","Double-lame","Fléau double","Hache double orque","Marteau-piolet gnome","Urgrosh nain"];
     armes_à_distante = ["","Arbalètre de poing","Arbalètre légère à répétition","Arbalètre lourde à répétition","Bolas","Filet","Shuriken"];
 
-    choixTypeArme(maniement_arme, combat_à_mains_nues, armes_légères, armes_à_une_main, armes_à_deux_mains, armes_à_distante);
+    choixTypeArme(maniement_arme, arme, combat_à_mains_nues, armes_légères, armes_à_une_main, armes_à_deux_mains, armes_à_distante);
 }
 
-function choixTypeArme(maniement_arme, combat_à_mains_nues, armes_légères, armes_à_une_main, armes_à_deux_mains, armes_à_distante) {
+function choixTypeArme(maniement_arme, arme, combat_à_mains_nues, armes_légères, armes_à_une_main, armes_à_deux_mains, armes_à_distante) {
     switch(maniement_arme) {
         case "Combat à mains nues" :
             for (var nombElement = 0; nombElement < combat_à_mains_nues.length; nombElement++) {
-                $('#arme_I').append('<option value="' + combat_à_mains_nues[nombElement] + '">' + combat_à_mains_nues[nombElement] + '</option>');
+                arme.append('<option value="' + combat_à_mains_nues[nombElement] + '">' + combat_à_mains_nues[nombElement] + '</option>');
             };
             break;
         case "Armes légères" :
             for (var nombElement = 0; nombElement < armes_légères.length; nombElement++) {
-                $('#arme_I').append('<option value="' + armes_légères[nombElement] + '">' + armes_légères[nombElement] + '</option>');
+                arme.append('<option value="' + armes_légères[nombElement] + '">' + armes_légères[nombElement] + '</option>');
             };
             break;
         case "Armes à une main" :
             for (var nombElement = 0; nombElement < armes_à_une_main.length; nombElement++) {
-                $('#arme_I').append('<option value="' + armes_à_une_main[nombElement] +'">' + armes_à_une_main[nombElement] + '</option>');
+                arme.append('<option value="' + armes_à_une_main[nombElement] +'">' + armes_à_une_main[nombElement] + '</option>');
             };
             break;
         case "Armes à deux mains" :
             for (var nombElement = 0; nombElement < armes_à_deux_mains.length; nombElement++) {
-                $('#arme_I').append('<option value="' + armes_à_deux_mains[nombElement] +'">' + armes_à_deux_mains[nombElement] + '</option>');
+                arme.append('<option value="' + armes_à_deux_mains[nombElement] +'">' + armes_à_deux_mains[nombElement] + '</option>');
             };
             break;
         case "Armes à distante" :
             for (var nombElement = 0; nombElement < armes_à_distante.length; nombElement++) {
-                $('#arme_I').append('<option value="' + armes_à_distante[nombElement] +'">' + armes_à_distante[nombElement] + '</option>');
+                arme.append('<option value="' + armes_à_distante[nombElement] +'">' + armes_à_distante[nombElement] + '</option>');
             };
             break;
     }
 }
-
-$(function() {
-    $('#famille_arme_I').change(function() {
-        $('#maniement_arme_I').find('option').remove();
-        $('#arme_I').find('option').remove();
-        $('#degats_I').html(' ');
-        $('#critique_I').html(' ');
-        $('#portee_I').html(' ');
-        $('#type_I').html(' ');
-        $('#munitions_I').html(' ');
-        $('#bonus_I').val(0);
-
-        choixFamilleArme($('#famille_arme_I').val());
-    })
-
-    $('#maniement_arme_I').change(function() {
-        $('#arme_I').find('option').remove();
-        $('#degats_I').html(' ');
-        $('#critique_I').html(' ');
-        $('#portee_I').html(' ');
-        $('#type_I').html(' ');
-        $('#munitions_I').html(' ');
-        $('#bonus_I').val(0);
-
-        choixManiementArme($('#famille_arme_I').val(), $('#maniement_arme_I').val());
-    })
-
-    $('#arme_I').change(function() {
-        $('#degats_I').html(' ');
-        $('#critique_I').html(' ');
-        $('#portee_I').html(' ');
-        $('#type_I').html(' ');
-        $('#munitions_I').html(' ');
-        $('#bonus_I').val(0);
-
-        choixArme($('#famille_arme_I').val(), $('#maniement_arme_I').val(), $('#arme_I').val(), $('#bonus_I'), $('#degats_I'), $('#critique_I'), $('#portee_I'), $('#type_I'), $('#munitions_I'));
-    })
-
-    $('#bonus_I').change(function() {
-        choixArme($('#famille_arme_I').val(), $('#maniement_arme_I').val(), $('#arme_I').val(), $('#bonus_I'), $('#degats_I'), $('#critique_I'), $('#portee_I'), $('#type_I'), $('#munitions_I'));
-    })
-});
 
 function choixArme(famille_arme,maniement_arme, arme, bonus, degats, critique, portee, type, munitions) {
     switch(famille_arme) {
@@ -843,26 +801,239 @@ function choixArme_armes_exotiques_armes_à_distante(arme, bonus, degats, critiq
     };
 };
 
-function calculeFrapper(famille_arme,formArme,degat,critique,portee,type,munition,maniement_arme,bonusBaseArme,dexteriteModificateur,forceModificateur,bonus,frapper) {
-    choixArme(famille_arme,maniement_arme,formArme,degat,forceModificateur,bonus,critique,portee,type,munition);
+$(function() {
+    $('#famille_arme_I').change(function() {
+        $('#maniement_arme_I').find('option').remove();
+        $('#arme_I').find('option').remove();
+        $('#degats_I').html(' ');
+        $('#critique_I').html(' ');
+        $('#portee_I').html(' ');
+        $('#type_I').html(' ');
+        $('#munitions_I').html(' ');
+        $('#bonus_I').val(0);
 
-    if (maniement_arme.value == "Armes à distante") {
-        var val01 = parseInt($('#bonusBaseArme').html())
-                  + parseInt($('#dexteriteModificateur').html())
-                  + parseInt(bonus.value);
+        choixFamilleArme($('#famille_arme_I').val(), $('#maniement_arme_I'));
+    })
+
+    $('#maniement_arme_I').change(function() {
+        $('#arme_I').find('option').remove();
+        $('#degats_I').html(' ');
+        $('#critique_I').html(' ');
+        $('#portee_I').html(' ');
+        $('#type_I').html(' ');
+        $('#munitions_I').html(' ');
+        $('#bonus_I').val(0);
+
+        choixManiementArme($('#famille_arme_I').val(), $('#maniement_arme_I').val(), $('#arme_I'));
+    })
+
+    $('#arme_I').change(function() {
+        $('#degats_I').html(' ');
+        $('#critique_I').html(' ');
+        $('#portee_I').html(' ');
+        $('#type_I').html(' ');
+        $('#munitions_I').html(' ');
+        $('#bonus_I').val(0);
+
+        //choixTypeArme(maniement_arme, combat_à_mains_nues, armes_légères, armes_à_une_main, armes_à_deux_mains, armes_à_distante);      
+        choixArme($('#famille_arme_I').val(), $('#maniement_arme_I').val(), $('#arme_I').val(), $('#bonus_I'), $('#degats_I'), $('#critique_I'), $('#portee_I'), $('#type_I'), $('#munitions_I'));
+    })
+
+    $('#bonus_I').change(function() {
+        choixArme($('#famille_arme_I').val(), $('#maniement_arme_I').val(), $('#arme_I').val(), $('#bonus_I'), $('#degats_I'), $('#critique_I'), $('#portee_I'), $('#type_I'), $('#munitions_I'));
+    })
+
+
+    $('#famille_arme_II').change(function() {
+        $('#maniement_arme_II').find('option').remove();
+        $('#arme_II').find('option').remove();
+        $('#degats_II').html(' ');
+        $('#critique_II').html(' ');
+        $('#portee_II').html(' ');
+        $('#type_II').html(' ');
+        $('#munitions_II').html(' ');
+        $('#bonus_II').val(0);
+
+        choixFamilleArme($('#famille_arme_II').val(), $('#maniement_arme_II'));
+    })
+
+    $('#maniement_arme_II').change(function() {
+        $('#arme_II').find('option').remove();
+        $('#degats_II').html(' ');
+        $('#critique_II').html(' ');
+        $('#portee_II').html(' ');
+        $('#type_II').html(' ');
+        $('#munitions_II').html(' ');
+        $('#bonus_II').val(0);
+
+        choixManiementArme($('#famille_arme_II').val(), $('#maniement_arme_II').val(), $('#arme_II'));
+    })
+
+    $('#arme_II').change(function() {
+        $('#degats_II').html(' ');
+        $('#critique_II').html(' ');
+        $('#portee_II').html(' ');
+        $('#type_II').html(' ');
+        $('#munitions_II').html(' ');
+        $('#bonus_II').val(0);
+
+        choixArme($('#famille_arme_II').val(), $('#maniement_arme_II').val(), $('#arme_II').val(), $('#bonus_II'), $('#degats_II'), $('#critique_II'), $('#portee_II'), $('#type_II'), $('#munitions_II'));
+    })
+
+    $('#bonus_II').change(function() {
+        choixArme($('#famille_arme_II').val(), $('#maniement_arme_II').val(), $('#arme_II').val(), $('#bonus_II'), $('#degats_II'), $('#critique_II'), $('#portee_II'), $('#type_II'), $('#munitions_II'));
+    })
+
+
+    $('#famille_arme_III').change(function() {
+        $('#maniement_arme_III').find('option').remove();
+        $('#arme_III').find('option').remove();
+        $('#degats_III').html(' ');
+        $('#critique_III').html(' ');
+        $('#portee_III').html(' ');
+        $('#type_III').html(' ');
+        $('#munitions_III').html(' ');
+        $('#bonus_III').val(0);
+
+        choixFamilleArme($('#famille_arme_III').val(), $('#maniement_arme_III'));
+    })
+
+    $('#maniement_arme_III').change(function() {
+        $('#arme_III').find('option').remove();
+        $('#degats_III').html(' ');
+        $('#critique_III').html(' ');
+        $('#portee_III').html(' ');
+        $('#type_III').html(' ');
+        $('#munitions_III').html(' ');
+        $('#bonus_III').val(0);
+
+        choixManiementArme($('#famille_arme_III').val(), $('#maniement_arme_III').val(), $('#arme_III'));
+    })
+
+    $('#arme_III').change(function() {
+        $('#degats_III').html(' ');
+        $('#critique_III').html(' ');
+        $('#portee_III').html(' ');
+        $('#type_III').html(' ');
+        $('#munitions_III').html(' ');
+        $('#bonus_III').val(0);
+
+        choixArme($('#famille_arme_III').val(), $('#maniement_arme_III').val(), $('#arme_III').val(), $('#bonus_III'), $('#degats_III'), $('#critique_III'), $('#portee_III'), $('#type_III'), $('#munitions_III'));
+    })
+
+    $('#bonus_III').change(function() {
+        choixArme($('#famille_arme_III').val(), $('#maniement_arme_III').val(), $('#arme_III').val(), $('#bonus_III'), $('#degats_III'), $('#critique_III'), $('#portee_III'), $('#type_III'), $('#munitions_III'));
+    })
+
+
+    $('#famille_arme_IV').change(function() {
+        $('#maniement_arme_IV').find('option').remove();
+        $('#arme_IV').find('option').remove();
+        $('#degats_IV').html(' ');
+        $('#critique_IV').html(' ');
+        $('#portee_IV').html(' ');
+        $('#type_IV').html(' ');
+        $('#munitions_IV').html(' ');
+        $('#bonus_IV').val(0);
+
+        choixFamilleArme($('#famille_arme_IV').val(), $('#maniement_arme_IV'));
+    })
+
+    $('#maniement_arme_IV').change(function() {
+        $('#arme_IV').find('option').remove();
+        $('#degats_IV').html(' ');
+        $('#critique_IV').html(' ');
+        $('#portee_IV').html(' ');
+        $('#type_IV').html(' ');
+        $('#munitions_IV').html(' ');
+        $('#bonus_IV').val(0);
+
+        choixManiementArme($('#famille_arme_IV').val(), $('#maniement_arme_IV').val(), $('#arme_IV'));
+    })
+
+    $('#arme_IV').change(function() {
+        $('#degats_IV').html(' ');
+        $('#critique_IV').html(' ');
+        $('#portee_IV').html(' ');
+        $('#type_IV').html(' ');
+        $('#munitions_IV').html(' ');
+        $('#bonus_IV').val(0);
+
+        choixArme($('#famille_arme_IV').val(), $('#maniement_arme_IV').val(), $('#arme_IV').val(), $('#bonus_IV'), $('#degats_IV'), $('#critique_IV'), $('#portee_IV'), $('#type_IV'), $('#munitions_IV'));
+    })
+
+    $('#bonus_IV').change(function() {
+        choixArme($('#famille_arme_IV').val(), $('#maniement_arme_IV').val(), $('#arme_IV').val(), $('#bonus_IV'), $('#degats_IV'), $('#critique_IV'), $('#portee_IV'), $('#type_IV'), $('#munitions_IV'));
+    })
+
+
+    $('#famille_arme_V').change(function() {
+        $('#maniement_arme_V').find('option').remove();
+        $('#arme_V').find('option').remove();
+        $('#degats_V').html(' ');
+        $('#critique_V').html(' ');
+        $('#portee_V').html(' ');
+        $('#type_V').html(' ');
+        $('#munitions_V').html(' ');
+        $('#bonus_V').val(0);
+
+        choixFamilleArme($('#famille_arme_V').val(), $('#maniement_arme_V'));
+    })
+
+    $('#maniement_arme_V').change(function() {
+        $('#arme_V').find('option').remove();
+        $('#degats_V').html(' ');
+        $('#critique_V').html(' ');
+        $('#portee_V').html(' ');
+        $('#type_V').html(' ');
+        $('#munitions_V').html(' ');
+        $('#bonus_V').val(0);
+
+        choixManiementArme($('#famille_arme_V').val(), $('#maniement_arme_V').val(), $('#arme_V'));
+    })
+
+    $('#arme_V').change(function() {
+        $('#degats_V').html(' ');
+        $('#critique_V').html(' ');
+        $('#portee_V').html(' ');
+        $('#type_V').html(' ');
+        $('#munitions_V').html(' ');
+        $('#bonus_V').val(0);
+
+        choixArme($('#famille_arme_V').val(), $('#maniement_arme_V').val(), $('#arme_V').val(), $('#bonus_V'), $('#degats_V'), $('#critique_V'), $('#portee_V'), $('#type_V'), $('#munitions_V'));
+    })
+
+    $('#bonus_V').change(function() {
+        choixArme($('#famille_arme_V').val(), $('#maniement_arme_V').val(), $('#arme_V').val(), $('#bonus_V'), $('#degats_V'), $('#critique_V'), $('#portee_V'), $('#type_V'), $('#munitions_V'));
+    })
+});
+
+function calculeFrapper(maniement_arme, bonus, frappe) {
+    console.log(maniement_arme);
+    console.log(bonus);
+    console.log(frappe);
+
+    if (maniement_arme.val() == "Armes à distante") {
+        var valeur = parseInt($('#dex_saisie').val());
+        var modificateur = Math.floor((valeur - 10)/2);
+        var val01 = parseInt($('#bba').html(''))
+                  + parseInt(modificateur)
+                  + parseInt(bonus.val());
     } else {
-        var val01 = parseInt($('#bonusBaseArme').html())
-                  + parseInt($('#forceModificateur').html())
-                  + parseInt(bonus.value);
+        var valeur = parseInt($('#for_saisie').val());
+        var modificateur = Math.floor((valeur - 10)/2);
+        var val01 = parseInt(bonus.val())
+                  + parseInt(modificateur)
+                  + parseInt(bonus.val());
     };
 
     var val02 = parseInt(val01) - 5;
     var val03 = parseInt(val02) - 5;
     var val04 = parseInt(val03) - 5;
 
-    switch($('#bonusBaseArme').html()) {
+    switch($('#niveau').html()) {
         case "1" :
-            $('#frapper').html() = val01;
+            frappe.html() = val01;
             break;
         case "2" :
             $('#frapper').html() = val01;
@@ -876,6 +1047,7 @@ function calculeFrapper(famille_arme,formArme,degat,critique,portee,type,munitio
         case "5" :
             $('#frapper').html() = val01;
             break;
+
         case "6" :
             $('#frapper').html() = val01 + "/" + val02;
             break;

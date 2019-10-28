@@ -747,13 +747,14 @@
                             </tr>
 
                             <tr>
-                                <td colspan="3">
+                                <td colspan="2">
                                     <select id="arme_I" name="arme_I">
                                     </select>
+                                    <td id="frappe_I" ></td>
                                 </td>
 
                                 <td class="center">
-                                    <select id="bonus_I" name="bonus" onChange="calculeFrapper(document.form.famille_arme_I,document.form.arme_I,'degat_I','critique_I','portee_I','type_I','mun_I',document.form.maniement_arme_I,'bba','dex_mod','for_mod',document.form.bonus_I,'frapper_I')">
+                                    <select id="bonus_I" name="bonus">
                                         <option value=0></option>
                                         <option value=0>0</option>
                                         <option value=1>1</option>
@@ -787,7 +788,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <label id="label_famille_arme_II" for="famille_arme_II">FAMILLE D'ARME</label> 
-                        <select id="famille_arme_II" name="famille_arme_II" onChange="choixFamilleArme('maniement_arme_II',document.form.famille_arme_II,document.form.maniement_arme_II)">
+                        <select id="famille_arme_II" name="famille_arme_II">
                             <option></option>
                             <option value="armes_courantes">Armes courantes</option>
                             <option value="armes_de_guerre">Arme de guerre</option>
@@ -798,7 +799,7 @@
 
                     <div class="col-lg-6">
                         <label id="label_maniement_arme_II" for="maniement_arme_II">MANIEMENT</label> 
-                        <select id="maniement_arme_II" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_II,'arme_II',document.form.maniement_arme_II,document.form.arme_II)">
+                        <select id="maniement_arme_II" name="maniement_arme_II">
                         </select>
                         <span class="tooltip">Maniement d'arme inconnue</span>
                     </div>
@@ -814,13 +815,14 @@
                             </tr>
 
                             <tr>
-                                <td colspan="3">
-                                    <select id="arme_II" name="arme_II" onChange="choixArme(document.form.famille_arme_II,document.form.maniement_arme_II,document.form.arme_II,'degat_II','for_mod',document.form.bonus_II,'critique_II','portee_II','type_II','mun_II')">
+                                <td colspan="2">
+                                    <select id="arme_II" name="arme_II">
                                     </select>
+                                    <td id="frappe_II" ></td>
                                 </td>
 
                                 <td class="center">
-                                    <select id="bonus_II" name="bonus" onChange="calculeFrapper(document.form.famille_arme_II,document.form.arme_II,'degat_II','critique_II','portee_II','type_II','mun_II',document.form.maniement_arme_II,'bba','dex_mod','for_mod',document.form.bonus_II,'frapper_II')">
+                                    <select id="bonus_II" name="bonus">
                                         <option value=0></option>
                                         <option value=0>0</option>
                                         <option value=1>1</option>
@@ -854,7 +856,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <label id="label_famille_arme_III" for="famille_arme_III">FAMILLE D'ARME</label> 
-                        <select id="famille_arme_III" name="famille_arme_III" onChange="choixFamilleArme('maniement_arme_III',document.form.famille_arme_III,document.form.maniement_arme_III)">
+                        <select id="famille_arme_III" name="famille_arme_III">
                             <option></option>
                             <option value="armes_courantes">Armes courantes</option>
                             <option value="armes_de_guerre">Arme de guerre</option>
@@ -865,7 +867,7 @@
 
                     <div class="col-lg-6">
                         <label id="label_maniement_arme_III" for="maniement_arme_III">MANIEMENT</label> 
-                        <select id="maniement_arme_III" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_III,'arme_III',document.form.maniement_arme_III,document.form.arme_III)">
+                        <select id="maniement_arme_III" name="maniement_arme_III">
                         </select>
                         <span class="tooltip">Maniement d'arme inconnue</span>
                     </div>
@@ -881,13 +883,14 @@
                             </tr>
 
                             <tr>
-                                <td colspan="3">
-                                    <select id="arme_III" name="arme_III" onChange="choixArme(document.form.famille_arme_III,document.form.maniement_arme_III,document.form.arme_III,'degat_III','for_mod',document.form.bonus_III,'critique_III','portee_III','type_III','mun_III')">
+                                <td colspan="2">
+                                    <select id="arme_III" name="arme_III">
                                     </select>
+                                    <td id="frappe_III" ></td>
                                 </td>
 
                                 <td class="center">
-                                    <select id="bonus_III" name="bonus" onChange="calculeFrapper(document.form.famille_arme_III,document.form.arme_III,'degat_III','critique_III','portee_III','type_III','mun_III',document.form.maniement_arme_III,'bba','dex_mod','for_mod',document.form.bonus_III,'frapper_III')">
+                                    <select id="bonus_III" name="bonus">
                                         <option value=0></option>
                                         <option value=0>0</option>
                                         <option value=1>1</option>
@@ -921,7 +924,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <label id="label_famille_arme_IV" for="famille_arme_IV">FAMILLE D'ARME</label> 
-                        <select id="famille_arme_IV" name="famille_arme_IV" onChange="choixFamilleArme('maniement_arme_IV',document.form.famille_arme_IV,document.form.maniement_arme_IV)">
+                        <select id="famille_arme_IV" name="famille_arme_IV">
                             <option></option>
                             <option value="armes_courantes">Armes courantes</option>
                             <option value="armes_de_guerre">Arme de guerre</option>
@@ -932,7 +935,7 @@
 
                     <div class="col-lg-6">
                         <label id="label_maniement_arme_IV" for="maniement_arme_IV">MANIEMENT</label> 
-                        <select id="maniement_arme_IV" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_IV,'arme_IV',document.form.maniement_arme_IV,document.form.arme_IV)">
+                        <select id="maniement_arme_IV" name="maniement_arme_IV">
                         </select>
                         <span class="tooltip">Maniement d'arme inconnue</span>
                     </div>
@@ -948,13 +951,14 @@
                             </tr>
 
                             <tr>
-                                <td colspan="3">
-                                    <select id="arme_IV" name="arme_IV" onChange="choixArme(document.form.famille_arme_IV,document.form.maniement_arme_IV,document.form.arme_IV,'degat_IV','for_mod',document.form.bonus_IV,'critique_IV','portee_IV','type_IV','mun_IV')">
+                                <td colspan="2">
+                                    <select id="arme_IV" name="arme_IV">
                                     </select>
+                                    <td id="frappe_IV" ></td>
                                 </td>
 
                                 <td class="center">
-                                    <select id="bonus_IV" name="bonus" onChange="calculeFrapper(document.form.famille_arme_IV,document.form.arme_IV,'degat_IV','critique_IV','portee_IV','type_IV','mun_IV',document.form.maniement_arme_IV,'bba','dex_mod','for_mod',document.form.bonus_IV,'frapper_IV')">
+                                    <select id="bonus_IV" name="bonus">
                                         <option value=0></option>
                                         <option value=0>0</option>
                                         <option value=1>1</option>
@@ -988,7 +992,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <label id="label_famille_arme_V" for="famille_arme_V">FAMILLE D'ARME</label> 
-                        <select id="famille_arme_V" name="famille_arme_V" onChange="choixFamilleArme('maniement_arme_V',document.form.famille_arme_V,document.form.maniement_arme_V)">
+                        <select id="famille_arme_V" name="famille_arme_V">
                             <option></option>
                             <option value="armes_courantes">Armes courantes</option>
                             <option value="armes_de_guerre">Arme de guerre</option>
@@ -999,7 +1003,7 @@
 
                     <div class="col-lg-6">
                         <label id="label_maniement_arme_V" for="maniement_arme_V">MANIEMENT</label> 
-                        <select id="maniement_arme_V" name="maniement_arme" onChange="choixManiementArme(document.form.famille_arme_V,'arme_V',document.form.maniement_arme_V,document.form.arme_V)">
+                        <select id="maniement_arme_V" name="maniement_arme_V">
                         </select>
                         <span class="tooltip">Maniement d'arme inconnue</span>
                     </div>
@@ -1015,13 +1019,14 @@
                             </tr>
 
                             <tr>
-                                <td colspan="3">
-                                    <select id="arme_V" name="arme_V" onChange="choixArme(document.form.famille_arme_V,document.form.maniement_arme_V,document.form.arme_V,'degat_V','for_mod',document.form.bonus_V,'critique_V','portee_V','type_V','mun_V')">
+                                <td colspan="2">
+                                    <select id="arme_V" name="arme_V">
                                     </select>
+                                    <td id="frappe_V" ></td>
                                 </td>
 
                                 <td class="center">
-                                    <select id="bonus_V" name="bonus" onChange="calculeFrapper(document.form.famille_arme_V,document.form.arme_V,'degat_V','critique_V','portee_V','type_V','mun_V',document.form.maniement_arme_V,'bba','dex_mod','for_mod',document.form.bonus_V,'frapper_V')">
+                                    <select id="bonus_V" name="bonus">
                                         <option value=0></option>
                                         <option value=0>0</option>
                                         <option value=1>1</option>
