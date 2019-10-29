@@ -3386,7 +3386,6 @@ $(function() {
 
         switch($('#classe').val()) {
             case ' ' :
-                $('#lab_ref').css('background','#ffffff');
                 $('#sau_bon_bas_ref').html('0');
                 $('#sau_bon_bas_vig').html('0');
                 $('#sau_bon_bas_vol').html('0');

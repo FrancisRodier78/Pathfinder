@@ -308,7 +308,7 @@ function choixArme_armes_courantes_armes_à_deux_mains(arme, bonus, degats, crit
 }
 
 function choixArme_armes_courantes_armes_à_distante(arme, bonus, degats, critique, portee, type, munitions) {
-    var valeur = parseInt($('#for_saisie').val());
+    var valeur = parseInt($('#dex_saisie').val());
     var modificateur = Math.floor((valeur - 10)/2);
     var valeur = modificateur + parseInt(bonus.val());
     
@@ -596,7 +596,7 @@ function choixArme_armes_de_guerre_armes_à_deux_mains(arme, bonus, degats, crit
 };
 
 function choixArme_armes_de_guerre_armes_à_distante(arme, bonus, degats, critique, portee, type, munitions) {
-    var valeur = parseInt($('#for_saisie').val());
+    var valeur = parseInt($('#dex_saisie').val());
     var modificateur = Math.floor((valeur - 10)/2);
     var valeur = modificateur + parseInt(bonus.val());
     
@@ -751,7 +751,7 @@ function choixArme_armes_exotiques_armes_à_deux_mains(arme, bonus, degats, crit
 };
 
 function choixArme_armes_exotiques_armes_à_distante(arme, bonus, degats, critique, portee, type, munitions) {
-    var valeur = parseInt($('#for_saisie').val());
+    var valeur = parseInt($('#dex_saisie').val());
     var modificateur = Math.floor((valeur - 10)/2);
     var valeur = modificateur + parseInt(bonus.val());
     
@@ -835,11 +835,12 @@ $(function() {
         $('#munitions_I').html(' ');
         $('#bonus_I').val(0);
 
-        //choixTypeArme(maniement_arme, combat_à_mains_nues, armes_légères, armes_à_une_main, armes_à_deux_mains, armes_à_distante);      
+        calculeFrapper($('#maniement_arme_I').val(), $('#bonus_I').val(), $('#frappe_I'));
         choixArme($('#famille_arme_I').val(), $('#maniement_arme_I').val(), $('#arme_I').val(), $('#bonus_I'), $('#degats_I'), $('#critique_I'), $('#portee_I'), $('#type_I'), $('#munitions_I'));
     })
 
     $('#bonus_I').change(function() {
+        calculeFrapper($('#maniement_arme_I').val(), $('#bonus_I').val(), $('#frappe_I'));
         choixArme($('#famille_arme_I').val(), $('#maniement_arme_I').val(), $('#arme_I').val(), $('#bonus_I'), $('#degats_I'), $('#critique_I'), $('#portee_I'), $('#type_I'), $('#munitions_I'));
     })
 
@@ -877,10 +878,12 @@ $(function() {
         $('#munitions_II').html(' ');
         $('#bonus_II').val(0);
 
+        calculeFrapper($('#maniement_arme_II').val(), $('#bonus_II').val(), $('#frappe_II'));
         choixArme($('#famille_arme_II').val(), $('#maniement_arme_II').val(), $('#arme_II').val(), $('#bonus_II'), $('#degats_II'), $('#critique_II'), $('#portee_II'), $('#type_II'), $('#munitions_II'));
     })
 
     $('#bonus_II').change(function() {
+        calculeFrapper($('#maniement_arme_II').val(), $('#bonus_II').val(), $('#frappe_II'));
         choixArme($('#famille_arme_II').val(), $('#maniement_arme_II').val(), $('#arme_II').val(), $('#bonus_II'), $('#degats_II'), $('#critique_II'), $('#portee_II'), $('#type_II'), $('#munitions_II'));
     })
 
@@ -918,10 +921,12 @@ $(function() {
         $('#munitions_III').html(' ');
         $('#bonus_III').val(0);
 
+        calculeFrapper($('#maniement_arme_III').val(), $('#bonus_III').val(), $('#frappe_III'));
         choixArme($('#famille_arme_III').val(), $('#maniement_arme_III').val(), $('#arme_III').val(), $('#bonus_III'), $('#degats_III'), $('#critique_III'), $('#portee_III'), $('#type_III'), $('#munitions_III'));
     })
 
     $('#bonus_III').change(function() {
+        calculeFrapper($('#maniement_arme_III').val(), $('#bonus_III').val(), $('#frappe_III'));
         choixArme($('#famille_arme_III').val(), $('#maniement_arme_III').val(), $('#arme_III').val(), $('#bonus_III'), $('#degats_III'), $('#critique_III'), $('#portee_III'), $('#type_III'), $('#munitions_III'));
     })
 
@@ -959,10 +964,12 @@ $(function() {
         $('#munitions_IV').html(' ');
         $('#bonus_IV').val(0);
 
+        calculeFrapper($('#maniement_arme_IV').val(), $('#bonus_IV').val(), $('#frappe_IV'));
         choixArme($('#famille_arme_IV').val(), $('#maniement_arme_IV').val(), $('#arme_IV').val(), $('#bonus_IV'), $('#degats_IV'), $('#critique_IV'), $('#portee_IV'), $('#type_IV'), $('#munitions_IV'));
     })
 
     $('#bonus_IV').change(function() {
+        calculeFrapper($('#maniement_arme_IV').val(), $('#bonus_IV').val(), $('#frappe_IV'));
         choixArme($('#famille_arme_IV').val(), $('#maniement_arme_IV').val(), $('#arme_IV').val(), $('#bonus_IV'), $('#degats_IV'), $('#critique_IV'), $('#portee_IV'), $('#type_IV'), $('#munitions_IV'));
     })
 
@@ -1000,98 +1007,96 @@ $(function() {
         $('#munitions_V').html(' ');
         $('#bonus_V').val(0);
 
+        calculeFrapper($('#maniement_arme_V').val(), $('#bonus_V').val(), $('#frappe_V'));
         choixArme($('#famille_arme_V').val(), $('#maniement_arme_V').val(), $('#arme_V').val(), $('#bonus_V'), $('#degats_V'), $('#critique_V'), $('#portee_V'), $('#type_V'), $('#munitions_V'));
     })
 
     $('#bonus_V').change(function() {
+        calculeFrapper($('#maniement_arme_V').val(), $('#bonus_V').val(), $('#frappe_V'));
         choixArme($('#famille_arme_V').val(), $('#maniement_arme_V').val(), $('#arme_V').val(), $('#bonus_V'), $('#degats_V'), $('#critique_V'), $('#portee_V'), $('#type_V'), $('#munitions_V'));
     })
 });
 
 function calculeFrapper(maniement_arme, bonus, frappe) {
-    console.log(maniement_arme);
-    console.log(bonus);
-    console.log(frappe);
-
-    if (maniement_arme.val() == "Armes à distante") {
+    if (maniement_arme == "Armes à distante") {
         var valeur = parseInt($('#dex_saisie').val());
         var modificateur = Math.floor((valeur - 10)/2);
-        var val01 = parseInt($('#bba').html(''))
+        var val01 = parseInt($('#bba').html())
                   + parseInt(modificateur)
-                  + parseInt(bonus.val());
+                  + parseInt(bonus);
     } else {
         var valeur = parseInt($('#for_saisie').val());
         var modificateur = Math.floor((valeur - 10)/2);
-        var val01 = parseInt(bonus.val())
+        var val01 = parseInt($('#bba').html())
                   + parseInt(modificateur)
-                  + parseInt(bonus.val());
+                  + parseInt(bonus);
     };
 
     var val02 = parseInt(val01) - 5;
     var val03 = parseInt(val02) - 5;
     var val04 = parseInt(val03) - 5;
 
-    switch($('#niveau').html()) {
-        case "1" :
-            frappe.html() = val01;
+    console.log($('#bba').html());
+    switch($('#bba').html()) {
+        case '1' :
+            frappe.html(val01);
             break;
-        case "2" :
-            $('#frapper').html() = val01;
+        case '2' :
+            frappe.html(val01);
             break;
-        case "3" :
-            $('#frapper').html() = val01;
+        case '3' :
+            frappe.html(val01);
             break;
-        case "4" :
-            $('#frapper').html() = val01;
+        case '4' :
+            frappe.html(val01);
             break;
-        case "5" :
-            $('#frapper').html() = val01;
+        case '5' :
+            frappe.html(val01);
             break;
-
-        case "6" :
-            $('#frapper').html() = val01 + "/" + val02;
+        case '6' :
+            frappe.html(val01 + '/' + val02);
             break;
-        case "7" :
-            $('#frapper').html() = val01 + "/" + val02;
+        case '7' :
+            frappe.html(val01 + '/' + val02);
             break;
-        case "8" :
-            $('#frapper').html() = val01 + "/" + val02;
+        case '8' :
+            frappe.html(val01 + '/' + val02);
             break;
-        case "9" :
-            $('#frapper').html() = val01 + "/" + val02;
+        case '9' :
+            frappe.html(val01 + '/' + val02);
             break;
-        case "10" :
-            $('#frapper').html() = val01 + "/" + val02;
+        case '10' :
+            frappe.html(val01 + '/' + val02);
             break;
-        case "11" :
-            $('#frapper').html() = val01 + "/" + val02 + "/" + val03;
+        case '11' :
+            frappe.html(val01 + '/' + val02 + '/' + val03);
             break;
-        case "12" :
-            $('#frapper').html() = val01 + "/" + val02 + "/" + val03;
+        case '12' :
+            frappe.html(val01 + '/' + val02 + '/' + val03);
             break;
-        case "13" :
-            $('#frapper').html() = val01 + "/" + val02 + "/" + val03;
+        case '13' :
+            frappe.html(val01 + '/' + val02 + '/' + val03);
             break;
-        case "14" :
-            $('#frapper').html() = val01 + "/" + val02 + "/" + val03;
+        case '14' :
+            frappe.html(val01 + '/' + val02 + '/' + val03);
             break;
-        case "15" :
-            $('#frapper').html() = val01 + "/" + val02 + "/" + val03;
+        case '15' :
+            frappe.html(val01 + '/' + val02 + '/' + val03);
             break;
-        case "16" :
-            $('#frapper').html() = val01 + "/" + val02 + "/" + val03 + "/" + val04;
+        case '16' :
+            frappe.html(val01 + '/' + val02 + '/' + val03 + '/' + val04);
             break;
-        case "17" :
-            $('#frapper').html() = val01 + "/" + val02 + "/" + val03 + "/" + val04;
+        case '17' :
+            frappe.html(val01 + '/' + val02 + '/' + val03 + '/' + val04);
             break;
-        case "18" :
-            $('#frapper').html() = val01 + "/" + val02 + "/" + val03 + "/" + val04;
+        case '18' :
+            frappe.html(val01 + '/' + val02 + '/' + val03 + '/' + val04);
             break;
-        case "19" :
-            $('#frapper').html() = val01 + "/" + val02 + "/" + val03 + "/" + val04;
+        case '19' :
+            frappe.html(val01 + '/' + val02 + '/' + val03 + '/' + val04);
             break;
-        case "20" :
-            $('#frapper').html() = val01 + "/" + val02 + "/" + val03 + "/" + val04;
+        case '20' :
+            frappe.html(val01 + '/' + val02 + '/' + val03 + '/' + val04);
             break;
     };
 }

@@ -750,8 +750,9 @@
                                 <td colspan="2">
                                     <select id="arme_I" name="arme_I">
                                     </select>
-                                    <td id="frappe_I" ></td>
                                 </td>
+
+                                <td id="frappe_I" class="center"></td>
 
                                 <td class="center">
                                     <select id="bonus_I" name="bonus">
@@ -818,8 +819,9 @@
                                 <td colspan="2">
                                     <select id="arme_II" name="arme_II">
                                     </select>
-                                    <td id="frappe_II" ></td>
                                 </td>
+
+                                <td id="frappe_II" class="center"></td>
 
                                 <td class="center">
                                     <select id="bonus_II" name="bonus">
@@ -886,8 +888,9 @@
                                 <td colspan="2">
                                     <select id="arme_III" name="arme_III">
                                     </select>
-                                    <td id="frappe_III" ></td>
                                 </td>
+
+                                <td id="frappe_III" class="center"></td>
 
                                 <td class="center">
                                     <select id="bonus_III" name="bonus">
@@ -954,8 +957,9 @@
                                 <td colspan="2">
                                     <select id="arme_IV" name="arme_IV">
                                     </select>
-                                    <td id="frappe_IV" ></td>
                                 </td>
+
+                                <td id="frappe_IV" class="center"></td>
 
                                 <td class="center">
                                     <select id="bonus_IV" name="bonus">
@@ -1022,8 +1026,9 @@
                                 <td colspan="2">
                                     <select id="arme_V" name="arme_V">
                                     </select>
-                                    <td id="frappe_V" ></td>
                                 </td>
+
+                                <td id="frappe_V" class="center"></td>
 
                                 <td class="center">
                                     <select id="bonus_V" name="bonus">
