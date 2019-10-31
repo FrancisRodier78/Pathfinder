@@ -3115,253 +3115,187 @@
                                             <select name="objet_I" id="objet_I">
                                             </select>
                                         </td>
-                                        <td id="poids_I" ></td>
+                                        <td id="poids_I" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_II" id="objet_II" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_II" id="objet_II">
                                             </select>
                                         </td>
-                                        <td id="poids_II" ></td>
+                                        <td id="poids_II" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_III" id="objet_III" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_III" id="objet_III">
                                             </select>
                                         </td>
-                                        <td id="poids_III" ></td>
+                                        <td id="poids_III" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_IV" id="objet_IV" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_IV" id="objet_IV">
                                             </select>
                                         </td>
-                                        <td id="poids_IV" ></td>
+                                        <td id="poids_IV" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_V" id="objet_V" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_V" id="objet_V">
                                             </select>
                                         </td>
-                                        <td id="poids_V" ></td>
+                                        <td id="poids_V" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_VI" id="objet_VI" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_VI" id="objet_VI">
                                             </select>
                                         </td>
-                                        <td id="poids_VI" ></td>
+                                        <td id="poids_VI" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_VII" id="objet_VII" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_VII" id="objet_VII">
                                             </select>
                                         </td>
-                                        <td id="poids_VII" ></td>
+                                        <td id="poids_VII" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_VIII" id="objet_VIII" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_VIII" id="objet_VIII">
                                             </select>
                                         </td>
-                                        <td id="poids_VIII" ></td>
+                                        <td id="poids_VIII" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_IX" id="objet_IX" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_IX" id="objet_IX">
                                             </select>
                                         </td>
-                                        <td id="poids_IX" ></td>
+                                        <td id="poids_IX" class="center"></td>
                                     </tr>
                                     <tr>
                                         <td> 
-                                            <select name="objet_X" id="objet_X" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_X" id="objet_X">
                                             </select>
                                         </td>
-                                        <td id="poids_X" ></td>
+                                        <td id="poids_X" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_XI" id="objet_XI" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_XI" id="objet_XI">
                                             </select>
                                         </td>
-                                        <td id="poids_XI" ></td>
+                                        <td id="poids_XI" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_XII" id="objet_XII" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_XII" id="objet_XII">
                                             </select>
                                         </td>
-                                        <td id="poids_XII" ></td>
+                                        <td id="poids_XII" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_XIII" id="objet_XIII" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_XIII" id="objet_XIII">
                                             </select>
                                         </td>
-                                        <td id="poids_XIII" ></td>
+                                        <td id="poids_XIII" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_XIV" id="objet_XIV" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_XIV" id="objet_XIV">
                                             </select>
                                         </td>
-                                        <td id="poids_XIV" ></td>
+                                        <td id="poids_XIV" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_XV" id="objet_XV" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_XV" id="objet_XV">
                                             </select>
                                         </td>
-                                        <td id="poids_XV" ></td>
+                                        <td id="poids_XV" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_XVI" id="objet_XVI" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_XVI" id="objet_XVI">
                                             </select>
                                         </td>
-                                        <td id="poids_XVI" ></td>
+                                        <td id="poids_XVI" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_XVII" id="objet_XVII" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_XVII" id="objet_XVII">
                                             </select>
                                         </td>
-                                        <td id="poids_XVII" ></td>
+                                        <td id="poids_XVII" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_XVIII" id="objet_XVIII" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_XVIII" id="objet_XVIII">
                                             </select>
                                         </td>
-                                        <td id="poids_XVIII" ></td>
+                                        <td id="poids_XVIII" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_XIX" id="objet_XIX" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_XIX" id="objet_XIX">
                                             </select>
                                         </td>
-                                        <td id="poids_XIX" ></td>
+                                        <td id="poids_XIX" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_XX" id="objet_XX" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_XX" id="objet_XX">
                                             </select>
                                         </td>
-                                        <td id="poids_XX" ></td>
+                                        <td id="poids_XX" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_XXI" id="objet_XXI" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_XXI" id="objet_XXI">
                                             </select>
                                         </td>
-                                        <td id="poids_XXI" ></td>
+                                        <td id="poids_XXI" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_XXII" id="objet_XXII" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_XXII" id="objet_XXII">
                                             </select>
                                         </td>
-                                        <td id="poids_XXII" ></td>
+                                        <td id="poids_XXII" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_XXIII" id="objet_XXIII" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_XXIII" id="objet_XXIII">
                                             </select>
                                         </td>
-                                        <td id="poids_XXIII" ></td>
+                                        <td id="poids_XXIII" class="center"></td>
                                     </tr>
 
                                     <tr>
                                         <td id="label_poids_total" class="font_white">POIDS TOTAL</td>
-                                        <td id="poids_total"></td>
+                                        <td id="poids_total" class="center"></td>
                                     </tr>
                                 </table>
                             </div>
@@ -3369,7 +3303,7 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <input type="button" name="Somme poids" value="Somme poids" id="Somme_poids" onClick="calculeSommePoids()">
+                                <input type="button" name="Somme poids" value="Somme poids" id="Somme_poids">
                             </div>
                         </div>
                         
