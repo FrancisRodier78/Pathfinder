@@ -3112,10 +3112,7 @@
 
                                     <tr>
                                         <td> 
-                                            <select name="objet_I" id="objet_I" onchange="indiquePoids()">
-                                                <option selected></option>
-                                                <option>Objet I</option>
-                                                <option>Objet II</option>
+                                            <select name="objet_I" id="objet_I">
                                             </select>
                                         </td>
                                         <td id="poids_I" ></td>
