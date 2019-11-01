@@ -3805,6 +3805,8 @@
     <script type="text/javascript" src="js/race.js"></script>
     <script type="text/javascript" src="js/caracteristique.js"></script>
     <script type="text/javascript" src="js/weapon.js"></script>
+    
+    <script type="text/javascript" src="js/equipement.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
