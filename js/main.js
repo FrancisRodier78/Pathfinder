@@ -1,4 +1,467 @@
 // $('#user').focus();
+function calculeCompetence(carac,rang,divers) {
+    var total = 0;
+    var totalN = ' ';
+
+    total = parseInt(carac.val())
+                 + parseInt(rang.val())
+                 + parseInt(divers.val());
+
+    totalN = carac.val()
+                 + rang.val()
+                 + divers.val();
+
+    console.log('total 11 :' + parseInt(carac.html()));
+    console.log('total 12 :' + parseInt(rang.val()));
+    console.log('total 13 :' + parseInt(divers.val()));
+    console.log('total 14 :' + parseInt(total));
+    console.log('total 15 :' + total);
+
+    console.log('total 16 :' + parseInt(totalN));
+    console.log('total 17 :' + totalN);
+
+    return total;
+};
+
+function calculeSommeCompetences() {
+    var total = 0;
+
+    total = total + parseInt($('#totalAcrobatie').val());
+    console.log('totalAcrobatie 21 :' + $('#totalAcrobatie').val());
+    total = total + parseInt($('#totalartisanat_I').val());
+    console.log('totalartisanat_I 22 :' + total);
+    total = total + parseInt($('#totalartisanat_II').val());
+    total = total + parseInt($('#totalartisanat_III').val());
+    total = total + parseInt($('#totalartdelamagie').val());
+    total = total + parseInt($('#totalbluff').val());
+    total = total + parseInt($('#totalConnaissances_exploration').val());
+    total = total + parseInt($('#totalConnaissances_Folklore_Locale').val()); 
+    total = total + parseInt($('#totalConnaissances_Geographie').val());
+    total = total + parseInt($('#totalConnaissances_Histoire').val());
+    total = total + parseInt($('#totalConnaissances_Ingénieurie').val());
+    total = total + parseInt($('#totalConnaissances_Mystères').val());
+    total = total + parseInt($('#totalConnaissances_Nature').val());
+    total = total + parseInt($('#totalConnaissances_Noblesse').val());
+    total = total + parseInt($('#totalConnaissances_Plan').val());
+    total = total + parseInt($('#totalConnaissances_Religion').val());
+    total = total + parseInt($('#totaldeguisement').val());
+    total = total + parseInt($('#totaldiplomatie').val());
+    total = total + parseInt($('#totaldiscretion').val());
+    total = total + parseInt($('#totaldressage').val());
+    total = total + parseInt($('#totalequitation').val());
+    total = total + parseInt($('#totalescalade').val());
+    total = total + parseInt($('#totalescamotage').val());
+    total = total + parseInt($('#totalestimation').val());
+    total = total + parseInt($('#totalevasion').val());
+    total = total + parseInt($('#totalintimidation').val());
+    total = total + parseInt($('#totallinguistique').val());
+    total = total + parseInt($('#totalnatation').val());
+    total = total + parseInt($('#totalperception').val());
+    total = total + parseInt($('#totalpremiersecours').val());
+    total = total + parseInt($('#totalprofession_I').val());
+    total = total + parseInt($('#totalprofession_II').val());
+    total = total + parseInt($('#totalpsychologie').val());
+    total = total + parseInt($('#totalrepresentation_I').val());
+    total = total + parseInt($('#totalrepresentation_II').val());
+    total = total + parseInt($('#totalsabotage').val());
+    total = total + parseInt($('#totalsurvie').val());
+    total = total + parseInt($('#totalutilisationobjet').val());
+    total = total + parseInt($('#totalvol').val());
+
+    console.log('total 23 :' + total);
+}
+
+$(function() {
+    $('#rang_Acrobatie').change(function() {
+        $('#totalAcrobatie').val(calculeCompetence($('#caracAcrobatie'), $('#rang_Acrobatie'), $('#diversAcrobatie')));
+        calculeSommeCompetences();
+    });
+
+    $('#diversAcrobatie').change(function() {
+        $('#totalAcrobatie').val() = calculeCompetence($('#caracAcrobatie'), $('#rang_Acrobatie'), $('#diversAcrobatie'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_artisanat_I').change(function() {
+        $('#totalartisanat_I').val() = calculeCompetence($('#caracartisanat_I'), $('#rang_artisanat_I'), $('#diversartisanat_I'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversartisanat_I').change(function() {
+        $('#totalartisanat_I').val() = calculeCompetence($('#caracartisanat_I'), $('#rang_artisanat_I'), $('#diversartisanat_I'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_rtisanat_II').change(function() {
+        $('#totalartisanat_II').val() = calculeCompetence($('#caracartisanat_II'), $('#rang_artisanat_II'), $('#diversartisanat_II'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversartisanat_II').change(function() {
+        $('#totalartisanat_II').val() = calculeCompetence($('#caracartisanat_II'), $('#rang_artisanat_II'), $('#diversartisanat_II'));
+        calculeSommeCompetences();
+    });
+                                
+    $('#rang_artisanat_III').change(function() {
+        $('#totalartisanat_III').val() = calculeCompetence($('#caracartisanat_III'), $('#rang_artisanat_III'), $('#diversartisanat_III'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversartisanat_III').change(function() {
+        $('#totalartisanat_III').val() = calculeCompetence($('#caracartisanat_III'), $('#rang_artisanat_III'), $('#diversartisanat_III'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_artdelamagie').change(function() {
+        $('#totalartdelamagie').val() = calculeCompetence($('#caracartdelamagie'), $('#rang_artdelamagie'), $('#diversartdelamagie'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversartdelamagie').change(function() {
+        $('#totalartdelamagie').val() = calculeCompetence($('#caracartdelamagie'), $('#rang_artdelamagie'), $('#diversartdelamagie'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_bluff').change(function() {
+        $('#totalbluff').val() = calculeCompetence($('#caracbluff'), $('#rang_bluff'), $('#diversbluff'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversbluff').change(function() {
+        $('#totalbluff').val() = calculeCompetence($('#caracbluff'), $('#rang_bluff'), $('#diversbluff'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_Connaissances_exploration').change(function() {
+        $('#totalConnaissances_exploration').val() = calculeCompetence($('#caracConnaissances_exploration'), $('#rang_Connaissances_exploration'), $('#diversConnaissances_exploration'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversConnaissances_exploration').change(function() {
+        $('#totalConnaissances_exploration').val() = calculeCompetence($('#caracConnaissances_exploration'), $('#rang_Connaissances_exploration'), $('#diversConnaissances_exploration'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_Connaissances_Folklore_Locale').change(function() {
+        $('#totalConnaissances_Folklore_Locale').val() = calculeCompetence($('#caracConnaissances_Folklore_Locale'), $('#rang_Connaissances_Folklore_Locale'), $('#diversConnaissances_Folklore_Locale'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversConnaissances_Folklore_Locale').change(function() {
+        $('#totalConnaissances_Folklore_Locale').val() = calculeCompetence($('#caracConnaissances_Folklore_Locale'), $('#rang_Connaissances_Folklore_Locale'), $('#diversConnaissances_Folklore_Locale'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_Connaissances_Geographie').change(function() {
+        $('#totalConnaissances_Geographie').val() = calculeCompetence($('#caracConnaissances_Geographie'), $('#rang_Connaissances_Geographie'), $('#diversConnaissances_Geographie'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversConnaissances_Geographie').change(function() {
+        $('#totalConnaissances_Geographie').val() = calculeCompetence($('#caracConnaissances_Geographie'), $('#rang_Connaissances_Geographie'), $('#diversConnaissances_Geographie'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_Connaissances_Histoire').change(function() {
+        $('#totalConnaissances_Histoire').val() = calculeCompetence($('#caracConnaissances_Histoire'), $('#rang_Connaissances_Histoire'), $('#diversConnaissances_Histoire'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversConnaissances_Histoire').change(function() {
+        $('#totalConnaissances_Histoire').val() = calculeCompetence($('#caracConnaissances_Histoire'), $('#rang_Connaissances_Histoire'), $('#diversConnaissances_Histoire'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_Connaissances_Ingénieurie').change(function() {
+        $('#totalConnaissances_Ingénieurie').val() = calculeCompetence($('#caracConnaissances_Ingénieurie'), $('#rang_Connaissances_Ingénieurie'), $('#diversConnaissances_Ingénieurie'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversConnaissances_Ingénieurie').change(function() {
+        $('#totalConnaissances_Ingénieurie').val() = calculeCompetence($('#caracConnaissances_Ingénieurie'), $('#rang_Connaissances_Ingénieurie'), $('#diversConnaissances_Ingénieurie'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_Connaissances_Mystères').change(function() {
+        $('#totalConnaissances_Mystères').val() = calculeCompetence($('#caracConnaissances_Mystères'), $('#rang_Connaissances_Mystères'), $('#diversConnaissances_Mystères'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversConnaissances_Mystères').change(function() {
+        $('#totalConnaissances_Mystères').val() = calculeCompetence($('#caracConnaissances_Mystères'), $('#rang_Connaissances_Mystères'), $('#diversConnaissances_Mystères'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_Connaissances_Nature').change(function() {
+        $('#totalConnaissances_Nature').val() = calculeCompetence($('#caracConnaissances_Nature'), $('#rang_Connaissances_Nature'), $('#diversConnaissances_Nature'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversConnaissances_Nature').change(function() {
+        $('#totalConnaissances_Nature').val() = calculeCompetence($('#caracConnaissances_Nature'), $('#rang_Connaissances_Nature'), $('#diversConnaissances_Nature'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_Connaissances_Noblesse').change(function() {
+        $('#totalConnaissances_Noblesse').val() = calculeCompetence($('#caracConnaissances_Noblesse'), $('#rang_Connaissances_Noblesse'), $('#diversConnaissances_Noblesse'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversConnaissances_Noblesse').change(function() {
+        $('#totalConnaissances_Noblesse').val() = calculeCompetence($('#caracConnaissances_Noblesse'), $('#rang_Connaissances_Noblesse'), $('#diversConnaissances_Noblesse'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_Connaissances_Plan').change(function() {
+        $('#totalConnaissances_Plan').val() = calculeCompetence($('#caracConnaissances_Plan'), $('#rang_Connaissances_Plan'), $('#diversConnaissances_Plan'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversConnaissances_Plan').change(function() {
+        $('#totalConnaissances_Plan').val() = calculeCompetence($('#caracConnaissances_Plan'), $('#rang_Connaissances_Plan'), $('#diversConnaissances_Plan'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_Connaissances_Religion').change(function() {
+        $('#totalConnaissances_Religion').val() = calculeCompetence($('#caracConnaissances_Religion'), $('#rang_Connaissances_Religion'), $('#diversConnaissances_Religion'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversConnaissances_Religion').change(function() {
+        $('#totalConnaissances_Religion').val() = calculeCompetence($('#caracConnaissances_Religion'), $('#rang_Connaissances_Religion'), $('#diversConnaissances_Religion'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_deguisement').change(function() {
+        $('#totaldeguisement').val() = calculeCompetence($('#caracdeguisement'), $('#rang_deguisement'), $('#diversdeguisement'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversdeguisement').change(function() {
+        $('#totaldeguisement').val() = calculeCompetence($('#caracdeguisement'), $('#rang_deguisement'), $('#diversdeguisement'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_diplomatie').change(function() {
+        $('#totaldiplomatie').val() = calculeCompetence($('#caracdiplomatie'), $('#rang_diplomatie'), $('#diversdiplomatie'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversdiplomatie').change(function() {
+        $('#totaldiplomatie').val() = calculeCompetence($('#caracdiplomatie'), $('#rang_diplomatie'), $('#diversdiplomatie'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_discretion').change(function() {
+        $('#totaldiscretion').val() = calculeCompetence($('#caracdiscretion'), $('#rang_discretion'), $('#diversdiscretion'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversdiscretion').change(function() {
+        $('#totaldiscretion').val() = calculeCompetence($('#caracdiscretion'), $('#rang_discretion'), $('#diversdiscretion'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_dressage').change(function() {
+        $('#totaldressage').val() = calculeCompetence($('#caracdressage'), $('#rang_dressage'), $('#diversdressage'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversdressage').change(function() {
+        $('#totaldressage').val() = calculeCompetence($('#caracdressage'), $('#rang_dressage'), $('#diversdressage'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_equitation').change(function() {
+        $('#totalequitation').val() = calculeCompetence($('#caracequitation'), $('#rang_equitation'), $('#diversequitation'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversequitation').change(function() {
+        $('#totalequitation').val() = calculeCompetence($('#caracequitation'), $('#rang_equitation'), $('#diversequitation'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_escalade').change(function() {
+        $('#totalescalade').val() = calculeCompetence($('#caracescalade'), $('#rang_escalade'), $('#diversescalade'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversescalade').change(function() {
+        $('#totalescalade').val() = calculeCompetence($('#caracescalade'), $('#rang_escalade'), $('#diversescalade'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_escamotage').change(function() {
+        $('#totalescamotage').val() = calculeCompetence($('#caracescamotage'), $('#rang_escamotage'), $('#diversescamotage'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversescamotage').change(function() {
+        $('#totalescamotage').val() = calculeCompetence($('#caracescamotage'), $('#rang_escamotage'), $('#diversescamotage'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_estimation').change(function() {
+        $('#totalestimation').val() = calculeCompetence($('#caracestimation'), $('#rang_estimation'), $('#diversestimation'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversestimation').change(function() {
+        $('#totalestimation').val() = calculeCompetence($('#caracestimation'), $('#rang_estimation'), $('#diversestimation'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_evasion').change(function() {
+        $('#totalevasion').val() = calculeCompetence($('#caracevasion'), $('#rang_evasion'), $('#diversevasion'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversevasion').change(function() {
+        $('#totalevasion').val() = calculeCompetence($('#caracevasion'), $('#rang_evasion'), $('#diversevasion'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_intimidation').change(function() {
+        $('#totalintimidation').val() = calculeCompetence($('#caracintimidation'), $('#rang_intimidation'), $('#diversintimidation'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversintimidation').change(function() {
+        $('#totalintimidation').val() = calculeCompetence($('#caracintimidation'), $('#rang_intimidation'), $('#diversintimidation'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_linguistique').change(function() {
+        $('#totallinguistique').val() = calculeCompetence($('#caraclinguistique'), $('#rang_linguistique'), $('#diverslinguistique'));
+        calculeSommeCompetences();
+    });
+
+    $('#diverslinguistique').change(function() {
+        $('#totallinguistique').val() = calculeCompetence($('#caraclinguistique'), $('#rang_linguistique'), $('#diverslinguistique'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_natation').change(function() {
+        $('#totalnatation').val() = calculeCompetence($('#caracnatation'), $('#rang_natation'), $('#diversnatation'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversnatation').change(function() {
+        $('#totalnatation').val() = calculeCompetence($('#caracnatation'), $('#rang_natation'), $('#diversnatation'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_perception').change(function() {
+        $('#totalperception').val() = calculeCompetence($('#caracperception'), $('#rang_perception'), $('#diversperception'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversperception').change(function() {
+        $('#totalperception').val() = calculeCompetence($('#caracperception'), $('#rang_perception'), $('#diversperception'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_premiersecours').change(function() {
+        $('#totalpremiersecours').val() = calculeCompetence($('#caracpremiersecours'), $('#rang_premiersecours'), $('#diverspremiersecours'));
+        calculeSommeCompetences();
+    });
+
+    $('#diverspremiersecours').change(function() {
+        $('#totalpremiersecours').val() = calculeCompetence($('#caracpremiersecours'), $('#rang_premiersecours'), $('#diverspremiersecours'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_profession_I').change(function() {
+        $('#totalprofession_I').val() = calculeCompetence($('#caracprofession_I'), $('#rang_profession_I'), $('#diversprofession_I'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversprofession_I').change(function() {
+        $('#totalprofession_I').val() = calculeCompetence($('#caracprofession_I'), $('#rang_profession_I'), $('#diversprofession_I'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_profession_II').change(function() {
+        $('#totalprofession_II').val() = calculeCompetence($('#caracprofession_II'), $('#rang_profession_II'), $('#diversprofession_II'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversprofession_II').change(function() {
+        $('#totalprofession_II').val() = calculeCompetence($('#caracprofession_II'), $('#rang_profession_II'), $('#diversprofession_II'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_psychologie').change(function() {
+        $('#totalpsychologie').val() = calculeCompetence($('#caracpsychologie'), $('#rang_psychologie'), $('#diverspsychologie'));
+        calculeSommeCompetences();
+    });
+
+    $('#diverspsychologie').change(function() {
+        $('#totalpsychologie').val() = calculeCompetence($('#caracpsychologie'), $('#rang_psychologie'), $('#diverspsychologie'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_representation_I').change(function() {
+        $('#totalrepresentation_I').val() = calculeCompetence($('#caracrepresentation_I'), $('#rang_representation_I'), $('#diversrepresentation_I'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversrepresentation_I').change(function() {
+        $('#totalrepresentation_I').val() = calculeCompetence($('#caracrepresentation_I'), $('#rang_representation_I'), $('#diversrepresentation_I'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_representation_II').change(function() {
+        $('#totalrepresentation_II').val() = calculeCompetence($('#caracrepresentation_II'), $('#rang_representation_II'), $('#diversrepresentation_II'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversrepresentation_II').change(function() {
+        $('#totalrepresentation_II').val() = calculeCompetence($('#caracrepresentation_II'), $('#rang_representation_II'), $('#diversrepresentation_II'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_sabotage').change(function() {
+        $('#totalsabotage').val() = calculeCompetence($('#caracsabotage'), $('#rang_sabotage'), $('#diverssabotage'));
+        calculeSommeCompetences();
+    });
+
+    $('#diverssabotage').change(function() {
+        $('#totalsabotage').val() = calculeCompetence($('#caracsabotage'), $('#rang_sabotage'), $('#diverssabotage'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_survie').change(function() {
+        $('#totalsurvie').val() = calculeCompetence($('#caracsurvie'), $('#rang_survie'), $('#diverssurvie'));
+        calculeSommeCompetences();
+    });
+
+    $('#diverssurvie').change(function() {
+        $('#totalsurvie').val() = calculeCompetence($('#caracsurvie'), $('#rang_survie'), $('#diverssurvie'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_utilisationobjet').change(function() {
+        $('#totalutilisationobjet').val() = calculeCompetence($('#caracutilisationobjet'), $('#rang_utilisationobjet'), $('#diversutilisationobjet'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversutilisationobjet').change(function() {
+        $('#totalutilisationobjet').val() = calculeCompetence($('#caracutilisationobjet'), $('#rang_utilisationobjet'), $('#diversutilisationobjet'));
+        calculeSommeCompetences();
+    });
+
+    $('#rang_vol').change(function() {
+        $('#totalvol').val() = calculeCompetence($('#caracvol'), $('#rang_vol'), $('#diversvol'));
+        calculeSommeCompetences();
+    });
+
+    $('#diversvol').change(function() {
+        $('#totalvol').val() = calculeCompetence($('#caracvol'), $('#rang_vol'), $('#diversvol'));
+        calculeSommeCompetences();
+    });
+});
 
 function influenceClassePersonnage() {
     affichageArtisanat(document.form.artisanat_I_type);
@@ -605,14 +1068,7 @@ function CalculePv(bonusParNiveau) {
 };
 
 
-function calculeCompetence(total,carac,maîtrise,divers) {
-//    document.getElementById(total).html
-//                                            = parseInt(document.getElementById(carac).html)
-//                                            + parseInt(maîtrise.value)
-//                                            + parseInt(divers.value);
-}
-
-function calculeSommeCompetences() {
+function calculeSommeCompetencesxxx() {
     var total = 0;
 
     total = total + testCalculeSommeCompetencesI('acrobatie',document.form.acrobatie_maîtrise);

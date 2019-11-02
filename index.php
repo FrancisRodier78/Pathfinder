@@ -1135,8 +1135,7 @@
                                 <td class="center" id="caracAcrobatie">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_Acrobatie" name="rang_acrobatie" 
-                                    onChange="calculeCompetence('totalAcrobatie','caracAcrobatie','rang_Acrobatie','diversAcrobatie')">
+                                    <select id="rang_Acrobatie" name="rang_acrobatie">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1162,8 +1161,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversAcrobatie" type="text" name="divers_acrobatie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalAcrobatie','caracAcrobatie','rang_Acrobatie','diversAcrobatie')">
+                                    <input id="diversAcrobatie" type="text" name="divers_acrobatie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1176,8 +1174,7 @@
                                 <td class="center" id="caracartisanat_I">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_artisanat_I" name="rang_artisanat_I" 
-                                    onChange="calculeCompetence('totalartisanat_I','caracartisanat_I','rang_artisanat_I','diversartisanat_I')">
+                                    <select id="rang_artisanat_I" name="rang_artisanat_I">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1203,8 +1200,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversartisanat_I" type="text" name="divers_artisanat_I" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalartisanat_I','caracartisanat_I','rang_artisanat_I','diversartisanat_I')">
+                                    <input id="diversartisanat_I" type="text" name="divers_artisanat_I" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1217,8 +1213,7 @@
                                 <td class="center" id="caracartisanat_II">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_artisanat_II" name="rang_artisanat_II" 
-                                    onChange="calculeCompetence('totalartisanat_II','caracartisanat_II','rang_artisanat_II','diversartisanat_II')">
+                                    <select id="rang_artisanat_II" name="rang_artisanat_II">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1244,8 +1239,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversartisanat_II" type="text" name="divers_artisanat_II" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalartisanat_II','caracartisanat_II','rang_artisanat_II','diversartisanat_II')">
+                                    <input id="diversartisanat_II" type="text" name="divers_artisanat_II" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1258,8 +1252,7 @@
                                 <td class="center" id="caracartisanat_III">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_artisanat_III" name="rang_artisanat_III" 
-                                    onChange="calculeCompetence('totalartisanat_III','caracartisanat_III','rang_artisanat_III','diversartisanat_III')">
+                                    <select id="rang_artisanat_III" name="rang_artisanat_III">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1285,8 +1278,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversartisanat_III" type="text" name="divers_artisanat_III" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalartisanat_III','caracartisanat_III','rang_artisanat_III','diversartisanat_III')">
+                                    <input id="diversartisanat_III" type="text" name="divers_artisanat_III" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1299,8 +1291,7 @@
                                 <td class="center" id="caracartdelamagie">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_artdelamagie" name="rang_artdelamagie" 
-                                    onChange="calculeCompetence('totalartdelamagie','caracartdelamagie','rang_artdelamagie','diversartdelamagie')">
+                                    <select id="rang_artdelamagie" name="rang_artdelamagie">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1326,8 +1317,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversartdelamagie" type="text" name="divers_artdelamagie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalartdelamagie','caracartdelamagie','rang_artdelamagie','diversartdelamagie')">
+                                    <input id="diversartdelamagie" type="text" name="divers_artdelamagie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1340,8 +1330,7 @@
                                 <td class="center" id="caracbluff">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_bluff" name="rang_bluff" 
-                                    onChange="calculeCompetence('totalbluff','caracbluff','rang_bluff','diversbluff')">
+                                    <select id="rang_bluff" name="rang_bluff">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1367,8 +1356,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversbluff" type="text" name="divers_bluff" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalbluff','caracbluff','rang_bluff','diversbluff')">
+                                    <input id="diversbluff" type="text" name="divers_bluff" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1381,8 +1369,7 @@
                                 <td class="center" id="caracConnaissances_exploration">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_Connaissances_exploration" name="rang_Connaissances_exploration" 
-                                    onChange="calculeCompetence('totalConnaissances_exploration','caracConnaissances_exploration','rang_Connaissances_exploration','diversConnaissances_exploration')">
+                                    <select id="rang_Connaissances_exploration" name="rang_Connaissances_exploration">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1408,8 +1395,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversConnaissances_exploration" type="text" name="divers_Connaissances_exploration" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalConnaissances_exploration','caracConnaissances_exploration','rang_Connaissances_exploration','diversConnaissances_exploration')">
+                                    <input id="diversConnaissances_exploration" type="text" name="divers_Connaissances_exploration" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1422,8 +1408,7 @@
                                 <td class="center" id="caracConnaissances_Folklore_Locale">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_Connaissances_Folklore_Locale" name="rang_Connaissances_Folklore_Locale" 
-                                    onChange="calculeCompetence('totalConnaissances_Folklore_Locale','caracConnaissances_Folklore_Locale','rang_Connaissances_Folklore_Locale','diversConnaissances_Folklore_Locale')">
+                                    <select id="rang_Connaissances_Folklore_Locale" name="rang_Connaissances_Folklore_Locale">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1449,8 +1434,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversConnaissances_Folklore_Locale" type="text" name="divers_Connaissances_Folklore_Locale" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalConnaissances_Folklore_Locale','caracConnaissances_Folklore_Locale','rang_Connaissances_Folklore_Locale','diversConnaissances_Folklore_Locale')">
+                                    <input id="diversConnaissances_Folklore_Locale" type="text" name="divers_Connaissances_Folklore_Locale" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1463,8 +1447,7 @@
                                 <td class="center" id="caracConnaissances_Geographie">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_Connaissances_Geographie" name="rang_Connaissances_Geographie" 
-                                    onChange="calculeCompetence('totalConnaissances_Geographie','caracConnaissances_Geographie','rang_Connaissances_Geographie','diversConnaissances_Geographie')">
+                                    <select id="rang_Connaissances_Geographie" name="rang_Connaissances_Geographie">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1490,8 +1473,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversConnaissances_Geographie" type="text" name="divers_Connaissances_Geographie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalConnaissances_Geographie','caracConnaissances_Geographie','rang_Connaissances_Geographie','diversConnaissances_Geographie')">
+                                    <input id="diversConnaissances_Geographie" type="text" name="divers_Connaissances_Geographie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1504,8 +1486,7 @@
                                 <td class="center" id="caracConnaissances_Histoire">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_Connaissances_Histoire" name="rang_Connaissances_Histoire" 
-                                    onChange="calculeCompetence('totalConnaissances_Histoire','caracConnaissances_Histoire','rang_Connaissances_Histoire','diversConnaissances_Histoire')">
+                                    <select id="rang_Connaissances_Histoire" name="rang_Connaissances_Histoire">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1531,8 +1512,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversConnaissances_Histoire" type="text" name="divers_Connaissances_Histoire" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalConnaissances_Histoire','caracConnaissances_Histoire','rang_Connaissances_Histoire','diversConnaissances_Histoire')">
+                                    <input id="diversConnaissances_Histoire" type="text" name="divers_Connaissances_Histoire" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1545,8 +1525,7 @@
                                 <td class="center" id="caracConnaissances_Ingénieurie">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_Connaissances_Ingénieurie" name="rang_Connaissances_Ingénieurie" 
-                                    onChange="calculeCompetence('totalConnaissances_Ingénieurie','caracConnaissances_Ingénieurie','rang_Connaissances_Ingénieurie','diversConnaissances_Ingénieurie')">
+                                    <select id="rang_Connaissances_Ingénieurie" name="rang_Connaissances_Ingénieurie">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1572,8 +1551,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversConnaissances_Ingénieurie" type="text" name="divers_Connaissances_Ingénieurie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalConnaissances_Ingénieurie','caracConnaissances_Ingénieurie','rang_Connaissances_Ingénieurie','diversConnaissances_Ingénieurie')">
+                                    <input id="diversConnaissances_Ingénieurie" type="text" name="divers_Connaissances_Ingénieurie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1586,8 +1564,7 @@
                                 <td class="center" id="caracConnaissances_Mystères">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_Connaissances_Mystères" name="rang_Connaissances_Mystères" 
-                                    onChange="calculeCompetence('totalConnaissances_Mystères','caracConnaissances_Mystères','rang_Connaissances_Mystères','diversConnaissances_Mystères')">
+                                    <select id="rang_Connaissances_Mystères" name="rang_Connaissances_Mystères">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1613,8 +1590,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversConnaissances_Mystères" type="text" name="divers_Connaissances_Mystères" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalConnaissances_Mystères','caracConnaissances_Mystères','rang_Connaissances_Mystères','diversConnaissances_Mystères')">
+                                    <input id="diversConnaissances_Mystères" type="text" name="divers_Connaissances_Mystères" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1627,8 +1603,7 @@
                                 <td class="center" id="caracConnaissances_Nature">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_Connaissances_Nature" name="rang_Connaissances_Nature" 
-                                    onChange="calculeCompetence('totalConnaissances_Nature','caracConnaissances_Nature','rang_Connaissances_Nature','diversConnaissances_Nature')">
+                                    <select id="rang_Connaissances_Nature" name="rang_Connaissances_Nature">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1654,8 +1629,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversConnaissances_Nature" type="text" name="divers_Connaissances_Nature" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalConnaissances_Nature','caracConnaissances_Nature','rang_Connaissances_Nature','diversConnaissances_Nature')">
+                                    <input id="diversConnaissances_Nature" type="text" name="divers_Connaissances_Nature" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1668,8 +1642,7 @@
                                 <td class="center" id="caracConnaissances_Noblesse">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_Connaissances_Noblesse" name="rang_Connaissances_Noblesse" 
-                                    onChange="calculeCompetence('totalConnaissances_Noblesse','caracConnaissances_Noblesse','rang_Connaissances_Noblesse','diversConnaissances_Noblesse')">
+                                    <select id="rang_Connaissances_Noblesse" name="rang_Connaissances_Noblesse">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1695,8 +1668,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversConnaissances_Noblesse" type="text" name="divers_Connaissances_Noblesse" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalConnaissances_Noblesse','caracConnaissances_Noblesse','rang_Connaissances_Noblesse','diversConnaissances_Noblesse')">
+                                    <input id="diversConnaissances_Noblesse" type="text" name="divers_Connaissances_Noblesse" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1709,8 +1681,7 @@
                                 <td class="center" id="caracConnaissances_Plan">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_Connaissances_Plan" name="rang_Connaissances_Plan" 
-                                    onChange="calculeCompetence('totalConnaissances_Plan','caracConnaissances_Plan','rang_Connaissances_Plan','diversConnaissances_Plan')">
+                                    <select id="rang_Connaissances_Plan" name="rang_Connaissances_Plan">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1736,8 +1707,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversConnaissances_Plan" type="text" name="divers_Connaissances_Plan" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalConnaissances_Plan','caracConnaissances_Plan','rang_Connaissances_Plan','diversConnaissances_Plan')">
+                                    <input id="diversConnaissances_Plan" type="text" name="divers_Connaissances_Plan" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1750,8 +1720,7 @@
                                 <td class="center" id="caracConnaissances_Religion">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_Connaissances_Religion" name="rang_Connaissances_Religion" 
-                                    onChange="calculeCompetence('totalConnaissances_Religion','caracConnaissances_Religion','rang_Connaissances_Religion','diversConnaissances_Religion')">
+                                    <select id="rang_Connaissances_Religion" name="rang_Connaissances_Religion">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1777,8 +1746,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversConnaissances_Religion" type="text" name="divers_Connaissances_Religion" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalConnaissances_Religion','caracConnaissances_Religion','rang_Connaissances_Religion','diversConnaissances_Religion')">
+                                    <input id="diversConnaissances_Religion" type="text" name="divers_Connaissances_Religion" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1791,8 +1759,7 @@
                                 <td class="center" id="caracdeguisement">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_deguisement" name="rang_deguisement" 
-                                    onChange="calculeCompetence('totaldeguisement','caracdeguisement','rang_deguisement','diversdeguisement')">
+                                    <select id="rang_deguisement" name="rang_deguisement">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1818,8 +1785,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversdeguisement" type="text" name="divers_deguisement" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totaldeguisement','caracdeguisement','rang_deguisement','diversdeguisement')">
+                                    <input id="diversdeguisement" type="text" name="divers_deguisement" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1832,8 +1798,7 @@
                                 <td class="center" id="caracdiplomatie">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_diplomatie" name="rang_diplomatie" 
-                                    onChange="calculeCompetence('totaldiplomatie','caracdiplomatie','rang_diplomatie','diversdiplomatie')">
+                                    <select id="rang_diplomatie" name="rang_diplomatie">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1859,8 +1824,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversdiplomatie" type="text" name="divers_diplomatie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totaldiplomatie','caracdiplomatie','rang_diplomatie','diversdiplomatie')">
+                                    <input id="diversdiplomatie" type="text" name="divers_diplomatie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1873,8 +1837,7 @@
                                 <td class="center" id="caracdiscretion">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_discretion" name="rang_discretion" 
-                                    onChange="calculeCompetence('totaldiscretion','caracdiscretion','rang_discretion','diversdiscretion')">
+                                    <select id="rang_discretion" name="rang_discretion">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1900,8 +1863,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversdiscretion" type="text" name="divers_discretion" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totaldiscretion','caracdiscretion','rang_discretion','diversdiscretion')">
+                                    <input id="diversdiscretion" type="text" name="divers_discretion" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1914,8 +1876,7 @@
                                 <td class="center" id="caracdressage">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_dressage" name="rang_dressage" 
-                                    onChange="calculeCompetence('totaldressage','caracdressage','rang_dressage','diversdressage')">
+                                    <select id="rang_dressage" name="rang_dressage">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1941,8 +1902,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversdressage" type="text" name="divers_dressage" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totaldressage','caracdressage','rang_dressage','diversdressage')">
+                                    <input id="diversdressage" type="text" name="divers_dressage" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1955,8 +1915,7 @@
                                 <td class="center" id="caracequitation">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_equitation" name="rang_equitation" 
-                                    onChange="calculeCompetence('totalequitation','caracequitation','rang_equitation','diversequitation')">
+                                    <select id="rang_equitation" name="rang_equitation">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -1982,8 +1941,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversequitation" type="text" name="divers_equitation" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalequitation','caracequitation','rang_equitation','diversequitation')">
+                                    <input id="diversequitation" type="text" name="divers_equitation" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -1996,8 +1954,7 @@
                                 <td class="center" id="caracescalade">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_escalade" name="rang_escalade" 
-                                    onChange="calculeCompetence('totalescalade','caracescalade','rang_escalade','diversescalade')">
+                                    <select id="rang_escalade" name="rang_escalade">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2023,8 +1980,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversescalade" type="text" name="divers_escalade" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalescalade','caracescalade','rang_escalade','diversescalade')">
+                                    <input id="diversescalade" type="text" name="divers_escalade" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2037,8 +1993,7 @@
                                 <td class="center" id="caracescamotage">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_escamotage" name="rang_escamotage" 
-                                    onChange="calculeCompetence('totalescamotage','caracescamotage','rang_escamotage','diversescamotage')">
+                                    <select id="rang_escamotage" name="rang_escamotage">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2064,8 +2019,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversescamotage" type="text" name="divers_escamotage" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalescamotage','caracescamotage','rang_escamotage','diversescamotage')">
+                                    <input id="diversescamotage" type="text" name="divers_escamotage" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2078,8 +2032,7 @@
                                 <td class="center" id="caracestimation">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_estimation" name="rang_estimation" 
-                                    onChange="calculeCompetence('totalestimation','caracestimation','rang_estimation','diversestimation')">
+                                    <select id="rang_estimation" name="rang_estimation">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2105,8 +2058,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversestimation" type="text" name="divers_estimation" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalestimation','caracestimation','rang_estimation','diversestimation')">
+                                    <input id="diversestimation" type="text" name="divers_estimation" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2119,8 +2071,7 @@
                                 <td class="center" id="caracevasion">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_evasion" name="rang_evasion" 
-                                    onChange="calculeCompetence('totalevasion','caracevasion','rang_evasion','diversevasion')">
+                                    <select id="rang_evasion" name="rang_evasion">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2146,8 +2097,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversevasion" type="text" name="divers_evasion" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalevasion','caracevasion','rang_evasion','diversevasion')">
+                                    <input id="diversevasion" type="text" name="divers_evasion" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2160,8 +2110,7 @@
                                 <td class="center" id="caracintimidation">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_intimidation" name="rang_intimidation" 
-                                    onChange="calculeCompetence('totalintimidation','caracintimidation','rang_intimidation','diversintimidation')">
+                                    <select id="rang_intimidation" name="rang_intimidation">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2187,8 +2136,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversintimidation" type="text" name="divers_intimidation" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalintimidation','caracintimidation','rang_intimidation','diversintimidation')">
+                                    <input id="diversintimidation" type="text" name="divers_intimidation" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2201,8 +2149,7 @@
                                 <td class="center" id="caraclinguistique">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_linguistique" name="rang_linguistique" 
-                                    onChange="calculeCompetence('totallinguistique','caraclinguistique','rang_linguistique','diverslinguistique')">
+                                    <select id="rang_linguistique" name="rang_linguistique">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2228,8 +2175,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diverslinguistique" type="text" name="divers_linguistique" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totallinguistique','caraclinguistique','rang_linguistique','diverslinguistique')">
+                                    <input id="diverslinguistique" type="text" name="divers_linguistique" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2242,8 +2188,7 @@
                                 <td class="center" id="caracnatation">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_natation" name="rang_natation" 
-                                    onChange="calculeCompetence('totalnatation','caracnatation','rang_natation','diversnatation')">
+                                    <select id="rang_natation" name="rang_natation">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2269,8 +2214,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversnatation" type="text" name="divers_natation" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalnatation','caracnatation','rang_natation','diversnatation')">
+                                    <input id="diversnatation" type="text" name="divers_natation" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2283,8 +2227,7 @@
                                 <td class="center" id="caracperception">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_perception" name="rang_perception" 
-                                    onChange="calculeCompetence('totalperception','caracperception','rang_perception','diversperception')">
+                                    <select id="rang_perception" name="rang_perception">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2310,8 +2253,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversperception" type="text" name="divers_perception" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalperception','caracperception','rang_perception','diversperception')">
+                                    <input id="diversperception" type="text" name="divers_perception" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2324,8 +2266,7 @@
                                 <td class="center" id="caracpremiersecours">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_premiersecours" name="rang_premiersecours" 
-                                    onChange="calculeCompetence('totalpremiersecours','caracpremiersecours','rang_premiersecours','diverspremiersecours')">
+                                    <select id="rang_premiersecours" name="rang_premiersecours">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2351,8 +2292,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diverspremiersecours" type="text" name="divers_premiersecours" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalpremiersecours','caracpremiersecours','rang_premiersecours','diverspremiersecours')">
+                                    <input id="diverspremiersecours" type="text" name="divers_premiersecours" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2365,8 +2305,7 @@
                                 <td class="center" id="caracprofession_I">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_profession_I" name="rang_profession_I" 
-                                    onChange="calculeCompetence('totalprofession_I','caracprofession_I','rang_profession_I','diversprofession_I')">
+                                    <select id="rang_profession_I" name="rang_profession_I">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2392,8 +2331,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversprofession_I" type="text" name="divers_profession_I" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalprofession_I','caracprofession_I','rang_profession_I','diversprofession_I')">
+                                    <input id="diversprofession_I" type="text" name="divers_profession_I" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2406,8 +2344,7 @@
                                 <td class="center" id="caracprofession_II">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_profession_II" name="rang_profession_II" 
-                                    onChange="calculeCompetence('totalprofession_II','caracprofession_II','rang_profession_II','diversprofession_II')">
+                                    <select id="rang_profession_II" name="rang_profession_II">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2433,8 +2370,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversprofession_II" type="text" name="divers_profession_II" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalprofession_II','caracprofession_II','rang_profession_II','diversprofession_II')">
+                                    <input id="diversprofession_II" type="text" name="divers_profession_II" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2447,8 +2383,7 @@
                                 <td class="center" id="caracpsychologie">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_psychologie" name="rang_psychologie" 
-                                    onChange="calculeCompetence('totalpsychologie','caracpsychologie','rang_psychologie','diverspsychologie')">
+                                    <select id="rang_psychologie" name="rang_psychologie">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2474,8 +2409,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diverspsychologie" type="text" name="divers_psychologie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalpsychologie','caracpsychologie','rang_psychologie','diverspsychologie')">
+                                    <input id="diverspsychologie" type="text" name="divers_psychologie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2488,8 +2422,7 @@
                                 <td class="center" id="caracrepresentation_I">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_representation_I" name="rang_representation_I" 
-                                    onChange="calculeCompetence('totalrepresentation_I','caracrepresentation_I','rang_representation_I','diversrepresentation_I')">
+                                    <select id="rang_representation_I" name="rang_representation_I">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2515,8 +2448,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversrepresentation_I" type="text" name="divers_representation_I" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalrepresentation_I','caracrepresentation_I','rang_representation_I','diversrepresentation_I')">
+                                    <input id="diversrepresentation_I" type="text" name="divers_representation_I" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2529,8 +2461,7 @@
                                 <td class="center" id="caracrepresentation_II">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_representation_II" name="rang_representation_II" 
-                                    onChange="calculeCompetence('totalrepresentation_II','caracrepresentation_II','rang_representation_II','diversrepresentation_II')">
+                                    <select id="rang_representation_II" name="rang_representation_II">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2556,8 +2487,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversrepresentation_II" type="text" name="divers_representation_II" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalrepresentation_II','caracrepresentation_II','rang_representation_II','diversrepresentation_II')">
+                                    <input id="diversrepresentation_II" type="text" name="divers_representation_II" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2570,8 +2500,7 @@
                                 <td class="center" id="caracsabotage">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_sabotage" name="rang_sabotage" 
-                                    onChange="calculeCompetence('totalsabotage','caracsabotage','rang_sabotage','diverssabotage')">
+                                    <select id="rang_sabotage" name="rang_sabotage">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2597,8 +2526,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diverssabotage" type="text" name="divers_sabotage" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalsabotage','caracsabotage','rang_sabotage','diverssabotage')">
+                                    <input id="diverssabotage" type="text" name="divers_sabotage" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2611,8 +2539,7 @@
                                 <td class="center" id="caracsurvie">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_survie" name="rang_survie" 
-                                    onChange="calculeCompetence('totalsurvie','caracsurvie','rang_survie','diverssurvie')">
+                                    <select id="rang_survie" name="rang_survie">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2638,8 +2565,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diverssurvie" type="text" name="divers_survie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalsurvie','caracsurvie','rang_survie','diverssurvie')">
+                                    <input id="diverssurvie" type="text" name="divers_survie" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2652,8 +2578,7 @@
                                 <td class="center" id="caracutilisationobjet">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_utilisationobjet" name="rang_utilisationobjet" 
-                                    onChange="calculeCompetence('totalutilisationobjet','caracutilisationobjet','rang_utilisationobjet','diversutilisationobjet')">
+                                    <select id="rang_utilisationobjet" name="rang_utilisationobjet">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2679,8 +2604,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversutilisationobjet" type="text" name="divers_utilisationobjet" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalutilisationobjet','caracutilisationobjet','rang_utilisationobjet','diversutilisationobjet')">
+                                    <input id="diversutilisationobjet" type="text" name="divers_utilisationobjet" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -2693,8 +2617,7 @@
                                 <td class="center" id="caracvol">+0</td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <select id="rang_vol" name="rang_vol" 
-                                    onChange="calculeCompetence('totalvol','caracvol','rang_vol','diversvol')">
+                                    <select id="rang_vol" name="rang_vol">
                                         <option selected>00</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -2720,8 +2643,7 @@
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td class="center">
-                                    <input id="diversvol" type="text" name="divers_vol" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0 
-                                    onChange="calculeCompetence('totalvol','caracvol','rang_vol','diversvol')">
+                                    <input id="diversvol" type="text" name="divers_vol" size="2" maxlength="2" pattern="[0-9]{1,2}" value=0>
                                 </td>
                             </tr>
 
@@ -3298,12 +3220,6 @@
                                         <td id="poids_total" class="center"></td>
                                     </tr>
                                 </table>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <input type="button" name="Somme poids" value="Somme poids" id="Somme_poids">
                             </div>
                         </div>
                         
