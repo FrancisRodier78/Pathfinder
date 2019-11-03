@@ -2653,253 +2653,258 @@
                             </tr>
                         </table>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <input id="somme_compétences" type="button" name="Somme compétences" value="Somme compétences" id="Somme_compétences" onClick="calculeSommeCompetences()">
-                        </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                            <table id="total_competences">
+                                <tr>
+                                    <td id="somme_competences">Points restants : </td>
+                                    <td id="points_restants" name="points_restants" class="center"></td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <label id="label_modif_part" for="modif_part">MODIFICATEUR PARTICULIERS</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <textarea id="modif_part" name="modif_part" rows="4" cols="90"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <label id="label_langues" for="langues">LANGUES</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <select id="langueI" name="langueI">
+                            <option selected></option>
+                            <option>Abyssal</option>
+                            <option>Aklo</option>
+                            <option>Aquatique</option>
+                            <option>Aérien</option>
+                            <option>Céleste</option>
+                            <option>Commun</option>
+                            <option>Commun des profondeurs</option>
+                            <option>Draconien</option>
+                            <option>Druidique</option>
+                            <option>Elfe</option>
+                            <option>Géant</option>
+                            <option>Gnoll</option>
+                            <option>Gnome</option>
+                            <option>Gobelin</option>
+                            <option>Halfelin</option>
+                            <option>Igneux</option>
+                            <option>Infernal</option>
+                            <option>Nain</option>
+                            <option>Orque</option>
+                            <option>Sylvestre/Lashunta</option>
+                            <option>Terreux</option>
+                        </select>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <label id="label_modif_part" for="modif_part">MODIFICATEUR PARTICULIERS</label>
-                        </div>
+                    <div class="col-lg-6">
+                        <select id="langueV" name="langueV">
+                            <option selected></option>
+                            <option>Abyssal</option>
+                            <option>Aklo</option>
+                            <option>Aquatique</option>
+                            <option>Aérien</option>
+                            <option>Céleste</option>
+                            <option>Commun</option>
+                            <option>Commun des profondeurs</option>
+                            <option>Draconien</option>
+                            <option>Druidique</option>
+                            <option>Elfe</option>
+                            <option>Géant</option>
+                            <option>Gnoll</option>
+                            <option>Gnome</option>
+                            <option>Gobelin</option>
+                            <option>Halfelin</option>
+                            <option>Igneux</option>
+                            <option>Infernal</option>
+                            <option>Nain</option>
+                            <option>Orque</option>
+                            <option>Sylvestre/Lashunta</option>
+                            <option>Terreux</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <select id="langueII" name="langueII">
+                            <option selected></option>
+                            <option>Abyssal</option>
+                            <option>Aklo</option>
+                            <option>Aquatique</option>
+                            <option>Aérien</option>
+                            <option>Céleste</option>
+                            <option>Commun</option>
+                            <option>Commun des profondeurs</option>
+                            <option>Draconien</option>
+                            <option>Druidique</option>
+                            <option>Elfe</option>
+                            <option>Géant</option>
+                            <option>Gnoll</option>
+                            <option>Gnome</option>
+                            <option>Gobelin</option>
+                            <option>Halfelin</option>
+                            <option>Igneux</option>
+                            <option>Infernal</option>
+                            <option>Nain</option>
+                            <option>Orque</option>
+                            <option>Sylvestre/Lashunta</option>
+                            <option>Terreux</option>
+                        </select>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <textarea id="modif_part" name="modif_part" rows="4" cols="90"></textarea>
-                        </div>
+                    <div class="col-lg-6">
+                        <select id="langueVI" name="langueVI">
+                            <option selected></option>
+                            <option>Abyssal</option>
+                            <option>Aklo</option>
+                            <option>Aquatique</option>
+                            <option>Aérien</option>
+                            <option>Céleste</option>
+                            <option>Commun</option>
+                            <option>Commun des profondeurs</option>
+                            <option>Draconien</option>
+                            <option>Druidique</option>
+                            <option>Elfe</option>
+                            <option>Géant</option>
+                            <option>Gnoll</option>
+                            <option>Gnome</option>
+                            <option>Gobelin</option>
+                            <option>Halfelin</option>
+                            <option>Igneux</option>
+                            <option>Infernal</option>
+                            <option>Nain</option>
+                            <option>Orque</option>
+                            <option>Sylvestre/Lashunta</option>
+                            <option>Terreux</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <select id="langueIII" name="langueIII">
+                            <option selected></option>
+                            <option>Abyssal</option>
+                            <option>Aklo</option>
+                            <option>Aquatique</option>
+                            <option>Aérien</option>
+                            <option>Céleste</option>
+                            <option>Commun</option>
+                            <option>Commun des profondeurs</option>
+                            <option>Draconien</option>
+                            <option>Druidique</option>
+                            <option>Elfe</option>
+                            <option>Géant</option>
+                            <option>Gnoll</option>
+                            <option>Gnome</option>
+                            <option>Gobelin</option>
+                            <option>Halfelin</option>
+                            <option>Igneux</option>
+                            <option>Infernal</option>
+                            <option>Nain</option>
+                            <option>Orque</option>
+                            <option>Sylvestre/Lashunta</option>
+                            <option>Terreux</option>
+                        </select>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <label id="label_langues" for="langues">LANGUES</label>
-                        </div>
+                    <div class="col-lg-6">
+                        <select id="langueVII" name="langueVII">
+                            <option selected></option>
+                            <option>Abyssal</option>
+                            <option>Aklo</option>
+                            <option>Aquatique</option>
+                            <option>Aérien</option>
+                            <option>Céleste</option>
+                            <option>Commun</option>
+                            <option>Commun des profondeurs</option>
+                            <option>Draconien</option>
+                            <option>Druidique</option>
+                            <option>Elfe</option>
+                            <option>Géant</option>
+                            <option>Gnoll</option>
+                            <option>Gnome</option>
+                            <option>Gobelin</option>
+                            <option>Halfelin</option>
+                            <option>Igneux</option>
+                            <option>Infernal</option>
+                            <option>Nain</option>
+                            <option>Orque</option>
+                            <option>Sylvestre/Lashunta</option>
+                            <option>Terreux</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <select id="langueIV" name="langueIV">
+                            <option selected></option>
+                            <option>Abyssal</option>
+                            <option>Aklo</option>
+                            <option>Aquatique</option>
+                            <option>Aérien</option>
+                            <option>Céleste</option>
+                            <option>Commun</option>
+                            <option>Commun des profondeurs</option>
+                            <option>Draconien</option>
+                            <option>Druidique</option>
+                            <option>Elfe</option>
+                            <option>Géant</option>
+                            <option>Gnoll</option>
+                            <option>Gnome</option>
+                            <option>Gobelin</option>
+                            <option>Halfelin</option>
+                            <option>Igneux</option>
+                            <option>Infernal</option>
+                            <option>Nain</option>
+                            <option>Orque</option>
+                            <option>Sylvestre/Lashunta</option>
+                            <option>Terreux</option>
+                        </select>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <select id="langueI" name="langueI">
-                                <option selected></option>
-                                <option>Abyssal</option>
-                                <option>Aklo</option>
-                                <option>Aquatique</option>
-                                <option>Aérien</option>
-                                <option>Céleste</option>
-                                <option>Commun</option>
-                                <option>Commun des profondeurs</option>
-                                <option>Draconien</option>
-                                <option>Druidique</option>
-                                <option>Elfe</option>
-                                <option>Géant</option>
-                                <option>Gnoll</option>
-                                <option>Gnome</option>
-                                <option>Gobelin</option>
-                                <option>Halfelin</option>
-                                <option>Igneux</option>
-                                <option>Infernal</option>
-                                <option>Nain</option>
-                                <option>Orque</option>
-                                <option>Sylvestre/Lashunta</option>
-                                <option>Terreux</option>
-                            </select>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <select id="langueV" name="langueV">
-                                <option selected></option>
-                                <option>Abyssal</option>
-                                <option>Aklo</option>
-                                <option>Aquatique</option>
-                                <option>Aérien</option>
-                                <option>Céleste</option>
-                                <option>Commun</option>
-                                <option>Commun des profondeurs</option>
-                                <option>Draconien</option>
-                                <option>Druidique</option>
-                                <option>Elfe</option>
-                                <option>Géant</option>
-                                <option>Gnoll</option>
-                                <option>Gnome</option>
-                                <option>Gobelin</option>
-                                <option>Halfelin</option>
-                                <option>Igneux</option>
-                                <option>Infernal</option>
-                                <option>Nain</option>
-                                <option>Orque</option>
-                                <option>Sylvestre/Lashunta</option>
-                                <option>Terreux</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <select id="langueII" name="langueII">
-                                <option selected></option>
-                                <option>Abyssal</option>
-                                <option>Aklo</option>
-                                <option>Aquatique</option>
-                                <option>Aérien</option>
-                                <option>Céleste</option>
-                                <option>Commun</option>
-                                <option>Commun des profondeurs</option>
-                                <option>Draconien</option>
-                                <option>Druidique</option>
-                                <option>Elfe</option>
-                                <option>Géant</option>
-                                <option>Gnoll</option>
-                                <option>Gnome</option>
-                                <option>Gobelin</option>
-                                <option>Halfelin</option>
-                                <option>Igneux</option>
-                                <option>Infernal</option>
-                                <option>Nain</option>
-                                <option>Orque</option>
-                                <option>Sylvestre/Lashunta</option>
-                                <option>Terreux</option>
-                            </select>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <select id="langueVI" name="langueVI">
-                                <option selected></option>
-                                <option>Abyssal</option>
-                                <option>Aklo</option>
-                                <option>Aquatique</option>
-                                <option>Aérien</option>
-                                <option>Céleste</option>
-                                <option>Commun</option>
-                                <option>Commun des profondeurs</option>
-                                <option>Draconien</option>
-                                <option>Druidique</option>
-                                <option>Elfe</option>
-                                <option>Géant</option>
-                                <option>Gnoll</option>
-                                <option>Gnome</option>
-                                <option>Gobelin</option>
-                                <option>Halfelin</option>
-                                <option>Igneux</option>
-                                <option>Infernal</option>
-                                <option>Nain</option>
-                                <option>Orque</option>
-                                <option>Sylvestre/Lashunta</option>
-                                <option>Terreux</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <select id="langueIII" name="langueIII">
-                                <option selected></option>
-                                <option>Abyssal</option>
-                                <option>Aklo</option>
-                                <option>Aquatique</option>
-                                <option>Aérien</option>
-                                <option>Céleste</option>
-                                <option>Commun</option>
-                                <option>Commun des profondeurs</option>
-                                <option>Draconien</option>
-                                <option>Druidique</option>
-                                <option>Elfe</option>
-                                <option>Géant</option>
-                                <option>Gnoll</option>
-                                <option>Gnome</option>
-                                <option>Gobelin</option>
-                                <option>Halfelin</option>
-                                <option>Igneux</option>
-                                <option>Infernal</option>
-                                <option>Nain</option>
-                                <option>Orque</option>
-                                <option>Sylvestre/Lashunta</option>
-                                <option>Terreux</option>
-                            </select>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <select id="langueVII" name="langueVII">
-                                <option selected></option>
-                                <option>Abyssal</option>
-                                <option>Aklo</option>
-                                <option>Aquatique</option>
-                                <option>Aérien</option>
-                                <option>Céleste</option>
-                                <option>Commun</option>
-                                <option>Commun des profondeurs</option>
-                                <option>Draconien</option>
-                                <option>Druidique</option>
-                                <option>Elfe</option>
-                                <option>Géant</option>
-                                <option>Gnoll</option>
-                                <option>Gnome</option>
-                                <option>Gobelin</option>
-                                <option>Halfelin</option>
-                                <option>Igneux</option>
-                                <option>Infernal</option>
-                                <option>Nain</option>
-                                <option>Orque</option>
-                                <option>Sylvestre/Lashunta</option>
-                                <option>Terreux</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <select id="langueIV" name="langueIV">
-                                <option selected></option>
-                                <option>Abyssal</option>
-                                <option>Aklo</option>
-                                <option>Aquatique</option>
-                                <option>Aérien</option>
-                                <option>Céleste</option>
-                                <option>Commun</option>
-                                <option>Commun des profondeurs</option>
-                                <option>Draconien</option>
-                                <option>Druidique</option>
-                                <option>Elfe</option>
-                                <option>Géant</option>
-                                <option>Gnoll</option>
-                                <option>Gnome</option>
-                                <option>Gobelin</option>
-                                <option>Halfelin</option>
-                                <option>Igneux</option>
-                                <option>Infernal</option>
-                                <option>Nain</option>
-                                <option>Orque</option>
-                                <option>Sylvestre/Lashunta</option>
-                                <option>Terreux</option>
-                            </select>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <select id="langueVIII" name="langueVIII">
-                                <option selected></option>
-                                <option>Abyssal</option>
-                                <option>Aklo</option>
-                                <option>Aquatique</option>
-                                <option>Aérien</option>
-                                <option>Céleste</option>
-                                <option>Commun</option>
-                                <option>Commun des profondeurs</option>
-                                <option>Draconien</option>
-                                <option>Druidique</option>
-                                <option>Elfe</option>
-                                <option>Géant</option>
-                                <option>Gnoll</option>
-                                <option>Gnome</option>
-                                <option>Gobelin</option>
-                                <option>Halfelin</option>
-                                <option>Igneux</option>
-                                <option>Infernal</option>
-                                <option>Nain</option>
-                                <option>Orque</option>
-                                <option>Sylvestre/Lashunta</option>
-                                <option>Terreux</option>
-                            </select>
-                        </div>
+                    <div class="col-lg-6">
+                        <select id="langueVIII" name="langueVIII">
+                            <option selected></option>
+                            <option>Abyssal</option>
+                            <option>Aklo</option>
+                            <option>Aquatique</option>
+                            <option>Aérien</option>
+                            <option>Céleste</option>
+                            <option>Commun</option>
+                            <option>Commun des profondeurs</option>
+                            <option>Draconien</option>
+                            <option>Druidique</option>
+                            <option>Elfe</option>
+                            <option>Géant</option>
+                            <option>Gnoll</option>
+                            <option>Gnome</option>
+                            <option>Gobelin</option>
+                            <option>Halfelin</option>
+                            <option>Igneux</option>
+                            <option>Infernal</option>
+                            <option>Nain</option>
+                            <option>Orque</option>
+                            <option>Sylvestre/Lashunta</option>
+                            <option>Terreux</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -3721,7 +3726,7 @@
     <script type="text/javascript" src="js/race.js"></script>
     <script type="text/javascript" src="js/caracteristique.js"></script>
     <script type="text/javascript" src="js/weapon.js"></script>
-    
+    <script type="text/javascript" src="js/competence.js"></script>
     <script type="text/javascript" src="js/equipement.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>

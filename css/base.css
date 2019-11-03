@@ -223,8 +223,20 @@ td {
 	vertical-align: middle;
 }
 
-#somme_compétences {
+#competences {
 	margin: 3px;
+}
+
+#total_competences {
+	width: 11rem;
+}
+
+#somme_competences {
+	width: 7rem;
+}
+
+#points_restants {
+	width: 4rem;
 }
 
 #label_modif_part {
