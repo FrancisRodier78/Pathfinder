@@ -3298,11 +3298,8 @@
                                 <table id="table_don">
                                     <tr><th id="label_don" class="font_white">DONS</th></tr>
                                     <tr><td>
-                                        <select id="don_I" name="don_I">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                        </select>
+                                        <input id="search" type="text" />
+                                        <div id="results"></div>
                                     </td></tr>
                                     <tr><td><select id="don_II" name="don_II">
                                             <option selected></option>
@@ -3462,9 +3459,9 @@
 
                                     <tr>
                                         <td>
-                                            <input id="points_experience" type="text" name="points_experience" size="7" maxlength="7" pattern="[0-9]{1,7}" value=0 onChange="calculeNiveau('points_experience')">
+                                            <input id="points_experience" type="text" name="points_experience" size="7" maxlength="7" pattern="[0-9]{1,7}" value=0>
                                         </td>
-                                        <td id="niveau" class="center">0</td>
+                                        <td id="niveau_exp" class="center"></td>
                                     </tr>
                                 </table>
                             </div>
@@ -3728,6 +3725,7 @@
     <script type="text/javascript" src="js/weapon.js"></script>
     <script type="text/javascript" src="js/competence.js"></script>
     <script type="text/javascript" src="js/equipement.js"></script>
+    <script type="text/javascript" src="js/don.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

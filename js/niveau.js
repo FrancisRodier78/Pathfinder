@@ -3376,6 +3376,89 @@ $(function() {
         };
     };
 
+    function calculeNiveau(valeur) {
+        $('#niveau_exp').html('+19');
+
+        if (valeur < 3600000) {
+            $('#niveau_exp').html('19');
+        };
+
+        if (valeur < 2550000) {
+            $('#niveau_exp').html('18');
+        };
+
+        if (valeur < 1800000) {
+            $('#niveau_exp').html('17');
+        };
+        if (valeur < 1300000) {
+            $('#niveau_exp').html('16');
+        };
+
+        if (valeur < 890000) {
+            $('#niveau_exp').html('15');
+        };
+
+        if (valeur < 63500) {
+            $('#niveau_exp').html('14');
+        };
+
+        if (valeur < 445000) {
+            $('#niveau_exp').html('13');
+        };
+
+        if (valeur < 315000) {
+            $('#niveau_exp').html('12');
+        };
+
+        if (valeur < 220000) {
+            $('#niveau_exp').html('11');
+        };
+
+        if (valeur < 155000) {
+            $('#niveau_exp').html('10');
+        };
+
+        if (valeur < 105000) {
+            $('#niveau_exp').html('9');
+        };
+
+        if (valeur < 75000) {
+            $('#niveau_exp').html('8');
+        };
+
+        if (valeur < 51000) {
+            $('#niveau_exp').html('7');
+        };
+
+        if (valeur < 35000) {
+            $('#niveau_exp').html('6');
+        };
+
+        if (valeur < 23000) {
+            $('#niveau_exp').html('5');
+        };
+
+        if (valeur < 15000) {
+            $('#niveau_exp').html('4');
+        };
+
+        if (valeur < 9000) {
+            $('#niveau_exp').html('3');
+        };
+
+        if (valeur < 5000) {
+            $('#niveau_exp').html('2');
+        };
+
+        if (valeur < 2000) {
+            $('#niveau_exp').html('1');
+        };
+    };
+
+    $('#points_experience').change(function() {
+        calculeNiveau($('#points_experience').val());
+    });
+
     $('#classe').change(function() {
         remiseAZeroNiveau();
         $('#niveau').val(0);

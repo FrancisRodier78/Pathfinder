@@ -166,7 +166,6 @@ function influenceNiveau() {
     limitationOption('survie',document.form.survie_maîtrise,competenceDeClasse);
     limitationOption('utilisation_d_objets_magiques',document.form.utilisation_d_objets_magiques_maîtrise,competenceDeClasse);
 
-    affichagePointsExperience($('#niveau').val());
 };
 
 //function limitationOption(competenceI,competenceII,competenceDeClasse) {
@@ -184,73 +183,6 @@ function influenceNiveau() {
 //    };
 //}
 
-function affichagePointsExperience(valeur) {
-    switch(valeur) {
-        case '00' :
-            $('#prochain_niveau').html('0');
-            break;
-        case '00' :
-            $('#prochain_niveau').html('0');
-            break;
-        case '01' :
-            $('#prochain_niveau').html('1 000');
-            break;
-        case '02' :
-            $('#prochain_niveau').html('3 000');
-            break;
-        case '03' :
-            $('#prochain_niveau').html('6 000');
-            break;
-        case '04' :
-            $('#prochain_niveau').html('10 000');
-            break;
-        case '05' :
-            $('#prochain_niveau').html('15 000');
-            break;
-        case '06' :
-            $('#prochain_niveau').html('21 000');
-            break;
-        case '07' :
-            $('#prochain_niveau').html('28 000');
-            break;
-        case '08' :
-            $('#prochain_niveau').html('36 000');
-            break;
-        case '09' :
-            $('#prochain_niveau').html('45 000');
-            break;
-        case '10' :
-            $('#prochain_niveau').html('55 000');
-            break;
-        case '11' :
-            $('#prochain_niveau').html('66 000');
-            break;
-        case '12' :
-            $('#prochain_niveau').html('78 000');
-            break;
-        case '13' :
-            $('#prochain_niveau').html('91 000');
-            break;
-        case '14' :
-            $('#prochain_niveau').html('105 000');
-            break;
-        case '15' :
-            $('#prochain_niveau').html('120 000');
-            break;
-        case '16' :
-            $('#prochain_niveau').html('136 000');
-            break;
-        case '17' :
-            $('#prochain_niveau').html('153 000');
-            break;
-        case '18' :
-            $('#prochain_niveau').html('171 000');
-            break;
-        case '19' :
-            $('#prochain_niveau').html('190 000');
-            break;
-    }
-};
 
 function calculTaillePoids() {
     var humainTM = new Array();
