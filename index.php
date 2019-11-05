@@ -3298,104 +3298,89 @@
                                 <table id="table_don">
                                     <tr><th id="label_don" class="font_white">DONS</th></tr>
                                     <tr><td>
-                                        <input id="search" type="text" />
-                                        <div id="results"></div>
+                                        <input id="search_I" type="text" />
+                                        <div id="results_I"></div>
                                     </td></tr>
-                                    <tr><td><select id="don_II" name="don_II">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_III" name="don_III">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_IV" name="don_IV">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_V" name="don_V">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_VI" name="don_VI">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_VII" name="don_VII">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_VIII" name="don_VIII">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_IX" name="don_IX">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_X" name="don_X">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_XI" name="don_XI">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_XII" name="don_XII">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_XIII" name="don_XIII">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_XIV" name="don_XIV">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_XV" name="don_XV">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_XVI" name="don_XVI">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_XVII" name="don_XVII">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_XVIII" name="don_XVIII">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_XIX" name="don_XIX">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
-                                    <tr><td><select id="don_XX" name="don_XX">
-                                            <option selected></option>
-                                            <option>Don I</option>
-                                            <option>Don II</option>
-                                    </select></td></tr>
+                                    <tr><td>
+                                        <input id="search_II" type="text" />
+                                        <div id="results_II"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_III" type="text" />
+                                        <div id="results_III"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_IV" type="text" />
+                                        <div id="results_IV"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_V" type="text" />
+                                        <div id="results_V"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_VI" type="text" />
+                                        <div id="results_VI"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_VII" type="text" />
+                                        <div id="results_VII"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_VIII" type="text" />
+                                        <div id="results_VIII"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_IX" type="text" />
+                                        <div id="results_IX"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_X" type="text" />
+                                        <div id="results_X"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_XI" type="text" />
+                                        <div id="results_XI"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_XII" type="text" />
+                                        <div id="results_XII"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_XIII" type="text" />
+                                        <div id="results_XIII"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_XIV" type="text" />
+                                        <div id="results_XIV"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_XV" type="text" />
+                                        <div id="results_XV"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_XVI" type="text" />
+                                        <div id="results_XVI"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_XVII" type="text" />
+                                        <div id="results_XVII"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_XVIII" type="text" />
+                                        <div id="results_XVIII"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_XIX" type="text" />
+                                        <div id="results_XIX"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_XX" type="text" />
+                                        <div id="results_XX"></div>
+                                    </td></tr>
+                                    <tr><td>
+                                        <input id="search_XXI" type="text" />
+                                        <div id="results_XXI"></div>
+                                    </td></tr>
                                 </table>
                             </div>
                         </div>
