@@ -1,3 +1,43 @@
+function affichageArtisanat(artisanat) {
+    var artisanatType = new Array();
+
+    artisanatType = [' ','Alchimie','Calligraphie','Cordonnerie','Fabrication d\'arcs','Fabrication d\'armes','Fabrication d\'armures',
+                     'Fabrication de navires','Fabrication de pièges','Ferronerie','Maroquinerie','Maçonnerie','Peinture','Poterie',
+                     'Reliure','Sculture','Serrurerie','Taille des gemmes','Travail du bois','Travail de la forge','Travaux de charpente',
+                     'Tissage','Vanerie'];
+
+    for (var nombElement = 0; nombElement < artisanatType.length; nombElement++) {
+        artisanat.append('<option value="' + artisanatType[nombElement] + '">' + artisanatType[nombElement] + '</option>');
+    };
+
+    return artisanatType;
+}
+
+function affichageProfession(profession) {
+    var professionType = new Array();
+
+    professionType = [' ','Apothicaire','Berger','Brasseur','Bûcheron','Canotier','Chasseur','Conducteur d\'attelage','Cuisinier',
+                        'Eleveur','Fermier','Garçon d\'ecurie','Guide','Herboriste','Ingénieur de siège','Libraire','Marin','Meunier',
+                        'Mineur ','Pêcheur','Porteur','Scibe','Taneur','Tavernier'];
+
+
+    for (var nombElement = 0; nombElement < professionType.length; nombElement++) {
+        profession.append('<option value="' + professionType[nombElement] + '">' + professionType[nombElement] + '</option>');
+    };
+}
+
+function affichageReprésentation(representation) {
+    var representationType = new Array();
+
+    representationType = [' ','Chant','Danse','Déclamation','Farce','Instrument à clavier','Instrument à cordes','Instrument à vent',
+                            'Percussion','Scène'];
+
+
+    for (var nombElement = 0; nombElement < representationType.length; nombElement++) {
+        representation.append('<option value="' + representationType[nombElement] + '">' + representationType[nombElement] + '</option>');
+    };
+}
+
 function calculeCompetence(carac,rang,divers) {
     var total = 0;
     var totalN = ' ';

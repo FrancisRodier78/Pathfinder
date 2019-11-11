@@ -1167,13 +1167,17 @@
 
                             <tr>
                                 <td class="center background_grey" id="artisanat_I"><h2>O</h2></td>
-                                <td colspan="2">Artisanat</td>
+                                <td>Artisanat</td>
+                                <td>
+                                    <select id="artisanatType_I" name="artisanatType_I">
+                                    </select>
+                                </td>
                                 <td class="artisanat_I center" id="totalartisanat_I">0</td>
                                 <td class="background_grey">=</td>
                                 <td class="center">INT</td>
                                 <td class="center" id="caracartisanat_I">+0</td>
                                 <td class="background_grey">+</td>
-                                <td class="center">
+                                <td>
                                     <select id="rang_artisanat_I" name="rang_artisanat_I">
                                         <option selected>00</option>
                                         <option>01</option>
@@ -1206,7 +1210,11 @@
 
                             <tr>
                                 <td class="center background_grey" id="artisanat_II"><h2>O</h2></td>
-                                <td colspan="2">Artisanat</td>
+                                <td>Artisanat</td>
+                                <td>
+                                    <select id="artisanatType_II" name="artisanatType_II">
+                                    </select>
+                                </td>
                                 <td class="artisanat_II center" id="totalartisanat_II">0</td>
                                 <td class="background_grey">=</td>
                                 <td class="center">INT</td>
@@ -1245,7 +1253,11 @@
 
                             <tr>
                                 <td class="center background_grey" id="artisanat_III"><h2>O</h2></td>
-                                <td colspan="2">Artisanat</td>
+                                <td>Artisanat</td>
+                                <td>
+                                    <select id="artisanatType_III" name="artisanatType_III">
+                                    </select>
+                                </td>
                                 <td class="artisanat_III center" id="totalartisanat_III">0</td>
                                 <td class="background_grey">=</td>
                                 <td class="center">INT</td>
@@ -2298,7 +2310,11 @@
 
                             <tr>
                                 <td class="center background_grey" id="profession_I"><h2>O</h2></td>
-                                <td colspan="2">Profession*</td>
+                                <td>Profession*</td>
+                                <td>
+                                    <select id="professionType_I" name="professionType_I">
+                                    </select>
+                                </td>
                                 <td class="profession_I center" id="totalprofession_I">0</td>
                                 <td class="background_grey">=</td>
                                 <td class="center">SAG</td>
@@ -2337,7 +2353,11 @@
 
                             <tr>
                                 <td class="center background_grey" id="profession_II"><h2>O</h2></td>
-                                <td colspan="2">Profession*</td>
+                                <td>Profession*</td>
+                                <td>
+                                    <select id="professionType_II" name="professionType_II">
+                                    </select>
+                                </td>
                                 <td class="profession_II center" id="totalprofession_II">0</td>
                                 <td class="background_grey">=</td>
                                 <td class="center">SAG</td>
@@ -2415,7 +2435,11 @@
 
                             <tr>
                                 <td class="center background_grey" id="représentation_I"><h2>O</h2></td>
-                                <td colspan="2">Représentation</td>
+                                <td>Représentation*</td>
+                                <td>
+                                    <select id="representationType_I" name="professionType_I">
+                                    </select>
+                                </td>
                                 <td class="representation_I center" id="totalrepresentation_I">0</td>
                                 <td class="background_grey">=</td>
                                 <td class="center">CHA</td>
@@ -2454,7 +2478,11 @@
 
                             <tr>
                                 <td class="center background_grey" id="représentation_II"><h2>O</h2></td>
-                                <td colspan="2">Représentation</td>
+                                <td>Représentation*</td>
+                                <td>
+                                    <select id="representationType_II" name="professionType_II">
+                                    </select>
+                                </td>
                                 <td class="representation_II center" id="totalrepresentation_II">0</td>
                                 <td class="background_grey">=</td>
                                 <td class="center">CHA</td>

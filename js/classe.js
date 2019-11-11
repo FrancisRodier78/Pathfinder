@@ -316,6 +316,16 @@ $(function() {
                 $('#sabotage').html('<h2>X</h2>');
         		$('#utilisation_d_objets_magiques').html('<h2>X</h2>');
     			break;
-    	}
+    	};
+
+        affichageArtisanat($('#artisanatType_I'));
+        affichageArtisanat($('#artisanatType_II'));
+        affichageArtisanat($('#artisanatType_III'));
+
+        affichageProfession($('#professionType_I'));
+        affichageProfession($('#professionType_II'));
+
+        affichageReprésentation($('#representationType_I'));
+        affichageReprésentation($('#representationType_II'));
     });
 });
