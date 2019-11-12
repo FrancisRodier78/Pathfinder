@@ -1,5 +1,3 @@
-// $('#user').focus();
-
 function influenceClassePersonnage() {
 // a voir plus tard
     affichageEmplacement(document.form.emplacement_I);
