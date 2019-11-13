@@ -3,6 +3,7 @@ $(function() {
         $('.divinite').remove();
 
         if ($('#origine').val() == 'Golarion') {
+            $('#divinite').append('<option class="divinite"></option>');
             $('#divinite').append('<option class="divinite">Abadar, dieu de la civilisation</option>');
             $('#divinite').append('<option class="divinite">Achaékek, l\'Assassin Divin</option>');
             $('#divinite').append('<option class="divinite">Apsu, le Dragon Créateur</option>');

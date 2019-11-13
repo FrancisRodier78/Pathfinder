@@ -84,7 +84,8 @@
                     <div class="col-lg-2">
                         <label id="label_niveau" for="niveau">NIVEAU</label> 
                         <select id="niveau" name="niveau" onChange="influenceNiveau()">
-                            <option selected>00</option>
+                            <option selected></option>
+                            <option>00</option>
                             <option>01</option>
                             <option>02</option>
                             <option>03</option>
@@ -193,6 +194,7 @@
                     <div class="col-lg-1">
                         <label id="label_cheveux" for="cheveux">CHEVEUX</label> 
                         <select id="cheveux" name="cheveux">
+                            <option></option>
                             <option>Noir</option>
                             <option>Brun</option>
                             <option>Chatain</option>
@@ -204,6 +206,7 @@
                     <div class="col-lg-2">
                         <label id="label_yeux" for="yeux">YEUX</label> 
                         <select id="yeux" name="yeux">
+                            <option></option>
                             <option>Noirs</option>
                             <option>Marons</option>
                             <option>Verts</option>
@@ -1136,7 +1139,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_Acrobatie" name="rang_acrobatie">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1179,7 +1183,8 @@
                                 <td class="background_grey">+</td>
                                 <td>
                                     <select id="rang_artisanat_I" name="rang_artisanat_I">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1222,7 +1227,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_artisanat_II" name="rang_artisanat_II">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1265,7 +1271,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_artisanat_III" name="rang_artisanat_III">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1304,7 +1311,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_artdelamagie" name="rang_artdelamagie">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1343,7 +1351,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_bluff" name="rang_bluff">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1382,7 +1391,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_Connaissances_exploration" name="rang_Connaissances_exploration">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1421,7 +1431,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_Connaissances_Folklore_Locale" name="rang_Connaissances_Folklore_Locale">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1460,7 +1471,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_Connaissances_Geographie" name="rang_Connaissances_Geographie">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1499,7 +1511,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_Connaissances_Histoire" name="rang_Connaissances_Histoire">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1538,7 +1551,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_Connaissances_Ingénieurie" name="rang_Connaissances_Ingénieurie">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1577,7 +1591,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_Connaissances_Mystères" name="rang_Connaissances_Mystères">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1616,7 +1631,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_Connaissances_Nature" name="rang_Connaissances_Nature">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1655,7 +1671,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_Connaissances_Noblesse" name="rang_Connaissances_Noblesse">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1694,7 +1711,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_Connaissances_Plan" name="rang_Connaissances_Plan">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1733,7 +1751,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_Connaissances_Religion" name="rang_Connaissances_Religion">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1772,7 +1791,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_deguisement" name="rang_deguisement">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1811,7 +1831,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_diplomatie" name="rang_diplomatie">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1850,7 +1871,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_discretion" name="rang_discretion">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1889,7 +1911,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_dressage" name="rang_dressage">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1928,7 +1951,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_equitation" name="rang_equitation">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -1967,7 +1991,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_escalade" name="rang_escalade">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2006,7 +2031,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_escamotage" name="rang_escamotage">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2045,7 +2071,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_estimation" name="rang_estimation">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2084,7 +2111,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_evasion" name="rang_evasion">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2123,7 +2151,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_intimidation" name="rang_intimidation">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2162,7 +2191,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_linguistique" name="rang_linguistique">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2201,7 +2231,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_natation" name="rang_natation">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2240,7 +2271,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_perception" name="rang_perception">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2279,7 +2311,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_premiersecours" name="rang_premiersecours">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2322,7 +2355,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_profession_I" name="rang_profession_I">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2365,7 +2399,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_profession_II" name="rang_profession_II">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2404,7 +2439,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_psychologie" name="rang_psychologie">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2447,7 +2483,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_representation_I" name="rang_representation_I">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2490,7 +2527,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_representation_II" name="rang_representation_II">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2529,7 +2567,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_sabotage" name="rang_sabotage">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2568,7 +2607,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_survie" name="rang_survie">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2607,7 +2647,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_utilisationobjet" name="rang_utilisationobjet">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2646,7 +2687,8 @@
                                 <td class="background_grey">+</td>
                                 <td class="center">
                                     <select id="rang_vol" name="rang_vol">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -2956,7 +2998,8 @@
                             <tr>
                                 <td id="protection_I">
                                     <select id="choix_protection_I" name="choix_protection_I" onChange="calculeProtection()">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                     </select>
@@ -2974,7 +3017,8 @@
                             <tr>
                                 <td id="protection_II">
                                     <select id="choix_protection_II" name="choix_protection_II" onChange="calculeProtection()">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                     </select>
@@ -2991,7 +3035,8 @@
                             <tr>
                                 <td id="protection_III">
                                     <select id="choix_protection_III" name="choix_protection_III" onChange="calculeProtection()">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                     </select>
@@ -3008,7 +3053,8 @@
                             <tr>
                                 <td id="protection_IV">
                                     <select id="choix_protection_IV" name="choix_protection_IV" onChange="calculeProtection()">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                     </select>
@@ -3025,7 +3071,8 @@
                             <tr>
                                 <td id="protection_V">
                                     <select id="choix_protection_V" name="choix_protection_V" onChange="calculeProtection()">
-                                        <option selected>00</option>
+                                        <option></option>
+                                        <option>00</option>
                                         <option>01</option>
                                         <option>02</option>
                                     </select>
