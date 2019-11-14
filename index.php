@@ -3371,7 +3371,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <table id="table_don">
-                                    <tr><th id="label_don" class="font_white">DONS</th></tr>
+                                    <tr><th id="nombreDons" class="font_white"></th></tr>
                                     <tr><td>
                                         <input id="search_I" type="text" />
                                         <div id="results_I"></div>

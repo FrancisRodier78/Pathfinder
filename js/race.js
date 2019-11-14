@@ -105,6 +105,9 @@ $(function() {
             // Langues supplémentaires. Les demi-elfes connaissent automatiquement le commun et l’elfe. Les demi-elfes qui possèdent une Intelligence élevée peuvent choisir n’importe quelle autre langue (à l’exception des langages secrets tels que la langue des druides).
             $('#langueI').val('Commun');
             $('#langueII').val('Elfe');
+
+            $nombreDons = $('#nombreDons').val();
+            $('#nombreDons').html($nombreDons + ' DON(S)');
         }
 
         if ($('#race').val() == 'Demi-orque') {
@@ -132,6 +135,9 @@ $(function() {
             // Langues supplémentaires. Les demi-orques connaissent automatiquement le commun et l’orque. Les demiorques qui possèdent une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante : abyssal, draconien, géant, gnoll et gobelin.
             $('#langueI').val('Commun');
             $('#langueII').val('Orque');
+
+            $nombreDons = $('#nombreDons').val();
+            $('#nombreDons').html($nombreDons + ' DON(S)');
         }
 
         if ($('#race').val() == 'Elfe') {
@@ -162,6 +168,9 @@ $(function() {
             // Langues supplémentaires. Les elfes connaissent automatiquement le commun et l’elfe. Les elfes possédant une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante : céleste, draconien, gnoll, gnome, gobelin, orque et sylvestre.
             $('#langueI').val('Commun');
             $('#langueII').val('Elfe');
+
+            $nombreDons = $('#nombreDons').val();
+            $('#nombreDons').html($nombreDons + ' DON(S)');
         }
 
         if ($('#race').val() == 'Halfelin') {
@@ -198,6 +207,9 @@ $(function() {
             // Langues supplémentaires. Les halfelins connaissent automatiquement le commun et le halfelin. Les halfelins qui possèdent une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante : abyssal, elfe, gnome, gobelin et nain.
             $('#langueI').val('Commun');
             $('#langueII').val('Halfelin');
+
+            $nombreDons = $('#nombreDons').val();
+            $('#nombreDons').html($nombreDons + ' DON(S)');
         }
 
         if ($('#race').val() == 'Humain') {
@@ -217,6 +229,10 @@ $(function() {
 
             // Langues supplémentaires. Les humains connaissent automatiquement le commun. Les humains qui possèdent une Intelligence élevée peuvent choisir n’importe quelle autre langue (à l’exception des langages secrets comme la langue des druides).
             $('#langueI').val('Commun');
+
+            $nombreDons = $('#nombreDons').val();
+            $nombreDons++;
+            $('#nombreDons').html($nombreDons + ' DON(S)');
         }
 
         if ($('#race').val() == 'Gnome') {
@@ -252,6 +268,9 @@ $(function() {
             // Langues supplémentaires. Les gnomes connaissent automatiquement le commun et le gnome. Les gnomes qui possèdent une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante : draconien, elfe, géant, gobelin, nain et orque.            
             $('#langueI').val('Commun');
             $('#langueII').val('Gnome');
+
+            $nombreDons = $('#nombreDons').val();
+            $('#nombreDons').html($nombreDons + ' DON(S)');
         }
 
         if ($('#race').val() == 'Nain') {
@@ -288,6 +307,9 @@ $(function() {
             // Langues supplémentaires. Les nains connaissent automatiquement le commun et le nain. Les nains qui possèdent une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante : commun des profondeurs, élémentaire, géant, gnome, gobelin et orque.
             $('#langueI').val('Commun');
             $('#langueII').val('Nain');
+
+            $nombreDons = $('#nombreDons').val();
+            $('#nombreDons').html($nombreDons + ' DON(S)');
         }
     })
 });
