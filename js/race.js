@@ -1,4 +1,52 @@
 $(function() {
+    function afficheDons() {
+        var $nombreDons = $('#nombreDons').val();
+
+        $("#search_I").hide();
+        $("#search_II").hide();
+        $("#search_III").hide();
+        $("#search_IV").hide();
+        $("#search_V").hide();
+        $("#search_VI").hide();
+        $("#search_VII").hide();
+        $("#search_VIII").hide();
+        $("#search_IX").hide();
+        $("#search_X").hide();
+        $("#search_XI").hide();
+        $("#search_XII").hide();
+        $("#search_XIII").hide();
+        $("#search_XIV").hide();
+        $("#search_XV").hide();
+        $("#search_XVI").hide();
+        $("#search_XVII").hide();
+        $("#search_XVIII").hide();
+        $("#search_XIX").hide();
+        $("#search_XX").hide();
+        $("#search_XXI").hide();
+
+        if ($nombreDons > 0) {$("#search_I").show()};
+        if ($nombreDons > 1) {$("#search_II").show();};
+        if ($nombreDons > 2) {$("#search_III").show();};
+        if ($nombreDons > 3) {$("#search_IV").show();};
+        if ($nombreDons > 4) {$("#search_V").show();};
+        if ($nombreDons > 5) {$("#search_VI").show();};
+        if ($nombreDons > 6) {$("#search_VII").show();};
+        if ($nombreDons > 7) {$("#search_VIII").show();};
+        if ($nombreDons > 8) {$("#search_IX").show();};
+        if ($nombreDons > 9) {$("#search_X").show();};
+        if ($nombreDons > 10) {$("#search_XI").show();};
+        if ($nombreDons > 11) {$("#search_XII").show();};
+        if ($nombreDons > 12) {$("#search_XIII").show();};
+        if ($nombreDons > 13) {$("#search_XIV").show();};
+        if ($nombreDons > 14) {$("#search_XV").show();};
+        if ($nombreDons > 15) {$("#search_XVI").show();};
+        if ($nombreDons > 16) {$("#search_XVII").show();};
+        if ($nombreDons > 17) {$("#search_XVIII").show();};
+        if ($nombreDons > 18) {$("#search_XIX").show();};
+        if ($nombreDons > 19) {$("#search_XX").show();};
+        if ($nombreDons > 20) {$("#search_XXI").show();};
+    };
+
     $('#origine').change(function() {
         $('.divinite').remove();
 
@@ -107,6 +155,7 @@ $(function() {
             $('#langueII').val('Elfe');
 
             $nombreDons = $('#nombreDons').val();
+            afficheDons();
             $('#nombreDons').html($nombreDons + ' DON(S)');
         }
 
@@ -137,6 +186,7 @@ $(function() {
             $('#langueII').val('Orque');
 
             $nombreDons = $('#nombreDons').val();
+            afficheDons();
             $('#nombreDons').html($nombreDons + ' DON(S)');
         }
 
@@ -170,6 +220,7 @@ $(function() {
             $('#langueII').val('Elfe');
 
             $nombreDons = $('#nombreDons').val();
+            afficheDons();
             $('#nombreDons').html($nombreDons + ' DON(S)');
         }
 
@@ -209,6 +260,7 @@ $(function() {
             $('#langueII').val('Halfelin');
 
             $nombreDons = $('#nombreDons').val();
+            afficheDons();
             $('#nombreDons').html($nombreDons + ' DON(S)');
         }
 
@@ -232,6 +284,8 @@ $(function() {
 
             $nombreDons = $('#nombreDons').val();
             $nombreDons++;
+            $('#nombreDons').val($nombreDons);
+            afficheDons();
             $('#nombreDons').html($nombreDons + ' DON(S)');
         }
 
@@ -270,6 +324,7 @@ $(function() {
             $('#langueII').val('Gnome');
 
             $nombreDons = $('#nombreDons').val();
+            afficheDons();
             $('#nombreDons').html($nombreDons + ' DON(S)');
         }
 
@@ -309,6 +364,7 @@ $(function() {
             $('#langueII').val('Nain');
 
             $nombreDons = $('#nombreDons').val();
+            afficheDons();
             $('#nombreDons').html($nombreDons + ' DON(S)');
         }
     })
