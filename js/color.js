@@ -130,12 +130,19 @@ $(function() {
     });
 
 	$('#point_de_vie_total').change(function() {
-//		$('#rd').focus();
-//		$('#rd').css('background','#B0F2B6');
-//    });
-
-//	$('#rd').change(function() {
 		$('#point_de_vie_total').css('background','#FFFFFF');
+		$('#ca_bon_arm').focus();
+		$('#ca_bon_arm').css('background','#B0F2B6');
+    });
+
+	$('#ca_bon_arm').change(function() {
+		$('#ca_bon_arm').css('background','#FFFFFF');
+		$('#ca_bon_bou').focus();
+		$('#ca_bon_bou').css('background','#B0F2B6');
+    });
+
+	$('#ca_bon_bou').change(function() {
+		$('#ca_bon_bou').css('background','#FFFFFF');
 		$('#famille_arme_I').focus();
 		$('#famille_arme_I').css('background','#B0F2B6');
     });

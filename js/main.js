@@ -190,19 +190,6 @@ function calculTaillePoids() {
 	}
 };
 
-function calculeCa() {
-	var valeur = parseInt($('#ca_arm_base').html)
-		+ parseInt($('#ca_bon_arm').html)
-        + parseInt($('#ca_bon_bou').html)
-        + parseInt($('#ca_mod_dex').html)
-        + parseInt($('#ca_mod_tai').html)
-        + parseInt($('#ca_arm_nat').html)
-        + parseInt($('#ca_mod_par').html)
-        + parseInt($('#ca_mod_div').html);
-
- 	return valeur;
-};
-
 function calculeCaContact() {
 	var valeur = parseInt($('#ca_arm_base').html)
         + parseInt($('#ca_mod_dex').html)
@@ -334,27 +321,6 @@ function affichageEcoles(ecole) {
         ecole.options[nombElement] = new Option(ecoleTableau[nombElement],ecoleTableau[nombElement]);
     };
 }
-
-function affichageArmure(armure) {
-    var armureTableau = new Array();
-
-    armureTableau = [' ','Armure matelassée','Armure de cuir','Armure de cuir cloutée','Chemise de mailles','Armure de peau','Armure d\'écailles',
-                    'Cotte de mailles','Cuirasse','Clibanion','Crevice','Armure à plaques','Harnois'];
-
-    for (var nombElement = 0; nombElement < armureTableau.length; nombElement++) {
-        armure.options[nombElement] = new Option(armureTableau[nombElement],armureTableau[nombElement]);
-    };
-};
-
-function affichageBouclier(bouclier) {
-    var bouclierTableau = new Array();
-
-    bouclierTableau = [' ','Targe','Rondache en bois','Rondache en acier','Ecu en bois','Ecu en acier','Pavois'];
-
-    for (var nombElement = 0; nombElement < bouclierTableau.length; nombElement++) {
-        bouclier.options[nombElement] = new Option(bouclierTableau[nombElement],bouclierTableau[nombElement]);
-    };
-};
 
 function affichageProtection(protection) {
     var protectionTableau = new Array();

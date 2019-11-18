@@ -361,9 +361,66 @@ function calculePoidsTotal() {
     $('#poids_total').html(Poidstotal + 'kg');
 }; 
 
+function affichageArmure() {
+    var armure = new Array();
+
+    armure = [' ','0','Armure matelassée','1','Armure de cuir','2','Armure de cuir cloutée','3','Chemise de mailles','4','Armure de peau','4','Armure d\'écailles','5',
+                    'Cotte de mailles','6','Cuirasse','6','Clibanion','7','Crevice','7','Armure à plaques','8','Harnois','9'];
+
+    for (var nombElement = 0; nombElement < armure.length; nombElement = nombElement + 2) {
+        $('#ca_bon_arm').append('<option value="' + armure[nombElement + 1] + '">' + armure[nombElement] + '</option>');
+    };
+};
+
+function affichageBouclier() {
+    var bouclier = new Array();
+
+    bouclier = [' ','0','Targe','1','Rondache en bois','1','Rondache en acier','1','Ecu en bois','2','Ecu en acier','2','Pavois','4'];
+
+    for (var nombElement = 0; nombElement < bouclier.length; nombElement = nombElement + 2) {
+        $('#ca_bon_bou').append('<option value="' + bouclier[nombElement + 1] + '">' + bouclier[nombElement] + '</option>');
+    };
+};
+
+function calculeCa() {
+    var valeur = parseInt($('#ca_arm_base').val())
+        + parseInt($('#ca_bon_arm').val())
+        + parseInt($('#ca_bon_bou').val())
+        + parseInt($('#ca_mod_dex').html())
+        + parseInt($('#ca_mod_tai').html())
+        + parseInt($('#ca_arm_nat').html())
+        + parseInt($('#ca_mod_par').html())
+        + parseInt($('#ca_mod_div').val());
+
+    $('#ca_total').val(valeur);
+    console.log('base: ' + parseInt($('#ca_arm_base').val()));
+    console.log('arm: ' + parseInt($('#ca_bon_arm').val()));
+    console.log('bou: ' + parseInt($('#ca_bon_bou').val()));
+    console.log('dex: ' + parseInt($('#ca_mod_dex').html()));
+    console.log('tai: ' + $('#ca_mod_tai').html() + ', tai: ' + parseInt($('#ca_mod_tai')).html());
+    console.log('nat: ' + $('#ca_arm_nat').html() + ', nat: ' + parseInt($('#ca_arm_nat')).html());
+    console.log('par: ' + $('#ca_mod_par').html() + ', par: ' + parseInt($('#ca_mod_par')).html());
+    console.log('div: ' + $('#ca_mod_div').val());
+    console.log('val: ' + valeur);
+};
+
 $(function() {
     $('#classe').change(function() {
         équipement = affichageObjet($('#objet_I'), $('#poids_I'));
+        affichageArmure();
+        affichageBouclier();
+    });
+
+    $('#ca_bon_arm').change(function() {
+        calculeCa();
+    });
+
+    $('#ca_bon_bou').change(function() {
+        calculeCa();
+    });
+
+    $('#ca_bon_div').change(function() {
+        calculeCa();
     });
 
     $('#objet_I').change(function() {

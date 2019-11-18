@@ -417,25 +417,13 @@
                                 <td id="ca_arm_base" name="ca_arm_base">10</td>
                                 <td class="background_grey">+</td>
                                 <td>
-                                    <select id="ca_bon_arm" name="ca_bon_arm" onChange="influenceBonusArm()">
-                                        <option selected>0</option>
-                                        <option>+1</option>
-                                        <option>+2</option>
-                                        <option>+3</option>
-                                        <option>+4</option>
-                                        <option>+5</option>
+                                    <select id="ca_bon_arm" name="ca_bon_arm">
                                     </select>
                                     <span class="tooltip">Le bonus est invalide</span>
                                 </td>
                                 <td class="background_grey">+</td>
                                 <td>
-                                    <select id="ca_bon_bou" name="ca_bon_bou" onChange="influenceBonusBou()">
-                                        <option selected>0</option>
-                                        <option>+1</option>
-                                        <option>+2</option>
-                                        <option>+3</option>
-                                        <option>+4</option>
-                                        <option>+5</option>
+                                    <select id="ca_bon_bou" name="ca_bon_bou">
                                     </select>
                                     <span class="tooltip">Le bonus est invalide</span>
                                 </td>
@@ -450,12 +438,12 @@
                                 <td class="background_grey">+</td>
                                 <td>
                                     <select id="ca_bon_div" name="ca_bon_div" onChange="influenceBonusDiv()">
-                                        <option selected>0</option>
-                                        <option>+1</option>
-                                        <option>+2</option>
-                                        <option>+3</option>
-                                        <option>+4</option>
-                                        <option>+5</option>
+                                        <option value="" selected>0</option>
+                                        <option value="1">+1</option>
+                                        <option value="2">+2</option>
+                                        <option value="3">+3</option>
+                                        <option value="4">+4</option>
+                                        <option value="5">+5</option>
                                     </select>
                                     <span class="tooltip">Le bonus est invalide</span>
                                 </td>
