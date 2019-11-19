@@ -438,7 +438,7 @@
                                 <td class="background_grey">+</td>
                                 <td>
                                     <select id="ca_bon_div" name="ca_bon_div" onChange="influenceBonusDiv()">
-                                        <option value="" selected>0</option>
+                                        <option value="0" selected>0</option>
                                         <option value="1">+1</option>
                                         <option value="2">+2</option>
                                         <option value="3">+3</option>

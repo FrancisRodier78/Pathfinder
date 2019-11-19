@@ -132,6 +132,7 @@ $(function() {
             
             // Taille moyenne. Les demi-elfes sont des créatures de taille M, ce qui ne leur apporte aucun bonus ni malus de taille.
             $('#cat_taille').val('M');
+            $('#ca_mod_tai').html(0);
             
             // Vitesse normale. Les demi-elfes possèdent une vitesse de déplacement de base de 9 mètres.
             $('#vd_sans_armure_metre').html('9m');
@@ -165,6 +166,7 @@ $(function() {
 
             // Taille moyenne. Les demi-orques sont des créatures de taille M, ce qui ne leur apporte aucun bonus ni malus de taille.
             $('#cat_taille').val('M');
+            $('#ca_mod_tai').html(0);
 
             // Vitesse normale. Les demi-orques possèdent une vitesse de déplacement de base de 9 mètres.
             $('#vd_sans_armure_metre').html('9m');
@@ -198,6 +200,7 @@ $(function() {
 
             // Taille moyenne. Les elfes sont des créatures de taille M, ce qui ne leur apporte aucun bonus ni malus de taille.
             $('#cat_taille').val('M');
+            $('#ca_mod_tai').html(0);
 
             // Vitesse normale. Les elfes possèdent une vitesse de déplacement de base de 9 mètres.
             $('#vd_sans_armure_metre').html('9m');
@@ -232,6 +235,7 @@ $(function() {
 
             // Petite taille. Les halfelins sont des créatures de taille P. Ils gagnent donc un bonus de taille de +1 à leur classe d’armure et aux jets d’attaque, un malus de -1 à leur bonus de manoeuvres offensives (BMO) et à leur degré de manoeuvres défensives (DMD), ainsi qu’un bonus de taille de +4 aux tests de Discrétion.
             $('#cat_taille').val('P');
+            $('#ca_mod_tai').html(1);
 
             // Vitesse lente. Les halfelins possèdent une vitesse de déplacement de base de 6 mètres.
             $('#vd_sans_armure_metre').html('6m');
@@ -270,6 +274,7 @@ $(function() {
 
             // Taille moyenne. Les humains sont des créatures de taille M, ce qui ne leur apporte aucun bonus ni malus de taille.
             $('#cat_taille').val('M');
+            $('#ca_mod_tai').html(0);
 
             // Vitesse normale. Les humains possèdent une vitesse de déplacement de base de 9 mètres.
             $('#vd_sans_armure_metre').html('9m');
@@ -297,6 +302,7 @@ $(function() {
 
             // Petite taille. Les gnomes sont des créatures de taille P. Ils gagnent un bonus de taille de +1 à leur classe d’armure et aux jets d’attaque, un malus de -1 à leur bonus de manoeuvres offensives (BMO) et à leur degré de manoeuvres défensives (DMD), ainsi qu’un bonus de taille de +4 aux tests de Discrétion.
             $('#cat_taille').val('P');
+            $('#ca_mod_tai').html(1);
 
             // Vitesse lente. Les gnomes possèdent une vitesse de déplacement de base de 6 mètres.
             $('#vd_sans_armure_metre').html('6m');
@@ -336,6 +342,7 @@ $(function() {
 
             // Taille moyenne. Les nains sont des créatures de taille M, ce qui ne leur apporte aucun bonus ni malus de taille.
             $('#cat_taille').val('M');
+            $('#ca_mod_tai').html(0);
 
             // Lentement mais sûrement. Les nains possèdent une vitesse de déplacement de base de 6 mètres mais celle-ci n’est pas modifiée par leur armure ni par la charge qu’ils portent.
             $('#vd_sans_armure_metre').html('6m');

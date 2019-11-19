@@ -383,25 +383,34 @@ function affichageBouclier() {
 };
 
 function calculeCa() {
-    var valeur = parseInt($('#ca_arm_base').val())
+    var valeur = parseInt($('#ca_arm_base').html())
         + parseInt($('#ca_bon_arm').val())
         + parseInt($('#ca_bon_bou').val())
         + parseInt($('#ca_mod_dex').html())
         + parseInt($('#ca_mod_tai').html())
         + parseInt($('#ca_arm_nat').html())
         + parseInt($('#ca_mod_par').html())
-        + parseInt($('#ca_mod_div').val());
+        + parseInt($('#ca_bon_div').val());
 
-    $('#ca_total').val(valeur);
-    console.log('base: ' + parseInt($('#ca_arm_base').val()));
-    console.log('arm: ' + parseInt($('#ca_bon_arm').val()));
-    console.log('bou: ' + parseInt($('#ca_bon_bou').val()));
-    console.log('dex: ' + parseInt($('#ca_mod_dex').html()));
-    console.log('tai: ' + $('#ca_mod_tai').html() + ', tai: ' + parseInt($('#ca_mod_tai')).html());
-    console.log('nat: ' + $('#ca_arm_nat').html() + ', nat: ' + parseInt($('#ca_arm_nat')).html());
-    console.log('par: ' + $('#ca_mod_par').html() + ', par: ' + parseInt($('#ca_mod_par')).html());
-    console.log('div: ' + $('#ca_mod_div').val());
-    console.log('val: ' + valeur);
+    $('#ca_total').html(valeur);
+
+    var valeur = parseInt($('#ca_arm_base').html())
+        + parseInt($('#ca_mod_dex').html())
+        + parseInt($('#ca_mod_tai').html())
+        + parseInt($('#ca_mod_par').html())
+        + parseInt($('#ca_bon_div').val());
+
+    $('#val_ca_contact').html(valeur);
+
+    var valeur = parseInt($('#ca_arm_base').html())
+        + parseInt($('#ca_bon_arm').val())
+        + parseInt($('#ca_bon_bou').val())
+        + parseInt($('#ca_mod_tai').html())
+        + parseInt($('#ca_arm_nat').html())
+        + parseInt($('#ca_mod_par').html())
+        + parseInt($('#ca_bon_div').val());
+
+    $('#val_pri_depourvu').html(valeur);
 };
 
 $(function() {
